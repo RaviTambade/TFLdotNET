@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Billing", "billing\Billing.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderProcessing", "OrderProcessing\OrderProcessing.csproj", "{0D8C1DD3-6269-40AF-9098-C329E7300F8C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HR", "HR\HR.csproj", "{372F640B-7A36-4235-9303-59B7DB047CB4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,5 +56,9 @@ Global
 		{0D8C1DD3-6269-40AF-9098-C329E7300F8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D8C1DD3-6269-40AF-9098-C329E7300F8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D8C1DD3-6269-40AF-9098-C329E7300F8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{372F640B-7A36-4235-9303-59B7DB047CB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{372F640B-7A36-4235-9303-59B7DB047CB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{372F640B-7A36-4235-9303-59B7DB047CB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{372F640B-7A36-4235-9303-59B7DB047CB4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
