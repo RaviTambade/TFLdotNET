@@ -6,6 +6,7 @@
     <ProjectReference Include="..\CRM\CRM.csproj" />
     <ProjectReference Include="..\Billing\Billing.csproj" />
     <ProjectReference Include="..\Shipment\shipment.csproj" />
+    <ProjectReference Include="..\HR\HR.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

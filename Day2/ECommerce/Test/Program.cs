@@ -1,4 +1,6 @@
 ﻿using Membership;
+using HR;
+
 
 //Entry Point code for ECommerce Solution
 
@@ -14,6 +16,11 @@ string password=Console.ReadLine();
 if(AuthManager.Validate(email,password))
 {
     Console.WriteLine("Welcome to Transflower Store");
+    Employee emp=new SalesManager();
+    emp.DoWork();
+    Console.WriteLine(emp);
+    float salary=emp.ComputePay();
+    Console.WriteLine("Salary = "+ salary);
 }
 else{
      Console.WriteLine("Invalid User");

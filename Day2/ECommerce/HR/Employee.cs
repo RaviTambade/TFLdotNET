@@ -47,7 +47,7 @@ public abstract class Employee
    public abstract void DoWork();
 
    public virtual float ComputePay(){ 
-    double pay=(DA * 25) + BasicSalary + HRA;
+    float  pay=(DA * 25) + BasicSalary + HRA;
     return pay;
    }
 
