@@ -1,0 +1,91 @@
+Revision:
+
+
+	  1.CLR, CTS, CLS,
+          2.Value Types and Reference Types
+	  3.Classes and Objects
+	  4.Access Specifiers----- public, private, 
+				   protected
+				   internal (Package)
+	  5.Properties, Auto Properties
+	  6.Static Class  (Helper classes)
+	  7.Concrete Class
+	  8.Parent Class (Super , Base)
+	  9.Child Class ( Sub, Derived)
+	  10.Object (Object)---Parent class for all .net types
+	  11.Functions:
+			static function (Shared function, class level)
+					
+			member functions (instance functions)
+				has access for self reference ----- this
+				constructor
+				destructor
+				setter
+				getter 
+				virtual
+				abstract
+				override
+	 12.MemberInitialized List
+	 13.Constructor Chaining
+	 14.Inheritance
+	 15.Polymorphism
+
+.NET Types:
+
+		namespace:
+				Enum------value type
+				class-----------------------Reference
+				structure---value type
+				interface--------------------Reference
+				delegate---------------------Reference type
+				event------------------------Reference type
+				namespace
+					class
+					structure
+					interface
+					delegate
+					event
+					namespace
+						class
+						structure
+						interface
+						delegate
+						event
+				
+
+	
+
+Constructor
+		default constructor
+		parameterized constrcutor
+
+		Clonning-----
+				Readymade interface  IClonable
+
+		Deep Copy:
+
+		int c=45;
+		int d=c;
+	
+		void Show() {
+	
+		 int count=45;
+		 string company="Transflower";
+
+			{
+				string name="Ravi";
+				string myName=name;
+				myName="Rajiv";
+				name=null;
+
+			}
+		}
+
+
+
+
+		
+		Shallow Copy
+		
+		Complex c1=new Complex(45,67)
+		Complex c2=c1;

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drawing", "Drawing\Drawing.csproj", "{45FFD9D7-1CF8-4914-9E33-BE08C66BDCAD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderProcessing", "OrderProcessing\OrderProcessing.csproj", "{8F26326E-1D1E-4729-82E3-F1B14E6589EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{45FFD9D7-1CF8-4914-9E33-BE08C66BDCAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45FFD9D7-1CF8-4914-9E33-BE08C66BDCAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45FFD9D7-1CF8-4914-9E33-BE08C66BDCAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F26326E-1D1E-4729-82E3-F1B14E6589EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F26326E-1D1E-4729-82E3-F1B14E6589EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F26326E-1D1E-4729-82E3-F1B14E6589EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F26326E-1D1E-4729-82E3-F1B14E6589EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

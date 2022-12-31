@@ -1,6 +1,7 @@
 namespace Drawing ;
+//in C# multiple implementation inheritance is not allowed
 
-public class Rectangle:Shape{
+public class Rectangle:Shape,IPrintable{
     public Point StartPoint{get;set;}
     public Point EndPoint{get;set;}
 
@@ -17,10 +18,16 @@ public class Rectangle:Shape{
     {
         Type t=this.GetType();
         Console.WriteLine("Type ="+ t.Name);
-
-
-      Console.WriteLine("("+ this.StartPoint+ "), (" + this.EndPoint+ ")," +
+       Console.WriteLine("("+ this.StartPoint+ "), (" + this.EndPoint+ ")," +
        this.Width+"," + this.Color);
     }
 
+    public void Print(){
+        Console.WriteLine("Printing object on existing printer");
+
+        Type t=this.GetType();
+        Console.WriteLine("Type ="+ t.Name);
+       Console.WriteLine("("+ this.StartPoint+ "), (" + this.EndPoint+ ")," +
+       this.Width+"," + this.Color);
+    }
 }

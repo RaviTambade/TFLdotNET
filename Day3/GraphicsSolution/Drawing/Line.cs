@@ -1,6 +1,7 @@
 namespace Drawing ;
 
-public class Line:Shape{
+//Multiple interface inheritance
+public class Line:Shape, IPrintable{
     public Point StartPoint{get;set;}
     public Point EndPoint{get;set;}
 
@@ -17,9 +18,16 @@ public class Line:Shape{
     {
          Type t=this.GetType();
         Console.WriteLine("Type ="+ t.Name);
-
-
       Console.WriteLine("("+ this.StartPoint+ "), (" + this.EndPoint+ ")," +
+       this.Width+"," + this.Color);
+    }
+
+
+    public void Print(){
+        Console.WriteLine("Printing object using  exiting printer");
+        Type t=this.GetType();
+        Console.WriteLine("Type ="+ t.Name);
+        Console.WriteLine("("+ this.StartPoint+ "), (" + this.EndPoint+ ")," +
        this.Width+"," + this.Color);
     }
 }

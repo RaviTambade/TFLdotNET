@@ -9,4 +9,10 @@ public struct Point
         this.X=x;
         this.Y=y;
     }
+
+    public override string ToString()
+    {
+        return  "(X="+this.X+ ", Y="+this.Y+ ")";
+        
+    }
 }

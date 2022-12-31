@@ -1,6 +1,6 @@
 namespace Drawing;
 
-public class Circle:Shape{
+public class Circle:Shape,IPrintable{
 
     public Point Center{get;set;}
     public int Radius{set;get;}
@@ -23,4 +23,14 @@ public class Circle:Shape{
         Console.WriteLine("("+ this.Center+ "), Radius=" +this.Radius+ ","+
                             this.Width+"," + this.Color);
     }
+
+
+    public void Print(){
+            Console.WriteLine("Printing object on existing printer");
+            Type t=this.GetType();
+            Console.WriteLine("Type ="+ t.Name);
+            Console.WriteLine("("+ this.Center+ "), Radius=" +this.Radius+ ","+
+                            this.Width+"," + this.Color);
+        }
+
 }
