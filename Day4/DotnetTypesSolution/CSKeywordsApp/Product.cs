@@ -1,7 +1,6 @@
 
 namespace catalog;
 public class Product:IDisposable{
-
     public Product(){
         
     }
