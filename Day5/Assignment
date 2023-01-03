@@ -1,0 +1,12 @@
+1.Create blank solution Day5 using dotnet cli command.
+2.Add new class library project  BOL in Day5 Solution.
+3.Add new consolde application project TestBOL in Day5 Solution.
+4.Add new class of business Entity  as per your Transflower Project with minimum four Auto Properties.
+5.Add Default and Parameterized constructor to business Entity  class.
+6.Use Serailizable attribute for business entity class.
+7.Create objects of business entity class and add inside List<businessEntity> in Program.cs of Console Application
+8.Use appropriate namespaces for Json Serialization in Program.cs file
+9.Imlement logic to serialize and deserialize logic using JSON serialization.
+10.Build Console based Menu Driven application to perform CRUD Operations against business entities of your domain.
+11.Follow .net coding standards.
+12.Use Proper Insert, Update ,Delete, GetById, GetAll methods  for 
