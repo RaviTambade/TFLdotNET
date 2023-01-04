@@ -5,13 +5,13 @@
 - Assemblies and their structure, EXEs/DLLs
 
 - CLR and its functions
-     JIT Compilation
-     Memory Management
-     Garbage Collection
-     AppDomain Management
-     Memory Management
-     CLS, CTS
-     Security
+   - JIT Compilation
+   - Memory Management
+   - Garbage Collection
+   - AppDomain Management
+   - Memory Management
+   - CLS, CTS
+   - Security
 
 - .Net Framework, .Net Core, Mono, Xamarin differences 
 Versions of the Framework
@@ -26,16 +26,16 @@ Classes
 Data Types in .net and CTS equivalents
 
 - Methods
-     Method Overloading
-     Optional Parameters
-     Named Parameters and Positional Parameters
-     Using params
-     Local functions
+   - Method Overloading
+   - Optional Parameters
+   - Named Parameters and Positional Parameters
+   - Using params
+   - Local functions
 
 - Properties
-     get, set
-     Readonly properties
-     Using property accessors to create Readonly property
+   - get, set
+   - Readonly properties
+   - Using property accessors to create Readonly property
 
 - Constructors
 Object Initializer
@@ -44,37 +44,37 @@ Discussion on IDispose. To be implemented after interfaces
 
 
 - Static Members of a Class
-     Fields
-     Methods
-     Properties
-     Constructors
+   - Fields
+   - Methods
+   - Properties
+   - Constructors
 
 - Static Classes
  Static local functions
 
 - Inheritance 
-     Access Specifiers
-     Constructors in a hierarchy
-     Overloading in derived class
-     Hiding, using new
-     override
-     sealed methods    
-     Abstract Classes
-     Abstract Methods
-     Sealed Classes
+   - Access Specifiers
+   - Constructors in a hierarchy
+   - Overloading in derived class
+   - Hiding, using new
+   - override
+   - sealed methods    
+   - Abstract Classes
+   - Abstract Methods
+   - Sealed Classes
 
 - Interfaces
-     Implementing an interface
-     Explicitly implementing an interface
-     Inheritance in interfaces
-     Default interface methods
+   - Implementing an interface
+   - Explicitly implementing an interface
+   - Inheritance in interfaces
+   - Default interface methods
 - Operator overloading
 
 
 - Reference and Value Types
 Value Types
-     struct
-     enum
+   - struct
+   - enum
     out and ref
 nullable types
 nullable reference types
@@ -92,17 +92,17 @@ Iterating collections using foreach
 Using Tuples to pass multiple values to a function
 
 - Delegates
-     Calling methods using delegates
-     Uses of delegates
-     Multicast delegates
-     Action, Func, Predicate delegates
+   - Calling methods using delegates
+   - Uses of delegates
+   - Multicast delegates
+   - Action, Func, Predicate delegates
 Anonymous methods
 Lambdas
 
 - Error Handling (Exceptions Handling)
-     Checked & Unchecked Statements 
-     The try, catch, finally 
-     Dos & Don’ts of Exception Handling 
+   - Checked & Unchecked Statements 
+   - The try, catch, finally 
+   - Dos & Don’ts of Exception Handling 
 User Defined Exception classes
 Declaring and raising events
 Handling events
@@ -123,90 +123,90 @@ Using Reflection to explore an Assembly
 Using Reflection to load an Assembly dynamically
 
 - Files I/O and Streams
-     Working with drivers, Directories, and Files 
-     Reading and Writing files 
+   - Working with drivers, Directories, and Files 
+   - Reading and Writing files 
 
 - Threading
-     ThreadStart, Parameterized ThreadStart
-     ThreadPool
-     Synchronizing critical data using lock, Monitor and Interlocked
+   - ThreadStart, Parameterized ThreadStart
+   - ThreadPool
+   - Synchronizing critical data using lock, Monitor and Interlocked
 
 - Working with Tasks
-     Calling functions with and without return values
-     Using async, await
+   - Calling functions with and without return values
+   - Using async, await
 
 - Using the Task Parallel Library
 
 
 - Introduction to Asp.Net MVC CORE
-     Architecture of an ASP .Net MVC application 
-     Understanding Folder structures and configuration files 
+   - Architecture of an ASP .Net MVC application 
+   - Understanding Folder structures and configuration files 
 
 - Understanding Controllers and Action
-     Create a controller 
-     How actions are invoked 
-     HttpGet , HttpPost , NoAction Attributes 
-     Running Action result. 
+   - Create a controller 
+   - How actions are invoked 
+   - HttpGet , HttpPost , NoAction Attributes 
+   - Running Action result. 
 
 - Understanding Views & Models
-     Creating Models & ViewModel 
-     Creating Razor Views 
-     HTML Helper Functions 
-     Understanding ViewBag 
-     Create a view using ViewBag 
-     Validation using Data Annotations 
-     Client side and server side validation 
-     Self validated model 
-     Creating Strongly Types Views 
-     Using Various Scaffold Templates 
-     CRUD operation using Model 
+   - Creating Models & ViewModel 
+   - Creating Razor Views 
+   - HTML Helper Functions 
+   - Understanding ViewBag 
+   - Create a view using ViewBag 
+   - Validation using Data Annotations 
+   - Client side and server side validation 
+   - Self validated model 
+   - Creating Strongly Types Views 
+   - Using Various Scaffold Templates 
+   - CRUD operation using Model 
 
 - MVC State Management
-     ViewBag , TempData , Session , Application 
-     Cookies , QueryString 
+   - ViewBag , TempData , Session , Application 
+   - Cookies , QueryString 
 
 - MVC Module
-     Partial View 
-     Action Method and child action 
+   - Partial View 
+   - Action Method and child action 
 
 - Data Management with ADO.NET
-     Microsoft.Data.SqlClient introduction
-     Connection object, Command object, DataReader, DataAdapter, DataSet and DataTable. 
-     Asynchronous command Execution 
-     Asynchronous Connections 
+   - Microsoft.Data.SqlClient introduction
+   - Connection object, Command object, DataReader, DataAdapter, DataSet and DataTable. 
+   - Asynchronous command Execution 
+   - Asynchronous Connections 
 
 - Understanding Routing & Request Life Cycle
-     Routing Engine & Routing Table 
-     Understanding and configuring Routing Pattern in RouteConfig File 
-     Understanding 404 error and resource not found. 
-     Using Attributes Routing 
-     Understanding Request Life Cycle 
+   - Routing Engine & Routing Table 
+   - Understanding and configuring Routing Pattern in RouteConfig File 
+   - Understanding 404 error and resource not found. 
+   - Using Attributes Routing 
+   - Understanding Request Life Cycle 
 
 - Layouts , Bundle , Minification
-     Creating Layout and using with associated views 
-     Understanding Bundling and Minification 
-     Using BundleConfig file 
-     Attaching css , js , bootstrap in bundles 
-     Custom Helper Function 
-     Asynchronous Actions 
-     Error Handling in MVC with Log Entry 
-     Filters and Custom Action Filter 
+   - Creating Layout and using with associated views 
+   - Understanding Bundling and Minification 
+   - Using BundleConfig file 
+   - Attaching css , js , bootstrap in bundles 
+   - Custom Helper Function 
+   - Asynchronous Actions 
+   - Error Handling in MVC with Log Entry 
+   - Filters and Custom Action Filter 
 
 - MVC Security
-     Using Authorize & Allow Anonymous attributes 
-     Implementing Forms Based Authentication 
-     Preventing Forgery Attack using AntiForgeryToken 
-     Preventing Cross Site Scripting Attack 
+   - Using Authorize & Allow Anonymous attributes 
+   - Implementing Forms Based Authentication 
+   - Preventing Forgery Attack using AntiForgeryToken 
+   - Preventing Cross Site Scripting Attack 
 
 - Entity Framework
-     Introduction to EF 
-     Different Approaches 
-     Using Code First Approach 
-     Using various Data Annotations 
-     Using Validation, Primary Key , Foreign Key etc 
-     Using Fluent APIs 
-     Database Migrations 
-     CRUD operation using EF 
+    - Introduction to EF 
+   - Different Approaches 
+   - Using Code First Approach 
+   - Using various Data Annotations 
+   - Using Validation, Primary Key , Foreign Key etc 
+   - Using Fluent APIs 
+   - Database Migrations 
+   - CRUD operation using EF 
 
 - Developing MVC application using EF Code First Approach
 Introduction to Razor Pages
