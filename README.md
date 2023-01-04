@@ -222,3 +222,19 @@ Deploying ASP .NET MVC application
     -- Different Verbs 
     -- Consuming using a client 
     -- Using Newtonsoft APIs 
+
+
+- [example](#example)
+  - [Project:](#project)
+  - [Goal: Manage projects](#goal-manage-projects)
+    - [Collaboration Plan](#collaboration-plan)
+      - [Email, Mailing Lists](#email-mailing-lists)
+        - [Mailing List](#mailing-list)
+          - [Google Groups](#google-groups)
+      - [Source Code, Issues, Wikis](#source-code-issues-wikis)
+        - [GitHub](#github)
+        - [GitLab](#gitlab)
+      - [Chat, Instant Messaging](#chat-instant-messaging)
+        - [Slack](#slack)
+        - [Mattermost](#mattermost)
+
