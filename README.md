@@ -1,4 +1,6 @@
 # .NET
+.NET 7 brings your apps increased performance and new features for C# 11/F# 7, .NET MAUI, ASP.NET Core/Blazor, Web APIs, WinForms, WPF and more. With .NET 7, you can also easily containerize your .NET 7 projects, set up CI/CD workflows in GitHub actions, and achieve cloud-native observability.
+
 ## Free. Cross-platform. Open source.
 ## Build any app with .NET
 
