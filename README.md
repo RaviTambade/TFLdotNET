@@ -217,8 +217,8 @@ Deploying ASP .NET MVC application
 
 
 - Web APIs
-     Creating ASP.NET MVC Web API
-     Configuring for CORS
-     Different Verbs 
-     Consuming using a client 
-     Using Newtonsoft APIs 
+    -- Creating ASP.NET MVC Web API
+    --  Configuring for CORS
+    -- Different Verbs 
+    -- Consuming using a client 
+    -- Using Newtonsoft APIs 
