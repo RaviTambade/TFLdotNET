@@ -107,20 +107,21 @@ User Defined Exception classes
 Declaring and raising events
 Handling events
 
-- Anonymous types
-Extension methods
-Partial classes
-Partial methods
-LINQ to objects
-Writing LINQ queries
-Deferred execution
-LINQ methods
-PLINQ
+- C# Features
+    - Anonymous types
+    - Extension methods
+    - Partial classes
+    - Partial methods
+- LINQ
+    - Writing LINQ queries
+    - Deferred execution
+    - LINQ methods
+    - PLINQ
 
 - Creating a shared assembly
-Creating Custom Attributes
-Using Reflection to explore an Assembly
-Using Reflection to load an Assembly dynamically
+    - Creating Custom Attributes
+    - Using Reflection to explore an Assembly
+    - Using Reflection to load an Assembly dynamically
 
 - Files I/O and Streams
    - Working with drivers, Directories, and Files 
@@ -134,8 +135,7 @@ Using Reflection to load an Assembly dynamically
 - Working with Tasks
    - Calling functions with and without return values
    - Using async, await
-
-- Using the Task Parallel Library
+   - Using the Task Parallel Library
 
 
 - Introduction to Asp.Net MVC CORE
@@ -166,12 +166,14 @@ Using Reflection to load an Assembly dynamically
    - Cookies , QueryString 
 
 - MVC Module
+   - Introduction to Razor Pages
    - Partial View 
    - Action Method and child action 
 
 - Data Management with ADO.NET
    - Microsoft.Data.SqlClient introduction
-   - Connection object, Command object, DataReader, DataAdapter, DataSet and DataTable. 
+   - Connection object, Command object, DataReader, 
+   - DataAdapter, DataSet and DataTable. 
    - Asynchronous command Execution 
    - Asynchronous Connections 
 
@@ -207,14 +209,10 @@ Using Reflection to load an Assembly dynamically
    - Using Fluent APIs 
    - Database Migrations 
    - CRUD operation using EF 
-
-- Developing MVC application using EF Code First Approach
-Introduction to Razor Pages
+   - Developing MVC application using EF Code First Approach
 
 - Localization in MVC
-Deploying ASP .NET MVC application
-
-
+- Deploying ASP .NET MVC application
 
 - Web APIs
     - Creating ASP.NET MVC Web API
@@ -223,18 +221,4 @@ Deploying ASP .NET MVC application
     - Consuming using a client 
     - Using Newtonsoft APIs 
 
-
-- [example](#example)
-  - [Project:](#project)
-  - [Goal: Manage projects](#goal-manage-projects)
-    - [Collaboration Plan](#collaboration-plan)
-      - [Email, Mailing Lists](#email-mailing-lists)
-        - [Mailing List](#mailing-list)
-          - [Google Groups](#google-groups)
-      - [Source Code, Issues, Wikis](#source-code-issues-wikis)
-        - [GitHub](#github)
-        - [GitLab](#gitlab)
-      - [Chat, Instant Messaging](#chat-instant-messaging)
-        - [Slack](#slack)
-        - [Mattermost](#mattermost)
 
