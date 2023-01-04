@@ -1,4 +1,8 @@
-# DotNet
+# .NET
+## Free. Cross-platform. Open source.
+## Build any app with .NET
+
+## Create beautiful apps and scalable cloud services, faster and easier with the free, open-source platform that's loved by developers and trusted by organizations.
 
 - Introduction to the .Net Framework
 - Intermediate Language (IL)
