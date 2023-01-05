@@ -37,8 +37,6 @@ Console.WriteLine( "Result ="+ result);
         Console.WriteLine(student);
     }
 
-
-
     //**************************************************
 
     List<Student> dacStudents = new List<Student>();
