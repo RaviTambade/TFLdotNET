@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Transflower</h1>
+    <ol>
+        <li>Flowers</li>
+        <li>Fruits</li>
+        <li>Vegetables</li>
+    </ol> 
+
+    @{
+        List<string> flowers=new List<string>();
+        flowers.Add("Gerbera");
+        flowers.Add("Lily");
+        flowers.Add("Rose");
+        flowers.Add("Lotus");
+        <ol>
+            @foreach(string flower in flowers){
+                <li>@flower</li>
+            }
+        </ol>
+    } 
+
+    <hr/>
+    <img src="/images/gerbera.jpg" width="100" height="100"/>  
+    <img src="/images/rose.jfif" width="100" height="100"/>  
+    <img src="/images/lily.jfif" width="100" height="100"/>  
+</div>
