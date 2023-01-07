@@ -1,0 +1,25 @@
+@{
+    ViewData["Title"] = "Register Page";
+}
+
+<h1>Register</h1>
+<hr/>
+<div class="text-center">
+ <form  action="/auth/postregister">
+    <label for="firstname">First Name:</label><br>
+    <input type="text" id="firstname" name="firstname" value=""><br>
+    
+    <label for="lastname">Last name:</label><br>
+    <input type="text" id="lastname" name="lastname" value=""><br>
+    
+    <label for="contactnumber">Contact Number:</label><br>
+    <input type="text" id="contactnumber" name="contactnumber" value=""><br>
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" value=""><br>
+    
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" ><br><br>
+    <input type="submit" value="Submit">
+  </form> 
+</div>
