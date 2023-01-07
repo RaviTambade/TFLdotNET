@@ -85,4 +85,4 @@ What are some of the main advantages of the MVC pattern?
 #### 3. SO WHAT?
 Design patterns are helpful because they provide us with a blueprint for an architectural framework that has worked before, and would probably also work again. But each pattern’s usefulness and applicability of course varies and depends on your system’s particular use case and business needs.
 
-Although MVC was originally designed in the 1970s as a desktop computing framework for the Smalltalk language, it has evolved to be incorporated in many web frameworks for Java, Python, and Ruby.
+Although MVC was originally designed in the 1970s as a desktop computing framework for the Smalltalk language, it has evolved to be incorporated in many web frameworks for Java,.NET, Python, and Ruby.
