@@ -1,5 +1,6 @@
 namespace tflstore.Models;
 
+[Serializable]
 public class Product {
    
     private int Id;

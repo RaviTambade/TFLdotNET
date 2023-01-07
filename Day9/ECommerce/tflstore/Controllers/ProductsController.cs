@@ -18,7 +18,7 @@ public class ProductsController : Controller
         //fetch data from Model
         //send list of products to ViewData Collection
         
-        List<Product>  allProducts=ProductManager.GetAllProducts();
+        List<Product>  allProducts=ProductManager.GetProducts();
         ViewData["catalog"]=allProducts;
         return View();
     }

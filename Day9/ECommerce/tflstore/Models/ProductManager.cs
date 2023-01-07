@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using System.IO;
+using System.Text.Json;
 namespace tflstore.Models;
 
 public class ProductManager
@@ -123,6 +125,11 @@ public class ProductManager
 
         }
         
+
+        public static  List<Product> GetProducts(){
+            string  path=@"d:\products.json";
+            return GetAllProductsFromFile(path);  
+        }
         public static List<Product> GetAllProducts()
         {
             List<Product> allProducts = new List<Product>();
@@ -144,6 +151,27 @@ public class ProductManager
             allProducts.Add(new Product { ProductId = 15, Title = "Tulip", Description = "Tulips are the quintessential spring flower and available from January to June.", UnitPrice = 17, Category = "Flower", Balance = 10000 });
             return allProducts;
         }
+
+        public static List<Product> GetAllProductsFromFile(string path){       
+            if(File.Exists(path)){
+                string jsonString=File.ReadAllText(path);
+            List<Product> allProducts=JsonSerializer.Deserialize<List<Product>>(jsonString);
+            return allProducts ;
+            }
+            else
+            {
+                return GetAllProducts();
+            }  
+            
+        }
+        public static bool WriteAllProductsToFile(string path,List<Product> allProducts){
+            bool status=false;
+            string jsonString=JsonSerializer.Serialize(allProducts);
+            File.WriteAllText(path, jsonString);
+            status=true;
+            return status;
+        }
+
 
         public static List<Product> GetAllProductsFromDatabase()
         {
