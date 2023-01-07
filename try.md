@@ -11,4 +11,3 @@
       - [Chat, Instant Messaging](#chat-instant-messaging)
         - [Slack](#slack)
         - [Mattermost](#mattermost)
-
