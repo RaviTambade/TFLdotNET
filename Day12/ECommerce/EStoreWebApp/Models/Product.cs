@@ -1,8 +1,5 @@
 using System.ComponentModel.DataAnnotations;
-
 namespace EStoreWebApp.Models;
-
-
 public class Product {
     public int Id{get;set;}
     [Required]
@@ -12,7 +9,7 @@ public class Product {
     [Required]
     public string Description {get;set;}
     
-  [Required]
+    [Required]
     [RegularExpression(@"^\$?\d+(\.(\d{2}))?$")]
     public decimal UnitPrice{get;set;}
 

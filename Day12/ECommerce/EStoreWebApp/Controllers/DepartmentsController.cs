@@ -1,10 +1,8 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using EStoreWebApp.Models;
-
 using BOL;
 using BLL;
-
 namespace EStoreWebApp.Controllers;
 
 public class DepartmentsController : Controller
