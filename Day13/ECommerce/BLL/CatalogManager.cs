@@ -18,4 +18,9 @@ public class CatalogManager
        Product foundProduct=allProducts.Find((product)=>product.ProductId ==id);
       return foundProduct ;
      }
+
+
+     public bool Update(Product product){
+        return true;
+     }
 }

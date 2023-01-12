@@ -53,7 +53,7 @@ public class ProductsController : Controller
         return RedirectToAction("Index");     
     }
 
-    public IActionresult Update(int id){
+    public IActionResult Update(int id){
         CatalogManager manager=new CatalogManager();
         Product product=manager.GetProduct(id);   
         return View(product);
@@ -69,5 +69,6 @@ public class ProductsController : Controller
         {
             return RedirectToAction("Index");
         }
+        return View ();
     }
 }
