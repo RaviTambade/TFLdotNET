@@ -2,12 +2,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 
 //*************************************************************
-
+// Install the Microsoft.AspNetCore.Cors Nuget package.
  builder.Services.AddCors();
-
 
 // Add services to the container.
 builder.Services.AddControllers();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -30,6 +30,13 @@ app.UseCors(builder =>
                .AllowAnyMethod()
                .AllowAnyHeader();
 });
+
+/*
+We have also used other method which are described below:
+1. AllowAnyMethod() – To allow all HTTP methods.
+2. AllowAnyHeader() – To allow all request headers.
+3. AllowCredentials() – the server must allow the credentials.
+*/
 
 
 app.UseAuthorization();
