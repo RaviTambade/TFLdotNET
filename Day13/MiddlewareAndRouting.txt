@@ -160,9 +160,36 @@ app.UseMvc(routes =>
 
 
 
+API stands for Application Programming Interface. It is an intermediate software agent that allows two or more applications to interact with each other.
+
+
+ASP.NET Web API is a framework for building HTTP services that can be accessed from any client including browsers and mobile devices. It is an ideal platform for building RESTful applications on the . NET Framework.
+n simple words, we can say that a web API is an application programming interface for a web application or web server. It uses HTTP protocol to communicate between clients and websites to have data access. 
+
+Asp.net Core web API is a cross-platform web API.
+
+Why is Web API required?
+The user wants to access the application from different devices like mobile, browser, Google devices, etc. In this case, Web API can be useful. 
+
+Different devices request to Web API and Web API will respond in JSON format. Most of the devices are able to understand JSON output. 
 
 
 
+Minimal APIs are designed to create HTTP APIs with minimal dependencies. Minimal APIs are suitable for microservices and applications that include minimum files, features, and dependencies with ASP.NET Core. Minimal APIs were there since .NET 6 and it helps you to easily create API. It has included several improvements in performance, new features for C#11 &F#, .Net MAUI, ASP.NET Core/Blazor improvement, Web APIs, and many more. Additionally, you can easily containerize your .NET 7 projects as well as configure CI/CD workflows for GitHub actions. 
+Moreover, .NET MAUI is a part of the .NET 7. .NET 7 is officially supported by Microsoft for only 18 months, and it is labeled as Standard term support.
+
+
+
+By Default Weather Api executed and displays output using Swagger. I hope you are aware of Swagger. 
+
+Simply put, Swagger is open-source software tool to design, build, document, and use RESTful Web API.
+
+Web API is mostly used for CRED (Create, Read, EDIT, DELETE) operations. It  follows HTTP verbs for these operations.
+
+HTTP GET – Read Operation
+HTTP POST – Create Operation
+HTTP PUT – Update Operation
+HTTP DELETE – Delete Operation
 
 
 	
