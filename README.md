@@ -173,9 +173,6 @@ Handling events
 
 - MVC Module
    - <a href=" https://learn.microsoft.com/en-us/aspnet/core/razor-pages/?view=aspnetcore-7.0&tabs=visual-studio"> Introduction to Razor Pages</a>
-
-  
-
    - Partial View 
    - Action Method and child action 
 
