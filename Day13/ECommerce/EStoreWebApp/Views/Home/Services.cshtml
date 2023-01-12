@@ -1,0 +1,11 @@
+@{
+    ViewData["Title"] = " Services Page";
+}
+
+
+@{
+    List<string> allTflServices=ViewBag.trainings;
+        foreach( string service in allTflServices){
+            <p>@service</p>
+        }
+}
