@@ -195,8 +195,7 @@ Handling events
    - Understanding Bundling and Minification 
    - Using BundleConfig file 
    - Attaching css , js , bootstrap in bundles 
-   - Custom Helper Function 
-   <a href="https://learn.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/views/creating-custom-html-helpers-cs"> Custom Helper Function</a>
+   - <a href="https://learn.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/views/creating-custom-html-helpers-cs"> Custom Helper Function</a>
    - Asynchronous Actions 
    - Error Handling in MVC with Log Entry 
    - Filters and Custom Action Filter 
