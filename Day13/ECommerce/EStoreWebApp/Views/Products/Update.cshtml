@@ -1,0 +1,28 @@
+@model Product
+
+<h2>Update Existing Flower</h2>
+<hr/>
+<form method="post" action="/products/update">
+  <div class="form-group">
+    <label for="title">Title:</label>
+    <input type="text" id="title" class="form-control" asp-for="Title">
+  </div>
+  <div class="form-group">
+    <label for="description">Description:</label>
+    <input type="text" id="description" class="form-control" asp-for="Description">
+  </div>
+  <div class="form-group">
+    <label for="unitprice">Unit Price:</label>
+    <input type="number" id="unitprice" class="form-control" asp-for="UnitPrice">
+  </div>
+  <div class="form-group">
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" class="form-control" asp-for="Quantity">
+  </div>
+  <div class="form-group">
+    <label for="expirydate">Expiry Date:</label>
+    <input type="date" id="expirydate" class="form-control" asp-for="ExpiryDate">
+  </div>
+
+  <button type="submit" class="btn btn-default">Update</button>
+</form>

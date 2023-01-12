@@ -1,6 +1,8 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using EStoreWebApp.Models;
+ 
+using BOL;
+using BLL;
 namespace EStoreWebApp.Controllers;
 public class ProductsController : Controller
 {
@@ -17,11 +19,18 @@ public class ProductsController : Controller
     public IActionResult Index(){  
         return View();
     }
+    
+    //[Route("/transflwoer")]  //attribute routing
+
+    public IActionResult Details(int id){
+        CatalogManager manager=new CatalogManager();
+        Product product=manager.GetProduct(id);
+        this.ViewData["product"]=product;
+        return View();
+    }
  
     public IActionResult Insert(){
         Product product=new Product();
-        //product.Title="Gerbera";
-        //product.Description= "Wedding flower";
         return View(product);
     }
 
@@ -38,9 +47,27 @@ public class ProductsController : Controller
                            " " +
                            productToCreate.Description + " "+ 
                            productToCreate.UnitPrice + " "+
-                           productToCreate.Quantity + " "+
+                           productToCreate.Balance + " "+
                            productToCreate.ExpiryDate);
         //insert product data into mysql using database connectivity
         return RedirectToAction("Index");     
+    }
+
+    public IActionresult Update(int id){
+        CatalogManager manager=new CatalogManager();
+        Product product=manager.GetProduct(id);   
+        return View(product);
+    }
+
+    [HttpPost]
+    public IActionResult Update(Product productToUpdate){
+        if(!ModelState.IsValid){       
+            return View();
+            }
+        CatalogManager manager=new CatalogManager();
+        if(manager.Update(productToUpdate))
+        {
+            return RedirectToAction("Index");
+        }
     }
 }

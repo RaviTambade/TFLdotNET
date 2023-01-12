@@ -12,6 +12,7 @@ public class Product
     private string paymentTerm;
     private string delivery;
 
+    public DateTime ExpiryDate {get;set;}
 
      public Product(){
     }
