@@ -1,0 +1,18 @@
+<h2>Transflowers</h2>
+<hr/>
+
+<!--  Getting data from REST API ---->
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script>
+    $.ajax(
+        {
+            url:"http://localhost:5103/api/products",
+            dataType:"json",
+            type:"GET",
+            success:function(data){
+                var strData=JSON.stringify(data);
+                alert(strData);
+            }
+        }
+    );
+</script>
