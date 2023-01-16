@@ -1,0 +1,40 @@
+What is Quality Assurance?
+
+Quality Assurance is popularly known as QA Testing, is defined as an activity to 
+	ensure that an organization is providing the best possible product or service to customers.
+
+	1.It is a procedure that focuses on providing assurance that quality requested will be achieved
+	QA aims to prevent the defect
+	2.It is a method to manage the quality- Verification
+	3.It does not involve executing the program
+	4.It's a Preventive technique
+	5.It's a Proactive measure
+	6.It is the procedure to create the deliverables
+	6.QA involves in full software development life cycle
+	7.In order to meet the customer requirements, QA defines standards and methodologies
+	8.It is performed before Quality Control
+	9.It is a Low-Level Activity, it can identify an error and mistakes which QC cannot
+	10.Its main motive is to prevent defects in the system. It is a less time-consuming activity
+	11.QA ensures that everything is executed in the right way, and that is why it falls under verification activity
+	12.It requires the involvement of the whole team
+	13.The statistical technique applied on QA is known as SPC or Statistical Process Control (SPC)
+
+
+
+
+Quality Control in Software Testing is a systematic set of processes used to ensure the quality of software products or services. The main purpose of the quality control process is ensuring that the software product meets the actual requirements by testing and reviewing its functional and non-functional requirements. Quality control is popularly abbreviated as QC.
+
+	1.It is a procedure that focuses on fulfilling the quality requested.
+	3.It is a method to verify the quality-Validation
+	4.It always involves executing a program
+	5.It's a Corrective technique
+	6.It's a Reactive measure
+	7.It is the procedure to verify that deliverables
+	8.QC involves in full software testing life cycle
+	9.QC confirms that the standards are followed while working on the product
+	10.It is performed only after QA activity is done
+	11.It is a High-Level Activity, it can identify an error that QA cannot
+	12.Its main motive is to identify defects or bugs in the system. It is a more time-consuming activity
+	13.QC ensures that whatever we have done is as per the requirement, and that is why it falls under validation activity
+	14.It requires the involvement of the Testing team
+	15.The statistical technique applied to QC is known as SQC or Statistical Quality Control

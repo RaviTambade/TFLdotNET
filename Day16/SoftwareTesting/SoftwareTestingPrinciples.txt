@@ -1,0 +1,35 @@
+What are principles of Software Testing:
+
+7 principles of Software Testing:
+
+
+1.Exhastive testing is not possible.
+ Exhaustive testing is not possible. Instead, we need the optimal amount of testing based on the risk assessment of the application.
+		 
+2.Defect Clustring
+Defect Clustering which states that a small number of modules contain most of the defects detected. This is the application of the Pareto Principle to software testing: approximately 80% of the problems are found in 20% of the modules.
+By experience, you can identify such risky modules. But this approach has its own problems
+If the same tests are repeated over and over again, eventually the same test cases will no longer find new bugs.
+
+3.Testing always shows a presence of Defects.
+Hence, testing principle states that – Testing talks about the presence of defects and don’t talk about the absence of defects. i.e. Software Testing reduces the probability of undiscovered defects remaining in the software but even if no defects are found, it is not a proof of correctness.
+But what if, you work extra hard, taking all precautions & make your software product 99% bug-free. And the software does not meet the needs & requirements of the clients.
+
+
+4.Pesticide paradox
+Repetitive use of the same pesticide mix to eradicate insects during farming will over time lead to the insects developing resistance to the pesticide Thereby ineffective of pesticides on insects. The same applies to software testing. If the same set of repetitive tests are conducted, the method will be useless for discovering new defects.
+To overcome this, the test cases need to be regularly reviewed & revised, adding new & different test cases to help find more defects.
+
+5.Absence of Error-----(Defective product)-----(Zero defect product)
+It is possible that software which is 99% bug-free is still unusable. This can be the case if the system is tested thoroughly for the wrong requirement. Software testing is not mere finding defects, but also to check that software addresses the business needs. The absence of Error is a Fallacy i.e. Finding and fixing defects does not help if the system build is unusable and does not fulfill the user’s needs & requirements.
+
+
+6.Early Testing
+Early Testing – Testing should start as early as possible in the Software Development Life Cycle. So that any defects in the requirements or design phase are captured in early stages. It is much cheaper to fix a Defect in the early stages of testing. But how early one should start testing? It is recommended that you start finding the bug the moment the requirements are defined. 
+
+
+7.Testing is a context dependent  (Abstraction)
+
+Testing is context dependent which basically means that the way you test an e-commerce site will be different from the way you test a commercial off the shelf application. All the developed software’s are not identical. You might use a different approach, methodologies, techniques, and types of testing depending upon the application type. For instance testing, any POS system at a retail store will be different than testing an ATM machine.
+
+

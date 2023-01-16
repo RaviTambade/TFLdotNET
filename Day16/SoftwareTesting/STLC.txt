@@ -1,0 +1,64 @@
+STLC Phases:
+
+1.Requirement Analysis
+	Activities:
+		1.Identify types of tests to be performed.
+		2.Gather details about testing priorities and focus.
+		3.Identify test environment details where testing is supposed to be carried out. 
+		4.Automation Testing is really required
+	outcome:
+		RTM document(Requirements Traceability Martrix)
+		Report for Automation testing need
+								
+2.Test Planning
+	Activities:
+		1.Preparation of test plan/strategy document for various types of testing
+		2.Test tool selection
+		3.Test effort estimation
+		4.Resource planning and determining roles and responsibilities.
+		5.Training requirement
+	 outcome:
+		 Test plan / startegy Document
+		 Estimation 
+		
+3.Test case development
+	Activities:
+		1.Create test cases, automation scripts (if applicable)
+		2.Review and baseline test cases and scripts
+		3.Create test data (If Test Environment is available)
+	outcome:
+		Testcase
+		Test data
+						
+4.Test Environment setup
+	  Activity
+		1.Understand the required architecture, 
+				environment set-up and prepare hardware 
+		   		and software requirement list for the Test Environment.
+		2.Setup Enviornment and as well test data
+		3.Test Exeuction pre Acitivities.
+	outcome:
+		report of readiness of enivornment Check List
+		Test Result;
+						
+5.Test Execution:
+	Activities:
+		1.Execute tests as per plan
+		2.Document test results, and log defects for failed cases
+		3.Map defects to test cases in RTM
+		4.Retest the Defect fixes
+		5.Track the defects to closure				
+	outcome:
+		test execution status
+						
+6.Test Cycle closure
+
+	Activities:
+		1.Evaluate cycle completion criteria based on Time, Test coverage, 
+							      Cost,Software,Critical Business Objectives, 
+							      Quality
+		2.Prepare test metrics based on the above parameters.
+		3.Document the learning out of the project
+		4.Prepare Test closure report
+		5.Qualitative and quantitative reporting of quality of the work product to the customer.
+		6.Test result analysis to find out the defect distribution by type and severity.

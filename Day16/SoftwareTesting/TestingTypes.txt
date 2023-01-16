@@ -1,0 +1,38 @@
+White Box (or glass box) testing
+	White Box (or glass box) testing is the process of 
+		giving input code to the system and 
+		checking how the system processes it how the output is generated using that code. 
+
+	This is the test where the team tests the internal logic of the code written.
+	It is the process of checking how the system processes input to give a suitable output by giving it the required input.
+	
+
+	It involves testing a system with full access to source code and other architecture documents. 
+	This testing reveals bugs and vulnerabilities as quickly as possible. 
+	In comparison to an authentic trial and error method, this white box testing is way quicker.
+
+	By exactly knowing what to test, more testing coverage is ensured. 
+	This type of testing involves testing of the application. 
+	It needs knowledge of code and test cases chosen if the system is implemented as expected it is verified.
+	It is basically checking whether the given code gives out expected results.
+
+
+Black Box testing
+
+	Black box testing is a method of testing where the input is given to the system and the output is checked, 
+		no matter how it was generated. It is done at an outer level.
+	It can be done without any knowledge of the system as of how it works. 
+	However, it is a less good way of testing when compared to white box testing as no internal knowledge is concerned it this. 
+	Any glitch cannot be corrected as there is no architectural or code knowledge involved.
+	The system is tested by the team just for the suitable output for the given input. Hence the application is tested here.
+
+
+Gray Box Testing
+	
+	This is the combination of both white box and black box testing.
+	In this type of testing the tester has limited knowledge of the system and the internal applications. Just the output is 		checked as per the given inputs.
+	Gray Box testing is a combination of White Box and Glass Box Testing. 
+	In this Gray box testing, the tester need not have the knowledge about the internal working of the software.
+	Only the output, the process of how the output has arrived is tested in this method.
+
+

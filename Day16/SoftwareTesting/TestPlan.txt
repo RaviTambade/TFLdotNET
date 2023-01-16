@@ -1,0 +1,48 @@
+Test Plan
+
+A Test Plan is a detailed document that describes the test strategy, objectives, schedule, estimation, deliverables, and resources required to perform testing for a software product. 
+Test Plan helps us determine the effort needed to validate the quality of the application under test. 
+The test plan serves as a blueprint to conduct software testing activities as a defined process, which is minutely monitored and controlled by the test manager.
+
+What is the Importance of Test Plan?
+
+Follow the seven steps below to create a test plan as per IEEE 829
+1.Analyze the product
+2.Design the Test Strategy
+3.Define the Test Objectives
+4.Define Test Criteria
+5.Resource Planning
+6.Plan Test Environment
+7.Schedule & Estimation
+8.Determine Test Deliverables
+
+
+Step 1) Analyze the product
+	You should research clients and the end users to know their needs and expectations from the application
+		Who will use the website?
+		What is it used for?
+		How will it work?
+		What are software/ hardware the product uses?
+
+Step 2) Develop Test Strategy
+	A Test Strategy document, is a high-level document, which is usually developed by Test Manager. 
+	This document defines:
+		The project’s testing objectives and the means to achieve them
+		Determines testing effort and costs
+
+
+Step 3) Define Test Objective
+	To define the test objectives, you should do 2 following steps
+		1.List all the software features (functionality, performance, GUI…) which may need to test.
+		2.Define the target or the goal of  the test based on  above features
+
+
+What is test plan template?
+
+TEST PLAN TEMPLATE is a detailed document that describes the test strategy, objectives, schedule, estimation and deliverables, and resources required for testing. Test Plan helps us determine the effort needed to validate the quality of the application under test. The test plan serves as a blueprint to conduct software testing activities as a defined process which is minutely monitored and controlled by the test manager.
+
+Creating a Test Plan is mandatory to ensure success of your Software testing project.
+
+Help people outside the test team such as developers, business managers, customers understand the details of testing.
+Test Plan guides our thinking. It is like a rule book, which needs to be followed.
+Important aspects like test estimation, test scope, Test Strategy are documented in Test Plan, so it can be reviewed by Management Team and re-used for other projects.

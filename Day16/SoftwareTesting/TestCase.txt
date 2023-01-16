@@ -1,0 +1,97 @@
+What is a Test Case?
+
+A TEST CASE is a set of actions executed to verify a particular feature or functionality of your software application. 
+A Test Case contains test steps, test data, precondition, postcondition developed for specific test scenario to verify any requirement. 
+The test case includes specific variables or conditions, using which a testing engineer can compare expected and actual results to determine whether a software product is functioning as per the requirements of the customer.
+
+
+Test case:
+	Test Case 1: Check the results on entering valid user Id and Password
+	Test Case 2: Check the results on entering invalid user id and password
+	Test case 3:Check the response when a user IS is empty and login buttong in presess..
+..................................................................................................
+....................................................................................................
+
+	you would need data
+
+
+
+Test Case : 1
+
+Description:  Check the results on entering valid user Id and Password
+Test Steps:   1.Enter Email Address
+	      2.Enter password
+	      3.Click Sign In
+
+Test Data:
+	    Email: ravi.tambade@transflower.in
+	    password: tfl@7867
+
+Expected Result:
+	   Login should be successfull
+
+Actual Result:
+	    Login was successful
+
+Pass/Fail:
+	   Pass
+
+____________________________________________________________________________________________________________________________________________
+
+
+Test Case : 2
+Description:  Check the results on entering invalid user id and password
+Test Steps:   1.Enter  Invalid Email Address
+	      2.Enter  Invalid password
+	      3.Click Sign In
+
+Test Data:
+	    Email: ravi.jadhav@transflower.in
+	    password: t56564
+
+Expected Result:
+	   Login should be falied
+
+Actual Result:
+	    Login should be falied
+
+Pass/Fail:
+	   passed
+
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+While drafting a test case to include the following information:
+
+.The description of what requirement is being tested
+2.The explanation of how the system will be tested
+3.The test setup like a version of an application under test, software, data files, operating system, hardware, security access, physical or logical date, time of day, prerequisites such as other tests and any other setup information pertinent to the requirements being tested
+4.Inputs and outputs or actions and expected results
+5.Any proofs or attachments
+6.Use active case language
+7.Test Case should not be more than 15 steps
+8.An automated test script is commented with inputs, purpose and expected results
+9.The setup offers an alternative to pre-requisite tests
+10.With other tests, it should be an incorrect business scenario order
+
+Examples of  Usability Test Cases
+1.Web page content should be correct without any spelling or grammatical errors
+2.All fonts should be same as per the requirements.
+3.All the text should be properly aligned.
+4.All the error messages should be correct without any spelling or grammatical errors and the error message should match with the field label.
+5.Tool tip text should be there for every field.
+6.All the fields should be properly aligned.
+7.Enough space should be provided between field labels, columns, rows, and error messages.
+8.All the buttons should be in a standard format and size.
+9.Home link should be there on every single page.
+10.Disabled fields should be grayed out.
+11.Check for broken links and images.
+12.Confirmation message should be displayed for any kind of update and delete operation.
+13.Check the site on different resolutions (640 x 480, 600×800 etc.?)
+14.Check the end user can run the system without frustration.
+15.Check the tab should work properly.
+16.Scroll bar should appear only if required.
+17.If there is an error message on submit, the information filled by the user should be there.
+18.Title should display on each web page
+19.All fields (Textbox, dropdown, radio button, etc) and buttons should be accessible by keyboard shortcuts and the user should be able to perform all operations by using keyboard.
+20.Check if the dropdown data is not truncated due to the field size. Also, check whether the data is hardcoded or managed via administrator.
