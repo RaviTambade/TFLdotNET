@@ -1,9 +1,7 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-
 using BOL;
 using BLL;
-
 
 using EStoreWebApp.Models;
 

@@ -5,6 +5,10 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StateWebApp", "StateWebApp\StateWebApp.csproj", "{EA6DB07D-F3FF-48EA-B024-0A829862067B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOCApp", "IOCApp\IOCApp.csproj", "{449A8842-EB3E-4DE2-A591-9AECFFB62F8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOCWebApp", "IOCWebApp\IOCWebApp.csproj", "{D2940B7C-AFC6-4E60-A0F2-CEA8C05FE523}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{EA6DB07D-F3FF-48EA-B024-0A829862067B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA6DB07D-F3FF-48EA-B024-0A829862067B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA6DB07D-F3FF-48EA-B024-0A829862067B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{449A8842-EB3E-4DE2-A591-9AECFFB62F8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{449A8842-EB3E-4DE2-A591-9AECFFB62F8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{449A8842-EB3E-4DE2-A591-9AECFFB62F8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{449A8842-EB3E-4DE2-A591-9AECFFB62F8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2940B7C-AFC6-4E60-A0F2-CEA8C05FE523}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2940B7C-AFC6-4E60-A0F2-CEA8C05FE523}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2940B7C-AFC6-4E60-A0F2-CEA8C05FE523}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2940B7C-AFC6-4E60-A0F2-CEA8C05FE523}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
