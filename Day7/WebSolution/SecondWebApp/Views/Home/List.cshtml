@@ -1,0 +1,35 @@
+﻿
+
+<h2>Customers List</h2>
+<hr/>
+
+<p>Static Data</p>
+
+<ol>
+    <li> Neeta Ambani</li>
+    <li> Rahul Phatak</li>
+    <li>Chaman Kumar</li>
+</ol>
+
+<br/>
+<p>Dynamic Data</p>
+@{
+    List<string> names = new List<string>();
+
+    names.Add("Rajiv Kumar");
+    names.Add("Samay Mankar");
+    names.Add("Chaitali Nene");
+    names.Add("Pravin Patil");
+    names.Add("Karan Johar");
+
+
+
+}
+
+<ol>
+    @{
+        foreach(string name in names){        
+            <li>@name</li>
+        }
+    }
+</ol>
