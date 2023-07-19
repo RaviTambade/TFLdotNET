@@ -14,7 +14,7 @@ public class DBManager{
             DataSet ds=new DataSet();  //empty data set
             MySqlCommand cmd=new MySqlCommand();
             cmd.Connection=con;
-            string query="SELECT * FROM departments";
+            string query="SELECT * FROM departments; SELECT * FROM employees; SELECT * FROM roles";
             cmd.CommandText=query;
             //disconnected Data Access logic
             MySqlDataAdapter da=new MySqlDataAdapter();

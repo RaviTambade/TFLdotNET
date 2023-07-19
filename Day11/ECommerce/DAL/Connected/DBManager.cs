@@ -40,7 +40,6 @@ public class DBManager{
 
             return allDepartments;
     }
-
     public static Department GetDeparmentDetails(int id){
         Department dept = null;
         MySqlConnection con = new MySqlConnection();
@@ -76,7 +75,8 @@ public class DBManager{
         return dept;
     }
 
-     public static bool Insert(Department dept){
+    //Employee Operations CRUD
+    public static bool Insert(Department dept){
         bool status=false;
         string query = "INSERT INTO departments(name,location)" +
                             "VALUES('" + dept.Name + "','" + dept.Location + "')";
@@ -99,7 +99,6 @@ public class DBManager{
         }               
         return status;
      }
-
     public static bool Update(Department dept)
     {
         bool status = false;
@@ -123,7 +122,6 @@ public class DBManager{
         }
         return status;
     }
-
     public static bool Delete(int id){
         bool status=false;
         MySqlConnection con = new MySqlConnection();
@@ -147,8 +145,7 @@ public class DBManager{
     }
 
 
-
-//Employee Operations CRUD
+    //Data Analytics functions
     public static bool DoesEmployeeExists(int id)
     {
         MySqlConnection con = new MySqlConnection();
@@ -291,6 +288,7 @@ public class DBManager{
 
             con.Open();
             MySqlCommand cmd = new MySqlCommand(query, con);
+           
             MySqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             {
@@ -309,6 +307,8 @@ public class DBManager{
         //******************************
         return roles;
     }
+
+
     public static bool Insert(Employee emp)         //insertion of employee table data 
     {
         bool status = false;

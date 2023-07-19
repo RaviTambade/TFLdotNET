@@ -1,0 +1,117 @@
+Windows:
+ Dll's------Dynamic Link Libraries(native dll's)-------1995 (unmanaged)
+		odbc.dll
+ DAO---------Data Access Object ----VB
+		Connection
+		Command
+		DataReader
+		DataSet
+ COM--------Component Object Model
+	    (COM Interoperability)
+ ActiveX Technologies
+ ADO--------Activex Data Object (VB, VC++)-------------1997,1998
+
+ .NET Framework-- for windows Platform
+	
+  ADO.NET-----(managed Code)--------------------------------------------------------.net Framework
+     Assemblies-----System.data.dll
+	      (IDbConnection, IDbCommand, IDbDataAdapter, IDataRader, DataSet
+	       DataRow, DataColumn,DataRelation)
+
+  (Managed Providers)
+	System.Data.SqlClient.dll----MS official DB SVR (SQL Server)
+		SqlConnection, SqlCommand, SqlDataReader,SqlDataAdapter
+	System.Data.OracleClient.dll
+		OracleConnection, OracleCommand, OracleDataAdapter,OracleDataReader
+	System.Mysql.MysqlClient.dll
+		MySqlConnection, MysqlCommand,MySqlDataAdapter,MySqlDataReader,etc.
+
+
+ ADO.NET---& Entity Frameowrk--(Corss Platform net code)------------.net -----------------------2016
+	  Assebmlies:------------download from internet using cli command
+
+
+		dotnet add package Mysql.data
+
+
+.net core application
+			console application
+			class Library
+			windows application
+			Web Application( asp.net core mvc, rest api Web app)
+
+
+DataCentric Application
+		
+		Standalone
+		Distributed
+		Web based Application	
+
+			Two 	Tier Architecture
+			Three   Tier Architecture
+			N	Tier Architecture
+
+			Microservices Architecture
+
+ADO.NET-----Data Model
+	
+Writing .net application using database connectivity with mysql
+
+1.Connected Data Access Mode
+	1.ConnectionString
+	2.import namespace
+	3.keep your query in form string
+	4.Create Connection object
+	5.Create Command object.
+	6.Associate command object with Connection object.
+	Keep Connection with data alive
+		Open Connection
+			perform CRUD Operations
+			Get Data from Data base
+		Close Connection
+
+2.DisConnected Data Access Mode
+	1.ConnectionString
+	2.import namespace
+	3.keep your query in form string
+	4.Create Connection object
+	5.Create Command object.
+	6.Associate command object with Connection object.
+	7.Create Data Adapter object
+	8.Associate Command object with DataAdapter
+	9.Invoke Fill method of dataAdapter by passing empty DataSet
+	10.Iterate data available in offline in DataSet
+	11.perform CRUD operation in offline Mode
+	12.Update Dataset to send changes back to database
+
+	
+
+Entity Framework Core (Object Relational Mapping)
+
+	DbSet
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
