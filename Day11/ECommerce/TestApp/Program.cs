@@ -1,5 +1,4 @@
 ﻿using Testing;
-using System.Collections.Generic;
 using HR;
 
 List<Department> departments=DbTestManager.GetAllDepartments();

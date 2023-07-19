@@ -1,20 +1,12 @@
 namespace Testing;
-
 using HR;
 using MySql.Data.MySqlClient;
-//using inbuilt, external Object Models
-
 
 public class DbTestManager{
 
     public static string conString=@"server=localhost;port=3306;user=root; password=password;database=transflower";       
     public  static List<Department> GetAllDepartments(){
             List<Department> allDepartments=new List<Department>();
-            //database connectivity code
-            //Connected Data Access Mode
-            //MySqlConnection  : establishing connection
-            //MySqlCommand      : query execution
-            //MySqlDataReader   : result of query to be catured after processing query
             MySqlConnection con=new MySqlConnection();
             con.ConnectionString=conString;
             try{
@@ -153,17 +145,3 @@ public class DbTestManager{
       return status;
     }
 }
-
-
-
-//
-
-            //DisConnected Data Access Mode
-             //MySqlConnection  : establishing connection
-            //MySqlCommand      : query execution
-            //MySqlDataApater
-            //DataSet
-            //DataTable
-            //DataRow
-            //DataColumn
-            //DataRealtion

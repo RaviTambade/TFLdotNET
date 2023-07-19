@@ -9,26 +9,20 @@ public class DBManager{
     public static string conString=@"server=localhost;port=3306;user=root; password=password;database=transflower";       
     public  static List<Department> GetAllDepartments(){
             List<Department> allDepartments=new List<Department>();
-            //database connectivity code
-            //Connected Data Access Mode
-            //MySqlConnection  : establishing connection
-            //MySqlCommand      : query execution
-            //MySqlDataReader   : result of query to be catured after processing query
             MySqlConnection con=new MySqlConnection();
             con.ConnectionString=conString;
-            try{
-                con.Open();
-                //fire query to database
-                MySqlCommand cmd=new MySqlCommand();
-                cmd.Connection=con;
-                string query="SELECT * FROM departments";
+            string query = "SELECT * FROM departments";
+            try
+            {
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.Connection = con;
+                con.Open();        
                 cmd.CommandText=query;
                 MySqlDataReader reader=cmd.ExecuteReader();
                 while(reader.Read()){
                     int id = int.Parse(reader["id"].ToString());
                     string name = reader["name"].ToString();
                     string location = reader["location"].ToString();
-
                     Department dept=new Department{
                                                     Id = id,
                                                     Name = name,

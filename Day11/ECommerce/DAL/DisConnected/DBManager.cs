@@ -2,9 +2,6 @@ namespace DAL.DisConnected;
 using BOL;
 using System.Data;
 using MySql.Data.MySqlClient;
-
-
-
 public class DBManager{
 
     public static string conString=@"server=localhost;port=3306;user=root; password=password;database=transflower";       
@@ -46,17 +43,4 @@ public class DBManager{
         }
         return allDepartments;
     }
-    }
-           
-
-//
-
-            //DisConnected Data Access Mode
-             //MySqlConnection  : establishing connection
-            //MySqlCommand      : query execution
-            //MySqlDataApater
-            //DataSet
-            //DataTable
-            //DataRow
-            //DataColumn
-            //DataRealtion
+}

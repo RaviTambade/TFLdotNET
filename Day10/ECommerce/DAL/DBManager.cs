@@ -45,7 +45,16 @@ public class DBManager
             //database connectiity using  ORM (Entity Framework)
 
             //database connectivity using MONGO db
-            return allProducts;
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        return allProducts;
         }
     public static List<Product> GetAllProductsFromExternalServices()
         {
