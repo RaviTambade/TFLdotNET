@@ -1,0 +1,24 @@
+
+ViewData and ViewBag are objects that can be used to pass data from the Controller to the View in an ASP.NET Core MVC application.
+
+
+ViewData
+
+ViewData is a dictionary object that you put data into, which then becomes available to the view. ViewData is a derivative of the ViewDataDictionary class, so you can access by the familiar "key/value" syntax.
+
+
+
+ViewBag
+
+The ViewBag object is a wrapper around the ViewData object that allows you to create dynamic properties for the ViewBag.
+
+TempData
+s meant to be a very short-lived instance, and you should only use it during the current and the subsequent requests only! Since TempData works this way, you need to know for sure what the next request will be, and redirecting to another view is the only time you can guarantee this. Therefore, the only scenario where using TempData will reliably work is when you are redirecting. This is because a redirect kills the current request (and sends HTTP status code 302 Object Moved to the client), then creates a new request on the server to serve the redirected view. Looking back at the previous HomeController code sample means that the TempData object could yield results differently than expected because the next request origin can't be guaranteed. For example, the next request can originate from a completely different machine and browser instance.
+
+
+TempData is a type of object that is used to store temporary data in an ASP.NET MVC application. It is a property of the ControllerBase class, which is the base class for all controllers in an ASP.NET MVC application.
+
+The TempData property is used to pass data from one action method to another, and it is particularly useful for passing data between a controller action and a view. It is implemented using the SessionStateTempDataProvider class, which stores the data in the session state.
+
+To use TempData, you can set its value in an action method and then retrieve it in a subsequent action method or view. For example, you might set a message in an action method that is displayed to the user in a view. When the view is rendered, the message is removed from TempData.
+
