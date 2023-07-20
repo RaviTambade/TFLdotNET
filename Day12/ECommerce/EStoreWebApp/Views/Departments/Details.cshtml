@@ -1,0 +1,15 @@
+﻿@using BOL;
+
+<!--Presntable logic for Depatment Details -->
+<h1>Transflower</h1>
+<hr/>
+<h3>Department Details</h3>
+<div>
+    @{
+        //Extract data from ViewBag
+        Department dept = ViewBag.selectedDepartment;
+        <p> Department Id:<b>@dept.Id</b></p>
+        <p> Name:<u>@dept.Name</u></p>
+        <p> Location:<b><u>@dept.Location</u></b></p>
+    }
+</div>

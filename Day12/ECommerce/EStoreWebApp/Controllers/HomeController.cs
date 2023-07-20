@@ -1,6 +1,8 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using EStoreWebApp.Models;
+
+using BOL;
 namespace EStoreWebApp.Controllers;
 public class HomeController : Controller
 {
@@ -10,24 +12,18 @@ public class HomeController : Controller
         _logger = logger;
     }
 
-    public IActionResult Index()
+    public ActionResult Index()
     {
         return View();
     }
 
-    public IActionResult Privacy()
+    public ViewResult Privacy()
     {
         return View();
     }
 
-    public IActionResult Mentor()
+    public JsonResult Trainers()
     {
-       /* 
-            var trainer=new {
-            FirstName="Ravi",
-            LastName="Tambade"
-        } ;
-        */
         List<Trainer> trainers=new List<Trainer>();
         trainers.Add(new Trainer () {   FirstName="Ravi",LastName="Tambade",Email="ravi.tambade@transflower.in"} );
         trainers.Add(new Trainer () {   FirstName="Amit",LastName="Khedkar",Email="amit.khedkar@contoso.in"} );
@@ -52,42 +48,69 @@ public class HomeController : Controller
     }
 
 
+    //Every Action method is stateless by its nature
+    //variables declared in scope of Action method
+    //are visible in stack till control of execution is
+    //inside action method
 
+  
+    public double amount;
     public ActionResult List()
     {
+        int i = 56;
+        bool status = false;
+        amount = 567;
         TempData["welcome"] = "Welcome to Masters";
+        //Chaining of Action methods
+        //you can redirect to same controllers action method
         return RedirectToAction("Details");
+        //You can redirect to another controllers action method
+        //return RedirectToAction("index", "Products");
     }
-
-
     public ActionResult Details()
     {
+        double retrivedAmount = amount;
         var someName = TempData["welcome"];
+        ViewBag.messageFromAction=someName;
         return View();
     }
 
+    public ActionResult Instructor()
+    {
+        //Model Binding Example
+        Mentor theMentor = new Mentor();
 
+        //Assign default properties to theMentor
+        theMentor.FirstName = "Narendra";
+        theMentor.LastName = "Pawar";
+        theMentor.Email = "narendra.pawar@iacsd.com";
+        theMentor.Certification = "Microsoft Certified Trainer";
 
-
+        //Access object from Bussiness Logic Layer
+        //Assign retrived object  to Model
+        //Send Model to View
+        return View(theMentor);
+    }
     public ActionResult Combo()
         {
-            var featuredProduct = new Product
+           var featuredProduct = new  EStoreWebApp.Models.Product
             {
-                Name = "Special Cupcake Assortment!",
-                Description = "Delectable vanilla and chocolate cupcakes",
-                CreationDate = DateTime.Today,
-                ExpirationDate = DateTime.Today.AddDays(7),
-                ImageName = "cupcakes.jpg",
-                Price = 5.99M,
-                QtyOnHand = 12
+              Title = "Special Cupcake Assortment!",
+              Description = "Delectable vanilla and chocolate cupcakes",
+              ExpiryDate = DateTime.Today.AddDays(7),
+              UnitPrice = 5.99M,
+              Quantity = 12
             };
 
             ViewData["FeaturedProduct"] = featuredProduct;
             ViewBag.Product = featuredProduct;
             TempData["FeaturedProduct"] = featuredProduct;  
-
-            return View();
+           return View();
         }
+
+
+
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {

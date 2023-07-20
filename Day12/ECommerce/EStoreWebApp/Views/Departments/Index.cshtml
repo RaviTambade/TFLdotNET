@@ -3,10 +3,14 @@
     ViewData["Title"] = "Index Page";
 }
 
+<!-- Dynamic Presentable  Content-->
+<!-- defined using Razor Syntax-->
+<!-- Razor syntax is processed by  Razor View Engine at server Side-->
+
 <div>
     <h2>List of  Departments at Transflower</h2>
     @{
-        List<Department> allDepartments= (List<Department>)ViewData["departments"];
+        List<Department> allDepartments = ViewData["departments"] as List<Department>;
         <ol>
             @foreach( Department dept in allDepartments){
                 <li> <a href="/departments/details/@dept.Id">@dept.Name</a></li>

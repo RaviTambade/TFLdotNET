@@ -5,16 +5,25 @@
 <div>
 
    <h1> @ViewData["company"]</h1>
-    <h1>List of Corporate Training locations</h1>
-    <hr/>+
-    <div>
-        <h2>CDAC Presence</h2>
-         @Html.Partial("cdac");
-    </div>
+   <h3>Ravi Tambade</h3>
+   <hr/>
+
+   <p>List of Corporate Training locations</p>
     <hr/>
-    <div>
-        <h2>Corporate Presence</h2>
-          @Html.Partial("corporate");
-    </div>
+   <table>
+       <tr>
+            <td>
+                <h2>CDAC Presence</h2>
+                @Html.Partial("cdac");
+            </td>
+
+            <td>
+                <h2>Corporate Presence</h2>
+                @Html.Partial("corporate");
+            </td>
+
+       </tr>
+   </table>
+    
 
 </div>
