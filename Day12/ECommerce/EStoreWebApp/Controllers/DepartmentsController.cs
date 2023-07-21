@@ -25,7 +25,6 @@ public class DepartmentsController : Controller
         List<Department> departments=mgr.GetAllDepartments();
         //View Data is a Dictionary Object
         //data is maintained inside dictionary using key - Value pair
-
         this.ViewData["departments"]=departments;
         return View();
     }

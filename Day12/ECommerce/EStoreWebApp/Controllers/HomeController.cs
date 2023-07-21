@@ -54,6 +54,15 @@ public class HomeController : Controller
     //inside action method
 
   
+
+
+
+
+
+
+
+
+
     public double amount;
     public ActionResult List()
     {
@@ -75,6 +84,12 @@ public class HomeController : Controller
         return View();
     }
 
+
+
+
+
+    //model Binding
+
     public ActionResult Instructor()
     {
         //Model Binding Example
@@ -85,12 +100,35 @@ public class HomeController : Controller
         theMentor.LastName = "Pawar";
         theMentor.Email = "narendra.pawar@iacsd.com";
         theMentor.Certification = "Microsoft Certified Trainer";
-
-        //Access object from Bussiness Logic Layer
+       //Access object from Bussiness Logic Layer
         //Assign retrived object  to Model
         //Send Model to View
         return View(theMentor);
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     public ActionResult Combo()
         {
            var featuredProduct = new  EStoreWebApp.Models.Product

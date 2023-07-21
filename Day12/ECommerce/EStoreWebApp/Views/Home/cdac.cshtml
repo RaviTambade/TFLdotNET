@@ -1,6 +1,27 @@
 <div>
+    <p>CDAC Acts Centers</p>
     <ol>
-        <li>IACSD</li>
+        <li>
+            <div>
+                <p>Post Graduate Diplomas</p>
+                <table>
+                    <tr>
+                            <td>
+                                <!-- Associate Partial view to  html helper function--->
+                                <!--- Similar like JSTL in JSP java -->
+                                <!--- cdac.cshtml---- Partial View -->
+                                @Html.Partial("pgdac")
+                            </td>
+
+                            <td>
+                                <!--- corporate.cshtml---- Partial View -->
+                                @Html.Partial("pgdbda")
+                            </td>
+
+                    </tr>
+        </table>
+            </div>
+        </li>
         <li>Sunbeam</li>
         <li>KnowIT</li>
         <li>IET</li>
