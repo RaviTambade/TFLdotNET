@@ -17,6 +17,9 @@ public class CustomersController : Controller
     // send viewData to View
   
  
+    public IActionResult Index(){
+        return View();
+    }
     public IActionResult Insert(){
 
         Customer customer=new Customer();
