@@ -5,4 +5,5 @@ public class Customer{
     public string Gender{get;set;}
     public string City{get;set;}
     public double Budget{get;set;}
+    public DateTime DateOfBirth{get;set;}
 }

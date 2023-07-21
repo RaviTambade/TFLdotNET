@@ -1,12 +1,13 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using EStoreWebApp.Models;
+using BOL;
 namespace EStoreWebApp.Controllers;
 public class CustomersController : Controller
 {
     private readonly ILogger<CustomersController> _logger;
 
-    public ProductsController(ILogger<CustomersController> logger)
+    public CustomersController(ILogger<CustomersController> logger)
     {
         _logger = logger;
     }
@@ -14,13 +15,13 @@ public class CustomersController : Controller
     // Get All products from BLL
     // bind all products to ViewData
     // send viewData to View
-    public IActionResult Index(){  
-        return View();
-    }
+  
  
     public IActionResult Insert(){
+
+        Customer customer=new Customer();
         
-        return View();
+        return View(customer);
     }
 
     [HttpPost]
