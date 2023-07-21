@@ -31,12 +31,13 @@ public class CustomersController : Controller
     public IActionResult Insert( Customer customer){
         Console.WriteLine("Post method invoked....");
         if(!ModelState.IsValid){
+        
 
                
           return View();
 
         }
-       
+        Console.WriteLine(customer.Name  + "  "+ customer.City);
         return RedirectToAction("Index");     
     }
 }
