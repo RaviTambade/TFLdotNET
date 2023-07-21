@@ -30,9 +30,7 @@ public class ProductsController : Controller
         Console.WriteLine("Post method invoked....");
         if(!ModelState.IsValid){
 
-               
           return View();
-
         }
         Console.WriteLine(productToCreate.Title + 
                            " " +

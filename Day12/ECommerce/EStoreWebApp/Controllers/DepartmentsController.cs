@@ -7,6 +7,7 @@ namespace EStoreWebApp.Controllers;
 
 public class DepartmentsController : Controller
 {
+    
     private readonly ILogger<DepartmentsController> _logger;
 
     public DepartmentsController(ILogger<DepartmentsController> logger)
@@ -41,5 +42,21 @@ public class DepartmentsController : Controller
         return View();
 
     }
-     
+    
+    public JsonResult Trainers()
+    {
+        List<Trainer> trainers=new List<Trainer>();
+        trainers.Add(new Trainer () {   FirstName="Ravi",LastName="Tambade",Email="ravi.tambade@transflower.in"} );
+        trainers.Add(new Trainer () {   FirstName="Amit",LastName="Khedkar",Email="amit.khedkar@contoso.in"} );
+        return Json(trainers);
+    }
+
+    [HttpPost]
+    public IActionResult InsertTrainer(Trainer trainer){
+
+        Console.WriteLine(trainer.FirstName+ "  "+ trainer.LastName + " "+ trainer.Email);
+        //Invoking HRManager Bussiness Logic Class
+        //Inserting new Trainer to Bussiness Logic 
+        return RedirectToAction("Index","Departments");
+    }
 }

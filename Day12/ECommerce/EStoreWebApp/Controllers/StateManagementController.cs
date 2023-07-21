@@ -2,11 +2,6 @@
 
 namespace EStoreWebApp.Controllers
 {
-
-  
-
-
-
     public class StateManagementController : Controller
     {
         public IActionResult Index()
@@ -15,11 +10,11 @@ namespace EStoreWebApp.Controllers
             string userName = Request.Cookies["UserName"];
             return View("Index", userName);
         }
+
         [HttpPost]
         public IActionResult Index(IFormCollection form)
         {
             string userName = form["userName"].ToString();
-
             //set the key value in Cookie              
             CookieOptions option = new CookieOptions();
             option.Expires = DateTime.Now.AddMinutes(10);

@@ -53,17 +53,7 @@ public class HomeController : Controller
     //are visible in stack till control of execution is
     //inside action method
 
-  
-
-
-
-
-
-
-
-
-
-    public double amount;
+      public double amount;
     public ActionResult List()
     {
         int i = 56;

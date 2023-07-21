@@ -18,3 +18,29 @@
         </ol>    
     }
 </div>
+<a href="/departments/insert/">New  Department</a> 
+
+<p id="para">  Hello from Training</p>
+<button onclick="onPushMe()">Push me</button>
+<button id="btnclick">Click me</button>
+
+<script>
+    //java script
+    //alert("Hello from Javascript");
+
+    function onPushMe(){
+        //Classical DOM manipulation using Basic HTML & Javascript programming
+        //var para=document.getElementById("para");
+        //para.innerHTML="Thank you for visiting Classroom";
+
+        //DOM manipulation using jQuery
+        console.log("Button is clicked....");
+        //var htmlElement=$("#para").val("Content changes using jQuery");
+    }
+
+    $(document).ready(function(){
+            $("#btnclick").click(function(){
+                             $("#para").html("Button is clicked using jQuery");
+            });
+    });
+</script>
