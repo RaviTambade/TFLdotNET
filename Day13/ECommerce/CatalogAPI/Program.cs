@@ -50,7 +50,7 @@ app.MapPost("/api/products", (Product product) =>
     CatalogManager mgr=new CatalogManager();
     //Insert new Product  
 
-    return Results.Created("Successfully  created new product in Inventory");
+    return Results.Created("Successfully  created new product in Inventory",product.Title);
 });
 
 app.Run();

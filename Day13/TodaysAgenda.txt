@@ -1,0 +1,214 @@
+
+Todays Agenda:
+
+	Recap
+	:
+	  Javascript integration with views
+	  jQuery library utilization with Views
+	  Ajax CRUD Operation :Invoking JSON Result from MVC
+	  State Management:
+		reviewed : ViewData, ViewBag, TempData
+			   Model Binding
+		Client Side State mangement:
+			 QueryString
+			 FormCollection
+			 HTML 5.0: WebSQL
+				   LocalStorage
+				   SessionStorage
+			 Cookies
+	   
+		Server Side State management:
+			Database
+		Session:
+		Session is maintained for each user
+		Data Stored in session with Session Expiry
+		By Default session data is stored in process (Inproc)
+		We can configure storing session Data out side process(outofProc)
+		There are redisCache Server to be configured for storing  session data on
+			remote server (RPC)
+
+
+
+	Monolithic Application Architecture:
+
+
+		complete code is getting executed in one process
+	For example:
+		ECommerce Solution
+
+			Reusable Modular Classlibraries Project Templates
+					BOL---------------dll
+					BLL---------------dll
+					DAL---------------dll
+			
+			MVC Project Template
+					Add references of class libraries inside mvc app
+		  			EStoreWebApp------exe
+			
+			Complete Web Application deleverable ( estorewebapp.exe + 
+							       bol.dll + bll.dll +dal.dll)
+							      + ecommerce.json
+
+
+			All Code would be executed inside one process
+
+
+	Distributed Application Architecture
+
+		Two Tier Architecture:
+		 FronEnd  				+ 	BackEnd
+		 (asp.net Web App)      		+ 	MySql Database Server
+
+		  Models, Controllers				Tables,Stored Procedures,	
+		  Views						Triggers
+		  BOL, BLL, DAL
+		
+
+		  
+		  Request intercepting logic (middleware components)
+
+		  Routing logic  (Route mapp configuration)
+
+		  Request processing logic (getting request header or body content)
+
+		  Response generation logic (json, view Result generation)
+
+		  Statefullness Web logic (cookies, session )
+
+
+		  Presentation logic
+		
+				Razor syntax
+				Data Binding
+				ViewBag, ViewData
+				
+				integration of js for dom manipulation
+				
+				integration of jquery
+				
+				asychronous remote web api invoke
+					 $.get()
+					 $.post()
+					
+					 $.ajax();
+
+					fetch
+
+		Complete Web Application deleverable ( estorewebapp.exe + 
+							       bol.dll + bll.dll +dal.dll)
+							      + MySQL As BackEnd Database Server
+
+		
+
+
+	aspx pages,  HTML Tag Library ,  Javascript UI Frameowrk 
+
+	HTML Tag Library
+
+	Inside View
+			
+	<form>
+		<tr> 
+		    <td>  <label>Email </label></td>
+		    <td>  <input type="email" required  name="email" /></td>
+		  
+		</tr>
+	</form>
+
+		.aspx pages was used  in WebForms
+
+
+		HTML Tag Library components are used inside .cshtml
+
+		@html.partial()
+		@html.labelFor()
+		@html.textboxFor()
+
+_______________________________________________________________________________________________________________
+
+
+Service Oriented Architecture
+
+
+	Web API
+	Minimal Web API
+	REST CRUD Operations
+
+
+	Dashboard Controller- partial Views
+
+
+
+
+Web API
+
+	Distributed Application Architecture
+
+	Bussiness Solution will be composed of reusable , atomic, isolated, independent Web Services
+		set of Microservices 
+	ECommerce Solution
+	B-2-B-----------------------
+
+	2.Web api Project ShoppingCart----------------------(Web API)------REST API--------BLL------BOL------DAL------Database
+	3.Web api Project OrderProcessing-------------------(Web API)------REST API--------BLL------BOL------DAL------Database
+	4.Web api Project Shipment--------------------------(Web API)------REST API--------BLL------BOL------DAL------Database
+	5.Web api Project CRM-------------------------------(Web API)------REST API--------BLL------BOL------DAL------Database
+	6.Web api Project PaymentProcessing-----------------(Web API)------REST API--------BLL------BOL------DAL------Database
+	
+	7.web mvc Project EStoreWebApp----------------------(Web UI)-------MVC
+		a.HomeController-----------------Action Method----Index---View--index.csthml
+					       Single View Only Application
+		(SPA):Single Page Application
+					 Single Page +
+					 UI Routing +
+					 collection multiple reusable UI Components									
+						index.cshtml(Razor View)
+								Product	list component
+									 state----
+									 access to remote REST API---
+								Product Details component
+									state----
+									access to remote REST API---
+								cart component
+									 state----
+									 access to remote REST API---
+								Login component
+									 state----
+									 access to remote REST API
+								RestPassword component
+									 state----
+									access to remote REST API
+								OrdersHistory component
+									 state----
+									 access to remote REST API
+								PendingOrders component
+									 state----
+									 access to remote REST API
+								etc.
+									
+			
+	using Visual Studio Code
+
+	dotnet new  webapi -o ProductCatalogAPI
+	dotnet new  webapi -o ShoppingCartAPI
+	dotnet new  webapi -o OrderProcessingAPI
+	dotnet new  webapi -o ShipmentAPI
+	dotnet new  webapi -o MembershipAPI
+	dotnet new  webapi -o CRMAPI
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
