@@ -20,7 +20,10 @@
 </div>
 <a href="/departments/insert/">New  Department</a> 
 
+
 <p id="para">  Hello from Training</p>
+<hr/>
+
 <button onclick="onPushMe()">Push me</button>
 <button id="btnclick">Click me</button>
 
@@ -29,14 +32,29 @@
     //alert("Hello from Javascript");
 
     function onPushMe(){
-        //Classical DOM manipulation using Basic HTML & Javascript programming
-        //var para=document.getElementById("para");
-        //para.innerHTML="Thank you for visiting Classroom";
+        //1.--Classical DOM manipulation using Basic HTML & Javascript programming
+        var para=document.getElementById("para");
+        para.innerHTML="Thank you for visiting Classroom";
 
-        //DOM manipulation using jQuery
+        //2. DOM manipulation using jQuery Selectors
         console.log("Button is clicked....");
-        //var htmlElement=$("#para").val("Content changes using jQuery");
+        var htmlElement=$("#para").val("Content changes using jQuery");
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     $(document).ready(function(){
             $("#btnclick").click(function(){

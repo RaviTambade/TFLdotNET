@@ -4,10 +4,13 @@
 <h1>Transflower</h1>
 <hr/>
 <h3>Department Details</h3>
+<p>Output generated due to server side Razor Rendering</p>
 <div>
     @{
+        //Sever Side Data Binding is resoved by Razor View Engine
         //Extract data from ViewBag
         Department dept = ViewBag.selectedDepartment;
+
         <p> Department Id:<b>@dept.Id</b></p>
         <p> Name:<u>@dept.Name</u></p>
         <p> Location:<b><u>@dept.Location</u></b></p>
@@ -15,6 +18,7 @@
 </div>
 
 <hr/>
+<!------------------------------------------------------>
 
 <h2> Client Side</h2>
 <h3> List of Trainers</h3>
@@ -23,20 +27,22 @@
 <button id="btnnewTrainerclick">Insert New Trainer</button>
 <button id="btnFetchTrainerclick">Fetch Trainers List</button>
 
-<ul id="trainerslist">
-</ul>
+<!--Bulleted List-->
+<ul id="trainerslist"></ul>
 
 <a href="/departments/update/@dept.Id">Update</a> | <a href="/departments/delete/@dept.Id">Delete</a> 
 <script>
     console.log("java script is being interpreted");
     $(document).ready(function(){
         console.log(" document object is ready");
+
      $("#btnnewTrainerclick").click(function(){
                             console.log("new trainer is clicked...");
                             //Posting data u;sing $.ajax 
                             var newTrainer={"firstName":"Sarika",
                                              "lastName":"Kulkarni",
                                             "email":"sarika.kulkarni@transflower.in"}
+                            
                             $.ajax({
                                 url: "http://localhost:5248/departments/InsertTrainer",
                                 type: "POST",
@@ -48,28 +54,32 @@
                             });   
      });
 
-     $("#btnFetchTrainerclick").click(function(){   
-                       /* $.get("http://localhost:5248/departments/trainers",
-                              function(data){
-                             console.log("Data: " + data);
-                        });
-                        */
-                        //1. A way to Access REST API Asynchronously using Ajax
+     $("#btnFetchTrainerclick").click(()=>{   
+           /*  $.get("http://localhost:5248/departments/trainers",
+                       (data)=>{console.log("Data: " + data);});
+                             //1. A way to Access REST API Asynchronously using Ajax
                           console.log("fetch Trainer Button is clicked...");
-                         $.ajax({
-                             url: "http://localhost:5248/departments/trainers",
-                                success: function (data) {
-                                     $('#trainerslist').empty()
-                                       console.log(data);
-                                        for( var i=0;i<=data.length;i++){
-                                                 var fullName=data[i].firstName + " "+ data[i].lastName;
-                                                 $("#trainerslist").append($("<li>").text(fullName));
-                                        }        
-                                    },
-                                error: function (e) {
-                                console.log("could not connect to service");
-                            }
-                            })   
+
+            */
+
+            $.ajax({
+                    url: "http://localhost:5248/departments/trainers",
+                    success: (data)=> {
+                        //DOM Manipulation
+                        $('#trainerslist').empty()
+                            for( var i=0;i<=data.length;i++){
+                                var fullName=data[i].firstName + " "+ data[i].lastName;
+                                $("#trainerslist").append($("<li>").text(fullName));
+                        }        
+                    },    
+                error: (e)=> {console.log("could not connect to service"); }
+            })   
+        
+        
+        
+                        
+                        
+                        
                         //2.Another way to Access REST API Asynchronously using fetch 
                         /*
                        */

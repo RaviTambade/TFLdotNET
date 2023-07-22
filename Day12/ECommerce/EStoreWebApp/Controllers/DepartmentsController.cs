@@ -48,15 +48,23 @@ public class DepartmentsController : Controller
         List<Trainer> trainers=new List<Trainer>();
         trainers.Add(new Trainer () {   FirstName="Ravi",LastName="Tambade",Email="ravi.tambade@transflower.in"} );
         trainers.Add(new Trainer () {   FirstName="Amit",LastName="Khedkar",Email="amit.khedkar@contoso.in"} );
+       //Create bussiness Logic  manager instance
+       //Invoke Bussiness Manager GetAll Trainers method
+       //retrieved list<Trainer>  pass to Json Method
         return Json(trainers);
     }
 
+
+
+
     [HttpPost]
     public IActionResult InsertTrainer(Trainer trainer){
-
         Console.WriteLine(trainer.FirstName+ "  "+ trainer.LastName + " "+ trainer.Email);
         //Invoking HRManager Bussiness Logic Class
         //Inserting new Trainer to Bussiness Logic 
-        return RedirectToAction("Index","Departments");
+       // return RedirectToAction("Index");  //redirecting to existing controllers index method
+         return RedirectToAction("Index","Home");
+        //redirecting to  Home controllers index method
+
     }
 }
