@@ -20,7 +20,12 @@ public class CustomersController : Controller
     
     //New Customer registration
     
-    [HttpGet]
+
+   
+    //You can set another name in url such as 
+    //http://localhost:7878/Customers/insert
+    //[HttpGet("insert")]
+
     public IActionResult Register(){
         //POCO Object
         Customer customer=new Customer();
@@ -36,11 +41,11 @@ public class CustomersController : Controller
     public IActionResult Register( Customer customer){
         Console.WriteLine(customer.City + "  "+ customer.Name + "  "+ customer.Gender);
         Console.WriteLine("Post method invoked....");
-       if(!ModelState.IsValid){
+     if(!ModelState.IsValid){
             
           return View();
         }
-
+    
         Console.WriteLine(customer.Name  + "  "+ customer.City);
         return RedirectToAction("Index");     
     }

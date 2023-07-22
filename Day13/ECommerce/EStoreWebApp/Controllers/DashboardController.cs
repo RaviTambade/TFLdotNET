@@ -6,7 +6,7 @@ namespace EStoreWebApp.Controllers;
 public class DashboardController : Controller
 {
     private readonly ILogger<DashboardController> _logger;
-    public HomeController(ILogger<DashboardController> logger)
+    public DashboardController(ILogger<DashboardController> logger)
     {
         _logger = logger;
     }
