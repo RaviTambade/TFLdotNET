@@ -3,24 +3,26 @@ using EStoreWebAPI;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
 //*************************************************************
 // Install the Microsoft.AspNetCore.Cors Nuget package.
- builder.Services.AddCors();
 
 // Add services to the container.
+builder.Services.AddCors();
 builder.Services.AddControllers();
 
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+//Middleware Configuration
+//Set HTTP pipeline (middleware Pipeline)
 
 app.UseHttpsRedirection();
 app.UseCors(builder =>
@@ -29,11 +31,11 @@ app.UseCors(builder =>
                .AllowAnyMethod()
                .AllowAnyHeader();
 });
-
 app.UseAuthorization();
 app.MapControllers();
 
-//Minimal web API with ASP.NET Core
+
+//*****Minimal web API with ASP.NET Core *******
 
 app.MapGet("/api/employees",() =>
       {
@@ -42,6 +44,7 @@ app.MapGet("/api/employees",() =>
         employees.Add(new Employee{ Id=12, FirstName="Ravi", LastName="Tambade"});
         employees.Add(new Employee{ Id=13, FirstName="Raji", LastName="Patil"});
         employees.Add(new Employee{ Id=14, FirstName="Seema", LastName="More"});
+
         return Results.Ok(employees);    
 });
  
@@ -49,6 +52,7 @@ app.MapGet("/api/employees/{id}",(int id) =>
     {
     bool status=true; 
     var emp=new Employee{ Id=id, FirstName="Ravi", LastName="Tambade"};
+    
     if(status){
         return Results.Ok(emp);
     }      
@@ -79,4 +83,5 @@ app.MapDelete("/api/employees/{id}",   (int id) =>
     }
      return Results.NotFound();
 });
+
 app.Run();

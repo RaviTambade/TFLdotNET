@@ -23,12 +23,6 @@ public class HomeController : Controller
 
     public IActionResult Mentor()
     {
-       /* 
-            var trainer=new {
-            FirstName="Ravi",
-            LastName="Tambade"
-        } ;
-        */
         List<Trainer> trainers=new List<Trainer>();
         trainers.Add(new Trainer () {   FirstName="Ravi",LastName="Tambade",Email="ravi.tambade@transflower.in"} );
         trainers.Add(new Trainer () {   FirstName="Amit",LastName="Kedkar",Email="amit.khedkar@contoso.in"} );

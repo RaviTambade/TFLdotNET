@@ -13,9 +13,6 @@ public class ProductsController : Controller
         _logger = logger;
     }
 
-    // Get All products from BLL
-    // bind all products to ViewData
-    // send viewData to View
     public IActionResult Index(){  
         return View();
     }
@@ -39,7 +36,7 @@ public class ProductsController : Controller
         Console.WriteLine("Post method invoked....");
         if(!ModelState.IsValid){
 
-               
+             
           return View();
 
         }

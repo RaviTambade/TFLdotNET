@@ -1,4 +1,4 @@
-namespace BOL;
+namespace BOL.CRM;
 public class Customer{
         public int Id { get; set; }
         public string Name { get; set; }

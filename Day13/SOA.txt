@@ -1,0 +1,136 @@
+Service Oriented Architecture
+
+What is a web service?
+
+By definition, a web service is any piece of software 
+that makes itself available over the Internet and standardizes its communication via XML encoding. 
+
+A client invokes a web service by sending a request (usually in the form of an XML message), and 
+the service sends back an XML response. 
+
+Web services invoke communication over a network, with HTTP as the most common means of connectivity between the two systems. 
+For many, web services are synonymous with SOA (Services Oriented Architecture) and 
+primarily rely on standards such as XML-RPC and SOAP (Simple Object Access Protocol). 
+
+One of the primary criticisms of the web services approach is the degree to which the client and server are coupled to one another; 
+an inherent issue whenever a client is remotely calling a procedure (“RPC”) on a distant system.
+
+
+Why is a web API not a web service?
+
+In contrast, a typical Web API specifies how software components should interact with each other 
+using the web’s protocol (HTTP) as the go-between. 
+
+The client doesn’t need to know what procedure to call on the server.
+
+Instead, it uses a set of commands (called “verbs”) that are built into HTTP and
+when the command arrives on the other end, it’s up to the receiving system to know what to do with it. 
+
+For example, the HTTP verb that’s typically used to retrieve data is “GET”.  
+When HTTP is used to abstract systems from one another, 
+the systems are considered to be more loosely coupled (when compared to web services) and 
+therefore the entire system is considered less brittle. 
+
+Another advantage of web APIs (often referred to as RESTful APIs) is flexibility. 
+The client system (usually called the “consumer”) and
+the serving system (the “provider”) are so independent of one another, 
+that they can each use different languages (Java, Python, Ruby, etc.) for their part of the overall implementation. 
+ 
+ Additionally, the data payloads can be of multiple types such as JSON or XML. 
+ RESTful APIs most typically use the web’s communication protocol (again, HTTP), 
+ but  are not limited in the same way a web service is. 
+
+ For example, CoAP, an HTTP-like protocol that’s common to the Internet of Things, is also considered to be RESTful.
+
+
+What is an API?
+
+API stands for Application Programming Interface.
+It is an intermediate software agent that allows two or more applications to interact with each other.
+
+In contrast, an API specifies how software components should interact with each other. 
+It is a set of protocols and routines, and it’s responses are generally returned as JSON or XML data.
+
+APIs can use any type of communication protocol, and are not limited in the same way a web service is.
+
+What do APIs and web services have in common?
+
+Both web APIs and web services serve as a means of communication between consumers and providers.
+
+Both support XML-based data payloads, but JSON is the more common payload type for web APIs. 
+
+When comparing web services to web APIs, the significance lies in the amount of work that has to be done by the consumers and providers 
+to package and unpackage the data; this is a process known as serialization and deserialization, respectively. 
+
+Serializing and deserializing JSON in a web API scenario typically requires far less work which, in turn,
+equates to better performance and fewer compute cycles.
+
+This is one reason why web APIs are great for information transfer on mobile devices and tablets; as opposed to on desktops and services, 
+where they have restricted processing environments.
+
+Conversely, web services facilitate interactions between two systems, 
+and almost always depend on an XML-RPC-like interface to communicate with each other. 
+
+SOAP, the successor to XML-RPC, defines the XML-based exchange mentioned above and 
+is more bound to a client/server architecture.
+
+In terms of what web APIs and web services have in common, 
+both are essentially a means to an end and the same problems can be solved by both. 
+
+And both can be configured to operate over a network or within a machine.
+
+But the approaches of each come with their own pros and cons.  
+
+For now, web services are a service from one device to another;they communicate over the Internet.
+Web Services are optimized for machine-to-machine communication,meaning that machine-readable files and formats (like XML)
+are easily transferable. 
+
+APIs are software-to-software interfaces
+with an abstract set of verbs instructions for accessing web-based applications. 
+
+Whatever you wanted to accomplish with a web API can be accomplished with a web service; 
+web services are merely predecessors in the evolution of web integration methodologies.
+
+ASP.NET Web API
+
+ASP.NET Web API is a framework for building HTTP services that can be accessed from any client including browsers and mobile devices. 
+
+It is an ideal platform for building RESTful applications on the . NET Framework.
+In simple words, we can say that a web API is an application programming interface for a web application or web server. 
+It uses HTTP protocol to communicate between clients and websites to have data access. 
+
+Asp.net Core web API is a cross-platform web API.
+
+Why is Web API required?
+
+The user wants to access the application from different devices like mobile, browser, Google devices, etc. 
+In this case, Web API can be useful. 
+Different devices request to Web API and Web API will respond in JSON format.
+Most of the devices are able to understand JSON output. 
+
+
+Minimal APIs
+
+Minimal APIs are designed to create HTTP APIs with minimal dependencies.
+Minimal APIs are suitable for microservices and applications that include minimum files, features, and dependencies with ASP.NET Core.
+Minimal APIs were there since .NET 6 and it helps you to easily create API.
+It has included several improvements in 
+	performance, 
+	new features for C#11 &F#, 
+	.Net MAUI, ASP.NET Core/Blazor improvement, 
+	Web APIs, and many more.
+
+Additionally, you can easily containerize your .NET 7 projects as well as configure CI/CD workflows for GitHub actions. 
+Moreover, .NET MAUI is a part of the .NET 7. .NET 7 is officially supported by Microsoft for only 18 months, and 
+it is labeled as Standard term support.
+
+By Default Weather Api executed and displays output using Swagger. I hope you are aware of Swagger. 
+Simply put, Swagger is open-source software tool to design, build, document, and use RESTful Web API.
+Web API is mostly used for CRED (Create, Read, EDIT, DELETE) operations. It  follows HTTP verbs for these operations.
+HTTP GET – Read Operation
+HTTP POST – Create Operation
+HTTP PUT – Update Operation
+HTTP DELETE – Delete Operation
+
+
+	

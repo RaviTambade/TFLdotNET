@@ -39,8 +39,11 @@ public class ProductsController : ControllerBase
     [HttpGet]
     public  ActionResult<Product>  GetById(int id)
     {
-        Product product = new Product { ProductId = 15, Title = "Tulip", Description = "Tulips are the quintessential spring flower and available from January to June.", UnitPrice = 17, Category = "Flower", Balance = 10000 };
-
+        Product product = new Product { 
+                                        ProductId = 15, Title = "Tulip",
+                                        Description = "Tulips are the quintessential spring flower and available from January to June.", 
+                                        UnitPrice = 17, Category = "Flower", Balance = 10000 
+                                    };
         if (product == null)
         {
             return NotFound();
@@ -52,7 +55,9 @@ public class ProductsController : ControllerBase
     [HttpDelete]
     public IActionResult  Delete(int id)
     {
-        var product = new Product { ProductId = 15, Title = "Tulip", Description = "Tulips are the quintessential spring flower and available from January to June.", UnitPrice = 17, Category = "Flower", Balance = 10000 };
+        var product = new Product { ProductId = 15, Title = "Tulip",
+                                    Description = "Tulips are the quintessential spring flower and available from January to June.", 
+                                    UnitPrice = 17, Category = "Flower", Balance = 10000 };
         if (product == null)
         {
             return NotFound();
