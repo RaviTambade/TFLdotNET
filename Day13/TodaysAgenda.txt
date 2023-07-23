@@ -127,7 +127,7 @@ Todays Agenda:
 _______________________________________________________________________________________________________________
 
 
-Service Oriented Architecture
+Service Oriented Architecture(SOA)
 
 
 	Web API
