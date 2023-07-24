@@ -1,0 +1,185 @@
+
+Entity Framework 
+Agenda:
+Difference between 
+Windwos compatible .net  asp.net MVC .NET Framework Vs. asp.net MVC Core
+asp.net MVC .NET Framework
+ Configuration file-----web.config
+ Startup file------global.asax-- Application Life cycle
+ HTTP Pipeline-----HTTP Modules
+
+Cross Platform .net 
+asp.net MVC Core
+   Configuration file-----appsettings.json
+   Startup file------program.cs--Kestral Server Services Configuration
+   HTTP Pipeline-----Middleware
+
+
+Building Enterprise Web Applications
+
+SOC: Separation of Concern
+AOP: Aspect Oriented Programming
+
+Software Design Principles:
+	DRY, Hollywood, KISS, SOLID,etc.
+
+SOLID Design Principle:
+S:
+O:
+L:
+I:
+D:Dependency Injection
+
+Dependency Injection (DI)
+
+ Differnt types of DI
+  1.Getter Setter Dependency Injection
+	//Connected Data Access Mode
+	MySqlConnection con=new MySqlConnection();
+	//con.ConnectionString="Server=localhost, user=root, password=....";
+	try{
+		con.Open();
+		
+	}
+	catch(Exception e){
+		throw e;
+	}
+	finally{
+		con.Close();
+	}
+
+  2.Method Dependency Injection
+
+	//Disconnected  Data Access Mode
+	MySqlConnection con=new MySqlConnection(conString); //Constructor DI
+	MySqlCommand cmd=new MySqlCommand();
+	cmd.Connection=con;
+
+	MySqlDataAdapter da=new MySqlDataAdapter(cmd);
+	DataSet ds=new DataSet();
+	
+	da.Fill(ds);	//_____________________________________
+
+	//extracting data from DataSet
+	//creating collections of products from Each dataRow
+	//return collection of Products
+
+
+
+
+ASP.NET Core is  DI complaint MVC Code Base
+Program.cs
+	Startup Code
+		a.Create Kestral Server
+		b.Add Services to Kestral Server
+		c.Set Up Middlware to Kestral Server
+		d.Map Controllers and Route
+		e.Keep Kestral Server Listening on port number
+
+Transient objects are always different; 
+	a new instance is provided to every controller and every service.
+
+Scoped objects are the same within a request, 
+	but different across different requests.
+
+Singleton objects are the same for every object and every request.
+
+1.Repository Pattern
+
+ORM---Entity Framework
+
+	Entity Framework  Core (ORM mapping Technique)
+
+
+Why ORM ?
+	.minimal code Strategy
+	.automatic query generation
+	
+ FrontEnd Logic:
+		JS, HTML, CSS ,JS Framework
+		Functional Programming
+			Controls, Data Binding, Asychrnous Data Access
+			DOM manipulation
+
+ Web Application Logic:
+		Object Oriented Way
+		  Object centric
+		  Class, Interface, Events, Delegate
+		  Collections
+
+		 Web Site Hosting
+			State management
+			Caching
+			Authentication,
+			Authorization
+			Localization
+		 Web API
+
+		Database Connectivity Logic (External DB Connectors)
+
+
+ Backend Logic
+		RDBMS:
+
+		Entity
+		Entity Relationship
+		Database
+		Tables
+		Records
+
+
+
+
+
+	ORM:
+
+		Database----------DBContext
+		Tables------------DBSet
+		contstraints------association relationship between DBSet Object
+
+
+		ECommerceDB--------ECommerceDBContext	-----------------Entity(POCO)
+		Customers	  		DBSet<Customer>		 Customer
+		Products	  		DBSet<Product>		 Product
+		Orders		  		DbSet<Order>		 Order
+		Payments	  		DbSet<Payment>		 Payment
+
+
+
+
+1.Create database script
+2.Create web api project using Web API project template
+3.Define Entity Classes in Models folder which are mapped with respective Table
+4.Define CollectionContext class  or EF configuration
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+JWTToken Based Authentication
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
