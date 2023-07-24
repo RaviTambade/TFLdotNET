@@ -1,0 +1,35 @@
+@{
+    ViewData["Title"] = "PrivacyPage";
+}
+<title>@ViewData["Title"] - Users Data </title>  
+<h2>Getting   Users data  from to  REST API</h2>
+
+<hr/>
+  <a href="/home/index">Home</a> | <a href="/home/privacy">Fetch Users</a>
+<hr/>
+
+<div id="chart_div"></div>  
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript">  
+  
+    function LoadData() {  
+        $.ajax({  
+  
+            url: "http://localhost:4000/users",  
+            contentType: "application/json; charset=utf-8", 
+            type: "GET",
+            headers: {"Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEiLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE2MjAyNjUyNjksImV4cCI6MTYyMDg3MDA2OSwiaWF0IjoxNjIwMjY1MjY5fQ.UIwi-AEIq-XPlzPlIWnvoW7OVJrfUQf-sCvLs-W2BXk"},
+
+            error: function(xhr, status, error) {  
+                var err = eval("(" + xhr.responseText + ")");  
+                console.log(error);  
+            },  
+            success: function(data) {  
+                console.log(data);  
+                return false;  
+            }  
+        });  
+        return false;  
+    }  
+      LoadData();
+</script>  

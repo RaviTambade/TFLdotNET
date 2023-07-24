@@ -1,17 +1,18 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using DIWebApp.Models;
+using DIWebApp.Interfaces;
 using DIWebApp.Services;
 namespace DIWebApp.Controllers;
-
 public class HomeController : Controller
 {
     private readonly IHelloWorldService _helloWorldService;
     private readonly IProductCatalogService _productCatalogService;
-
     // Constuctor Dependency Injection
-    public HomeController(IHelloWorldService helloWorldService,IProductCatalogService productCatalogSerivce)
+    public HomeController(IHelloWorldService helloWorldService,
+                          IProductCatalogService productCatalogSerivce)
     {
+        Console.WriteLine("HomeController Instance is Initialized.........*******");
         //are used for initalization
         this._helloWorldService=helloWorldService;
         this._productCatalogService=productCatalogSerivce;
@@ -24,6 +25,10 @@ public class HomeController : Controller
         bool status=this._productCatalogService.Insert();
         return View();
     }
+
+
+
+
 
     public IActionResult Privacy()
     {

@@ -1,19 +1,16 @@
+using DIWebApp.Interfaces;
 namespace DIWebApp.Services
 {
     //Each services should be defined by using contract
-    public interface IProductCatalogService
+   public class ProductCatalogService : IProductCatalogService
     {
-        bool Insert();
-        bool Update();
-        bool Delete();
-    }
 
-    public class ProductCatalogService : IProductCatalogService
-    {
         public ProductCatalogService(){ }
         public bool Insert()
         {
-            bool status=false;
+            //Invoke BLL layer 
+            bool status=true;
+            
             return status;      
         }
         public bool Update()
