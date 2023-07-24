@@ -1,9 +1,6 @@
 namespace DAL;
 using BOL;
-
-
 //CRUD Operations code against database inside DBManager
-
 public class DBManager:IDBManager{
     public void Delete(int id)
     {
@@ -15,14 +12,11 @@ public class DBManager:IDBManager{
     }
 
     public List<Department> GetAll()
-    {
-        //Deterministic Finalization
+    {   //Deterministic Finalization
         using (var context = new CollectionContext())
         {
             //LINQ
-            var departments=from dept 
-                            in context.Departments 
-                            select dept;
+            var departments=from dept in context.Departments select dept;
             return departments.ToList<Department>();
         }
     }

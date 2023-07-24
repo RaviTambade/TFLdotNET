@@ -9,7 +9,7 @@ namespace DIWebApp.Services
         }
         public string SaysHello()
         {
-            return "Good morning  Dac Students";
+            return "Wish you have a great career Opportunity";
         }
     }
 }

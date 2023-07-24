@@ -1,10 +1,8 @@
-
 using DIWebApp.Interfaces;
 using DIWebApp.Services;
 var builder = WebApplication.CreateBuilder(args);
 //Register Dependencies which are essential at runtime for execution
 //Configure services needed at runtime
-//Singleton: 
 //Creational Pattern
 //  Singleton
 //  SingleCall (Transient) perCall

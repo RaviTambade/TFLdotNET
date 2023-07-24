@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using BOL;
 using DAL;
 Console.WriteLine ("Welcome to Microlearning :Transflower");
+
 IDBManager dbm=new DBManager();
+
 bool status=true;
 // Console based Menu driven User Interface
 while(status)
@@ -21,6 +23,7 @@ while(status)
         case 1:
         {
             List<Department> allDepartments=dbm.GetAll();
+
             foreach (var dept in allDepartments)
             {
                 Console.WriteLine(" Id: {0}, Name: {1}, Location: {2}",

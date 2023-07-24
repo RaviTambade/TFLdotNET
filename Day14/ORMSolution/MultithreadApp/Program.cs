@@ -11,8 +11,6 @@ Console.WriteLine("Main fn Thread =" + theTread.ManagedThreadId);
 /* StoreData();
     GetRemoteData();
 */
-
-
 Console.WriteLine(Thread.CurrentThread.ManagedThreadId);
 Helper.StoreData();
 Helper.GetRemoteData();

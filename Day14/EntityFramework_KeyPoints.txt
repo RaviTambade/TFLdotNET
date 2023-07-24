@@ -1,25 +1,79 @@
 
 Entity Framework 
 Agenda:
-Difference between 
-Windwos compatible .net  asp.net MVC .NET Framework Vs. asp.net MVC Core
-asp.net MVC .NET Framework
- Configuration file-----web.config
- Startup file------global.asax-- Application Life cycle
- HTTP Pipeline-----HTTP Modules
+1.DI
+2.Services
+3.Repository Pattern
+4.ORM using Entity Framework
 
-Cross Platform .net 
+5.Writing CRUD REST API using 
+	web api Controllers, 
+	services,
+	entity framework, 
+	Database
+	
+Difference between 
+
+Windwos compatible .net (only windows)
+Cross Platform .net   (linux, windows, mac OS)
+
+  asp.net MVC .NET Framework 
+Vs. 
 asp.net MVC Core
-   Configuration file-----appsettings.json
-   Startup file------program.cs--Kestral Server Services Configuration
-   HTTP Pipeline-----Middleware
+
+
+
+
+
+asp.net MVC .NET Framework
+
+ 1.Configuration file-----web.config
+ 2.Startup file------global.asax
+		 	Application Life cycle event handlers
+				Application_Start()
+				Application_BeginAuthenticateRequest()
+				Session_Start()
+				Session_End()
+				Application_End()
+				Application_Error()
+
+ 3.HTTP Pipeline-----HTTP Modules
+		    HttpAuthentication module
+		    HttpOutputCache module
+		    SessionState module
+		    Personalization Module
+		    .....
+		    .....
+		   Request handling is done through HTTP handlers 
+			(.aspx pages, .ascx user controls,http handlers
+			 Controllers)
+
+________________________________________________________________________________________________________
+Cross Platform .net 
+
+asp.net MVC Core
+   1.Configuration file-----appsettings.json
+   2.Startup file------program.cs--Kestral Server Services Configuration
+			Startup Code
+			a.Create Kestral Server
+			b.Add Services to Kestral Server
+			c.Set Up Middlware to Kestral Server
+			d.Map Controllers and Route
+			e.Keep Kestral Server Listening on port number
+   3.HTTP Pipeline-----Middleware	
+		   HSTS
+		   HTTPS
+		   Static Files
+		   CookiesPolicy
+		   Authentication
+		   Session
+		   MVCEndPoint
+		 Request is handling is done thruogh Controllers
 
 
 Building Enterprise Web Applications
-
 SOC: Separation of Concern
 AOP: Aspect Oriented Programming
-
 Software Design Principles:
 	DRY, Hollywood, KISS, SOLID,etc.
 
@@ -29,17 +83,33 @@ O:
 L:
 I:
 D:Dependency Injection
-
-Dependency Injection (DI)
+ependency Injection (DI)
 
  Differnt types of DI
   1.Getter Setter Dependency Injection
+
 	//Connected Data Access Mode
+	//Create dependencies
+	string conString="Server=localhost, user=root, password=....";
+	string query="SELECT * FROM employees";
+
+	
 	MySqlConnection con=new MySqlConnection();
-	//con.ConnectionString="Server=localhost, user=root, password=....";
+	MySqlCommand cmd =new MySqlCommand();
+	
+	//Injecting Dependencies using property initialization
+	
+	con.ConnectionString=conString;
+	cmd.CommandText=query
+	
 	try{
 		con.Open();
-		
+		MySqlDataReader reader=cmd.ExecuteReader();
+		while(reader.Read())
+		{
+			....................
+			...................
+		}
 	}
 	catch(Exception e){
 		throw e;
@@ -56,13 +126,74 @@ Dependency Injection (DI)
 	cmd.Connection=con;
 
 	MySqlDataAdapter da=new MySqlDataAdapter(cmd);
-	DataSet ds=new DataSet();
 	
-	da.Fill(ds);	//_____________________________________
+	DataSet ds=new DataSet();  //Initially DataSet will be empty
+	
+	//For Adapter to work, dataSet is a Dependency
+
+	da.Fill(ds);	// This is example of Method Dependency Injection
+	//After Fill method invocation DataSet will be filled with data fetched from databse
 
 	//extracting data from DataSet
 	//creating collections of products from Each dataRow
 	//return collection of Products
+
+
+
+
+
+
+
+
+
+
+
+3.Constructor Dependency Injection
+	//Connected Data Access Mode in C#
+	//These are dependencies for database code execution
+
+	string conString=@"server=localhost; user=root; password=password; database=northwind";
+	string query="SELECT * FROM employees";
+
+	//dependencies should be injected inside Connection object and Command Object
+	//These two strings are getting injected at the time of constructor
+
+	MySqlConnection con=new MySqlConnection(conString); //Constructor DI
+	MySqlCommand cmd=new MySqlCommand(query, con)	    //Constructor DI
+
+	try{
+		con.Open();
+		MySqlDataReader reader=cmd.ExecuteReader();
+		while(reader.Read())
+		{
+			....................
+			...................
+		}
+
+	}
+	catch(Exeption ee){
+		throw ex;
+	}
+	finally{
+		con.Close()
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
