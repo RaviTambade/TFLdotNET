@@ -7,7 +7,6 @@ using System;
 using System.Linq;
 using System.Text;
 using SecureWebApp.Services;
-
 namespace SecureWebApp.Helpers
 {
     public class JwtMiddleware

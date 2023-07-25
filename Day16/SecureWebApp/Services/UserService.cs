@@ -34,13 +34,10 @@ namespace SecureWebApp.Services{
         public AuthenticateResponse Authenticate(AuthenticateRequest model)
         {
             var user = _users.SingleOrDefault(x => x.Username == model.Username && x.Password == model.Password);
-
             // return null if user not found
             if (user == null) return null;
-
             // authentication successful so generate jwt token
             var token = generateJwtToken(user);
-
             return new AuthenticateResponse(user, token);
         }
 

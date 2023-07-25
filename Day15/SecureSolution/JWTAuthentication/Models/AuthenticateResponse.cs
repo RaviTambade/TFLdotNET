@@ -1,7 +1,6 @@
-using System.Security;
-using SecureWebApp.Entity;
+using WebApi.Entities;
 
-namespace SecureWebApp.Models
+namespace WebApi.Models
 {
     public class AuthenticateResponse
     {
@@ -10,6 +9,8 @@ namespace SecureWebApp.Models
         public string LastName { get; set; }
         public string Username { get; set; }
         public string Token { get; set; }
+
+
 
         public AuthenticateResponse(User user, string token)
         {

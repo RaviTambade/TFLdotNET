@@ -1,5 +1,5 @@
 using System.ComponentModel.DataAnnotations;
-namespace SecureWebApp.Models
+namespace WebApi.Models
 {
     public class AuthenticateRequest
     {
