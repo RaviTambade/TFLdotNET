@@ -14,7 +14,8 @@ namespace WebApi.Services
 
     public class UserService : IUserService
     {
-         // users hardcoded for simplicity, store in a db with hashed passwords in production applications
+         // users hardcoded for simplicity,
+         // store in a db with hashed passwords in production applications
         private List<User> _users = new List<User>
         { 
             new User { Id = 1, FirstName = "Swarali", LastName = "L", Username = "swarali", Password = "swarali", Role = Role.Admin },
@@ -22,7 +23,7 @@ namespace WebApi.Services
             new User { Id = 3, FirstName = "Rutuja", LastName = "T", Username = "rutuja", Password = "rutuja", Role = Role.User },
             new User { Id = 4, FirstName = "Vishwambhar", LastName = "K", Username = "vishwambhar", Password = "vishwambhar", Role = Role.User },
             new User { Id = 5, FirstName = "Rohit", LastName = "W", Username = "rohit", Password = "rohit", Role = Role.Admin },
-            };
+        };
 
         private readonly AppSettings _appSettings;
 
@@ -35,20 +36,24 @@ namespace WebApi.Services
 
         public User Authenticate(string username, string password)
         {
-
             // access validate method of repository
-            
+      
             var user = _users.SingleOrDefault(x => x.Username == username && x.Password == password);
 
             // return null if user not found
             if (user == null)
                 return null;
 
+
+
+
             // authentication successful so generate jwt token
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(_appSettings.Secret);
             var tokenDescriptor = new SecurityTokenDescriptor
             {
+                //What kind of information to be 
+                //Written in side Token
                 Subject = new ClaimsIdentity(new Claim[] 
                 {
                     new Claim(ClaimTypes.Name, user.Id.ToString()),

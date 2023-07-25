@@ -1,0 +1,269 @@
+25/7/2003
+___________________________________________________
+Agenda:
+
+	SDM:
+	    ECommerce Solution 
+			Plan, Gather,  Analyze, Design, Develop, Test, Deploy
+	    SDLC Phases 
+		1.Requirement Gathering
+				Bussiness Requirement Specification (BRS)
+				Software Requirement Specification (SRS)
+		Analysis
+				OOA
+				Abstraction, Encapsulation,
+				Modularity, Coupling
+				Software  + data
+
+		Design
+				Data:
+				     DFD-----Data Flow Diagram
+				     UML-----Unified Modelling Diagrams
+						Use Case Diagram
+						Sequence Diagram
+
+	________________________________________________________________	
+		Development
+				
+			
+			Creating Solutoin
+				Creating Projects
+					Adding references to external libraries
+					Classes,Interface, Delegate, Events
+					Collectoion Framework
+
+					File I/O Operations
+					Database Connectivity
+					Core .net framework topics
+
+
+
+
+
+		Testing
+		Deployment
+		Support(Maintainance)
+
+	    	Waterfall Model
+
+		Spiral Model
+		      Agile Methodology
+	asp.net Security
+	
+	ECommerce Application:
+	
+	Web Based Application
+Online Application
+	Functional Requirement
+		Product Catalog
+		Shopping Cart managment
+		Order Processing
+		Customer Relationship Managment(CRM)
+		Payment Processing
+		Shipment
+	
+	Non Functional Requirement
+
+		1.Scalability---------container solution
+		2.Durability----------Cloud Computing(EC2 instance)
+		3.State Management-----Session
+		4.Responsiveness-------
+			Dependency injection of Services
+			Reduce round trips client & server
+		 	(SPA --React)---asynchronous rest api calling
+		 	+(Web API Controllers)----using layered archiecture
+						  with services integration
+			For bulk data manipulation shift logic to Stored Procedures
+
+		5.Integrtity
+			   Reusable Libraries
+			   Layered Architecture
+			   Use DRY, KISS
+			   Decoupled Solution  with the help of requable libaries
+		6.Security
+
+
+		Security within application is implmented using 
+
+
+			a. Authenticaion
+				Who are you ?
+				Identify User
+			
+			b. Authorization
+				Are you eligible to Access functionality ?
+				Are you member of Security Group
+					Security Group is defiend by Roles
+					Each Role will have persmission levels
+					Each permisssion in permission level with allow or deny Access
+
+
+		Each authenticated User should submit claim  to request for Secure Web Access
+
+		Claim :
+
+			Claim Based Authentication
+
+
+		How do you implment Authentication & Authourization in Asp.net 
+
+ASP.NET Framework:
+	Different Types of Authentication
+
+	1.Windows Authentication
+		Windows Server Operating System will maintain User Credentials in  active directory
+		Each organization keeps one dedicated server for storing User and Groups information
+		such server is called as Domain Controller
+				domain controller consist of Active Directory
+
+		Whenever asp.net framwork application is deployed to  IIS  Web Server
+		IIS is integrated Webserver alongwith Windows Server Operating System
+
+
+	2.Form based Authentication
+		In Request Response life cycle of asp.net framework application; requrest are pass through 
+		HTTP Pipeline.
+
+		HTTP Pipline is made up of set of HTTP modules which intercepts incomming requests and 
+		intercpets outgoing responses.
+
+		in ASP.net Framework pipeline AuthenticationModule is responsible for redirecting incomming 
+		request for authencation purpose to login.aspx or Login action method of as.net framework
+		
+		in web.config
+			
+			<authentication  mode="Forms/>
+
+	3.Passport Authentication
+		Authentication provider will be responsible for verifying clients credentials.
+		Authentcation provides are Microsoft, Google , FaceBook,..........
+		Token based Authencation:
+
+		Web Token:
+		   OAuth Token
+		JWT Token
+		
+		JSON Web Token is a proposed Internet standard 
+		for creating data with optional signature and/or optional encryption
+		whose payload holds JSON that asserts some number of claims. 
+		The tokens are signed either using a private secret or a public/private key.
+
+
+
+	ASP.NET Core
+
+		Web Application consist of Set of reusable REST API
+		Secure Web API
+			means calling client request will be  process based on claim submitted by calling person/ application
+		asp.ner core application should implement  JWT Token Authentication
+
+
+		Web Application could be 
+
+			B--2--C ( Bussiness to  Consumer)------- MVC Application-------
+			B--2--C ( Bussiness to Bussiness )------ MVC Application --------accessing -------Web API
+
+
+
+Steps to implment JWT Token for asp.net core Application
+	1.Create asp.net coer Web API Project.
+	2.Add JWT Token Dependency Refernces
+			using Visual studio : 
+			Go to dependencies 
+			Add references to following packages using Nugget Package manager
+			using dotnet add package command  ( using vs code and .net core runtime)
+			
+			Swashbuckle.AspNetCore
+			Microsoft.AspNetCore.OpenApi
+			System.IdentityModel.Tokens.Jwt
+			Microsoft.AspNetCore.Authentication.JwtBearer
+
+	3.Add WebAPI Controller UsersController
+	4.Add POST, GET action methods to UsersController
+			Authenticate
+			GetAll
+			GetById
+	5.Add Entities to Web API project
+			User.cs
+			Role.cs file
+	6.Add Services folder to UsersController
+			a.Add IUserService Interface with method declaration
+			b.Add UserService class implementing IUserService Inteface
+			c.Implemnt logic for each Interface method.
+			d.Define List<Users> with their personal details and password
+			e.Add Logic to generate JWTToken after validating user credential from users List
+			
+ 
+
+
+
+
+
+
+
+
+
+					
+
+
+
+ 
+
+
+
+		
+			Passport Authentication
+					(Facebook authentication,
+					 Google authentication,
+					 Outlook authentication)
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	_____________________________________________________________
+
+	Software Development Methodologies
+
+		Software Testing
+		STLC
+		Why Software
+		V-Model
+		Testing Related Templates
+		Software Testing Types
+

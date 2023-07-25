@@ -6,12 +6,14 @@ using System;
 
 namespace JWTAuthentication.Controllers
 {
-    [Authorize]
+
+    //Define your Web API as secure Web API
+    [Authorize]   // Filter
     [ApiController]
     [Route("[controller]")]
     public class UsersController : ControllerBase
     {
-          private IUserService _userService;
+        private IUserService _userService;
 
         public UsersController(IUserService userService)
         {
@@ -22,15 +24,18 @@ namespace JWTAuthentication.Controllers
         [HttpPost("authenticate")]
         public IActionResult Authenticate([FromBody]AuthenticateModel model)
         {
-            Console.WriteLine("authenticate is called.");
-            
+            Console.WriteLine("authenticate is called."); 
             var user = _userService.Authenticate(model.Username, model.Password);
-
             if (user == null)
                 return BadRequest(new { message = "Username or password is incorrect" });
-
             return Ok(user);
         }
+
+
+
+
+
+
 
         [Authorize(Roles = Role.Admin)]
         [HttpGet]
