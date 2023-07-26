@@ -1,0 +1,9 @@
+https://www.browserstack.com/guide/how-to-create-selenium-test-cases
+
+
+Download and install Selenium Webdriver setup
+
+https://www.edureka.co/blog/create-selenium-maven-project/
+
+
+https://www.edureka.co/blog/create-selenium-maven-project/

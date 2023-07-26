@@ -1,0 +1,29 @@
+we will take a closer look at the email sending flow. 
+
+1. A user writes an email on webmail and presses the “send” button. The request is sent to the load balancer.
+
+2. The load balancer makes sure it doesn’t exceed the rate limit and routes traffic to web servers.
+
+3. Web servers are responsible for:
+      - Basic email validation. Each incoming email is checked against pre-defined rules such as email size limit.
+      - Checking if the domain of the recipient’s email address is the same as the sender. If it is the same, email data is inserted to storage, cache, and object store directly. The recipient can fetch the email directly via the RESTful API. There is no need to go to step 4.
+
+4. Message queues.
+      4.a. If basic email validation succeeds, the email data is passed to the outgoing queue. 
+      4.b. If basic email validation fails, the email is put in the error queue.
+
+5. SMTP outgoing workers pull events from the outgoing queue and make sure emails are spam and virus-free.
+
+6. The outgoing email is stored in the “Sent Folder” of the storage layer.
+
+7. SMTP outgoing workers send the email to the recipient mail server. 
+
+Each message in the outgoing queue contains all the metadata required to create an email. A distributed message queue is a critical component that allows asynchronous mail processing. By decoupling SMTP outgoing workers from the web servers, we can scale SMTP outgoing workers independently. 
+
+We monitor the size of the outgoing queue very closely. If there are many emails stuck in the queue, we need to analyze the cause of the issue. Here are some possibilities:
+
+- The recipient’s mail server is unavailable. In this case, we need to retry sending the email at a later time. Exponential backoff might be a good retry strategy.
+
+- Not enough consumers to send emails. In this case, we may need more consumers to reduce the processing time.
+
+The email receiving flow will be explained in my next post. If you have any questions, please leave a comment. 

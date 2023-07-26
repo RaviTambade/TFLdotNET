@@ -1,0 +1,121 @@
+
+
+        Smoke Testing
+		Sanity Testing
+		Unit Testing
+		Integration Testing
+		Functional Testing
+		Keyword Testing
+		Regression Testing
+		Data Driven Testing
+
+
+
+
+        Smoke Testing
+
+        The term smoke test originated from 
+        the practice of construction workers injecting smoke into water pipelines to validate that they do not leak,
+        which helps avoid floods. In the context of technology, the phrase smoke test comes from hardware testing. 
+        A new board is plugged in, and the power is turned on. 
+        If there is smoke coming from the board, the power is turned off and testing is ceased.
+
+        In the software realm, smoke testing checks the core functionality of a program to ensure the program is ready for further testing. 
+        This prevents a QA team from attempting to run a full test of software that can’t complete basic functions.
+
+        Smoke testing in technology is now broadly used to test product features in a limited time. 
+        If key features don’t work, or if key bugs haven’t been fixed, testing is ceased so that further time is not wasted installing or testing the build.
+        Fixing the identified issues becomes the programmer’s top priority.
+
+        The Purpose and Importance of Smoke Testing
+        The main purpose of smoke testing is not to find bugs in the software but rather to let the system test team know what their starting point is. 
+        Smoke testing provides a goal for the developers and lets them know when they have achieved a degree of stability. 
+        The trick to establishing a good smoke test is to create a group of tests that are broad in scope, as opposed to depth.
+
+        Smoke tests disqualify bad builds at a low cost, making it easier to cope with frequent (e.g. daily) builds. 
+        Smoke tests are often automated and standardized from one build to the next.
+        They test things that are expected to work, and if they don’t, it may mean the program was built with the wrong file or that something basic is broken.
+        A smoke test is most useful for bug fixes and for looking for inadvertent interactions between existing and new functionality.
+
+        
+        Characteristics of Smoke Testing
+        
+        a.Runs quickly (the measure of “quickly” depends on the specific situation).
+        b.Enables self-scoring, as any automated test should do.
+        c.Provides broad coverage across the system.
+        d.Can be run by developers as well as part of the quality assurance process.
+        e.Exposes basic errors in a new build, though it need not be exhaustive.
+
+
+
+        Advantages of Smoke Testing
+        a.Minimizes integration risks.
+        b.Improves the quality of the end-product.
+        c.Uncovers functional errors as well as architectural and component-level design defects.
+        d.Helps diagnose errors.
+        e.Simplifies corrections by associating tests with incremental new builds and rebuilds.  
+
+
+        Who Can Do Smoke Testing?
+        The smoke test is an important part of the deployment process, 
+        so the test team should be aware of the application features that are at the core of the business functionality. 
+        The person in charge of the smoke testing should also be able to test every module of the application.     
+
+        After performing the smoke testing, the tester should also be able to approve or reject the deployed build. 
+        In cases where the build is rejected, the tester should provide feedback to the development team and process the information efficiently.
+
+
+        The Automation of Smoke Testing
+        To build a smoke test, the test team first determines which parts of the application make up the high-level functionality. 
+        The team then develops automated procedures for testing the major parts of the system.
+
+        In this context, refers to the basic operations that are used most frequently. 
+        These operations can be exercised to determine if there are any small or large flaws in the software.
+
+        Examples of major functions include logging in, adding records, deleting records, and generating reports. 
+        Smoke tests may also comprise a series of tests to verify 
+                the database points to the correct environment, 
+                the database is the correct version, 
+                sessions can be launched, 
+                all screens and menu selections are accessible, 
+                and data can be entered, selected and edited.
+
+        When automating tests, the smoke test should be the first series of tests to automate. 
+        Smoke testing through automation is a huge benefit and value to customers as well as a time and cost control for businesses. 
+        Build verification tests are added to the library of reusable scripts, and performing a smoke test may require 1-2 days.
+
+        When testing the first release of an application, the test team may want to perform a smoke test on each segment of the system. 
+        This enables test development initiation as soon as possible without waiting for the entire system to become stable.
+
+
+
+        What Is Sanity Testing?
+        Smoke testing is sometimes confused with sanity testing. However it is different. 
+        A smoke test is done first and does not go further than that.
+        Sanity testing is done during the release phase to check the main functionalities of the application without going deeper. 
+        Sanity testing is is also a subset of regression testing.
+
+        As an example of how sanity and smoke testing compare, 
+        in a project’s first release, a development team releases the build for testing. 
+        The test teams then test the build. 
+        Smoke testing involves testing the build for the first time in order to accept or reject the build.
+
+        If the test team accepts the build, then the build goes on for further testing.
+        Imagine the build has three modules: 
+            Login, Admin, Employee. 
+        The test team tests these main functionalities of the application without going deeper. 
+        This is sanity testing.
+
+
+
+        Smoke Testing Is a Critical Step
+        The smoke test is an important part of the testing process cycle and must not be skipped in any release. 
+        The smoke test identifies issues so that they can be fixed before proceeding.
+
+        Sacrificing the quality of smoke testing could have negative consequences that affect users and impact the business model. 
+        If the application is not able to allow users to complete simple actions, like accessing the application or logging into the application, 
+        they may look for an alternative, and that leads to a business losing a customer—something nobody wants.
+
+        Additionally, if the application is for internal operations, it can stop or delay business operations 
+            until the development team is notified and able to work on the fix. 
+        Smoke testing reduces rework and avoids in-depth testing of a system that is not stable.

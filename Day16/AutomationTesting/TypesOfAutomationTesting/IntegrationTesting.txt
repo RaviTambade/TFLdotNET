@@ -1,0 +1,68 @@
+
+
+What Is Integration Testing?
+Integration testing is known as the second level of the software testing process, following unit testing. 
+Integration testing involves checking individual components or units of a software project to expose defects and problems 
+to verify that they work together as designed.
+
+
+As a rule, the usual software project consists of numerous software modules, many of them built by different programmers. 
+Integration testing shows the team how well these disparate elements work together. 
+After all, each unit may function perfectly on its own,
+but the pressing question is, “But can they be brought together and work smoothly?”
+
+So, integration testing is the way we find out if the various parts of a software application can play well with others!
+
+
+Why Perform Integration Testing?
+
+Other than the fundamental truth that developers must test all software applications before releasing them to the public,
+there are some specific reasons why developers should perform integration testing.
+
+A.Incompatibility between software modules can cause errors
+B.Developers must confirm that every software module can interact with the database
+C.Requirements change, thanks to client input. However, maybe those new requirements haven't been thoroughly tested yet and should be
+D.Every software developer has their understanding and programming logic. Integration testing ensures that these various units function smoothly
+E.There may be potential problems with hardware compatibility
+F.Modules often interact with third-party APIs or tools, so we need integration testing to verify that the data these tools accept is correct
+
+
+Advantages of Integration Testing
+1.Integration testing ensures that every integrated module functions correctly
+2.Integration testing uncovers interface errors
+3.Testers can initiate integration testing once a module is completed and doesn’t require waiting for another module to be done and ready for testing
+4.Testers can detect bugs, defects, and security issues
+5.Integration testing provides testers with a comprehensive analysis of the whole system, dramatically reducing the likelihood of severe connectivity issues
+
+
+
+Challenges of Integration Testing
+Unfortunately, integration testing has some difficulties to overcome as well.
+
+A.If testing involves dealing with two different systems created by two different vendors, 
+    there will be questions about how these components will affect and interact with each other
+B.Integrating new and legacy systems demands many testing efforts and potential changes
+C.Integration testing becomes complex due to the variety of components involved (e.g., platforms, environments, databases)
+D.Integration testing requires testing not only the integration links but the environment itself, adding another layer of complexity to the process
+
+
+Guidelines for Integration Testing
+If you are attempting integration testing, keep these guidelines in mind:
+
+1.First, don’t initiate integration testing until each module has undergone functional testing first
+2.Module testing should follow an accepted sequence not to overlook any integration scenarios
+3.Agree on a test case strategy to prepare and execute test cases in conjunction with the test data
+4.Study the application’s architecture and structure, identifying the most important modules to be tested first. Also, identify every possible scenario
+5.Design test cases that will create detailed interface verification
+6.Input data is vital to conducting reliable integration testing, so choose test case execution input data wisely
+7.Generate reports on any bugs found. Send bug reports to the developers, have them fix the errors, then conduct testing again
+
+
+
+
+
+
+
+
+
+

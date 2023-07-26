@@ -1,0 +1,686 @@
+
+
+
+https://www.scientecheasy.com/2020/07/selenium-webdriver-architecture.html/
+
+
+Selenium Automation Testing Tutorial for Beginners
+
+The testing of software application is an important and essential part of the software development life cycle (SDLC).
+In the current world scenario, the demand for delivery of software application on time is increasing day by day by maintaining the highest standards of quality.
+
+To fulfill these challenges, test automation plays an important role in SDLC by speeding up the testing process and increasing test coverage as well.
+
+Test automation reduces the need of human interaction and helps a tester to carry out testing in a more effective manner by saving time from repetitive and boring tasks.
+
+
+What is Automation Testing?
+
+Automation means the execution of a program without interaction of human beings. The execution of the test cases by using an automation tool or third-party tool is called automation testing or simply test automation.
+
+Test automation is a process of automating the manual process to test an application or software. In automation testing, we use a separate testing tool in which the test script is created and executed repeatedly.
+
+It helps to check expected results and actual results obtained by running automation scripts.
+
+
+Test automation mainly focuses on automating repetitive, tedious, and manual tasks. The main objective of test automation is to perform
+
+	testing better
+	faster
+	reliable
+	time-saving
+	accuracy improvement
+	reducing human-generated error ways
+
+
+Why testing is necessary or Why should we do testing?
+
+Testing is done/required in a system because we all make mistakes. Some of those mistakes are not important but some of them are expensive or dangerous.
+
+Therefore, we need to check or identify bugs or defects in the software application after making a product or application because humans make mistakes all the time.
+
+
+Trying to find defects or bugs is an essential part of any application or product development because we are currently unable to produce defect free-system.
+
+Since we assume that our work may have mistakes or bugs, hence we all need to check our own work. However, bugs may happen due to wrong assumptions. The ultimate goal of testing is to provide improvement in the quality of products.
+
+To achieve these test goals, every test process contains planning activities such as what is needed, what should be tested, and how should execute those test cases.
+
+There is also a universal rule that it is not possible to find and identify all defects and to test everything due to enough time. Let’s take an example of testing of a very simple product – a ballpoint pen.
+
+Suppose a company makes ballpoint pens and wants to sell them. Before selling in the market, they give one to own working tester with an instruction to test it. This pen can be called as a test object.
+
+Now tester will test many different things about the pen. They may be as follows:
+
+1. Does the pen write in the right color and with right line thickness?
+2. Is logo on the pen according to company standards?
+3. Is the pen comfortable for people in writing?
+
+We hope that you will have understood from the above example, why testing is required? and why should do testing?
+
+
+Why Testing is important in Software development?
+
+Testing is very important in software development or any application development because of the following factors. They are as follows:
+
+1. To identify bugs, errors, issues, or defects for making a superior product. As a tester, if you identify the bugs as much as on the software application, you will have to report bugs to the software developer. The developer will come up with fixing bugs.
+
+During this process, the application becomes stable. Once the application becomes stable, it will improve the quality of the application.
+
+
+	By identifying and fixing bugs, the quality of application or software can be improved so that we can give Quality Assurance product to the client and leads to better customer satisfaction. It can indirectly lead to higher revenue.
+
+	To cut down costs.
+
+	To Optimize speed and efficiency.
+
+
+The objective of the testing is to identify bugs or defects in the application for improving the quality of application. But quality cannot be added to application or any product only at the end by testing. It should be built-in right from start.
+
+To check the quality at every development stage by testing is an essential and important part of the development of applications with desired quality.
+
+
+How to test?
+
+Testing an application or software can be done in the following ways. They are as follows:
+
+1. Manually
+2. Automation by using Selenium, WinRunner, LoadRunner, QTP.
+3. Combination of both Manual and Automation.
+
+Now we hope that you understand the importance of Testing but here, a question arises why Automation Testing is required and where we can also do manually?
+
+Why is Automation Testing required?
+
+Automation Testing is required due to the following reasons. They are as follows:
+
+1. Manual Testing is not accurate at all times due to human-generated error. Hence, it is less reliable.
+
+2. Manual Testing is time and money consuming. Automation testing reduces the overall testing cost and human effort.
+
+3. Test automation does not require human intervention. We can run the automated test without attending. Unattended execution of test scripts saves time and human effort.
+
+4. Automation testing improves accuracy and reduces human-generated error.
+
+5. Automation increases the speed of test execution. It can perform testing much faster than a human can.
+
+6. It supports the execution of repeated and parallel test cases.
+
+7. Automation testing is more reliable than manual testing.
+
+
+Let’s understand with real-time examples how automation testing saves time and human effort over manual testing.
+
+Realtime Example 1:
+
+Suppose you have to go from place A to place B which is 1 km apart. There are multiple ways to go from A to B. Manually, you can go by walk but it will take more time.
+
+Another way is by using some vehicles like a bike, car, bus, etc. It will save time. Here, the vehicle is nothing but an automation tool.
+
+
+Realtime Example 2:
+
+Suppose you are working for an IT company and you have to execute around 500 test cases manually then how many test cases can you execute manually?
+
+You can execute 50 to 60 test cases manually per day. Here, per day means 8 hours working in the company.
+
+Thus, executing all these 500 test cases will take time around 9 to 10 days. Now suppose Technical Lead came and says that you will have to execute all these 500 test cases in 4 to 5 days then what will you do?
+
+
+In this case, you will have to go for automation testing but it is not possible to execute entire testing. Means 100% testing is not possible using automation but the majority of test cases can be executed.
+
+
+Suppose 400 test cases can be automated and the remaining 100 test cases are not applicable for automation. In this case, we will use manual testing.
+
+So, it will take around 2 days manually where 400 test cases will take time 0 days because once test scripts are ready and working fine then we will put all these test cases in run mode at any time (day or night) and leave them to execute all test cases.
+
+When the execution process is completed, we will check the results that how many test cases are passed or failed by taking screenshots? That’s why it will take 0 days but take some time to execute all test cases.
+
+Thus, we have taken around two days to execute all test cases and have saved time.
+
+
+
+Which test cases should be automated?
+
+Automation testing is to support the manual testing process and not replace it. Achieving automation with 100% functionality cannot be done. 100% test automation is a myth, just like 100% test coverage.
+
+There is the following criterion to consider in determining which test cases can be selected for automation. They are:
+
+1. High risk and critical test cases.
+
+2. When there is a repetition of test cases or a need to run test cases number of times in a test cycle. For example, regression test scenario.
+
+3. Test cases that are very tedious and difficult to perform manually.
+
+4. Test cases which are a lot of time-consuming then you should go to automate your test cases.
+
+5. Automated testing is also the best way to complete the testing efficiently when it comes to load testing.
+
+6. Automation testing plays an important role when you need to run the same test cases with multiple sets of input data. For example, testing the login page with different sets of input data. The Data-driven automation testing framework is the best way to use for minimizing your effort and time.
+
+The test data is fetched from external sources such as an excel sheet and passes the multiple data to each test case. But in the manual test case, you get bored with testing the same functionality, and chances to get error will be increased.
+
+7. When there is a requirement of running test cases in a different order. In this scenario, you can design scripts for getting the order but in manual testing, you will have to remember the order, or you will write the order in some other files (.doc, .txt, or excel).
+
+8. Automation testing is very useful if you want to generate the test report. Mostly all automated testing tools generate test reports automatically when the test cycle completed. This will make the job easy for identifying defects or errors.
+
+Keeping these key points in mind, you can find the best systematic approach in any given testing situation and can achieve the quality output in your project.
+
+
+Now, look at the following types of test scripts that you can target for automation.
+
+	Functional regression test scripts
+	Sanity test scripts
+	Verification test scripts
+	Load testing scripts
+	Any script that is executed multiple times
+	New functionality scripts in which core features have to be tested.
+
+
+
+
+Which test cases not automate?
+
+The test cases which are not suitable for automation are as follows:
+
+1. When test cases are newly designed and not executed manually at least once then it is not suitable for automation.
+
+2. When the requirements of test cases are often changing then it is not suitable for automation.
+
+3. Those test cases for which input data or expected data is not known, you should not go for automation.
+
+4. Complex test cases which involve multiple steps unrelated to each other.
+
+5. Test cases that need urgent bug fixes or deployment.
+
+6. Test cases that take less time to execute manually rather than using automation.
+
+7. Test scripts that produce unpredictable test results.
+
+
+
+Benefits/advantages of Automation Testing over Manual Testing?
+
+Test automation is essential for any software testing process and provides great benefits in improving the quality and reliability of the results. Some of the key benefits of automation testing over manual testing are as follows:
+
+1. Automation Testing is 75% faster than manual testing. So, we can get better speed in the execution of test cases because it reduces test execution time. In short, automation testing increases test execution efficiency.
+
+2. One of the main benefits of using test automation is that it supports the execution of repeated test cases. This is because a repetitive type of testing is very cumbersome and expensive to perform manually, but it can be automated easily by using automation tools.
+
+3. Test automation supports parallel execution. We can run multiple tests in parallel with multiple sets of test data in different operating systems and browsers.
+
+4. The advantage of using test automation is that it improves accuracy and reduces human-generated error. It also helps to find defects early and fixing them as well.
+
+5. Automated execution of test cases saves time and money. It reduces the cost of software maintenance. It helps to reduce wastages.
+
+6. Human intervention is not required during the execution of test cases. Tests can be triggered without dependency on humans.
+
+7. The test script for automation can be reused. Automation helps to create reusable test cases that facilitate the execution of a consistent set of test cases.
+
+8. In automated testing, we can easily analyze test results at the end of execution by determining the number of test cases that passed or failed. If a test case is failed, we can easily analyze the reasons for its failure.
+
+But in the case of manual testing, it may be difficult to reproduce test results because exact conditions at the time of failure may not be precisely known.
+
+9. Test automation provides a testing team to have better test coverage for stability.
+
+10. With test automation, a testing team can run the test cycle efficiently and plan the overall test strategy in an optimal manner.
+
+
+
+Disadvantages/Risks of Automation Testing in Selenium
+
+Automation testing provides better test execution efficiency and accuracy but we should also have aware of disadvantages/risks associated with automation. Let’s have a look at them.
+
+1. The tester should have good programming skills because all the testing tools provide a scripting language to create test scripts.
+2. 100% test automation cannot be achieved because all business scenarios or test cases cannot be automated. It requires lots of development efforts.
+3. The initial cost to start an automation project is very high because we will have to purchase the automation tool for testing. If we purchase the license automation tool, we can use all the commands available in the tool. But we can not use all the commands in the trial version.
+4. The cost of maintaining the test script and data can be expensive. Scripts require to be regularly updated as per the data changes in the application.
+5. Automation testing tools cannot be used to rate and analyze the usability of the application.
+6. Testing team must be required time for tool selection and framework design.
+7. No single automation tool can support all applications and GUI objects.
+
+
+Myths of Test Automation
+
+Some myths about test automation are as follows:
+
+1. 100% automation is possible but in reality, it is not possible and not recommended.
+2. Test automation saves a lot of time but in reality, it depends on test automation strategy.
+3. Test automation scripts are faster than manual testing but in reality, it is not always true.
+4. Test automation eliminates needs for manual efforts but in reality, it is not true because scripts need regular maintenance.
+5. It generates more defects than manual testing but it is not true.
+
+
+
+15 Difference between Manual Testing and Automation Testing
+
+Manual Testing
+
+1. Manual testing is a process which is conducted manually without taking the help of any automation tool
+2. All the phases of software testing life cycle (STLC) such as test planning, test deployment, result analysis, test execution, bugs tracking, and reporting tools come under the category of manual testing and is conducted all phases successfully by human efforts.
+3. Without starting manual testing, we cannot start automation testing.
+4. Manual testing is not accurate all the time due to human generated errors. Therefore, it is less reliable.
+5. Manual testing is slow and time-consuming. It takes lots of time.
+6. In manual testing, investment is required for human resources.
+7. In manual testing, testers can do Random Testing to find bugs.
+8. We can find more bugs in manual testing by error guessing than automation testing.
+9. Manual testing is not useful in case of long-running and repetitive testing. The results might be inconsistent and error-prone.
+10. In manual testing, Regression testing process is difficult to perform.
+11. It is not costly.
+12. To execute the test cases manually, more testers are required.
+13. This testing is considered as low quality.
+14. Batch testing cannot be performed in manual testing.
+15. There is no need of programming language in manual testing.
+
+
+Automation Testing
+
+1. Automation testing is a process which is conducted with the help of automation tools.
+2. In automation testing, all phases of STLC are conducted by the various open-source and purchased tools such as selenium, QTP, J meter, Load Runner, Win Runner, etc.
+3. Automation testing is a continuous process of manual testing.
+4. Since Automation testing is performed by tools or scripts. So it is more reliable.
+5. Since automated testing is performed by software tools. So, it is faster than any manual approach and takes less time.
+6. Investment is required for testing tools in the case of automation testing.
+7. Tester always tests through running test script in case of automation testing.
+8. In automation testing, we cannot find more bugs by error guessing.
+9. Automated testing can be consistent and free from human-generated errors in such cases.
+10. In automation testing, Regression testing process is easy to perform by tools.
+11. Initial cost of automation testing is more than manual testing but useful always.
+12. After making the Automation test suites, fewer testers are required to execute the test cases.
+13. This testing is considered as high quality.
+14. Multiple types of batch testing can be performed in automation testing.
+15. Need for programming knowledge must be in automation testing.
+
+
+When to use Manual vs Automated Testing?
+
+____________________________________________________________________________________________________________________________________________________
+
+Manual Testing is best suited to the following scenarios. They are as follows:
+
+1. Exploratory Testing:
+
+This kind of testing needs tester’s knowledge, experiences, analytical and logical skills, creativity, and intuition. 
+This testing is most useful when
+
+	The specification documents have been poorly written
+	Not much is known about functionality specifications
+	When there is no enough time to come up with a detailed design.
+We require human skills to execute the exploratory testing process in this scenario.
+
+
+2. Usability Testing:
+
+This testing is done when we need to measure how much software or application product is user-friendly, efficient, and convenient for the end-users. In this testing, human observation is the most important factor. Therefore, the manual approach is more preferable.
+
+3. Ad-hoc Testing:
+
+Adhoc testing is that kind of testing that is performed without any formal test plan, test scenario, test cases, or test data. Testers try to test software application with different combinations of functionalities on the basis of understanding, experiences, and error guessing.
+
+This testing also helps to identify some hidden bugs/defects that might have been missed in all previous test efforts.
+
+
+_________________________________________________________________________________________________________________________________________________
+
+Automated testing is preferred in the following scenarios. They are as follows:
+
+1. Regression Testing:
+
+Regression testing is a type of testing which is performed in a timely manner when the code is frequently changed. It is the most important software maintenance activity to ensure quality, reliability, and validation of software after modification.
+
+It is regarded as expensive activity. Hence, Regression testing is best-suited for automation testing.
+
+
+2. Load Testing:
+
+Load testing is a type of non-functional software testing which is done to understand the behavior of the application under a specific expected load.
+
+If the code is changed several times, it is also better to perform load testing again. Thus, automated testing is the best way to complete the load test efficiently.
+
+
+3. Repeated Execution:
+
+Automated testing is a very useful way when you have to perform repeated execution of the same test cases.
+
+
+
+4. Performance Testing:
+
+This kind of testing is done to determine the speed, responsiveness, and stability of a software application. It helps to identify the nature or behavior of a software application under its expected workload. Automated testing is the best way to conduct performance testing.
+
+
+
+
+_________________________________________________________________________________________________________________________________________________
+
+
+What is Selenium?
+
+Selenium is a free and open-source functional automation testing tool that is used to test the functionality of the web-based application. It is originally developed by Jason Huggins in 2004.
+
+Selenium framework is one of the most popular and well-known testing frameworks in the world that is in use. Selenium has been built using JavaScript which can work in any browser that supports JavaScript.
+
+Basically, testing is mainly divided into two categories:
+
+	Functional testing
+	Non-functional testing
+
+
+
+In functional, we have two kinds of testing: Manual testing and Automation Testing.
+
+In manual testing, our main activity is to write the test cases. These test cases will be executed manually by some resources.
+
+But when coming to automation testing, all the manual test cases will be converted into test scripts with the help of some automation tools like Selenium, QTP, RFT, etc.
+
+Thus, the process of converting manual test cases to test scripts with the help of some automation tool is called automation testing. The main advantage of using these tools is that we can save time.
+
+
+
+Why should we use Selenium?
+
+Selenium can be used as an automation testing tool due to many technical reasons. Some of them are as follows:
+
+1. Ease implementation and Usage: 
+
+Selenium tool is very easy to implement and in use. It has a very nice user interface and can be easily integrated with other popular IDEs such as Eclipse IDE, Spyder, Atom, NetBeans, and Microsoft Visual Studio, etc.
+
+2. Free, open-source, and very popular: 
+
+Selenium is a very popular and well-run open-source tool. It can be freely downloaded. Selenium is well supported and maintained by a very big supporting community.
+
+3. Reusable and extensible framework: 
+
+Selenium was extended progressively as Selenium Core > Selenium RC > Selenium Grid > Selenium WebDriver.
+
+Being an open-source tool, talented developers contribute to developing solid features in the Selenium framework that makes highly reusable and largely compatible across different platforms.
+
+Selenium is easy to integrate with various other tools such as Cucumber and behavior-driven development (BDD) and gives the flexibility to select the tools for the testing team.
+
+
+4. Easy to learn and use: 
+Selenium is a good automation tool for testers. 
+It uses the basic features of popular programming languages like Java, Python, C#, PHP, Perl, and Ruby.
+It also provides a library of functions that are easy to understand and use. 
+It does not use very complex functions and concepts that make it difficult in learning for beginners.
+
+5. Set of Jar files: 
+Selenium suite needs a set of Jar files that serve as automation tools for the purpose of testers. 
+It does not require a heavy server footprint or a client machine configuration.
+
+6. Multi-platform/multi-device support: 
+Just like Java, Selenium supports multiple operating systems such as Windows, Unix, Macintosh OS, as well as Linux.
+Selenium toolkit can be run across any platform or device as well. The test script written once in one operating system can be used across any other OS platform.
+
+7. Multi-browser support: 
+With the creation of the WebDriver tool, Selenium is enabled with several features that allow testing of web applications across multiple browsers. New versions of web browsers get supported easily with Selenium suite.
+
+8. Concurrent execution: 
+With the evolution of Selenium grid and Webdriver, automation testers can run multiple scripts in parallel across different browsers, operating systems, and devices to finish testing quickly. Parallel (concurrent) execution helps to reduce overall testing time.
+
+
+
+Selenium Components
+
+
+Selenium WebDriver
+
+
+1. Selenium WebDriver is the latest, free, and open-source library to automate the web application. It is a pure object-oriented tool.
+
+2. In 2008, Selenium RC was merged with another testing framework called WebDriver to develop a more powerful tool called Selenium 2.
+
+That’s why it is called Selenium WebDriver. Simon Stewart was the creator of Selenium WebDriver.
+
+3. Selenium WebDriver was developed to support dynamic web pages and advanced web application testing. Selenium 2.0 was released in July 2011.
+
+4. The main aim of Selenium WebDriver is to automate the web application and make sure that the website is working as expected. It contains a variety of classes and methods to meet our requirements.
+
+
+5. It supports different programming languages such as Java, Ruby, Perl, PHP, Python, and .Net to create the test scripts.
+
+6. It supports different browsers like Firefox, Chrome, Internet Explorer, Safari, etc.
+
+___________________________________________________________________________________________________________________________________________________
+
+What are the benefits of Selenium?
+
+The highlighted benefits of Selenium are as follows:
+
+1. The main benefit of choosing Selenium is that it saves costs in terms of manual test effort reduction and removal of defects quickly.
+2. The code and framework can be reused. Once the test script is ready, can be reused multiple times.
+3. Selenium supports parallel test execution with multiple data sets, devices, and platforms that saves time. Tests can be run automatically without dependency on humans.
+4. It helps in finding defects early and fix them as well.
+5. Since the automation test scripts follow the logic, therefore, manual errors such as mistyping, clicking wrong buttons, or other types of errors can be avoided using test automation.
+
+
+_________________________________________________________________________________________________________________________________________
+
+What are limitations of using Selenium?
+
+We know that Selenium is a good tool for automation, but there are some limitations that must know before using Selenium for test automation. 
+They are :
+
+1. Selenium supports the testing of only web applications. It does not support the testing of Windows applications, mobile applications, batch processes, etc.
+2. Needs solid programming skills to do “meaningful and purposeful automation testing”.
+3. The cost of automation maintenance could be high, if not coded efficiently.
+4. CAPTCHA, reCAPTCHA, and bar-code readers cannot be automated using Selenium.
+5. Selenium has neither any built-in object repository nor in-build features to read data from external sources like .xls, .csv, etc.
+
+
+________________________________________________________________________________________________________________________________________________
+
+
+Difference between Selenium and QTP
+
+Selenium
+
+1. Selenium supports almost all popular browsers such as Firefox, Chrome, IE, Opera, etc.
+2. Selenium supports operating system like Windows, Linux, and Mac.
+3. Free open source tool.
+4. It supports only testing of the web-based application.
+5. Object repository needs to be created in the selenium.
+6. It supports multiple programming languages like C#, Java, Python, Ruby, Perl, etc.
+7. We can execute tests in parallel.
+
+
+QTP
+1. QTP supports only Chrome, Firefox, and Internet Explorer browser.
+2. QTP supports only the Windows operating system.
+3. Licensed tool (Commercial tool)
+4. It supports both web and windows based application.
+5. QTP automatically creates and maintains object repository.
+6. It supports only VB script.
+7. In case of QTP, we can execute tests in parallel only using Quality Center which is again paid product.
+
+
+Note: QTP stands for Quick Test Professional which is the product of Hewlett-Packard. 
+It uses Visual Basic Scripting (VB Script) for automating web and windows based applications.
+
+___________________________________________________________________________________________________________________________________________________
+
+
+
+What is WebDriver ?
+
+WebDriver is a set of APIs (Application Programming Interface). 
+It is a pure object-oriented tool that provides a lot of capabilities to Selenium suite. 
+It provides a communication facility between languages and browsers.
+
+Basically, WebDriver is a web automation framework that was designed by Simon Stewart while he was working at ThoughtWorks.
+
+It is used to execute tests in different popular browsers such as Firefox, Chrome, IE, etc. It contains several types of abstract methods like get(), findElement(), By(), etc.
+
+
+
+
+
+What is Selenium WebDriver?
+
+Selenium WebDriver is a popular free and open-source library to automate web applications. It is the merger of two automation frameworks: Selenium and WebDriver.
+
+In 2009, Selenium RC is merged with another testing framework called WebDriver to create a new Selenium tool known as Selenium 2.0 or Selenium WebDriver. It was released in July 2011. It is the first choice of any tester to automate web application.
+
+
+
+
+Selenium WebDriver Architecture
+
+Selenium WebDriver Architecture consists of four basic components. There are as follows:
+
+1. Selenium Language Bindings.
+2. JSON Wire Protocol
+3. Browser Drivers
+4. Real Browsers
+
+
+
+
+1.Selenium Language Binding/Selenium Client/Core Libraries
+
+
+Automation scripts that interact with Selenium server through Selenium WebDriver, can be written in multiple programming languages such as Java, Ruby, Python, etc.
+
+Therefore, Selenium Developers have decided to develop language bindings or Selenium client libraries that allow selenium to support multiple languages such as Java, Ruby, Python, C#, and Javascript.
+
+Selenium Client Libraries are nothing but different kinds of Jar files. These client libraries contain classes and methods of Selenium WebDriver that are needed to create automation test scripts.
+
+Selenium core libraries can be installed using package installers available with the respective languages. For instance, suppose you want to use browser driver in Java, you will use the Java client libraries or Java jar files.
+
+
+
+Selenium client libraries is not a testing framework. A selenium client library provides an application programming interface (API) i.e. a set of functions that executes the selenium commands from the program.
+
+
+
+2.JSON wire protocol over HTTP
+
+JSON stands for JavaScript Object Notation. 
+It is a very popular data interchange format based on the subset of JavaScript Programming Language which was developed by Douglas Crockford.
+
+
+It is used to exchange data between a client and the server on the web. It supports data format available in all popular languages like Java, C#, Python, Ruby, etc.
+JSON Wire Protocol is a transport mechanism created by WebDriver developers which transfers the data between the server and a client on the web. Selenium uses JSON to transfer data between a client and the server.
+
+JSON wire protocol uses a REST API (Representational State Transfer Application Programming Interface) to transfer information between the HTTP server. Each browser driver such as FirefoxDriver, ChromeDriver, IE Driver, etc has its own HTTP server.
+
+
+
+Browser Drivers
+
+Selenium uses a specific driver for each browser to establish secure communication with the respective browser without revealing internal logic of browser’s functionality.
+
+This browser driver receives the requests from the language binding and invokes the relevant operations on the browser. Each type of browser has its own driver that implements WebDriver’s wire protocol for that specific browser.
+
+
+
+Real and Headless Browser
+
+
+A Browser is a software program or an application used for seeing and searching content on the world wide web. 
+Selenium Web driver supports both real and headless browsers.
+
+
+For example, if you want to automate tests with selenium web driver and execute the script in the real browser like Chrome, 
+you have to download its specific driver application.
+
+
+This must be done for all browsers that you want to use. GeckoDriver (Firefox), ChromeDriver, and IE Driver are examples of the most frequently used driver and follow the guidelines of the Selenium framework.
+
+
+
+How Selenium WebDriver works internally?
+
+In realtime scenario, when the script code is written in Eclipse IDE using any one of the supported Selenium client libraries (say Java), the program source code is executed by clicking the Right option.
+
+After clicking on Run option, Firefox browser will launch and it will navigate to the URL of the website. Now let’s understand what is happening internally after clicking the Run till the launch of Firefox browser.
+
+
+When we execute any test script using WebDriver, the following steps are performed internally.
+
+
+1. As we click on Run, the selenium client library run selenium commands from our own program and convert them into the JSON format.
+
+https://localhost:7705/ {“url”: “https://www.scientecheasy.com”} in a serialized JSON format using JSON Wire Protocol over HTTP sends to the browser driver (say FirefoxDriver) for each command. Each browser driver uses the HTTP server to receive an HTTP request.
+
+
+2. JSON Wire Protocol communicates between a client and the server by transferring the data. The browser driver receives the HTTP request through HTTP Server.
+
+The HTTP Server performs all the specific actions or instructions on the real browser and then the browser will send a request to load URL.
+
+
+3. After performing all instructions, execution status is sent back to HTTP Server over the HTTP. The browser driver again uses the HTTP server to receive the HTTP request and send it back to the client library via JSON Wire Protocol.
+
+The client library passes it back to your program. The program will report as a success or failure.
+
+
+
+Features of Selenium WebDriver
+
+
+1. Multiple Browser Support: Selenium WebDriver supports a diverse range of multiple web browser and their version such as Firefox, Chrome, Internet Explorer, Safari, Opera, etc.
+
+It also supports Headless browser called HTMLUnit browser. HTMLUnit browser is a non-conventional browser.
+
+2. Multiple Languages Support: WebDriver also supports most of the commonly used programming languages such as Java, C#, Python, Ruby, Pearl, PHP, JavaScript.
+
+You don’t have to know all of them. WebDriver provides facilities to choose any one of the programming languages based on competency and starts to create test scripts.
+
+3. Speed: WebDriver performs the faster operation as compared to other tools of Selenium Suite. Unlike Selenium RC, it does not require any intermediate server for communicating with the browser. It provides direct communication between WebDriver Client Libraries and Web Browser.
+
+4. Simple and Easy Commands: Selenium WebDriver provides very simple and easy commands to implement in the scripts. For example, If you want to launch the browser using web driver, the following commands have to use:
+
+5. Drivers, Methods, and Classes: Selenium web driver offers multiple solutions to handle some potential challenges in automation testing. It also helps the testers in an easy way to handle the complex type of web elements such as check boxes, dropdowns, and alerts with the help of dynamic finders.
+
+6. Record and Playback: Web driver does not support record and playback features like Selenium IDE.
+
+7. Dynamic Finder: It also supports dynamic finder for locating the web element on the web pages.
+
+8. Simple API commands: Since WebDriver is compact and object-oriented, abstraction and encapsulation can be used to hide irrelevant detail that makes it simple.
+
+9. Easy to install and configure.
+
+10. WebDriver also provides an option to test asynchronous web applications (e.g. Gmail, Facebook, Amazon) built using AJAX or JavaScript.
+
+
+
+
+
+
+Benefits/Advantages of Selenium WebDriver
+
+Some of the most important advantages of Selenium WebDriver are as follows:
+
+1. Selenium WebDriver is a powerful open-source, freeware, and portable tool.
+2. It supports different operating systems like Windows, Mac or Linux, etc. It also supports third-party tools such as AutoIt, Apache POI.
+3. The main advantage of using Selenium WebDriver is that it supports parallel test execution that reduces the time taken in executing the parallel test cases.
+4. Selenium web driver also supports iPhone and Android operating systems.
+5. It supports the implementation of Dynamic finder and Listener.
+6. Starting up a server in WebDriver is not required before the execution of test scripts.
+7. It can be integrated with third-party tools like TestNG and JUnit for grouping the test cases and generating test reports.
+8. By using selenium web driver, we can achieve Continuous Testing by integrating with Maven, Jenkins, and Docker.
+
+
+
+Limitations/Drawbacks of Selenium WebDriver
+
+There are some limitations that occur in selenium web driver. They are as follows:
+
+1. Selenium WebDriver can be used only to test web-based applications. We can not test Windows-based applications or desktop applications and any other software. We will have to use a third-party tool like AutoIt for testing of Windows-based applications.
+2. It is not possible to perform the testing on the image. We can perform image-based testing by integrating selenium with Sikuli.
+3. WebDriver does not generate automatically test result file. We need to integrate with third-party frameworks like TestNG or JUnit for generating test reports.
+4. WebDriver cannot support new browsers. Selenium also doesn’t support built-in add-ins assistance.
+5. CAPTCHA, reCAPTCHA, and bar-code readers can’t be automated using Selenium WebDriver.
+
+
+
+
+
+
+
+
+
+
+
+
+

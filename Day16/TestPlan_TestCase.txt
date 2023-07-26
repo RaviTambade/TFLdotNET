@@ -1,0 +1,184 @@
+
+Test Plan
+A Test Plan is a detailed document that describes the test strategy, objectives, schedule, estimation, deliverables, and resources required to perform testing for a software product. 
+Test Plan helps us determine the effort needed to validate the quality of the application under test. 
+The test plan serves as a blueprint to conduct software testing activities as a defined process, which is minutely monitored and controlled by the test manager.
+
+What is the Importance of Test Plan?
+
+Follow the seven steps below to create a test plan as per IEEE 829
+
+1.Analyze the product
+2.Design the Test Strategy
+3.Define the Test Objectives
+4.Define Test Criteria
+5.Resource Planning
+6.Plan Test Environment
+7.Schedule & Estimation
+8.Determine Test Deliverables
+
+
+Step 1) Analyze the product
+	You should research clients and the end users to know their needs and expectations from the application
+
+		Who will use the website?
+		What is it used for?
+		How will it work?
+		What are software/ hardware the product uses?
+
+Step 2) Develop Test Strategy
+	A Test Strategy document, is a high-level document, which is usually developed by Test Manager. 
+	This document defines:
+
+		The project’s testing objectives and the means to achieve them
+		Determines testing effort and costs
+
+
+Step 3) Define Test Objective
+	To define the test objectives, you should do 2 following steps
+
+		1.List all the software features (functionality, performance, GUI…) which may need to test.
+		2.Define the target or the goal of  the test based on  above features
+
+
+What is test plan template?
+
+TEST PLAN TEMPLATE is a detailed document that describes the test strategy, objectives, schedule, estimation and deliverables, and resources required for testing. Test Plan helps us determine the effort needed to validate the quality of the application under test. The test plan serves as a blueprint to conduct software testing activities as a defined process which is minutely monitored and controlled by the test manager.
+
+Creating a Test Plan is mandatory to ensure success of your Software testing project.
+
+Help people outside the test team such as developers, business managers, customers understand the details of testing.
+Test Plan guides our thinking. It is like a rule book, which needs to be followed.
+Important aspects like test estimation, test scope, Test Strategy are documented in Test Plan, so it can be reviewed by Management Team and re-used for other projects.
+
+
+How to write a Test Plan
+
+
+
+
+What is a Test Case?
+
+A TEST CASE is a set of actions executed to verify a particular feature or functionality of your software application. 
+A Test Case contains test steps, test data, precondition, postcondition developed for specific test scenario to verify any requirement. 
+The test case includes specific variables or conditions, using which a testing engineer can compare expected and actual results to determine whether a software product is functioning as per the requirements of the customer.
+
+
+Examples of Test Cases
+
+Test Case 1: Check results on entering valid User Id & Password
+Test Case 2: Check results on entering Invalid User ID & Password
+Test Case 3: Check response when a User ID is Empty & Login Button is pressed, and many more
+
+
+How to Write Test Cases in Manual Testing
+
+Step 1) A simple test case to explain the scenario would be
+
+
+Step 2) In order to execute the test case, you would need Test Data. Adding it below
+
+
+Step 3) In order to execute a test case, a tester needs to perform a specific set of actions on the AUT. 
+This is documented as below:
+	
+	Test Case :1
+	Test Case Description:Check response when valid email and password is entered
+	Test Steps:
+		1) Enter Email Address
+		2) Enter Password
+		3) Click Sign in
+
+	Test Data:
+		 Email:ravi.tambade@transflower.in
+		Password:tfl@123
+
+Many times the Test Steps are not simple as above, hence they need documentation. Also, the author of the test case may leave the organization or go on a vacation or is sick and off duty or is very busy with other critical tasks. A recently hire may be asked to execute the test case. Documented steps will help him and also facilitate reviews by other stakeholders.
+
+Step 4) The goal of test cases in software testing is to check behavior of the AUT for an expected result. This needs to be documented as below
+	AUT: Application under Test
+
+During test execution time, the tester will check expected results against actual results and assign a pass or fail status
+
+
+	Test Case :1
+	
+	Test Case Description:Check response when valid email and password is entered
+	
+	Test Steps:
+		1) Enter Email Address
+		2) Enter Password
+		3) Click Sign in
+
+	Test Data:
+		 Email:ravi.tambade@transflower.in
+		Password:tfl@123
+	
+	Expected Result:
+		Login should be successful
+
+	Actual Result:
+		Login was successful
+	
+	Pass/Fail:
+		Pass
+
+
+Step 5) That apart your test case -may have a field like, Pre - Condition which specifies things that must in place before the test can run. 
+For our test case, a pre-condition would be to have a browser installed to have access to the site under test. A test case may also include Post - Conditions which specifies anything that applies after the test case completes. For our test case, a postcondition would be time & date of login is stored in the database		
+
+
+While drafting a test case to include the following information
+
+1.The description of what requirement is being tested
+2.The explanation of how the system will be tested
+3.The test setup like a version of an application under test, software, data files, operating system, hardware, security access, physical or logical date, time of day, prerequisites such as other tests and any other setup information pertinent to the requirements being tested
+4.Inputs and outputs or actions and expected results
+5.Any proofs or attachments
+6.Use active case language
+7.Test Case should not be more than 15 steps
+8.An automated test script is commented with inputs, purpose and expected results
+9.The setup offers an alternative to pre-requisite tests
+10.With other tests, it should be an incorrect business scenario order
+
+	
+
+Web Application Testing Checklist: Example Test Cases for Website
+https://www.guru99.com/complete-web-application-testing-checklist.html
+
+
+While testing the web applications, one should consider the below mentioned template. The below mentioned checklist is almost applicable for all types of web applications depending on the business requirements.
+
+The web application testing checklist consists of-
+
+1.Usability Testing
+2.Functional Testing
+3.Compatibility Testing
+4.Database Testing
+5.Security Testing
+6.Performance Testing
+
+
+
+Example Usability Test Cases
+
+Web page content should be correct without any spelling or grammatical errors
+All fonts should be same as per the requirements.
+All the text should be properly aligned.
+All the error messages should be correct without any spelling or grammatical errors and the error message should match with the field label.
+Tool tip text should be there for every field.
+All the fields should be properly aligned.
+Enough space should be provided between field labels, columns, rows, and error messages.
+All the buttons should be in a standard format and size.
+Home link should be there on every single page.
+Disabled fields should be grayed out.
+Check for broken links and images.
+Confirmation message should be displayed for any kind of update and delete operation.
+Check the site on different resolutions (640 x 480, 600×800 etc.?)
+Check the end user can run the system without frustration.
+Check the tab should work properly.
+Scroll bar should appear only if required.
+If there is an error message on submit, the information filled by the user should be there.
+Title should display on each web page
+All fields (Textbox, dropdown, radio button, etc) and buttons should be accessible by keyboard shortcuts and the user should be able to perform all operations by using keyboard.
+Check if the dropdown data is not truncated due to the field size. Also, check whether the data is hardcoded or managed via administrator.

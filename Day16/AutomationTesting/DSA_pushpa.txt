@@ -1,0 +1,31 @@
+DSA in Pushpa look like :
+
+Ek-katar mei log dikhe to line smje kya
+Array hai mai
+
+Kyi words ek saath dikhe to sentence smje kya
+String hai mai
+
+List sunke to-do list smje kya
+Linked list hai mai
+
+Pushpa dekhi to line mei lge kya
+Queue hai mai
+
+Case roll mei chpati rkhte ho kya
+Stack hai mai
+
+Dp sunke profile pic smje the kya
+Dynamic programming hai mai
+
+Tree sunke ped smje kya
+Binary tree hai mai
+
+Rasta btke to Google map khola kya
+Graph hai mai
+
+Rasta glt lga to, vapis aaye kya
+Backtracking hai mai
+
+Primary mei zero one-zero one pda to number smje kya
+Bit mask hai mai
