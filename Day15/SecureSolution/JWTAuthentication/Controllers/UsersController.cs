@@ -31,12 +31,6 @@ namespace JWTAuthentication.Controllers
             return Ok(user);
         }
 
-
-
-
-
-
-
         [Authorize(Roles = Role.Admin)]
         [HttpGet]
         public IActionResult GetAll()

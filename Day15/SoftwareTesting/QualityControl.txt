@@ -19,9 +19,6 @@ Quality Assurance is popularly known as QA Testing, is defined as an activity to
 	12.It requires the involvement of the whole team
 	13.The statistical technique applied on QA is known as SPC or Statistical Process Control (SPC)
 
-
-
-
 Quality Control in Software Testing is a systematic set of processes used to ensure the quality of software products or services. The main purpose of the quality control process is ensuring that the software product meets the actual requirements by testing and reviewing its functional and non-functional requirements. Quality control is popularly abbreviated as QC.
 
 	1.It is a procedure that focuses on fulfilling the quality requested.

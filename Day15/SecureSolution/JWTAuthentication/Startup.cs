@@ -37,6 +37,7 @@ namespace JWTAuthentication
             // configure jwt authentication
             var appSettings = appSettingsSection.Get<AppSettings>();
             var key = Encoding.ASCII.GetBytes(appSettings.Secret);
+            
             services.AddAuthentication(x =>
             {
                 x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -83,11 +84,14 @@ namespace JWTAuthentication
              // global cors policy
              // treat your web api as public
              // don't set any policy for trust
-             
+
+            //Rules for incomming REST API Call (Cors Policy)
             app.UseCors(x => x
                                 .AllowAnyOrigin()
                                 .AllowAnyMethod()
                                 .AllowAnyHeader());
+
+            //setting middleware for Authentication and Authorization
 
             app.UseAuthentication();    
             app.UseAuthorization();

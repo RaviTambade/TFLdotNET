@@ -48,11 +48,35 @@ Agenda:
 
 		Spiral Model
 		      Agile Methodology
-	asp.net Security
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+asp.net 
+
+Security
+	Authencation  & Authorization
 	
-	ECommerce Application:
+ECommerce Application:
 	
-	Web Based Application
+Web Based Application
+
 Online Application
 	Functional Requirement
 		Product Catalog
@@ -62,16 +86,15 @@ Online Application
 		Payment Processing
 		Shipment
 	
-	Non Functional Requirement
-
-		1.Scalability---------container solution
+Non Functional Requirement
+		1.Scalability---------Container solution
 		2.Durability----------Cloud Computing(EC2 instance)
 		3.State Management-----Session
 		4.Responsiveness-------
-			Dependency injection of Services
-			Reduce round trips client & server
+			a.Dependency injection of Services
+			b.Reduce round trips client & server
 		 	(SPA --React)---asynchronous rest api calling
-		 	+(Web API Controllers)----using layered archiecture
+		 	c.(Web API Controllers)----using layered archiecture
 						  with services integration
 			For bulk data manipulation shift logic to Stored Procedures
 
@@ -80,28 +103,28 @@ Online Application
 			   Layered Architecture
 			   Use DRY, KISS
 			   Decoupled Solution  with the help of requable libaries
+		
 		6.Security
 
 
 		Security within application is implmented using 
 
-
-			a. Authenticaion
-				Who are you ?
-				Identify User
+			a. Authentication
+				Who are you ? (	Identify User)
+				Store Credentials of User	
+				Validate User Against Credential Store
 			
 			b. Authorization
-				Are you eligible to Access functionality ?
-				Are you member of Security Group
-					Security Group is defiend by Roles
-					Each Role will have persmission levels
-					Each permisssion in permission level with allow or deny Access
-
-
-		Each authenticated User should submit claim  to request for Secure Web Access
+				Authorization is  checked against resources for authenticated users
+				I.Are you eligible to Access functionality ?
+				II.Are you member of Security Group (Role based Security)
+	
+				Security Group is defiend by set of Roles
+				Each Role will have persmission levels
+				Each permisssion in permission level 
+						with allow or deny Access to the resource
 
 		Claim :
-
 			Claim Based Authentication
 
 
@@ -110,17 +133,20 @@ Online Application
 ASP.NET Framework:
 	Different Types of Authentication
 
+	Modes of Authentication:
+	Mode=windwos or forms or Passport
+
 	1.Windows Authentication
 		Windows Server Operating System will maintain User Credentials in  active directory
 		Each organization keeps one dedicated server for storing User and Groups information
 		such server is called as Domain Controller
-				domain controller consist of Active Directory
+				Domain Controller consist of Active Directory
 
 		Whenever asp.net framwork application is deployed to  IIS  Web Server
 		IIS is integrated Webserver alongwith Windows Server Operating System
 
 
-	2.Form based Authentication
+	2.Form based Authentication (Custom Authentication)
 		In Request Response life cycle of asp.net framework application; requrest are pass through 
 		HTTP Pipeline.
 
@@ -133,9 +159,12 @@ ASP.NET Framework:
 		in web.config
 			
 			<authentication  mode="Forms/>
-
+			<authentication  mode="windows"/>
+			<authentication  mode="Passport/>
+	
 	3.Passport Authentication
-		Authentication provider will be responsible for verifying clients credentials.
+		Authentication provider will be responsible 
+				for verifying clients credentials.
 		Authentcation provides are Microsoft, Google , FaceBook,..........
 		Token based Authencation:
 
@@ -150,7 +179,11 @@ ASP.NET Framework:
 
 
 
+
+
+
 	ASP.NET Core
+
 
 		Web Application consist of Set of reusable REST API
 		Secure Web API
@@ -161,28 +194,41 @@ ASP.NET Framework:
 		Web Application could be 
 
 			B--2--C ( Bussiness to  Consumer)------- MVC Application-------
-			B--2--C ( Bussiness to Bussiness )------ MVC Application --------accessing -------Web API
-
+			B--2--B ( Bussiness to Bussiness )------ MVC Application --------accessing -------Web API
+		
+		How does security is implemented betwee two application:
+				1.Transport Level Security	
+				2.Message Level Security
 
 
 Steps to implment JWT Token for asp.net core Application
+
 	1.Create asp.net coer Web API Project.
 	2.Add JWT Token Dependency Refernces
 			using Visual studio : 
 			Go to dependencies 
-			Add references to following packages using Nugget Package manager
-			using dotnet add package command  ( using vs code and .net core runtime)
+			Add references of external libraries shown below using Nugget Package manager
+				Set of external packages to be installed:
+					a.Swashbuckle.AspNetCore.dll
+					b.Microsoft.AspNetCore.OpenApi.dll
+					c.System.IdentityModel.Tokens.Jwt.dll---------------------------**********
+					d.Microsoft.AspNetCore.Authentication.JwtBearer.dll
 			
-			Swashbuckle.AspNetCore
-			Microsoft.AspNetCore.OpenApi
-			System.IdentityModel.Tokens.Jwt
-			Microsoft.AspNetCore.Authentication.JwtBearer
+			If you are using Visual Code 
+			us command dotnet add package command"
+
+			dotnet add package Swashbuckle.AspNetCore
+			dotnet add package Microsoft.AspNetCore.OpenApi
+			dotnet add package System.IdentityModel.Tokens.Jwt
+			dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
 
 	3.Add WebAPI Controller UsersController
+
 	4.Add POST, GET action methods to UsersController
 			Authenticate
 			GetAll
 			GetById
+			
 	5.Add Entities to Web API project
 			User.cs
 			Role.cs file

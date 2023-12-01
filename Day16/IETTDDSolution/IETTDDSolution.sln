@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tester", "Tester\Tester.csproj", "{070C558B-DEF2-4ABB-846D-7ED4B5A40315}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathLib", "MathLib\MathLib.csproj", "{66CBB1C7-A158-43AC-B77B-34BA12893900}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthLib", "AuthLib\AuthLib.csproj", "{14188623-6133-4F5D-AC45-75956B460177}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{070C558B-DEF2-4ABB-846D-7ED4B5A40315}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{070C558B-DEF2-4ABB-846D-7ED4B5A40315}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{070C558B-DEF2-4ABB-846D-7ED4B5A40315}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{070C558B-DEF2-4ABB-846D-7ED4B5A40315}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66CBB1C7-A158-43AC-B77B-34BA12893900}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66CBB1C7-A158-43AC-B77B-34BA12893900}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66CBB1C7-A158-43AC-B77B-34BA12893900}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66CBB1C7-A158-43AC-B77B-34BA12893900}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14188623-6133-4F5D-AC45-75956B460177}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14188623-6133-4F5D-AC45-75956B460177}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14188623-6133-4F5D-AC45-75956B460177}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14188623-6133-4F5D-AC45-75956B460177}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
