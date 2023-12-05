@@ -103,13 +103,13 @@ To implement client-to-server streaming in SignalR, developers can use the Strea
 ## SignalR Use Cases
 SignalR is a versatile technology used in various applications requiring real-time capabilities. Here are some common use cases where SignalR can be particularly beneficial:
 
-- Multi-user collaboration: SignalR is ideal for applications that require real-time collaboration, such as collaborative document editing, project management tools, or shared whiteboards. With SignalR, multiple users can simultaneously edit or view content and see the changes reflected in realtime.
+- <b>Multi-user collaboration</b>: SignalR is ideal for applications that require real-time collaboration, such as collaborative document editing, project management tools, or shared whiteboards. With SignalR, multiple users can simultaneously edit or view content and see the changes reflected in realtime.
 
-- Live chat and messaging: SignalR can be used to build chat applications, allowing users to send and receive messages instantly. This can be useful for customer support systems, team communication platforms, or social networking applications.
+- <b>Live chat and messaging</b>: SignalR can be used to build chat applications, allowing users to send and receive messages instantly. This can be useful for customer support systems, team communication platforms, or social networking applications.
 
-- Mobile push notifications: SignalR can push real-time notifications to users, informing them about important events or updates. This can be useful for applications that require instant updates, such as stock trading platforms, news applications, or sports scoreboards.
+- <b>Mobile push notifications</b>: SignalR can push real-time notifications to users, informing them about important events or updates. This can be useful for applications that require instant updates, such as stock trading platforms, news applications, or sports scoreboards.
 
-- Multiplayer games: SignalR's realtime capabilities make it a great choice for building multiplayer games. Users can interact with each other in real time, making the gaming experience more immersive and engaging.
+- <b>Multiplayer games</b>: SignalR's realtime capabilities make it a great choice for building multiplayer games. Users can interact with each other in real time, making the gaming experience more immersive and engaging.
 
-- IoT device control: SignalR can be used in Internet of Things (IoT) applications to enable real-time communication between devices and the cloud. This can be useful for home automation systems, smart city solutions, or industrial monitoring and control applications.
+- <b>IoT device control</b>: SignalR can be used in Internet of Things (IoT) applications to enable real-time communication between devices and the cloud. This can be useful for home automation systems, smart city solutions, or industrial monitoring and control applications.
 
