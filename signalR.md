@@ -51,15 +51,15 @@ While SignalR offers many benefits for developers building chat and messaging ap
 ## What platforms are supported by SignalR?
 SignalR supports a wide range of platforms, making it a versatile choice for developers. Here are the platforms that SignalR supports:
 
-- .NET Framework: SignalR was initially built for the .NET Framework, making it a natural choice for developers using this platform. It provides a seamless integration with ASP.NET and allows developers to build real-time web applications easily.
+- <b>.NET Framework</b>: SignalR was initially built for the .NET Framework, making it a natural choice for developers using this platform. It provides a seamless integration with ASP.NET and allows developers to build real-time web applications easily.
 
-- .NET Core: With the introduction of .NET Core, Microsoft made SignalR available for cross-platform development. SignalR for .NET Core allows developers to build real-time applications running on Windows, Linux, and macOS.
+- <b>.NET Core</b>: With the introduction of .NET Core, Microsoft made SignalR available for cross-platform development. SignalR for .NET Core allows developers to build real-time applications running on Windows, Linux, and macOS.
 
-- Xamarin: SignalR also supports Xamarin, a popular cross-platform framework for building mobile applications. With SignalR, developers can add real-time functionality to their Xamarin apps and provide a rich messaging experience to their users.
+- <b>Xamarin</b>: SignalR also supports Xamarin, a popular cross-platform framework for building mobile applications. With SignalR, developers can add real-time functionality to their Xamarin apps and provide a rich messaging experience to their users.
 
-- JavaScript: SignalR provides a JavaScript client library that enables developers to use SignalR in web applications built with JavaScript frameworks like Angular, React, or Vue.js. This allows developers to create real-time web applications not tied to any specific backend technology.
+- <b>JavaScript</b>: SignalR provides a JavaScript client library that enables developers to use SignalR in web applications built with JavaScript frameworks like Angular, React, or Vue.js. This allows developers to create real-time web applications not tied to any specific backend technology.
 
-- Java: Besides Microsoft's platforms, SignalR also supports Java. Developers can use the SignalR Java client library to add real-time functionality to their Java applications, providing a great messaging experience for their users.
+- <b>Java</b>: Besides Microsoft's platforms, SignalR also supports Java. Developers can use the SignalR Java client library to add real-time functionality to their Java applications, providing a great messaging experience for their users.
 
 It's important to note that while SignalR supports a wide range of platforms, it is primarily associated with the .NET ecosystem. This means developers who prefer other programming languages or frameworks may need to rely on third-party libraries or alternative solutions for real-time communication.
 
@@ -67,30 +67,30 @@ It's important to note that while SignalR supports a wide range of platforms, it
 ## What protocols does SignalR support?
 SignalR supports multiple protocols to enable real-time communication between clients and servers. Here are the protocols supported by SignalR:
 
-- WebSockets: SignalR uses WebSockets as the primary transport protocol whenever available in the client and server. WebSockets provide a full-duplex communication channel between the client and server, allowing both parties to send and receive data in real time.
+- <b>WebSockets</b>: SignalR uses WebSockets as the primary transport protocol whenever available in the client and server. WebSockets provide a full-duplex communication channel between the client and server, allowing both parties to send and receive data in real time.
 
-- Server-Sent Events (SSE): When WebSockets are unavailable or supported, SignalR returns to using SSE. SSE is a unidirectional communication protocol where the server sends events to the client over a long-lived HTTP connection. This allows the server to push real-time updates to the client without requiring frequent polling.
+- <b>Server-Sent Events (SSE)</b>: When WebSockets are unavailable or supported, SignalR returns to using SSE. SSE is a unidirectional communication protocol where the server sends events to the client over a long-lived HTTP connection. This allows the server to push real-time updates to the client without requiring frequent polling.
 
-- Long Polling: If neither WebSockets nor SSE are available, SignalR can use long polling as a fallback option. Long polling involves the client sending a request to the server and keeping the connection open until the server has new data to send. Once the server responds, the client immediately sends another request to maintain the connection.
+- <b>Long Polling</b>: If neither WebSockets nor SSE are available, SignalR can use long polling as a fallback option. Long polling involves the client sending a request to the server and keeping the connection open until the server has new data to send. Once the server responds, the client immediately sends another request to maintain the connection.
 
 
 ## SignalR Architecture
 The architecture of SignalR is based on a client-server model and follows a hub-and-spoke pattern. It consists of the following components:
 
-- Client: The client is responsible for connecting to the SignalR server and sending/receiving messages. It can be a web browser, a mobile app, or any other client application that supports the SignalR protocol.
+- <b>Client</b>: The client is responsible for connecting to the SignalR server and sending/receiving messages. It can be a web browser, a mobile app, or any other client application that supports the SignalR protocol.
 
-- Server: The SignalR server manages connections, routes messages between clients, and handles client connection/disconnection events. It acts as a central hub for all real-time communication.
+- <b>Server</b>: The SignalR server manages connections, routes messages between clients, and handles client connection/disconnection events. It acts as a central hub for all real-time communication.
 
-- Hubs: Hubs are the main communication channels in SignalR. They abstract the underlying transport layer (such as WebSockets or long polling) and provide a high-level API for clients to send/receive messages. Hubs can be thought of as remote procedure call (RPC) endpoints that clients can invoke, and they can also broadcast messages to multiple clients.
+- <b>Hubs</b>: Hubs are the main communication channels in SignalR. They abstract the underlying transport layer (such as WebSockets or long polling) and provide a high-level API for clients to send/receive messages. Hubs can be thought of as remote procedure call (RPC) endpoints that clients can invoke, and they can also broadcast messages to multiple clients.
 
-- Transports: SignalR supports multiple transport protocols, including WebSockets, Server-Sent Events (SSE), and long polling. Transports are responsible for establishing and maintaining the connection between the client and server. The choice of transport depends on the capabilities of the client and server and is negotiated during the initial connection.
+- <b>Transports</b>: SignalR supports multiple transport protocols, including WebSockets, Server-Sent Events (SSE), and long polling. Transports are responsible for establishing and maintaining the connection between the client and server. The choice of transport depends on the capabilities of the client and server and is negotiated during the initial connection.
 
-- Connection: A connection represents a persistent communication channel between a client and the server. It allows the server to send messages to specific clients or broadcast messages to multiple clients. Each client is assigned a unique connection ID during the initial connection, which is used to identify the client in subsequent communication.
+- <b>Connection</b>: A connection represents a persistent communication channel between a client and the server. It allows the server to send messages to specific clients or broadcast messages to multiple clients. Each client is assigned a unique connection ID during the initial connection, which is used to identify the client in subsequent communication.
 
 ## Streaming in SignalR
 Streaming in SignalR is a feature that allows developers to send a continuous stream of data from the server to the clients in realtime. This is useful in scenarios where clients must receive updates or notifications as soon as they become available.
 
-- SignalR provides two types of streaming: server-to-client streaming and client-to-server streaming.
+- SignalR provides two types of streaming: <b>server-to-client streaming</b> and <b>client-to-server streaming</b>.
 - Server-to-client streaming allows the server to send a continuous data stream to multiple clients simultaneously. This can be useful for real-time dashboards, live chat, or stock market updates. SignalR handles the management of the connections and ensures that the data is delivered efficiently to all connected clients.
 
 To implement server-to-client streaming in SignalR, developers can use the Stream class provided by SignalR. They can write data to the stream, and SignalR sends it to the connected clients.
@@ -112,4 +112,3 @@ SignalR is a versatile technology used in various applications requiring real-ti
 - <b>Multiplayer games</b>: SignalR's realtime capabilities make it a great choice for building multiplayer games. Users can interact with each other in real time, making the gaming experience more immersive and engaging.
 
 - <b>IoT device control</b>: SignalR can be used in Internet of Things (IoT) applications to enable real-time communication between devices and the cloud. This can be useful for home automation systems, smart city solutions, or industrial monitoring and control applications.
-
