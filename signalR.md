@@ -90,7 +90,9 @@ The architecture of SignalR is based on a client-server model and follows a hub-
 ## Streaming in SignalR
 Streaming in SignalR is a feature that allows developers to send a continuous stream of data from the server to the clients in realtime. This is useful in scenarios where clients must receive updates or notifications as soon as they become available.
 
-- SignalR provides two types of streaming: <b>server-to-client streaming</b> and <b>client-to-server streaming</b>.
+- SignalR provides two types of streaming: 
+<b>server-to-client streaming</b> and <b>client-to-server streaming</b>.
+
 - Server-to-client streaming allows the server to send a continuous data stream to multiple clients simultaneously. This can be useful for real-time dashboards, live chat, or stock market updates. SignalR handles the management of the connections and ensures that the data is delivered efficiently to all connected clients.
 
 To implement server-to-client streaming in SignalR, developers can use the Stream class provided by SignalR. They can write data to the stream, and SignalR sends it to the connected clients.

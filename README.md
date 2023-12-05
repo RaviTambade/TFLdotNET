@@ -220,6 +220,7 @@ Handling events
 - Localization in MVC
 - Deploying ASP .NET MVC application
 
+
 - Web APIs
     - Creating ASP.NET MVC Web API
     - Configuring for CORS
@@ -227,4 +228,9 @@ Handling events
     - Consuming using a client 
     - Using Newtonsoft APIs 
 
+- Commumnication Foundation
+   - WebSockets
+   - SignalR
+   - MQTT
+   -Kafka
 
