@@ -16,11 +16,11 @@ In December 2011, the Internet Engineering Task Force (IETF) standardized the We
 ## How do WebSockets work?
 In a nutshell, working with WebSockets involves three main steps:
 
-Opening a WebSocket connection. The process of establishing a WebSocket connection is known as the opening handshake, and consists of an HTTP request/response exchange between the client and the server.
+1. <b>Opening a WebSocket connection.</b> The process of establishing a WebSocket connection is known as the opening handshake, and consists of an HTTP request/response exchange between the client and the server.
 
-Data transmission over WebSockets. After a successful WebSocket handshake, the client and server can exchange messages (frames) over the persistent WebSocket connection. WebSocket messages may contain string (plain text) or binary data. 
+2. <b>Data transmission over WebSockets.</b> After a successful WebSocket handshake, the client and server can exchange messages (frames) over the persistent WebSocket connection. WebSocket messages may contain string (plain text) or binary data. 
 
-Closing a WebSocket connection. Once the persistent WebSocket connection has served its purposes, it can be terminated; both the client and the server can initiate the closing handshake by sending a close message.
+3. <b>Closing a WebSocket connection.</b> Once the persistent WebSocket connection has served its purposes, it can be terminated; both the client and the server can initiate the closing handshake by sending a close message.
 
 
 ## What are the pros and cons of WebSockets?
