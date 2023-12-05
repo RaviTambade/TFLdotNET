@@ -232,5 +232,5 @@ Handling events
    - WebSockets
    - SignalR
    - MQTT
-   -Kafka
+   - Kafka
 
