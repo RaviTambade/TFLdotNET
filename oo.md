@@ -220,3 +220,314 @@ class  DatabaseReader
 
 ```
 
+## Inheritance
+ 
+- Provides code reusability and extensibility.
+- Inheritance is a property of class hierarchy whereby each derived class inherits attributes and methods of its base class.
+Every Manager is Employee.
+Every Wage Employee is Employee.
+
+```
+class Employee
+{   public double CalculateSalary ()
+       {return basic_sal + hra+ da ;}
+}
+
+class Manager: Employee
+{
+   public double CalculateIncentives ()
+    {
+     //code to calculate incentives
+     Return incentives;
+   }
+}
+
+static void Main ()
+{
+Manager mgr =new Manager ();
+double Inc=mgr. CalculateIncentives ();
+double sal=mgr. CalculateSalary ();
+}
+
+
+```
+
+## Constructors in Inheritance
+
+```
+
+class Employee
+{ public  Employee ()
+    {Console.WriteLine (“in Default constructor”) ;}
+  public Employee (int eid, ….)
+     {Console.WriteLine (“in Parameterized constructor”) ;}
+}
+
+class Manager: Employee
+{
+ public Manager (): base ()   {……..}
+ public Manager (int id): base (id,….)   {…..}
+}
+
+```
+
+
+## Polymorphism
+
+Ability of different objects to responds to the same message in different ways is called Polymorphism.
+horse.Move();
+car.Move();
+aeroplane.Move(); 
+
+#### Virtual and Override
+
+Polymorphism is achieved using virtual methods and inheritance.
+Virtual keyword is used to define a method in base class and override keyword is used in derived class.
+
+```
+class Employee
+{ public virtual double CalculateSalary ()
+     {return basic_sal+ hra + da ;}
+}
+
+class Manager: Employee
+{
+  public override double CalculateSalary ()
+     {return (basic_sal+ hra + da + allowances);}
+}
+
+staic void Main ()
+{
+  Employee mgr= new Manager ();
+  Double salary= mgr. CalculateSalary ();
+  Console.WriteLine (salary);
+}
+
+```
+
+### Shadowing
+
+Hides the base class member in derived class by using keyword new.
+
+```
+class Employee
+{public virtual double CalculateSalary ()
+     {return basic_sal;}
+}
+class SalesEmployee:Employee
+{ double sales, comm;
+  public new double CalculateSalary ()
+     {return basic_sal+ (sales * comm) ;}
+}
+static void Main ()
+{ SalesEmployee sper= new SalesEmployee ();
+  Double salary= sper.CalculateSalary ();
+  Console.WriteLine (salary);
+}
+
+
+
+```
+
+### Sealed class
+Sealed class cannot be inherited
+
+```
+sealed class SinglyList
+{
+  public virtual double Add () 
+  {// code to add a record in the linked list}
+}
+public class StringSinglyList:SinglyList
+{
+  public override double Add () 
+  {  // code to add a record in the String linked list}
+ }
+
+
+```
+
+### Concrete class vs. abstract classes
+Concrete class
+      Class describes the functionality of the objects that it can be used to instantiate.
+Abstract class
+Provides all of the characteristics of a concrete class except that it does not permit object instantiation.
+An abstract class can contain abstract and non-abstract methods.
+Abstract methods do not have implementation.
+
+```
+abstract class Employee
+ {  public virtual double CalculateSalary();
+     { return basic +hra + da ;}
+    public abstract double CalculateBonus();
+  }
+
+ class Manager: Employee
+  {   public override double CalculateSalary();
+       { return basic + hra + da + allowances ;}
+      public override double CalaculateBonus ()
+       { return basic_sal * 0.20 ;}
+  }
+
+static void Main ()
+{ 	Manager mgr=new Manager ();
+  	double bonus=mgr. CalaculateBonus ();
+  	double Salary=mgr. CalculateSalary ();
+}
+
+
+
+```
+
+
+### Object class
+
+Base class for all .NET classes
+
+Object class methods
+
+o	public bool Equals(object)
+o	protected void Finalize()
+o	public int GetHashCode()
+o	public System.Type GetType()
+o	protected object MemberwiseClone()
+o	public string ToString()
+
+Polymorphism using Object
+
+Polymorphism using Object
+
+The ability to perform an operation on an object without knowing the precise type of the object.
+
+```
+void Display (object o) 
+{
+Console.WriteLine (o.ToString ());
+}
+public static void Main ()
+{  Display (34); 
+   Display (“Transflower”);
+   Display (4.453655);
+   Display (new Employee (“Ravi”, “Tambade”);
+}
+```
+
+
+### Interface Inheritance
+
+For loosely coupled highly cohesive mechanism in Application.
+An interface defines a Contract
+Text Editor uses Spellchecker as interfaces.
+EnglishSpellChecker and FrenchSpellChecker are implementing contract defined by SpellChecker interface.
+
+```
+interface ISpellChecker
+{ ArrayList CheckSpelling (string word) ;}
+class EnglishSpellChecker:ISpellChecker
+{
+  ArrayList CheckSpelling (string word) 
+   {// return possible spelling suggestions}
+}
+class FrenchSpellChecker:ISpellChecker
+{ 
+  ArrayList CheckSpelling (string word) 
+   {// return possible spelling suggestions}
+}
+class TextEditor
+{
+ public static void Main()
+ {    ISpellChecker checker= new EnglishSpellChecker ();
+ArrayList words=checker. CheckSpelling (“Flower”);
+…
+ }
+}
+
+
+
+```
+
+
+### Explicit Interface Inheritance
+```
+interface IOrderDetails    { void ShowDetails() ;}
+interface ICustomerDetails { void ShowDetails() ;}
+class Transaction: IOrderDetails, ICustomerDetils
+{
+void IOrderDetails. ShowDetails()
+{  // implementation for interface IOrderDetails ;}
+void ICustomerDetails. ShowDetails()
+{  // implementation for interface IOrderDetails ;}
+}
+public static void Main()
+{
+Transaction obj = new Transaction();
+IOrderDetails od = obj;
+od.ShowDetails();
+ICustomerDetails cd = obj;
+cd.ShowDetails();
+}
+
+
+```
+
+## Abstract class vs. Interface
+
+
+
+
+
+## Building cloned Objects
+
+```
+class StackClass: ICloneable
+ {  int size; int [] sArr;
+    public StackClass (int s) { size=s; sArr= new int [size]; }
+    public object Clone()
+    {  StackClass s = new StackClass(this.size);
+this.sArr.CopyTo(s.sArr, 0);
+return s;
+    }
+ }
+public static void Main()
+{ StackClass stack1 = new StackClass (4);
+  Stack1 [0] = 89;
+  …..
+ StackClass stack2 = (StackClass) stack1.Clone ();
+}
+
+
+```
+
+
+## Reflection
+
+Reflection is the ability to examine the metadata in the assembly manifest at runtime.
+Reflection is useful in following situations:
+•	Need to access attributes in your programs metadata.
+•	To examine and instantiate types in an assembly.
+•	To build new types at runtime using classes in System.Reflection.Emit namespace.
+•	To perform late binding, accessing methods on types created at runtime.
+
+System. Type class
+Type class provides access to metadata of any .NET Type.
+
+System. Reflection namespace
+Contains classes and interfaces that provide a managed view of loaded types, methods and fields
+These types provide ability to dynamically create and invoke types.
+
+## MethodInfo method;
+string methodName;
+object result = new object ();
+object [] args = new object [] {1, 2};
+Assembly asm = Assembly.LoadFile (@”c:/transflowerLib.dll”);
+Type [] types= asm.GetTypes();
+foreach (Type t in types)
+{     method = t.GetMethod(methodName);
+string typeName= t.FullName;
+object obj= asm.CreateInstance(typeName);
+ result = t.InvokeMember (method.Name, BindingFlags.Public |    
+ BindingFlags.InvokeMethod | BindingFlags.Instance, null, obj, args);
+break;
+}string res = result.ToString();
+Console.WriteLine (“Result is: {0}”, res);
+
