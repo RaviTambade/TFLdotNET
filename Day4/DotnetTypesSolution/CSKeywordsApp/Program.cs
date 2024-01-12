@@ -95,6 +95,14 @@ Stack flights=(Stack)flightsLanded.Clone();
 
 //
 
+
+Product pp=new Product();
+
+//pp.Dispose();
+
+//when object is defined using using block
+//objects dispose is automatically called by Primary Thread
+//
 using(Product p1=new Product())
 {
     p1.Title="Gerbera";

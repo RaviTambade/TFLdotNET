@@ -8,7 +8,6 @@ ThreadStart  job1=new ThreadStart(Helper.Operation1);
 Thread th2=new Thread(job1);
 th2.Start();
 
-
 ThreadStart  job2=new ThreadStart(Helper.Operation1);
 Thread th3=new Thread(job2);
 th3.Start();

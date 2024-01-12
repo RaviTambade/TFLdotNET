@@ -16,9 +16,12 @@ public class Line:Shape, IPrintable{
 
     public override void Draw()
     {
-         Type t=this.GetType();
+        //Reflection is accessed by 
+        //GetType
+        
+        Type t=this.GetType();
         Console.WriteLine("Type ="+ t.Name);
-      Console.WriteLine("("+ this.StartPoint+ "), (" + this.EndPoint+ ")," +
+        Console.WriteLine("("+ this.StartPoint+ "), (" + this.EndPoint+ ")," +
        this.Width+"," + this.Color);
     }
 
