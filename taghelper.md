@@ -42,12 +42,9 @@ ASP.NET Core MVC has two main types of Tag Helpers: Built-in Tag Helpers and Cus
 Microsoft provides many built-in Tag Helpers objects to boost our development. In the below table, there is a list of available built-it Tag Helpers in ASP.NET Core.
 
 The Anchor Tag Helpers extend the standard HTML anchor tag (<a>..</a>) which provides some new attributes. By standard convention, the attribute name must start with asp-. This helper object contains the following attributes –
-
-- asp-controller - This attribute assigns the controller name which is used for generating the URL.
-- asp-action - This attribute is used to specify the controller action method name. If no value is assigned against this attribute name, then the default asp-action value in the controller will execute to render the view.
-- asp-route-{value} - This attribute enables a wildcard-based route prefix. Any value specified in the {value} placeholder is interpreted as a route parameter.
-
-
+- <b>asp-controller</b> - This attribute assigns the controller name which is used for generating the URL.
+- <b>asp-action</b> - This attribute is used to specify the controller action method name. If no value is assigned against this attribute name, then the default asp-action value in the controller will execute to render the view.
+- <b>asp-route-{value}</b> - This attribute enables a wildcard-based route prefix. Any value specified in the {value} placeholder is interpreted as a route parameter.
 
 1. <b>Anchor Tag Helpers</b>
 - <b>asp-route</b> - This attribute is used for creating a direct URL linking to an actual route value.
@@ -126,7 +123,7 @@ This Tag Helpers populate <select> tag of HTML and also associated option elemen
  <select asp-for="Country" asp-items="Model.Countries"></select>
 ```
 
-7.<b> Validate Tag Helpers</b>
+7. <b> Validate Tag Helpers</b>
 It is used to show the validation message in our view model.
 ```
 <span asp-validation-for="Username" class="text-danger"></span>
