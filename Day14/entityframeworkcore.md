@@ -56,7 +56,7 @@ Object Set Representation: DbContext represents a session with the database that
 
 ```
 using Microsoft.EntityFrameworkCore;
-namespace EFCoreCodeFirstDemo.Entities
+namespace EFDemo.Entities
 {
     public class EFCoreDbContext : DbContext
     {
@@ -96,7 +96,7 @@ The OnModelCreating() method allows us to configure the model using ModelBuilder
 1. <b>Add</b>: Adds a new entity to DbContext with an Added state and starts tracking it. This new entity data will be inserted into the database when SaveChanges() is called.
 2. <b>AddAsync</b>: Asynchronous method for adding a new entity to DbContext with Added state and starts tracking it. This new entity data will be inserted into the database when SaveChangesAsync() is called.
 3. <b>AddRange</b>: Adds a collection of new entities to DbContext with Added state and starts tracking it. This new entity data will be inserted into the database when SaveChanges() is called.
-4. <b>AddRangeAsync<b>: Asynchronous method for adding a collection of new entities, which will be saved on SaveChangesAsync().
+4. <b>AddRangeAsync</b>: Asynchronous method for adding a collection of new entities, which will be saved on SaveChangesAsync().
 5. <b>Attach</b>: Attaches a new or existing entity to DbContext with an Unchanged state and starts tracking it. In this case, nothing will happen when we call the SaveChanges method, as the entity state is not modified.
 6. <b>AttachRange</b>: Attaches a collection of new or existing entities to DbContext with an Unchanged state and starts tracking it. In this case, nothing will happen when we call the SaveChanges method, as the entity state is not modified.
 7. <b>Entry</b>: Gets an EntityEntry for the given entity. The entry provides access to change tracking information and operations for the entity.  So, using this method, we can manually set the Entity State, which DbContext will also track.
