@@ -33,6 +33,6 @@ The framework automatically performs this mapping based on the method’s parame
 8. <b>View Rendering</b>: The action method returns a view (usually an HTML template) that should be rendered and returned to the client. The view may contain placeholders for dynamic data that will be replaced during rendering.
 9. <b>View Engine</b>: The view engine (Razor, for example) processes the view, which replaces placeholders with actual data and generates HTML output.
 10. <b>Response</b>: The HTML output from the view engine is included in an HTTP response. Additional response-related middleware might handle compression, caching, and other response manipulations.
-11. Outgoing Response Pipeline: The response goes through the ASP.NET Core HTTP response pipeline, which includes any configured response middleware.
-12. Client Receives Response: The processed response is sent back to the client (browser, API consumer, etc.) that made the initial request.
+11. <b>Outgoing Response Pipeline</b>: The response goes through the ASP.NET Core HTTP response pipeline, which includes any configured response middleware.
+12. <b>Client Receives Response</b>: The processed response is sent back to the client (browser, API consumer, etc.) that made the initial request.
 This is a simplified overview of the ASP.NET Core MVC request life cycle. Keep in mind that ASP.NET Core is highly customizable, and you can extend and modify the request life cycle by using middleware, filters, and other advanced features provided by the framework.
