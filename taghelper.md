@@ -28,12 +28,12 @@ We can write server-side code in the Razor files to create new elements or rende
 
 
 ## Characteristics of Tag Helpers in ASP.NET Core MVC
-- HTML-like Syntax: Tag Helpers use an HTML-like syntax that is familiar to web developers, making it easier to understand and work with.
-- Separation of Concerns: Tag Helpers help separate UI logic from markup, promoting a cleaner and more organized codebase.
-- Reusability: Custom Tag Helpers can encapsulate complex UI components and behaviors, making them reusable across multiple views.
-- Intuitive Integration: Tag Helpers naturally integrate server-side logic into your markup, making the code more readable and coherent.
-- Encapsulation of Complexity: Complex server-side logic and conditional rendering can be encapsulated within Tag Helpers, making your views cleaner and more maintainable.
-- IDE Support: Tag Helpers provide better IntelliSense and tooling support in modern development environments.
+- <b>HTML-like Syntax</b>: Tag Helpers use an HTML-like syntax that is familiar to web developers, making it easier to understand and work with.
+- <b>Separation of Concerns</b>: Tag Helpers help separate UI logic from markup, promoting a cleaner and more organized codebase.
+- <b>Reusability</b>: Custom Tag Helpers can encapsulate complex UI components and behaviors, making them reusable across multiple views.
+- <b>Intuitive Integration</b>: Tag Helpers naturally integrate server-side logic into your markup, making the code more readable and coherent.
+- <b>Encapsulation of Complexity</b>: Complex server-side logic and conditional rendering can be encapsulated within Tag Helpers, making your views cleaner and more maintainable.
+- <b>IDE Support</b>: Tag Helpers provide better IntelliSense and tooling support in modern development environments.
 
 
 ## Types of Tag Helpers
@@ -43,29 +43,21 @@ Microsoft provides many built-in Tag Helpers objects to boost our development. I
 
 The Anchor Tag Helpers extend the standard HTML anchor tag (<a>..</a>) which provides some new attributes. By standard convention, the attribute name must start with asp-. This helper object contains the following attributes –
 
-asp-controller - This attribute assigns the controller name which is used for generating the URL.
-
-asp-action - This attribute is used to specify the controller action method name. If no value is assigned against this attribute name, then the default asp-action value in the controller will execute to render the view.
-
-asp-route-{value} - This attribute enables a wildcard-based route prefix. Any value specified in the {value} placeholder is interpreted as a route parameter.
+- asp-controller - This attribute assigns the controller name which is used for generating the URL.
+- asp-action - This attribute is used to specify the controller action method name. If no value is assigned against this attribute name, then the default asp-action value in the controller will execute to render the view.
+- asp-route-{value} - This attribute enables a wildcard-based route prefix. Any value specified in the {value} placeholder is interpreted as a route parameter.
 
 
 
 1. <b>Anchor Tag Helpers</b>
 
-asp-route - This attribute is used for creating a direct URL linking to an actual route value.
-
-asp-all-route-data - It supports to creation of a dictionary of key-value pairs. The key is the parameter name and the value is the parameter value.
-
-asp-fragment - This attribute specifies a URL fragment section to append the URL.
-
-asp-area - This attribute name sets the area name used in the actual route.
-
-asp-protocol - This attribute is used to specify the protocol value like https in the URL.
-
-asp-host - It is used to specify the hostname in the URL.
-
-asp-page - This attribute is needed to be used with the Razor Pages.
+- asp-route - This attribute is used for creating a direct URL linking to an actual route value.
+- asp-all-route-data - It supports to creation of a dictionary of key-value pairs. The key is the parameter name and the value is the parameter value.
+- asp-fragment - This attribute specifies a URL fragment section to append the URL.
+- asp-area - This attribute name sets the area name used in the actual route.
+- asp-protocol - This attribute is used to specify the protocol value like https in the URL.
+- asp-host - It is used to specify the hostname in the URL.
+- asp-page - This attribute is needed to be used with the Razor Pages.
 
 ```
 
