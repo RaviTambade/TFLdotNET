@@ -2,6 +2,9 @@
  
   Let us understand the Role and Responsibility of each stage in the ASP.NET Core MVC Request Life Cycle.
 
+
+  <img src="/images/Day8/RequestResponseLifecycle.webp"/>
+
 - <b>Middleware</b>: Middleware is the basic building block of the HTTP request pipeline. Request enters the request pipeline through middleware. In ASP.NET Core Web Application, these are a series of components combined to form a request pipeline to handle any incoming HTTP request.
 
 - <b>Routing</b>: Routing is a middleware component that implements the MVC framework in ASP.NET Core Web Application. When a request is received, the ASP.NET Routing system matches the incoming URL to a route pattern defined in the application’s route configuration. This determines which controller and action method should handle the request with the help of convention and attribute routing.
