@@ -50,64 +50,48 @@ The Anchor Tag Helpers extend the standard HTML anchor tag (<a>..</a>) which pro
 
 
 1. <b>Anchor Tag Helpers</b>
-
-- asp-route - This attribute is used for creating a direct URL linking to an actual route value.
-- asp-all-route-data - It supports to creation of a dictionary of key-value pairs. The key is the parameter name and the value is the parameter value.
-- asp-fragment - This attribute specifies a URL fragment section to append the URL.
-- asp-area - This attribute name sets the area name used in the actual route.
-- asp-protocol - This attribute is used to specify the protocol value like https in the URL.
-- asp-host - It is used to specify the hostname in the URL.
-- asp-page - This attribute is needed to be used with the Razor Pages.
+- <b>asp-route</b> - This attribute is used for creating a direct URL linking to an actual route value.
+- <b>asp-all-route-data</b> - It supports to creation of a dictionary of key-value pairs. The key is the parameter name and the value is the parameter value.
+- <b>asp-fragment</b> - This attribute specifies a URL fragment section to append the URL.
+- <b>asp-area</b> - This attribute name sets the area name used in the actual route.
+- <b>asp-protocol</b> - This attribute is used to specify the protocol value like https in the URL.
+- <b>asp-host</b> - It is used to specify the hostname in the URL.
+- <b>asp-page</b> - This attribute is needed to be used with the Razor Pages.
 
 ```
-
 <a asp-controller="Student" asp-action="Index" 
 asp-route-id="@Model.Id"> StudentId: @Model.StudentId </a> >Student List</a>
-
 ```
 
 2. <b>Cache Tag Helpers</b>
 
-
 This Tag Helper object provides the ability to catch the application content within the ASP.NET core cache provider. These helper objects increase the performance of the application. The default cached date time is set to twenty minutes by the Razor engine. The attributes of this Tag Helpers –
 
-enabled - This attribute decides whether the content within the Cache Tag Helper is cached or not. The default value is true.
-
-expires-on - This attribute is used to set the absolute expiration date for the cached data.
-
-expires-after - This attribute sets the length of time from the first request to the cached content.
-
-expires-sliding - This attribute sets the time of the cached entity so that after that time that entity can be deleted if not accessed.
+- <b>enabled</b> - This attribute decides whether the content within the Cache Tag Helper is cached or not. The default value is true.
+- <b>expires-on</b> - This attribute is used to set the absolute expiration date for the cached data.
+- <b>expires-after</b> - This attribute sets the length of time from the first request to the cached content.
+- <b>expires-sliding</b> - This attribute sets the time of the cached entity so that after that time that entity can be deleted if not accessed.
 
 ```
-
  <cache enabled="true">
  Last Cached Time: @DateTime.Now
 </cache>
-
 ```
-
 
 3. <b>Form Tag Helpers</b>
-
- This Tag Helpers method helps us to work with Form and HTML elements within a Form. The Form Tag Helpers can do -
-
-It can generate the same form action attribute that we normally use for the MVC Controller to provide an action name.
+- This Tag Helpers method helps us to work with Form and HTML elements within a Form. The Form Tag Helpers can do -
+- It can generate the same form action attribute that we normally use for the MVC Controller to provide an action name.
 Generate a hidden token to present cross-origin forgery.
 ```
-
  <form asp-controller="Demo" asp-action="Save " method="post">
 
 </form>
-
 ```
-
 4. <b>Input Tag Helpers</b>
 his Tag helper is used for the HTML input element to display model data in our Razor view. These helper objects do the following –
-
-asp-for attribute normally populate id and name of the specified HTML attribute for the display expression name.
-It can assign attribute value based on the model data to the HTML attribute
-It supports HTML 5-based validation attributes related to the model data annotations
+- asp-for attribute normally populate id and name of the specified HTML attribute for the display expression name.
+- It can assign attribute value based on the model data to the HTML attribute
+- It supports HTML 5-based validation attributes related to the model data annotations
 
 ```
  @model Login
@@ -120,23 +104,26 @@ Provide Password: <input asp-for="Password" />
 ```
 
 5. <b>Label Tag Helpers</b>
+ 
+This Tag Helper extends the label tag of the HTML. It populates the caption of the label and attributes against the expression name. 
+This Helper Object provides advantages like -
+- We automatically retrieve the label description from the Display attribute.
+- It reduced the code volume of the markup.
+- It also can be used as a strong type for the model property.
 
 ```
-This Tag Helper extends the label tag of the HTML. It populates the caption of the label and attributes against the expression name. This Helper Object provides advantages like -
-
-We automatically retrieve the label description from the Display attribute.
-It reduced the code volume of the markup.
-It also can be used as a strong type for the model property.
+ <form asp-controller="Demo" asp-action="Register" method="post">
+<label asp-for="Email">Email Address</label>
+<input asp-for="Email" /> 
+</form>
 ```
+
 
 6. <b>Select Tag Helpers</b>
-
 This Tag Helpers populate <select> tag of HTML and also associated option elements for the properties of the error. The asp-for attribute of this tag helps is used to mention the model property name of the select element. Similarly, asp-items specify the option element.
 
 ```
-
  <select asp-for="Country" asp-items="Model.Countries"></select>
-
 ```
 
 7.<b> Validate Tag Helpers</b>
