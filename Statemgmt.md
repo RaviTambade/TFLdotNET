@@ -1,17 +1,12 @@
 # State Management
-
 In an ASP NET application, state management in ASP NET is an object and preserves type state control. This is because ASP NET applications are basically stateless. In ASP NET, the information of users is stored and maintained till the user session ends. Each time the page is posted on the server, a new instance of the Web page class is created. Whenever the user enters information, this information might get lost in the round trip from the browser 
 
 ## Understanding state management
 ASP.NET Core MVC provides a rich set of features for building modern web applications, and these include support for a number of ways to manage state. State management is the technique of maintaining the state of an application over time, i.e., for the duration of a user session or across all of the HTTP requests and responses that constitute the session. Thus it is one of the most important cross-cutting concerns of any web application.
-
-state management is how you keep track of the data moving in and out of your application and how you ensure it’s available when needed. State management allows a smoother user experience by enabling users to pick up where they left off without re-entering their information. Without state management, users would have to enter their information every time they visited or reloaded a new page.
-
+State management is how you keep track of the data moving in and out of your application and how you ensure it’s available when needed. State management allows a smoother user experience by enabling users to pick up where they left off without re-entering their information. Without state management, users would have to enter their information every time they visited or reloaded a new page.
 You can manage the state in several ways in an ASP.NET Core MVC application. We’ll examine six ways to handle state in the sections below: cookies, session state, hidden fields, the TempData property, query strings, and caching.
 
-
 ### Using cookies in ASP.NET Core MVC
-
 Cookies store data in the user’s browser. Browsers send cookies with every request and hence their size should be kept to a minimum.
 Ideally, we should only store an identifier in the cookie and we should store the corresponding data using the application. Most browsers restrict cookie size to 4096 bytes and only a limited number of cookies are available for each domain.
 
@@ -93,16 +88,12 @@ builder.Services.AddMemoryCache();
 ```
 If you would like to store and retrieve instances of complex types in the session state, you can serialize or deserialize your data as appropriate. And if you’d like to send data from your controller to the view, you can take advantage of ViewData.
 
-
-## ViewBag ViewData and TempData
+## ViewBag and ViewData 
 
 ViewData and ViewBag are objects that can be used to pass data from the Controller to the View in an ASP.NET Core MVC application.
 
 ### ViewData
 ViewData is a dictionary object that you put data into, which then becomes available to the view. ViewData is a derivative of the ViewDataDictionary class, so you can access by the familiar "key/value" syntax.
 
-
 ### ViewBag
 The ViewBag object is a wrapper around the ViewData object that allows you to create dynamic properties for the ViewBag.
-
- 
