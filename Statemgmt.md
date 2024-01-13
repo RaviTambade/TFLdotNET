@@ -1,3 +1,97 @@
+# State Management
+
+In an ASP NET application, state management in ASP NET is an object and preserves type state control. This is because ASP NET applications are basically stateless. In ASP NET, the information of users is stored and maintained till the user session ends. Each time the page is posted on the server, a new instance of the Web page class is created. Whenever the user enters information, this information might get lost in the round trip from the browser 
+
+## Understanding state management
+ASP.NET Core MVC provides a rich set of features for building modern web applications, and these include support for a number of ways to manage state. State management is the technique of maintaining the state of an application over time, i.e., for the duration of a user session or across all of the HTTP requests and responses that constitute the session. Thus it is one of the most important cross-cutting concerns of any web application.
+
+state management is how you keep track of the data moving in and out of your application and how you ensure it’s available when needed. State management allows a smoother user experience by enabling users to pick up where they left off without re-entering their information. Without state management, users would have to enter their information every time they visited or reloaded a new page.
+
+You can manage the state in several ways in an ASP.NET Core MVC application. We’ll examine six ways to handle state in the sections below: cookies, session state, hidden fields, the TempData property, query strings, and caching.
+
+
+### Using cookies in ASP.NET Core MVC
+
+Cookies store data in the user’s browser. Browsers send cookies with every request and hence their size should be kept to a minimum.
+Ideally, we should only store an identifier in the cookie and we should store the corresponding data using the application. Most browsers restrict cookie size to 4096 bytes and only a limited number of cookies are available for each domain.
+
+Users can easily tamper with or delete a cookie. Cookies can also expire on their own. 
+Hence we should not use them to store sensitive information and their values should not be blindly trusted or used without proper validation.
+
+We often use cookies to personalize the content for a known user especially when we just identify a user without authentication. 
+We can use the cookie to store some basic information like the user’s name. 
+Then we can use the cookie to access the user’s personalized settings, such as their preferred color theme.
+
+A cookie is a piece of data that resides on the user’s computer that helps identify the user. In most web browsers, each cookie is saved in a separate file (the exception is Firefox, which saves all cookies in the same file). Cookies are represented as key-value pairs, and the keys can be used to read, write, or remove cookies. ASP.NET Core MVC uses cookies to preserve session state; the cookie with the session ID is transmitted to the client.
+
+```
+CookieOptions options = new CookieOptions();
+options.Expires = DateTime.Now.AddSeconds(10);
+```
+
+
+### Using  session state in ASP.NET Core MVC
+Session state is a mechanism for storing user data on the server side in an ASP.NET Core MVC web application. A user’s browser sends the server a request containing information about the user’s session every time the user visits a website. The server then creates a new session and stores the user’s data in that session.
+The user’s session and all the user’s data are destroyed when they leave the website. Session state is useful for storing small amounts of data that need to be persisted across multiple requests from a single user. For example, you might use session state to store a user’s shopping cart items or preferences.
+
+The following code snippet illustrates how you can store a key-value pair in the session state in an action method.
+
+```
+public IActionResult Index()
+{
+   HttpContext.Session.SetString("MyKey", "MyValue");
+   return View();
+}
+```
+
+### Using  hidden fields in ASP.NET Core MVC
+When working on ASP.NET Core MVC applications, we may need to preserve data on the client side instead of presenting it on the page. For example, we might need to send data to the server when the user takes a certain action, without showing the data in the user interface. This is a typical problem in many applications, and hidden fields offer an excellent solution. We can store information in hidden form fields and return it in the following request.
+
+The following code snippet illustrates how you can store the user ID of a logged in user and assign the value 1.
+```
+@Html.HiddenFor(x => x.UserId, new { Value = "1" })
+```
+
+### Use TempData  in ASP.NET Core MVC
+You can use the TempData property in ASP.NET Core to store data until your application reads it. We can examine the data without deleting it using the Keep() and Peek() functions. TempData is extremely helpful when we need data belonging to more than one request. We can get to them using controllers and views.
+
+TempData is used to transmit data from one request to the next, i.e., to redirect data from one page to another. It has a minimal life and only exists until the target view is entirely loaded. However, you may save data in TempData by using the Keep() function. TempData is accessible only during a user’s session. It survives until we read it and then it’s cleared after an HTTP request.
+
+The following code snippet illustrates how you can use TempData in your ASP.NET Core MVC controller.
+
+```
+public class CustomerController : Controller
+{
+    public IActionResult TempDataDemo()
+    {
+        var customerId = TempData["CustomerId"] ?? null;       
+        return View();
+    }
+}
+```
+It is meant to be a very short-lived instance, and you should only use it during the current and the subsequent requests only! Since TempData works this way, you need to know for sure what the next request will be, and redirecting to another view is the only time you can guarantee this. Therefore, the only scenario where using TempData will reliably work is when you are redirecting. This is because a redirect kills the current request (and sends HTTP status code 302 Object Moved to the client), then creates a new request on the server to serve the redirected view. Looking back at the previous HomeController code sample means that the TempData object could yield results differently than expected because the next request origin can't be guaranteed. For example, the next request can originate from a completely different machine and browser instance.
+
+
+### query strings  in ASP.NET Core MVC
+You can take advantage of query strings to transmit a small amount of data from one request to another. Note that because query strings are publicly exposed, you should never use them to pass sensitive data. Additionally, using query strings could make your application vulnerable to cross-site request forgery (CSRF) attacks.
+The following code snippet illustrates how you can use query strings in ASP.NET Core MVC.
+
+```
+http://localhost:5655/api/customer?region=abc
+```
+And, the code snippet below shows how you can read the query string data in your action method.
+
+```
+string region = HttpContext.Request.Query["region"].ToString();
+```
+
+### Caching in ASP.NET Core MVC
+Caching is yet another way to store state information between requests. You can leverage a cache to store stale data, i.e., data that changes infrequently in your application. ASP.NET Core MVC provides support for three different types of caching, namely in-memory caching, distributed caching, and response caching. The following code snippet shows how you can turn on in-memory caching in your ASP.NET Core MVC applications.
+
+```
+builder.Services.AddMemoryCache();
+```
+If you would like to store and retrieve instances of complex types in the session state, you can serialize or deserialize your data as appropriate. And if you’d like to send data from your controller to the view, you can take advantage of ViewData.
 
 
 ## ViewBag ViewData and TempData
@@ -11,53 +105,4 @@ ViewData is a dictionary object that you put data into, which then becomes avail
 ### ViewBag
 The ViewBag object is a wrapper around the ViewData object that allows you to create dynamic properties for the ViewBag.
 
-### TempData
-It is meant to be a very short-lived instance, and you should only use it during the current and the subsequent requests only! Since TempData works this way, you need to know for sure what the next request will be, and redirecting to another view is the only time you can guarantee this. Therefore, the only scenario where using TempData will reliably work is when you are redirecting. This is because a redirect kills the current request (and sends HTTP status code 302 Object Moved to the client), then creates a new request on the server to serve the redirected view. Looking back at the previous HomeController code sample means that the TempData object could yield results differently than expected because the next request origin can't be guaranteed. For example, the next request can originate from a completely different machine and browser instance.
-
-TempData is a type of object that is used to store temporary data in an ASP.NET MVC application. It is a property of the ControllerBase class, which is the base class for all controllers in an ASP.NET MVC application.
-
-The TempData property is used to pass data from one action method to another, and it is particularly useful for passing data between a controller action and a view. It is implemented using the SessionStateTempDataProvider class, which stores the data in the session state.
-
-To use TempData, you can set its value in an action method and then retrieve it in a subsequent action method or view. For example, you might set a message in an action method that is displayed to the user in a view. When the view is rendered, the message is removed from TempData.
-
-
-# State Management in asp.net core
-
-HTTP is a stateless protocol. So HTTP requests are independent messages that don’t retain user values or app states. We need to take additional steps to manage state between the requests. 
-
-## Cookies
-Cookies store data in the user’s browser. Browsers send cookies with every request and hence their size should be kept to a minimum.
-Ideally, we should only store an identifier in the cookie and we should store the corresponding data using the application. 
-Most browsers restrict cookie size to 4096 bytes and only a limited number of cookies are available for each domain.
-
-Users can easily tamper with or delete a cookie. Cookies can also expire on their own. 
-Hence we should not use them to store sensitive information and their values should not be blindly trusted or used without proper validation.
-
-
-We often use cookies to personalize the content for a known user especially when we just identify a user without authentication. 
-We can use the cookie to store some basic information like the user’s name. 
-Then we can use the cookie to access the user’s personalized settings, such as their preferred color theme.
-
-## Session State
-Session state is an ASP.NET Core mechanism to store user data while the user browses the application. 
-It uses a store maintained by the application to persist data across requests from a client. 
-We should store critical application data in the user’s database and we should cache it in a session only as a performance optimization if required.
-
-ASP.NET Core maintains the session state by providing a cookie to the client that contains a session ID. The browser sends this cookie to the application with each request. The application uses the session ID to fetch the session data.
-
-While working with the Session state, we should keep the following things in mind:
-
-- A Session cookie is specific to the browser session
-- When a browser session ends, it deletes the session cookie
-- If the application receives a cookie for an expired session, it creates a new session that uses the same session cookie
-- An Application doesn’t retain empty sessions
-- The application retains a session for a limited time after the last request. 
- The app either sets the session timeout or uses the default value of 20 minutes
-- Session state is ideal for storing user data that are specific to a particular session but doesn’t require permanent storage across sessions
-- An application deletes the data stored in session either when we call the ISession.
- Clear implementation or when the session expires
-- There’s no default mechanism to inform the application that a client has closed the browser or deleted the session cookie or it is expired
-
-
-
-
+ 
