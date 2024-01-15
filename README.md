@@ -4,12 +4,13 @@
 ## Build any app with .NET
 <img src="https://devblogs.microsoft.com/dotnet/wp-content/uploads/sites/10/2022/11/dotnet-platform2.png"/>
 
-## Create beautiful apps and scalable cloud services, faster and easier with the free, open-source platform that's loved by developers and trusted by organizations.
+Create beautiful apps and scalable cloud services, faster and easier with the free, open-source platform that's loved by developers and trusted by organizations.
 
 # .NET
 .NET 8 brings your apps increased performance and new features for C# 12/F# 8, .NET MAUI, ASP.NET Core/Blazor, Web APIs, WinForms, WPF and more. With .NET 8, you can also easily containerize your .NET 8 projects, set up CI/CD workflows in GitHub actions, and achieve cloud-native observability.
 
 # CSharp Essentials
+
 
 # ASP.NET  Core
 
