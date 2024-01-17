@@ -111,7 +111,7 @@ Arary.Sort(India);
 
 ```
 
-Using Iterator Metho
+Using Iterator Method
 
 ```
 public class Team

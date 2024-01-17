@@ -1,54 +1,54 @@
-Object Orientation in C#
+# Object Orientation in C#
 
 Object
 	A real world entity which has well defined structure and behavior.
 	
-Characteristics of an Object are:
+### Characteristics of an Object are:
 	State
 	Behavior
 	Identity
 	Responsibility
 		
-Pillars of Object Orientation
+### Pillars of Object Orientation
 	Abstraction
 	Encapsulation
 	Inheritance 
 	Typing, Concurrency, Hierarchy, Persistence
 
-Abstraction
+### Abstraction
 Getting essential characteristic of a System depending on the perspective of on Observer.
 Abstraction is a process of identifying the key aspects of System and ignoring the rest
 Only domain expertise can do right abstraction.
 
-Abstraction of Person Object
+### Abstraction of Person Object
 	Useful for social survey
 	Useful for healthcare industry
 	Useful for Employment Information
 
-Encapsulation
+### Encapsulation
 Hiding complexity of a System.
 Encapsulation is a process of compartmentalizing the element of an abstraction that constitute its structure and behavior.
 	
 	Servers to separate interface of an abstraction and its implementation.
 	User is aware only about its interface: any changes to implementation does not affect the user.
 
-Inheritance
+### Inheritance
 Classification helps in handing complexity.
 Factoring out common elements in a set of entities into a general entity and then making it more and more specific.
 Hierarchy is ranking or ordering of abstraction.
 Code and Data Reusability in System using is a relationship.
 
-Typing
+### Typing
 Typing is the enforcement of the entity such that objects of different types may not be interchanges, or at the most, they may be interchanged only in restricted ways.
 
-Concurrency
+### Concurrency
 Different objects responding simultaneously.
 
-Persistence
+### Persistence
 Persistence of an object through which its existence transcends time and or space.
 
 
-Namespace and Class
+### Namespace and Class
 
 Namespace is a collection .NET Types such as structure, class, interfaces, etc.
 
@@ -82,9 +82,6 @@ namespace  EmployeeApp
     }
  }
 }
-
-
-
 
 ```
 
