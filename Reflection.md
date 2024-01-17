@@ -93,6 +93,7 @@ Late bindings can also be achieved through reflection. To illustrate, you might 
 
 - <b>LoadFrom</b>
 - <b>LoadWithPartialName</b>
+
 When you consider that an assembly is a logical DLL or EXE and a manifest is a detailed overview of an assembly, then it makes sense that a PE (portable executable) file for CTS would have the extension of .dll or .exe. Within the PE file is mainly metadata, which contains a variety of different tables such as a:
 
 - <b>Filed definition table</b>
