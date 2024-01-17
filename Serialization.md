@@ -70,20 +70,21 @@ using System.IO;
 using System.Text.Json;
 
 public class RepositoryManager{
+
     public void Serialize(List<Employee> employees,string fileName){
         var options=new JsonSerializerOptions {IncludeFields=true};
         var employeesJson=JsonSerializer.Serialize<List<Employee>>(employees,options);
         File.WriteAllText(fileName,employeesJson);
        }
+
     public List<Employee> DeSerialize(string fileName){
             string jsonString = File.ReadAllText(fileName);
             List<Employee> jsonEmployees = JsonSerializer.Deserialize<List<Employee>>(jsonString);
             foreach( Employee emp in jsonEmployees)
             {
                 Console.WriteLine($"{emp.Id} : {emp .Name}");   
-            }*/      
+            }     
         return jsonEmployees;
     }
 }
-
 ```
