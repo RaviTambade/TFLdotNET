@@ -12,12 +12,12 @@ Create beautiful apps and scalable cloud services, faster and easier with the fr
 - <a href="https://github.com/RaviTambade/.NET/blob/main/CSharpLang.md">.NET Programming Language</a>
 - <a href="https://github.com/RaviTambade/.NET/blob/main/oo.md">Objectd Oriented  Programming using C#</a>
 - <a href="https://github.com/RaviTambade/.NET/blob/main/Collections.md">Using Collection Framework using C#</a>
+- <a href="https://github.com/RaviTambade/.NET/blob/main/LINQ.md">LINQ</a>
 - <a href="https://github.com/RaviTambade/.NET/blob/main/Reflection.md">Reflection</a>
 - <a href="https://github.com/RaviTambade/.NET/blob/main/Serialization.md">Serialization</a>
-- <a href="https://github.com/RaviTambade/.NET/blob/main/Attributes.md">Custom Attributes</a>
 - <a href="https://github.com/RaviTambade/.NET/blob/main/delegate.md">Delegates</a>
 - <a href="https://github.com/RaviTambade/.NET/blob/main/events.md">Events</a>
-- <a href="https://github.com/RaviTambade/.NET/blob/main/LINQ.md">LINQ</a>
+- <a href="https://github.com/RaviTambade/.NET/blob/main/Attributes.md">Custom Attributes</a>
 - <a href="https://github.com/RaviTambade/.NET/blob/main/multithreading.md">Mutithreading using C#</a>
 
 # ASP.NET  Core
