@@ -1,5 +1,3 @@
-
-
 ## Free. Cross-platform. Open source.
 ## Build any app with .NET
 <img src="https://devblogs.microsoft.com/dotnet/wp-content/uploads/sites/10/2022/11/dotnet-platform2.png"/>
@@ -43,6 +41,4 @@ Create beautiful apps and scalable cloud services, faster and easier with the fr
 
 - Localization in MVC
 - Deploying ASP .NET MVC application
-
-   - MQTT
-   - Kafka
+- Kafka
