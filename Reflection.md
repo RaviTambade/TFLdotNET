@@ -1,4 +1,4 @@
-#Reflection
+# Reflection
 
 Reflection is a feature of .NET to write code that can examine and modify other pieces of code dynamically is quite a useful power. Using reflection, you can, for instance, load a class dynamically from an Assembly, test whether a given type has a specific member, and even create code dynamically.
 
@@ -9,12 +9,11 @@ Several important tools make use of reflection to enable their working. One exam
 Reflection can be used to create applications called type browsers which allow users to select types and then read the data provided about them
 
 ```
-// Using GetType to obtain type information:
+    // Using GetType to obtain type information:
 
-int i = 42;
-System.Type type = i.GetType();
-System.Console.WriteLine(type);
-
+    int i = 42;
+    System.Type type = i.GetType();
+    System.Console.WriteLine(type);
 ```
 
 Implementing reflection in C# requires a two-step process. You first get the “type” object, then use the type to browse members such as “methods” and “properties.”
@@ -37,9 +36,7 @@ namespace Test
         public static double GetPi() { ... }
     }
 }
-
 ```
-
 
 Then, you can use reflection to load the Test.dll assembly:
 
