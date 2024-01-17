@@ -71,33 +71,33 @@ numberPropertyInfo.SetValue(calcInstance, 10.0, null);
 
 The main class for reflection is the System.Type class, which is a partial abstract class representing a type in the Common Type System (CTS). When you use this class, you can find the types used in a module and namespace and also determine if a given type is a reference or value type. You can parse the corresponding metadata tables to look through these items:
 
-- Fields
-- Properties
-- Methods
-- Events
+- <b>Fields</b>
+- <b>Properties</b>
+- <b>Methods</b>
+- <b>Events</b>
 
 The System.Type class also comes with several instance methods you can use to get information from a specific type. Here’s a list of some of the most important ones:
 
-- GetConstructors() – gets the constructors for the type as an array of System.Reflection.ConstructorInfo.
-- GetMethods() – gets the methods for the type as an array of System.Reflection.MethodInfo.
-- GetMembers() – gets the members for the type as an array of System.Reflection.MemberInfo.
+- <b>GetConstructors()</b> – gets the constructors for the type as an array of System.Reflection.ConstructorInfo.
+- <b>GetMethods()</b> – gets the methods for the type as an array of System.Reflection.MethodInfo.
+- <b>GetMembers()</b> – gets the members for the type as an array of System.Reflection.MemberInfo.
 
 The System.Reflection namespace, as the name suggests, holds several useful classes if you want to work with reflection. Some of those are the three ones you’ve just read about. Here are some more important ones:
 
-- ParameterInfo
-- Assembly
-- AssemblyName
-- PropertyInfo
+- <b>ParameterInfo</b>
+- <b>Assembly</b>
+- <b>AssemblyName</b>
+- <b>PropertyInfo</b>
 
 Late bindings can also be achieved through reflection. To illustrate, you might not know which assembly to load during compile time. In this instance, you can ask the user to enter the assembly name and type during run time so the application can load the appropriate assembly. With the System.Reflection.Assembly type, you can get three static types which allow you to load an assembly directly:
 
-- LoadFrom
-- LoadFrom
-- LoadWithPartialName
+- <b>LoadFrom</b>
+- <b>LoadWithPartialName</b>
 When you consider that an assembly is a logical DLL or EXE and a manifest is a detailed overview of an assembly, then it makes sense that a PE (portable executable) file for CTS would have the extension of .dll or .exe. Within the PE file is mainly metadata, which contains a variety of different tables such as a:
-- Filed definition table
-- Type definition table
-- Method definition table
+
+- <b>Filed definition table</b>
+- <b>Type definition table</b>
+- <b>Method definition table</b>
 
 When you parse these tables, you can retrieve an assembly’s types and attributes.
 
