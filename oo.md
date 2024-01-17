@@ -9,39 +9,41 @@ Working on these objects to obtain the desired result is the goal of object-orie
 	A real world entity which has well defined structure and behavior.
 	
 ### Characteristics of an Object are:
-	State
-	Behavior
-	Identity
-	Responsibility
+- State
+- Behavior
+- Identity
+- Responsibility
 		
 ### Pillars of Object Orientation
-	Abstraction
-	Encapsulation
-	Inheritance 
-	Typing, Concurrency, Hierarchy, Persistence
+
+- Abstraction
+- Encapsulation
+- Inheritance 
+- Typing, Concurrency, Hierarchy, Persistence
 
 ### Abstraction
+
 Getting essential characteristic of a System depending on the perspective of on Observer.
 Abstraction is a process of identifying the key aspects of System and ignoring the rest
 Only domain expertise can do right abstraction.
 
 ### Abstraction of Person Object
-	Useful for social survey
-	Useful for healthcare industry
-	Useful for Employment Information
+
+	- Useful for social survey
+	- Useful for healthcare industry
+	- Useful for Employment Information
 
 ### Encapsulation
-Hiding complexity of a System.
-Encapsulation is a process of compartmentalizing the element of an abstraction that constitute its structure and behavior.
-	
-	Servers to separate interface of an abstraction and its implementation.
-	User is aware only about its interface: any changes to implementation does not affect the user.
+- Hiding complexity of a System.
+- Encapsulation is a process of compartmentalizing the element of an abstraction that constitute its structure and behavior.
+	- Servers to separate interface of an abstraction and its implementation.
+- User is aware only about its interface: any changes to implementation does not affect the user.
 
 ### Inheritance
-Classification helps in handing complexity.
-Factoring out common elements in a set of entities into a general entity and then making it more and more specific.
-Hierarchy is ranking or ordering of abstraction.
-Code and Data Reusability in System using is a relationship.
+- Classification helps in handing complexity.
+- Factoring out common elements in a set of entities into a general entity and then making it more and more specific.
+- Hierarchy is ranking or ordering of abstraction.
+- Code and Data Reusability in System using is a relationship.
 
 ### Typing
 Typing is the enforcement of the entity such that objects of different types may not be interchanges, or at the most, they may be interchanged only in restricted ways.
@@ -54,9 +56,7 @@ Persistence of an object through which its existence transcends time and or spac
 
 
 ### Namespace and Class
-
 Namespace is a collection .NET Types such as structure, class, interfaces, etc.
-
 
 ```
 namespace  EmployeeApp
@@ -69,25 +69,36 @@ namespace  EmployeeApp
     private   int empAge;
     private  string empSSN;
     private static string companyName;
+   
     public Employee ()
-    { empID=18; currPay=15000; }
-    public Employee (int id, float basicSal)
-    { empID=id; currPay= basicSal; }
-    public ~Employee()
-    { //DeInitializtion }
-    public void GiveBonus(float amount)
-    {      currPay += amount;    }
-    public void DisplayStats()
     { 
-     Console.WriteLine("Name: {0}", empName);
-     Console.WriteLine("ID:   {0}", empID);
-     Console.WriteLine("Age:  {0}", empAge);
-     Console.WriteLine("SSN:  {0}", empSSN);
-     Console.WriteLine("Pay:  {0}", currPay);
+      empID=18; 
+      currPay=15000; 
     }
+    
+    public Employee (int id, float basicSal)
+    { 
+      empID=id; currPay= basicSal; }
+      public ~Employee()
+      { 
+        //DeInitializtion 
+      }
+
+      public void GiveBonus(float amount)
+      {
+        currPay += amount;   
+      }
+      
+      public void DisplayStats()
+      { 
+          Console.WriteLine("Name: {0}", empName);
+          Console.WriteLine("ID:   {0}", empID);
+          Console.WriteLine("Age:  {0}", empAge);
+          Console.WriteLine("SSN:  {0}", empSSN);
+          Console.WriteLine("Pay:  {0}", currPay);
+      }
  }
 }
-
 ```
 
 ### Partial class
@@ -97,13 +108,17 @@ All source files for the class definition are compiled as one file with all clas
 Access modifiers used for defining a class should be consistent across all files.
 
 ### Properties (smart fields)
-Have two assessors:
-Get	retrieves data member values.
-Set	enables data members to be assigned
+
+- Have two assessors:
+- Get	retrieves data member values.
+- Set	enables data members to be assigned
+
+
 ```
 public int EmployeeID
-{ get {return _id;}
-  set {_id=value ;}
+{
+   get { return _id;}
+   set { _id=value ;}
 }
 ```
 
@@ -113,6 +128,7 @@ public int EmployeeID
 public class Books
 {
  private string [] titles= new string [100];
+ 
  public string this [int index]
   {
       get{ 
@@ -130,30 +146,45 @@ public class Books
         }
    }
 }
+
+
 public static void Main ()
 { 
   Books mybooks=new Books ();
   Mybooks [3] =”Mogali in Jungle”;
-
 }
-
 ```
 
 ### Singleton
+The singleton pattern is one of the best-known patterns in software engineering. Essentially, a singleton is a class which only allows a single instance of itself to be created, and usually gives simple access to that instance
+
+All these implementations share four common characteristics, however:
+
+- A single constructor, which is private and parameterless. This prevents other classes from instantiating it (which would be a violation of the pattern). Note that it also prevents subclassing - if a singleton can be subclassed once, it can be subclassed twice, and if each of those subclasses can create an instance, the pattern is violated. The factory pattern can be used if you need a single instance of a base type, but the exact type isn't known until runtime.
+- The class is sealed. This is unnecessary, strictly speaking, due to the above point, but may help the JIT to optimise things more.
+- A static variable which holds a reference to the single created instance, if any.
+- A public static means of getting the reference to the single created instance, creating one if necessary.
 
 ```
 public class OfficeBoy
- {      private static OfficeBoy _ref = null;
-        private  int _val;
-        private  OfficeBoy()   {   _val = 10;  }
-        public  int Val {   get  {  return _val;  }
-               	   set { _val = value; }
+ {     
+    private static OfficeBoy _ref = null;
+    private  int _val;
+    private  OfficeBoy()
+    {
+        _val = 10;  
+    }
+    
+    public  int Val 
+    { 
+      get {  return _val;  }
+      set { _val = value; }
                        }
-       public static OfficeBoy GetObject ()
-        {    if (_ref == null)
-               _ref = new OfficeBoy ();
+      public static OfficeBoy GetObject ()
+      {    if (_ref == null)
+              _ref = new OfficeBoy ();
              return _ref;
-        }
+      }
  }
 
 
@@ -161,32 +192,109 @@ static void Main(string[] args)
  { 
     OfficeBoy sweeper, waiter;
     string s1; float f1;
+    
     sweeper = OfficeBoy.GetObject(); waiter = OfficeBoy.GetObject();
     sweeper.Val = 60;
+    
     Console.WriteLine("Sweeper Value : {0}", sweeper.Val);
     Console.WriteLine("Waiter Value  : {0}", waiter.Val);
+    
     s1 = sweeper.Val.ToString();
     f1 = (float)sweeper.Val;
+    
     sweeper.Val = int.Parse(s1);
     sweeper.Val = Convert.ToInt32(s1);    
  }
+
 ```
 
 
 
 ### Arrays
+
+Like other programming languages, array in C# is a group of similar types of elements that have contiguous memory location. In C#, array is an object of base type System.Array. In C#, array index starts from 0. We can store only fixed set of elements in C# array.
+
+#### Advantages of Arrays
+- Code Optimization (less code)
+- Random Access
+- Easy to traverse data
+- Easy to manipulate data
+- Easy to sort data etc.
+
+
+
+#### C# Array Types
+There are 3 types of arrays in C# programming:
+
+- Single Dimensional Array
+- Multidimensional Array
+- Jagged Array
+
 ```
-int [  , ]  mtrx = new int [2, 3];
+
+#### C# Single Dimensional Array
+To create single dimensional array, you need to use square brackets [] after the type.
+
+```
+
+
+#### Multidimensional Arrays
+
+int[] arr = new int[5];//creating array  
+int[] arr2 = new int[]{ 10, 20, 30, 40, 50 };  
+
+foreach (int i in arr2)  
+{  
+    Console.WriteLine(i);  
+}  
+
+
+The multidimensional array is also known as rectangular arrays in C#. It can be two dimensional or three dimensional. The data is stored in tabular form (row * column) which is also known as matrix.
+
+
+int [ , ]  mtrx = new int [2, 3];
 
 //Can initialize declaratively
-
 int [ , ] mtrx = new int [2, 3] { {10, 20, 30}, {40, 50, 60} }
+
+//traversal  
+for(int i=0;i<3;i++){  
+    for(int j=0;j<3;j++){  
+        Console.Write(mtrx[i,j]+" ");  
+    }  
+    Console.WriteLine();//new line at each row  
+}  
+
+
 ```
 
-### Jagged Arrays
-An Array of Array
+
+#### Jagged Arrays
+In C#, jagged array is also known as "array of arrays" because its elements are arrays. The element size of jagged array can be different.
+
 ```
   int [ ]  [ ]  mtrxj = new  int [2] [];
+
+Initialization of Jagged array upon Declaration
+
+```
+  int[][] arr = new int[3][]{  
+          new int[] { 11, 21, 56, 78 },  
+          new int[] { 2, 5, 6, 7, 98, 5 },  
+          new int[] { 2, 5 }  
+          };  
+
+
+ // Traverse array elements  
+  for (int i = 0; i < arr.Length; i++)  
+  {  
+      for (int j = 0; j < arr[i].Length; j++)  
+      {  
+          System.Console.Write(arr[i][j]+" ");  
+      }  
+      System.Console.WriteLine();  
+  }  
+
 ``` 
 
 ### Nullable Types
