@@ -19,7 +19,6 @@ Create beautiful apps and scalable cloud services, faster and easier with the fr
 - <a href="https://github.com/RaviTambade/.NET/blob/main/multithreading.md">Mutithreading</a>
 
 # ASP.NET  Core
-
 - <a href="https://github.com/RaviTambade/.NET/blob/main/AspnetCoreLifeCycle.md">ASP.net Core App Life Cycle Management</a>
 - <a href="https://github.com/RaviTambade/.NET/blob/main/folderstructure.md">ASP.net Core App folder Structure</a>
 - <a href="https://github.com/RaviTambade/.NET/blob/main/mvc.md">ASP.net Core Model View Controller Architecture</a>
@@ -27,7 +26,6 @@ Create beautiful apps and scalable cloud services, faster and easier with the fr
 - <a href="https://github.com/RaviTambade/.NET/blob/main/model.md">ASP.net Core Model</a>
 - <a href="https://github.com/RaviTambade/.NET/blob/main/view.md">ASP.net Core Views</a>
 - <a href="https://github.com/RaviTambade/.NET/blob/main/taghelper.md">ASP.net Core TagHelpers</a>
-
 - <a href="https://github.com/RaviTambade/.NET/blob/main/taghelper.md">ASP.net Core APP Middleware(HTTP Pipeline)</a>
 - <a href="https://github.com/RaviTambade/.NET/blob/main/MiddlewareAndRouting.md">ASP.net Core APP Middleware(HTTP Pipeline)</a>
 - <a href="https://github.com/RaviTambade/.NET/blob/main/Statemgmt.md"> ASP.NET Core State Management</a>
@@ -38,7 +36,6 @@ Create beautiful apps and scalable cloud services, faster and easier with the fr
 - <a href="https://github.com/RaviTambade/.NET/blob/main/signalR.md"> SignalR</a>
 - <a href="https://github.com/RaviTambade/.NET/blob/main/MQTT.md"> MQTT</a>
 - <a href="https://github.com/RaviTambade/.NET/blob/main/signalR.md"> SignalR</a>
-
 - Localization in MVC
 - Deploying ASP .NET MVC application
 - Kafka
