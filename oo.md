@@ -185,14 +185,15 @@ int [ ]  [ ]  mtrxj = new  int [2] [];
 ### Nullable Types
 ```
 class  DatabaseReader
-  {
+{
     public int? numericValue = null;
     public bool? boolValue = true;
     public int? GetIntFromDatabase()     { return numericValue; }
     public bool? GetBoolFromDatabase()   { return boolValue; }
-  }
-  public static void Main (string[] args)
-   {
+}
+  
+public static void Main (string[] args)
+  {
       DatabaseReader  dr = new DatabaseReader();
       int? i = dr.GetIntFromDatabase();
       if (i.HasValue)
@@ -203,17 +204,22 @@ class  DatabaseReader
       int? myData = dr.GetIntFromDatabase() ?? 100;
       Console.WriteLine("Value of myData: {0}", myData.Value);
    }
+
   static void LocalNullableVariables ()
-  {   int? nullableInt = 10;
-      double? nullableDouble = 3.14;
-      bool? nullableBool = null;
-      int?[] arrayOfNullableInts = new int?[10];
-      // Define some local nullable types using Nullable<T>. 
-      Nullable<int> nullableInt = 10;
-      Nullable<double> nullableDouble = 3.14;
-      Nullable<bool> nullableBool = null;
-      Nullable<int> [] arrayOfNullableInts = new int?[10];
-    }}}
+    {     int? nullableInt = 10;
+          double? nullableDouble = 3.14;
+          bool? nullableBool = null;
+          int?[] arrayOfNullableInts = new int?[10];
+          
+          // Define some local nullable types using Nullable<T>. 
+          
+          Nullable<int> nullableInt = 10;
+          Nullable<double> nullableDouble = 3.14;
+          Nullable<bool> nullableBool = null;
+          Nullable<int> [] arrayOfNullableInts = new int?[10];
+    }
+  }
+}
 
 ```
 
@@ -221,16 +227,18 @@ class  DatabaseReader
  
 - Provides code reusability and extensibility.
 - Inheritance is a property of class hierarchy whereby each derived class inherits attributes and methods of its base class.
-Every Manager is Employee.
-Every Wage Employee is Employee.
+Every Manager is Employee. Every Wage Employee is Employee.
 
 ```
-class Employee
-{   public double CalculateSalary ()
-       {return basic_sal + hra+ da ;}
+public class Employee
+{   
+  public double CalculateSalary ()
+      {
+        return basic_sal + hra+ da;
+      }
 }
 
-class Manager: Employee
+public class Manager: Employee
 {
    public double CalculateIncentives ()
     {
@@ -241,9 +249,9 @@ class Manager: Employee
 
 static void Main ()
 {
-Manager mgr =new Manager ();
-double Inc=mgr. CalculateIncentives ();
-double sal=mgr. CalculateSalary ();
+    Manager mgr =new Manager ();
+    double Inc=mgr. CalculateIncentives ();
+    double sal=mgr. CalculateSalary ();
 }
 
 
@@ -253,14 +261,20 @@ double sal=mgr. CalculateSalary ();
 
 ```
 
-class Employee
-{ public  Employee ()
-    {Console.WriteLine (“in Default constructor”) ;}
+public class Employee
+{ 
+  public  Employee ()
+    {
+      Console.WriteLine (“in Default constructor”);
+    }
+  
   public Employee (int eid, ….)
-     {Console.WriteLine (“in Parameterized constructor”) ;}
+    {
+      Console.WriteLine (“in Parameterized constructor”);
+    }
 }
 
-class Manager: Employee
+public class Manager: Employee
 {
  public Manager (): base ()   {……..}
  public Manager (int id): base (id,….)   {…..}
@@ -283,8 +297,9 @@ Virtual keyword is used to define a method in base class and override keyword is
 
 ```
 class Employee
-{ public virtual double CalculateSalary ()
-     {return basic_sal+ hra + da ;}
+{
+    public virtual double CalculateSalary ()
+    {return basic_sal+ hra + da ;}
 }
 
 class Manager: Employee
@@ -345,12 +360,13 @@ public class StringSinglyList:SinglyList
 ```
 
 ### Concrete class vs. abstract classes
-Concrete class
+<b>Concrete class</b>
       Class describes the functionality of the objects that it can be used to instantiate.
-Abstract class
-Provides all of the characteristics of a concrete class except that it does not permit object instantiation.
-An abstract class can contain abstract and non-abstract methods.
-Abstract methods do not have implementation.
+
+<b>Abstract class</b>
+      Provides all of the characteristics of a concrete class except that it does not permit object instantiation.
+      An abstract class can contain abstract and non-abstract methods.
+      Abstract methods do not have implementation.
 
 ```
 abstract class Employee
@@ -367,13 +383,11 @@ abstract class Employee
   }
 
 static void Main ()
-{ 	Manager mgr=new Manager ();
-  	double bonus=mgr. CalaculateBonus ();
-  	double Salary=mgr. CalculateSalary ();
+{ 	
+  Manager mgr=new Manager ();
+  double bonus=mgr. CalaculateBonus ();
+  double Salary=mgr. CalculateSalary ();
 }
-
-
-
 ```
 
 
@@ -383,24 +397,23 @@ Base class for all .NET classes
 
 Object class methods
 
-o	public bool Equals(object)
-o	protected void Finalize()
-o	public int GetHashCode()
-o	public System.Type GetType()
-o	protected object MemberwiseClone()
-o	public string ToString()
+- public bool Equals(object)
+- protected void Finalize()
+- public int GetHashCode()
+- public System.Type GetType()
+- protected object MemberwiseClone()
+- public string ToString()
 
-Polymorphism using Object
-
-Polymorphism using Object
+#### Polymorphism using Object
 
 The ability to perform an operation on an object without knowing the precise type of the object.
 
 ```
 void Display (object o) 
 {
-Console.WriteLine (o.ToString ());
+  Console.WriteLine (o.ToString ());
 }
+
 public static void Main ()
 {  Display (34); 
    Display (“Transflower”);
@@ -409,51 +422,63 @@ public static void Main ()
 }
 ```
 
-
 ### Interface Inheritance
 
-For loosely coupled highly cohesive mechanism in Application.
-An interface defines a Contract
-Text Editor uses Spellchecker as interfaces.
+- For loosely coupled highly cohesive mechanism in Application.
+- An interface defines a Contract
+- Text Editor uses Spellchecker as interfaces.
+
 EnglishSpellChecker and FrenchSpellChecker are implementing contract defined by SpellChecker interface.
 
 ```
 interface ISpellChecker
-{ ArrayList CheckSpelling (string word) ;}
+{ 
+  ArrayList CheckSpelling (string word) ;
+}
+
 class EnglishSpellChecker:ISpellChecker
 {
   ArrayList CheckSpelling (string word) 
-   {// return possible spelling suggestions}
+  {
+    // return possible spelling suggestions
+  }
 }
+
 class FrenchSpellChecker:ISpellChecker
 { 
   ArrayList CheckSpelling (string word) 
-   {// return possible spelling suggestions}
+  {
+    // return possible spelling suggestions
+  }
 }
+
 class TextEditor
 {
- public static void Main()
- {    ISpellChecker checker= new EnglishSpellChecker ();
-ArrayList words=checker. CheckSpelling (“Flower”);
-…
- }
+  public static void Main()
+  { 
+      ISpellChecker checker= new EnglishSpellChecker ();
+      ArrayList words=checker. CheckSpelling (“Flower”);
+      …
+  }
 }
 
-
-
 ```
-
 
 ### Explicit Interface Inheritance
 ```
 interface IOrderDetails    { void ShowDetails() ;}
 interface ICustomerDetails { void ShowDetails() ;}
+
 class Transaction: IOrderDetails, ICustomerDetils
 {
-void IOrderDetails. ShowDetails()
-{  // implementation for interface IOrderDetails ;}
-void ICustomerDetails. ShowDetails()
-{  // implementation for interface IOrderDetails ;}
+    void IOrderDetails. ShowDetails()
+    {  
+      // implementation for interface IOrderDetails
+    }
+    void ICustomerDetails. ShowDetails()
+    {  
+      // implementation for interface IOrderDetails
+    }
 }
 public static void Main()
 {
@@ -477,21 +502,23 @@ cd.ShowDetails();
 
 ```
 class StackClass: ICloneable
- {  int size; int [] sArr;
-    public StackClass (int s) { size=s; sArr= new int [size]; }
-    public object Clone()
-    {  StackClass s = new StackClass(this.size);
-this.sArr.CopyTo(s.sArr, 0);
-return s;
-    }
+ {  
+  int size; int [] sArr;
+  public StackClass (int s) { size=s; sArr= new int [size]; }
+  public object Clone(){
+    StackClass s = new StackClass(this.size);
+    this.sArr.CopyTo(s.sArr, 0);
+    return s;
+  }
  }
-public static void Main()
-{ StackClass stack1 = new StackClass (4);
-  Stack1 [0] = 89;
-  …..
- StackClass stack2 = (StackClass) stack1.Clone ();
-}
 
+public static void Main()
+{
+  StackClass stack1 = new StackClass (4);
+  Stack1 [0] = 89;
+    …..
+  StackClass stack2 = (StackClass) stack1.Clone ();
+}
 
 ```
 
@@ -513,6 +540,8 @@ Contains classes and interfaces that provide a managed view of loaded types, met
 These types provide ability to dynamically create and invoke types.
 
 ## MethodInfo method;
+
+```
 string methodName;
 object result = new object ();
 object [] args = new object [] {1, 2};
@@ -528,3 +557,4 @@ break;
 }string res = result.ToString();
 Console.WriteLine (“Result is: {0}”, res);
 
+```
