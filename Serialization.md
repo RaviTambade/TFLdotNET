@@ -5,7 +5,7 @@ NET serialization is the process of converting an object's state into a binary f
 
 Serialization plays a crucial role when objects need to be transmitted over a network, shared between different processes or applications, or saved to a file or a database. By converting objects into a serialized form, they can be easily transmitted or stored, and later deserialized to recreate the original object.
 
-In .NET, serialization is primarily achieved through two mechanisms: Binary Serialization and XML Serialization. Let's explore each of them in detail:
+In .NET, serialization could be  achieved through  mechanisms: Binary Serialization and XML Serialization and JSON Serialization.
 
 ### Binary Serialization
 
@@ -18,6 +18,7 @@ public class Person
     public string Name { get; set; }
     public int Age { get; set; }
 }
+
 // Serialization
 Person person = new Person { Name = "John Doe", Age = 30 };
 using (FileStream stream = new FileStream("person.bin", FileMode.Create))
@@ -25,6 +26,7 @@ using (FileStream stream = new FileStream("person.bin", FileMode.Create))
     BinaryFormatter formatter = new BinaryFormatter();
     formatter.Serialize(stream, person);
 }
+
 // Deserialization
 using (FileStream stream = new FileStream("person.bin", FileMode.Open))
 {
@@ -61,7 +63,8 @@ using (FileStream stream = new FileStream("book.xml", FileMode.Open))
 ```
 
 ### JSON Serialization
-JSONSerializer class. The XmlSerializer serializes an object graph by representing its properties, fields, and values as XML elements and attributes.
+
+JSON data is a common format these days when passing data between applications. When building a .NET application, JSON data format conversion to .NET objects and vice versa is very common. Serialization is the process of converting .NET objects, such as strings, into a JSON format, and deserialization is the process of converting JSON data into .NET objects. The JsonSerializer serializes an object graph by representing its properties, fields, and values as JSON Object.
 
 ```
 
