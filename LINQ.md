@@ -1,4 +1,5 @@
-LINQ Language Integrated Query
+## LINQ Language Integrated Query
+
 The C# 3.0 language enhancements build on C# 2.0 to increase developer productivity: they make written code more 
 concise and make working with data as easy as working with objects. These features provide the foundation for the 
 LINQ project, a general purpose declarative query facility that can be applied to in-memory collections and data stored in 
@@ -28,6 +29,7 @@ Anonymous types are tuple types automatically inferred and created from object i
 
 Use of Automatically Implemented Properties
 Easy Initialization with Object and Collection Initializers
+
 ```
 using System;
 using System.Collections.Generic;
