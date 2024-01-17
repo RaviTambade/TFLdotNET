@@ -396,7 +396,6 @@ static void Main ()
 Base class for all .NET classes
 
 Object class methods
-
 - public bool Equals(object)
 - protected void Finalize()
 - public int GetHashCode()
@@ -415,10 +414,11 @@ void Display (object o)
 }
 
 public static void Main ()
-{  Display (34); 
-   Display (“Transflower”);
-   Display (4.453655);
-   Display (new Employee (“Ravi”, “Tambade”);
+{  
+  Display (34); 
+  Display (“Transflower”);
+  Display (4.453655);
+  Display (new Employee (“Ravi”, “Tambade”);
 }
 ```
 
@@ -482,11 +482,11 @@ class Transaction: IOrderDetails, ICustomerDetils
 }
 public static void Main()
 {
-Transaction obj = new Transaction();
-IOrderDetails od = obj;
-od.ShowDetails();
-ICustomerDetails cd = obj;
-cd.ShowDetails();
+    Transaction obj = new Transaction();
+    IOrderDetails od = obj;
+    od.ShowDetails();
+    ICustomerDetails cd = obj;
+    cd.ShowDetails();
 }
 
 
