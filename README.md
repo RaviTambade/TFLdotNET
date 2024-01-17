@@ -14,7 +14,7 @@ Create beautiful apps and scalable cloud services, faster and easier with the fr
 - <a href="https://github.com/RaviTambade/.NET/blob/main/Collections.md">Using Collection Framework using C#</a>
 - <a href="https://github.com/RaviTambade/.NET/blob/main/Reflection.md">Reflection</a>
 - <a href="https://github.com/RaviTambade/.NET/blob/main/Serialization.md">Serialization</a>
-- <a href="https://github.com/RaviTambade/.NET/blob/main/attributes.md">Custom Attributes</a>
+- <a href="https://github.com/RaviTambade/.NET/blob/main/Attributes.md">Custom Attributes</a>
 - <a href="https://github.com/RaviTambade/.NET/blob/main/delegate.md">Delegates</a>
 - <a href="https://github.com/RaviTambade/.NET/blob/main/events.md">Events</a>
 - <a href="https://github.com/RaviTambade/.NET/blob/main/linq.md">LINQ</a>
