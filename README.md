@@ -8,7 +8,7 @@ Create beautiful apps and scalable cloud services, faster and easier with the fr
 
 # .NET
 .NET 8 brings your apps increased performance and new features for C# 12/F# 8, .NET MAUI, ASP.NET Core/Blazor, Web APIs, WinForms, WPF and more. With .NET 8, you can also easily containerize your .NET 8 projects, set up CI/CD workflows in GitHub actions, and achieve cloud-native observability.
-- <a href="https://github.com/RaviTambade/.NET/blob/main/dotnetIntro.md">What is .NET ?</a>
+- <a href="https://github.com/RaviTambade/.NET/blob/main/dotnet.md">What is .NET ?</a>
 - <a href="https://github.com/RaviTambade/.NET/blob/main/CSharpLang.md">.NET Programming Language</a>
 
 # CSharp Essentials
