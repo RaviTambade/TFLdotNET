@@ -66,8 +66,35 @@ using (FileStream stream = new FileStream("book.xml", FileMode.Open))
 
 JSON data is a common format these days when passing data between applications. When building a .NET application, JSON data format conversion to .NET objects and vice versa is very common. Serialization is the process of converting .NET objects, such as strings, into a JSON format, and deserialization is the process of converting JSON data into .NET objects. The JsonSerializer serializes an object graph by representing its properties, fields, and values as JSON Object.
 
+#### What is JSON?
+JSON (JavaScript Object Notation) is a lightweight data interchange format. JSON is a text format that is completely language-independent. It is easy for humans to read and write and for machines to parse and generate. 
+
+JSON supports the following two data structures,
+
+Collection of name/value pairs - Different programming languages support this Data Structure.
+Ordered list of values - includes an array, list, vector or sequence, etc. 
+
+1.Object
+An unordered "name/value" assembly. An object begins with "{" and ends with "}." Behind each "name," there is a colon. And comma is used to separate much "name/value." For example,
+```
+var user = {"name":"Shiv","gender":"Male","birthday":"2000-8-9"}
 ```
 
+2. C# Array
+Value order set. An array begins with "[" and ends with "]." And values are separated with commas. For example,
+```
+var userlist = [
+    {"user":{"name":"Shiv","gender":"Male","birthday":"2000-8-9"}},
+    {"user":{"name":"Mohapatra","Male":"Female","birthday":"2004-6-7"}
+    }
+]
+```
+
+Let us write RepositoryManager class with implementation of Serialization/DeSerialization process for 
+Employee Collection objects/
+
+
+```
 using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
