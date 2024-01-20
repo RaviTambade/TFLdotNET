@@ -146,3 +146,8 @@ public class ProductsController : ControllerBase
         }
 }
 ```
+
+## Testing Web API using Postman Tool 
+The Postman is the most popular and most powerful HTTP client for testing restful web services. Postman makes it easy to test the Restful Web APIs, as well as develops and documents Restful APIs by allowing the users to quickly put together both simple and complex HTTP requests. The Postman is available as both a Google Chrome in-browser app and Google Chrome Packaged App.
+
+
