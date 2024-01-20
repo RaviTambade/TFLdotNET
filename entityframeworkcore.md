@@ -1,7 +1,10 @@
+# Entity Framework
+
 Entity Framework (EF) Core is an ORM (Object-Relational Mapper) Framework for data access in .NET Core. It was released along with .NET Core and is an Extensible, Lightweight, Open Source, and Cross-Platform Version of Entity Framework data access technology. It works on multiple operating systems like Windows, Mac, and Linux.
 
 The Entity Framework is an Object/Relational Mapping (O/RM) framework that maps objects to relational databases. EF Core is designed to work with .NET Core applications but can also be used with standard .NET Framework applications based on Framework 4.5 or higher. The following diagram shows the supported types of applications that we can develop using EF Core.
-What is ORM?
+
+## What is ORM?
 The term ORM stands for Object-Relational Mapper, and it automatically creates classes based on database tables and vice versa is also true. It can also generate the necessary SQL to create the database based on the classes.
 
 As a developer, we mostly work with data-driven applications, and the ORM Framework generates the necessary SQL (to perform the CRUD operation) that the underlying database can understand. So, in simple words, we can say that the ORM Framework eliminates the need for most of the data access code that, as a developer, we generally write.
@@ -14,12 +17,13 @@ While working with Entity Framework Core, we can perform different operations on
 Entity Framework Core will generate and execute the SQL Command in the database and then store the results in the instances of your domain objects so you can do different types of operations on the data.
 
 
-EF Core Development Approaches:
+## EF Core Development Approaches:
 Entity Framework Core supports two development approaches. They are as follows:
 
-Code-First Approach
-Database-First Approach
-## EF Core Code First Approach:
+- Code-First Approach
+- Database-First Approach
+
+###  EF Core Code First Approach:
 In the EF Core Code First Approach, first, we need to create our application domain classes, such as Student, Branch, Address, etc., and a special class (called DBContext Class) that derives from the Entity Framework DbContext class. Then, based on the application domain classes and DBContext class, the EF Core creates the database and related tables. For a better understanding, please have a look at the following diagram.
 
 In the Code-First Approach, the EF Core creates the database and tables using Code-First Migration based on the default conventions and configuration. You can also change the default conventions used to create the database and its related tables. This approach is useful in Domain-Driven Design (DDD), i.e., creating the database tables based on the Domain classes.
