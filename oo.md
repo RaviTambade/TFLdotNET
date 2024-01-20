@@ -147,7 +147,6 @@ public class Books
    }
 }
 
-
 public static void Main ()
 { 
   Books mybooks=new Books ();
@@ -207,9 +206,6 @@ static void Main(string[] args)
  }
 
 ```
-
-
-
 
 
 ### Nullable Types
@@ -307,7 +303,6 @@ public class Manager: Employee
   public Manager (): base ()   {……..}
   public Manager (int id): base (id,….)   {…..}
 }
-
 ```
 
 
@@ -440,15 +435,19 @@ abstract class Employee
 
 ### Object class
 
-Base class for all .NET classes
+All the types in .NET are represented as objects and are derived from the Object class.
+The Object class has five methods:
+- GetType
+  - 	Returns type of the object.
+- Equals
+  - Compares two object instances. Returns true if they are equal, otherwise false.
+- ReferenceEquals
+  - Compares two object instances. Returns true if both are same instances, otherwise false.
+- ToString
+  - Converts an instance to a string type.
+- GetHashCode
+  - 	Returns hashcode for an object.
 
-Object class methods
-- public bool Equals(object)
-- protected void Finalize()
-- public int GetHashCode()
-- public System.Type GetType()
-- protected object MemberwiseClone()
-- public string ToString()
 
 #### Polymorphism using Object
 
@@ -509,7 +508,6 @@ class TextEditor
       …
   }
 }
-
 ```
 
 ### Explicit Interface Inheritance

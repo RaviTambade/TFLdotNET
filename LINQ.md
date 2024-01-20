@@ -72,7 +72,7 @@ Query Syntax is often more readable for queries that involve joining, grouping, 
 - <b>Comprehension Syntax</b>: For those who prefer the comprehension syntax (from…where…select), which is more expressive and closer to natural language.
 - <b>Grouping Operations</b>: When performing grouping operations, Query Syntax often results in more concise and readable code compared to Method Syntax.
 - <b>Joining Operations</b>: Query Syntax can be more straightforward and less verbose for queries involving multiple joins, especially those that resemble relational database queries.
--<b> Readability and Maintainability</b>: When the priority is to have code that is easy to read and maintain. Query Syntax often leads to cleaner filtering, sorting, and selection logic separation.
+- <b> Readability and Maintainability</b>: When the priority is to have code that is easy to read and maintain. Query Syntax often leads to cleaner filtering, sorting, and selection logic separation.
 
 
 ### Working with Lambda Expressions (Arrow Function)
@@ -102,7 +102,6 @@ namespace NewLanguageFeatures
                 return false;
             }
     }
-    
 
     public class Customer
     {
