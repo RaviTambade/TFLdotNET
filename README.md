@@ -26,7 +26,6 @@ Create beautiful apps and scalable cloud services, faster and easier with the fr
 - <a href="https://github.com/RaviTambade/.NET/blob/main/model.md">ASP.net Core Model</a>
 - <a href="https://github.com/RaviTambade/.NET/blob/main/view.md">ASP.net Core Views</a>
 - <a href="https://github.com/RaviTambade/.NET/blob/main/taghelper.md">ASP.net Core TagHelpers</a>
-- <a href="https://github.com/RaviTambade/.NET/blob/main/taghelper.md">ASP.net Core APP Middleware(HTTP Pipeline)</a>
 - <a href="https://github.com/RaviTambade/.NET/blob/main/MiddlewareAndRouting.md">ASP.net Core APP Middleware(HTTP Pipeline)</a>
 - <a href="https://github.com/RaviTambade/.NET/blob/main/Statemgmt.md"> ASP.NET Core State Management</a>
 - <a href="https://github.com/RaviTambade/.NET/blob/main/entityframeworkcore.md"> Entity Framework Core</a>
