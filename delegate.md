@@ -15,10 +15,6 @@ Invoking a delegate is like as invoking a regular method.
 1. <b>Single cast delegate</b>
 A single cast delegate holds the reference of only single method. In previous example, created delegate is a single cast delegate.
 
-2. <b>Multi cast delegate</b>
-A delegate which holds the reference of more than one method is called multi-cast delegate. A multicast delegate only contains the reference of methods which return type is void. The + and += operators are used to combine delegate instances. Multicast delegates are considered equal if they reference the same methods in the same order.
-
-
 ```
 delegate string strDelegate(string str);
 strDelegate strDel =new strDelegate(strObject.ReverseStr);
@@ -28,7 +24,10 @@ string str=strDel(“Hello Transflower”);
 string str =strDel.Invoke(“Hello Transflower”);
 ```
 
-Muticase Delegate
+2. <b>Multi cast delegate</b>
+A delegate which holds the reference of more than one method is called multi-cast delegate. A multicast delegate only contains the reference of methods which return type is void. The + and += operators are used to combine delegate instances. Multicast delegates are considered equal if they reference the same methods in the same order.
+
+
  
 A Multicast delegate derives from System.MulticastDelegate class.
 It provides synchronous way of invoking the methods in the invocation list.
