@@ -1,18 +1,18 @@
 ## LINQ : Language Integrated Query
 
-
 Language-Integrated Query (LINQ) is a powerful set of technologies based on the integration of query capabilities directly into the C# language. LINQ Queries are the first-class language construct in C# .NET, just like classes, methods, events. The LINQ provides a consistent query experience to query objects (LINQ to Objects), relational databases (LINQ to SQL), and XML (LINQ to XML).
 
 ### Key Features of LINQ:
 LINQ provides the following Key Features:
 
-- Uniform Query Syntax: Whether you are querying an SQL database, an XML document, or an in-memory collection, the syntax is consistent and typically involves query operators like where, select, groupby, etc.
-- Consistency: LINQ provides a consistent and uniform way to query different data sources, simplifying code and reducing the need to learn multiple query languages for different data types.
-- Improved Productivity: LINQ simplifies common data operations like filtering, sorting, and grouping, reducing the amount of repetitive code that developers need to write.
-- Strongly Typed: LINQ is strongly typed, which means the compiler checks the syntax against the types of objects being queried, thus minimizing runtime errors.
-- SQL-Like Syntax: LINQ queries use a SQL-like syntax that is familiar to many developers, making it easier to express complex data retrieval and manipulation operations.
+- <b>Uniform Query Syntax</b>: Whether you are querying an SQL database, an XML document, or an in-memory collection, the syntax is consistent and typically involves query operators like where, select, groupby, etc.
+- <b>Consistency</b>: LINQ provides a consistent and uniform way to query different data sources, simplifying code and reducing the need to learn multiple query languages for different data types.
+- <b>Improved Productivity</b>: LINQ simplifies common data operations like filtering, sorting, and grouping, reducing the amount of repetitive code that developers need to write.
+- </b>Strongly Typed</b>: LINQ is strongly typed, which means the compiler checks the syntax against the types of objects being queried, thus minimizing runtime errors.
+- <b>SQL-Like Syntax</b>: LINQ queries use a SQL-like syntax that is familiar to many developers, making it easier to express complex data retrieval and manipulation operations.
 
 ```
+
 // Data source
 string[] names = {"Bill", "Steve", "James", "Mohan" };
 
@@ -65,19 +65,17 @@ namespace LINQDemo
 ```
 
 ### Use LINQ Query Syntax:
-
 Query Syntax is often more readable for queries that involve joining, grouping, or sorting operations. It is closer to the SQL style of queries and is great for developers already comfortable with SQL. The LINQ Query Syntax in C# is often preferred in certain scenarios due to its readability and similarity to SQL. It’s particularly advantageous in the following situations:
 
-- SQL-Like Queries: For developers familiar with SQL, Query Syntax provides a more intuitive and familiar way to compose queries. Its declarative nature makes it easy to read and understand, especially for simple queries.
-- Complex Queries: When dealing with complex queries that involve multiple operations like joins, grouping, and ordering, Query Syntax can be more readable and organized. The operations flow logically, similar to how SQL queries are structured.
-- Comprehension Syntax: For those who prefer the comprehension syntax (from…where…select), which is more expressive and closer to natural language.
-- Grouping Operations: When performing grouping operations, Query Syntax often results in more concise and readable code compared to Method Syntax.
-- Joining Operations: Query Syntax can be more straightforward and less verbose for queries involving multiple joins, especially those that resemble relational database queries.
-- Readability and Maintainability: When the priority is to have code that is easy to read and maintain. Query Syntax often leads to cleaner filtering, sorting, and selection logic separation.
+- <b>SQL-Like Queries</b>: For developers familiar with SQL, Query Syntax provides a more intuitive and familiar way to compose queries. Its declarative nature makes it easy to read and understand, especially for simple queries.
+- <b>Complex Queries</b>: When dealing with complex queries that involve multiple operations like joins, grouping, and ordering, Query Syntax can be more readable and organized. The operations flow logically, similar to how SQL queries are structured.
+- <b>Comprehension Syntax</b>: For those who prefer the comprehension syntax (from…where…select), which is more expressive and closer to natural language.
+- <b>Grouping Operations</b>: When performing grouping operations, Query Syntax often results in more concise and readable code compared to Method Syntax.
+- <b>Joining Operations</b>: Query Syntax can be more straightforward and less verbose for queries involving multiple joins, especially those that resemble relational database queries.
+-<b> Readability and Maintainability</b>: When the priority is to have code that is easy to read and maintain. Query Syntax often leads to cleaner filtering, sorting, and selection logic separation.
 
 
-### Working with Lambda Expressions
-
+### Working with Lambda Expressions (Arrow Function)
 ```
 using System;
 using System.Collections.Generic;
@@ -104,6 +102,7 @@ namespace NewLanguageFeatures
                 return false;
             }
     }
+    
 
     public class Customer
     {
