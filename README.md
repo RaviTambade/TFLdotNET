@@ -22,9 +22,9 @@ Create beautiful apps and scalable cloud services, faster and easier with the fr
 - <a href="https://github.com/RaviTambade/.NET/blob/main/AspnetCoreLifeCycle.md">ASP.net Core App Life Cycle Management</a>
 - <a href="https://github.com/RaviTambade/.NET/blob/main/folderstructure.md">ASP.net Core App folder Structure</a>
 - <a href="https://github.com/RaviTambade/.NET/blob/main/mvc.md">ASP.net Core Model View Controller Architecture</a>
-- <a href="https://github.com/RaviTambade/.NET/blob/main/controllers.md">Controllers</a>
-- <a href="https://github.com/RaviTambade/.NET/blob/main/models.md">Model</a>
-- <a href="https://github.com/RaviTambade/.NET/blob/main/views.md">Views</a>
+- <a href="https://github.com/RaviTambade/.NET/blob/main/Controllers.md">Controllers</a>
+- <a href="https://github.com/RaviTambade/.NET/blob/main/Models.md">Model</a>
+- <a href="https://github.com/RaviTambade/.NET/blob/main/Views.md">Views</a>
 - <a href="https://github.com/RaviTambade/.NET/blob/main/taghelper.md">TagHelpers</a>
 - <a href="https://github.com/RaviTambade/.NET/blob/main/MiddlewareAndRouting.md"> Middleware(HTTP Pipeline)</a>
 - <a href="https://github.com/RaviTambade/.NET/blob/main/Statemgmt.md"> State Management</a>
