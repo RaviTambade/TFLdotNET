@@ -56,11 +56,10 @@ MyAsyncFunction();
 
 ```
 
-What is  Async and Await ?
+## Async and Await
 The async and await keywords in C# simplify managing multithreaded applications. When you mark a method with the async keyword, it signifies that the method can contain the await keyword, which effectively tells C# to delegate the rest of the function’s execution to a worker thread, thus freeing up the main thread to perform other tasks.
 
 ```
-
 public async Task MyFunction()
 {
     await Task.Run(() =>
@@ -68,9 +67,8 @@ public async Task MyFunction()
         // Complex calculation here
     });
 }
-
-
 ```
+
 The complex calculation runs on a worker thread, leaving the main thread free to process other tasks, enhancing the responsiveness of your application.
 
 
@@ -84,11 +82,11 @@ lock (thisLock)
 {
     // Code that accesses shared resources
 }
-
 ```
 
 ## Thread Priorities
 C# allows you to set the priority of a thread, which determines the proportion of CPU time that a thread receives relative to other threads. However, misusing thread priority can result in starvation, where higher-priority threads consume all the CPU time. Use thread priority judiciously, ensuring most threads operate at the default priority.
+
 ## Deadlocks
 A deadlock is a situation where two or more threads cannot progress because each is waiting for the other to release a resource. To avoid deadlocks, try to avoid scenarios where a thread holds a lock and simultaneously waits for another thread to release its lock.
 
@@ -96,18 +94,13 @@ A deadlock is a situation where two or more threads cannot progress because each
 The ThreadPool class in C# is designed to make thread management more manageable by providing a pool of worker threads ready to be used. When a task is delegated to the ThreadPool, it will be executed by one of the free threads, eliminating the overhead of creating and destroying threads.
 
 ```
-
 ThreadPool.QueueUserWorkItem((state) =>
 {
     // Task to be executed by a thread from the pool
 });
-
-
-
 ```
 
 ## Task for High-Level Multithreading
-
 C# provides the Task class, a higher-level way to work with multithreading. A task represents an asynchronous operation and is often easier and safer than directly managing threads. Tasks can also return a result and handle exceptions more smoothly.
 
 ```
@@ -117,9 +110,7 @@ Task<int> task = Task.Run(() =>
     return result;
 });
 int result = await task; // Retrieve the result of the Task
-
-
 ```
 
- By adhering to these best practices, you can maximize the benefits of multithreading in your C# applications while mitigating potential problems.
+By adhering to these best practices, you can maximize the benefits of multithreading in your C# applications while mitigating potential problems.
 
