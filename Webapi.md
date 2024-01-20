@@ -1,5 +1,8 @@
 # Web API
 
+In computer programming, an application programming interface (API) is a set of subroutine definitions, protocols, and tools for building software and applications.
+
+To put it in simple terms, API is some kind of interface which has a set of functions that allow programmers to access specific features or data of an application, operating system or other services.
 
 Web API is a programming interface/application type that provides communication or interaction between software applications. Web API is often used to provide an interface for websites and client applications to have data access. Web APIs can be used to access data from a database and save data back to the database. 
 
@@ -28,6 +31,14 @@ REST constraints are design rules that are applied to establish the distinct cha
 - Code-On-Demand
 
 
+## ASP.NET Web API Characteristics
+- ASP.NET Web API is an ideal platform for building RESTful services.
+- ASP.NET Web API is built on top of ASP.NET and supports ASP.NET request/response pipeline
+- ASP.NET Web API maps HTTP verbs to method names.
+- ASP.NET Web API supports different formats of response data. Built-in support for JSON, XML, BSON format.
+-- ASP.NET Web API framework includes new HttpClient to communicate with Web API server. HttpClient can be used in ASP.MVC server side, Windows Form application, Console application or other apps.
+
+## Example  API Controller
 
 ```
 using Microsoft.AspNetCore.Mvc;
