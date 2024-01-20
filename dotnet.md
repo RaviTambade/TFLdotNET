@@ -68,8 +68,6 @@ The CLR compiles code as the developer writes it. During compilation, CLR transl
 ## Execution
 .NET runtime manages the execution of CIL code. CIL is cross-platform compatible, and any operating system can process it. Cross-platform compatibility refers to an application’s ability to run on multiple different operating systems with minimal modifications. For example, an application in C# can run on Windows, Linux, or macOS without any code modifications. Such an application is called a cross-platform application.
 
-
-
 ## What are .NET application model frameworks?
 
 The application model frameworks are a collection of developer tools and libraries that support fast and efficient .NET project development. Different frameworks exist for different types of applications, such as those listed below.
