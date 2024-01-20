@@ -21,13 +21,10 @@ Like other programming languages, array in C# is a group of similar types of ele
 
 #### C# Array Types
 There are 3 types of arrays in C# programming:
-
 - Single Dimensional Array
 - Multidimensional Array
 - Jagged Array
-
-```
-
+ 
 ### C# Single Dimensional Array
 To create single dimensional array, you need to use square brackets [] after the type.
 
@@ -42,11 +39,6 @@ foreach (int i in intArray )
 Array.Sort(intArray);
 Array.Reverse(intArray);
 
-```
-
-
-#### Multidimensional Arrays
-
 int[] arr = new int[5];//creating array  
 int[] arr2 = new int[]{ 10, 20, 30, 40, 50 };  
 
@@ -54,11 +46,13 @@ foreach (int i in arr2)
 {  
     Console.WriteLine(i);  
 }  
+```
 
+## Multidimensional Arrays
 
 The multidimensional array is also known as rectangular arrays in C#. It can be two dimensional or three dimensional. The data is stored in tabular form (row * column) which is also known as matrix.
 
-
+```
 int [ , ]  mtrx = new int [2, 3];
 
 //Can initialize declaratively
@@ -71,28 +65,24 @@ for(int i=0;i<3;i++){
     }  
     Console.WriteLine();//new line at each row  
 }  
-
-
 ```
-
 
 #### Jagged Arrays
 In C#, jagged array is also known as "array of arrays" because its elements are arrays. The element size of jagged array can be different.
 
 ```
-  int [ ]  [ ]  mtrxj = new  int [2] [];
 
-Initialization of Jagged array upon Declaration
+int [ ]  [ ]  mtrxj = new  int [2] [];
 
-```
-  int[][] arr = new int[3][]{  
+//Initialization of Jagged array upon Declaration
+
+int[][] arr = new int[3][]{  
           new int[] { 11, 21, 56, 78 },  
           new int[] { 2, 5, 6, 7, 98, 5 },  
           new int[] { 2, 5 }  
           };  
 
-
- // Traverse array elements  
+// Traverse array elements  
   for (int i = 0; i < arr.Length; i++)  
   {  
       for (int j = 0; j < arr[i].Length; j++)  
@@ -101,77 +91,67 @@ Initialization of Jagged array upon Declaration
       }  
       System.Console.WriteLine();  
   }  
-
-``` 
-
-
-
 ```
 
 ## Collection Interfaces
 
 The .NET provides standard interfaces for enumerating, comparing, and creating collections.
-
-Interface Description
-
-- IEnumertor Supports a simple iteration over collection
-- IEnumerable Supports foreach semantics
-- ICollection Defines size, enumerators and synchronization methods for all collections.
-- IList Represents a collection of objects that could be accessed by index
-- IComaprable Defines a generalized comparison method to create a type-specific 
+- <b>IEnumertor</b> Supports a simple iteration over collection
+- <b>IEnumerable</b> Supports foreach semantics
+- <b>ICollection</b> Defines size, enumerators and synchronization methods for all collections.
+- <b>IList</b> Represents a collection of objects that could be accessed by index
+- <b>IComaprable</b> Defines a generalized comparison method to create a type-specific 
 comparison
-- IComparer Exposes a method that compares two objects.
-- IDictionary Represents a collection of Key and value pair
+- <b>IComparer</b> Exposes a method that compares two objects.
+- <b>IDictionary</b> Represents a collection of Key and value pair
 
+## Implementing IEnumerable Interface
 
-
-Implementing IEnumerable Interface
-public class Team:IEnumerabl
 ```
 public class Team:IEnumerable
 {
-private player [] players;
-public Team ()
-{
-Players= new Player [3];
- Players[0] = new Player(“Sachin”, 40000);
-Players[1] = new Player(“Rahul”, 35000);
-Players[2] = new Player(“Mahindra”, 34000);
+    private player [] players;
+
+    public Team ()
+    {
+    Players= new Player [3];
+    Players[0] = new Player(“Sachin”, 40000);
+    Players[1] = new Player(“Rahul”, 35000);
+    Players[2] = new Player(“Mahindra”, 34000);
+    }
+
+    public IEnumertor GetEnumerator ()
+    {
+        Return players.GetEnumerator();
+    }
 }
-public IEnumertor GetEnumerator ()
-{
-Return players.GetEnumerator();
-}
-}
+
 public static void Main()
 {
-Team India = new Team();
-foreach(Player c in India)
-{
- Console.WriteLine (c.Name, c.Runs);
+    Team India = new Team();
+    foreach(Player c in India)
+    {
+        Console.WriteLine (c.Name, c.Runs);
+    }
 }
-}
-
-
 ```
 
-Implementing ICollection Interface
+## Implementing ICollection Interface
 
 - To determine number of elements in a container.
 - Ability to copy elements into System.Array type
 
 ```
+public class Team:ICollection
 {
-private Players [] players;
-public Team() {……..}
-public int Count {get {return players.Count ;}
+    private Players [] players;
+    public Team() {……..}
+    public int Count {get {return players.Count ;}
+    }
+    // other implementation of Team
 }
-// other implementation of Team
-}
-
 
 //Main Function
-
 public static void Main()
 {
     Team India = new Team ();
@@ -183,7 +163,7 @@ public static void Main()
 
 ```
 
-Implementing IComparable Interfac
+## Implementing IComparable Interfac
 
 ```
 public class Player:IComparable
@@ -208,11 +188,9 @@ public static void Main()
     Arary.Sort(India);
     // display sorted Array
 }
-
-
 ```
 
-Using Iterator Method
+## Using Iterator Method
 
 ```
 public class Team
@@ -246,11 +224,11 @@ public static void Main()
 ```
 
 
-Generic Collections
+## Generic Collections
 
 A Generic collection provides the type safety without derivation from a basic collection type and the implementation of type-specific members. The Generic Collection classes are found in the namespace "System.Collections.Generics." Internally, Generic Collections store elements in arrays of their respective types.
 
-List:
+### List:
 In Generic List, we have to specify a data type to its contents, and all elements will have the same datatype.
 ```
 using System;
@@ -273,10 +251,9 @@ namespace genericList
         }
     }
 }
-=
 ```
 
-Dictionary:
+### Dictionary:
 Dictionaries usually store data in key-value pairs, and we have to specify both data types beforehand.
 
 ```
@@ -303,7 +280,7 @@ namespace TFL
 }
 ```
 
-Sorted List:
+### Sorted List:
 A sorted list also stores a key-value pair and automatically sorts its elements in ascending order based on their keys. In the generic Sorted list, we have to specify the datatypes of its content beforehand.
 
 ```
@@ -333,7 +310,7 @@ namespace TFL
 ```
 
 
-Stack:
+### Stack:
 Values are kept in Stack using LIFO (Last In First Out). It offers the Push() and Pop() & Peek() methods to add and retrieve values, respectively. In generic Stack, we have to specify the datatypes of its content beforehand.
 
 ```
@@ -360,9 +337,8 @@ namespace TFL
 }
 ```
 
-Queue:  
+### Queue:  
 Values are kept in a queue in a FIFO fashion (First In, First Out). The sequence in which the values were inserted is preserved. It offers the Enqueue() and Dequeue() methods to add and remove values from the collection. In the generic queue, we have to specify the datatypes of its content beforehand.
-
 
 ```
 using System;
@@ -389,8 +365,8 @@ namespace TFL
 ```
 
 ### Benefits of Collections in C#
-There are many benefits of Collections in C#.
 
+There are many benefits of Collections in C#.
 - Generic collections work faster than non-generic ones and decrease exceptions by revealing compile-time faults.
 - Non-generic collection types are in "System. Collections," while generic types are in "System.Collections.Generic."
 - C# also has several specialized collections tuned to deal with a specific data type, which we can find in the "System.Collections.Specialized" namespace.
