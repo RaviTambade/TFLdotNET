@@ -17,6 +17,7 @@ Create beautiful apps and scalable cloud services, faster and easier with the fr
 - <a href="https://github.com/RaviTambade/.NET/blob/main/events.md">Events</a>
 - <a href="https://github.com/RaviTambade/.NET/blob/main/Attributes.md">Custom Attributes</a>
 - <a href="https://github.com/RaviTambade/.NET/blob/main/multithreading.md">Mutithreading</a>
+- <a href="https://github.com/RaviTambade/.NET/blob/main/databasecrud.md">Data Access using C#</a>
 
 # ASP.NET  Core
 - <a href="https://github.com/RaviTambade/.NET/blob/main/aspnetintro.md">ASP.NET Core Overview </a>
