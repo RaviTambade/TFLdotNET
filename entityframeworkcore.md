@@ -119,3 +119,97 @@ DbContext Properties in Entity Framework Core:
 19. <b>ChangeTracker</b>: Provides access to information and operations for entity instances this context is tracking.
 20. <b>Database</b>: Provides access to database-related information and operations for this context.
 21. <b>Model</b>: Returns the metadata about the shape of entities, the relationships between them, and how they map to the database.
+
+
+## Example using Entity Framework Core
+
+
+#### Collection Context class
+
+
+```
+using Microsoft.EntityFrameworkCore;
+using BOL;
+
+namespace DAL;
+    public class CollectionContext:DbContext{
+        public DbSet<Department> Departments {get;set;}
+        public CollectionContext(){
+
+        } 
+       protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            string conString=@"server=localhost;port=3306;user=root; password=password;database=transflower";       
+            optionsBuilder.UseMySQL(conString);
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Department>(entity => 
+            {
+            entity.HasKey(e => e.Id);
+            entity.Property(e => e.Name).IsRequired();
+            entity.Property(e => e.Location).IsRequired();
+            });
+            modelBuilder.Entity<Department>().ToTable("departments");
+        }
+    }
+
+```
+
+#### DBManager with CRUD Operations
+
+```
+namespace DAL;
+using BOL;
+public class DBManager:IDBManager{
+    public void Delete(int id)
+    {
+        using(var context = new CollectionContext())
+        {
+            context.Departments.Remove(context.Departments.Find(id));
+            context.SaveChanges();
+        }
+    }
+
+    public List<Department> GetAll()
+    {
+        using (var context = new CollectionContext())
+        {
+            var departments=from dept in context.Departments select dept;
+            return departments.ToList<Department>();
+        }
+    }
+
+    public Department GetById(int id)
+    {
+        using (var context = new CollectionContext())
+        {
+            var dept = context.Departments.Find(id);
+            return dept;
+        }
+    }
+
+    public void Insert(Department dept)
+    {
+        using (var context = new CollectionContext())
+        {
+            context.Departments.Add(dept);
+            context.SaveChanges();  
+        }
+    }
+
+    public void Update(Department dept)
+    {
+        using (var context = new CollectionContext())
+        {
+            var theDept = context.Departments.Find(dept.Id);
+            theDept.Name =dept.Name;
+            theDept.Location=dept.Location;
+            context.SaveChanges();
+        }
+    }
+}
+
+```
