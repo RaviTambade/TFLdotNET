@@ -28,6 +28,7 @@ foreach(var name in myLinqQuery)
 ```
 
 ### Example Using LINQ Query Syntax in C#:
+
 The following Example code is self-explained, so please go through the comment lines. Here, we have created a collection of integers, i.e., going to be our data source. Then, we created one LINQ query, which will fetch the numbers from the data source that are greater than 5, and finally, we executed the query and printed the result on the Console window. The LINQ query contains three things, i.e., Data Source, Condition, and Selection.
 
 ```
@@ -65,6 +66,7 @@ namespace LINQDemo
 ```
 
 ### Use LINQ Query Syntax:
+
 Query Syntax is often more readable for queries that involve joining, grouping, or sorting operations. It is closer to the SQL style of queries and is great for developers already comfortable with SQL. The LINQ Query Syntax in C# is often preferred in certain scenarios due to its readability and similarity to SQL. It’s particularly advantageous in the following situations:
 
 - <b>SQL-Like Queries</b>: For developers familiar with SQL, Query Syntax provides a more intuitive and familiar way to compose queries. Its declarative nature makes it easy to read and understand, especially for simple queries.
@@ -75,364 +77,143 @@ Query Syntax is often more readable for queries that involve joining, grouping, 
 - <b> Readability and Maintainability</b>: When the priority is to have code that is easy to read and maintain. Query Syntax often leads to cleaner filtering, sorting, and selection logic separation.
 
 
-### Working with Lambda Expressions (Arrow Function)
+### Basic Ways to Write LINQ Queries
+There are two basic ways to write LINQ queries:
+
+1. Query Syntax
+2. Method Syntax
+
+
+#### Query Syntax
+
 ```
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-namespace NewLanguageFeatures
+static IQueryable<Student> GetStudentsFromDb()
 {
-    public static class Extensions
-    {
-        public static List<T> Append<T>(this List<T> a, List<T> b)
-        {
-            var newList = new List<T>(a);
-            newList.AddRange(b);
-            return newList;
-        }
-        public static bool Compare(this Customer customer1, Customer customer2)
-        {
-            if (customer1.CustomerID == customer2.CustomerID &&
-            customer1.Name == customer2.Name &&
-            customer1.City == customer2.City)
-            {
-                return true;
-            }
-                return false;
-            }
-    }
-
-    public class Customer
-    {
-        public int CustomerID { get; private set; }
-        public string Name { get; set; }
-        public string City { get; set; }
-       
-        public Customer(int ID)
-        {
-             CustomerID = ID;
-        }
-        public override string ToString()
-        {
-            return Name + "\t" + City + "\t" + CustomerID;
-        }
-    }
-
- class Program
- {
-    static void Main(string[] args)
-    {
-        var customers = CreateCustomers();
-        var addedCustomers = new List<Customer>
-        {
-            new Customer(9) { Name = "Paolo Accorti", City = "Torino" },
-            new Customer(10) { Name = "Diego Roel", City = "Madrid" }
-        };
-        var updatedCustomers = customers.Append(addedCustomers);
-        var newCustomer = new Customer(10)
-        {
-            Name = "Diego Roel",
-            City = "Madrid"
-        };
-        foreach (var c in updatedCustomers)
-        {
-            if (newCustomer.Compare(c))
-            {
-                Console.WriteLine("The new customer was already in the list");
-                return;
-            }
-        }
-        Console.WriteLine("The new customer was not in the list");
-    }
-
-
-    static List<Customer> CreateCustomers()
-    {
-        return new List<Customer>
-        {
-            new Customer(1) { Name = "Maria Anders", City = "Berlin" },
-            new Customer(2) { Name = "Laurence Lebihan", City = "Marseille" },
-            new Customer(3) { Name = "Elizabeth Brown", City = "London" },
-            new Customer(4) { Name = "Ann Devon", City = "London" },
-            new Customer(5) { Name = "Paolo Accorti", City = "Torino" },
-            new Customer(6) { Name = "Fran Wilson", City = "Portland" },
-            new Customer(7) { Name = "Simon Crowther", City = "London" },
-            new Customer(8) { Name = "Liz Nixon", City = "Portland" }
-        };
-        } 
-    }
-}
-```
-
-
-### Using Lambda Expressions to Create Expression Trees
-
-```
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-namespace NewLanguageFeatures
-{
-    public static class Extensions
-    {
-        public static List<T> Append<T>(this List<T> a, List<T> b)
-        {
-            var newList = new List<T>(a);
-            newList.AddRange(b);
-            return newList;
-        }
-        public static bool Compare(this Customer customer1, Customer customer2)
-        {
-            if (customer1.CustomerID == customer2.CustomerID &&
-            customer1.Name == customer2.Name &&
-            customer1.City == customer2.City)
-            {
-                return true;
-            }
-                return false;
-        }
-    }
-    public class Customer
-    {
-        public int CustomerID { get; private set; }
-        public string Name { get; set; }
-        public string City { get; set; }
-
-        public Customer(int ID)
-        {
-            CustomerID = ID;
-        }
-        
-        public override string ToString()
-        {
-            return Name + "\t" + City + "\t" + CustomerID;
-        }
- }
-
-
-
-class Program
- {
-    static void Main(string[] args)
-    {
-        var customers = CreateCustomers();
-        foreach (var c in FindCustomersByCity(customers, "London"))
-        Console.WriteLine(c);
-        }
-
-    public static List<Customer> FindCustomersByCity( List<Customer> customers, string city)
-    {
-        return customers.FindAll(c => c.City == city);
-    }
-
-
-    static List<Customer> CreateCustomers()
-    {
-        return new List<Customer>
-        {
-            new Customer(1) { Name = "Maria Anders", City = "Berlin" },
-            new Customer(2) { Name = "Laurence Lebihan", City = "Marseille" },
-            new Customer(3) { Name = "Elizabeth Brown", City = "London" },
-            new Customer(4) { Name = "Ann Devon", City = "London" },
-            new Customer(5) { Name = "Paolo Accorti", City = "Torino" },
-            new Customer(6) { Name = "Fran Wilson", City = "Portland" },
-            new Customer(7) { Name = "Simon Crowther", City = "London" },
-            new Customer(8) { Name = "Liz Nixon", City = "Portland" }
-        };
-    } 
-    }
-}
-```
-
-
-### Understanding Queries and Query Expressions
-
-```
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Linq.Expressions;
-
-namespace NewLanguageFeatures
-{
- public static class Extensions
- {
-    public static List<T> Append<T>(this List<T> a, List<T> b)
-    {
-        var newList = new List<T>(a);
-        newList.AddRange(b);
-        return newList;
-    }
-
-    public static bool Compare(this Customer customer1, Customer customer2)
-    {
-        if (customer1.CustomerID == customer2.CustomerID &&
-        customer1.Name == customer2.Name &&
-        customer1.City == customer2.City)
-        {
-        return true;
-        }
-        return false;
-    }
- }
- public class Customer
- {
-    public int CustomerID { get; private set; }
-    public string Name { get; set; }
-    public string City { get; set; }
-   
-    public Customer(int ID)
-    {
-        CustomerID = ID;
-    }
-   
-    public override string ToString()
-    {
-         return Name + "\t" + City + "\t" + CustomerID;
-    }
- }
-
-class Program
- {
-    static void Main(string[] args)
-    {
-        Func<int, int> addOne = n => n + 1;
-        Console.WriteLine("Result: {0}", addOne(5));
-        Expression<Func<int, int>> addOneExpression = n => n + 1;
-        var addOneFunc = addOneExpression.Compile();
-        Console.WriteLine("Result: {0}", addOneFunc(5));
-    }
-
-
-    public static List<Customer> FindCustomersByCity(List<Customer> customers,string city)
-    {
-            return customers.FindAll(c => c.City == city);
-    }
-
-    static List<Customer> CreateCustomers()
-    {
-            return new List<Customer>
-            {
-            new Customer(1) { Name = "Maria Anders", City = "Berlin"},
-            new Customer(2) { Name = "Laurence Lebihan", City = "Marseille" },
-            new Customer(3) { Name = "Elizabeth Brown", City = "London" },
-            new Customer(4) { Name = "Ann Devon", City = "London" },
-            new Customer(5) { Name = "Paolo Accorti", City = "Torino" },
-            new Customer(6) { Name = "Fran Wilson", City = "Portland" },
-            new Customer(7) { Name = "Simon Crowther", City = "London" },
-            new Customer(8) { Name = "Liz Nixon", City = "Portland" }
-            };
-    } 
- }
-}
-```
-
-### Anonymous Types and Advanced Query Creation
-```
-
-using System;
-using System.Collections.Generic;
-using System.Linq;using System.Text;
-using System.Linq.Expressions;
-
-namespace NewLanguageFeatures
-{
-    public static class Extensions
-    {
-        public static List<T> Append<T>(this List<T> a, List<T> b)
-        {
-            var newList = new List<T>(a);
-            newList.AddRange(b);
-            return newList;
-        }
-    
-        public static bool Compare(this Customer customer1, Customer customer2)
-        {
-            if (customer1.CustomerID == customer2.CustomerID &&
-                customer1.Name == customer2.Name &&
-                customer1.City == customer2.City)
-                { return true; }
-            return false;
-        }
-    }
-
-
-    public class Store
-    {
-        public string Name { get; set; }
-        public string City { get; set; }
-
-        public override string ToString()
-        {
-             return Name + "\t" + City;
-        }
-    }
-
-
-    public class Customer
-    {
-        public int CustomerID { get; private set; }
-        public string Name { get; set; }
-        public string City { get; set; }
-        public Customer(int ID) { CustomerID = ID; }
-        
-        public override string ToString()
-        { return Name + "\t" + City + "\t" + CustomerID; }
-    }
-
-
-    class Program
-    {
-        static void Query()
-        {
-            var stores = CreateStores();
-            var numLondon = stores.Count(s => s.City == "London");
-            Console.WriteLine("There are {0} stores in London. ", numLondon);
-        }
-        
-        static void Main(string[] args)
-        {
-                Query();
-        }
-
-        public static List<Customer> FindCustomersByCity(List<Customer> customers, string city)
-        {
-                return customers.FindAll(c => c.City == city);
-        }
-        
-        static List<Store> CreateStores()
-        {
-            return new List<Store>
-            {
-                new Store { Name = "Jim’s Hardware", City = "Berlin"},
-                new Store { Name = "John’s Books", City = "London"},
-                new Store { Name = "Lisa’s Flowers", City = "Torino"},
-                new Store { Name = "Dana’s Hardware", City = "London"},
-                new Store { Name = "Tim’s Pets", City = "Portland"},
-                new Store { Name = "Scott’s Books", City = "London"},
-                new Store { Name = "Paula’s Cafe", City = "Marseille"}
-            };
-        } 
-        
-        
-        static List<Customer> CreateCustomers()
-        {
-        return new List<Customer>
-        {
-            new Customer(1) { Name = "Maria Anders", City = "Berlin"},
-            new Customer(2) { Name = "Laurence Lebihan",City = "Marseille"},
-            new Customer(3) { Name = "Elizabeth Brown", City = "London"},
-            new Customer(4) { Name = "Ann Devon", City = "London"},
-            new Customer(5) { Name = "Paolo Accorti", City = "Torino"},
-            new Customer(6) { Name = "Fran Wilson", City = "Portland"},
-            new Customer(7) { Name = "Simon Crowther", City = "London"},
-            new Customer(8) { Name = "Liz Nixon",City = "Portland" }
-        };
-        } 
-    }
+    return new[] {  
+        new Student() { StudentID = 1, StudentName = "John Nigel", Mark = 73, City ="NYC"} ,
+        new Student() { StudentID = 2, StudentName = "Alex Roma",  Mark = 51 , City ="CA"} ,
+        new Student() { StudentID = 3, StudentName = "Noha Shamil",  Mark = 88 , City ="CA"} ,
+        new Student() { StudentID = 4, StudentName = "James Palatte" , Mark = 60, City ="NYC"} ,
+        new Student() { StudentID = 5, StudentName = "Ron Jenova" , Mark = 85 , City ="NYC"} 
+    }.AsQueryable();
 }
 
+
+//Query data 
+
+var studentList = GetStudentsFromDb();
+var highPerformingStudents = from student in studentList
+    where student.Mark > 80
+    select student;
+
 ```
+
+####  Method Syntax
+Method syntax use extension methods provided in the Enumerable and Queryable classes.
+
+To see that syntax in action, let’s create another query:
+
+```
+    var highPerformingStudents = studentList.Where(s => s.Mark > 80);
+```
+
+In this example, we are using the Where() extension method and provide a lambda expression s => s.Mark > 80 as an argument.
+
+
+#### Lambda Expressions With LINQ
+
+In LINQ, we use lambda expressions in a convenient way to define anonymous functions. It is possible to pass a lambda expression as a variable or as a parameter to a method call. However, in many LINQ methods, lambda expressions are used as a parameter. As a result, it makes the syntax short, and precise. Its scope is limited to where it is used as an expression. Therefore, we are not able to reuse it afterward.
+
+```
+    var firstStudent = studentList.Select(x => x.StudentName);
+```
+
+
+#### Frequently Used LINQ Methods 
+
+##### Sorting: OrderBy, OrderByDecending
+We can use the OrderBy() method to sort a collection in ascending order based on the selected property:
+
+var selectStudentsWithOrderById = studentList.OrderBy(x => x.StudentID);
+Similar to OrderBy() method, the OrderByDescending() method sorts the collection using the StudentID property in descending order:
+
+var selectStudentsWithOrderByDescendingId = studentList.OrderByDescending(x => x.StudentID);
+
+
+
+##### Projection: Select
+We use the Select method to project each element of a sequence into a new form:
+
+var studentsIdentified = studentList.Where(c => c.StudentName == name)
+    .Select(stu => new Student {StudentName = stu.StudentName , Mark = stu.Mark});
+Here, we filter only the students with the required name and then use the projection Select method to return students with only StudentName and Mark properties populated. This way, we can easily extract only the required information from our objects.
+
+
+#### Grouping: GroupBy
+We can use the GroupBy() method to group elements based on the specified key selector function. In this example, we are using City:
+
+```
+    var studentListGroupByCity = studentList.GroupBy(x => x.City);
+```
+
+One thing to mention. All the previous methods (Where, OrderBy, OrderByDescending, Select, GroupBy) return collection as a result. So, in order to use all the data inside the collection, we have to iterate over it
+
+
+
+#### All, Any, Contains
+We can use All() to determine whether all elements of a sequence satisfy a condition:
+
+```
+    var hasAllStudentsPassed = studentList.All(x => x.Mark > 50);
+```
+
+Similarly, we can use Any() to determine if any element of a sequence exists or satisfies a condition:
+
+```
+    var hasAnyStudentGotDistinction = studentList.Any(x => x.Mark > 86);
+```
+
+The Contains() method determines whether a sequence or a collection contains a specified element:
+
+```
+    var studentContainsId = studentList.Contains(new Student { StudentName = "Noha Shamil"}, new StudentNameComparer());
+```
+##### Partitioning: Skip, Take
+Skip() will bypass a specified number of elements in a sequence and return the remaining elements:
+
+```
+    var skipStuentsUptoIndexTwo = studentList.Skip(2);
+```
+
+Take() will return a specified number of elements from the first element in a sequence:
+
+```
+    var takeStudentsUptoIndexTwo = studentList.Take(2);
+
+```
+
+
+#### Aggregation: Count, Max, Min, Sum, Average
+Applying the Sum() method on the property Mark will give the summation of all marks:
+
+```
+    var sumOfMarks = studentList.Sum(x => x.Mark);
+    var countOfStudents = studentList.Count(x => x.Mark > 65);
+    var maxMarks = studentList.Max(x => x.Mark);
+    var minMarks = studentList.Min(x => x.Mark);
+    var avgMarks = studentList.Average(x => x.Mark);
+```
+
+## Advantages of Using LINQ
+- Improves code readability
+- Provides compile-time object type-checking
+- Provides IntelliSense support for generic collection
+- LINQ queries can be reused
+- Provides in-built methods to write less code and expedite development
+- Provides common query syntax for various data sources
+
+## Disadvantages of Using LINQ
+- Difficult to write complex queries as SQL
+- Performance degradation if queries are not written accurately
+- Require to recompile, and redeploy every time a change is made to the query
+- Doesn’t take full advantage of SQL features such as cached execution plan for stored procedure
