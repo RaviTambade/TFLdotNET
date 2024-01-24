@@ -340,38 +340,6 @@ static void Main(string[] args)
 ```
 
 
-## Polymorphism
-
-Ability of different objects to responds to the same message in different ways is called Polymorphism.
-horse.Move();
-car.Move();
-aeroplane.Move(); 
-
-#### Virtual and Override
-
-
-```
-class Employee
-{
-    public virtual double CalculateSalary ()
-    {return basic_sal+ hra + da ;}
-}
-
-class Manager: Employee
-{
-  public override double CalculateSalary ()
-     {return (basic_sal+ hra + da + allowances);}
-}
-
-staic void Main ()
-{
-  Employee mgr= new Manager ();
-  Double salary= mgr.CalculateSalary ();
-  Console.WriteLine (salary);
-}
-
-```
-
 ### Shadowing
 
 Hides the base class member in derived class by using keyword new.
