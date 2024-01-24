@@ -260,13 +260,15 @@ static void Main(string[] args)
 ```
   //Base Class
   public class Employee
-  {   
+  { 
+    //Data Members  
     private double basic_sal;
     private double hra;
     private double da;
 
-    //Constructor overloading
+    //Member functions
 
+    //Constructor overloading
     public Employee(){
           this.basic_sal=5000;
           this.hra=1200;
@@ -284,7 +286,7 @@ static void Main(string[] args)
       return basic_sal + hra+ da;
     }
 
-     pubic override string ToString(){
+    pubic override string ToString(){
       return base.ToString() +
       "Basic Salary ="+ this.basic_sal
       "HRA ="+ this.hra
@@ -306,10 +308,11 @@ static void Main(string[] args)
     {
       this.incentive=incentive;
     }
+
     public double CalculateIncentives ()
-      {
+    {
       //code to calculate incentives
-      Return incentives;
+      Return incentives*2;
     }
     
     //Method overriding
