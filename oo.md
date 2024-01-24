@@ -331,30 +331,6 @@ static void Main(string[] args)
   }
 ```
 
-## Constructors in Inheritance
-
-```
-
-public class Employee
-{ 
-  public  Employee ()
-    {
-      Console.WriteLine (“in Default constructor”);
-    }
-  
-  public Employee (int eid, ….)
-    {
-      Console.WriteLine (“in Parameterized constructor”);
-    }
-}
-
-public class Manager: Employee
-{
-  public Manager (): base ()   {……..}
-  public Manager (int id): base (id,….)   {…..}
-}
-```
-
 
 ## Polymorphism
 
@@ -365,8 +341,9 @@ aeroplane.Move();
 
 #### Virtual and Override
 
-Polymorphism is achieved using virtual methods and inheritance.
-Virtual keyword is used to define a method in base class and override keyword is used in derived class.
+- Polymorphism is achieved using virtual methods and inheritance.
+- virtual keyword is used to define a method in base class 
+- override keyword is used in derived class.
 
 ```
 class Employee
@@ -384,7 +361,7 @@ class Manager: Employee
 staic void Main ()
 {
   Employee mgr= new Manager ();
-  Double salary= mgr. CalculateSalary ();
+  Double salary= mgr.CalculateSalary ();
   Console.WriteLine (salary);
 }
 
