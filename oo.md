@@ -258,10 +258,27 @@ Every Manager is Employee. Every Wage Employee is Employee.
 ```
   public class Employee
   {   
-    public double CalculateSalary ()
-        {
-          return basic_sal + hra+ da;
-        }
+    private double basic_sal;
+    private double hra;
+    private double da;
+
+    //Constructor overloading
+    public Employee(){
+          this.basic_sal=5000;
+          this.hra=1200;
+          this.da=700;
+    }
+
+    public Employee(double bsal, double hra, double da){
+        this.basic_sal=bsal;
+        this.hra=hra;
+        this.da=da;
+    }
+
+    public virtual double CalculateSalary ()
+    {
+      return basic_sal + hra+ da;
+    }
   }
 
   public class Manager: Employee
@@ -270,6 +287,12 @@ Every Manager is Employee. Every Wage Employee is Employee.
       {
       //code to calculate incentives
       Return incentives;
+    }
+    
+    //Method overriding
+    public override double CalculateSalary ()
+    {
+      return basic_sal + hra+ da + CalculateIncentives();
     }
   }
 
