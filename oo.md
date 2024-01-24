@@ -253,9 +253,12 @@ static void Main(string[] args)
   - Provides code reusability and extensibility.
   - Inheritance is a property of class hierarchy whereby each derived class inherits attributes and methods of its base class.
 
-Every Manager is Employee. Every Wage Employee is Employee.
+- Manager class  is extended class of an Employee class.
+- Employee class is bydefault extended from Object class.
+- Object Class is mother of all classes .NET.
 
 ```
+  //Base Class
   public class Employee
   {   
     private double basic_sal;
@@ -263,6 +266,7 @@ Every Manager is Employee. Every Wage Employee is Employee.
     private double da;
 
     //Constructor overloading
+
     public Employee(){
           this.basic_sal=5000;
           this.hra=1200;
@@ -279,10 +283,29 @@ Every Manager is Employee. Every Wage Employee is Employee.
     {
       return basic_sal + hra+ da;
     }
+
+     pubic override string ToString(){
+      return base.ToString() +
+      "Basic Salary ="+ this.basic_sal
+      "HRA ="+ this.hra
+      "Daily Allowance ="+ this.da;
+    }
   }
 
+  //Derived Class
   public class Manager: Employee
-  {
+  { 
+    private double incentive;
+
+    public Manager():base(){
+      this.incentive=0;
+    }
+
+    public Manager(double bsal, double hra, double da, double incentive):
+                  base(bsal, hra, da)  //Member Initialized List
+    {
+      this.incentive=incentive;
+    }
     public double CalculateIncentives ()
       {
       //code to calculate incentives
@@ -294,13 +317,17 @@ Every Manager is Employee. Every Wage Employee is Employee.
     {
       return basic_sal + hra+ da + CalculateIncentives();
     }
+
+    pubic override string ToString(){
+      return base.ToString() + "Incentive ="+ this.incentive;
+    }
   }
 
   static void Main ()
   {
-      Manager mgr =new Manager ();
-      double Inc=mgr. CalculateIncentives ();
-      double sal=mgr. CalculateSalary ();
+      Manager mgr =new Manager();
+      double Inc=mgr.CalculateIncentives ();
+      double sal=mgr.CalculateSalary ();
   }
 ```
 
