@@ -248,14 +248,19 @@ static void Main(string[] args)
   }
 ```
 
-## Inheritance
+## Inheritance & Polymorphism
  
   - Provides code reusability and extensibility.
   - Inheritance is a property of class hierarchy whereby each derived class inherits attributes and methods of its base class.
 
+
 - Manager class  is extended class of an Employee class.
 - Employee class is bydefault extended from Object class.
 - Object Class is mother of all classes .NET.
+
+- Polymorphism is achieved using virtual methods and inheritance.
+- virtual keyword is used to define a method in base class 
+- override keyword is used in derived class.
 
 ```
   //Base Class
@@ -344,9 +349,6 @@ aeroplane.Move();
 
 #### Virtual and Override
 
-- Polymorphism is achieved using virtual methods and inheritance.
-- virtual keyword is used to define a method in base class 
-- override keyword is used in derived class.
 
 ```
 class Employee
