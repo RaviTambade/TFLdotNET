@@ -101,58 +101,7 @@ namespace  EmployeeApp
 }
 ```
 
-### Partial class
 
-A class can be spread across multiple source files using the keyword partial.
-All source files for the class definition are compiled as one file with all class members.
-Access modifiers used for defining a class should be consistent across all files.
-
-### Properties (smart fields)
-
-- Have two assessors:
-- Get	retrieves data member values.
-- Set	enables data members to be assigned
-
-
-```
-public int EmployeeID
-{
-   get { return _id;}
-   set { _id=value ;}
-}
-```
-
-### Indexers (smart Array)
-
-```
-public class Books
-{
- private string [] titles= new string [100];
- 
- public string this [int index]
-  {
-      get{ 
-          if (index <0 || index >=100)
-            return 0;
-          else
-            return titles [index];
-      }
-
-    set{
-        if (! index <0 || index >=100)
-            return 0;
-          else
-            titles [index] =value;
-        }
-   }
-}
-
-public static void Main ()
-{ 
-  Books mybooks=new Books ();
-  Mybooks [3] =”Mogali in Jungle”;
-}
-```
 
 ### Singleton
 The singleton pattern is one of the best-known patterns in software engineering. Essentially, a singleton is a class which only allows a single instance of itself to be created, and usually gives simple access to that instance
@@ -185,7 +134,6 @@ public class OfficeBoy
              return _ref;
       }
  }
-
 
 static void Main(string[] args)
  { 
@@ -449,24 +397,12 @@ The Object class has five methods:
   - 	Returns hashcode for an object.
 
 
-#### Polymorphism using Object
+### Partial class
 
-The ability to perform an operation on an object without knowing the precise type of the object.
+A class can be spread across multiple source files using the keyword partial.
+All source files for the class definition are compiled as one file with all class members.
+Access modifiers used for defining a class should be consistent across all files.
 
-```
-void Display (object o) 
-{
-  Console.WriteLine (o.ToString ());
-}
-
-public static void Main ()
-{  
-  Display (34); 
-  Display (“Transflower”);
-  Display (4.453655);
-  Display (new Employee (“Ravi”, “Tambade”);
-}
-```
 
 ### Interface Inheritance
 
@@ -537,12 +473,6 @@ public static void Main()
     cd.ShowDetails();
 }
 ```
-
-## Abstract class vs. Interface
-
-
-
-
 
 ## Building cloned Objects
 

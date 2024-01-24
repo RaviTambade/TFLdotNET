@@ -93,6 +93,40 @@ int[][] arr = new int[3][]{
   }  
 ```
 
+
+
+
+### Indexers (smart Array)
+```
+public class Books
+{
+ private string [] titles= new string [100];
+ 
+ public string this [int index]
+  {
+      get{ 
+          if (index <0 || index >=100)
+            return 0;
+          else
+            return titles [index];
+      }
+
+    set{
+        if (! index <0 || index >=100)
+            return 0;
+          else
+            titles [index] =value;
+        }
+   }
+}
+
+public static void Main ()
+{ 
+  Books mybooks=new Books ();
+  Mybooks [3] =”Mogali in Jungle”;
+}
+```
+
 ## Collection Interfaces
 
 The .NET provides standard interfaces for enumerating, comparing, and creating collections.
