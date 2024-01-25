@@ -317,20 +317,54 @@ static void Main ()
 }
 ```
 
-### Concrete class vs. abstract classes
+### Sealed class, Concrete class vs. abstract classes
+
+##### Sealed class
+
+Sometimes while building Software Product, we do not want any other developer to extend class infuture. We use <b>Sealed</b> keyword while declaring class. This class cannot be inherited futher. It tried , compiler would show compile time error.
+
+```
+sealed class SinglyList
+{
+  public virtual double Add () 
+  {
+    // code to add a record in the linked list}
+  }
+}
+
+public class StringSinglyList:SinglyList
+  {
+    public override double Add () 
+    {
+        // code to add a record in the String linked list
+    }
+ }
+```
 
 ##### Concrete class</b>
-    - It is the class from whom we can create number of objects.
+    - It is the class from whom we can create more than one objects.
+
+```
+  public class Person{
+    public string FirstName{get;set;}
+    public string LastName{get;set;}
+    public Person() {
+
+    }
+    public Person(string fname, string lname){
+      this.FirstName=fname;
+      this.LastName=lname;
+    }
+  }
+```
 
 #####  Abstract class</b>
     - It is the class from which we can not create object. 
     - An abstract class can contain minimum one method abstract method
     - An Abstract method do not have implementation.
     - An Abstract class enforces overriding in thier sub classes (Derived Classes)
-
-
 ```
-abstract class Employee
+public abstract class Employee
  {  
     public virtual double CalculateSalary();
      {
@@ -341,7 +375,7 @@ abstract class Employee
   }
 
 
- class Manager: Employee
+ public  class Manager: Employee
  {   
     public override double CalculateSalary();
     {
@@ -474,8 +508,6 @@ public class FrenchSpellChecker:ISpellChecker
   }
 }
 
-
-
 //Consumer Code
 class TextEditor
 {
@@ -489,18 +521,19 @@ class TextEditor
 ```
 
 ### Explicit Interface Inheritance
-
+A class can implement more than one interfaces. These interfaces may contain a member function  with the same name(signature). In such cases, we should take care of implementing both method using fully qualified names as shown below:
 ```
-interface IOrderDetails    { void ShowDetails() ;}
-interface ICustomerDetails { void ShowDetails() ;}
+public interface IOrderDetails    { void ShowDetails();}
+public interface ICustomerDetails { void ShowDetails();}
 
-class Transaction: IOrderDetails, ICustomerDetils
+public class Transaction: IOrderDetails, ICustomerDetils
 {
-    void IOrderDetails. ShowDetails()
+    
+    void IOrderDetails.ShowDetails()
     {  
       // implementation for interface IOrderDetails
     }
-    void ICustomerDetails. ShowDetails()
+    void ICustomerDetails.ShowDetails()
     {  
       // implementation for interface IOrderDetails
     }
@@ -516,7 +549,19 @@ public static void Main()
 }
 ```
 
-## Building cloned Objects
+## Using inbuilt(standard) interfaces Provided by .NET
+
+The .NET provides standard interfaces for enumerating, comparing, and creating collections.
+- <b>IEnumertor</b> Supports a simple iteration over collection
+- <b>IEnumerable</b> Supports foreach semantics
+- <b>ICollection</b> Defines size, enumerators and synchronization methods for all collections.
+- <b>IList</b> Represents a collection of objects that could be accessed by index
+- <b>IComaprable</b> Defines a generalized comparison method to create a type-specific 
+comparison
+- <b>IComparer</b> Exposes a method that compares two objects.
+- <b>IDictionary</b> Represents a collection of Key and value pair
+
+### Implementing ICloneable interface
 
 ```
 class StackClass: ICloneable
@@ -539,30 +584,90 @@ public static void Main()
     …..
   StackClass stack2 = (StackClass) stack1.Clone ();
 }
-
 ```
-
-
-
-### Sealed class
-
-Sometimes while building Software Product, we do not want any other developer to extend class infuture. We use <b>Sealed</b> keyword while declaring class. This class cannot be inherited futher. It tried , compiler would show compile time error.
-
-
+ 
+#### Implementing IEnumerable Interface
 ```
-sealed class SinglyList
+public class Team:IEnumerable
 {
-  public virtual double Add () 
-  {
-    // code to add a record in the linked list}
-  }
+    private player [] players;
+
+    public Team ()
+    {
+    Players= new Player [3];
+    Players[0] = new Player(“Sachin”, 40000);
+    Players[1] = new Player(“Rahul”, 35000);
+    Players[2] = new Player(“Mahindra”, 34000);
+    }
+
+    public IEnumertor GetEnumerator ()
+    {
+        Return players.GetEnumerator();
+    }
 }
 
-public class StringSinglyList:SinglyList
-  {
-    public override double Add () 
+public static void Main()
+{
+    Team India = new Team();
+    foreach(Player c in India)
     {
-        // code to add a record in the String linked list
+        Console.WriteLine (c.Name, c.Runs);
     }
- }
+}
+```
+
+#### Implementing ICollection Interface
+
+```
+public class Team:ICollection
+{
+    private Players [] players;
+    public Team() {……..}
+
+
+    //Implementing Count Property of ICollection Interface
+    public int Count {
+      get {
+        return players.Count ;
+      }
+    }
+    // other implementation of Team
+}
+
+//Main Function
+public static void Main()
+{
+    Team India = new Team ();
+    foreach (Player c in India)
+    {
+    Console.WriteLine (c.Name, c.Runs);
+    }
+}
+```
+
+#### Implementing IComparable Interfac
+
+```
+public class Player:IComparable
+{
+
+    int IComparable.CompareTo(object obj)
+    {
+        Player temp= (Player) obj;
+        if (this. Runs > temp.Runs)
+          return 1;
+        if (this. Runs < temp.Runs)
+          return -1;
+        else 
+          return 0;
+    }
+}
+
+public static void Main()
+{
+    Team India = new Team();
+    // add five players with Runs
+    Arary.Sort(India);
+    // display sorted Array
+}
 ```
