@@ -417,7 +417,6 @@ public interface IShape{
   void Draw();
 }
 ```
-#### Interface Implementation
 
 We can implment interface into more than one classes. Line and Circle classes are implementing IShape interface which is defined above.
 
@@ -438,32 +437,28 @@ We can implment interface into more than one classes. Line and Circle classes ar
       
     }
   }
-
 ```
 
+- Interfaces are used for defining a Contract between Consumers and Providers in Software
+- Consumer can consume instances wihtout know more details about implementations.
+- Providers can implement standard interface methods into sub classes.
+- Intefaces help us to build software using loosely coupled, highly cohesive architecture
 
-
-
-
-
-
-
-### Interface Inheritance
-
-- For loosely coupled highly cohesive mechanism in Application.
-- An interface defines a Contract
-- Text Editor uses Spellchecker as interfaces.
-
+For example:Text Editor uses Spellchecker as interfaces.
 EnglishSpellChecker and FrenchSpellChecker are implementing contract defined by SpellChecker interface.
 
 ```
 
-interface ISpellChecker
+//Contract Code
+public interface ISpellChecker
 { 
   ArrayList CheckSpelling (string word) ;
 }
 
-class EnglishSpellChecker:ISpellChecker
+
+//Provider Code
+
+public class EnglishSpellChecker:ISpellChecker
 {
   ArrayList CheckSpelling (string word) 
   {
@@ -471,7 +466,7 @@ class EnglishSpellChecker:ISpellChecker
   }
 }
 
-class FrenchSpellChecker:ISpellChecker
+public class FrenchSpellChecker:ISpellChecker
 { 
   ArrayList CheckSpelling (string word) 
   {
@@ -479,6 +474,9 @@ class FrenchSpellChecker:ISpellChecker
   }
 }
 
+
+
+//Consumer Code
 class TextEditor
 {
   public static void Main()
