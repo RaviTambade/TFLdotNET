@@ -320,13 +320,16 @@ static void Main ()
 ### Concrete class vs. abstract classes
 
 <b>Concrete class</b>
-    - Class describes the functionality of the objects that it can be used to instantiate.
+    - It is the class from whom we can create number of objects.
 
 <b>Abstract class</b>
-    - Provides all of the characteristics of a concrete class except that it does not permit object instantiation.
-    - An abstract class can contain abstract and non-abstract methods.
-    - Abstract methods do not have implementation.
-
+    
+    - It is the class from which we can not create object. 
+    
+ 
+    - An abstract class can contain minimum one method abstract method
+    - An Abstract method do not have implementation.
+    - An Abstract class enforces overriding in thier sub classes (Derived Classes)
 ```
 abstract class Employee
  {  
@@ -336,8 +339,8 @@ abstract class Employee
       }
     
     public abstract double CalculateBonus();
- 
   }
+
 
  class Manager: Employee
  {   
@@ -345,6 +348,7 @@ abstract class Employee
     {
       return basic + hra + da + allowances;
     }
+
     public override double CalaculateBonus ()
     {
        return basic_sal * 0.20;
@@ -353,6 +357,7 @@ abstract class Employee
 
   static void Main ()
   { 	
+
     Manager mgr=new Manager ();
     double bonus=mgr. CalaculateBonus ();
     double Salary=mgr. CalculateSalary ();
