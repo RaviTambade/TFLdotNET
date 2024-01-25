@@ -381,9 +381,32 @@ The Object class has five methods:
 
 ### Partial class
 
-A class can be spread across multiple source files using the keyword partial.
-All source files for the class definition are compiled as one file with all class members.
-Access modifiers used for defining a class should be consistent across all files.
+Consider a situation, Where two developers are working on same class but they want to add 
+design code and business logic or event handling logic as seperate  C# files. This class needed to be  spread across multiple source file. In such situaation ,we can use partial keword
+
+```
+// window.design.cs file
+
+ public partial class Window{
+  
+    private int width ;
+    private int height;
+    private Color Background
+ }
+
+
+// window.eventdrivenlogic.cs file
+
+ public partial class Window{
+  
+    public void OnLoad() {     }
+    public void onPaint() {     }
+    public void OnMouseMove() {   }
+   
+ }
+```
+
+AT the time of compilation , all source files(.cs files) for the class definition Window are merged  into  as sing class Window with all members. Access modifiers used for defining a class should be consistent across all files.
 
 
 ### Interface Inheritance
