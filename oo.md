@@ -317,28 +317,6 @@ static void Main ()
 }
 ```
 
-### Sealed class
-
-Sealed class cannot be inherited
-
-```
-sealed class SinglyList
-{
-  public virtual double Add () 
-  {
-    // code to add a record in the linked list}
-  }
-}
-
-public class StringSinglyList:SinglyList
-  {
-    public override double Add () 
-    {
-        // code to add a record in the String linked list
-    }
- }
-```
-
 ### Concrete class vs. abstract classes
 
 <b>Concrete class</b>
@@ -498,4 +476,29 @@ public static void Main()
   StackClass stack2 = (StackClass) stack1.Clone ();
 }
 
+```
+
+
+
+### Sealed class
+
+Sometimes while building Software Product, we do not want any other developer to extend class infuture. We use <b>Sealed</b> keyword while declaring class. This class cannot be inherited futher. It tried , compiler would show compile time error.
+
+
+```
+sealed class SinglyList
+{
+  public virtual double Add () 
+  {
+    // code to add a record in the linked list}
+  }
+}
+
+public class StringSinglyList:SinglyList
+  {
+    public override double Add () 
+    {
+        // code to add a record in the String linked list
+    }
+ }
 ```
