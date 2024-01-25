@@ -319,17 +319,16 @@ static void Main ()
 
 ### Concrete class vs. abstract classes
 
-<b>Concrete class</b>
+##### Concrete class</b>
     - It is the class from whom we can create number of objects.
 
-<b>Abstract class</b>
-    
+#####  Abstract class</b>
     - It is the class from which we can not create object. 
-    
- 
     - An abstract class can contain minimum one method abstract method
     - An Abstract method do not have implementation.
     - An Abstract class enforces overriding in thier sub classes (Derived Classes)
+
+
 ```
 abstract class Employee
  {  
