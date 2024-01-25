@@ -645,7 +645,7 @@ public static void Main()
 }
 ```
 
-#### Implementing IComparable Interfac
+#### Implementing IComparable Interface
 
 ```
 public class Player:IComparable
