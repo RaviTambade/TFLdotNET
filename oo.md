@@ -442,7 +442,7 @@ design code and business logic or event handling logic as seperate  C# files. Th
 
 AT the time of compilation , all source files(.cs files) for the class definition Window are merged  into  as single class Window with all members. Access modifiers used for defining a class should be consistent across all files.
 
-## Iterfaces
+## Interfaces
 
 In C# an interface is similar to abstract class. In interface all methods are bydefault abstract.
 ```
