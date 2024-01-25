@@ -406,7 +406,46 @@ design code and business logic or event handling logic as seperate  C# files. Th
  }
 ```
 
-AT the time of compilation , all source files(.cs files) for the class definition Window are merged  into  as sing class Window with all members. Access modifiers used for defining a class should be consistent across all files.
+AT the time of compilation , all source files(.cs files) for the class definition Window are merged  into  as single class Window with all members. Access modifiers used for defining a class should be consistent across all files.
+
+## Iterfaces
+
+In C# an interface is similar to abstract class. In interface all methods are bydefault abstract.
+```
+public interface IShape{
+  //method without body
+  void Draw();
+}
+```
+#### Interface Implementation
+
+We can implment interface into more than one classes. Line and Circle classes are implementing IShape interface which is defined above.
+
+```
+  //Interface inheritance
+  public class Line:IShape{
+
+    public void Draw() {
+      //Line drawing logic
+
+    }
+  }
+
+  public class Circle:IShape{
+
+    public void Draw() {
+      //Circle drawing logic
+      
+    }
+  }
+
+```
+
+
+
+
+
+
 
 
 ### Interface Inheritance
