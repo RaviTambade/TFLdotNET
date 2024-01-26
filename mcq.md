@@ -11,11 +11,12 @@ Well designed MCQs allow testing for a wide breadth of content and objectives an
 
 <hr/>
 1.Which is the following .net cli command used to create and build Single Page Applicaion?
+```
 A. dotnet new console -o TestApp
 B. dotnet new webapp -o TestApp
 C. dotnet new react -o TestApp
 D. dotnet new ng -o TestApp
- 
+``` 
 
 2.Which of the following term define rules for .Net Languages?
 A. Common Language Specification
