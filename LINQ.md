@@ -134,18 +134,24 @@ In LINQ, we use lambda expressions in a convenient way to define anonymous funct
 ##### Sorting: OrderBy, OrderByDecending
 We can use the OrderBy() method to sort a collection in ascending order based on the selected property:
 
+```
 var selectStudentsWithOrderById = studentList.OrderBy(x => x.StudentID);
+```
+
 Similar to OrderBy() method, the OrderByDescending() method sorts the collection using the StudentID property in descending order:
 
+```
 var selectStudentsWithOrderByDescendingId = studentList.OrderByDescending(x => x.StudentID);
-
-
+```
 
 ##### Projection: Select
 We use the Select method to project each element of a sequence into a new form:
 
+```
 var studentsIdentified = studentList.Where(c => c.StudentName == name)
     .Select(stu => new Student {StudentName = stu.StudentName , Mark = stu.Mark});
+
+```
 Here, we filter only the students with the required name and then use the projection Select method to return students with only StudentName and Mark properties populated. This way, we can easily extract only the required information from our objects.
 
 
@@ -158,15 +164,12 @@ We can use the GroupBy() method to group elements based on the specified key sel
 
 One thing to mention. All the previous methods (Where, OrderBy, OrderByDescending, Select, GroupBy) return collection as a result. So, in order to use all the data inside the collection, we have to iterate over it
 
-
-
 #### All, Any, Contains
 We can use All() to determine whether all elements of a sequence satisfy a condition:
 
 ```
     var hasAllStudentsPassed = studentList.All(x => x.Mark > 50);
 ```
-
 Similarly, we can use Any() to determine if any element of a sequence exists or satisfies a condition:
 
 ```
@@ -189,7 +192,6 @@ Take() will return a specified number of elements from the first element in a se
 
 ```
     var takeStudentsUptoIndexTwo = studentList.Take(2);
-
 ```
 
 
@@ -216,4 +218,4 @@ Applying the Sum() method on the property Mark will give the summation of all ma
 - Difficult to write complex queries as SQL
 - Performance degradation if queries are not written accurately
 - Require to recompile, and redeploy every time a change is made to the query
-- Doesn’t take full advantage of SQL features such as cached execution plan for stored procedure
+- Doesn’t take full advantage of SQL features such as cached execution plan for stored procedure.
