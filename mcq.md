@@ -334,39 +334,39 @@ D.Loading of multiple script files in single request.
 27.Which status code is sent for successful execution of Web API in ASP.NET Core?
 
 ```
-A. 201
-B. 404
-C. 500
-D. 200
+A.201
+B.404
+C.500
+D.200
 ```
 
 
 28.Which of the following is used to check the validity of the model in ASP.NET Web API?
 
 ```
-A. Mode.Valid
-B. Model.IsValid
-C. ModelState.IsValid
-D. ModelState.Valid
+A.Mode.Valid
+B.Model.IsValid
+C.ModelState.IsValid
+D.ModelState.Valid
 ``` 
 
 29.Which component is essential for collecting data using Connected Data Access Mode?
 
 ```
-A. DataSet
-B. DataReader
-C. DataRow
-D. DataAdapter
+A.DataSet
+B.DataReader
+C.DataRow
+D.DataAdapter
 ```
 
 
 30.Which configuration file is used to change configuration setting that will affect only the current Web application?
 
 ```
-A. web.xml
-B. appsettings.json
-C. Machine.config
-D. web.config
+A.web.xml
+B.appsettings.json
+C.Machine.config
+D.web.config
 ```
 
 
@@ -438,27 +438,27 @@ D.<a asp-controller="Controller1" asp-action="CheckData" class="my-css-classname
 38.Which statement is correct about Response.Output.Write()?
 
 ```
-A. HttpContext.Response.Output.Write() allows you to buffer output
-B. HttpContext.Response.Output.Write() allows you to write formatted output
-C. HttpContext.Response.Output.Write() allows you to flush output
-D. HttpContext.Response.Output.Write() allows you to stream output
+A.HttpContext.Response.Output.Write() allows you to buffer output
+B.HttpContext.Response.Output.Write() allows you to write formatted output
+C.HttpContext.Response.Output.Write() allows you to flush output
+D.HttpContext.Response.Output.Write() allows you to stream output
 ``` 
 
 39.Which of the following tool is used to manage the GAC in .NET Framework?
 ```
-A. RegSvr.exe
-B. GacUtil.exe
-C. GacSvr32.exe
-D. GacMgr.exe
+A.RegSvr.exe
+B.GacUtil.exe
+C.GacSvr32.exe
+D.GacMgr.exe
 ```
 
 40.How could we add data into session in asp.net core?
 
 ```
-A. HttpContext.Session.SetString("MyKey", "MyValue");
-B. HttpContext.Session["MyKey"]= "MyValue";
-C. HttpContext.Request.Session["MyKey"]="MyValue";
-C. HttpContext.Response.Session["MyKey"]="MyValue";
+A.HttpContext.Session.SetString("MyKey", "MyValue");
+B.HttpContext.Session["MyKey"]= "MyValue";
+C.HttpContext.Request.Session["MyKey"]="MyValue";
+C.HttpContext.Response.Session["MyKey"]="MyValue";
 ``` 
 
 41.Which method of DBContext class reflects changes to database for CRUD Operation in .net while implementing Entity Framework?
@@ -473,48 +473,48 @@ D.Commit
 42.Which File extension is used for defining views in ASP.NET Core MVC?
 
 ```
-A. .html
-B. .cs
-C. .cshtml
-D. None of the above
+A..html
+B..cs
+C..cshtml
+D.None of the above
 ```
 
 
 43.Which of the following is not a member of ADO.NET Command object?
 
 ```
-A. ExecuteScalar()
-B. ExecuteStream()
-C. Open()
-D. ExecuteReader()
+A.ExecuteScalar()
+B.ExecuteStream()
+C.Open()
+D.ExecuteReader()
 ``` 
 
 44.What is the best practice to isolate connection string while using asp.net core application?
 
 ```
-A. appsettings.json
-B. web.config
-C. package.json
-D. web.xml
+A.appsettings.json
+B.web.config
+C.package.json
+D.web.xml
 ```
 
 
 45.How do you get information from a form that is submitted using the "post" method?
 
 ```
-A. HttpContext.Request.QueryString
-B. HttpContext.Request.Form
-C. HttpContext.Response.Method
-D. HttpContext.Response.Query
+A.HttpContext.Request.QueryString
+B.HttpContext.Request.Form
+C.HttpContext.Response.Method
+D.HttpContext.Response.Query
 ``` 
 
 46.Which degault pages technology is used default for presentation logic implementation in ASP.NET MVC based Applications
 
 ```
-A. html
-B. razor pages
-C. web forms
-D. None of the above
+A.html
+B.razor pages
+C.web forms
+D.None of the above
 ``` 
 
 47. Which Request/Response  data fromat  supported by Web API by default?
@@ -524,24 +524,31 @@ C.BSON
 D.All of the Above
 
 48. Which of the following types of routing supported in Web API?
+
+```
 A. Attribute Routing
 B.Convention-based Routing
 C.All of the above
 D.None of the above
-
+```
 
 49. Which interface must be implemented  to provide querying facility in LINQ?
-A. IEnumerator or IQueryable
-B. IEnumberable or Queryable
-C. Enumberatble or Qurable
-D. None of the above
+
+```
+A.IEnumerator or IQueryable
+B.IEnumberable or Queryable
+C.Enumberatble or Qurable
+D.None of the above
+```
 
 50. What is the default injection type of Unit Container used in ASP.NET Core
-A. Constructor Injection
-B. Prperty Injection
-C. Method Injection
-D. All of the Above
 
+```
+A.Constructor Injection
+B.Prperty Injection
+C.Method Injection
+D.All of the Above
+```
 
 
 <hr/>
