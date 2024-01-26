@@ -1,10 +1,10 @@
 ## C# as .NET Programming Language
 
-- C ++ Heritage : 	Namespaces, Pointers (in unsafe code),	Unsigned types, etc.
-- Increased Productivity : 	Short Learning curve
-- C# is a type safe Object Oriented Programming Language
-- C# is case sensitive
-- Interoperability
+C# (pronounced "See Sharp") is a modern, object-oriented, and type-safe programming language. C# enables developers to build many types of secure and robust applications that run in .NET.
+
+- C#.NET is one of the Microsoft Programming Languages to work with the .NET Framework, .NET Core, or .NET to develop different kinds of applications such as Web, Console, Windows, Restful Services, etc. 
+- It is the most powerful programming language among all programming languages available in the .NET framework because it contains all the features of C++, VB.NET, and JAVA, and also has some additional features. As we progress in this course, you will come to know the additional features.
+- C#.NET is a completely Object-Oriented Programming Language. It means it supports all 4 OOPs Principles i.e. Abstraction, Encapsulation, Inheritance, and Polymorphism.
 
 ## Structure of C# Program
 
@@ -12,18 +12,25 @@
 ```
 using System;
 // A “Hello World!” program in C#
-public class HelloWorld
-{ public static void Main ()
+public class Program
+{ 
+  public static void Main ()
   {
-            Console.WriteLine (“Hello, World”);
-
+            Console.WriteLine ("Hello, World");
   }
 }
-
 ```
+In C# Console applicatino Program.cs file consist of Program class with Main as EntryPoint function code with Hello World output.
+
+- A console application is an application that can be run in the command prompt. For any beginner on .NET or anyone who wants to learn C# Language or anyone who wants to become an expert in C# Language, building a console application is ideally the first step to learning the C# Language.
+- The Console Applications contain a similar user interface to the Operating systems like MS-DOS, UNIX, etc.
+- The Console Application is known as the CUI application because in this application we completely work with the CUI environment.
+- These applications are similar to C or C++ applications.
+- Console applications do not provide any GUI facilities like the Mouse Pointer, Colors, Buttons, Menu Bars, etc.
+
 
 ## Passing Command Line Arguments
-
+Arguments that are passed by command line known as command line arguments. We can send arguments to the Main method while executing the code. The string args variable contains all the values passed from the command line.
 
 ```
 using System;
@@ -53,23 +60,13 @@ public class HelloWorld
 - Common Language Runtime converts MSIL code into Platform dependent executable code (native code) for targeted operating System.
 - Application is executed by Operating System as Process.
 
+<img src="/images/CSharp/Execution.jpg"/>
+
+
+
 
 ## C# Types
-
-- A C# Program is a collection of types
-	Structure, Classes, Enumerations, Interfaces, Delegates, Events
-- C# provides a set of predefined types
-	e.g. int, byte, char, string, object, etc.
-Custom types can be created.
-- All data and code is defined within a type.
-	No global variables, no global function.
-
-
-- Types can be instantiated and used by
-	Calling methods, setters and getters, etc.
-- Types can be converted from one type to another.
-- Types are organized into namespaces, files, and assemblies.
-- Types are arranged in hierarchy.
+C# programs consist of one or more files. Each file contains zero or more namespaces. A namespace contains types such as classes, structs, interfaces, enumerations, and delegates, or other namespaces.
 
 In .NET Types are of two categories
 
@@ -96,14 +93,13 @@ Contain reference to actual instance on managed Heap.
 
 
 ## Type Conversion
-- Implicit Conversion
-	No information loss
-	Occur automatically
-- Explicit Conversion
-	Require a cast
-	May not succeed
-	Information (precision) might be lost
 
+The process of converting the value of one type (int, float, double, etc.) to another type is known as type conversion.
+
+In C#, there are two basic types of type conversion:
+
+1. Implicit Type Conversions
+2. Explicit Type Conversions
 
 ```
     int x=543454;
@@ -115,7 +111,18 @@ Contain reference to actual instance on managed Heap.
 
 ```
 
-## Constants and read only variables
+### C# Type Conversion using Convert Class
+In C#, we can use the Convert class to perform type conversion. The Convert class provides various methods to convert one type to another.
+
+- ToBoolean()	converts a type to a Boolean value
+- ToChar()	converts a type to a char type
+- ToDouble()	converts a type to a double type
+- ToInt16()	converts a type to a 16-bit int type
+- ToString()	converts a type to a string
+
+
+## Constants vs read only
+The main difference between const and readonly keywords in C# is that const need to be defined at the time of assignment, while readonly field can be defined at runtime. Const's are implicitly static, while readonly values don't have to be static.
 ```
 
 // This example illustrates the use of constant data and readonly fields.
@@ -170,19 +177,18 @@ Each member starts from zero by default and is incremented by 1 for each next me
 Using Enumeration Types
 ```
 Weekdays day=Weekdays.Mon;
-Console.WriteLine(“{0}”, day);    //Displays Mon
+Console.WriteLine("{0}", day);    //Displays Mon
 
 ```
 
 ## Structures
+In C#, a structure is a value type data type. It helps you to make a single variable hold related data of various data types. The struct keyword is used for creating a structure. Structures are used to represent a record
+
 ```
 public struct Point
 {	public int x;
     public int y;
 }
-
-
-
 ```
 
 ## Arrays
@@ -200,7 +206,9 @@ Enumerate
 	foreach (int i in marks) {Console.WriteLine (i); }
 
 ## Params Keyword
-It defines a method that can accept a variable number of arguments.
+params is a special keyword that allows passing a variable number of parameters into a method. It allows a nice, flexible syntax that helps us specify: One or multiple parameters separated by commas.
+
+
 ```
 static void ViewNames (params string [] names)
 {
@@ -219,16 +227,24 @@ public static void Main (string [] args)
 
 ## ref and out parameters
 
+- ref 
+It is a keyword that we use in the C# language for passing the available arguments by their references. In simpler words, if we make any changes in the given argument, then this method reflects these changes in the variable whenever the control returns to the calling method. The parameter of ref does not at all pass the property.
+- out 
+It is a keyword that we use in the C# language to pass the available arguments to the methods as a type of reference. We generally use this keyword when any method returns various different values. The parameter of out does not at all pass the property.
+
+
 ```
 void static Swap (ref int n1, ref int n2)
 {
-int temp =n1; n1=n2; n2=temp;
+  int temp =n1; 
+  n1=n2; 
+  n2=temp;
 }
 
 void static Calculate (float radius, out float area, out float circum)
 {
-	Area=3.14f * radius * radius;
-	Circum=2*3.14f * radius;
+	  area=3.14f * radius * radius;
+	  circum=2*3.14f * radius;
 }
 
 public static void Main ()
@@ -239,12 +255,5 @@ public static void Main ()
     Calculate (5, out area, out circum);
 }
 
-
 ```
-
-## Exeuction Process of .net Application
-
-<img src="/images/CSharp/Execution.jpg"/>
-
-
 
