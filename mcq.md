@@ -3,7 +3,9 @@
 
 Assessment of any type of objective question is normally known as MCQ Test. It is a way of examining in which questions asked to have a single correct answer.MCQ Test includes true/false, multiple-choice, and matching questions. 
 
-Well designed MCQs allow testing for a wide breadth of content and objectives and provide an objective measurement of student ability during learning Process.
+Knowledge is tested through hands-on as well as through project work. .NET programming skill get stronger as we do more Project based learning. It matters how we apply concepts to sovle a problem through project.
+These MCQ's are just samples for revising .NET and testing our understanding about .NET.
+
 
 <hr/>
 
