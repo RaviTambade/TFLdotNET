@@ -331,23 +331,23 @@ D.Loading of multiple script files in single request.
 ```
 
 
-27.Which protocol is used for requesting a web page in ASP.NET from the Web Server?
+27.Which status code is sent for successful execution of Web API in ASP.NET Core?
 
 ```
-A. POP3
-B. TCP
-C. SMTP
-D. HTTP
+A. 201
+B. 404
+C. 500
+D. 200
 ```
 
 
-28.LINQ query can work with?
+28.Which of the following is used to check the validity of the model in ASP.NET Web API?
 
 ```
-A. DataSet
-B. List<T>
-C. Array
-D. All of the above
+A. Mode.Valid
+B. Model.IsValid
+C. ModelState.IsValid
+D. ModelState.Valid
 ``` 
 
 29.Which component is essential for collecting data using Connected Data Access Mode?
@@ -389,15 +389,13 @@ C.TempData
 D.MetaData			
 ``` 
 
-34.DotNet application has been developed using Windows Communication Foundation Service(WCF). 
-There is a need to deploy WCF service in hosting environment. 
-Which is the  directive in .svc file is responsible for creating an instance WCF service?
+34.Which of these is an attribute that you can apply to a controller action or an entire controller that modifies the way in which the action is executed??
 
 ```
-A.Service Directive
-B.ServiceHost Directive 
-C.IISHost Directive
-D.Host Directive   
+A.Action filter
+B.Result filter
+C.Exception filter
+D.Authorization filter   
 ``` 
 
 36.Which line is wrong written in Program.cs file of asp.net core MVC Application?
@@ -437,7 +435,7 @@ C.<a asp-controller="Controller1" asp-method="CheckData" class="my-css-classname
 D.<a asp-controller="Controller1" asp-action="CheckData" class="my-css-classname" my-attr="my-attribute">Click</a>
 ``` 
 
-38. Difference between Response.Write() and Response.Output.Write().
+38.Which statement is correct about Response.Output.Write()?
 
 ```
 A. HttpContext.Response.Output.Write() allows you to buffer output
@@ -472,12 +470,12 @@ C.SaveChanges
 D.Commit
 ``` 
 
-42.File extension used for ASP.NET webforms pages.
+42.Which File extension is used for defining views in ASP.NET Core MVC?
 
 ```
-A. .Web
-B. .ASP
-C. .ASPX
+A. .html
+B. .cs
+C. .cshtml
 D. None of the above
 ```
 
@@ -519,6 +517,32 @@ C. web forms
 D. None of the above
 ``` 
 
+47. Which Request/Response  data fromat  supported by Web API by default?
+A.JSON
+B.XML
+C.BSON
+D.All of the Above
+
+48. Which of the following types of routing supported in Web API?
+A. Attribute Routing
+B.Convention-based Routing
+C.All of the above
+D.None of the above
+
+
+49. Which interface must be implemented  to provide querying facility in LINQ?
+A. IEnumerator or IQueryable
+B. IEnumberable or Queryable
+C. Enumberatble or Qurable
+D. None of the above
+
+50. What is the default injection type of Unit Container used in ASP.NET Core
+A. Constructor Injection
+B. Prperty Injection
+C. Method Injection
+D. All of the Above
+
+
 
 <hr/>
 Answers:
@@ -551,12 +575,12 @@ Answers:
 27. B
 26. D
 27. D
-28. D
+28. C
 29. B
 30. B
 31. B
 32. D
-34. B
+34. A
 36. B
 37. C
 38. B
@@ -568,5 +592,7 @@ Answers:
 44. A
 45. B
 46. B  A
-
-
+47. C
+48. C
+49. B
+50. A
