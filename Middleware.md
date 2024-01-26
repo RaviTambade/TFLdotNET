@@ -72,8 +72,7 @@ that the user can be authenticated before the MVC engine kicks in.
 ### 6.MVC & Routing:
 - <b>UseMvc()</b>:enables the use of MVC in your web application, with the ability to customize routes for your MVC application 
 		and set other options.
-
-- </b>routes.MapRoute()</b>: 
+- <b>routes.MapRoute()</b>: 
 	set the default route and any custom routes when using MVC.
 
 ## Routing
