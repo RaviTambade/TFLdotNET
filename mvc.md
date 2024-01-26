@@ -74,7 +74,7 @@ The bottom line is that these aren’t always rigid demarcation lines, and the d
 
 ### View
 
-The view manages the display of information and also facilitates interaction with user. However, it does not act on user interaction (i.e., events) - that is the job of the controller.
+The view manages the display of information and also facilitates interaction with user.
 
 ```
 <!--details.cshtml razor view file -->
@@ -100,9 +100,9 @@ The View is the part of the application that your user sees and interacts with. 
 
 The common theme is that the View mainly represents the output from the system. For a fullstack system, where the user also triggers UI events and enters data, however, the View also includes those interfaces that capture inputs or events from the user.
 
-These might include and incorporate, for example, <input/> and <button></button> elements from a <form></form>, or generally elements that can be clicked on.
+These might include and incorporate, for example,<input/> and <button></button> elements from a <form></form>,or generally elements that can be clicked on.
 
-### Advantages of the MVC architecture
+### Advantages of MVC architecture
 
 - <b>Simplicity</b> - First of all, having those three separate concepts adds a certain level of simplicity to your application, clearly delineating where each method should be placed, according to the separation of concerns principle. The pattern does away with complex inheritance structures that might involve six or more classes and / or otherwise relies on multiple and varied relationships between all these different classes.
 - <b>Flexibility</b> - The MVC pattern is also flexible and can accommodate any feature that might need to be added later on. It has room for growth within its basic structure.
