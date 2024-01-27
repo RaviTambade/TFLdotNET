@@ -35,7 +35,7 @@ Create beautiful apps and scalable cloud services, faster and easier with the fr
 - <a href="https://github.com/RaviTambade/.NET/blob/main/Statemgmt.md"> State Management</a>
 - <a href="https://github.com/RaviTambade/.NET/blob/main/entityframeworkcore.md"> Entity Framework Core</a>
 - <a href="https://github.com/RaviTambade/.NET/blob/main/Webapi.md"> WebAPI</a>
-- <a href="https://github.com/RaviTambade/.NET/blob/main/JWT.md"> Secure ASP.NET App using JWT</a>
+- <a href="https://github.com/RaviTambade/.NET/blob/main/JWT.md">JWT Authentication</a>
 - <a href="https://github.com/RaviTambade/.NET/blob/main/websockets.md"> WebSockets</a>
 - <a href="https://github.com/RaviTambade/.NET/blob/main/signalR.md"> SignalR</a>
 - <a href="https://github.com/RaviTambade/.NET/blob/main/MQTT.md"> MQTT</a>
