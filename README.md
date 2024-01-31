@@ -38,7 +38,6 @@ Create beautiful apps and scalable cloud services, faster and easier with the fr
 - <a href="https://github.com/RaviTambade/.NET/blob/main/websockets.md"> WebSockets</a>
 - <a href="https://github.com/RaviTambade/.NET/blob/main/signalR.md"> SignalR</a>
 - <a href="https://github.com/RaviTambade/.NET/blob/main/MQTT.md"> MQTT</a>
-- <a href="https://github.com/RaviTambade/.NET/blob/main/signalR.md"> SignalR</a>
 - Localization in MVC
 - Deploying ASP .NET MVC application
 - Kafka
