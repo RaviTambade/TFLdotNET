@@ -391,9 +391,9 @@ public abstract class Employee
   static void Main ()
   { 	
 
-    Manager mgr=new Manager ();
-    double bonus=mgr. CalaculateBonus ();
-    double Salary=mgr. CalculateSalary ();
+    Employee emp=new Manager ();
+    double bonus=emp.CalaculateBonus ();
+    double Salary=emp.CalculateSalary ();
   }
 ```
 
