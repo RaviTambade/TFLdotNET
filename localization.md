@@ -118,3 +118,5 @@ Let’s try it out. If we navigate to the Localization controller and pass the c
     http://localhost:5286/?culture=es
 
 ```
+
+Localization is a powerful tool that enables us to reach a wider audience with our applications, providing each culture with a personalized experience suited to them.
