@@ -120,4 +120,7 @@
   <data name="Greeting" xml:space="preserve">
     <value>नमस्कार  आपले स्वागत आहे !</value>
   </data>
+  <data name="Thanks" xml:space="preserve">
+    <value>धन्यवाद </value>
+  </data>
 </root>

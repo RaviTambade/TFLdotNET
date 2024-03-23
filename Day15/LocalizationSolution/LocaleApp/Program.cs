@@ -8,6 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+//Step:1
+
 builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
 
 
@@ -18,6 +20,7 @@ var supportedCultures = new[]
     new CultureInfo(defaultCulture),
     new CultureInfo("es")
 };
+
 
 builder.Services.Configure<RequestLocalizationOptions>(options => {
     options.DefaultRequestCulture = new RequestCulture(defaultCulture);
@@ -38,8 +41,9 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-app.UseRequestLocalization(app.Services.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value);
 
+//setup middleware for localization
+app.UseRequestLocalization(app.Services.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value);
 
 app.UseRouting();
 

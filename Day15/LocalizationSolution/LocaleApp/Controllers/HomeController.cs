@@ -17,6 +17,7 @@ public class HomeController : Controller
         Console.WriteLine( _localizer["Greeting"]);
         
         ViewData["Greeting"] = _localizer["Greeting"];
+        ViewData["Thanks"] = _localizer["Thanks"];
         return View();
     }
 }

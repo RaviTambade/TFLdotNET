@@ -120,4 +120,7 @@
   <data name="Greeting" xml:space="preserve">
     <value>Hello! We are learning about localization with Seed</value>
   </data>
+  <data name="Thanks" xml:space="preserve">
+    <value>Thank you very much from Seed</value>
+  </data>
 </root>
