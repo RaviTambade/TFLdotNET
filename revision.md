@@ -348,6 +348,8 @@ Interfaces in C# are powerful tools that enable you to define contracts for clas
 In summary, interfaces play a crucial role in C# development by enabling abstraction, decoupling, polymorphism, and code reusability. They are essential for building flexible, maintainable, and extensible software systems.
 
 
+## Loosely Coupled , Highly Cohesive  Solutions
+
 In software engineering, the concepts of "loosely coupled" and "highly cohesive" refer to the design principles aimed at creating maintainable, modular, and scalable software systems. Let's discuss how these principles can be applied in the context of .NET Core development:
 
 1. **Loosely Coupled**:
@@ -381,7 +383,7 @@ In .NET Core, connecting to databases is a common requirement for many applicati
 
 
 <hr/>
-##Database Connectivity
+## Database Connectivity
 
 1. **ADO.NET**:
    
@@ -472,6 +474,8 @@ In .NET Core, connecting to databases is a common requirement for many applicati
    ```
 
 These are just a few examples of how you can connect to databases in C# using .NET Core. Depending on your requirements and preferences, you can choose the appropriate approach and libraries for database connectivity in your application.
+
+## Connected Data Access and Disconnected Data Access
 
 
 In C#, when working with databases, you'll often come across two main approaches: connected data access and disconnected data access. Each approach has its advantages and is suitable for different scenarios. Let's explore both:
