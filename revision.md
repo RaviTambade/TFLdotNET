@@ -1,4 +1,11 @@
 
+Hi Welcome to .NET revision in TAP. 
+We have started applying concepts of .net in Project. But somehow  forgot to revise our learnings. Without  theroy there is no practical. Theory explains concepts. Practical confirms concept clarity, understanding in do it your self mode. We have to keep both  going in hand in hand.
+
+Let us revise Basics and essential before we move to next orbit of learning and applying .NET.
+ <hr/>
+
+## Dotnet Core CLI Commands
 
 The ".NET CLI" (Command Line Interface) is a set of command-line tools provided by Microsoft for working with .NET Core and .NET 5/6 applications. It allows you to build, run, test, and manage .NET applications directly from the command line. Here are some common commands:
 
@@ -14,6 +21,8 @@ The ".NET CLI" (Command Line Interface) is a set of command-line tools provided 
 These are just a few examples. To get a full list of available commands and their options, you can use the `dotnet --help` command or refer to the official Microsoft documentation: https://docs.microsoft.com/en-us/dotnet/core/tools/
 
 
+
+## What is ASP.NET  Core?
 
 ASP.NET Core is a cross-platform, high-performance framework for building modern, cloud-based, internet-connected applications. It's an open-source web framework developed by Microsoft and it's a significant redesign of the original ASP.NET framework.
 
@@ -39,6 +48,8 @@ Here are some key features and components of ASP.NET Core:
 
 To get started with ASP.NET Core development, you would typically use the .NET CLI (Command Line Interface) or Visual Studio IDE, along with tools like Entity Framework Core for database access and various libraries for additional functionality. You can find extensive documentation and tutorials on the official ASP.NET Core website: https://dotnet.microsoft.com/apps/aspnet/apis
 
+
+## Basics of C# Programming
 
 Certainly! Here's an overview of some basic concepts in C#:
 
@@ -128,6 +139,7 @@ Certainly! Here's an overview of some basic concepts in C#:
 These are some fundamental concepts in C#. Understanding them will provide you with a solid foundation for further learning and development in C#.
 
 
+## Object Oriented Programming using C#
 
 Certainly! Object-oriented programming (OOP) is a programming paradigm that revolves around the concept of objects, which can contain data (attributes or properties) and code (methods or functions). In C#, OOP is extensively used, and here are some essential concepts:
 
@@ -182,6 +194,8 @@ Certainly! Object-oriented programming (OOP) is a programming paradigm that revo
    }
    ```
 
+   <hr/>
+
 4. **Polymorphism**:
    - Polymorphism allows objects of different classes to be treated as objects of a common superclass.
    - It enables methods to be overridden in derived classes, allowing for different implementations of the same method signature.
@@ -219,6 +233,7 @@ Certainly! Object-oriented programming (OOP) is a programming paradigm that revo
 
 These are some essential concepts in C# object-oriented programming. Understanding and applying these concepts will enable you to write more organized, maintainable, and scalable code.
 
+## Collections in C#
 
 In C#, the .NET framework provides a rich set of collection classes and interfaces in the `System.Collections` and `System.Collections.Generic` namespaces. These collections offer various data structures to store and manipulate groups of related objects efficiently. Here are some commonly used collection types:
 
@@ -292,6 +307,7 @@ In C#, the .NET framework provides a rich set of collection classes and interfac
 
 These are some of the commonly used collection types in C#. Depending on your requirements, you can choose the appropriate collection to efficiently store and manipulate data in your applications.
 
+## Why Interfaces ?
 
 Interfaces in C# are powerful tools that enable you to define contracts for classes to implement. They provide a way to define a set of members (methods, properties, events, or indexers) that implementing classes must adhere to. Here are some reasons why interfaces are used in C#:
 
@@ -362,6 +378,10 @@ By adhering to these principles, .NET Core developers can build robust, maintain
 
 
 In .NET Core, connecting to databases is a common requirement for many applications. .NET Core provides various libraries and frameworks for interacting with different types of databases, including relational databases like SQL Server, MySQL, PostgreSQL, SQLite, and NoSQL databases like MongoDB. Here's how you can connect to databases in C# using .NET Core:
+
+
+<hr/>
+##Database Connectivity
 
 1. **ADO.NET**:
    
@@ -549,6 +569,290 @@ In C#, when working with databases, you'll often come across two main approaches
 
 Both connected and disconnected data access approaches have their place in C# development, and the choice between them depends on factors such as application requirements, scalability, performance, and data size.
 
+
+<hr/>
+
+## ASP.NET CORE  Web API
+
+ASP.NET Core Web API is a framework for building HTTP-based services using the ASP.NET Core platform. It enables developers to create RESTful APIs that can be consumed by various clients, such as web browsers, mobile apps, or other services. ASP.NET Core Web API provides a flexible and lightweight approach to building APIs, allowing developers to focus on defining endpoints, handling requests, and returning responses without the overhead of traditional MVC applications.
+
+Key features of ASP.NET Core Web API include:
+
+1. **Controller-based Routing**: ASP.NET Core Web API uses controllers to define endpoints and handle HTTP requests. Controllers are classes that inherit from ControllerBase or ApiController and contain action methods corresponding to different HTTP methods (GET, POST, PUT, DELETE, etc.) and routes.
+
+2. **Attribute Routing**: ASP.NET Core Web API supports attribute-based routing, where routes are defined directly on controller action methods using attributes like `[HttpGet]`, `[HttpPost]`, `[Route]`, etc. This provides a more concise and declarative way to define routes compared to convention-based routing.
+
+3. **Model Binding and Validation**: ASP.NET Core Web API automatically binds incoming request data to action method parameters based on the request content (e.g., JSON, XML, form data). It also provides built-in model validation to ensure that request data meets specified validation rules.
+
+4. **Content Negotiation**: ASP.NET Core Web API supports content negotiation, allowing clients to request data in different formats (e.g., JSON, XML) using standard HTTP headers like `Accept` and `Content-Type`. It can automatically serialize response data to the requested format based on client preferences.
+
+5. **Dependency Injection**: ASP.NET Core Web API leverages the built-in dependency injection (DI) container to manage dependencies and services. This enables developers to inject services into controllers and other components, promoting modularity, testability, and maintainability.
+
+6. **Middleware Pipeline**: ASP.NET Core Web API uses the ASP.NET Core middleware pipeline to handle HTTP requests and responses. Developers can configure middleware components to perform various tasks such as authentication, authorization, logging, error handling, and more.
+
+7. **Built-in Support for Formats and Protocols**: ASP.NET Core Web API includes built-in support for popular formats and protocols, such as JSON, XML, Swagger/OpenAPI for documentation, CORS (Cross-Origin Resource Sharing), and HTTPS.
+
+ASP.NET Core Web API is a versatile framework that can be used to build a wide range of HTTP-based services, including RESTful APIs, GraphQL endpoints, and gRPC services. It provides a unified programming model, robust tooling, and built-in features to simplify the process of building modern, scalable, and interoperable APIs.
+
+
+
+
+## ASP.NET CORE Program.cs file
+In an ASP.NET Core application, the `Program.cs` file plays a crucial role in configuring and bootstrapping the application. It serves as the entry point for the application and is responsible for setting up the hosting environment, configuring services, and starting the application.
+
+Here's the typical role of the `Program.cs` file in an ASP.NET Core application:
+
+1. **Define the Main Method**:
+   The `Main` method is the entry point for the application. It sets up the web host builder and starts the ASP.NET Core application.
+
+   ```csharp
+   public class Program
+   {
+       public static void Main(string[] args)
+       {
+           CreateHostBuilder(args).Build().Run();
+       }
+
+       public static IHostBuilder CreateHostBuilder(string[] args) =>
+           Host.CreateDefaultBuilder(args)
+               .ConfigureWebHostDefaults(webBuilder =>
+               {
+                   webBuilder.UseStartup<Startup>();
+               });
+   }
+   ```
+
+2. **Create the Host**:
+   The `CreateHostBuilder` method is responsible for creating an instance of the web host builder. It configures the web host builder with default settings, such as environment variables, configuration sources, logging, and dependency injection.
+
+3. **Configure Web Host**:
+   The `ConfigureWebHostDefaults` method configures the web host builder with defaults for hosting an ASP.NET Core web application. It specifies the startup class (`Startup`) that configures the application's request processing pipeline.
+
+4. **Specify Startup Class**:
+   The `Startup` class is responsible for configuring the application's middleware pipeline, services, and request handling. It contains methods such as `ConfigureServices` and `Configure`, which are used to configure services and request processing middleware, respectively.
+
+   ```csharp
+   public class Startup
+   {
+       public void ConfigureServices(IServiceCollection services)
+       {
+           // Configure services
+       }
+
+       public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+       {
+           // Configure middleware pipeline
+       }
+   }
+   ```
+
+5. **Configure Application Services**:
+   Inside the `Startup` class, the `ConfigureServices` method is used to configure services such as MVC, Entity Framework, authentication, authorization, logging, etc. These services are registered with the built-in dependency injection container.
+
+6. **Configure Middleware Pipeline**:
+   The `Configure` method in the `Startup` class is used to configure the middleware pipeline for request processing. Middleware components are added to the pipeline in the order they are specified, and they handle incoming HTTP requests and responses.
+
+Overall, the `Program.cs` file in an ASP.NET Core application sets up the hosting environment, configures the web host, and specifies the startup class responsible for configuring the application's services and middleware pipeline. It serves as the entry point for the application and is essential for bootstrapping the ASP.NET Core application.
+ 
+
+## ASP.NET Core Minimal Code API
+
+An ASP.NET Core Minimal API is a lightweight approach to building web APIs with minimal ceremony and less boilerplate code. Introduced in ASP.NET Core 6, Minimal APIs aim to streamline the development process by providing a concise syntax for defining routes, handling requests, and returning responses with minimal setup.
+
+Here's what Minimal API in ASP.NET Core means:
+
+1. **Reduced Boilerplate**:
+   Minimal APIs eliminate much of the boilerplate code traditionally associated with building ASP.NET Core applications. They offer a simplified syntax that allows developers to define routes, handle requests, and return responses with minimal ceremony.
+
+2. **Concise Routing**:
+   Minimal APIs use a concise routing syntax that allows developers to define routes inline within the application code. This eliminates the need for separate route configuration files or controllers, making the routing logic more straightforward and easier to understand.
+
+3. **Lambda-based Handlers**:
+   Handlers for HTTP requests are defined using lambda expressions or inline functions, rather than separate controller classes and action methods. This reduces the overhead of creating controller classes and encourages a more functional programming style.
+
+4. **Built-in Dependency Injection**:
+   Minimal APIs support built-in dependency injection for services and dependencies. Services can be registered and resolved directly within the application code, simplifying the setup process and promoting code reusability.
+
+5. **Self-contained Applications**:
+   Minimal APIs enable developers to create self-contained web applications with fewer moving parts. They are well-suited for building lightweight microservices, serverless applications, or small-scale APIs that don't require the full MVC framework.
+
+6. **Improved Performance**:
+   By minimizing the amount of code and infrastructure required to handle requests, Minimal APIs can improve the performance and scalability of ASP.NET Core applications. They reduce the overhead of middleware processing and routing, resulting in faster response times and lower resource consumption.
+
+Overall, Minimal APIs in ASP.NET Core offer a more lightweight and streamlined approach to building web APIs, allowing developers to focus on writing business logic rather than boilerplate code. They are particularly well-suited for small to medium-sized applications, prototypes, or APIs where simplicity and speed of development are paramount.
+
+
+In ASP.NET Core Minimal APIs, the `app.MapGet` method is used to define an HTTP GET endpoint for handling incoming requests. This method is part of the `IApplicationBuilder` interface and is typically used within the `Configure` method of the `Startup` class to define routes and endpoints for handling HTTP requests.
+
+Here's how you can use `app.MapGet` in a Minimal API application:
+
+```csharp
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Hosting;
+
+var builder = WebApplication.CreateBuilder(args);
+
+var app = builder.Build();
+
+app.MapGet("/", async context =>
+{
+    await context.Response.WriteAsync("Hello, World!");
+});
+
+app.Run();
+```
+
+In this example:
+
+- `WebApplication.CreateBuilder(args)` creates a builder instance for configuring the application.
+- `var app = builder.Build()` builds the application from the builder instance.
+- `app.MapGet("/", async context => { ... })` defines a route for handling HTTP GET requests to the root path ("/"). Inside the lambda expression, you specify the logic for handling the request and generating the response. In this case, it simply writes "Hello, World!" to the response stream.
+- `app.Run()` runs the application.
+
+You can define multiple `app.MapGet` (or `app.MapPost`, `app.MapPut`, etc.) statements to handle different routes and HTTP methods within the same application. This allows you to define your API endpoints with a minimal amount of code, without the need for controllers or separate route configuration files.
+
+
+In ASP.NET Core Minimal APIs, the `app.MapPost` method is used to define an HTTP POST endpoint for handling incoming requests. This method is part of the `IApplicationBuilder` interface and is typically used within the `Configure` method of the `Startup` class to define routes and endpoints for handling HTTP requests.
+
+Here's how you can use `app.MapPost` in a Minimal API application:
+
+```csharp
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Hosting;
+
+var builder = WebApplication.CreateBuilder(args);
+
+var app = builder.Build();
+
+app.MapPost("/api/data", async context =>
+{
+    // Handle the incoming POST request
+    var requestBody = await new StreamReader(context.Request.Body).ReadToEndAsync();
+    
+    // Process the request body
+
+    // Return a response
+    context.Response.ContentType = "text/plain";
+    await context.Response.WriteAsync("Data received successfully!");
+});
+
+app.Run();
+```
+
+In this example:
+
+- `WebApplication.CreateBuilder(args)` creates a builder instance for configuring the application.
+- `var app = builder.Build()` builds the application from the builder instance.
+- `app.MapPost("/api/data", async context => { ... })` defines a route for handling HTTP POST requests to the "/api/data" endpoint. Inside the lambda expression, you specify the logic for handling the request and generating the response. In this case, it reads the request body, processes the data (which you would implement according to your application's requirements), and returns a simple response.
+- `app.Run()` runs the application.
+
+You can define multiple `app.MapPost` (or `app.MapGet`, `app.MapPut`, etc.) statements to handle different routes and HTTP methods within the same application. This allows you to define your API endpoints with a minimal amount of code, without the need for controllers or separate route configuration files.
+
+
+
+In ASP.NET Core Minimal APIs, the `app.MapPut` method is used to define an HTTP PUT endpoint for handling incoming requests. This method is part of the `IApplicationBuilder` interface and is typically used within the `Configure` method of the `Startup` class to define routes and endpoints for handling HTTP requests.
+
+Here's how you can use `app.MapPut` in a Minimal API application:
+
+```csharp
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Hosting;
+
+var builder = WebApplication.CreateBuilder(args);
+
+var app = builder.Build();
+
+app.MapPut("/api/data/{id}", async context =>
+{
+    // Retrieve the 'id' from the route parameters
+    var id = context.Request.RouteValues["id"] as string;
+
+    // Handle the incoming PUT request
+    var requestBody = await new StreamReader(context.Request.Body).ReadToEndAsync();
+    
+    // Process the request body and update the resource with the specified 'id'
+
+    // Return a response
+    context.Response.ContentType = "text/plain";
+    await context.Response.WriteAsync($"Data with ID '{id}' updated successfully!");
+});
+
+app.Run();
+```
+
+In this example:
+
+- `WebApplication.CreateBuilder(args)` creates a builder instance for configuring the application.
+- `var app = builder.Build()` builds the application from the builder instance.
+- `app.MapPut("/api/data/{id}", async context => { ... })` defines a route for handling HTTP PUT requests to the "/api/data/{id}" endpoint, where `{id}` is a route parameter representing the identifier of the resource to be updated. Inside the lambda expression, you specify the logic for handling the request and generating the response. In this case, it reads the request body, processes the data, updates the resource with the specified ID, and returns a simple response.
+- `app.Run()` runs the application.
+
+You can define multiple `app.MapPut` (or `app.MapGet`, `app.MapPost`, etc.) statements to handle different routes and HTTP methods within the same application. This allows you to define your API endpoints with a minimal amount of code, without the need for controllers or separate route configuration files.
+
+
+## ASP.NET CORE  app.Run Method
+
+In ASP.NET Core, the `app.Run` method is used to configure a terminal middleware component that will handle the request if no other middleware in the pipeline produces a response. It's typically the last middleware added to the pipeline and serves as a fallback mechanism to handle requests that haven't been handled by earlier middleware components.
+
+Here's how you can use `app.Run` in an ASP.NET Core application:
+
+```csharp
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Hosting;
+
+var builder = WebApplication.CreateBuilder(args);
+
+var app = builder.Build();
+
+// Configure middleware components
+app.UseRouting();
+
+app.UseEndpoints(endpoints =>
+{
+    // Configure endpoint routing
+    endpoints.MapGet("/", async context =>
+    {
+        await context.Response.WriteAsync("Hello, World!");
+    });
+
+    // Add more endpoints as needed...
+});
+
+// Configure terminal middleware using app.Run
+app.Run(async context =>
+{
+    // Handle requests that haven't been handled by earlier middleware
+    context.Response.StatusCode = StatusCodes.Status404NotFound;
+    await context.Response.WriteAsync("404 - Not Found");
+});
+
+app.Run();
+```
+
+In this example:
+
+- `WebApplication.CreateBuilder(args)` creates a builder instance for configuring the application.
+- `var app = builder.Build()` builds the application from the builder instance.
+- Middleware components such as routing (`app.UseRouting`) and endpoint routing (`app.UseEndpoints`) are configured before `app.Run`.
+- Inside `app.UseEndpoints`, you define the endpoints for handling specific routes and HTTP methods. These endpoints use lambda expressions to specify the logic for handling requests.
+- `app.Run` is used to configure a terminal middleware component that handles requests that haven't been handled by earlier middleware components. In this case, it returns a "404 - Not Found" response for any unmatched requests.
+
+`app.Run` is a useful mechanism for providing fallback behavior or handling requests that haven't been handled by earlier middleware components. It's commonly used to define global error handling, logging, or to serve default responses for unmatched requests.
+
+
+
+
+
+
+## Entity Framework
 
 Entity Framework (EF) is an Object-Relational Mapping (ORM) framework developed by Microsoft for .NET applications. It enables developers to work with relational databases using .NET objects, eliminating the need for writing tedious SQL queries manually. Instead, developers can use C# or Visual Basic.NET code to interact with the database, making database operations more intuitive and less error-prone.
 
@@ -829,282 +1133,3 @@ Overall, the Code First approach is suitable for scenarios where you want more c
 
 
 
-## ASP.NET CORE  Web API
-
-ASP.NET Core Web API is a framework for building HTTP-based services using the ASP.NET Core platform. It enables developers to create RESTful APIs that can be consumed by various clients, such as web browsers, mobile apps, or other services. ASP.NET Core Web API provides a flexible and lightweight approach to building APIs, allowing developers to focus on defining endpoints, handling requests, and returning responses without the overhead of traditional MVC applications.
-
-Key features of ASP.NET Core Web API include:
-
-1. **Controller-based Routing**: ASP.NET Core Web API uses controllers to define endpoints and handle HTTP requests. Controllers are classes that inherit from ControllerBase or ApiController and contain action methods corresponding to different HTTP methods (GET, POST, PUT, DELETE, etc.) and routes.
-
-2. **Attribute Routing**: ASP.NET Core Web API supports attribute-based routing, where routes are defined directly on controller action methods using attributes like `[HttpGet]`, `[HttpPost]`, `[Route]`, etc. This provides a more concise and declarative way to define routes compared to convention-based routing.
-
-3. **Model Binding and Validation**: ASP.NET Core Web API automatically binds incoming request data to action method parameters based on the request content (e.g., JSON, XML, form data). It also provides built-in model validation to ensure that request data meets specified validation rules.
-
-4. **Content Negotiation**: ASP.NET Core Web API supports content negotiation, allowing clients to request data in different formats (e.g., JSON, XML) using standard HTTP headers like `Accept` and `Content-Type`. It can automatically serialize response data to the requested format based on client preferences.
-
-5. **Dependency Injection**: ASP.NET Core Web API leverages the built-in dependency injection (DI) container to manage dependencies and services. This enables developers to inject services into controllers and other components, promoting modularity, testability, and maintainability.
-
-6. **Middleware Pipeline**: ASP.NET Core Web API uses the ASP.NET Core middleware pipeline to handle HTTP requests and responses. Developers can configure middleware components to perform various tasks such as authentication, authorization, logging, error handling, and more.
-
-7. **Built-in Support for Formats and Protocols**: ASP.NET Core Web API includes built-in support for popular formats and protocols, such as JSON, XML, Swagger/OpenAPI for documentation, CORS (Cross-Origin Resource Sharing), and HTTPS.
-
-ASP.NET Core Web API is a versatile framework that can be used to build a wide range of HTTP-based services, including RESTful APIs, GraphQL endpoints, and gRPC services. It provides a unified programming model, robust tooling, and built-in features to simplify the process of building modern, scalable, and interoperable APIs.
-
-
-
-
-## ASP.NET CORE Program.cs file
-In an ASP.NET Core application, the `Program.cs` file plays a crucial role in configuring and bootstrapping the application. It serves as the entry point for the application and is responsible for setting up the hosting environment, configuring services, and starting the application.
-
-Here's the typical role of the `Program.cs` file in an ASP.NET Core application:
-
-1. **Define the Main Method**:
-   The `Main` method is the entry point for the application. It sets up the web host builder and starts the ASP.NET Core application.
-
-   ```csharp
-   public class Program
-   {
-       public static void Main(string[] args)
-       {
-           CreateHostBuilder(args).Build().Run();
-       }
-
-       public static IHostBuilder CreateHostBuilder(string[] args) =>
-           Host.CreateDefaultBuilder(args)
-               .ConfigureWebHostDefaults(webBuilder =>
-               {
-                   webBuilder.UseStartup<Startup>();
-               });
-   }
-   ```
-
-2. **Create the Host**:
-   The `CreateHostBuilder` method is responsible for creating an instance of the web host builder. It configures the web host builder with default settings, such as environment variables, configuration sources, logging, and dependency injection.
-
-3. **Configure Web Host**:
-   The `ConfigureWebHostDefaults` method configures the web host builder with defaults for hosting an ASP.NET Core web application. It specifies the startup class (`Startup`) that configures the application's request processing pipeline.
-
-4. **Specify Startup Class**:
-   The `Startup` class is responsible for configuring the application's middleware pipeline, services, and request handling. It contains methods such as `ConfigureServices` and `Configure`, which are used to configure services and request processing middleware, respectively.
-
-   ```csharp
-   public class Startup
-   {
-       public void ConfigureServices(IServiceCollection services)
-       {
-           // Configure services
-       }
-
-       public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-       {
-           // Configure middleware pipeline
-       }
-   }
-   ```
-
-5. **Configure Application Services**:
-   Inside the `Startup` class, the `ConfigureServices` method is used to configure services such as MVC, Entity Framework, authentication, authorization, logging, etc. These services are registered with the built-in dependency injection container.
-
-6. **Configure Middleware Pipeline**:
-   The `Configure` method in the `Startup` class is used to configure the middleware pipeline for request processing. Middleware components are added to the pipeline in the order they are specified, and they handle incoming HTTP requests and responses.
-
-Overall, the `Program.cs` file in an ASP.NET Core application sets up the hosting environment, configures the web host, and specifies the startup class responsible for configuring the application's services and middleware pipeline. It serves as the entry point for the application and is essential for bootstrapping the ASP.NET Core application.
-
-
-
-
-
-
-
-## asp.net core Minimal Code API
-
-An ASP.NET Core Minimal API is a lightweight approach to building web APIs with minimal ceremony and less boilerplate code. Introduced in ASP.NET Core 6, Minimal APIs aim to streamline the development process by providing a concise syntax for defining routes, handling requests, and returning responses with minimal setup.
-
-Here's what Minimal API in ASP.NET Core means:
-
-1. **Reduced Boilerplate**:
-   Minimal APIs eliminate much of the boilerplate code traditionally associated with building ASP.NET Core applications. They offer a simplified syntax that allows developers to define routes, handle requests, and return responses with minimal ceremony.
-
-2. **Concise Routing**:
-   Minimal APIs use a concise routing syntax that allows developers to define routes inline within the application code. This eliminates the need for separate route configuration files or controllers, making the routing logic more straightforward and easier to understand.
-
-3. **Lambda-based Handlers**:
-   Handlers for HTTP requests are defined using lambda expressions or inline functions, rather than separate controller classes and action methods. This reduces the overhead of creating controller classes and encourages a more functional programming style.
-
-4. **Built-in Dependency Injection**:
-   Minimal APIs support built-in dependency injection for services and dependencies. Services can be registered and resolved directly within the application code, simplifying the setup process and promoting code reusability.
-
-5. **Self-contained Applications**:
-   Minimal APIs enable developers to create self-contained web applications with fewer moving parts. They are well-suited for building lightweight microservices, serverless applications, or small-scale APIs that don't require the full MVC framework.
-
-6. **Improved Performance**:
-   By minimizing the amount of code and infrastructure required to handle requests, Minimal APIs can improve the performance and scalability of ASP.NET Core applications. They reduce the overhead of middleware processing and routing, resulting in faster response times and lower resource consumption.
-
-Overall, Minimal APIs in ASP.NET Core offer a more lightweight and streamlined approach to building web APIs, allowing developers to focus on writing business logic rather than boilerplate code. They are particularly well-suited for small to medium-sized applications, prototypes, or APIs where simplicity and speed of development are paramount.
-
-
-In ASP.NET Core Minimal APIs, the `app.MapGet` method is used to define an HTTP GET endpoint for handling incoming requests. This method is part of the `IApplicationBuilder` interface and is typically used within the `Configure` method of the `Startup` class to define routes and endpoints for handling HTTP requests.
-
-Here's how you can use `app.MapGet` in a Minimal API application:
-
-```csharp
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Hosting;
-
-var builder = WebApplication.CreateBuilder(args);
-
-var app = builder.Build();
-
-app.MapGet("/", async context =>
-{
-    await context.Response.WriteAsync("Hello, World!");
-});
-
-app.Run();
-```
-
-In this example:
-
-- `WebApplication.CreateBuilder(args)` creates a builder instance for configuring the application.
-- `var app = builder.Build()` builds the application from the builder instance.
-- `app.MapGet("/", async context => { ... })` defines a route for handling HTTP GET requests to the root path ("/"). Inside the lambda expression, you specify the logic for handling the request and generating the response. In this case, it simply writes "Hello, World!" to the response stream.
-- `app.Run()` runs the application.
-
-You can define multiple `app.MapGet` (or `app.MapPost`, `app.MapPut`, etc.) statements to handle different routes and HTTP methods within the same application. This allows you to define your API endpoints with a minimal amount of code, without the need for controllers or separate route configuration files.
-
-
-In ASP.NET Core Minimal APIs, the `app.MapPost` method is used to define an HTTP POST endpoint for handling incoming requests. This method is part of the `IApplicationBuilder` interface and is typically used within the `Configure` method of the `Startup` class to define routes and endpoints for handling HTTP requests.
-
-Here's how you can use `app.MapPost` in a Minimal API application:
-
-```csharp
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Hosting;
-
-var builder = WebApplication.CreateBuilder(args);
-
-var app = builder.Build();
-
-app.MapPost("/api/data", async context =>
-{
-    // Handle the incoming POST request
-    var requestBody = await new StreamReader(context.Request.Body).ReadToEndAsync();
-    
-    // Process the request body
-
-    // Return a response
-    context.Response.ContentType = "text/plain";
-    await context.Response.WriteAsync("Data received successfully!");
-});
-
-app.Run();
-```
-
-In this example:
-
-- `WebApplication.CreateBuilder(args)` creates a builder instance for configuring the application.
-- `var app = builder.Build()` builds the application from the builder instance.
-- `app.MapPost("/api/data", async context => { ... })` defines a route for handling HTTP POST requests to the "/api/data" endpoint. Inside the lambda expression, you specify the logic for handling the request and generating the response. In this case, it reads the request body, processes the data (which you would implement according to your application's requirements), and returns a simple response.
-- `app.Run()` runs the application.
-
-You can define multiple `app.MapPost` (or `app.MapGet`, `app.MapPut`, etc.) statements to handle different routes and HTTP methods within the same application. This allows you to define your API endpoints with a minimal amount of code, without the need for controllers or separate route configuration files.
-
-
-
-In ASP.NET Core Minimal APIs, the `app.MapPut` method is used to define an HTTP PUT endpoint for handling incoming requests. This method is part of the `IApplicationBuilder` interface and is typically used within the `Configure` method of the `Startup` class to define routes and endpoints for handling HTTP requests.
-
-Here's how you can use `app.MapPut` in a Minimal API application:
-
-```csharp
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Hosting;
-
-var builder = WebApplication.CreateBuilder(args);
-
-var app = builder.Build();
-
-app.MapPut("/api/data/{id}", async context =>
-{
-    // Retrieve the 'id' from the route parameters
-    var id = context.Request.RouteValues["id"] as string;
-
-    // Handle the incoming PUT request
-    var requestBody = await new StreamReader(context.Request.Body).ReadToEndAsync();
-    
-    // Process the request body and update the resource with the specified 'id'
-
-    // Return a response
-    context.Response.ContentType = "text/plain";
-    await context.Response.WriteAsync($"Data with ID '{id}' updated successfully!");
-});
-
-app.Run();
-```
-
-In this example:
-
-- `WebApplication.CreateBuilder(args)` creates a builder instance for configuring the application.
-- `var app = builder.Build()` builds the application from the builder instance.
-- `app.MapPut("/api/data/{id}", async context => { ... })` defines a route for handling HTTP PUT requests to the "/api/data/{id}" endpoint, where `{id}` is a route parameter representing the identifier of the resource to be updated. Inside the lambda expression, you specify the logic for handling the request and generating the response. In this case, it reads the request body, processes the data, updates the resource with the specified ID, and returns a simple response.
-- `app.Run()` runs the application.
-
-You can define multiple `app.MapPut` (or `app.MapGet`, `app.MapPost`, etc.) statements to handle different routes and HTTP methods within the same application. This allows you to define your API endpoints with a minimal amount of code, without the need for controllers or separate route configuration files.
-
-
-## ASP.NET CORE  app.Run Method
-
-In ASP.NET Core, the `app.Run` method is used to configure a terminal middleware component that will handle the request if no other middleware in the pipeline produces a response. It's typically the last middleware added to the pipeline and serves as a fallback mechanism to handle requests that haven't been handled by earlier middleware components.
-
-Here's how you can use `app.Run` in an ASP.NET Core application:
-
-```csharp
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Hosting;
-
-var builder = WebApplication.CreateBuilder(args);
-
-var app = builder.Build();
-
-// Configure middleware components
-app.UseRouting();
-
-app.UseEndpoints(endpoints =>
-{
-    // Configure endpoint routing
-    endpoints.MapGet("/", async context =>
-    {
-        await context.Response.WriteAsync("Hello, World!");
-    });
-
-    // Add more endpoints as needed...
-});
-
-// Configure terminal middleware using app.Run
-app.Run(async context =>
-{
-    // Handle requests that haven't been handled by earlier middleware
-    context.Response.StatusCode = StatusCodes.Status404NotFound;
-    await context.Response.WriteAsync("404 - Not Found");
-});
-
-app.Run();
-```
-
-In this example:
-
-- `WebApplication.CreateBuilder(args)` creates a builder instance for configuring the application.
-- `var app = builder.Build()` builds the application from the builder instance.
-- Middleware components such as routing (`app.UseRouting`) and endpoint routing (`app.UseEndpoints`) are configured before `app.Run`.
-- Inside `app.UseEndpoints`, you define the endpoints for handling specific routes and HTTP methods. These endpoints use lambda expressions to specify the logic for handling requests.
-- `app.Run` is used to configure a terminal middleware component that handles requests that haven't been handled by earlier middleware components. In this case, it returns a "404 - Not Found" response for any unmatched requests.
-
-`app.Run` is a useful mechanism for providing fallback behavior or handling requests that haven't been handled by earlier middleware components. It's commonly used to define global error handling, logging, or to serve default responses for unmatched requests.
