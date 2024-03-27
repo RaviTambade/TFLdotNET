@@ -5,7 +5,7 @@ We have started applying concepts of .net in Project. But somehow  forgot to rev
 Let us revise Basics and essential before we move to next orbit of learning and applying .NET.
  <hr/>
 
-## Dotnet Core CLI Commands
+## .NET Core CLI Commands
 
 The ".NET CLI" (Command Line Interface) is a set of command-line tools provided by Microsoft for working with .NET Core and .NET 5/6 applications. It allows you to build, run, test, and manage .NET applications directly from the command line. Here are some common commands:
 
