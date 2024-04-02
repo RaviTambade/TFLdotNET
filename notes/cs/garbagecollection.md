@@ -104,3 +104,18 @@ In .NET Core, the `GC` class provides several important methods and properties f
    ```
 
 These methods and properties of the `GC` class provide developers with control and insight into the garbage collection process in .NET Core applications. Proper understanding and usage of these methods can help optimize memory usage, improve performance, and diagnose memory-related issues.
+
+## Garbage Collection Generation Levels
+In .NET Core, as in other versions of the .NET framework, the Garbage Collector (GC) uses a generational garbage collection algorithm to manage memory efficiently. This algorithm divides objects into different generations based on their age and how long they have been in memory. The main purpose of generational garbage collection is to take advantage of the observation that most objects become unreachable shortly after they are allocated.
+
+The GC in .NET Core organizes objects into three generations:
+
+1. **Generation 0 (Gen 0)**: This generation contains short-lived objects that have been recently allocated. Most new objects start in Generation 0. The Garbage Collector prioritizes collecting Generation 0 frequently because it's assumed that many of the objects in this generation will become unreachable soon after allocation. Objects that survive a garbage collection cycle in Generation 0 are promoted to Generation 1.
+
+2. **Generation 1 (Gen 1)**: This generation contains objects that have survived at least one garbage collection cycle. Since objects in Generation 1 have lived longer than those in Generation 0, the GC assumes they are less likely to become unreachable soon. Garbage collection for Generation 1 occurs less frequently than for Generation 0. Objects that survive a garbage collection cycle in Generation 1 are promoted to Generation 2.
+
+3. **Generation 2 (Gen 2)**: This generation contains long-lived objects that have survived multiple garbage collection cycles. Objects in Generation 2 have lived the longest and are assumed to be more stable and less likely to become unreachable. Garbage collection for Generation 2 occurs less frequently than for Generation 1. Objects that survive a garbage collection cycle in Generation 2 remain in Generation 2.
+
+The generational approach to garbage collection is based on the observation that most objects are short-lived and become unreachable relatively quickly. By collecting Generation 0 frequently and promoting surviving objects to higher generations, the GC can focus its efforts on the objects that are more likely to consume memory over a longer period.
+
+The use of generational garbage collection in .NET Core contributes to improved performance and reduced overhead by minimizing the amount of memory that needs to be scanned and collected during each garbage collection cycle. It also allows the GC to prioritize resources effectively, ensuring that objects are collected and memory is reclaimed in a timely manner.
