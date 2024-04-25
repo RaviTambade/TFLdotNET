@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Mvc;
 using tflstore.Models;
 
 namespace tflstore.Controllers;
-
 public class AuthController : Controller
 {
     private readonly ILogger<AuthController> _logger;
@@ -17,8 +16,6 @@ public class AuthController : Controller
 [HttpGet]
     public IActionResult Login(){
          Console.WriteLine("Invoking Home Controller Login method. ");
-       
-
         return View();
     }
     public IActionResult Validate(string email, string password){
@@ -36,12 +33,10 @@ public class AuthController : Controller
     }  
     public IActionResult Welcome(){
          Console.WriteLine("Invoking Home Controller Welcome  method. ");
-       
         return View();
     }
 
     public IActionResult Register(){
         return View();
     }
-
 }

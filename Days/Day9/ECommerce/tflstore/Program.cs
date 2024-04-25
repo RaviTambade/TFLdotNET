@@ -30,7 +30,6 @@ Console.WriteLine("Setting up URL Routing middleware");
 app.UseAuthorization();
 Console.WriteLine("Setting up Authorization middleware ");
 
-
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");

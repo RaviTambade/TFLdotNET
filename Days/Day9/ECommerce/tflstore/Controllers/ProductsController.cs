@@ -17,7 +17,6 @@ public class ProductsController : Controller
     public IActionResult Index(){
         //fetch data from Model
         //send list of products to ViewData Collection
-        
         List<Product>  allProducts=ProductManager.GetProducts();
         ViewData["catalog"]=allProducts;
         return View();

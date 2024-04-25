@@ -21,7 +21,6 @@ public class Product {
     public Product(int productId, string title){
         this.Id = productId;
         this.title = title;
-        
     }
 
     public Product(int productId, string title, string brand, string category){
@@ -99,5 +98,4 @@ public class Product {
         get{  return balance; }
         set{  balance = value;}
     }     
-
 }

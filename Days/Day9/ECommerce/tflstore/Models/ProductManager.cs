@@ -25,7 +25,6 @@ public class ProductManager
                 from prod in products
                 where prod.Balance > 0 && prod.UnitPrice > amount
                 select prod;
-
             return expensiveInStockProducts as List<Product>;
         }
 
@@ -35,18 +34,15 @@ public class ProductManager
             var productNames =
                 from prod in products
                 select prod.Title;
-
             return productNames as List<string>;
         }
 
         public static dynamic GetProductDetails()
         {
             List<Product> products = GetAllProducts();
-
             var productInfos =
                 from prod in products
                 select new { prod.Title, prod.Category, Price = prod.UnitPrice };
-
             return productInfos;
         }
 
@@ -79,7 +75,6 @@ public class ProductManager
                 from prod in products
                 group prod by prod.Category into prodGroup
                 select new { Category = prodGroup.Key, Products = prodGroup };
-
             return orderGroups as List<Product>;
         }
         
@@ -89,7 +84,6 @@ public class ProductManager
             var categoryNames = (    from prod in products
                                      select prod.Category
                                 ).Distinct();
-
             return categoryNames as List<string>;
         }
         
@@ -121,8 +115,6 @@ public class ProductManager
                 select new { Category = prodGroup.Key, AveragePrice = prodGroup.Average(p => p.UnitPrice) };
 
             return categories;
-
-
         }
         
 
@@ -172,12 +164,10 @@ public class ProductManager
             return status;
         }
 
-
         public static List<Product> GetAllProductsFromDatabase()
         {
             List<Product> allProducts = new List<Product>();
             //ProductDAL.GetAll();
             return allProducts;
         }
-
 }
