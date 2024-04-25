@@ -16,7 +16,6 @@ public class CustomersController : Controller
     // bind all products to ViewData
     // send viewData to View
   
- 
     public IActionResult Index(){
         return View();
     }
@@ -42,14 +41,9 @@ public class CustomersController : Controller
 
 
         Console.WriteLine("Post method invoked....");
-       if(!ModelState.IsValid){
-        
-
-               
-          return View();
-
+       if(!ModelState.IsValid){      
+         return View();
         }
-
         Console.WriteLine(customer.Name  + "  "+ customer.City);
         return RedirectToAction("Index");     
     }

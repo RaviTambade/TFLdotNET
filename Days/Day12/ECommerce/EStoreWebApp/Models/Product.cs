@@ -4,7 +4,6 @@ namespace EStoreWebApp.Models;
 public class Product {
     public int Id{get;set;}
 
-
     //Data Validators
     [Required]
     [StringLength(10)]

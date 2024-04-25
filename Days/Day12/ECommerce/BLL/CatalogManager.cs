@@ -36,11 +36,6 @@ public class CatalogManager
          *                  where p.ProductId ==id 
          *                  select p  ;
         return product as Product;
-
         */
-
-
-   
-
     }
 }

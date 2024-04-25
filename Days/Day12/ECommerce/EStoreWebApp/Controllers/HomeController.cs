@@ -52,7 +52,6 @@ public class HomeController : Controller
     //variables declared in scope of Action method
     //are visible in stack till control of execution is
     //inside action method
-
       public double amount;
     public ActionResult List()
     {
@@ -73,10 +72,6 @@ public class HomeController : Controller
         ViewBag.messageFromAction=someName;
         return View();
     }
-
-
-
-
 
     //model Binding
 

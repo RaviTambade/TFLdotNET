@@ -18,6 +18,5 @@ public class HRManager
         Department department = null;
         department = DAL.Connected.DBManager.GetDeparmentDetails(id);
         return department;
-
     }
 }

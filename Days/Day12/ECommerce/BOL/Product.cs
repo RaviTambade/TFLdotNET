@@ -1,7 +1,6 @@
 ﻿namespace BOL;
 public class Product
 {
-
     private int id;
     private string title;
     private string imageURL;
@@ -11,7 +10,6 @@ public class Product
     private int balance;
     private string paymentTerm;
     private string delivery;
-
 
      public Product(){
     }

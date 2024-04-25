@@ -2,10 +2,7 @@ namespace DAL.Connected;
 using BOL;
 using MySql.Data.MySqlClient;
 //using inbuilt, external Object Models
-
-
 public class DBManager{
-
     public static string conString=@"server=localhost;port=3306;user=root; password=password;database=transflower";       
     public  static List<Department> GetAllDepartments(){
             List<Department> allDepartments=new List<Department>();
@@ -43,7 +40,6 @@ public class DBManager{
             finally{
                     con.Close();
             }
-
             return allDepartments;
     }
 
@@ -69,7 +65,6 @@ public class DBManager{
                     Location = location
                 };
             }
-
         }
         catch (Exception e)
         {
@@ -151,8 +146,6 @@ public class DBManager{
         }
       return status;
     }
-
-
 
 //Employee Operations CRUD
     public static bool DoesEmployeeExists(int id)

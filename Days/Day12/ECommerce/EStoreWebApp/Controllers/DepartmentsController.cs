@@ -40,7 +40,6 @@ public class DepartmentsController : Controller
         //2.ViewBag
         this.ViewBag.selectedDepartment = theDepartment;
         return View();
-
     }
     
     public JsonResult Trainers()
@@ -54,9 +53,6 @@ public class DepartmentsController : Controller
         return Json(trainers);
     }
 
-
-
-
     [HttpPost]
     public IActionResult InsertTrainer(Trainer trainer){
         Console.WriteLine(trainer.FirstName+ "  "+ trainer.LastName + " "+ trainer.Email);
@@ -65,6 +61,5 @@ public class DepartmentsController : Controller
        // return RedirectToAction("Index");  //redirecting to existing controllers index method
          return RedirectToAction("Index","Home");
         //redirecting to  Home controllers index method
-
     }
 }

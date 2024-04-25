@@ -13,13 +13,12 @@ public class Product
     private string delivery;
 
 
-     public Product(){
+    public Product(){
     }
 
     public Product(int productId, string title){
         this.id = productId;
         this.title = title;
-        
     }
 
     public Product(int productId, string title, string brand, string category){
@@ -72,7 +71,6 @@ public class Product
         set { description = value; }
     }
 
-    
     public string PaymentTerm{
         get { return paymentTerm;}
         set { paymentTerm = value; }

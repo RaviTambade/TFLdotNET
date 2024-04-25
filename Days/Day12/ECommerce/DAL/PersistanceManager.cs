@@ -3,7 +3,6 @@ using BOL;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-
 public class DBManager
 {
     public static List<Product> GetAllProducts(){
@@ -25,6 +24,7 @@ public class DBManager
             allProducts.Add(new Product { ProductId = 15, Title = "Tulip", Description = "Tulips are the quintessential spring flower and available from January to June.", UnitPrice = 17, Category = "Flower", Balance = 10000 });
             return allProducts;
     }
+
     public static List<Product> GetAllProductsFromFile(string path){       
             if(File.Exists(path)){
                 string jsonString=File.ReadAllText(path);
@@ -38,19 +38,16 @@ public class DBManager
     }
     public static List<Product> GetAllProductsFromDatabase()
         {
-            List<Product> allProducts = new List<Product>();
-            
+            List<Product> allProducts = new List<Product>();      
             //Using MYSQL 
             //database connectivity using  ADO.NET (RDBMS)
             //database connectiity using  ORM (Entity Framework)
-
             //database connectivity using MONGO db
             return allProducts;
         }
     public static List<Product> GetAllProductsFromExternalServices()
         {
-            List<Product> allProducts = new List<Product>();
-            
+            List<Product> allProducts = new List<Product>(); 
             // get all JSON data from REST API
              
             //database connectivity using MONGO db
@@ -68,9 +65,6 @@ public class DBManager
                                       Description = "Wedding Flower",
                                       UnitPrice = 6, Category = "Flower",
                                       Balance = 5000 };
-        
         return product; 
     }
 }
-
- 

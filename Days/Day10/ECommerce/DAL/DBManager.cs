@@ -3,7 +3,6 @@ using BOL;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-
 public class DBManager
 {
     public static List<Product> GetAllProducts(){
@@ -43,18 +42,8 @@ public class DBManager
             //Using MYSQL 
             //database connectivity using  ADO.NET (RDBMS)
             //database connectiity using  ORM (Entity Framework)
-
             //database connectivity using MONGO db
-            
-        
-        
-        
-        
-        
-        
-        
-        
-        return allProducts;
+            return allProducts;
         }
     public static List<Product> GetAllProductsFromExternalServices()
         {

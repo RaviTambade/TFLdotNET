@@ -28,11 +28,9 @@ Windows:
 
 
  ADO.NET---& Entity Frameowrk--(Corss Platform net code)------------.net -----------------------2016
-	  Assebmlies:------------download from internet using cli command
+	Assebmlies:------------download from internet using cli command 
 
-
-		dotnet add package Mysql.data
-
+	dotnet add package Mysql.data
 
 .net core application
 			console application
@@ -40,9 +38,7 @@ Windows:
 			windows application
 			Web Application( asp.net core mvc, rest api Web app)
 
-
-DataCentric Application
-		
+DataCentric Application		
 		Standalone
 		Distributed
 		Web based Application	
@@ -83,35 +79,3 @@ Writing .net application using database connectivity with mysql
 	10.Iterate data available in offline in DataSet
 	11.perform CRUD operation in offline Mode
 	12.Update Dataset to send changes back to database
-
-	
-
-Entity Framework Core (Object Relational Mapping)
-
-	DbSet
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
