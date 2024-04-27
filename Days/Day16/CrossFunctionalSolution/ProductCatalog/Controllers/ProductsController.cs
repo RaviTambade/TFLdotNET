@@ -5,8 +5,8 @@ using ProductCatalog.Services.Interfaces;
 namespace ProductCatalog.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
-    public class ProductsController : ControllerBase
+    [Route("api/[controller]")]
+     public class ProductsController : ControllerBase
     {
         private readonly IProductService _productsrv;
         private readonly ILogger<ProductsController> _logger;
@@ -22,7 +22,7 @@ namespace ProductCatalog.Controllers
         public async Task<IEnumerable<Product>> GetAllProducts()
         {
             IEnumerable<Product> products = await _productsrv.GetAll();
-            _logger.LogInformation("Get all products method invoked at  {DT}", DateTime.UtcNow.ToLongTimeString());
+           _logger.LogInformation("Get all products method invoked at  {DT}", DateTime.UtcNow.ToLongTimeString());
             return products;
         }
 
