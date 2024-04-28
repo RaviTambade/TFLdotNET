@@ -1,7 +1,30 @@
-# Multithreading
+# Multitasking  and Mulithreading
 
 Building responsive and efficient applications in our rapidly-evolving digital world is more crucial now than ever. As software developers, we constantly look for ways to boost performance and improve the user experience. One such method is employing multithreading, a widely used yet often misunderstood feature.
 
+## Multitasking and Multithreading Terms
+
+Multitasking and multithreading are related concepts in computer science, both aimed at improving the efficiency and responsiveness of software systems, but they operate at different levels of abstraction and serve different purposes.
+
+1. **Multitasking**:
+   - Multitasking refers to the ability of an operating system to execute multiple tasks concurrently. These tasks can be applications or processes.
+   - In a multitasking system, the CPU switches between tasks rapidly, giving the illusion of parallelism.
+   - Multitasking can be achieved through two main approaches: 
+     - **Preemptive multitasking**: The operating system decides when to switch between tasks, typically based on priorities and time slices allocated to each task.
+     - **Cooperative multitasking**: Tasks voluntarily yield control to other tasks when they're idle or waiting for I/O operations.
+
+2. **Multithreading**:
+   - Multithreading is a programming technique where a single process or application can have multiple threads of execution running concurrently within it.
+   - Threads share the same memory space and resources of the process they belong to, allowing them to communicate and synchronize with each other efficiently.
+   - Multithreading enables concurrent execution of tasks within a single application, making it possible to perform multiple operations simultaneously.
+   - Threads can run independently or cooperate to accomplish a common goal, depending on the design of the application.
+
+Relationship:
+- Multithreading is a way to achieve multitasking at the application level. By creating multiple threads within a process, an application can perform multiple tasks concurrently, taking advantage of modern multicore processors.
+- Multitasking provided by the operating system allows multiple applications or processes to run concurrently, and each of these applications may utilize multithreading internally to achieve concurrent execution of tasks.
+- Multithreading is a lower-level concept, implemented within the application code, while multitasking is managed by the operating system at a higher level.
+
+In summary, multitasking is a feature provided by the operating system to run multiple tasks concurrently, while multithreading is a programming technique to achieve concurrency within a single application or process. They work together to enable efficient and responsive computing environments.
 Threads make it possible to execute sevaral program pieces concurrently, enhancing the program's efficiency.
 
 ## What is Threading in C# ?
