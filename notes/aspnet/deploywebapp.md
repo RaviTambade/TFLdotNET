@@ -30,8 +30,8 @@ Deploying an ASP.NET MVC application typically involves several steps. Here's a 
 Remember to document your deployment process so that you can easily replicate it in the future or share it with other team members.
 
 
-## dockerize an ASP.NET Core Web API application
-Here's a step-by-step guide to dockerize an ASP.NET Core Web API application:
+## Dockerize an ASP.NET Core Web API application
+Let us learn to dockerize an ASP.NET Core Web API application:
 
 1. **Create an ASP.NET Core Web API Project**:
    Start by creating a new ASP.NET Core Web API project using Visual Studio or the .NET CLI:
