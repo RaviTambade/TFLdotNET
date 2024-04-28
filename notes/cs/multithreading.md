@@ -1,6 +1,6 @@
 # Multitasking  and Mulithreading
 
-Building responsive and efficient applications in our rapidly-evolving digital world is more crucial now than ever. As software developers, we constantly look for ways to boost performance and improve the user experience. One such method is employing multithreading, a widely used yet often misunderstood feature.
+Building responsive and efficient applications in our rapidly-evolving digital world is more crucial now than ever. As software developers, we constantly look for ways to boost performance and improve the user experience. One such method is employing multithreading.
 
 ## Multitasking and Multithreading Terms
 
