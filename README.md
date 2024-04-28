@@ -44,7 +44,7 @@ Create beautiful apps and scalable cloud services, faster and easier with the fr
 
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/websockets.md"> WebSockets</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/signalR.md"> SignalR</a>
-- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/MQTT.md"> MQTT</a>
+- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/deploywebapp.md"> MQTT</a>
 - Deploying ASP .NET MVC application
 - Kafka
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/mcq.md">Test your TFLdotNET Programming Skill(MCQ)</a>
