@@ -132,3 +132,52 @@ There are several uses including:
 5. Use Assembly to load modules listed in the assembly manifest.
 6. Use PropertyInfo to get the declaring type, reflected type, data type, name and writable status of a property or to get and set property values.
 7. Use CustomAttributeData to find out information on custom attributes or to review attributes without having to create more instances.
+
+## System.Reflection.Emit Namespace
+
+We can Create a dynamic library using `System.Reflection.Emit`. The dynamic library could add IL (Intermediate Language) code dynamically at runtime and emitting it as a new assembly. Here's a simple example demonstrating how to create a dynamic library with a single class containing a method using `System.Reflection.Emit`:
+
+```csharp
+using System;
+using System.Reflection;
+using System.Reflection.Emit;
+
+class Program
+{
+    static void Main()
+    {
+        // Create a dynamic assembly
+        AssemblyName assemblyName = new AssemblyName("DynamicLibrary");
+        AssemblyBuilder assemblyBuilder = AssemblyBuilder.DefineDynamicAssembly(assemblyName, AssemblyBuilderAccess.RunAndSave);
+
+        // Define a dynamic module
+        ModuleBuilder moduleBuilder = assemblyBuilder.DefineDynamicModule("DynamicModule", "DynamicLibrary.dll");
+
+        // Define a dynamic type
+        TypeBuilder typeBuilder = moduleBuilder.DefineType("DynamicClass", TypeAttributes.Public);
+
+        // Define a dynamic method
+        MethodBuilder methodBuilder = typeBuilder.DefineMethod("DynamicMethod", MethodAttributes.Public | MethodAttributes.Static, typeof(void), null);
+        ILGenerator ilGenerator = methodBuilder.GetILGenerator();
+
+        // Emit IL instructions
+        ilGenerator.Emit(OpCodes.Ldstr, "Hello, dynamic world!"); // Load string onto the stack
+        ilGenerator.Emit(OpCodes.Call, typeof(Console).GetMethod("WriteLine", new[] { typeof(string) })); // Call Console.WriteLine method
+        ilGenerator.Emit(OpCodes.Ret); // Return from method
+
+        // Create the type
+        Type dynamicType = typeBuilder.CreateType();
+
+        // Save the assembly
+        assemblyBuilder.Save("DynamicLibrary.dll");
+
+        // Instantiate the dynamic type and invoke the method
+        dynamic instance = Activator.CreateInstance(dynamicType);
+        instance.DynamicMethod();
+    }
+}
+```
+
+This example dynamically creates a library named "DynamicLibrary.dll" containing a single class named "DynamicClass" with a method named "DynamicMethod". Inside the method, it emits IL instructions to load a string onto the stack, call `Console.WriteLine`, and return. Finally, it saves the dynamic assembly to a file and then loads and invokes the method dynamically.
+
+Please note that working with `System.Reflection.Emit` can be quite complex, and this example provides just a basic illustration. It's essential to thoroughly understand IL and the workings of the Reflection.Emit namespace before using it extensively in production code.
