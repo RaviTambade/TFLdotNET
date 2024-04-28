@@ -1,4 +1,4 @@
-# Multitasking  and Mulithreading
+# Multitasking, Mulithreading and MultiProcessing
 
 Building responsive and efficient applications in our rapidly-evolving digital world is more crucial now than ever. As software developers, we constantly look for ways to boost performance and improve the user experience. One such method is employing multithreading.
 
@@ -162,3 +162,34 @@ C# allows you to set the priority of a thread, which determines the proportion o
 
 ## Deadlocks
 A deadlock is a situation where two or more threads cannot progress because each is waiting for the other to release a resource. To avoid deadlocks, try to avoid scenarios where a thread holds a lock and simultaneously waits for another thread to release its lock.
+
+
+##  Multiprocessing
+
+Multiprocessing and multithreading are both techniques used to achieve concurrency in software development, but they operate at different levels and have distinct characteristics:
+
+1. **Multiprocessing**:
+
+   - **Definition**: Multiprocessing involves the simultaneous execution of multiple processes on a multicore CPU or multiple CPUs. Each process has its own memory space, and communication between processes typically involves inter-process communication (IPC) mechanisms.
+   
+   - **Isolation**: Processes are isolated from each other, meaning they do not share memory by default. This isolation provides stronger protection against errors in one process affecting others.
+   
+   - **Scalability**: Multiprocessing can scale well across multiple CPU cores, as each process can potentially run on a separate core.
+   
+   - **Overhead**: Creating and managing processes typically incurs higher overhead compared to threads due to the need for separate memory spaces and context switching.
+   
+   - **Usage**: Multiprocessing is commonly used in scenarios where isolation between tasks is crucial, such as running multiple independent computations, parallelizing I/O-bound tasks, or implementing fault-tolerant systems.
+
+2. **Multithreading**:
+
+   - **Definition**: Multithreading involves the simultaneous execution of multiple threads within the same process. Threads share the same memory space, allowing them to communicate and synchronize directly.
+   
+   - **Shared Memory**: Threads within the same process share memory, which simplifies communication and data sharing but also requires synchronization mechanisms to avoid race conditions.
+   
+   - **Resource Efficiency**: Multithreading is typically more resource-efficient than multiprocessing, as threads within the same process share resources such as memory and file descriptors.
+   
+   - **Context Switching**: Context switching between threads within the same process is generally faster than switching between processes.
+   
+   - **Usage**: Multithreading is commonly used in scenarios where tasks need to share data and resources within the same process, such as GUI applications, web servers, and other concurrent systems.
+
+In summary, multiprocessing and multithreading are both approaches to concurrency, each with its own advantages and use cases. Multiprocessing provides isolation and scalability but incurs higher overhead, while multithreading offers resource efficiency and direct data sharing but requires careful synchronization to avoid concurrency issues. The choice between them depends on the specific requirements and constraints of the application.
