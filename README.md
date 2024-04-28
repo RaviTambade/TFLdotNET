@@ -24,9 +24,9 @@ Create beautiful apps and scalable cloud services, faster and easier with the fr
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/databasecrud.md">Data Access using C#</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/repository.md">Repository Pattern</a>
 # ASP.NET  Core
-- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnetintro.md">ASP.NET Core Overview </a>
-- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnetapp.md">Creating ASP.NET Core App  and Folder structure</a>
-- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/Program.md">Program.cs file</a>
+- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/aspnetintro.md">ASP.NET Core Overview </a>
+- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/aspnetapp.md">Creating ASP.NET Core App  and Folder structure</a>
+- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/Program.md">Program.cs file</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/mvc.md">Model View Controller(MVC) Architecture</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/Controllers.md">Controllers</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/AspnetCoreLifeCycle.md">Service Lifetime (DI)</a>
