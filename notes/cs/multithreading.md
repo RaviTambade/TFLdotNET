@@ -64,6 +64,32 @@ Relationship:
 - You can think of Tasks as a more user-friendly interface for asynchronous programming, while the ThreadPool provides the underlying infrastructure for executing asynchronous tasks efficiently.
 
 
+## ThreadPool
+The ThreadPool class in C# is designed to make thread management more manageable by providing a pool of worker threads ready to be used. When a task is delegated to the ThreadPool, it will be executed by one of the free threads, eliminating the overhead of creating and destroying threads.
+
+```
+ThreadPool.QueueUserWorkItem((state) =>
+{
+    // Task to be executed by a thread from the pool
+});
+```
+
+## Task for High-Level Multithreading
+C# provides the Task class, a higher-level way to work with multithreading. A task represents an asynchronous operation and is often easier and safer than directly managing threads. Tasks can also return a result and handle exceptions more smoothly.
+
+```
+Task<int> task = Task.Run(() =>
+{
+    // Complex calculation here
+    return result;
+});
+int result = await task; // Retrieve the result of the Task
+```
+
+By adhering to these best practices, you can maximize the benefits of multithreading in your C# applications while mitigating potential problems.
+
+
+
 ## Using Task (TPL)
 
 However, managing threads manually could be error-prone and lead to complex code, particularly when synchronization is required. Thankfully, C# provides the Task Parallel Library (TPL) and the async and await patterns, simplifying multithreading. By using these high-level abstractions, you let the .NET runtime handle the intricacies of thread management:
@@ -113,28 +139,3 @@ C# allows you to set the priority of a thread, which determines the proportion o
 
 ## Deadlocks
 A deadlock is a situation where two or more threads cannot progress because each is waiting for the other to release a resource. To avoid deadlocks, try to avoid scenarios where a thread holds a lock and simultaneously waits for another thread to release its lock.
-
-## ThreadPool
-The ThreadPool class in C# is designed to make thread management more manageable by providing a pool of worker threads ready to be used. When a task is delegated to the ThreadPool, it will be executed by one of the free threads, eliminating the overhead of creating and destroying threads.
-
-```
-ThreadPool.QueueUserWorkItem((state) =>
-{
-    // Task to be executed by a thread from the pool
-});
-```
-
-## Task for High-Level Multithreading
-C# provides the Task class, a higher-level way to work with multithreading. A task represents an asynchronous operation and is often easier and safer than directly managing threads. Tasks can also return a result and handle exceptions more smoothly.
-
-```
-Task<int> task = Task.Run(() =>
-{
-    // Complex calculation here
-    return result;
-});
-int result = await task; // Retrieve the result of the Task
-```
-
-By adhering to these best practices, you can maximize the benefits of multithreading in your C# applications while mitigating potential problems.
-
