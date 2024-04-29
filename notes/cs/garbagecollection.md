@@ -47,75 +47,43 @@ Here's how finalization works in .NET Core:
 
 5. **Performance Considerations**: While finalization provides a mechanism for deterministic cleanup, it can impact performance due to the overhead of maintaining the finalization queue and executing finalizers. In some cases, finalization may lead to resource leaks if not implemented correctly, such as when objects hold onto limited resources for an extended period.
 
-6. **IDisposable Interface**: In many cases, it's preferable to implement resource cleanup using the `IDisposable` interface along with the `using` statement. This approach allows for deterministic resource release without relying on finalization. Objects that implement `IDisposable` can be explicitly disposed of by calling the `Dispose` method when they are no longer needed.
-
-   ```csharp
-   class MyClass : IDisposable
-   {
-       // Dispose method
-       public void Dispose()
-       {
-           // Cleanup logic
-       }
-   }
-   ```
-
 Overall, finalization in .NET Core provides a mechanism for performing cleanup operations on objects before they are garbage collected. However, it's essential to use finalization judiciously and consider alternative approaches, such as implementing `IDisposable`, to manage resource cleanup efficiently and minimize performance overhead.
 
 
-## Important Garbage Collector Methods
+## Deterministic Finalization vs. InDeterministic Finalization
 
-In .NET Core, the `GC` class provides several important methods and properties for interacting with the Garbage Collector (GC) and managing memory. These methods and properties allow developers to control aspects of garbage collection and gather information about memory usage. Here are some of the key methods and properties of the `GC` class:
 
-1. **`Collect()`**: Forces garbage collection for the specified generation or for all generations if no generation is specified. While calling `Collect()` is not typically necessary because the GC runs automatically, it can be used in scenarios where manual control over garbage collection is required.
+In .NET, finalization refers to the process of cleaning up unmanaged resources held by an object before it is destroyed by the garbage collector. There are two types of finalization approaches: deterministic and non-deterministic (or indeterministic).
 
-   ```csharp
-   GC.Collect();
-   ```
+1. **Deterministic Finalization**:
+   - In deterministic finalization, the developer has explicit control over when the finalization process occurs.
+   - This is typically achieved by implementing the `IDisposable` interface along with the `Dispose()` method.
+   - The `Dispose()` method is called explicitly by the developer when they no longer need the object or when it goes out of scope.
+   - Deterministic finalization is often used for managing unmanaged resources such as file handles, database connections, or network sockets, where it's important to release resources promptly to avoid leaks.
+   - Example: In C#, you might use the `using` statement to ensure `Dispose()` is called deterministically:
 
-2. **`GetTotalMemory()`**: Returns the total number of bytes currently allocated in the managed heap. This method can be used to monitor memory usage and identify potential memory leaks.
+    ```csharp
+    using (var resource = new Resource())
+    {
+        // Use resource
+    }
+    ```
 
-   ```csharp
-   long totalMemory = GC.GetTotalMemory(false); // false indicates that only the current generation's size should be returned
-   ```
+2. **Indeterministic Finalization**:
+   - In indeterministic finalization, the finalization process is handled automatically by the garbage collector, which runs at non-deterministic times.
+   - Objects that require finalization but do not implement `IDisposable` rely on the garbage collector's finalization queue to perform cleanup.
+   - Finalization occurs during the garbage collection process, which is non-deterministic and can lead to longer object lifetimes.
+   - This approach is less predictable and can result in delays in resource release.
+   - Example: If an object has a finalizer (destructor) but does not implement `IDisposable`, the finalization process is non-deterministic:
 
-3. **`GetGeneration()`**: Returns the current generation number of an object in the managed heap. Objects in .NET Core are divided into different generations (0, 1, and 2) based on their age and how many garbage collection cycles they have survived.
+    ```csharp
+    public class Resource
+    {
+        ~Resource()
+        {
+            // Cleanup code for unmanaged resources
+        }
+    }
+    ```
 
-   ```csharp
-   int generation = GC.GetGeneration(obj);
-   ```
-
-4. **`WaitForPendingFinalizers()`**: Blocks the calling thread until all finalizers have been run to completion. This method ensures that all objects with finalizers have had their `Finalize()` methods executed before continuing execution.
-
-   ```csharp
-   GC.WaitForPendingFinalizers();
-   ```
-
-5. **`SuppressFinalize()`**: Instructs the GC not to call the finalizer for the specified object. This method is typically used when an object's resources are explicitly cleaned up through other means, such as implementing the `IDisposable` interface and calling `Dispose()`.
-
-   ```csharp
-   GC.SuppressFinalize(obj);
-   ```
-
-6. **`MaxGeneration` Property**: Gets the highest generation number supported by the Garbage Collector. This property can be used to determine the maximum generation number that can be passed to other methods like `Collect()`.
-
-   ```csharp
-   int maxGeneration = GC.MaxGeneration;
-   ```
-
-These methods and properties of the `GC` class provide developers with control and insight into the garbage collection process in .NET Core applications. Proper understanding and usage of these methods can help optimize memory usage, improve performance, and diagnose memory-related issues.
-
-## Garbage Collection Generation Levels
-In .NET Core, as in other versions of the .NET framework, the Garbage Collector (GC) uses a generational garbage collection algorithm to manage memory efficiently. This algorithm divides objects into different generations based on their age and how long they have been in memory. The main purpose of generational garbage collection is to take advantage of the observation that most objects become unreachable shortly after they are allocated.
-
-The GC in .NET Core organizes objects into three generations:
-
-1. **Generation 0 (Gen 0)**: This generation contains short-lived objects that have been recently allocated. Most new objects start in Generation 0. The Garbage Collector prioritizes collecting Generation 0 frequently because it's assumed that many of the objects in this generation will become unreachable soon after allocation. Objects that survive a garbage collection cycle in Generation 0 are promoted to Generation 1.
-
-2. **Generation 1 (Gen 1)**: This generation contains objects that have survived at least one garbage collection cycle. Since objects in Generation 1 have lived longer than those in Generation 0, the GC assumes they are less likely to become unreachable soon. Garbage collection for Generation 1 occurs less frequently than for Generation 0. Objects that survive a garbage collection cycle in Generation 1 are promoted to Generation 2.
-
-3. **Generation 2 (Gen 2)**: This generation contains long-lived objects that have survived multiple garbage collection cycles. Objects in Generation 2 have lived the longest and are assumed to be more stable and less likely to become unreachable. Garbage collection for Generation 2 occurs less frequently than for Generation 1. Objects that survive a garbage collection cycle in Generation 2 remain in Generation 2.
-
-The generational approach to garbage collection is based on the observation that most objects are short-lived and become unreachable relatively quickly. By collecting Generation 0 frequently and promoting surviving objects to higher generations, the GC can focus its efforts on the objects that are more likely to consume memory over a longer period.
-
-The use of generational garbage collection in .NET Core contributes to improved performance and reduced overhead by minimizing the amount of memory that needs to be scanned and collected during each garbage collection cycle. It also allows the GC to prioritize resources effectively, ensuring that objects are collected and memory is reclaimed in a timely manner.
+In general, it's recommended to use deterministic finalization whenever possible, as it provides more control over resource management and ensures timely cleanup. However, in scenarios where deterministic finalization is not feasible or practical, indeterministic finalization can still be used to clean up resources when they are no longer needed, albeit with less control over when the cleanup occurs.
