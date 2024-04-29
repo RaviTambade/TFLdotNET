@@ -1,5 +1,5 @@
 
-# Garbage Collection (GC):Automatic Memory Management
+# Garbage Collection (GC)
 
 In .NET Core, as in other versions of the .NET framework, automatic memory management is facilitated by the Garbage Collector (GC). The GC is responsible for reclaiming memory that is no longer in use by the application, thus preventing memory leaks and allowing developers to focus more on application logic rather than memory management.
 
