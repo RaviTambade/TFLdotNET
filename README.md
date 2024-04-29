@@ -2,6 +2,7 @@
 ## Build any app with .NET
 <img src="https://devblogs.microsoft.com/dotnet/wp-content/uploads/sites/10/2022/11/dotnet-platform2.png"/>
 
+
 Create beautiful apps and scalable cloud services, faster and easier with the free, open-source platform that's loved by developers and trusted by organizations.
 
 # .NET
@@ -11,6 +12,7 @@ Create beautiful apps and scalable cloud services, faster and easier with the fr
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/CSharpLang.md">.NET Programming Language</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/oo.md">Objectd Oriented  Programming</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/Collections.md">Collection Framework</a>
+- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/comparingobjects.md">Object Comparision</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/LINQ.md">LINQ</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/garbagecollection.md">Garbage Collection(GC)</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/Reflection.md">Reflection</a>
