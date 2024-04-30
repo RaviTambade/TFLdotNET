@@ -19,7 +19,7 @@ Multitasking and multithreading are related concepts in computer science, both a
    - Multithreading enables concurrent execution of tasks within a single application, making it possible to perform multiple operations simultaneously.
    - Threads can run independently or cooperate to accomplish a common goal, depending on the design of the application.
 
-Relationship:
+### Multithreading and Multitasking Relationship:
 - Multithreading is a way to achieve multitasking at the application level. By creating multiple threads within a process, an application can perform multiple tasks concurrently, taking advantage of modern multicore processors.
 - Multitasking provided by the operating system allows multiple applications or processes to run concurrently, and each of these applications may utilize multithreading internally to achieve concurrent execution of tasks.
 - Multithreading is a lower-level concept, implemented within the application code, while multitasking is managed by the operating system at a higher level.
