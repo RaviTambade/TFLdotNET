@@ -2,7 +2,7 @@
 
 Building responsive and efficient applications in our rapidly-evolving digital world is more crucial now than ever. As software developers, we constantly look for ways to boost performance and improve the user experience. One such method is employing multithreading.
 
-## Multitasking and Multithreading Terms
+## Multitasking and Multithreading
 
 Multitasking and multithreading are related concepts in computer science, both aimed at improving the efficiency and responsiveness of software systems, but they operate at different levels of abstraction and serve different purposes.
 
