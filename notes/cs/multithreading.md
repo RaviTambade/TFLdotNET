@@ -27,7 +27,7 @@ Relationship:
 In summary, multitasking is a feature provided by the operating system to run multiple tasks concurrently, while multithreading is a programming technique to achieve concurrency within a single application or process. They work together to enable efficient and responsive computing environments.
 Threads make it possible to execute sevaral program pieces concurrently, enhancing the program's efficiency.
 
-## What is Threading in C# ?
+## Threads in C#
 
 Threads are the backbone of any software application. In simple terms, a thread is a single sequence of instructions that a process can execute. In C#, the System.Threading namespace offers classes that allow you to manipulate threads. When a C# program starts, it’s a single threaded process by default. This “main” thread is responsible for executing your code line by line, creating what is known as a single threaded application.
 
@@ -65,6 +65,20 @@ Thread thread2 = new Thread(new ThreadStart(Function2));
 thread1.Start();
 thread2.Start();
 ```
+## Tasks in C#
+.NET provides Threading.Tasks class to let you create tasks and run them asynchronously. A task is an object that represents some work that should be done. The task can tell you if the work is completed and if the operation returns a result, the task gives you the result.
+
+## Differences Between Task And Thread
+Here are some differences between a task and a thread.
+
+- The Thread class is used for creating and manipulating a thread in Windows. A Task represents some asynchronous operation and is part of the Task Parallel Library, a set of APIs for running tasks asynchronously and in parallel.
+- The task can return a result. There is no direct mechanism to return the result from a thread.
+Task supports cancellation through the use of cancellation tokens. But Thread doesn't.
+- A task can have multiple processes happening at the same time. Threads can only have one task running at a time.
+We can easily implement Asynchronous using ’async’ and ‘await’ keywords.
+- A new Thread()is not dealing with Thread pool thread, whereas Task does use thread pool thread.
+- A Task is a higher level concept than Thread.
+
 ## Thread Pool and Task 
 In .NET, the ThreadPool and Tasks are related but serve different purposes in managing and executing asynchronous operations.
 
