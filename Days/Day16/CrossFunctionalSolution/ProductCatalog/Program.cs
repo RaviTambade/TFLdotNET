@@ -8,6 +8,8 @@ using System.Security.Policy;
 var builder = WebApplication.CreateBuilder(args);
 
 
+//Configuring Cross Functional Features to Web Application
+
  builder.Host.ConfigureLogging(logging =>
 {
     logging.ClearProviders();
