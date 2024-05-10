@@ -1,4 +1,66 @@
-# Entity Framework Core in a .NET Core application step by step:
+# Entity Framework (ORM):
+Entity Framework (EF) is an object-relational mapping (ORM) framework for .NET applications, developed by Microsoft. 
+
+**Object-Relational Mapping (ORM)** refers to the technique of mapping between objects in your application and the tables in your relational database. In traditional programming, you have to write SQL queries to interact with the database, fetch data, and map it to objects manually. ORM frameworks like Entity Framework automate this process, allowing developers to work with objects directly, abstracting away the underlying SQL queries.
+
+Here's how EF ORM works:
+
+1. **Entity Classes**: You define your domain model as plain old CLR objects (POCOs) or Entity Framework Core's entity classes. These classes represent the structure of your database tables.
+
+   ```csharp
+   public class Product
+   {
+       public int Id { get; set; }
+       public string Name { get; set; }
+       public decimal Price { get; set; }
+   }
+   ```
+
+2. **DbContext**: You create a class that derives from `DbContext`, which represents your database session and acts as a bridge between your domain classes and the underlying database. It contains a set of properties representing database tables.
+
+   ```csharp
+   public class MyDbContext : DbContext
+   {
+       public DbSet<Product> Products { get; set; }
+   }
+   ```
+
+3. **Mapping**: Entity Framework maps your entity classes to the corresponding database tables based on naming conventions or explicit mappings.
+
+4. **CRUD Operations**: You can perform Create, Read, Update, and Delete operations on your entities using LINQ (Language Integrated Query) or fluent API provided by Entity Framework.
+
+   ```csharp
+   using (var context = new MyDbContext())
+   {
+       // Create
+       var product = new Product { Name = "Widget", Price = 9.99 };
+       context.Products.Add(product);
+       context.SaveChanges();
+       
+       // Read
+       var products = context.Products.ToList();
+       
+       // Update
+       var productToUpdate = context.Products.First(p => p.Id == 1);
+       productToUpdate.Price = 12.99;
+       context.SaveChanges();
+       
+       // Delete
+       var productToDelete = context.Products.First(p => p.Id == 1);
+       context.Products.Remove(productToDelete);
+       context.SaveChanges();
+   }
+   ```
+
+ORM frameworks like Entity Framework provide several benefits, including:
+- **Reduced Boilerplate Code**: ORM frameworks eliminate the need to write repetitive SQL queries, reducing development time and potential errors.
+- **Portability**: ORM frameworks abstract the underlying database, allowing developers to switch between different database systems without changing the application code.
+- **Object-Oriented Approach**: Developers can work with objects directly in their code, making it more natural and intuitive.
+- **Automatic Mapping**: ORM frameworks handle the mapping between objects and database tables, reducing manual effort and ensuring consistency.
+
+Entity Framework simplifies database interaction in .NET applications by providing a high-level abstraction over the underlying database, enabling developers to focus more on business logic rather than database plumbing.
+
+### Step by Step Entity Framework Core
 
 ### Step 1: Install Entity Framework Core
 
@@ -102,10 +164,9 @@
 
 By following these steps, you can successfully set up and use Entity Framework Core in your .NET Core application to interact with a database. Adjust the entity classes, database context, and migration steps based on your specific application requirements and database schema.
 
-
 ## Using async, await with Entity Frameowrk
 
-Combining asynchronous programming with Entity Framework for CRUD (Create, Read, Update, Delete) operations in C# can improve the scalability and responsiveness of your applications. Here's a basic example of how you can achieve this:
+Async programming with Entity Framework in C# allows you to perform database operations asynchronously, enhancing the responsiveness of your applications, especially in scenarios where there are many concurrent operations or long-running tasks.  Combining asynchronous programming with Entity Framework for CRUD (Create, Read, Update, Delete) operations in C# can improve the scalability and responsiveness of your applications. Here's a basic example of how you can achieve this:
 
 ```csharp
 using System;
