@@ -37,7 +37,7 @@ Create beautiful apps and scalable cloud services, faster and easier with the fr
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/AspnetCoreLifeCycle.md">App Life Cycle Management</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/Middleware.md"> Middleware (HTTP Pipeline)</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/Statemgmt.md"> State Management</a>
-- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/entityframeworkcore.md"> Entity Framework Core</a>
+- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/entityframework.md"> Entity Framework Core</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/Webapi.md"> WebAPI</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/crossfunctional.md"> Cross Functional Features</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/JWT.md">JWT Authentication</a>
