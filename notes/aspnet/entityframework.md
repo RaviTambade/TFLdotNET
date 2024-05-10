@@ -62,7 +62,7 @@ Entity Framework simplifies database interaction in .NET applications by providi
 
 ### Step by Step Entity Framework Core
 
-### Step 1: Install Entity Framework Core
+#### Step 1: Install Entity Framework Core
 
 1. Open the NuGet Package Manager Console.
 2. Run the following command to install Entity Framework Core:
@@ -70,7 +70,7 @@ Entity Framework simplifies database interaction in .NET applications by providi
    Install-Package Microsoft.EntityFrameworkCore.SqlServer
    ```
 
-### Step 2: Create Database Context
+#### Step 2: Create Database Context
 
 1. Create a class that inherits from `DbContext`. This class represents your database context.
    ```csharp
@@ -87,7 +87,7 @@ Entity Framework simplifies database interaction in .NET applications by providi
    }
    ```
 
-### Step 3: Configure Database Connection
+#### Step 3: Configure Database Connection
 
 1. In your `appsettings.json` file, add a connection string for your database:
    ```json
@@ -98,7 +98,7 @@ Entity Framework simplifies database interaction in .NET applications by providi
    }
    ```
 
-### Step 4: Register Database Context with Dependency Injection
+#### Step 4: Register Database Context with Dependency Injection
 
 1. In your `Startup.cs` file, register the database context with the dependency injection container:
    ```csharp
@@ -112,7 +112,7 @@ Entity Framework simplifies database interaction in .NET applications by providi
    }
    ```
 
-### Step 5: Create Entity Classes
+#### Step 5: Create Entity Classes
 
 1. Create classes to represent your database entities. Annotate these classes with attributes to define table and column mappings, relationships, etc.
    ```csharp
@@ -123,7 +123,7 @@ Entity Framework simplifies database interaction in .NET applications by providi
    }
    ```
 
-### Step 6: Create and Apply Migrations
+#### Step 6: Create and Apply Migrations
 
 1. In the Package Manager Console, navigate to your project directory.
 2. Run the following command to create a migration:
@@ -135,7 +135,7 @@ Entity Framework simplifies database interaction in .NET applications by providi
    Update-Database
    ```
 
-### Step 7: Use Entity Framework in Your Application
+#### Step 7: Use Entity Framework in Your Application
 
 1. Inject the `MyDbContext` into your services or controllers using constructor injection.
 2. Use the `MyDbContext` to query and manipulate data in your database.
@@ -158,13 +158,13 @@ Entity Framework simplifies database interaction in .NET applications by providi
    }
    ```
 
-### Step 8: Test Your Application
+#### Step 8: Test Your Application
 
 1. Test your application to ensure that Entity Framework Core is working correctly. Verify that data is being retrieved, inserted, updated, and deleted from the database as expected.
 
 By following these steps, you can successfully set up and use Entity Framework Core in your .NET Core application to interact with a database. Adjust the entity classes, database context, and migration steps based on your specific application requirements and database schema.
 
-## Using async, await with Entity Frameowrk
+### Using async, await with Entity Frameowrk
 
 Async programming with Entity Framework in C# allows you to perform database operations asynchronously, enhancing the responsiveness of your applications, especially in scenarios where there are many concurrent operations or long-running tasks.  Combining asynchronous programming with Entity Framework for CRUD (Create, Read, Update, Delete) operations in C# can improve the scalability and responsiveness of your applications. Here's a basic example of how you can achieve this:
 
