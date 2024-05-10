@@ -101,3 +101,81 @@
 1. Test your application to ensure that Entity Framework Core is working correctly. Verify that data is being retrieved, inserted, updated, and deleted from the database as expected.
 
 By following these steps, you can successfully set up and use Entity Framework Core in your .NET Core application to interact with a database. Adjust the entity classes, database context, and migration steps based on your specific application requirements and database schema.
+
+
+## Using async, await with Entity Frameowrk
+
+Combining asynchronous programming with Entity Framework for CRUD (Create, Read, Update, Delete) operations in C# can improve the scalability and responsiveness of your applications. Here's a basic example of how you can achieve this:
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+
+// Define your model
+public class MyEntity
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
+    // Add more properties as needed
+}
+
+// Define your DbContext
+public class MyDbContext : DbContext
+{
+    public DbSet<MyEntity> MyEntities { get; set; }
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        optionsBuilder.UseSqlServer("your_connection_string_here");
+    }
+}
+
+public class Program
+{
+    public static async Task Main(string[] args)
+    {
+        // Initialize your DbContext
+        using (var context = new MyDbContext())
+        {
+            // Create
+            var newEntity = new MyEntity { Name = "New Entity" };
+            context.MyEntities.Add(newEntity);
+            await context.SaveChangesAsync();
+
+            // Read
+            var entities = await context.MyEntities.ToListAsync();
+            foreach (var entity in entities)
+            {
+                Console.WriteLine($"ID: {entity.Id}, Name: {entity.Name}");
+            }
+
+            // Update
+            var entityToUpdate = await context.MyEntities.FirstOrDefaultAsync(e => e.Id == 1);
+            if (entityToUpdate != null)
+            {
+                entityToUpdate.Name = "Updated Entity";
+                await context.SaveChangesAsync();
+            }
+
+            // Delete
+            var entityToDelete = await context.MyEntities.FirstOrDefaultAsync(e => e.Id == 1);
+            if (entityToDelete != null)
+            {
+                context.MyEntities.Remove(entityToDelete);
+                await context.SaveChangesAsync();
+            }
+        }
+    }
+}
+```
+
+In this example:
+
+- `MyEntity` represents the entity model.
+- `MyDbContext` represents the database context, which is a subclass of `DbContext` provided by Entity Framework.
+- Inside the `Main` method, asynchronous methods like `ToListAsync()`, `SaveChangesAsync()` are used to perform CRUD operations asynchronously.
+- Ensure to replace `"your_connection_string_here"` with your actual database connection string.
+
+Async programming allows your application to perform I/O-bound operations without blocking the main thread, thus improving the responsiveness and scalability of your application, especially in scenarios where there are many concurrent operations.
