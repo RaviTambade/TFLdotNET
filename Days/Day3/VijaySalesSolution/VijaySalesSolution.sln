@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreApp", "StoreApp\StoreApp.csproj", "{E122A487-136C-4D7D-8796-BD39305EC65F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthLib", "AuthLib\AuthLib.csproj", "{B08EF23F-A2B3-4352-A141-D518C28F4805}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogAPI", "CatalogAPI\CatalogAPI.csproj", "{8AF1A437-CCDB-4CDF-8789-42B5DB915958}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E122A487-136C-4D7D-8796-BD39305EC65F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E122A487-136C-4D7D-8796-BD39305EC65F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E122A487-136C-4D7D-8796-BD39305EC65F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E122A487-136C-4D7D-8796-BD39305EC65F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B08EF23F-A2B3-4352-A141-D518C28F4805}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B08EF23F-A2B3-4352-A141-D518C28F4805}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B08EF23F-A2B3-4352-A141-D518C28F4805}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B08EF23F-A2B3-4352-A141-D518C28F4805}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AF1A437-CCDB-4CDF-8789-42B5DB915958}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AF1A437-CCDB-4CDF-8789-42B5DB915958}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AF1A437-CCDB-4CDF-8789-42B5DB915958}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AF1A437-CCDB-4CDF-8789-42B5DB915958}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9DC188FB-E1B9-4069-BDF6-FA333B99FD16}
+	EndGlobalSection
+EndGlobal
