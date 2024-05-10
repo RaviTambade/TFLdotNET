@@ -20,10 +20,16 @@ Create beautiful apps and scalable cloud services, faster and easier with the fr
 
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/events.md">Events</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/Attributes.md">Custom Attributes</a>
+
+- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/databasecrud.md">Data Access using C#</a>
+- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/entityframework.md"> Entity Framework Core</a>
+- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/dapper.md">Dapper</a>
+- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/repository.md">Repository Pattern</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/multithreading.md">Mutithreading</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/asyncawait.md">Asynchronous Programming using C#</a>
-- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/databasecrud.md">Data Access using C#</a>
-- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/repository.md">Repository Pattern</a>
+
+
+
 # ASP.NET  Core
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/aspnetintro.md">ASP.NET Core Overview </a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/aspnetapp.md">ASP.NET Core App  and Folder structure</a>
@@ -37,7 +43,6 @@ Create beautiful apps and scalable cloud services, faster and easier with the fr
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/AspnetCoreLifeCycle.md">App Life Cycle Management</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/Middleware.md"> Middleware (HTTP Pipeline)</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/Statemgmt.md"> State Management</a>
-- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/entityframeworkcore.md"> Entity Framework Core</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/Webapi.md"> WebAPI</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/crossfunctional.md"> Cross Functional Features</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/JWT.md">JWT Authentication</a>
