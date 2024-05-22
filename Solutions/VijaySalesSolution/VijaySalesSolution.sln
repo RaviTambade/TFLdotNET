@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthLib", "AuthLib\AuthLib.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CatalogAPI", "CatalogAPI\CatalogAPI.csproj", "{8AF1A437-CCDB-4CDF-8789-42B5DB915958}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoDBApp", "DemoDBApp\DemoDBApp.csproj", "{EB14167C-C222-4C88-964C-5BF2F2640996}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoDBApp", "DemoDBApp\DemoDBApp.csproj", "{EB14167C-C222-4C88-964C-5BF2F2640996}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRORMApp", "HRORMApp\HRORMApp.csproj", "{89CA3559-936E-4AA4-AAC1-C0417721CFB0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{EB14167C-C222-4C88-964C-5BF2F2640996}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB14167C-C222-4C88-964C-5BF2F2640996}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB14167C-C222-4C88-964C-5BF2F2640996}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89CA3559-936E-4AA4-AAC1-C0417721CFB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89CA3559-936E-4AA4-AAC1-C0417721CFB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89CA3559-936E-4AA4-AAC1-C0417721CFB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89CA3559-936E-4AA4-AAC1-C0417721CFB0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
