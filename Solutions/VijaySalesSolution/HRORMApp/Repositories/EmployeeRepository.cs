@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using HRORMApp.DbContexts;
 using HRORMApp.Entities;
-namespace HRORMApp
+namespace HRORMApp.Repositories
 {
     public class EmployeeRepository
     {
