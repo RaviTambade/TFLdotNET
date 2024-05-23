@@ -3,6 +3,50 @@
   "WorkspaceRootPath": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\hrormapp\\dbcontexts\\hrcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|solutionrelative:hrormapp\\dbcontexts\\hrcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\hrormapp\\dbcontexts\\librarycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|solutionrelative:hrormapp\\dbcontexts\\librarycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\hrormapp\\dbcontexts\\schoollibrarycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|solutionrelative:hrormapp\\dbcontexts\\schoollibrarycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\hrormapp\\repositories\\schoollibrary\\schoollibraryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|solutionrelative:hrormapp\\repositories\\schoollibrary\\schoollibraryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\hrormapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|solutionrelative:hrormapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\hrormapp\\entities\\schoollibrary\\bookauthor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|solutionrelative:hrormapp\\entities\\schoollibrary\\bookauthor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\hrormapp\\entities\\schoollibrary\\bookstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|solutionrelative:hrormapp\\entities\\schoollibrary\\bookstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\hrormapp\\entities\\schoollibrary\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|solutionrelative:hrormapp\\entities\\schoollibrary\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\hrormapp\\entities\\schoollibrary\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|solutionrelative:hrormapp\\entities\\schoollibrary\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\hrormapp\\entities\\schoollibrary\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|solutionrelative:hrormapp\\entities\\schoollibrary\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\hrormapp\\repositories\\library\\libraryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|solutionrelative:hrormapp\\repositories\\library\\libraryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\hrormapp\\entities\\library\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|solutionrelative:hrormapp\\entities\\library\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,16 +55,12 @@
       "RelativeMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|solutionrelative:hrormapp\\entities\\library\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\hrormapp\\repositories\\libraryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|solutionrelative:hrormapp\\repositories\\libraryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\hrormapp\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|solutionrelative:hrormapp\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\hrormapp\\dbcontexts\\librarycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|solutionrelative:hrormapp\\dbcontexts\\librarycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\hrormapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|solutionrelative:hrormapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\hrormapp\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|solutionrelative:hrormapp\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,46 +78,163 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SchoolLibraryRepository.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Repositories\\SchoolLibrary\\SchoolLibraryRepository.cs",
+              "RelativeDocumentMoniker": "HRORMApp\\Repositories\\SchoolLibrary\\SchoolLibraryRepository.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Repositories\\SchoolLibrary\\SchoolLibraryRepository.cs",
+              "RelativeToolTip": "HRORMApp\\Repositories\\SchoolLibrary\\SchoolLibraryRepository.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAgwH0AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T09:44:54.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SchoolLibraryContext.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\DbContexts\\SchoolLibraryContext.cs",
+              "RelativeDocumentMoniker": "HRORMApp\\DbContexts\\SchoolLibraryContext.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\DbContexts\\SchoolLibraryContext.cs",
+              "RelativeToolTip": "HRORMApp\\DbContexts\\SchoolLibraryContext.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAABEAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T09:21:41.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HRContext.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\DbContexts\\HRContext.cs",
+              "RelativeDocumentMoniker": "HRORMApp\\DbContexts\\HRContext.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\DbContexts\\HRContext.cs",
+              "RelativeToolTip": "HRORMApp\\DbContexts\\HRContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T09:00:12.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LibraryContext.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\DbContexts\\LibraryContext.cs",
+              "RelativeDocumentMoniker": "HRORMApp\\DbContexts\\LibraryContext.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\DbContexts\\LibraryContext.cs",
+              "RelativeToolTip": "HRORMApp\\DbContexts\\LibraryContext.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAmwCEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T09:08:12.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Program.cs",
               "RelativeDocumentMoniker": "HRORMApp\\Program.cs",
               "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Program.cs",
               "RelativeToolTip": "HRORMApp\\Program.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAAAEQAAAACAAAA",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAwFIAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T05:53:53.214Z",
+              "WhenOpened": "2024-05-23T09:11:16.986Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
+              "Title": "BookAuthor.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Entities\\SchoolLibrary\\BookAuthor.cs",
+              "RelativeDocumentMoniker": "HRORMApp\\Entities\\SchoolLibrary\\BookAuthor.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Entities\\SchoolLibrary\\BookAuthor.cs",
+              "RelativeToolTip": "HRORMApp\\Entities\\SchoolLibrary\\BookAuthor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T09:25:22.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BookStudent.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Entities\\SchoolLibrary\\BookStudent.cs",
+              "RelativeDocumentMoniker": "HRORMApp\\Entities\\SchoolLibrary\\BookStudent.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Entities\\SchoolLibrary\\BookStudent.cs",
+              "RelativeToolTip": "HRORMApp\\Entities\\SchoolLibrary\\BookStudent.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T09:36:55.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Book.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Entities\\SchoolLibrary\\Book.cs",
+              "RelativeDocumentMoniker": "HRORMApp\\Entities\\SchoolLibrary\\Book.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Entities\\SchoolLibrary\\Book.cs",
+              "RelativeToolTip": "HRORMApp\\Entities\\SchoolLibrary\\Book.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T09:25:16.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Author.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Entities\\SchoolLibrary\\Author.cs",
+              "RelativeDocumentMoniker": "HRORMApp\\Entities\\SchoolLibrary\\Author.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Entities\\SchoolLibrary\\Author.cs",
+              "RelativeToolTip": "HRORMApp\\Entities\\SchoolLibrary\\Author.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T09:24:58.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Student.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Entities\\SchoolLibrary\\Student.cs",
+              "RelativeDocumentMoniker": "HRORMApp\\Entities\\SchoolLibrary\\Student.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Entities\\SchoolLibrary\\Student.cs",
+              "RelativeToolTip": "HRORMApp\\Entities\\SchoolLibrary\\Student.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T09:23:09.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "LibraryRepository.cs",
-              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Repositories\\LibraryRepository.cs",
-              "RelativeDocumentMoniker": "HRORMApp\\Repositories\\LibraryRepository.cs",
-              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Repositories\\LibraryRepository.cs",
-              "RelativeToolTip": "HRORMApp\\Repositories\\LibraryRepository.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAoAAAABAAAA",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Repositories\\Library\\LibraryRepository.cs",
+              "RelativeDocumentMoniker": "HRORMApp\\Repositories\\Library\\LibraryRepository.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Repositories\\Library\\LibraryRepository.cs",
+              "RelativeToolTip": "HRORMApp\\Repositories\\Library\\LibraryRepository.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwCAAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T05:46:54.448Z",
+              "WhenOpened": "2024-05-23T09:09:17.522Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 11,
               "Title": "Book.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Entities\\Library\\Book.cs",
               "RelativeDocumentMoniker": "HRORMApp\\Entities\\Library\\Book.cs",
               "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Entities\\Library\\Book.cs",
               "RelativeToolTip": "HRORMApp\\Entities\\Library\\Book.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAAqAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T05:43:56.194Z",
+              "WhenOpened": "2024-05-23T09:05:56.187Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 12,
               "Title": "Author.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Entities\\Library\\Author.cs",
               "RelativeDocumentMoniker": "HRORMApp\\Entities\\Library\\Author.cs",
@@ -85,20 +242,33 @@
               "RelativeToolTip": "HRORMApp\\Entities\\Library\\Author.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T05:42:56.738Z",
+              "WhenOpened": "2024-05-23T09:05:54.984Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LibraryContext.cs",
-              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\DbContexts\\LibraryContext.cs",
-              "RelativeDocumentMoniker": "HRORMApp\\DbContexts\\LibraryContext.cs",
-              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\DbContexts\\LibraryContext.cs",
-              "RelativeToolTip": "HRORMApp\\DbContexts\\LibraryContext.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB8AAAAyAAAA",
+              "DocumentIndex": 13,
+              "Title": "EmployeeRepository.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Repositories\\EmployeeRepository.cs",
+              "RelativeDocumentMoniker": "HRORMApp\\Repositories\\EmployeeRepository.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Repositories\\EmployeeRepository.cs",
+              "RelativeToolTip": "HRORMApp\\Repositories\\EmployeeRepository.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAA9wCcAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T05:39:51.126Z",
+              "WhenOpened": "2024-05-23T09:01:22.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Entities\\Employee.cs",
+              "RelativeDocumentMoniker": "HRORMApp\\Entities\\Employee.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Entities\\Employee.cs",
+              "RelativeToolTip": "HRORMApp\\Entities\\Employee.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T09:00:39.95Z",
               "EditorCaption": ""
             }
           ]

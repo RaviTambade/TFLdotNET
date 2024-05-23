@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
-namespace HRORMApp.Repositories
+namespace HRORMApp.Repositories.Library
 {
     public class LibraryRepository
     {
@@ -21,12 +21,12 @@ namespace HRORMApp.Repositories
         {
             using (var context = new LibraryContext())
             {
-                var author = new Author { Name = "P.L. Deshpande" };
+                var author = new Author { Name = "Deepak Shikarpurkar" };
                 author.Books = new List<Book>
                 {
-                    new Book { Title = "Batatychi Chal" },
-                    new Book { Title = "Purvrang" },
-                    new Book { Title = "Gulacha Ganpati" }
+                    new Book { Title = "AT at workplace" },
+                    new Book { Title = "UnEmployement reasons" },
+                    new Book { Title = "Robotis at Tata Motors" }
                 };
                 context.Authors.Add(author);
                 context.SaveChanges();

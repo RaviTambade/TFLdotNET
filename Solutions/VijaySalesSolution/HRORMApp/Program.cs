@@ -2,6 +2,9 @@
 using HRORMApp.DbContexts;
 using System.Net.Mime;
 using HRORMApp.Repositories;
+using HRORMApp.Repositories.Library;
+using HRORMApp.DbContexts.SchoolLibrary;
+using HRORMApp.Repositories.SchoolLibrary;
 
 /*using ( var context=new HRContext())
 {
@@ -27,7 +30,6 @@ using HRORMApp.Repositories;
 
 
 /*
-
 //update existing employee
 var empToUpdate = context.Employees.FirstOrDefault(emp => emp.Id == 901);
 if(empToUpdate != null)
@@ -49,7 +51,6 @@ if(empToUpdate != null)
 */
 
 //Show all Employees
-
 /*
     EmployeeRepository repo=new EmployeeRepository(context);
     var employees =repo.GetAll();   
@@ -58,13 +59,25 @@ if(empToUpdate != null)
         Console.WriteLine(employee.FirstName + "  " + employee.LastName + "  " + employee.Contact);
     }
 }
-
 */
 
+
+/*
 
 using (var context = new LibraryContext())
 {
     LibraryRepository repo=new LibraryRepository(context);
     repo.Initialize();  
     repo.ShowAll();
+}
+
+*/
+
+using (var context=new SchoolLibraryContext())
+{
+    SchoolLibraryRepository repo = new SchoolLibraryRepository(context);
+    //repo.Insert();
+    repo.ShowBookStudents();
+    Console.WriteLine("***************************************************************************************");
+    repo.ShowBookAuthors();
 }
