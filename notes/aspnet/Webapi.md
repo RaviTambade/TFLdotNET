@@ -38,7 +38,99 @@ REST constraints are design rules that are applied to establish the distinct cha
 - ASP.NET Web API supports different formats of response data. Built-in support for JSON, XML, BSON format.
 -- ASP.NET Web API framework includes new HttpClient to communicate with Web API server. HttpClient can be used in ASP.MVC server side, Windows Form application, Console application or other apps.
 
-## Example  API Controller
+
+## Minimal ASP.NET Web API
+ASP.NET Web API and Minimal API are both frameworks within the ASP.NET ecosystem, and they can be used to create RESTful services. Let's outline how you can create a CRUD API for managing products using ASP.NET Web API and Minimal API.
+
+### Using ASP.NET Web API
+
+1. **Create a new ASP.NET Web API project**:
+   
+   You can create a new ASP.NET Web API project in Visual Studio or using the .NET CLI:
+
+   ```bash
+   dotnet new webapi -n ProductApi
+   ```
+
+2. **Define the Product Model**:
+   
+   Create a `Product` class to represent the product entity:
+
+   ```csharp
+   public class Product
+   {
+       public int Id { get; set; }
+       public string Name { get; set; }
+       public decimal Price { get; set; }
+   }
+   ```
+
+
+### Using Minimal API
+
+Minimal API is a simpler and more lightweight way to create APIs compared to traditional ASP.NET Web API. Here's how you can create a Minimal API for managing products:
+
+1. **Create a new .NET project**:
+
+   You can create a new Minimal API project using the .NET CLI:
+
+   ```bash
+   dotnet new web -n ProductApi
+   ```
+
+2. **Define the Product Model**:
+
+   Define the `Product` class as described in the previous section.
+
+3. **Implement CRUD Operations**:
+
+   Implement the GET, POST, PUT, and DELETE operations directly within the `Program.cs` file or by organizing the code into separate files.
+
+   ```csharp
+   var builder = WebApplication.CreateBuilder(args);
+
+   // Add services
+   builder.Services.AddSingleton<List<Product>>();
+
+   // Create app
+   var app = builder.Build();
+
+   // Define routes and handlers for CRUD operations
+   app.MapGet("/api/products", (List<Product> products) => products);
+   app.MapGet("/api/products/{id}", (int id, List<Product> products) => products.FirstOrDefault(p => p.Id == id));
+   app.MapPost("/api/products", (Product product, List<Product> products) =>
+   {
+       product.Id = products.Count + 1;
+       products.Add(product);
+       return Results.Created($"/api/products/{product.Id}", product);
+   });
+   app.MapPut("/api/products/{id}", (int id, Product product, List<Product> products) =>
+   {
+       var existingProduct = products.FirstOrDefault(p => p.Id == id);
+       if (existingProduct == null) return Results.NotFound();
+       product.Id = id;
+       products[products.IndexOf(existingProduct)] = product;
+       return Results.NoContent();
+   });
+   app.MapDelete("/api/products/{id}", (int id, List<Product> products) =>
+   {
+       var product = products.FirstOrDefault(p => p.Id == id);
+       if (product == null) return Results.NotFound();
+       products.Remove(product);
+       return Results.NoContent();
+   });
+
+   app.Run();
+   ```
+
+4. **Run the Application**:
+
+   You can run the Minimal API application using the `dotnet run` command.
+
+Both approaches provide different levels of abstraction and complexity. Choose the one that fits your project requirements and development preferences best.
+
+
+## Example WEB using  API Controller
 
 ```
 using Microsoft.AspNetCore.Mvc;
@@ -149,5 +241,3 @@ public class ProductsController : ControllerBase
 
 ## Testing Web API using Postman Tool 
 The Postman is the most popular and most powerful HTTP client for testing restful web services. Postman makes it easy to test the Restful Web APIs, as well as develops and documents Restful APIs by allowing the users to quickly put together both simple and complex HTTP requests. The Postman is available as both a Google Chrome in-browser app and Google Chrome Packaged App.
-
-
