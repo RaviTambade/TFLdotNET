@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\",
   "Documents": [
     {
@@ -63,6 +64,10 @@
       "RelativeMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|solutionrelative:hrormapp\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
+=======
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\TFL\\.NET\\Solutions\\VijaySalesSolution\\",
+  "Documents": [],
+>>>>>>> 2f5c31d7a4052835774133c64ec814862d2b4b4d
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -70,11 +75,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 1,
+=======
+          "SelectedChildIndex": -1,
+>>>>>>> 2f5c31d7a4052835774133c64ec814862d2b4b4d
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+<<<<<<< HEAD
             },
             {
               "$type": "Document",
@@ -267,6 +277,8 @@
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-23T09:00:39.95Z"
+=======
+>>>>>>> 2f5c31d7a4052835774133c64ec814862d2b4b4d
             }
           ]
         }
