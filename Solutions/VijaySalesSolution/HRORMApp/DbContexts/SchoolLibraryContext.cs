@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 
 namespace HRORMApp.DbContexts.SchoolLibrary
 {
-
     /*
      *  Many to many relationship authors, books and students
      
@@ -36,6 +35,7 @@ namespace HRORMApp.DbContexts.SchoolLibrary
                             FOREIGN KEY (AuthorId) REFERENCES Authors(AuthorId)
         );
 
+
        CREATE TABLE Bookstudent (
                             BookStudentId INT PRIMARY KEY IDENTITY,
                             BookId INT NOT NULL,
@@ -43,7 +43,6 @@ namespace HRORMApp.DbContexts.SchoolLibrary
                             FOREIGN KEY (StudentId) REFERENCES Students(StudentId)
                             FOREIGN KEY (BookId) REFERENCES Books(BookId)
         );
-
      */
 
     public class SchoolLibraryContext : DbContext
@@ -61,6 +60,10 @@ namespace HRORMApp.DbContexts.SchoolLibrary
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
+            //Composite Key 
+            //Composite Entity
+
             modelBuilder.Entity<BookAuthor>()
                 .HasKey(ba => new { ba.BookId, ba.AuthorId });
 

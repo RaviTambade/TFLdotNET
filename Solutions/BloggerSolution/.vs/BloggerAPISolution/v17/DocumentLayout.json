@@ -1,0 +1,211 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Ravi\\TAP\\TAP\\BloggerSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{14F25182-A848-4535-9F30-8F985A7E9CA2}|BloggersControllerWebAPI\\BloggersControllerWebAPI.csproj|d:\\ravi\\tap\\tap\\bloggersolution\\bloggerscontrollerwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14F25182-A848-4535-9F30-8F985A7E9CA2}|BloggersControllerWebAPI\\BloggersControllerWebAPI.csproj|solutionrelative:bloggerscontrollerwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14F25182-A848-4535-9F30-8F985A7E9CA2}|BloggersControllerWebAPI\\BloggersControllerWebAPI.csproj|d:\\ravi\\tap\\tap\\bloggersolution\\bloggerscontrollerwebapi\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14F25182-A848-4535-9F30-8F985A7E9CA2}|BloggersControllerWebAPI\\BloggersControllerWebAPI.csproj|solutionrelative:bloggerscontrollerwebapi\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14F25182-A848-4535-9F30-8F985A7E9CA2}|BloggersControllerWebAPI\\BloggersControllerWebAPI.csproj|d:\\ravi\\tap\\tap\\bloggersolution\\bloggerscontrollerwebapi\\entities\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14F25182-A848-4535-9F30-8F985A7E9CA2}|BloggersControllerWebAPI\\BloggersControllerWebAPI.csproj|solutionrelative:bloggerscontrollerwebapi\\entities\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14F25182-A848-4535-9F30-8F985A7E9CA2}|BloggersControllerWebAPI\\BloggersControllerWebAPI.csproj|d:\\ravi\\tap\\tap\\bloggersolution\\bloggerscontrollerwebapi\\entities\\blog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14F25182-A848-4535-9F30-8F985A7E9CA2}|BloggersControllerWebAPI\\BloggersControllerWebAPI.csproj|solutionrelative:bloggerscontrollerwebapi\\entities\\blog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14F25182-A848-4535-9F30-8F985A7E9CA2}|BloggersControllerWebAPI\\BloggersControllerWebAPI.csproj|d:\\ravi\\tap\\tap\\bloggersolution\\bloggerscontrollerwebapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14F25182-A848-4535-9F30-8F985A7E9CA2}|BloggersControllerWebAPI\\BloggersControllerWebAPI.csproj|solutionrelative:bloggerscontrollerwebapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14F25182-A848-4535-9F30-8F985A7E9CA2}|BloggersControllerWebAPI\\BloggersControllerWebAPI.csproj|d:\\ravi\\tap\\tap\\bloggersolution\\bloggerscontrollerwebapi\\controllers\\blogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14F25182-A848-4535-9F30-8F985A7E9CA2}|BloggersControllerWebAPI\\BloggersControllerWebAPI.csproj|solutionrelative:bloggerscontrollerwebapi\\controllers\\blogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87EF8634-4C04-4785-8363-865A2B5A1796}|ProductCatalogMinimalAPI\\ProductCatalogMinimalAPI.csproj|d:\\ravi\\tap\\tap\\bloggersolution\\productcatalogminimalapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87EF8634-4C04-4785-8363-865A2B5A1796}|ProductCatalogMinimalAPI\\ProductCatalogMinimalAPI.csproj|solutionrelative:productcatalogminimalapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87EF8634-4C04-4785-8363-865A2B5A1796}|ProductCatalogMinimalAPI\\ProductCatalogMinimalAPI.csproj|d:\\ravi\\tap\\tap\\bloggersolution\\productcatalogminimalapi\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87EF8634-4C04-4785-8363-865A2B5A1796}|ProductCatalogMinimalAPI\\ProductCatalogMinimalAPI.csproj|solutionrelative:productcatalogminimalapi\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4526AE89-4BBA-48DC-B4C7-5BFF78B52B96}|CRMMinimalWebAPI\\CRMMinimalWebAPI.csproj|d:\\ravi\\tap\\tap\\bloggersolution\\crmminimalwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4526AE89-4BBA-48DC-B4C7-5BFF78B52B96}|CRMMinimalWebAPI\\CRMMinimalWebAPI.csproj|solutionrelative:crmminimalwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4526AE89-4BBA-48DC-B4C7-5BFF78B52B96}|CRMMinimalWebAPI\\CRMMinimalWebAPI.csproj|d:\\ravi\\tap\\tap\\bloggersolution\\crmminimalwebapi\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4526AE89-4BBA-48DC-B4C7-5BFF78B52B96}|CRMMinimalWebAPI\\CRMMinimalWebAPI.csproj|solutionrelative:crmminimalwebapi\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14F25182-A848-4535-9F30-8F985A7E9CA2}|BloggersControllerWebAPI\\BloggersControllerWebAPI.csproj|d:\\ravi\\tap\\tap\\bloggersolution\\bloggerscontrollerwebapi\\bloggerscontrollerwebapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{14F25182-A848-4535-9F30-8F985A7E9CA2}|BloggersControllerWebAPI\\BloggersControllerWebAPI.csproj|solutionrelative:bloggerscontrollerwebapi\\bloggerscontrollerwebapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\BloggerSolution\\BloggersControllerWebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "BloggersControllerWebAPI\\Program.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\BloggerSolution\\BloggersControllerWebAPI\\Program.cs",
+              "RelativeToolTip": "BloggersControllerWebAPI\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T13:07:45.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\BloggerSolution\\BloggersControllerWebAPI\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "BloggersControllerWebAPI\\Entities\\Product.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\BloggerSolution\\BloggersControllerWebAPI\\Entities\\Product.cs",
+              "RelativeToolTip": "BloggersControllerWebAPI\\Entities\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T13:07:30.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Post.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\BloggerSolution\\BloggersControllerWebAPI\\Entities\\Post.cs",
+              "RelativeDocumentMoniker": "BloggersControllerWebAPI\\Entities\\Post.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\BloggerSolution\\BloggersControllerWebAPI\\Entities\\Post.cs",
+              "RelativeToolTip": "BloggersControllerWebAPI\\Entities\\Post.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T13:07:23.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Blog.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\BloggerSolution\\BloggersControllerWebAPI\\Entities\\Blog.cs",
+              "RelativeDocumentMoniker": "BloggersControllerWebAPI\\Entities\\Blog.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\BloggerSolution\\BloggersControllerWebAPI\\Entities\\Blog.cs",
+              "RelativeToolTip": "BloggersControllerWebAPI\\Entities\\Blog.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T13:07:15.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BlogsController.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\BloggerSolution\\BloggersControllerWebAPI\\Controllers\\BlogsController.cs",
+              "RelativeDocumentMoniker": "BloggersControllerWebAPI\\Controllers\\BlogsController.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\BloggerSolution\\BloggersControllerWebAPI\\Controllers\\BlogsController.cs",
+              "RelativeToolTip": "BloggersControllerWebAPI\\Controllers\\BlogsController.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T13:07:03.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\BloggerSolution\\BloggersControllerWebAPI\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "BloggersControllerWebAPI\\Controllers\\ProductsController.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\BloggerSolution\\BloggersControllerWebAPI\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "BloggersControllerWebAPI\\Controllers\\ProductsController.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T13:04:21.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\BloggerSolution\\ProductCatalogMinimalAPI\\Program.cs",
+              "RelativeDocumentMoniker": "ProductCatalogMinimalAPI\\Program.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\BloggerSolution\\ProductCatalogMinimalAPI\\Program.cs",
+              "RelativeToolTip": "ProductCatalogMinimalAPI\\Program.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACgAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T13:03:39.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\BloggerSolution\\ProductCatalogMinimalAPI\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "ProductCatalogMinimalAPI\\Entities\\Product.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\BloggerSolution\\ProductCatalogMinimalAPI\\Entities\\Product.cs",
+              "RelativeToolTip": "ProductCatalogMinimalAPI\\Entities\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T13:03:37.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BloggersControllerWebAPI",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\BloggerSolution\\BloggersControllerWebAPI\\BloggersControllerWebAPI.csproj",
+              "RelativeDocumentMoniker": "BloggersControllerWebAPI\\BloggersControllerWebAPI.csproj",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\BloggerSolution\\BloggersControllerWebAPI\\BloggersControllerWebAPI.csproj",
+              "RelativeToolTip": "BloggersControllerWebAPI\\BloggersControllerWebAPI.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-24T13:02:45.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\BloggerSolution\\CRMMinimalWebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "CRMMinimalWebAPI\\Program.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\BloggerSolution\\CRMMinimalWebAPI\\Program.cs",
+              "RelativeToolTip": "CRMMinimalWebAPI\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T13:01:31.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\BloggerSolution\\CRMMinimalWebAPI\\Entities\\Customer.cs",
+              "RelativeDocumentMoniker": "CRMMinimalWebAPI\\Entities\\Customer.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\BloggerSolution\\CRMMinimalWebAPI\\Entities\\Customer.cs",
+              "RelativeToolTip": "CRMMinimalWebAPI\\Entities\\Customer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T13:01:17.347Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

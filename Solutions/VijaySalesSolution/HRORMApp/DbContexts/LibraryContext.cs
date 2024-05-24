@@ -10,6 +10,7 @@ namespace HRORMApp.DbContexts
 {
 
     /*
+     * Relationship: one-to-may 
      
         CREATE TABLE Authors (
                             AuthorId INT PRIMARY KEY IDENTITY,

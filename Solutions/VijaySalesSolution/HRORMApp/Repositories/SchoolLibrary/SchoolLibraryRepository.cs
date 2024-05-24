@@ -1,5 +1,4 @@
 ﻿using HRORMApp.DbContexts;
- 
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -42,7 +41,6 @@ namespace HRORMApp.Repositories.SchoolLibrary
                 var book3 = new Book { Title = "Modern India Vision 2050" };
 
                 // Associate Authors with Books
-
                 book1.BookAuthors = new List<BookAuthor>
                 {
                     new BookAuthor { Author = author1 },
@@ -62,8 +60,6 @@ namespace HRORMApp.Repositories.SchoolLibrary
                     new BookAuthor { Author = author8 }
                 };
 
-
-                //associate Student with Books
                 // Create Students
                 var student1 = new Student { Name = "Sanjeev" };
                 var student2 = new Student { Name = "Rajeev" };
@@ -80,13 +76,11 @@ namespace HRORMApp.Repositories.SchoolLibrary
                 {
                     new BookStudent { Student = student1 }
                 };
-
                 book2.BookStudents = new List<BookStudent>
                 {
                     new BookStudent { Student = student1 },
                     new BookStudent { Student = student2 }
                 };
-
                 book3.BookStudents = new List<BookStudent>
                 {
                     new BookStudent { Student = student1 },
