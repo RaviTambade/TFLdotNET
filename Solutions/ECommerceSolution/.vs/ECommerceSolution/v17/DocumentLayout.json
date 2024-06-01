@@ -1,0 +1,194 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\ECommerceSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EBF40345-E827-4C85-916E-7BA864967845}|ECommerceSolution\\ECommerceSolution.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\ecommercesolution\\ecommercesolution\\ecommercesolution.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{EBF40345-E827-4C85-916E-7BA864967845}|ECommerceSolution\\ECommerceSolution.csproj|solutionrelative:ecommercesolution\\ecommercesolution.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBF40345-E827-4C85-916E-7BA864967845}|ECommerceSolution\\ECommerceSolution.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\ecommercesolution\\ecommercesolution\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBF40345-E827-4C85-916E-7BA864967845}|ECommerceSolution\\ECommerceSolution.csproj|solutionrelative:ecommercesolution\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBF40345-E827-4C85-916E-7BA864967845}|ECommerceSolution\\ECommerceSolution.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\ecommercesolution\\ecommercesolution\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBF40345-E827-4C85-916E-7BA864967845}|ECommerceSolution\\ECommerceSolution.csproj|solutionrelative:ecommercesolution\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBF40345-E827-4C85-916E-7BA864967845}|ECommerceSolution\\ECommerceSolution.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\ecommercesolution\\ecommercesolution\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBF40345-E827-4C85-916E-7BA864967845}|ECommerceSolution\\ECommerceSolution.csproj|solutionrelative:ecommercesolution\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBF40345-E827-4C85-916E-7BA864967845}|ECommerceSolution\\ECommerceSolution.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\ecommercesolution\\ecommercesolution\\services\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBF40345-E827-4C85-916E-7BA864967845}|ECommerceSolution\\ECommerceSolution.csproj|solutionrelative:ecommercesolution\\services\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBF40345-E827-4C85-916E-7BA864967845}|ECommerceSolution\\ECommerceSolution.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\ecommercesolution\\ecommercesolution\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBF40345-E827-4C85-916E-7BA864967845}|ECommerceSolution\\ECommerceSolution.csproj|solutionrelative:ecommercesolution\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBF40345-E827-4C85-916E-7BA864967845}|ECommerceSolution\\ECommerceSolution.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\ecommercesolution\\ecommercesolution\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBF40345-E827-4C85-916E-7BA864967845}|ECommerceSolution\\ECommerceSolution.csproj|solutionrelative:ecommercesolution\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBF40345-E827-4C85-916E-7BA864967845}|ECommerceSolution\\ECommerceSolution.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\ecommercesolution\\ecommercesolution\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBF40345-E827-4C85-916E-7BA864967845}|ECommerceSolution\\ECommerceSolution.csproj|solutionrelative:ecommercesolution\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBF40345-E827-4C85-916E-7BA864967845}|ECommerceSolution\\ECommerceSolution.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\ecommercesolution\\ecommercesolution\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBF40345-E827-4C85-916E-7BA864967845}|ECommerceSolution\\ECommerceSolution.csproj|solutionrelative:ecommercesolution\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBF40345-E827-4C85-916E-7BA864967845}|ECommerceSolution\\ECommerceSolution.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\ecommercesolution\\ecommercesolution\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBF40345-E827-4C85-916E-7BA864967845}|ECommerceSolution\\ECommerceSolution.csproj|solutionrelative:ecommercesolution\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\ECommerceSolution\\ECommerceSolution\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "ECommerceSolution\\Controllers\\ProductsController.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\ECommerceSolution\\ECommerceSolution\\Controllers\\ProductsController.cs*",
+              "RelativeToolTip": "ECommerceSolution\\Controllers\\ProductsController.cs*",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwC8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T06:29:19.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\ECommerceSolution\\ECommerceSolution\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "ECommerceSolution\\Services\\ProductService.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\ECommerceSolution\\ECommerceSolution\\Services\\ProductService.cs",
+              "RelativeToolTip": "ECommerceSolution\\Services\\ProductService.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAArwBYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T06:20:11.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\ECommerceSolution\\ECommerceSolution\\Program.cs",
+              "RelativeDocumentMoniker": "ECommerceSolution\\Program.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\ECommerceSolution\\ECommerceSolution\\Program.cs",
+              "RelativeToolTip": "ECommerceSolution\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T06:32:36.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\ECommerceSolution\\ECommerceSolution\\Views\\Products\\Index.cshtml",
+              "RelativeDocumentMoniker": "ECommerceSolution\\Views\\Products\\Index.cshtml",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\ECommerceSolution\\ECommerceSolution\\Views\\Products\\Index.cshtml",
+              "RelativeToolTip": "ECommerceSolution\\Views\\Products\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-01T06:36:38.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\ECommerceSolution\\ECommerceSolution\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ECommerceSolution\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\ECommerceSolution\\ECommerceSolution\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ECommerceSolution\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAqwBUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T06:39:04.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ECommerceSolution",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\ECommerceSolution\\ECommerceSolution\\ECommerceSolution.csproj",
+              "RelativeDocumentMoniker": "ECommerceSolution\\ECommerceSolution.csproj",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\ECommerceSolution\\ECommerceSolution\\ECommerceSolution.csproj",
+              "RelativeToolTip": "ECommerceSolution\\ECommerceSolution.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-01T06:16:57.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\ECommerceSolution\\ECommerceSolution\\Services\\IProductService.cs",
+              "RelativeDocumentMoniker": "ECommerceSolution\\Services\\IProductService.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\ECommerceSolution\\ECommerceSolution\\Services\\IProductService.cs",
+              "RelativeToolTip": "ECommerceSolution\\Services\\IProductService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T06:19:34.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\ECommerceSolution\\ECommerceSolution\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "ECommerceSolution\\Models\\Product.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\ECommerceSolution\\ECommerceSolution\\Models\\Product.cs",
+              "RelativeToolTip": "ECommerceSolution\\Models\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T06:18:40.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\ECommerceSolution\\ECommerceSolution\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "ECommerceSolution\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\ECommerceSolution\\ECommerceSolution\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "ECommerceSolution\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-01T06:39:15.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\ECommerceSolution\\ECommerceSolution\\Views\\Products\\Details.cshtml",
+              "RelativeDocumentMoniker": "ECommerceSolution\\Views\\Products\\Details.cshtml",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\ECommerceSolution\\ECommerceSolution\\Views\\Products\\Details.cshtml",
+              "RelativeToolTip": "ECommerceSolution\\Views\\Products\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-01T06:37:12.873Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

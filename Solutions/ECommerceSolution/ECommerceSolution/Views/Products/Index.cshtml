@@ -1,0 +1,15 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h2>Product List</h2>
+
+@{
+    List<Product> products = (List<Product>)ViewData["products"];
+    foreach( var product in products)
+    {
+        <p>@product.Name   <a href="/products/details/@product.Id">Details</a> |  <a href="/products/remove/@product.Id">Remove</a></p>
+    }
+}
