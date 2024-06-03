@@ -6,13 +6,16 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddSingleton<List<Product>>();
 
 var app = builder.Build();
+
+//Middleware Pipline
 app.UseHttpsRedirection();
+app.UseCors();
+app.UseRouting();
+app.UseAuthorization();
 
 // Define routes and handlers for CRUD operations
 app.MapGet("/api/products", (List<Product> products) => products);
-
 app.MapGet("/api/products/{id}", (int id, List<Product> products) => products.FirstOrDefault(p => p.Id == id));
-
 app.MapPost("/api/products", (Product product, List<Product> products) =>
 {
     product.Id = products.Count + 1;
@@ -37,5 +40,4 @@ app.MapDelete("/api/products/{id}", (int id, List<Product> products) =>
     products.Remove(product);
     return Results.NoContent();
 });
-
 app.Run();

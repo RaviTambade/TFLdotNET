@@ -1,0 +1,44 @@
+﻿ 
+@using HRORMApp.Entities;
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <label>Id</label>
+            </th>
+            <th>
+                <label>Name</label>
+            </th>
+            <th> </th> 
+        </tr>
+    </thead>
+    <tbody>
+
+        @{
+            List<Employee> allEmployees = (List<Employee>)ViewData["allEmployees"];
+        }
+        @foreach (var item in allEmployees)
+        {
+        <tr>
+            <td>
+               <p> @item.Id</p>  
+            </td>
+            <td>
+                    <p> @item.FirstName  @item.LastName</p>
+            </td>
+            <td>
+                <a href="">Details</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

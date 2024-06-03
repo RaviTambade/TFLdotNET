@@ -1,0 +1,22 @@
+﻿@using ECommerceSolution.Models;
+@model ECommerceSolution.Models.Product
+
+<h2>Update Existing Product</h2>
+<form method="post">
+    <div>
+        <div class="form-group">
+            <label class="control-label">Id</label>
+            <input asp-for="Id" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label class="control-label">Name</label>
+            <input asp-for="Name" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label class="control-label">Price</label>
+            <input asp-for="Price" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-primary">Update</button>
+    </div>
+</form>

@@ -1,0 +1,29 @@
+@page "/flowers"
+@using SimpleBlazorApp.Entities
+@using SimpleBlazorApp.Services
+@inject ProductService CatalogService
+@using System.Collections.Generic
+
+@code {
+    private List<Product> flowers;
+   protected override async Task<List<Product>> OnInitializedAsync()
+    {
+        flowers =await CatalogService.GetAll();
+        return flowers;
+    }
+}
+
+<h2>Todays Flowers for Sale</h2>
+@if (flowers == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <ul>
+        @foreach (Product flower in flowers)
+        {
+            <li>@flower.Title</li>
+        }
+    </ul>
+}

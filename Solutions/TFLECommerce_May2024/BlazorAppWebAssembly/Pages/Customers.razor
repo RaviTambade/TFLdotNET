@@ -1,0 +1,46 @@
+﻿@page "/customers"
+@using BlazorAppWebAssembly.Entities
+<h3>Customers</h3>
+
+<!--  url route-->
+@inject HttpClient Http
+
+
+<h3>Employees</h3>
+@if (allCustomers == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var customer in allCustomers)
+            {
+                <tr>
+                    <td>@customer.Id</td>
+                    <td>@customer.Name </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+@code {
+
+    private List<Customer> allCustomers = null;
+
+    
+    protected override async Task OnInitializedAsync()
+    {
+        allCustomers = await Http.GetFromJsonAsync<List<Customer>>("http://localhost:5231/api/customers");
+    }
+}

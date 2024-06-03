@@ -1,0 +1,24 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h1>Customers List</h1>
+<hr/>
+
+@{
+    List<Customer> allCustomers=(List<Customer>)ViewData["allCustomers"];
+}
+<ol>
+    @{
+        foreach(Customer customer in allCustomers)
+        {
+            <li>@customer.Name <a href="/customers/details/@customer.Id">details</a> | <a href="/customers/remove/@customer.Id">remove</a></li>
+        }
+    }
+   <!-- <li>Ramesh <a href="/customers/details/12">details</a> | <a href="/customers/remove/12">remove</a></li>
+    <li>Rajiv <a href="/customers/details/13">details</a>| <a href="/customers/remove/13">remove</a></li>
+    <li>Manoj <a href="/customers/details/14">details</a>| <a href="/customers/remove/14">remove</a></li>
+    --->
+</ol>

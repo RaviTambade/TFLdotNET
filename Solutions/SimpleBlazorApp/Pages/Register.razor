@@ -1,0 +1,82 @@
+@page "/register"
+
+@using System.Collections.Generic
+
+<h2>Register</h2>
+
+<div>
+    <label for="firstname">First Name:</label>
+    <input id="firstname" type="text" @bind="firstname" />
+</div>
+
+<div>
+    <label for="lastname">Last Name:</label>
+    <input id="lastname" type="text" @bind="lastname" />
+</div>
+
+<div>
+    <label for="email">Email:</label>
+    <input id="email" type="text" @bind="email" />
+</div>
+
+<div>
+    <label for="contactnumber">Contact Number:</label>
+    <input id="contactnumber" type="text" @bind="contactnumber" />
+</div>
+
+ 
+<button @onclick="HandleRegister">Login</button>
+ 
+@code {
+    private string firstname = "";
+    private string lastname = "";
+    private string email = "";
+    private string contactnumber = "";
+
+    private void HandleRegister()
+    { 
+       var newUser=new {
+        FirstName=firstname,
+        LastName=lastname,
+        Email=email,
+        ContactNumber=contactnumber
+       };
+       
+       Console.WriteLine("New customer is registered successfully");
+       Console.WriteLine(newUser.FirstName + " "+ newUser.LastName);
+    }
+
+    protected override void OnInitialized()
+    {
+        // Invoked when the component has been initialized
+        Console.WriteLine("Component Initialized");
+    }
+
+    protected override void OnParametersSet()
+    {
+        // Invoked when parameters have been set for the component
+        Console.WriteLine("Parameters Set");
+    }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        // Invoked after the component has been rendered
+        Console.WriteLine("After Render");
+    }
+
+    protected override bool ShouldRender()
+    {
+        // Determines whether the component should render
+        // Returning false prevents the component from rendering
+        Console.WriteLine("Should Render?");
+        return true;
+    }
+
+    public void Dispose()
+    {
+        // Invoked when the component is disposed
+        Console.WriteLine("Component Disposed");
+    }
+
+
+}

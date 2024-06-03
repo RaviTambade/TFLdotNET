@@ -1,0 +1,11 @@
+﻿<h2>Product List</h2>
+<a href="/products/insert">Insert new Product</a>
+<hr/>
+
+@{
+    List<Product> products = (List<Product>)ViewData["products"];
+    foreach( var product in products)
+    {
+        <p>@product.Name   <a href="/products/details/@product.Id">Details</a> |  <a href="/products/remove/@product.Id">Remove</a></p>
+    }
+}

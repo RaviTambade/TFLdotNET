@@ -1,0 +1,55 @@
+﻿@page "/employees"
+@attribute [StreamRendering]
+
+<PageTitle>Weather</PageTitle>
+
+@using Transflower.DbContexts;
+@using Transflower.Entities;
+
+<h3>Employees</h3>
+@if (allEmployees == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var employee in allEmployees)
+            {
+                <tr>
+                    <td>@employee.FirstName</td>
+                    <td>@employee.LastName</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+@code {
+
+    private List<Employee> allEmployees = null;
+
+    public void GetAllEmployess()
+    {
+        using (var context = new HRContext())
+        {
+            var employees = context.Employees.ToList();
+            allEmployees = employees;
+        }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await Task.Delay(500);
+        GetAllEmployess();
+    }
+}

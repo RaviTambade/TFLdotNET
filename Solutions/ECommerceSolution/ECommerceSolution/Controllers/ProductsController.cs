@@ -6,7 +6,6 @@ namespace ECommerceSolution.Controllers
 {
     public class ProductsController : Controller
     {
-
         private IProductService _productService;
         public ProductsController(IProductService service) {
             _productService = service;
@@ -30,9 +29,29 @@ namespace ECommerceSolution.Controllers
             _productService.Remove(id);
             return RedirectToAction("Index");
         }
-        public IActionResult Update(int id, Product product)
+       
+        public IActionResult Update(int id)
+        {
+            Product theProduct = _productService.GetById(id);
+            return View(theProduct);
+        }
+
+        [HttpPost]
+        public IActionResult Update(Product product)
         {
             _productService.Update(product);
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult Insert()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Insert(Product product)
+        {
+            _productService.Insert(product);
             return RedirectToAction("Index");
         }
     }

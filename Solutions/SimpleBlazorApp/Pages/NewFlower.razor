@@ -1,0 +1,23 @@
+@page "/newflower"
+
+@using System.Collections.Generic
+
+<h1>New Flower</h1>
+
+<input @bind-value="newFlower" placeholder="Enter item" />
+<button @onclick="AddItem">Add Item</button>
+ 
+ @code {
+    private List<string> flowers = new List<string> { "Rose", "Lotus", "Jasmine" };
+    private string newFlower = "";
+
+    //Event handler
+    private void AddItem()
+    {
+        if (!string.IsNullOrWhiteSpace(newFlower))
+        {
+            flowers.Add(newFlower);
+            newFlower = ""; // Clear the input field after adding the item
+        }
+    }
+}

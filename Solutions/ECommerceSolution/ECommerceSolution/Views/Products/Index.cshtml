@@ -1,11 +1,6 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
-
-<h2>Product List</h2>
-
+﻿<h2>Product List</h2>
+<a href="/products/insert">Insert new Product</a>
+<hr/>
 @{
     List<Product> products = (List<Product>)ViewData["products"];
     foreach( var product in products)

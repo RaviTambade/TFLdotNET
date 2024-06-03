@@ -1,0 +1,38 @@
+@page "/login"
+
+@using System.Collections.Generic
+
+<h2>Login</h2>
+
+<div>
+    <label for="username">Username:</label>
+    <input id="username" type="text" @bind="username" />
+</div>
+
+<div>
+    <label for="password">Password:</label>
+    <input id="password" type="password" @bind="password" />
+</div>
+
+<button @onclick="HandleLogin">Login</button>
+ 
+@code {
+    private string username = "";
+    private string password = "";
+
+    private void HandleLogin()
+    {
+        // Perform login logic here (e.g., authenticate user)
+        if (username == "admin" && password == "password")
+        {
+            // Successful login
+            // You can redirect the user to another page or perform other actions here
+            Console.WriteLine("Login successful!");
+        }
+        else
+        {
+            // Failed login
+            Console.WriteLine("Invalid username or password!");
+        }
+    }
+}
