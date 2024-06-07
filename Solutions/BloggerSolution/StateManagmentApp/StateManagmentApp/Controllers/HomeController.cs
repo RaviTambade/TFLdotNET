@@ -44,6 +44,21 @@ namespace StateManagmentApp.Controllers
             return View();
         }
 
+        public IActionResult Catalog()
+        {
+            List<Product> products = new List<Product>();
+            products.Add(new Product { Id = 23, Title = "Gerbera", Quantity = 7000 });
+            products.Add(new Product { Id = 24, Title = "Rose", Quantity = 6700 });
+            products.Add(new Product { Id = 25, Title = "Carnation", Quantity =9000 });
+            products.Add(new Product { Id = 26, Title = "Gerbera", Quantity = 8900 });
+
+            return Json(products);
+        }
+
+        public IActionResult List()
+        {
+            return View();  
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

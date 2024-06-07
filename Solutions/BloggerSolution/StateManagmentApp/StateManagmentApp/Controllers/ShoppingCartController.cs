@@ -6,7 +6,7 @@ namespace StateManagmentApp.Controllers
 {
     //Server Side State Management
     //Session Management
-        
+
     public class ShoppingCartController : Controller
     {
         public IActionResult AddToCart()

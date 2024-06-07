@@ -1,0 +1,28 @@
+﻿
+<button id="btnFetch">fetch</button>
+<ol id="flowers">
+</ol>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#btnFetch").click(function() {   
+            //use ajax call for accessing
+            var products;
+            $.ajax({
+                url: "/home/catalog",
+                type: 'GET',
+                contentType: 'application/json',
+                success: function (response) {
+                    products = response;
+                    for (var i = 0; i <= products.length;i++) {
+                        $("#flowers").append("<li>" + products[i].title + "</li>");
+                    }
+                },
+                error: function (xhr, status, error) {
+                    console.error(xhr.responseText);
+                }
+            });
+        });
+    });
+</script>
+
