@@ -1,0 +1,40 @@
+﻿@model StateManagmentApp.Models.Customer
+<h1>Register Customer</h1>
+<hr/>
+<div class="row">
+    <div class="col-me-4">
+        <form asp-action="Register" method="post">
+            <div class="form-group">
+                <label asp-for="Code" class="control-label"></label>
+                <input asp-for="Code" class="control-control"></input>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="control-control"></input>
+            </div>
+
+            <div class="form-group">
+                <table>
+                    @{
+                        List<SelectListItem> organizations = Model.OrgList;
+                        foreach (var org in organizations)
+                        {
+                            <td>
+                                <input type="checkbox" id="@org.Value" value="@org.Value" name="organizations"   checked="@org.Selected" />
+                            </td>
+                            <td>
+                                <label for="@org.Value" class="control-label">@org.Value</label>
+                            </td>
+                        }
+                    }
+                </table>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Register" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
