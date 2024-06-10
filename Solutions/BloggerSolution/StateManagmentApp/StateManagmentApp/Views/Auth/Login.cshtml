@@ -1,0 +1,25 @@
+﻿@model StateManagmentApp.Models.Claim
+<h1>Login</h1>
+<hr />
+
+<a href="/auth/register">New Registration</a>
+<hr/>
+<div class="row">
+    <div class="col-me-4">
+        <form asp-action="Login" method="post">
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="control-control"></input>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" class="control-control"></input>
+            </div>
+
+            <div>
+                <input type="submit" value="Login" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>

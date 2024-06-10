@@ -6,7 +6,6 @@
         public List<string> Items { get; set; }
         public Cart() { 
                 this.Items = new List<string>();
-
         }
     }
 }

@@ -1,0 +1,62 @@
+﻿<h1>Local Storage</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+            <div class="form-group">
+                <label  class="control-label"></label>
+                <input  class="control-control" id="email" name="email"></input>
+            </div>
+            <div class="form-group">
+                <label   class="control-label"></label>
+                <input  class="control-control" id="password" name="password"></input>
+            </div>
+            <div class="form-group">
+                <button onclick="rememberMe()">Remember Me</button>
+            </div>
+    </div>
+
+    <div class="col-md-8">
+        <label id="lblEmail">Showing  Email</label>
+        <br/>
+        <label id="lblPassword">Showing Password</label>
+        <div class="form-group">
+            <button onclick="getLocalStorageData()">LocalStorage</button>
+        </div>
+    </div>
+</div>
+
+<script >
+    function rememberMe() {
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        console.log(email + "  " + password);
+
+        localStorage.setItem("email",email);
+        localStorage.setItem("password", password);
+    }
+
+    function getLocalStorageData(){
+        alert("get localSTorage button is clicked");
+        //fetch data from loclstorage
+        var email = localStorage.getItem("email");
+        var password = localStorage.getItem("password");
+
+        console.log("data from local Storage= "+ email + "  " + password);
+
+        //get htmlelement references
+        var lblEmail=document.getElementById("lblEmail");
+        var lblPassword=document.getElementById("lblPassword");
+
+        //DOM manipulation using Classical Javascript and DOM model
+        //set innerHtml for each HTML element
+        lblEmail.innerHTML = email;
+        lblPassword.innerHTML = password;
+    }
+</script>
+
+
+
+
+
+
+

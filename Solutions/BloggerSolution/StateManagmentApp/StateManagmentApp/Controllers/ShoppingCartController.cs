@@ -9,6 +9,16 @@ namespace StateManagmentApp.Controllers
 
     public class ShoppingCartController : Controller
     {
+        public IActionResult Index()
+        {
+            return View(); 
+        }
+
+        public IActionResult TempData()
+        {
+            return View();
+        }
+
         public IActionResult AddToCart()
         {
             Cart theCart = new Cart();

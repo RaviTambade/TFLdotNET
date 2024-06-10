@@ -1,7 +1,17 @@
-﻿
+﻿<h2> Fething Data using Ajax</h2>
+<hr/>
+
 <button id="btnFetch">fetch</button>
+<br/>
+
+<hr/>
+
+<label>Flowers Catalog</label>
+<br/>
+
 <ol id="flowers">
 </ol>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
     $(document).ready(function () {
@@ -15,6 +25,7 @@
                 success: function (response) {
                     products = response;
                     for (var i = 0; i <= products.length;i++) {
+                        //DOM manipulation using jQuery selector
                         $("#flowers").append("<li>" + products[i].title + "</li>");
                     }
                 },
@@ -25,4 +36,3 @@
         });
     });
 </script>
-

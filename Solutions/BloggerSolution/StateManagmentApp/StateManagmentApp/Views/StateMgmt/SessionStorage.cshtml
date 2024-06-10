@@ -1,0 +1,62 @@
+﻿
+<h1>Session Storage</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+
+        <div class="form-group">
+            <label class="control-label"></label>
+            <input class="control-control" id="email" name="email"></input>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label"></label>
+            <input class="control-control" id="password" name="password"></input>
+        </div>
+
+
+        <div class="form-group">
+            <button onclick="holdMyData()">Hold My Data</button>
+        </div>
+
+    </div>
+
+    <div class="col-md-8">
+        <label id="lblEmail">Showing Email</label>
+        <br />
+        <label id="lblPassword">Showing Password</label>
+
+        <div class="form-group">
+            <button onclick="getSessionStorageData()">SessionStorage</button>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    function holdMyData() {
+
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+
+        sessionStorage.setItem("email", email);
+        sessionStorage.setItem("password", password);
+    }
+
+    function getSessionStorageData() {
+
+        //fetch data from loclstorage
+        var email = sessionStorage.getItem("email");
+        var password = sessionStorage.getItem("password");
+
+        console.log("data from session Storage= " + email + "  " + password);
+
+        //get htmlelement references
+        var lblEmail = document.getElementById("lblEmail");
+        var lblPassword = document.getElementById("lblPassword");
+
+        //set innerHtml for each HTML element
+        lblEmail.innerHTML = email;
+        lblPassword.innerHTML = password;
+    }
+</script>
