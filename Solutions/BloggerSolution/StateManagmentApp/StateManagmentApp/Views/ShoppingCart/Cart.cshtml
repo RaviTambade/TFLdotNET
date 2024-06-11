@@ -1,0 +1,9 @@
+﻿<h2>My Shopping Cart</h2>
+<hr/>
+@{
+    Cart existingCart = (Cart)ViewData["mycart"];
+    foreach (string item in existingCart.Items)
+    {
+        <p>@item</p>
+    }
+}

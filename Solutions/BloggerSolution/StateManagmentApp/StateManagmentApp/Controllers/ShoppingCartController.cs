@@ -14,33 +14,81 @@ namespace StateManagmentApp.Controllers
             return View(); 
         }
 
-        public IActionResult TempData()
+
+        /* public IActionResult AddToCart()
+         {
+             Cart theCart = new Cart();
+             theCart.Items.Add("laptop");
+             string json = JsonSerializer.Serialize(theCart);
+             TempData["mycart"] = json;
+            // return View();
+             return RedirectToAction("RemoveFromCart");
+         }
+
+         //session is essentail when data is supposed to accessed
+         //across any action method belong to any controller
+         public IActionResult RemoveFromCart()
+         {
+             if (TempData["mycart"] is string json)
+             {
+                 Cart existingCart = JsonSerializer.Deserialize<Cart>(json);
+                 existingCart.Items.Remove("laptop");
+                 ViewData["mycart"] = existingCart;
+             }
+             return View();
+         }
+
+         */
+
+        public IActionResult AddToCart([FromQuery] string product)
         {
-            return View();
+            string json = null;
+            json = HttpContext.Session.GetString("cart");
+            if (json != null)
+            {
+                Cart theCart = JsonSerializer.Deserialize<Cart>(json);
+                theCart.Items.Add(product);
+                json = JsonSerializer.Serialize(theCart);
+            }
+            else
+            {
+                Cart theCart=new Cart();
+                theCart.Items.Add(product);
+                json = JsonSerializer.Serialize(theCart);
+            }
+            HttpContext.Session.SetString("cart", json);
+            return RedirectToAction("cart");
         }
 
-        public IActionResult AddToCart()
+       
+        public IActionResult Cart()
         {
-            Cart theCart = new Cart();
-            theCart.Items.Add("laptop");
-            string json = JsonSerializer.Serialize(theCart);
-            TempData["mycart"] = json;
-            //return View();
-            return RedirectToAction("RemoveFromCart");
-        }
-
-        //session is essentail when data is supposed to accessed
-        //across any action method belong to any controller
-        public IActionResult RemoveFromCart()
-        {
-            if (TempData["mycart"] is string json)
+            string json = null;
+            json = HttpContext.Session.GetString("cart");
+            if (json != null)
             {
                 Cart existingCart = JsonSerializer.Deserialize<Cart>(json);
-                existingCart.Items.Remove("laptop");
-
                 ViewData["mycart"] = existingCart;
             }
             return View();
         }
+
+        /*
+        public IActionResult RemoveFromCart()
+        {
+            string json = null;
+            json=HttpContext.Session.GetString("cart");
+
+            if (json!=null)
+            {
+                Cart existingCart = JsonSerializer.Deserialize<Cart>(json);
+                existingCart.Items.Remove("laptop");
+                ViewData["mycart"] = existingCart;
+            }
+            return View();
+        }
+
+        */
+
     }
 }
