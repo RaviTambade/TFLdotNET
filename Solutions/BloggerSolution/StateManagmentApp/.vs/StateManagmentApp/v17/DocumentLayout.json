@@ -3,12 +3,44 @@
   "WorkspaceRootPath": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5015EF01-5E30-43FC-B895-CD134AF89D47}|StateManagmentApp\\StateManagmentApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\bloggersolution\\statemanagmentapp\\statemanagmentapp\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5015EF01-5E30-43FC-B895-CD134AF89D47}|StateManagmentApp\\StateManagmentApp.csproj|solutionrelative:statemanagmentapp\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5015EF01-5E30-43FC-B895-CD134AF89D47}|StateManagmentApp\\StateManagmentApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\bloggersolution\\statemanagmentapp\\statemanagmentapp\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5015EF01-5E30-43FC-B895-CD134AF89D47}|StateManagmentApp\\StateManagmentApp.csproj|solutionrelative:statemanagmentapp\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5015EF01-5E30-43FC-B895-CD134AF89D47}|StateManagmentApp\\StateManagmentApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\bloggersolution\\statemanagmentapp\\statemanagmentapp\\models\\companydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5015EF01-5E30-43FC-B895-CD134AF89D47}|StateManagmentApp\\StateManagmentApp.csproj|solutionrelative:statemanagmentapp\\models\\companydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5015EF01-5E30-43FC-B895-CD134AF89D47}|StateManagmentApp\\StateManagmentApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\bloggersolution\\statemanagmentapp\\statemanagmentapp\\views\\dashboard\\linechartview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5015EF01-5E30-43FC-B895-CD134AF89D47}|StateManagmentApp\\StateManagmentApp.csproj|solutionrelative:statemanagmentapp\\views\\dashboard\\linechartview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5015EF01-5E30-43FC-B895-CD134AF89D47}|StateManagmentApp\\StateManagmentApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\bloggersolution\\statemanagmentapp\\statemanagmentapp\\views\\dashboard\\piechartview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5015EF01-5E30-43FC-B895-CD134AF89D47}|StateManagmentApp\\StateManagmentApp.csproj|solutionrelative:statemanagmentapp\\views\\dashboard\\piechartview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5015EF01-5E30-43FC-B895-CD134AF89D47}|StateManagmentApp\\StateManagmentApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\bloggersolution\\statemanagmentapp\\statemanagmentapp\\views\\dashboard\\barchartview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5015EF01-5E30-43FC-B895-CD134AF89D47}|StateManagmentApp\\StateManagmentApp.csproj|solutionrelative:statemanagmentapp\\views\\dashboard\\barchartview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5015EF01-5E30-43FC-B895-CD134AF89D47}|StateManagmentApp\\StateManagmentApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\bloggersolution\\statemanagmentapp\\statemanagmentapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5015EF01-5E30-43FC-B895-CD134AF89D47}|StateManagmentApp\\StateManagmentApp.csproj|solutionrelative:statemanagmentapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5015EF01-5E30-43FC-B895-CD134AF89D47}|StateManagmentApp\\StateManagmentApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\bloggersolution\\statemanagmentapp\\statemanagmentapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5015EF01-5E30-43FC-B895-CD134AF89D47}|StateManagmentApp\\StateManagmentApp.csproj|solutionrelative:statemanagmentapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5015EF01-5E30-43FC-B895-CD134AF89D47}|StateManagmentApp\\StateManagmentApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\bloggersolution\\statemanagmentapp\\statemanagmentapp\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5015EF01-5E30-43FC-B895-CD134AF89D47}|StateManagmentApp\\StateManagmentApp.csproj|solutionrelative:statemanagmentapp\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5015EF01-5E30-43FC-B895-CD134AF89D47}|StateManagmentApp\\StateManagmentApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\bloggersolution\\statemanagmentapp\\statemanagmentapp\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5015EF01-5E30-43FC-B895-CD134AF89D47}|StateManagmentApp\\StateManagmentApp.csproj|solutionrelative:statemanagmentapp\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5015EF01-5E30-43FC-B895-CD134AF89D47}|StateManagmentApp\\StateManagmentApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\bloggersolution\\statemanagmentapp\\statemanagmentapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -105,14 +137,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5015EF01-5E30-43FC-B895-CD134AF89D47}|StateManagmentApp\\StateManagmentApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\bloggersolution\\statemanagmentapp\\statemanagmentapp\\models\\claim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5015EF01-5E30-43FC-B895-CD134AF89D47}|StateManagmentApp\\StateManagmentApp.csproj|solutionrelative:statemanagmentapp\\models\\claim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5015EF01-5E30-43FC-B895-CD134AF89D47}|StateManagmentApp\\StateManagmentApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\bloggersolution\\statemanagmentapp\\statemanagmentapp\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5015EF01-5E30-43FC-B895-CD134AF89D47}|StateManagmentApp\\StateManagmentApp.csproj|solutionrelative:statemanagmentapp\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5015EF01-5E30-43FC-B895-CD134AF89D47}|StateManagmentApp\\StateManagmentApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\bloggersolution\\statemanagmentapp\\statemanagmentapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5015EF01-5E30-43FC-B895-CD134AF89D47}|StateManagmentApp\\StateManagmentApp.csproj|solutionrelative:statemanagmentapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -122,7 +146,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -130,58 +154,111 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CompanyData.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Models\\CompanyData.cs",
+              "RelativeDocumentMoniker": "StateManagmentApp\\Models\\CompanyData.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Models\\CompanyData.cs",
+              "RelativeToolTip": "StateManagmentApp\\Models\\CompanyData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T10:41:44.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LineChartView.cshtml",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Views\\Dashboard\\LineChartView.cshtml",
+              "RelativeDocumentMoniker": "StateManagmentApp\\Views\\Dashboard\\LineChartView.cshtml",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Views\\Dashboard\\LineChartView.cshtml",
+              "RelativeToolTip": "StateManagmentApp\\Views\\Dashboard\\LineChartView.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T10:28:37.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BarChartView.cshtml",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Views\\Dashboard\\BarChartView.cshtml",
+              "RelativeDocumentMoniker": "StateManagmentApp\\Views\\Dashboard\\BarChartView.cshtml",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Views\\Dashboard\\BarChartView.cshtml",
+              "RelativeToolTip": "StateManagmentApp\\Views\\Dashboard\\BarChartView.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T10:27:29.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Views\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "StateManagmentApp\\Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Views\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "StateManagmentApp\\Views\\Dashboard\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T10:23:32.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "StateManagmentApp\\Controllers\\DashboardController.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "StateManagmentApp\\Controllers\\DashboardController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T10:23:18.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PieChartView.cshtml",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Views\\Dashboard\\PieChartView.cshtml",
+              "RelativeDocumentMoniker": "StateManagmentApp\\Views\\Dashboard\\PieChartView.cshtml",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Views\\Dashboard\\PieChartView.cshtml",
+              "RelativeToolTip": "StateManagmentApp\\Views\\Dashboard\\PieChartView.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T10:28:06.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "StateManagmentApp\\Controllers\\ProductsController.cs",
               "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Controllers\\ProductsController.cs",
               "RelativeToolTip": "StateManagmentApp\\Controllers\\ProductsController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAlAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-12T05:31:35.503Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "StateMgmtController.cs",
-              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Controllers\\StateMgmtController.cs",
-              "RelativeDocumentMoniker": "StateManagmentApp\\Controllers\\StateMgmtController.cs",
-              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Controllers\\StateMgmtController.cs",
-              "RelativeToolTip": "StateManagmentApp\\Controllers\\StateMgmtController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABcAAABIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-10T04:53:23.781Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ShoppingCartController.cs",
-              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Controllers\\ShoppingCartController.cs",
-              "RelativeDocumentMoniker": "StateManagmentApp\\Controllers\\ShoppingCartController.cs",
-              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Controllers\\ShoppingCartController.cs",
-              "RelativeToolTip": "StateManagmentApp\\Controllers\\ShoppingCartController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T11:30:12.776Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Program.cs",
               "RelativeDocumentMoniker": "StateManagmentApp\\Program.cs",
               "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Program.cs",
               "RelativeToolTip": "StateManagmentApp\\Program.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAAiAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABcAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-10T07:03:44.078Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
               "Title": "Cart.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Models\\Cart.cs",
               "RelativeDocumentMoniker": "StateManagmentApp\\Models\\Cart.cs",
@@ -193,7 +270,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "StateManagmentApp\\Controllers\\HomeController.cs",
@@ -206,7 +283,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "StateManagmentApp\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "StateManagmentApp\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T06:39:38.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ShoppingCartController.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Controllers\\ShoppingCartController.cs",
+              "RelativeDocumentMoniker": "StateManagmentApp\\Controllers\\ShoppingCartController.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Controllers\\ShoppingCartController.cs",
+              "RelativeToolTip": "StateManagmentApp\\Controllers\\ShoppingCartController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T11:30:12.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Cart.cshtml",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Views\\ShoppingCart\\Cart.cshtml",
               "RelativeDocumentMoniker": "StateManagmentApp\\Views\\ShoppingCart\\Cart.cshtml",
@@ -219,6 +321,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "CustomersController.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Controllers\\CustomersController.cs",
+              "RelativeDocumentMoniker": "StateManagmentApp\\Controllers\\CustomersController.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Controllers\\CustomersController.cs",
+              "RelativeToolTip": "StateManagmentApp\\Controllers\\CustomersController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T05:11:01.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "StateMgmtController.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Controllers\\StateMgmtController.cs",
+              "RelativeDocumentMoniker": "StateManagmentApp\\Controllers\\StateMgmtController.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Controllers\\StateMgmtController.cs",
+              "RelativeToolTip": "StateManagmentApp\\Controllers\\StateMgmtController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABcAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T04:53:23.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "LocalStorage.cshtml",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Views\\StateMgmt\\LocalStorage.cshtml",
               "RelativeDocumentMoniker": "StateManagmentApp\\Views\\StateMgmt\\LocalStorage.cshtml",
@@ -230,7 +357,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 18,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Views\\StateMgmt\\Index.cshtml",
               "RelativeDocumentMoniker": "StateManagmentApp\\Views\\StateMgmt\\Index.cshtml",
@@ -242,7 +369,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 15,
               "Title": "DisplayCookie.cshtml",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Views\\StateMgmt\\DisplayCookie.cshtml",
               "RelativeDocumentMoniker": "StateManagmentApp\\Views\\StateMgmt\\DisplayCookie.cshtml",
@@ -254,7 +381,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 19,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Views\\ShoppingCart\\Index.cshtml",
               "RelativeDocumentMoniker": "StateManagmentApp\\Views\\ShoppingCart\\Index.cshtml",
@@ -266,7 +393,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 20,
               "Title": "Services.cshtml",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Views\\Home\\Services.cshtml",
               "RelativeDocumentMoniker": "StateManagmentApp\\Views\\Home\\Services.cshtml",
@@ -278,7 +405,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 16,
               "Title": "SessionStorage.cshtml",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Views\\StateMgmt\\SessionStorage.cshtml",
               "RelativeDocumentMoniker": "StateManagmentApp\\Views\\StateMgmt\\SessionStorage.cshtml",
@@ -290,7 +417,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 21,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "StateManagmentApp\\Views\\Home\\Privacy.cshtml",
@@ -302,7 +429,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 24,
               "Title": "AboutUs.cshtml",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Views\\Home\\AboutUs.cshtml",
               "RelativeDocumentMoniker": "StateManagmentApp\\Views\\Home\\AboutUs.cshtml",
@@ -314,7 +441,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 25,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Views\\Customers\\Index.cshtml",
               "RelativeDocumentMoniker": "StateManagmentApp\\Views\\Customers\\Index.cshtml",
@@ -326,7 +453,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 26,
               "Title": "Register.cshtml",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Views\\Auth\\Register.cshtml",
               "RelativeDocumentMoniker": "StateManagmentApp\\Views\\Auth\\Register.cshtml",
@@ -338,7 +465,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 27,
               "Title": "Login.cshtml",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Views\\Auth\\Login.cshtml",
               "RelativeDocumentMoniker": "StateManagmentApp\\Views\\Auth\\Login.cshtml",
@@ -350,7 +477,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 28,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Views\\Auth\\Index.cshtml",
               "RelativeDocumentMoniker": "StateManagmentApp\\Views\\Auth\\Index.cshtml",
@@ -362,7 +489,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 23,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "StateManagmentApp\\Views\\Home\\Index.cshtml",
@@ -374,7 +501,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 22,
               "Title": "List.cshtml",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Views\\Home\\List.cshtml",
               "RelativeDocumentMoniker": "StateManagmentApp\\Views\\Home\\List.cshtml",
@@ -386,7 +513,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 29,
               "Title": "Product.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Models\\Product.cs",
               "RelativeDocumentMoniker": "StateManagmentApp\\Models\\Product.cs",
@@ -398,7 +525,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 30,
               "Title": "Student.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Models\\Student.cs",
               "RelativeDocumentMoniker": "StateManagmentApp\\Models\\Student.cs",
@@ -410,7 +537,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 31,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "StateManagmentApp\\Models\\ErrorViewModel.cs",
@@ -422,7 +549,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 33,
               "Title": "Claim.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Models\\Claim.cs",
               "RelativeDocumentMoniker": "StateManagmentApp\\Models\\Claim.cs",
@@ -434,7 +561,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 32,
               "Title": "Customer.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Models\\Customer.cs",
               "RelativeDocumentMoniker": "StateManagmentApp\\Models\\Customer.cs",
@@ -443,30 +570,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-07T05:11:36.206Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "CustomersController.cs",
-              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Controllers\\CustomersController.cs",
-              "RelativeDocumentMoniker": "StateManagmentApp\\Controllers\\CustomersController.cs",
-              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Controllers\\CustomersController.cs",
-              "RelativeToolTip": "StateManagmentApp\\Controllers\\CustomersController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T05:11:01.885Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "StateManagmentApp\\Controllers\\AuthController.cs",
-              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StateManagmentApp\\StateManagmentApp\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "StateManagmentApp\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAA9wAgAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-10T06:39:38.556Z"
             }
           ]
         }

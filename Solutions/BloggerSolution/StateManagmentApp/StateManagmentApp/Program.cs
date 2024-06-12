@@ -15,8 +15,19 @@ builder.Services.AddSession(options =>  //--------------------*****
 
 
 //Output Cache configuration
-builder.Services.AddOutputCache();
+//builder.Services.AddOutputCache();
+builder.Services.AddOutputCache(options =>
+{
+    options.AddBasePolicy(builder =>
+        builder.Expire(TimeSpan.FromSeconds(5)));
 
+    options.AddPolicy("CacheForTenSeconds", builder =>
+        builder.Expire(TimeSpan.FromSeconds(10)));
+
+    options.AddPolicy("CacheFor40Seconds", builder =>
+       builder.Expire(TimeSpan.FromSeconds(40)));
+
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
