@@ -13,6 +13,10 @@ builder.Services.AddSession(options =>  //--------------------*****
     options.Cookie.IsEssential = true;
 });
 
+
+//Output Cache configuration
+builder.Services.AddOutputCache();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -24,6 +28,8 @@ app.UseStaticFiles();
 app.UseRouting();
 app.UseAuthorization();
 app.UseSession();    //-----------------------------*****
+
+app.UseOutputCache();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
