@@ -18,6 +18,7 @@ namespace ECommerceSolution.Controllers
             ViewData["products"]=products;
             return View();
         }
+
         public IActionResult Details(int id)
         {
             Product product = _productService.GetById(id);
@@ -29,20 +30,28 @@ namespace ECommerceSolution.Controllers
             _productService.Remove(id);
             return RedirectToAction("Index");
         }
-       
+
+
+        //Data Entry form
+        //You need to handle get request as well as post request
+
+        [HttpGet]
         public IActionResult Update(int id)
         {
             Product theProduct = _productService.GetById(id);
             return View(theProduct);
         }
 
-        [HttpPost]
+                      //MetaData
+        //Attribute   ( in Java it is called annotation)
+        [HttpPost]    // typescript decorator
         public IActionResult Update(Product product)
         {
             _productService.Update(product);
             return RedirectToAction("Index");
         }
 
+        
         public IActionResult Insert()
         {
             return View();
@@ -54,7 +63,5 @@ namespace ECommerceSolution.Controllers
             _productService.Insert(product);
             return RedirectToAction("Index");
         }
-
-
     }
 }

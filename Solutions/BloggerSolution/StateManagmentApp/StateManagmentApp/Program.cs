@@ -3,12 +3,15 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-//configuring Session 
+
+//Steps to create server side session managment
+
+// step 1: configuring Session Mgmt 
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>  //--------------------*****
 {
     options.Cookie.Name = "transflower.Session";
-    options.IdleTimeout= TimeSpan.FromSeconds(10);
+    options.IdleTimeout= TimeSpan.FromMinutes(10);
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
 });
@@ -35,12 +38,23 @@ if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
 }
+
+
+
+
+//Middleware Settings : setting up HTTP Pipeline
+
 app.UseStaticFiles();
 app.UseRouting();
 app.UseAuthorization();
+
+//Step 2: Session Managment
 app.UseSession();    //-----------------------------*****
 
 app.UseOutputCache();
+
+
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");

@@ -4,6 +4,6 @@
     Cart existingCart = (Cart)ViewData["mycart"];
     foreach (string item in existingCart.Items)
     {
-        <p>@item</p>
+        <p>@item  | <a href="/shoppingcart/removefromcart?product=@item">Remove</a></p>
     }
 }
