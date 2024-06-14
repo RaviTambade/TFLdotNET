@@ -22,17 +22,17 @@
                 google.charts.setOnLoadCallback(drawChart);
 
                 // Define the callback function to create and draw the chart
-                function drawChart() {   
-                    // Convert JSON array to DataTable
-                    var data = new google.visualization.DataTable();
-                    data.addColumn('string', 'Category');
-                    data.addColumn('number', 'Budget');
+                 function drawChart() {   
+      // Convert JSON array to DataTable
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Category');
+      data.addColumn('number', 'Value');
 
-                    apiData.forEach(item => {
-                                                var value = item.value;
-                                                var name = item.name;
-                                                data.addRows([[name, value]]);
-                    });
+      apiData.forEach(item => {
+                                  var value = item.value;
+                                  var category = item.category;
+                                  data.addRows([[category, value]]);
+      });
 
                   
                     // Set chart options
