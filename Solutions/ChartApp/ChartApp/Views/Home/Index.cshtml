@@ -1,0 +1,78 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+   
+</div>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+    var dataUrl = "/home/getdata";
+    $.ajax({
+        url: dataUrl,
+        type: 'GET',
+        contentType: 'application/json',
+        success: function (apiData) {
+                // Load the Google Charts library
+                google.charts.load('current', { packages: ['corechart'] });
+
+                // Set a callback to run when the Google Visualization API is loaded
+                google.charts.setOnLoadCallback(drawChart);
+
+                // Define the callback function to create and draw the chart
+                function drawChart() {   
+                    // Convert JSON array to DataTable
+                    var data = new google.visualization.DataTable();
+                    data.addColumn('string', 'Category');
+                    data.addColumn('number', 'Budget');
+
+                    apiData.forEach(item => {
+                                                var value = item.value;
+                                                var name = item.name;
+                                                data.addRows([[name, value]]);
+                    });
+
+                  
+                    // Set chart options
+                    var options = {
+                        title: 'Company Valuation',
+                        width: 800,
+                        height: 400,
+                        hAxis: {
+                            title: 'Company', // Label for the horizontal axis
+                            showTextEvery: 1 // Show each category label
+                        },
+                        vAxis: {
+                            title: 'Budget', // Label for the vertical axis,
+                                showTextEvery: 1
+                        },
+
+                            annotations: {
+                                textStyle: {
+                                    fontSize: 25,
+                                    color: '#000000', // Label color
+                                }
+                            }
+
+                    };
+
+                    // Instantiate and draw the chart
+                    var chart = new google.visualization.ColumnChart(document.getElementById('companychart'));
+                    chart.draw(data, options);
+                }
+        },
+
+        error: function (xhr, status, error) {
+            console.error(xhr.responseText);
+            }
+    });
+</script>
+
+
+<div class="row">
+    <div>
+        <div class="col-md-8" id="companychart"></div>
+</div>
+</div>
