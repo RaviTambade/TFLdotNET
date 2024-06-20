@@ -27,12 +27,16 @@ namespace StateManagmentApp.Controllers
             return Ok(data);
         }
         
+
+
+        //Cookie
+        //Cookies are written by server and sent to client side
         public IActionResult SetCookie() {
 
             //Cookie is an information written by server applicaiton at client side
             //Cookie collection is sent to client Side through Reponse
             string key = "DemoCookie";
-            string value = "Bhupendra"; ////JWTToken is sent as cookie at client side from identity
+            string value = "Bhupendra is tecnically strong"; ////JWTToken is sent as cookie at client side from identity
 
             //you can write data of size 4KB
 

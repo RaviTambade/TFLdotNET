@@ -20,28 +20,30 @@
         <br/>
         <label id="lblPassword">Showing Password</label>
         <div class="form-group">
-            <button onclick="getLocalStorageData()">LocalStorage</button>
+            <button onclick="getLocalStorageData()">Data From LocalStorage</button>
         </div>
     </div>
 </div>
 
 <script >
+
+    //Javascript Code (Client Side) (will be executed in Browser)
     function rememberMe() {
+
         var email = document.getElementById("email").value;
         var password = document.getElementById("password").value;
         console.log(email + "  " + password);
 
+        //setting data into localstroage maintained by Browser
         localStorage.setItem("email",email);
         localStorage.setItem("password", password);
     }
 
     function getLocalStorageData(){
         alert("get localSTorage button is clicked");
-        //fetch data from loclstorage
+        //fetch data from loclstorage maintained by Browser
         var email = localStorage.getItem("email");
         var password = localStorage.getItem("password");
-
-        console.log("data from local Storage= "+ email + "  " + password);
 
         //get htmlelement references
         var lblEmail=document.getElementById("lblEmail");

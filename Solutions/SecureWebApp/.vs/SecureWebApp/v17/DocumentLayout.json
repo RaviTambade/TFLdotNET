@@ -1,0 +1,228 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tfladmin\\source\\repos\\SecureWebApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0A18ABBE-51B8-4B62-BA73-F38EA9434F15}|SecureWebApp\\SecureWebApp.csproj|c:\\users\\tfladmin\\source\\repos\\securewebapp\\securewebapp\\helpers\\jwtmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A18ABBE-51B8-4B62-BA73-F38EA9434F15}|SecureWebApp\\SecureWebApp.csproj|solutionrelative:securewebapp\\helpers\\jwtmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A18ABBE-51B8-4B62-BA73-F38EA9434F15}|SecureWebApp\\SecureWebApp.csproj|c:\\users\\tfladmin\\source\\repos\\securewebapp\\securewebapp\\helpers\\authroizeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A18ABBE-51B8-4B62-BA73-F38EA9434F15}|SecureWebApp\\SecureWebApp.csproj|solutionrelative:securewebapp\\helpers\\authroizeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A18ABBE-51B8-4B62-BA73-F38EA9434F15}|SecureWebApp\\SecureWebApp.csproj|c:\\users\\tfladmin\\source\\repos\\securewebapp\\securewebapp\\helpers\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A18ABBE-51B8-4B62-BA73-F38EA9434F15}|SecureWebApp\\SecureWebApp.csproj|solutionrelative:securewebapp\\helpers\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A18ABBE-51B8-4B62-BA73-F38EA9434F15}|SecureWebApp\\SecureWebApp.csproj|c:\\users\\tfladmin\\source\\repos\\securewebapp\\securewebapp\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A18ABBE-51B8-4B62-BA73-F38EA9434F15}|SecureWebApp\\SecureWebApp.csproj|solutionrelative:securewebapp\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A18ABBE-51B8-4B62-BA73-F38EA9434F15}|SecureWebApp\\SecureWebApp.csproj|c:\\users\\tfladmin\\source\\repos\\securewebapp\\securewebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A18ABBE-51B8-4B62-BA73-F38EA9434F15}|SecureWebApp\\SecureWebApp.csproj|solutionrelative:securewebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A18ABBE-51B8-4B62-BA73-F38EA9434F15}|SecureWebApp\\SecureWebApp.csproj|c:\\users\\tfladmin\\source\\repos\\securewebapp\\securewebapp\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A18ABBE-51B8-4B62-BA73-F38EA9434F15}|SecureWebApp\\SecureWebApp.csproj|solutionrelative:securewebapp\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A18ABBE-51B8-4B62-BA73-F38EA9434F15}|SecureWebApp\\SecureWebApp.csproj|c:\\users\\tfladmin\\source\\repos\\securewebapp\\securewebapp\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A18ABBE-51B8-4B62-BA73-F38EA9434F15}|SecureWebApp\\SecureWebApp.csproj|solutionrelative:securewebapp\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A18ABBE-51B8-4B62-BA73-F38EA9434F15}|SecureWebApp\\SecureWebApp.csproj|c:\\users\\tfladmin\\source\\repos\\securewebapp\\securewebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0A18ABBE-51B8-4B62-BA73-F38EA9434F15}|SecureWebApp\\SecureWebApp.csproj|solutionrelative:securewebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A18ABBE-51B8-4B62-BA73-F38EA9434F15}|SecureWebApp\\SecureWebApp.csproj|c:\\users\\tfladmin\\source\\repos\\securewebapp\\securewebapp\\models\\authenticateresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A18ABBE-51B8-4B62-BA73-F38EA9434F15}|SecureWebApp\\SecureWebApp.csproj|solutionrelative:securewebapp\\models\\authenticateresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A18ABBE-51B8-4B62-BA73-F38EA9434F15}|SecureWebApp\\SecureWebApp.csproj|c:\\users\\tfladmin\\source\\repos\\securewebapp\\securewebapp\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A18ABBE-51B8-4B62-BA73-F38EA9434F15}|SecureWebApp\\SecureWebApp.csproj|solutionrelative:securewebapp\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A18ABBE-51B8-4B62-BA73-F38EA9434F15}|SecureWebApp\\SecureWebApp.csproj|c:\\users\\tfladmin\\source\\repos\\securewebapp\\securewebapp\\securewebapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0A18ABBE-51B8-4B62-BA73-F38EA9434F15}|SecureWebApp\\SecureWebApp.csproj|solutionrelative:securewebapp\\securewebapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A18ABBE-51B8-4B62-BA73-F38EA9434F15}|SecureWebApp\\SecureWebApp.csproj|c:\\users\\tfladmin\\source\\repos\\securewebapp\\securewebapp\\models\\authenticaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A18ABBE-51B8-4B62-BA73-F38EA9434F15}|SecureWebApp\\SecureWebApp.csproj|solutionrelative:securewebapp\\models\\authenticaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\tfladmin\\source\\repos\\SecureWebApp\\SecureWebApp\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "SecureWebApp\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\tfladmin\\source\\repos\\SecureWebApp\\SecureWebApp\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "SecureWebApp\\Controllers\\UsersController.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAowB0AAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T06:22:33.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppSettings.cs",
+              "DocumentMoniker": "C:\\Users\\tfladmin\\source\\repos\\SecureWebApp\\SecureWebApp\\Helpers\\AppSettings.cs",
+              "RelativeDocumentMoniker": "SecureWebApp\\Helpers\\AppSettings.cs",
+              "ToolTip": "C:\\Users\\tfladmin\\source\\repos\\SecureWebApp\\SecureWebApp\\Helpers\\AppSettings.cs",
+              "RelativeToolTip": "SecureWebApp\\Helpers\\AppSettings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T06:21:32.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthroizeAttribute.cs",
+              "DocumentMoniker": "C:\\Users\\tfladmin\\source\\repos\\SecureWebApp\\SecureWebApp\\Helpers\\AuthroizeAttribute.cs",
+              "RelativeDocumentMoniker": "SecureWebApp\\Helpers\\AuthroizeAttribute.cs",
+              "ToolTip": "C:\\Users\\tfladmin\\source\\repos\\SecureWebApp\\SecureWebApp\\Helpers\\AuthroizeAttribute.cs",
+              "RelativeToolTip": "SecureWebApp\\Helpers\\AuthroizeAttribute.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T06:21:39.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "JwtMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\tfladmin\\source\\repos\\SecureWebApp\\SecureWebApp\\Helpers\\JwtMiddleware.cs",
+              "RelativeDocumentMoniker": "SecureWebApp\\Helpers\\JwtMiddleware.cs",
+              "ToolTip": "C:\\Users\\tfladmin\\source\\repos\\SecureWebApp\\SecureWebApp\\Helpers\\JwtMiddleware.cs",
+              "RelativeToolTip": "SecureWebApp\\Helpers\\JwtMiddleware.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwBIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T06:21:45.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\tfladmin\\source\\repos\\SecureWebApp\\SecureWebApp\\Services\\IUserService.cs",
+              "RelativeDocumentMoniker": "SecureWebApp\\Services\\IUserService.cs",
+              "ToolTip": "C:\\Users\\tfladmin\\source\\repos\\SecureWebApp\\SecureWebApp\\Services\\IUserService.cs",
+              "RelativeToolTip": "SecureWebApp\\Services\\IUserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T06:22:04.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\tfladmin\\source\\repos\\SecureWebApp\\SecureWebApp\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "SecureWebApp\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\tfladmin\\source\\repos\\SecureWebApp\\SecureWebApp\\Services\\UserService.cs",
+              "RelativeToolTip": "SecureWebApp\\Services\\UserService.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAgwC0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T06:22:14.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\tfladmin\\source\\repos\\SecureWebApp\\SecureWebApp\\Program.cs",
+              "RelativeDocumentMoniker": "SecureWebApp\\Program.cs",
+              "ToolTip": "C:\\Users\\tfladmin\\source\\repos\\SecureWebApp\\SecureWebApp\\Program.cs",
+              "RelativeToolTip": "SecureWebApp\\Program.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T04:57:08.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\tfladmin\\source\\repos\\SecureWebApp\\SecureWebApp\\appsettings.json",
+              "RelativeDocumentMoniker": "SecureWebApp\\appsettings.json",
+              "ToolTip": "C:\\Users\\tfladmin\\source\\repos\\SecureWebApp\\SecureWebApp\\appsettings.json",
+              "RelativeToolTip": "SecureWebApp\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAABxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-20T06:24:56.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\tfladmin\\source\\repos\\SecureWebApp\\SecureWebApp\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "SecureWebApp\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\tfladmin\\source\\repos\\SecureWebApp\\SecureWebApp\\Entities\\User.cs",
+              "RelativeToolTip": "SecureWebApp\\Entities\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T06:21:27.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthenticateResponse.cs",
+              "DocumentMoniker": "C:\\Users\\tfladmin\\source\\repos\\SecureWebApp\\SecureWebApp\\Models\\AuthenticateResponse.cs",
+              "RelativeDocumentMoniker": "SecureWebApp\\Models\\AuthenticateResponse.cs",
+              "ToolTip": "C:\\Users\\tfladmin\\source\\repos\\SecureWebApp\\SecureWebApp\\Models\\AuthenticateResponse.cs",
+              "RelativeToolTip": "SecureWebApp\\Models\\AuthenticateResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T06:21:58.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SecureWebApp",
+              "DocumentMoniker": "C:\\Users\\tfladmin\\source\\repos\\SecureWebApp\\SecureWebApp\\SecureWebApp.csproj",
+              "RelativeDocumentMoniker": "SecureWebApp\\SecureWebApp.csproj",
+              "ToolTip": "C:\\Users\\tfladmin\\source\\repos\\SecureWebApp\\SecureWebApp\\SecureWebApp.csproj",
+              "RelativeToolTip": "SecureWebApp\\SecureWebApp.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-20T06:23:18.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AuthenticateRequest.cs",
+              "DocumentMoniker": "C:\\Users\\tfladmin\\source\\repos\\SecureWebApp\\SecureWebApp\\Models\\AuthenticateRequest.cs",
+              "RelativeDocumentMoniker": "SecureWebApp\\Models\\AuthenticateRequest.cs",
+              "ToolTip": "C:\\Users\\tfladmin\\source\\repos\\SecureWebApp\\SecureWebApp\\Models\\AuthenticateRequest.cs",
+              "RelativeToolTip": "SecureWebApp\\Models\\AuthenticateRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T06:21:54.147Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

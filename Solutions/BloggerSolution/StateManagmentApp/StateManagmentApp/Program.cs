@@ -31,6 +31,9 @@ builder.Services.AddOutputCache(options =>
        builder.Expire(TimeSpan.FromSeconds(40)));
 
 });
+
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
