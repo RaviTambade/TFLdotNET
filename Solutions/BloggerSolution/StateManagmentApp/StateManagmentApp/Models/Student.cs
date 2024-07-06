@@ -1,5 +1,9 @@
-﻿namespace StateManagmentApp.Models
+﻿using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
+
+namespace StateManagmentApp.Models
 {
+    
     public class Student
     {
         public int StudentId { get; set; }

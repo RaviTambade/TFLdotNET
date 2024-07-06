@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\SecureSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E80F28B2-4248-4B1B-9712-30C72487E953}|SecureRolesWebApp\\SecureRolesWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\securesolution\\secureroleswebapp\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E80F28B2-4248-4B1B-9712-30C72487E953}|SecureRolesWebApp\\SecureRolesWebApp.csproj|solutionrelative:secureroleswebapp\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E80F28B2-4248-4B1B-9712-30C72487E953}|SecureRolesWebApp\\SecureRolesWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\securesolution\\secureroleswebapp\\filters\\authroizeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E80F28B2-4248-4B1B-9712-30C72487E953}|SecureRolesWebApp\\SecureRolesWebApp.csproj|solutionrelative:secureroleswebapp\\filters\\authroizeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E80F28B2-4248-4B1B-9712-30C72487E953}|SecureRolesWebApp\\SecureRolesWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\securesolution\\secureroleswebapp\\helpers\\jwtmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E80F28B2-4248-4B1B-9712-30C72487E953}|SecureRolesWebApp\\SecureRolesWebApp.csproj|solutionrelative:secureroleswebapp\\helpers\\jwtmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E80F28B2-4248-4B1B-9712-30C72487E953}|SecureRolesWebApp\\SecureRolesWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\securesolution\\secureroleswebapp\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E80F28B2-4248-4B1B-9712-30C72487E953}|SecureRolesWebApp\\SecureRolesWebApp.csproj|solutionrelative:secureroleswebapp\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E80F28B2-4248-4B1B-9712-30C72487E953}|SecureRolesWebApp\\SecureRolesWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\securesolution\\secureroleswebapp\\filters\\authroizeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E80F28B2-4248-4B1B-9712-30C72487E953}|SecureRolesWebApp\\SecureRolesWebApp.csproj|solutionrelative:secureroleswebapp\\filters\\authroizeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E80F28B2-4248-4B1B-9712-30C72487E953}|SecureRolesWebApp\\SecureRolesWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\securesolution\\secureroleswebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E80F28B2-4248-4B1B-9712-30C72487E953}|SecureRolesWebApp\\SecureRolesWebApp.csproj|solutionrelative:secureroleswebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E80F28B2-4248-4B1B-9712-30C72487E953}|SecureRolesWebApp\\SecureRolesWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\securesolution\\secureroleswebapp\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E80F28B2-4248-4B1B-9712-30C72487E953}|SecureRolesWebApp\\SecureRolesWebApp.csproj|solutionrelative:secureroleswebapp\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E80F28B2-4248-4B1B-9712-30C72487E953}|SecureRolesWebApp\\SecureRolesWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\securesolution\\secureroleswebapp\\secureroleswebapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -74,7 +82,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -83,32 +91,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "JwtMiddleware.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\SecureSolution\\SecureRolesWebApp\\Helpers\\JwtMiddleware.cs",
+              "RelativeDocumentMoniker": "SecureRolesWebApp\\Helpers\\JwtMiddleware.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\SecureSolution\\SecureRolesWebApp\\Helpers\\JwtMiddleware.cs",
+              "RelativeToolTip": "SecureRolesWebApp\\Helpers\\JwtMiddleware.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAwwDYAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T11:18:24.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\SecureSolution\\SecureRolesWebApp\\appsettings.json",
+              "RelativeDocumentMoniker": "SecureRolesWebApp\\appsettings.json",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\SecureSolution\\SecureRolesWebApp\\appsettings.json",
+              "RelativeToolTip": "SecureRolesWebApp\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-21T11:17:40.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "UserService.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\SecureSolution\\SecureRolesWebApp\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "SecureRolesWebApp\\Services\\UserService.cs",
               "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\SecureSolution\\SecureRolesWebApp\\Services\\UserService.cs",
               "RelativeToolTip": "SecureRolesWebApp\\Services\\UserService.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAQwBwAAAAAAAAA",
+              "ViewState": "AQIAABcAAAAAAAAAAAAQwEUAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-21T05:53:05.446Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "AuthroizeAttribute.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\SecureSolution\\SecureRolesWebApp\\Filters\\AuthroizeAttribute.cs",
               "RelativeDocumentMoniker": "SecureRolesWebApp\\Filters\\AuthroizeAttribute.cs",
               "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\SecureSolution\\SecureRolesWebApp\\Filters\\AuthroizeAttribute.cs",
               "RelativeToolTip": "SecureRolesWebApp\\Filters\\AuthroizeAttribute.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAgwBIAAAAAAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-21T05:51:16.18Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "AuthroizeAttribute.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\SecureSolution\\SecureWebApp\\Helpers\\AuthroizeAttribute.cs",
               "RelativeDocumentMoniker": "SecureWebApp\\Helpers\\AuthroizeAttribute.cs",
@@ -116,12 +150,11 @@
               "RelativeToolTip": "SecureWebApp\\Helpers\\AuthroizeAttribute.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T06:21:39.722Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-20T06:21:39.722Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "SecureRolesWebApp.csproj",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\SecureSolution\\SecureRolesWebApp\\SecureRolesWebApp.csproj",
               "RelativeDocumentMoniker": "SecureRolesWebApp\\SecureRolesWebApp.csproj",
@@ -129,12 +162,11 @@
               "RelativeToolTip": "SecureRolesWebApp\\SecureRolesWebApp.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-06-21T05:43:53.934Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-21T05:43:53.934Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "UsersController.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\SecureSolution\\SecureRolesWebApp\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "SecureRolesWebApp\\Controllers\\UsersController.cs",
@@ -147,7 +179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "SecureMembershipWebApp.csproj",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\SecureSolution\\SecureWebApp\\SecureMembershipWebApp.csproj",
               "RelativeDocumentMoniker": "SecureWebApp\\SecureMembershipWebApp.csproj",
@@ -155,12 +187,11 @@
               "RelativeToolTip": "SecureWebApp\\SecureMembershipWebApp.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-06-20T06:23:18.209Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-20T06:23:18.209Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\SecureSolution\\SecureWebApp\\Program.cs",
               "RelativeDocumentMoniker": "SecureWebApp\\Program.cs",
@@ -172,7 +203,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "JwtMiddleware.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\SecureSolution\\SecureWebApp\\Helpers\\JwtMiddleware.cs",
               "RelativeDocumentMoniker": "SecureWebApp\\Helpers\\JwtMiddleware.cs",
@@ -180,12 +211,11 @@
               "RelativeToolTip": "SecureWebApp\\Helpers\\JwtMiddleware.cs",
               "ViewState": "AQIAABcAAAAAAAAAAAA3wCIAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T06:21:45.656Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-20T06:21:45.656Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "UserService.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\SecureSolution\\SecureWebApp\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "SecureWebApp\\Services\\UserService.cs",
@@ -193,12 +223,11 @@
               "RelativeToolTip": "SecureWebApp\\Services\\UserService.cs",
               "ViewState": "AQIAABkAAAAAAAAAAAAYwCMAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T06:22:14.76Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-20T06:22:14.76Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "IUserService.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\SecureSolution\\SecureWebApp\\Services\\IUserService.cs",
               "RelativeDocumentMoniker": "SecureWebApp\\Services\\IUserService.cs",
@@ -210,7 +239,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "UsersController.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\SecureSolution\\SecureWebApp\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "SecureWebApp\\Controllers\\UsersController.cs",
@@ -222,7 +251,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "AppSettings.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\SecureSolution\\SecureWebApp\\Helpers\\AppSettings.cs",
               "RelativeDocumentMoniker": "SecureWebApp\\Helpers\\AppSettings.cs",
@@ -234,7 +263,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\SecureSolution\\SecureWebApp\\appsettings.json",
               "RelativeDocumentMoniker": "SecureWebApp\\appsettings.json",
@@ -246,7 +275,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\SecureSolution\\SecureWebApp\\Entities\\User.cs",
               "RelativeDocumentMoniker": "SecureWebApp\\Entities\\User.cs",
@@ -258,7 +287,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "AuthenticateResponse.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\SecureSolution\\SecureWebApp\\Models\\AuthenticateResponse.cs",
               "RelativeDocumentMoniker": "SecureWebApp\\Models\\AuthenticateResponse.cs",
@@ -270,7 +299,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "AuthenticateRequest.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\SecureSolution\\SecureWebApp\\Models\\AuthenticateRequest.cs",
               "RelativeDocumentMoniker": "SecureWebApp\\Models\\AuthenticateRequest.cs",

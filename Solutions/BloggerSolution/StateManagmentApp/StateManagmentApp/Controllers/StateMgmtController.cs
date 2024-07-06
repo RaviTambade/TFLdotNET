@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
- 
-using StateManagmentApp.Models;
+ using StateManagmentApp.Models;
 using System.Reflection.Metadata.Ecma335;
 namespace StateManagmentApp.Controllers
 {
@@ -21,13 +20,14 @@ namespace StateManagmentApp.Controllers
             return View();
         }
 
-        public IActionResult SetQueryString([FromQuery] string FirstName, [FromQuery] string LastName)
+        public IActionResult SetQueryString([FromQuery] string FirstName, 
+                                            [FromQuery] string LastName)
         {
             var data = new { FullName = FirstName + "  " + LastName };
+
             return Ok(data);
         }
         
-
 
         //Cookie
         //Cookies are written by server and sent to client side
@@ -55,6 +55,9 @@ namespace StateManagmentApp.Controllers
             ViewBag.cookieVal = CookieValue;
             return View();
         }
+
+
+
 
     }
 }

@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1BA6FF0E-FB9F-447D-8396-7E57B4AA2079}|ECommerceSolution\\ECommerceApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\bloggersolution\\ecommercesolution\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1BA6FF0E-FB9F-447D-8396-7E57B4AA2079}|ECommerceSolution\\ECommerceApp.csproj|solutionrelative:ecommercesolution\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D04EFAAA-C808-4BD8-8A1A-3818B5111488}|AuthLib\\AuthLib.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\bloggersolution\\authlib\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D04EFAAA-C808-4BD8-8A1A-3818B5111488}|AuthLib\\AuthLib.csproj|solutionrelative:authlib\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1BA6FF0E-FB9F-447D-8396-7E57B4AA2079}|ECommerceSolution\\ECommerceApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\bloggersolution\\ecommercesolution\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1BA6FF0E-FB9F-447D-8396-7E57B4AA2079}|ECommerceSolution\\ECommerceApp.csproj|solutionrelative:ecommercesolution\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D04EFAAA-C808-4BD8-8A1A-3818B5111488}|AuthLib\\AuthLib.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\bloggersolution\\authlib\\repositories\\hrrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D04EFAAA-C808-4BD8-8A1A-3818B5111488}|AuthLib\\AuthLib.csproj|solutionrelative:authlib\\repositories\\hrrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1BA6FF0E-FB9F-447D-8396-7E57B4AA2079}|ECommerceSolution\\ECommerceApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\bloggersolution\\ecommercesolution\\views\\products\\insert.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1BA6FF0E-FB9F-447D-8396-7E57B4AA2079}|ECommerceSolution\\ECommerceApp.csproj|solutionrelative:ecommercesolution\\views\\products\\insert.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D04EFAAA-C808-4BD8-8A1A-3818B5111488}|AuthLib\\AuthLib.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\bloggersolution\\authlib\\repositories\\credentialrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D04EFAAA-C808-4BD8-8A1A-3818B5111488}|AuthLib\\AuthLib.csproj|solutionrelative:authlib\\repositories\\credentialrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1BA6FF0E-FB9F-447D-8396-7E57B4AA2079}|ECommerceSolution\\ECommerceApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\bloggersolution\\ecommercesolution\\ecommerceapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{1BA6FF0E-FB9F-447D-8396-7E57B4AA2079}|ECommerceSolution\\ECommerceApp.csproj|solutionrelative:ecommercesolution\\ecommerceapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{D04EFAAA-C808-4BD8-8A1A-3818B5111488}|AuthLib\\AuthLib.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\bloggersolution\\authlib\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D04EFAAA-C808-4BD8-8A1A-3818B5111488}|AuthLib\\AuthLib.csproj|solutionrelative:authlib\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1BA6FF0E-FB9F-447D-8396-7E57B4AA2079}|ECommerceSolution\\ECommerceApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\bloggersolution\\ecommercesolution\\views\\products\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1BA6FF0E-FB9F-447D-8396-7E57B4AA2079}|ECommerceSolution\\ECommerceApp.csproj|solutionrelative:ecommercesolution\\views\\products\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D04EFAAA-C808-4BD8-8A1A-3818B5111488}|AuthLib\\AuthLib.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\bloggersolution\\authlib\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D04EFAAA-C808-4BD8-8A1A-3818B5111488}|AuthLib\\AuthLib.csproj|solutionrelative:authlib\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{14F25182-A848-4535-9F30-8F985A7E9CA2}|BloggersControllerWebAPI\\BloggersControllerWebAPI.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\bloggersolution\\bloggerscontrollerwebapi\\controllers\\blogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14F25182-A848-4535-9F30-8F985A7E9CA2}|BloggersControllerWebAPI\\BloggersControllerWebAPI.csproj|solutionrelative:bloggerscontrollerwebapi\\controllers\\blogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6CC74A9F-D43F-4D1C-A7B3-8FD7B4D1EF8B}|CatalogAPI\\CatalogAPI.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\bloggersolution\\catalogapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CC74A9F-D43F-4D1C-A7B3-8FD7B4D1EF8B}|CatalogAPI\\CatalogAPI.csproj|solutionrelative:catalogapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13D2CB03-3867-4CD4-AB5A-4B0ECDF462E2}|StoreApp\\StoreApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\bloggersolution\\storeapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13D2CB03-3867-4CD4-AB5A-4B0ECDF462E2}|StoreApp\\StoreApp.csproj|solutionrelative:storeapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,80 +46,93 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Update.cshtml",
-              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\ECommerceSolution\\Views\\Products\\Update.cshtml",
-              "RelativeDocumentMoniker": "ECommerceSolution\\Views\\Products\\Update.cshtml",
-              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\ECommerceSolution\\Views\\Products\\Update.cshtml",
-              "RelativeToolTip": "ECommerceSolution\\Views\\Products\\Update.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-13T09:05:07.419Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Insert.cshtml",
-              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\ECommerceSolution\\Views\\Products\\Insert.cshtml",
-              "RelativeDocumentMoniker": "ECommerceSolution\\Views\\Products\\Insert.cshtml",
-              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\ECommerceSolution\\Views\\Products\\Insert.cshtml",
-              "RelativeToolTip": "ECommerceSolution\\Views\\Products\\Insert.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-13T09:04:58.082Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProductsController.cs",
-              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\ECommerceSolution\\Controllers\\ProductsController.cs",
-              "RelativeDocumentMoniker": "ECommerceSolution\\Controllers\\ProductsController.cs",
-              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\ECommerceSolution\\Controllers\\ProductsController.cs",
-              "RelativeToolTip": "ECommerceSolution\\Controllers\\ProductsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEAAAAAJAAAA",
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\AuthLib\\Repositories\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "AuthLib\\Repositories\\ProductRepository.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\AuthLib\\Repositories\\ProductRepository.cs",
+              "RelativeToolTip": "AuthLib\\Repositories\\ProductRepository.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T09:04:27.692Z",
+              "WhenOpened": "2024-07-06T15:03:15.614Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\ECommerceSolution\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "ECommerceSolution\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\ECommerceSolution\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "ECommerceSolution\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "HRRepository.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\AuthLib\\Repositories\\HRRepository.cs",
+              "RelativeDocumentMoniker": "AuthLib\\Repositories\\HRRepository.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\AuthLib\\Repositories\\HRRepository.cs",
+              "RelativeToolTip": "AuthLib\\Repositories\\HRRepository.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAgwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T09:04:24Z",
+              "WhenOpened": "2024-07-06T15:03:11.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CredentialRepository.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\AuthLib\\Repositories\\CredentialRepository.cs",
+              "RelativeDocumentMoniker": "AuthLib\\Repositories\\CredentialRepository.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\AuthLib\\Repositories\\CredentialRepository.cs",
+              "RelativeToolTip": "AuthLib\\Repositories\\CredentialRepository.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T15:03:06.153Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ECommerceApp",
-              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\ECommerceSolution\\ECommerceApp.csproj",
-              "RelativeDocumentMoniker": "ECommerceSolution\\ECommerceApp.csproj",
-              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\ECommerceSolution\\ECommerceApp.csproj",
-              "RelativeToolTip": "ECommerceSolution\\ECommerceApp.csproj",
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\AuthLib\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "AuthLib\\Entities\\Product.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\AuthLib\\Entities\\Product.cs",
+              "RelativeToolTip": "AuthLib\\Entities\\Product.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-06-13T09:04:18.215Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T15:03:03.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\AuthLib\\Entities\\Employee.cs",
+              "RelativeDocumentMoniker": "AuthLib\\Entities\\Employee.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\AuthLib\\Entities\\Employee.cs",
+              "RelativeToolTip": "AuthLib\\Entities\\Employee.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T15:03:00.428Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "BlogsController.cs",
-              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\BloggersControllerWebAPI\\Controllers\\BlogsController.cs",
-              "RelativeDocumentMoniker": "BloggersControllerWebAPI\\Controllers\\BlogsController.cs",
-              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\BloggersControllerWebAPI\\Controllers\\BlogsController.cs",
-              "RelativeToolTip": "BloggersControllerWebAPI\\Controllers\\BlogsController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAAvAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\CatalogAPI\\Program.cs",
+              "RelativeDocumentMoniker": "CatalogAPI\\Program.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\CatalogAPI\\Program.cs",
+              "RelativeToolTip": "CatalogAPI\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T09:04:08.666Z",
+              "WhenOpened": "2024-07-06T15:02:41.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StoreApp\\Program.cs",
+              "RelativeDocumentMoniker": "StoreApp\\Program.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\BloggerSolution\\StoreApp\\Program.cs",
+              "RelativeToolTip": "StoreApp\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T15:01:32.35Z",
               "EditorCaption": ""
             }
           ]

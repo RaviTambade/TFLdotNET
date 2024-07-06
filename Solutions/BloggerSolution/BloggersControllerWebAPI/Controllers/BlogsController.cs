@@ -21,8 +21,8 @@ namespace BloggersControllerWebAPI.Controllers
         {
             List<Post> posts = new List<Post>
             {
-                new Post { Title = "Job Guarantee Course: A Delusion.", Content = "sdfjlasjflasjldfjsaldfjlsadjflsadj" },
-                new Post { Title = "Are we on right Path?", Content = "sdfyutyutyu 888888888888888888888888 adj" },
+                new Post { Title = "Job Guarantee Course: A Delusion.", Content = "There is no such course which gives Job gurantee, wake up" },
+                new Post { Title = "Are we on right Path?", Content = "Build your skill, Develop your  Project, Learn by doing not by watchting and reading" },
              };
             return posts;
         }
