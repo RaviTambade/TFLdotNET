@@ -54,6 +54,7 @@ Create beautiful apps and scalable cloud services, faster and easier with the fr
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/websockets.md"> WebSockets</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/signalR.md"> SignalR</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/deploywebapp.md"> Deploying ASP .NET MVC application</a>
+- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/deploywebappkubernetes.md"> Deploying  ASP.NET to Kubernetes</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/cicdgit.md"> CI/CD using Git Actions</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/cicdjenkins.md"> CI/CD using Jenkins</a>
  
