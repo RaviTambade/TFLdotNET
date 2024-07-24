@@ -14,6 +14,7 @@ Create beautiful apps and scalable cloud services, faster and easier with the fr
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/comparingobjects.md">Object Comparision</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/LINQ.md">LINQ</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/garbagecollection.md">Garbage Collection(GC)</a>
+- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/assembly.md">Assembly in .net core</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/Reflection.md">Reflection</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/Serialization.md">Serialization</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/delegate.md">Delegates</a>
