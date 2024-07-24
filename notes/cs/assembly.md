@@ -1,4 +1,4 @@
-# assembly in .NET
+# Assembly in .NET
 
 An assembly in .NET is a fundamental unit of deployment, versioning, and security for managed code applications. It serves as a package that contains compiled code (IL code), metadata, and resources needed to execute a program. 
 
