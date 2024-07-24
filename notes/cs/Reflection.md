@@ -138,44 +138,48 @@ There are several uses including:
 We can Create a dynamic library using `System.Reflection.Emit`. The dynamic library could add IL (Intermediate Language) code dynamically at runtime and emitting it as a new assembly. Here's a simple example demonstrating how to create a dynamic library with a single class containing a method using `System.Reflection.Emit`:
 
 ```csharp
+//Program.cs file content
+
 using System;
 using System.Reflection;
 using System.Reflection.Emit;
+using System.Reflection.PortableExecutable;
 
-class Program
-{
-    static void Main()
-    {
-        // Create a dynamic assembly
-        AssemblyName assemblyName = new AssemblyName("DynamicLibrary");
-        AssemblyBuilder assemblyBuilder = AssemblyBuilder.DefineDynamicAssembly(assemblyName, AssemblyBuilderAccess.RunAndSave);
+// Create a dynamic assembly
+AssemblyName assemblyName = new AssemblyName("DynamicLibrary");
+AssemblyBuilder assemblyBuilder = AssemblyBuilder.DefineDynamicAssembly(assemblyName, AssemblyBuilderAccess.Run);
 
-        // Define a dynamic module
-        ModuleBuilder moduleBuilder = assemblyBuilder.DefineDynamicModule("DynamicModule", "DynamicLibrary.dll");
+// Define a dynamic module
+ModuleBuilder moduleBuilder = assemblyBuilder.DefineDynamicModule("DynamicModule");
 
-        // Define a dynamic type
-        TypeBuilder typeBuilder = moduleBuilder.DefineType("DynamicClass", TypeAttributes.Public);
+// Define a dynamic type
+TypeBuilder typeBuilder = moduleBuilder.DefineType("DynamicClass", TypeAttributes.Public);
 
-        // Define a dynamic method
-        MethodBuilder methodBuilder = typeBuilder.DefineMethod("DynamicMethod", MethodAttributes.Public | MethodAttributes.Static, typeof(void), null);
-        ILGenerator ilGenerator = methodBuilder.GetILGenerator();
+// Define a dynamic method
+MethodBuilder methodBuilder = typeBuilder.DefineMethod("DynamicMethod", MethodAttributes.Public | MethodAttributes.Static, typeof(void), null);
+ILGenerator ilGenerator = methodBuilder.GetILGenerator();
 
-        // Emit IL instructions
-        ilGenerator.Emit(OpCodes.Ldstr, "Hello, dynamic world!"); // Load string onto the stack
-        ilGenerator.Emit(OpCodes.Call, typeof(Console).GetMethod("WriteLine", new[] { typeof(string) })); // Call Console.WriteLine method
-        ilGenerator.Emit(OpCodes.Ret); // Return from method
+// Emit IL instructions
+ilGenerator.Emit(OpCodes.Ldstr, "Welcome to Transflower Dynamic Code generated using Refletion!"); // Load string onto the stack
+ilGenerator.Emit(OpCodes.Call, typeof(Console).GetMethod("WriteLine", new[] { typeof(string) })); 
+// Call Console.WriteLine method
+ilGenerator.Emit(OpCodes.Ret);
+// Return from method
 
-        // Create the type
-        Type dynamicType = typeBuilder.CreateType();
 
-        // Save the assembly
-        assemblyBuilder.Save("DynamicLibrary.dll");
+// Create the type
+Type dynamicType = typeBuilder.CreateType();
 
-        // Instantiate the dynamic type and invoke the method
-        dynamic instance = Activator.CreateInstance(dynamicType);
-        instance.DynamicMethod();
-    }
-}
+
+// Instantiate the dynamic type and invoke the method
+object   instance = Activator.CreateInstance(dynamicType);
+Type tt = instance.GetType();
+BindingFlags flags = BindingFlags.InvokeMethod | BindingFlags.Instance |
+          BindingFlags.Public | BindingFlags.Static;
+
+tt.InvokeMember("DynamicMethod", flags, null,null,null);
+
+
 ```
 
 This example dynamically creates a library named "DynamicLibrary.dll" containing a single class named "DynamicClass" with a method named "DynamicMethod". Inside the method, it emits IL instructions to load a string onto the stack, call `Console.WriteLine`, and return. Finally, it saves the dynamic assembly to a file and then loads and invokes the method dynamically.
