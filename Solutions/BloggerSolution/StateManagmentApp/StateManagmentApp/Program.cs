@@ -18,7 +18,8 @@ builder.Services.AddSession(options =>  //--------------------*****
 
 
 //Output Cache configuration
-//builder.Services.AddOutputCache();
+ //builder.Services.AddOutputCache();
+
 builder.Services.AddOutputCache(options =>
 {
     options.AddBasePolicy(builder =>

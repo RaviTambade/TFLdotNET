@@ -18,5 +18,16 @@ namespace StateManagmentApp.Controllers
             products.Add("Jasmines");
             return Json(products);
         }
+
+       
+        public IActionResult Details()
+        {
+            List<string> products = new List<string>();
+            products.Add("Gerbera");
+            products.Add("Rose");
+            products.Add("Jasmines");
+            return Json(products);
+        }
+
     }
 }
