@@ -127,3 +127,65 @@ While the .NET runtime manages most aspects of garbage collection automatically,
 - **Profile and Monitor**: Use performance tools to analyze GC behavior and optimize application performance.
 
 Understanding garbage collection and the concept of generations helps in writing efficient and scalable applications in C#, ensuring that memory resources are managed effectively throughout the application's lifecycle.
+
+
+
+## GC.Collect(),`GC.WaitForPendingFinalizers(), and GC.SuppressFinalize() methods
+
+The methods `GC.Collect()`, `GC.WaitForPendingFinalizers()`, and `GC.SuppressFinalize()` are related to garbage collection in .NET (C#). Here’s what each of these methods does:
+
+1. **`GC.Collect()`**:
+   - This method is used to manually trigger garbage collection in .NET.
+   - Garbage collection in .NET is automatic, but calling `GC.Collect()` suggests to the runtime that it should attempt to reclaim unused memory immediately.
+   - It's generally recommended to let the runtime handle garbage collection automatically, as it is optimized for typical scenarios. Manual calls to `GC.Collect()` should be used sparingly and with caution, as they can impact performance negatively if misused.
+
+2. **`GC.WaitForPendingFinalizers()`**:
+   - This method blocks the current thread until all finalizable objects have been finalized.
+   - Finalization is the process where the runtime calls the finalizer (destructor) of an object before it is reclaimed by garbage collection.
+   - `GC.WaitForPendingFinalizers()` ensures that any pending finalization is completed before continuing execution. It's often used in conjunction with `GC.Collect()` to ensure that all objects eligible for finalization are actually finalized before proceeding.
+
+3. **`GC.SuppressFinalize(object obj)`**:
+   - This method requests that the runtime does not call the finalizer (destructor) for the specified object.
+   - It is typically used when an object’s finalizer is unnecessary because its resources are managed explicitly through other means (like `Dispose()` method or using `using` statements for disposable objects).
+   - Calling `GC.SuppressFinalize()` prevents the runtime from adding the object to the finalization queue, which can improve performance by avoiding unnecessary finalization overhead.
+
+### Common Usage Pattern:
+- When you want to ensure immediate garbage collection of eligible objects, you might use `GC.Collect()` followed by `GC.WaitForPendingFinalizers()` to ensure all finalizable objects are finalized.
+- If you have a class implementing `IDisposable`, you might call `GC.SuppressFinalize(this)` in the `Dispose()` method to prevent the finalizer from running if the object has been properly disposed.
+
+### Example Usage:
+```csharp
+public class MyClass : IDisposable
+{
+    // Disposable pattern
+    private bool disposed = false;
+
+    ~MyClass()
+    {
+        Dispose(false);
+    }
+
+    public void Dispose()
+    {
+        Dispose(true);
+        GC.SuppressFinalize(this); // No need to finalize if Dispose was called
+    }
+
+    protected virtual void Dispose(bool disposing)
+    {
+        if (!disposed)
+        {
+            if (disposing)
+            {
+                // Dispose managed resources
+            }
+
+            // Dispose unmanaged resources
+
+            disposed = true;
+        }
+    }
+}
+```
+
+In summary, `GC.Collect()`, `GC.WaitForPendingFinalizers()`, and `GC.SuppressFinalize()` are tools provided by .NET for managing memory and finalization behavior. Their usage should be carefully considered to avoid unnecessary performance impacts or incorrect memory management practices.
