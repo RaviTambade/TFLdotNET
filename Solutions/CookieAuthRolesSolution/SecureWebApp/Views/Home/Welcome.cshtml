@@ -1,0 +1,10 @@
+﻿@{
+    var user = User.Identity.Name;
+}
+
+<h1>Welcome @user!</h1>
+<p>If you're logged in.</p>
+
+<form action="/auth/logout"  method="post">
+    <button type="submit">Logout</button>
+</form>
