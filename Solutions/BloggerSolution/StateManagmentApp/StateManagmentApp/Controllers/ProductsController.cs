@@ -9,7 +9,7 @@ namespace StateManagmentApp.Controllers
         //ON first request  data is fetched and kept in global cache
         //and the data is sent to repsonse
         //[OutputCache]
-        [OutputCache(PolicyName = "CacheFor40Seconds")]
+        [OutputCache(PolicyName = "CacheFor10Seconds")]
         public IActionResult Index()
         {
             List<string> products = new List<string>();

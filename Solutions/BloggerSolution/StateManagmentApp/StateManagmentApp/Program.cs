@@ -30,7 +30,6 @@ builder.Services.AddOutputCache(options =>
 
     options.AddPolicy("CacheFor40Seconds", builder =>
        builder.Expire(TimeSpan.FromSeconds(40)));
-
 });
 
 
