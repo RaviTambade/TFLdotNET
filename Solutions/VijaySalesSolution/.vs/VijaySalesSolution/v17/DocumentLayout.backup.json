@@ -1,0 +1,426 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E122A487-136C-4D7D-8796-BD39305EC65F}|StoreApp\\StoreApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\storeapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E122A487-136C-4D7D-8796-BD39305EC65F}|StoreApp\\StoreApp.csproj|solutionrelative:storeapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B08EF23F-A2B3-4352-A141-D518C28F4805}|AuthLib\\AuthLib.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\authlib\\authmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B08EF23F-A2B3-4352-A141-D518C28F4805}|AuthLib\\AuthLib.csproj|solutionrelative:authlib\\authmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B08EF23F-A2B3-4352-A141-D518C28F4805}|AuthLib\\AuthLib.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\authlib\\repositories\\hrrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B08EF23F-A2B3-4352-A141-D518C28F4805}|AuthLib\\AuthLib.csproj|solutionrelative:authlib\\repositories\\hrrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B08EF23F-A2B3-4352-A141-D518C28F4805}|AuthLib\\AuthLib.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\authlib\\repositories\\credentialrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B08EF23F-A2B3-4352-A141-D518C28F4805}|AuthLib\\AuthLib.csproj|solutionrelative:authlib\\repositories\\credentialrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B08EF23F-A2B3-4352-A141-D518C28F4805}|AuthLib\\AuthLib.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\authlib\\rolesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B08EF23F-A2B3-4352-A141-D518C28F4805}|AuthLib\\AuthLib.csproj|solutionrelative:authlib\\rolesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{867DF9EF-BB63-45A4-8E62-E16AB819D825}|BolgPost\\BolgPost.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\bolgpost\\repositories\\blogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{867DF9EF-BB63-45A4-8E62-E16AB819D825}|BolgPost\\BolgPost.csproj|solutionrelative:bolgpost\\repositories\\blogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{867DF9EF-BB63-45A4-8E62-E16AB819D825}|BolgPost\\BolgPost.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\bolgpost\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{867DF9EF-BB63-45A4-8E62-E16AB819D825}|BolgPost\\BolgPost.csproj|solutionrelative:bolgpost\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AF1A437-CCDB-4CDF-8789-42B5DB915958}|CatalogAPI\\CatalogAPI.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\catalogapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AF1A437-CCDB-4CDF-8789-42B5DB915958}|CatalogAPI\\CatalogAPI.csproj|solutionrelative:catalogapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB14167C-C222-4C88-964C-5BF2F2640996}|DemoDBApp\\DemoDBApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\demodbapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB14167C-C222-4C88-964C-5BF2F2640996}|DemoDBApp\\DemoDBApp.csproj|solutionrelative:demodbapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E122A487-136C-4D7D-8796-BD39305EC65F}|StoreApp\\StoreApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\storeapp\\storeapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E122A487-136C-4D7D-8796-BD39305EC65F}|StoreApp\\StoreApp.csproj|solutionrelative:storeapp\\storeapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\hrormapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|solutionrelative:hrormapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\hrormapp\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|solutionrelative:hrormapp\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\hrormapp\\dbcontexts\\hrcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|solutionrelative:hrormapp\\dbcontexts\\hrcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\hrormapp\\dbcontexts\\schoollibrarycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|solutionrelative:hrormapp\\dbcontexts\\schoollibrarycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\hrormapp\\dbcontexts\\librarycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|solutionrelative:hrormapp\\dbcontexts\\librarycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\hrormapp\\repositories\\schoollibrary\\schoollibraryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|solutionrelative:hrormapp\\repositories\\schoollibrary\\schoollibraryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\hrormapp\\entities\\schoollibrary\\bookstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|solutionrelative:hrormapp\\entities\\schoollibrary\\bookstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\hrormapp\\entities\\schoollibrary\\bookauthor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|solutionrelative:hrormapp\\entities\\schoollibrary\\bookauthor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\hrormapp\\entities\\schoollibrary\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|solutionrelative:hrormapp\\entities\\schoollibrary\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\hrormapp\\entities\\schoollibrary\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|solutionrelative:hrormapp\\entities\\schoollibrary\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\hrormapp\\entities\\schoollibrary\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|solutionrelative:hrormapp\\entities\\schoollibrary\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\hrormapp\\entities\\library\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|solutionrelative:hrormapp\\entities\\library\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\hrormapp\\entities\\library\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|solutionrelative:hrormapp\\entities\\library\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\hrormapp\\repositories\\library\\libraryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|solutionrelative:hrormapp\\repositories\\library\\libraryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\hrormapp\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|solutionrelative:hrormapp\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HRRepository.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\AuthLib\\Repositories\\HRRepository.cs",
+              "RelativeDocumentMoniker": "AuthLib\\Repositories\\HRRepository.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\AuthLib\\Repositories\\HRRepository.cs",
+              "RelativeToolTip": "AuthLib\\Repositories\\HRRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T02:50:59.339Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CredentialRepository.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\AuthLib\\Repositories\\CredentialRepository.cs",
+              "RelativeDocumentMoniker": "AuthLib\\Repositories\\CredentialRepository.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\AuthLib\\Repositories\\CredentialRepository.cs",
+              "RelativeToolTip": "AuthLib\\Repositories\\CredentialRepository.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T02:50:55.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthManager.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\AuthLib\\AuthManager.cs",
+              "RelativeDocumentMoniker": "AuthLib\\AuthManager.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\AuthLib\\AuthManager.cs",
+              "RelativeToolTip": "AuthLib\\AuthManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T02:50:52.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RolesManager.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\AuthLib\\RolesManager.cs",
+              "RelativeDocumentMoniker": "AuthLib\\RolesManager.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\AuthLib\\RolesManager.cs",
+              "RelativeToolTip": "AuthLib\\RolesManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T02:50:49.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\DemoDBApp\\Program.cs",
+              "RelativeDocumentMoniker": "DemoDBApp\\Program.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\DemoDBApp\\Program.cs",
+              "RelativeToolTip": "DemoDBApp\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T02:50:19.32Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\StoreApp\\Program.cs",
+              "RelativeDocumentMoniker": "StoreApp\\Program.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\StoreApp\\Program.cs",
+              "RelativeToolTip": "StoreApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T06:04:13.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "StoreApp.csproj",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\StoreApp\\StoreApp.csproj",
+              "RelativeDocumentMoniker": "StoreApp\\StoreApp.csproj",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\StoreApp\\StoreApp.csproj",
+              "RelativeToolTip": "StoreApp\\StoreApp.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-01T06:04:10.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BlogRepository.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\BolgPost\\Repositories\\BlogRepository.cs",
+              "RelativeDocumentMoniker": "BolgPost\\Repositories\\BlogRepository.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\BolgPost\\Repositories\\BlogRepository.cs",
+              "RelativeToolTip": "BolgPost\\Repositories\\BlogRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T06:03:59.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\BolgPost\\Program.cs",
+              "RelativeDocumentMoniker": "BolgPost\\Program.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\BolgPost\\Program.cs",
+              "RelativeToolTip": "BolgPost\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T06:03:56.999Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\CatalogAPI\\Program.cs",
+              "RelativeDocumentMoniker": "CatalogAPI\\Program.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\CatalogAPI\\Program.cs",
+              "RelativeToolTip": "CatalogAPI\\Program.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T06:03:45.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "BookAuthor.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Entities\\SchoolLibrary\\BookAuthor.cs",
+              "RelativeDocumentMoniker": "HRORMApp\\Entities\\SchoolLibrary\\BookAuthor.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Entities\\SchoolLibrary\\BookAuthor.cs",
+              "RelativeToolTip": "HRORMApp\\Entities\\SchoolLibrary\\BookAuthor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T09:25:22.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Student.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Entities\\SchoolLibrary\\Student.cs",
+              "RelativeDocumentMoniker": "HRORMApp\\Entities\\SchoolLibrary\\Student.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Entities\\SchoolLibrary\\Student.cs",
+              "RelativeToolTip": "HRORMApp\\Entities\\SchoolLibrary\\Student.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T09:23:09.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Program.cs",
+              "RelativeDocumentMoniker": "HRORMApp\\Program.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Program.cs",
+              "RelativeToolTip": "HRORMApp\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABsAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T09:11:16.986Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HRContext.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\DbContexts\\HRContext.cs",
+              "RelativeDocumentMoniker": "HRORMApp\\DbContexts\\HRContext.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\DbContexts\\HRContext.cs",
+              "RelativeToolTip": "HRORMApp\\DbContexts\\HRContext.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABYAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T09:00:12.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Entities\\Employee.cs",
+              "RelativeDocumentMoniker": "HRORMApp\\Entities\\Employee.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Entities\\Employee.cs",
+              "RelativeToolTip": "HRORMApp\\Entities\\Employee.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T09:00:39.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SchoolLibraryContext.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\DbContexts\\SchoolLibraryContext.cs",
+              "RelativeDocumentMoniker": "HRORMApp\\DbContexts\\SchoolLibraryContext.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\DbContexts\\SchoolLibraryContext.cs",
+              "RelativeToolTip": "HRORMApp\\DbContexts\\SchoolLibraryContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T09:21:41.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SchoolLibraryRepository.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Repositories\\SchoolLibrary\\SchoolLibraryRepository.cs",
+              "RelativeDocumentMoniker": "HRORMApp\\Repositories\\SchoolLibrary\\SchoolLibraryRepository.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Repositories\\SchoolLibrary\\SchoolLibraryRepository.cs",
+              "RelativeToolTip": "HRORMApp\\Repositories\\SchoolLibrary\\SchoolLibraryRepository.cs",
+              "ViewState": "AQIAAHUAAAAAAAAAAAAwwLEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T09:44:54.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LibraryContext.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\DbContexts\\LibraryContext.cs",
+              "RelativeDocumentMoniker": "HRORMApp\\DbContexts\\LibraryContext.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\DbContexts\\LibraryContext.cs",
+              "RelativeToolTip": "HRORMApp\\DbContexts\\LibraryContext.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAmwCEAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T09:08:12.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "BookStudent.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Entities\\SchoolLibrary\\BookStudent.cs",
+              "RelativeDocumentMoniker": "HRORMApp\\Entities\\SchoolLibrary\\BookStudent.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Entities\\SchoolLibrary\\BookStudent.cs",
+              "RelativeToolTip": "HRORMApp\\Entities\\SchoolLibrary\\BookStudent.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T09:36:55.857Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Author.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Entities\\SchoolLibrary\\Author.cs",
+              "RelativeDocumentMoniker": "HRORMApp\\Entities\\SchoolLibrary\\Author.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Entities\\SchoolLibrary\\Author.cs",
+              "RelativeToolTip": "HRORMApp\\Entities\\SchoolLibrary\\Author.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T09:24:58.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Book.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Entities\\SchoolLibrary\\Book.cs",
+              "RelativeDocumentMoniker": "HRORMApp\\Entities\\SchoolLibrary\\Book.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Entities\\SchoolLibrary\\Book.cs",
+              "RelativeToolTip": "HRORMApp\\Entities\\SchoolLibrary\\Book.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T09:25:16.448Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Book.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Entities\\Library\\Book.cs",
+              "RelativeDocumentMoniker": "HRORMApp\\Entities\\Library\\Book.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Entities\\Library\\Book.cs",
+              "RelativeToolTip": "HRORMApp\\Entities\\Library\\Book.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T09:05:56.187Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Author.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Entities\\Library\\Author.cs",
+              "RelativeDocumentMoniker": "HRORMApp\\Entities\\Library\\Author.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Entities\\Library\\Author.cs",
+              "RelativeToolTip": "HRORMApp\\Entities\\Library\\Author.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T09:05:54.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "LibraryRepository.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Repositories\\Library\\LibraryRepository.cs",
+              "RelativeDocumentMoniker": "HRORMApp\\Repositories\\Library\\LibraryRepository.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Repositories\\Library\\LibraryRepository.cs",
+              "RelativeToolTip": "HRORMApp\\Repositories\\Library\\LibraryRepository.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwCAAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T09:09:17.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "EmployeeRepository.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Repositories\\EmployeeRepository.cs",
+              "RelativeDocumentMoniker": "HRORMApp\\Repositories\\EmployeeRepository.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Repositories\\EmployeeRepository.cs",
+              "RelativeToolTip": "HRORMApp\\Repositories\\EmployeeRepository.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAA9wCcAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T09:01:22.214Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

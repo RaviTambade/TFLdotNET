@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8AF1A437-CCDB-4CDF-8789-42B5DB915958}|CatalogAPI\\CatalogAPI.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\catalogapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AF1A437-CCDB-4CDF-8789-42B5DB915958}|CatalogAPI\\CatalogAPI.csproj|solutionrelative:catalogapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\hrormapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|solutionrelative:hrormapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E122A487-136C-4D7D-8796-BD39305EC65F}|StoreApp\\StoreApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\storeapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E122A487-136C-4D7D-8796-BD39305EC65F}|StoreApp\\StoreApp.csproj|solutionrelative:storeapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B08EF23F-A2B3-4352-A141-D518C28F4805}|AuthLib\\AuthLib.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\authlib\\authmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B08EF23F-A2B3-4352-A141-D518C28F4805}|AuthLib\\AuthLib.csproj|solutionrelative:authlib\\authmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,24 +39,12 @@
       "RelativeMoniker": "D:0:0:{867DF9EF-BB63-45A4-8E62-E16AB819D825}|BolgPost\\BolgPost.csproj|solutionrelative:bolgpost\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8AF1A437-CCDB-4CDF-8789-42B5DB915958}|CatalogAPI\\CatalogAPI.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\catalogapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8AF1A437-CCDB-4CDF-8789-42B5DB915958}|CatalogAPI\\CatalogAPI.csproj|solutionrelative:catalogapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EB14167C-C222-4C88-964C-5BF2F2640996}|DemoDBApp\\DemoDBApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\demodbapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EB14167C-C222-4C88-964C-5BF2F2640996}|DemoDBApp\\DemoDBApp.csproj|solutionrelative:demodbapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E122A487-136C-4D7D-8796-BD39305EC65F}|StoreApp\\StoreApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\storeapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E122A487-136C-4D7D-8796-BD39305EC65F}|StoreApp\\StoreApp.csproj|solutionrelative:storeapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E122A487-136C-4D7D-8796-BD39305EC65F}|StoreApp\\StoreApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\storeapp\\storeapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{E122A487-136C-4D7D-8796-BD39305EC65F}|StoreApp\\StoreApp.csproj|solutionrelative:storeapp\\storeapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\hrormapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|solutionrelative:hrormapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{89CA3559-936E-4AA4-AAC1-C0417721CFB0}|HRORMApp\\HRORMApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\vijaysalessolution\\hrormapp\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -110,7 +110,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -118,7 +118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "HRRepository.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\AuthLib\\Repositories\\HRRepository.cs",
               "RelativeDocumentMoniker": "AuthLib\\Repositories\\HRRepository.cs",
@@ -126,12 +126,11 @@
               "RelativeToolTip": "AuthLib\\Repositories\\HRRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T02:50:59.339Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-06T02:50:59.339Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "CredentialRepository.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\AuthLib\\Repositories\\CredentialRepository.cs",
               "RelativeDocumentMoniker": "AuthLib\\Repositories\\CredentialRepository.cs",
@@ -139,25 +138,23 @@
               "RelativeToolTip": "AuthLib\\Repositories\\CredentialRepository.cs",
               "ViewState": "AQIAAEIAAAAAAAAAAAAowAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T02:50:55.36Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-06T02:50:55.36Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "AuthManager.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\AuthLib\\AuthManager.cs",
               "RelativeDocumentMoniker": "AuthLib\\AuthManager.cs",
               "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\AuthLib\\AuthManager.cs",
               "RelativeToolTip": "AuthLib\\AuthManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T02:50:52.632Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-06T02:50:52.632Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "RolesManager.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\AuthLib\\RolesManager.cs",
               "RelativeDocumentMoniker": "AuthLib\\RolesManager.cs",
@@ -165,12 +162,11 @@
               "RelativeToolTip": "AuthLib\\RolesManager.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T02:50:49.624Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-06T02:50:49.624Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\DemoDBApp\\Program.cs",
               "RelativeDocumentMoniker": "DemoDBApp\\Program.cs",
@@ -178,25 +174,24 @@
               "RelativeToolTip": "DemoDBApp\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T02:50:19.32Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-06T02:50:19.32Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\StoreApp\\Program.cs",
               "RelativeDocumentMoniker": "StoreApp\\Program.cs",
               "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\StoreApp\\Program.cs",
               "RelativeToolTip": "StoreApp\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAATAAAA",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABIAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-01T06:04:13.397Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "StoreApp.csproj",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\StoreApp\\StoreApp.csproj",
               "RelativeDocumentMoniker": "StoreApp\\StoreApp.csproj",
@@ -208,7 +203,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "BlogRepository.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\BolgPost\\Repositories\\BlogRepository.cs",
               "RelativeDocumentMoniker": "BolgPost\\Repositories\\BlogRepository.cs",
@@ -216,12 +211,11 @@
               "RelativeToolTip": "BolgPost\\Repositories\\BlogRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T06:03:59.309Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-01T06:03:59.309Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\BolgPost\\Program.cs",
               "RelativeDocumentMoniker": "BolgPost\\Program.cs",
@@ -229,18 +223,17 @@
               "RelativeToolTip": "BolgPost\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T06:03:56.999Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-01T06:03:56.999Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\CatalogAPI\\Program.cs",
               "RelativeDocumentMoniker": "CatalogAPI\\Program.cs",
               "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\CatalogAPI\\Program.cs",
               "RelativeToolTip": "CatalogAPI\\Program.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-01T06:03:45.927Z",
               "EditorCaption": ""
@@ -271,15 +264,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Program.cs",
               "RelativeDocumentMoniker": "HRORMApp\\Program.cs",
               "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\VijaySalesSolution\\HRORMApp\\Program.cs",
               "RelativeToolTip": "HRORMApp\\Program.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABsAAAAGAAAA",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T09:11:16.986Z"
+              "WhenOpened": "2024-05-23T09:11:16.986Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
