@@ -1,0 +1,94 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\tryout\\CDAC\\BankingSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ED595796-D42A-421C-B9B2-72D397EBCC38}|HDFCApp\\HDFCApp.csproj|d:\\tryout\\cdac\\bankingsolution\\hdfcapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED595796-D42A-421C-B9B2-72D397EBCC38}|HDFCApp\\HDFCApp.csproj|solutionrelative:hdfcapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF019AA1-6498-4A71-9637-5BC82D7CEBFC}|AcctMgmt\\AcctMgmt.csproj|d:\\tryout\\cdac\\bankingsolution\\acctmgmt\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF019AA1-6498-4A71-9637-5BC82D7CEBFC}|AcctMgmt\\AcctMgmt.csproj|solutionrelative:acctmgmt\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2AB0B09-D91A-49DA-BE19-392A13024EB0}|Taxation\\Taxation.csproj|d:\\tryout\\cdac\\bankingsolution\\taxation\\taxmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2AB0B09-D91A-49DA-BE19-392A13024EB0}|Taxation\\Taxation.csproj|solutionrelative:taxation\\taxmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5ABBD6D-CC7A-4800-9544-674D120A03F8}|Notification\\Notification.csproj|d:\\tryout\\cdac\\bankingsolution\\notification\\notificationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5ABBD6D-CC7A-4800-9544-674D120A03F8}|Notification\\Notification.csproj|solutionrelative:notification\\notificationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NotificationManager.cs",
+              "DocumentMoniker": "D:\\tryout\\CDAC\\BankingSolution\\Notification\\NotificationManager.cs",
+              "RelativeDocumentMoniker": "Notification\\NotificationManager.cs",
+              "ToolTip": "D:\\tryout\\CDAC\\BankingSolution\\Notification\\NotificationManager.cs",
+              "RelativeToolTip": "Notification\\NotificationManager.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwBMAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T01:50:08.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TaxManager.cs",
+              "DocumentMoniker": "D:\\tryout\\CDAC\\BankingSolution\\Taxation\\TaxManager.cs",
+              "RelativeDocumentMoniker": "Taxation\\TaxManager.cs",
+              "ToolTip": "D:\\tryout\\CDAC\\BankingSolution\\Taxation\\TaxManager.cs",
+              "RelativeToolTip": "Taxation\\TaxManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T01:48:59.745Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\tryout\\CDAC\\BankingSolution\\HDFCApp\\Program.cs",
+              "RelativeDocumentMoniker": "HDFCApp\\Program.cs",
+              "ToolTip": "D:\\tryout\\CDAC\\BankingSolution\\HDFCApp\\Program.cs",
+              "RelativeToolTip": "HDFCApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T01:31:06.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Account.cs",
+              "DocumentMoniker": "D:\\tryout\\CDAC\\BankingSolution\\AcctMgmt\\Account.cs",
+              "RelativeDocumentMoniker": "AcctMgmt\\Account.cs",
+              "ToolTip": "D:\\tryout\\CDAC\\BankingSolution\\AcctMgmt\\Account.cs",
+              "RelativeToolTip": "AcctMgmt\\Account.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAwwDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T01:30:54.387Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

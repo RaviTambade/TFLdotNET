@@ -1,0 +1,60 @@
+it is not sunday,
+it is monday
+Chala khelayale  .net
+
+Revising .net we learned last time
+
+introduction to .net
+Why .net: equal job opportunity along with  java , javascript
+one of the best runtime I am using from 24 years
+it is like JVM: CLR
+JRE  is like  .net framework
+
+oh Java is source motivatation for C# lang.
+We copy all good things from Java. it is not stealing
+
+We also follow OOP's
+correct: Object Oriented Programming
+
+namespace, Class, access specifiers, Main,
+all
+
+CLI:
+	.net cli commands
+	dotnet new sln
+	dotnet new console
+	dotnet new classlib
+	dotnet sln add
+	dotnet add refernce
+	dotnet build
+	dotnet run
+	Debug and Release mode
+	var, annoynous type
+	LINQ: lambda function
+	constructor chaining
+	property and auto property
+	
+
+CTS: Common Type System
+	Value types
+		  primitive types (int , float, double)
+		  enum and structure
+	Reference Types
+		  class , interface, delegate and event
+
+
+C# language keyword:
+		const, readonly
+
+
+		
+
+Banking Domain:
+		Account:  balance, withdraw, deposite
+		Tax Deduction logic:
+					
+
+
+
+
+

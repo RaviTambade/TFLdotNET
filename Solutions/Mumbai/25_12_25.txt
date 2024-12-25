@@ -1,0 +1,56 @@
+//assembly: a logical unit of deploymet  (dll, exe)
+.net framework:
+		Shared assembly (reusable assembly kept in GAC)
+		GAC: Global Assembly Cache
+
+compiled .net code in one unit of execution ----assembly
+.Net
+
+	HTTP------HTTP Web based Application-----asp(Active Server Pages) (jsp) (php)
+						 asp.net --------2000  ----.net aspx
+						 webforms------.aspx pages
+
+
+	internet-----ecommerce, job poratal------Online Application (Web application)
+	intranet--company portal employee---Online Application (Web application)
+	Extranet---portal for employees as well as vendors---OnlineApplicatoin
+
+WPT Module:
+	Node JS, React ,MySQL database
+	HTML, CSS,  Basics of Javascritp
+	jQuery, Ajax $.ajax("url",{})-
+	Bootstrap---Responsive UI Framework
+
+Basics of WebProgramming concepts:
+	Client  side Scripting
+	Server side Programming
+	Server side Pages
+	Web Server
+	cookie, querystring, form html element
+	form ---- action, method
+
+
+
+
+S :Single Responsibility Principle
+O :Open Closed Principle 
+   (Open for extension and Close for modification)
+L :Lischove's Substituion Principle
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,91 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\tryout\\CDAC\\SolidWorksSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4DA1AF28-B79B-4959-B59F-6EEBD4CF7ECC}|PaintBrush\\PaintBrush.csproj|d:\\tryout\\cdac\\solidworkssolution\\paintbrush\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DA1AF28-B79B-4959-B59F-6EEBD4CF7ECC}|PaintBrush\\PaintBrush.csproj|solutionrelative:paintbrush\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DA1AF28-B79B-4959-B59F-6EEBD4CF7ECC}|PaintBrush\\PaintBrush.csproj|d:\\tryout\\cdac\\solidworkssolution\\paintbrush\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4DA1AF28-B79B-4959-B59F-6EEBD4CF7ECC}|PaintBrush\\PaintBrush.csproj|solutionrelative:paintbrush\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DA1AF28-B79B-4959-B59F-6EEBD4CF7ECC}|PaintBrush\\PaintBrush.csproj|d:\\tryout\\cdac\\solidworkssolution\\paintbrush\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DA1AF28-B79B-4959-B59F-6EEBD4CF7ECC}|PaintBrush\\PaintBrush.csproj|solutionrelative:paintbrush\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DA1AF28-B79B-4959-B59F-6EEBD4CF7ECC}|PaintBrush\\PaintBrush.csproj|d:\\tryout\\cdac\\solidworkssolution\\paintbrush\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DA1AF28-B79B-4959-B59F-6EEBD4CF7ECC}|PaintBrush\\PaintBrush.csproj|solutionrelative:paintbrush\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "D:\\tryout\\CDAC\\SolidWorksSolution\\PaintBrush\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "PaintBrush\\Form1.Designer.cs",
+              "ToolTip": "D:\\tryout\\CDAC\\SolidWorksSolution\\PaintBrush\\Form1.Designer.cs*",
+              "RelativeToolTip": "PaintBrush\\Form1.Designer.cs*",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAowKEAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T04:19:34.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\tryout\\CDAC\\SolidWorksSolution\\PaintBrush\\Form1.cs",
+              "RelativeDocumentMoniker": "PaintBrush\\Form1.cs",
+              "ToolTip": "D:\\tryout\\CDAC\\SolidWorksSolution\\PaintBrush\\Form1.cs*",
+              "RelativeToolTip": "PaintBrush\\Form1.cs*",
+              "ViewState": "AgIAABcAAAAAAAAAAAAIwCEAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T04:15:09.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\tryout\\CDAC\\SolidWorksSolution\\PaintBrush\\Program.cs",
+              "RelativeDocumentMoniker": "PaintBrush\\Program.cs",
+              "ToolTip": "D:\\tryout\\CDAC\\SolidWorksSolution\\PaintBrush\\Program.cs",
+              "RelativeToolTip": "PaintBrush\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T04:13:37.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\tryout\\CDAC\\SolidWorksSolution\\PaintBrush\\Form1.cs",
+              "RelativeDocumentMoniker": "PaintBrush\\Form1.cs",
+              "ToolTip": "D:\\tryout\\CDAC\\SolidWorksSolution\\PaintBrush\\Form1.cs [Design]*",
+              "RelativeToolTip": "PaintBrush\\Form1.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T04:13:32.017Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

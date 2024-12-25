@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\tryout\\CDAC\\LangFearureSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1D763E92-D5C8-4FD8-96D2-E3CDE5727C12}|langKeywordsApp\\langKeywordsApp.csproj|d:\\tryout\\cdac\\langfearuresolution\\langkeywordsapp\\iplplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D763E92-D5C8-4FD8-96D2-E3CDE5727C12}|langKeywordsApp\\langKeywordsApp.csproj|solutionrelative:langkeywordsapp\\iplplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D763E92-D5C8-4FD8-96D2-E3CDE5727C12}|langKeywordsApp\\langKeywordsApp.csproj|d:\\tryout\\cdac\\langfearuresolution\\langkeywordsapp\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D763E92-D5C8-4FD8-96D2-E3CDE5727C12}|langKeywordsApp\\langKeywordsApp.csproj|solutionrelative:langkeywordsapp\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D763E92-D5C8-4FD8-96D2-E3CDE5727C12}|langKeywordsApp\\langKeywordsApp.csproj|d:\\tryout\\cdac\\langfearuresolution\\langkeywordsapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D763E92-D5C8-4FD8-96D2-E3CDE5727C12}|langKeywordsApp\\langKeywordsApp.csproj|solutionrelative:langkeywordsapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D763E92-D5C8-4FD8-96D2-E3CDE5727C12}|langKeywordsApp\\langKeywordsApp.csproj|d:\\tryout\\cdac\\langfearuresolution\\langkeywordsapp\\library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D763E92-D5C8-4FD8-96D2-E3CDE5727C12}|langKeywordsApp\\langKeywordsApp.csproj|solutionrelative:langkeywordsapp\\library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D763E92-D5C8-4FD8-96D2-E3CDE5727C12}|langKeywordsApp\\langKeywordsApp.csproj|d:\\tryout\\cdac\\langfearuresolution\\langkeywordsapp\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D763E92-D5C8-4FD8-96D2-E3CDE5727C12}|langKeywordsApp\\langKeywordsApp.csproj|solutionrelative:langkeywordsapp\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IPLPlayer.cs",
+              "DocumentMoniker": "D:\\tryout\\CDAC\\LangFearureSolution\\langKeywordsApp\\IPLPlayer.cs",
+              "RelativeDocumentMoniker": "langKeywordsApp\\IPLPlayer.cs",
+              "ToolTip": "D:\\tryout\\CDAC\\LangFearureSolution\\langKeywordsApp\\IPLPlayer.cs",
+              "RelativeToolTip": "langKeywordsApp\\IPLPlayer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T03:38:33.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Player.cs",
+              "DocumentMoniker": "D:\\tryout\\CDAC\\LangFearureSolution\\langKeywordsApp\\Player.cs",
+              "RelativeDocumentMoniker": "langKeywordsApp\\Player.cs",
+              "ToolTip": "D:\\tryout\\CDAC\\LangFearureSolution\\langKeywordsApp\\Player.cs",
+              "RelativeToolTip": "langKeywordsApp\\Player.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T03:38:00.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\tryout\\CDAC\\LangFearureSolution\\langKeywordsApp\\Program.cs",
+              "RelativeDocumentMoniker": "langKeywordsApp\\Program.cs",
+              "ToolTip": "D:\\tryout\\CDAC\\LangFearureSolution\\langKeywordsApp\\Program.cs",
+              "RelativeToolTip": "langKeywordsApp\\Program.cs",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAAAJ4AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T03:04:14.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Library.cs",
+              "DocumentMoniker": "D:\\tryout\\CDAC\\LangFearureSolution\\langKeywordsApp\\Library.cs",
+              "RelativeDocumentMoniker": "langKeywordsApp\\Library.cs",
+              "ToolTip": "D:\\tryout\\CDAC\\LangFearureSolution\\langKeywordsApp\\Library.cs",
+              "RelativeToolTip": "langKeywordsApp\\Library.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T02:59:36.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Book.cs",
+              "DocumentMoniker": "D:\\tryout\\CDAC\\LangFearureSolution\\langKeywordsApp\\Book.cs",
+              "RelativeDocumentMoniker": "langKeywordsApp\\Book.cs",
+              "ToolTip": "D:\\tryout\\CDAC\\LangFearureSolution\\langKeywordsApp\\Book.cs",
+              "RelativeToolTip": "langKeywordsApp\\Book.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T02:59:22.776Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

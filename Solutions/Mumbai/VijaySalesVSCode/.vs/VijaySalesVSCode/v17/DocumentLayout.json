@@ -1,0 +1,411 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\tryout\\CDAC\\VijaySalesVSCode\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|d:\\tryout\\cdac\\vijaysalesvscode\\onlineshoppingportal\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|solutionrelative:onlineshoppingportal\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|d:\\tryout\\cdac\\vijaysalesvscode\\onlineshoppingportal\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|solutionrelative:onlineshoppingportal\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|d:\\tryout\\cdac\\vijaysalesvscode\\onlineshoppingportal\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|solutionrelative:onlineshoppingportal\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|d:\\tryout\\cdac\\vijaysalesvscode\\onlineshoppingportal\\services\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|solutionrelative:onlineshoppingportal\\services\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|d:\\tryout\\cdac\\vijaysalesvscode\\onlineshoppingportal\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|solutionrelative:onlineshoppingportal\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|d:\\tryout\\cdac\\vijaysalesvscode\\onlineshoppingportal\\onlineshoppingportal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|solutionrelative:onlineshoppingportal\\onlineshoppingportal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|d:\\tryout\\cdac\\vijaysalesvscode\\onlineshoppingportal\\repositories\\jsondatarespository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|solutionrelative:onlineshoppingportal\\repositories\\jsondatarespository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|d:\\tryout\\cdac\\vijaysalesvscode\\onlineshoppingportal\\repositories\\idatarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|solutionrelative:onlineshoppingportal\\repositories\\idatarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|d:\\tryout\\cdac\\vijaysalesvscode\\onlineshoppingportal\\repositories\\databaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|solutionrelative:onlineshoppingportal\\repositories\\databaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|d:\\tryout\\cdac\\vijaysalesvscode\\onlineshoppingportal\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|solutionrelative:onlineshoppingportal\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|d:\\tryout\\cdac\\vijaysalesvscode\\onlineshoppingportal\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|solutionrelative:onlineshoppingportal\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|d:\\tryout\\cdac\\vijaysalesvscode\\onlineshoppingportal\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|solutionrelative:onlineshoppingportal\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|d:\\tryout\\cdac\\vijaysalesvscode\\onlineshoppingportal\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|solutionrelative:onlineshoppingportal\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|d:\\tryout\\cdac\\vijaysalesvscode\\onlineshoppingportal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|solutionrelative:onlineshoppingportal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|d:\\tryout\\cdac\\vijaysalesvscode\\onlineshoppingportal\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|solutionrelative:onlineshoppingportal\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|d:\\tryout\\cdac\\vijaysalesvscode\\onlineshoppingportal\\views\\auth\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|solutionrelative:onlineshoppingportal\\views\\auth\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|d:\\tryout\\cdac\\vijaysalesvscode\\onlineshoppingportal\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|solutionrelative:onlineshoppingportal\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|d:\\tryout\\cdac\\vijaysalesvscode\\onlineshoppingportal\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|solutionrelative:onlineshoppingportal\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|d:\\tryout\\cdac\\vijaysalesvscode\\onlineshoppingportal\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|solutionrelative:onlineshoppingportal\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|d:\\tryout\\cdac\\vijaysalesvscode\\onlineshoppingportal\\views\\home\\services.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|solutionrelative:onlineshoppingportal\\views\\home\\services.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|d:\\tryout\\cdac\\vijaysalesvscode\\onlineshoppingportal\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|solutionrelative:onlineshoppingportal\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|d:\\tryout\\cdac\\vijaysalesvscode\\onlineshoppingportal\\views\\home\\aboutus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|solutionrelative:onlineshoppingportal\\views\\home\\aboutus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|d:\\tryout\\cdac\\vijaysalesvscode\\onlineshoppingportal\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4407DC33-92A6-4036-96E2-D522E7BE5F26}|OnlineShoppingPortal\\OnlineShoppingPortal.csproj|solutionrelative:onlineshoppingportal\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "OnlineShoppingPortal\\Services\\ProductService.cs",
+              "ToolTip": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Services\\ProductService.cs",
+              "RelativeToolTip": "OnlineShoppingPortal\\Services\\ProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T07:58:22.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Services\\IProductService.cs",
+              "RelativeDocumentMoniker": "OnlineShoppingPortal\\Services\\IProductService.cs",
+              "ToolTip": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Services\\IProductService.cs",
+              "RelativeToolTip": "OnlineShoppingPortal\\Services\\IProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T07:57:36.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DatabaseRepository.cs",
+              "DocumentMoniker": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Repositories\\DatabaseRepository.cs",
+              "RelativeDocumentMoniker": "OnlineShoppingPortal\\Repositories\\DatabaseRepository.cs",
+              "ToolTip": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Repositories\\DatabaseRepository.cs",
+              "RelativeToolTip": "OnlineShoppingPortal\\Repositories\\DatabaseRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T07:54:39.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "JsonDataRespository.cs",
+              "DocumentMoniker": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Repositories\\JsonDataRespository.cs",
+              "RelativeDocumentMoniker": "OnlineShoppingPortal\\Repositories\\JsonDataRespository.cs",
+              "ToolTip": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Repositories\\JsonDataRespository.cs",
+              "RelativeToolTip": "OnlineShoppingPortal\\Repositories\\JsonDataRespository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T07:54:05.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IDataRepository.cs",
+              "DocumentMoniker": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Repositories\\IDataRepository.cs",
+              "RelativeDocumentMoniker": "OnlineShoppingPortal\\Repositories\\IDataRepository.cs",
+              "ToolTip": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Repositories\\IDataRepository.cs",
+              "RelativeToolTip": "OnlineShoppingPortal\\Repositories\\IDataRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T07:51:25.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OnlineShoppingPortal",
+              "DocumentMoniker": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\OnlineShoppingPortal.csproj",
+              "RelativeDocumentMoniker": "OnlineShoppingPortal\\OnlineShoppingPortal.csproj",
+              "ToolTip": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\OnlineShoppingPortal.csproj",
+              "RelativeToolTip": "OnlineShoppingPortal\\OnlineShoppingPortal.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-25T07:47:31.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Models\\Cart.cs",
+              "RelativeDocumentMoniker": "OnlineShoppingPortal\\Models\\Cart.cs",
+              "ToolTip": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Models\\Cart.cs",
+              "RelativeToolTip": "OnlineShoppingPortal\\Models\\Cart.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T07:30:27.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Item.cs",
+              "DocumentMoniker": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Models\\Item.cs",
+              "RelativeDocumentMoniker": "OnlineShoppingPortal\\Models\\Item.cs",
+              "ToolTip": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Models\\Item.cs",
+              "RelativeToolTip": "OnlineShoppingPortal\\Models\\Item.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T07:28:40.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "OnlineShoppingPortal\\Models\\Product.cs",
+              "ToolTip": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Models\\Product.cs",
+              "RelativeToolTip": "OnlineShoppingPortal\\Models\\Product.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAA5wBUAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T07:20:47.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ChangePassword.cshtml",
+              "DocumentMoniker": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Views\\Auth\\ChangePassword.cshtml",
+              "RelativeDocumentMoniker": "OnlineShoppingPortal\\Views\\Auth\\ChangePassword.cshtml",
+              "ToolTip": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Views\\Auth\\ChangePassword.cshtml",
+              "RelativeToolTip": "OnlineShoppingPortal\\Views\\Auth\\ChangePassword.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-25T06:43:58.192Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Views\\Auth\\Register.cshtml",
+              "RelativeDocumentMoniker": "OnlineShoppingPortal\\Views\\Auth\\Register.cshtml",
+              "ToolTip": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Views\\Auth\\Register.cshtml",
+              "RelativeToolTip": "OnlineShoppingPortal\\Views\\Auth\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-25T06:42:45.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Views\\Auth\\Login.cshtml",
+              "RelativeDocumentMoniker": "OnlineShoppingPortal\\Views\\Auth\\Login.cshtml",
+              "ToolTip": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Views\\Auth\\Login.cshtml",
+              "RelativeToolTip": "OnlineShoppingPortal\\Views\\Auth\\Login.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-25T06:42:06.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "OnlineShoppingPortal\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "OnlineShoppingPortal\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T06:36:05.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Views\\Products\\Details.cshtml",
+              "RelativeDocumentMoniker": "OnlineShoppingPortal\\Views\\Products\\Details.cshtml",
+              "ToolTip": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Views\\Products\\Details.cshtml",
+              "RelativeToolTip": "OnlineShoppingPortal\\Views\\Products\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-25T06:33:02.943Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Views\\Products\\Index.cshtml",
+              "RelativeDocumentMoniker": "OnlineShoppingPortal\\Views\\Products\\Index.cshtml",
+              "ToolTip": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Views\\Products\\Index.cshtml",
+              "RelativeToolTip": "OnlineShoppingPortal\\Views\\Products\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-25T06:30:53.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "OnlineShoppingPortal\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "OnlineShoppingPortal\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-25T06:20:11.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Services.cshtml",
+              "DocumentMoniker": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Views\\Home\\Services.cshtml",
+              "RelativeDocumentMoniker": "OnlineShoppingPortal\\Views\\Home\\Services.cshtml",
+              "ToolTip": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Views\\Home\\Services.cshtml",
+              "RelativeToolTip": "OnlineShoppingPortal\\Views\\Home\\Services.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-25T06:16:38.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "OnlineShoppingPortal\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "OnlineShoppingPortal\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-25T06:16:04.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Aboutus.cshtml",
+              "DocumentMoniker": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Views\\Home\\Aboutus.cshtml",
+              "RelativeDocumentMoniker": "OnlineShoppingPortal\\Views\\Home\\Aboutus.cshtml",
+              "ToolTip": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Views\\Home\\Aboutus.cshtml",
+              "RelativeToolTip": "OnlineShoppingPortal\\Views\\Home\\Aboutus.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-25T06:15:33.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "OnlineShoppingPortal\\Controllers\\ProductsController.cs",
+              "ToolTip": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "OnlineShoppingPortal\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwAkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T06:06:19.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "OnlineShoppingPortal\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "OnlineShoppingPortal\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAqwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-25T05:52:55.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "OnlineShoppingPortal\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "OnlineShoppingPortal\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T05:52:43.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Program.cs",
+              "RelativeDocumentMoniker": "OnlineShoppingPortal\\Program.cs",
+              "ToolTip": "D:\\tryout\\CDAC\\VijaySalesVSCode\\OnlineShoppingPortal\\Program.cs",
+              "RelativeToolTip": "OnlineShoppingPortal\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T05:52:31.759Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

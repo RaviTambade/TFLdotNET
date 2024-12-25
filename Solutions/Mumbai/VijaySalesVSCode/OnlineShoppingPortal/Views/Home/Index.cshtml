@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<!-- Razor Page -->
+<!-- combination of C# syntax as well as HTML syntax -->
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <img src="./images/vijaysales.png" width="100" height="200" />
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<!--  Every View (Razor Page) is processed at server side by 
+Razor View Engine
+-->
+@{
+    // C# code  :Presentation Logic
+
+    int x = 10;
+    bool status = false;
+    //for (int i = 0; i < x; i++)
+    List<string> names = new List<string>();
+    names.Add("Gerbera");
+    names.Add("Rose");
+    names.Add("Lotus");
+    <h3>Todays Fresh Flowers</h3>
+    <hr />
+    foreach(string  name in names)
+    {
+        <p> @name </p>
+    }
+}

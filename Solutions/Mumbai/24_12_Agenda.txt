@@ -1,0 +1,39 @@
+Event Driven Architecture
+Delegate, Multicast Delegate
+Subscribing Event listeners using attach (+=) 
+Invoking Events by triggering in code
+Layered Architecture:
+	Following OOP, Design Principles, Design Patterns
+				     Repository Pattern
+	UI Layer---Business Layer----Data Access Layer--Data Layer
+	Design Patterns
+			Singleton,factory , prtotype, Chain of Responsibiltiy
+			Observer, 
+			
+		Categories Design Patters:(23)
+				Creational 
+				Structural
+				Behvioural
+
+C# Features:
+		event, delegate, 
+		interface, abstract class
+		concrete class,
+		ext. method
+		arrow function (lambda)
+		LINQ:
+		properties, auto properties,
+		private, protected, public , internal
+		namespace
+		DLL, exe
+		dotnet CLI commands
+		Debug and Release mode
+		C# keyword:
+			const, readonly, sealed, virtual, abstract,
+			interface, delegate, var, this, base
+		constructor chainning, method overloading,  method overriding
+		static
+		get, set
+
+		Collection:
+			System.Collections.Generic
