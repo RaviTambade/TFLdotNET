@@ -1,0 +1,527 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{620A5EC3-6153-4C7F-B912-3F56ACADE157}|DAL\\DAL.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day12\\ecommerce\\dal\\connected\\dbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{620A5EC3-6153-4C7F-B912-3F56ACADE157}|DAL\\DAL.csproj|solutionrelative:dal\\connected\\dbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{620A5EC3-6153-4C7F-B912-3F56ACADE157}|DAL\\DAL.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day12\\ecommerce\\dal\\disconnected\\dbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{620A5EC3-6153-4C7F-B912-3F56ACADE157}|DAL\\DAL.csproj|solutionrelative:dal\\disconnected\\dbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day12\\ecommerce\\estorewebapp\\controllers\\welcomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|solutionrelative:estorewebapp\\controllers\\welcomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day12\\ecommerce\\estorewebapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|solutionrelative:estorewebapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day12\\ecommerce\\estorewebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|solutionrelative:estorewebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day12\\ecommerce\\estorewebapp\\controllers\\statemanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|solutionrelative:estorewebapp\\controllers\\statemanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day12\\ecommerce\\estorewebapp\\views\\statemanagement\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|solutionrelative:estorewebapp\\views\\statemanagement\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day12\\ecommerce\\estorewebapp\\views\\home\\aboutus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|solutionrelative:estorewebapp\\views\\home\\aboutus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day12\\ecommerce\\estorewebapp\\views\\home\\cdac.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|solutionrelative:estorewebapp\\views\\home\\cdac.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day12\\ecommerce\\estorewebapp\\views\\home\\combo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|solutionrelative:estorewebapp\\views\\home\\combo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day12\\ecommerce\\estorewebapp\\views\\home\\corporate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|solutionrelative:estorewebapp\\views\\home\\corporate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day12\\ecommerce\\estorewebapp\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|solutionrelative:estorewebapp\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day12\\ecommerce\\estorewebapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|solutionrelative:estorewebapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day12\\ecommerce\\estorewebapp\\views\\home\\instructor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|solutionrelative:estorewebapp\\views\\home\\instructor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day12\\ecommerce\\estorewebapp\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|solutionrelative:estorewebapp\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day12\\ecommerce\\estorewebapp\\views\\home\\services.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|solutionrelative:estorewebapp\\views\\home\\services.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day12\\ecommerce\\estorewebapp\\views\\products\\insert.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|solutionrelative:estorewebapp\\views\\products\\insert.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day12\\ecommerce\\estorewebapp\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|solutionrelative:estorewebapp\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day12\\ecommerce\\estorewebapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|solutionrelative:estorewebapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day12\\ecommerce\\estorewebapp\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|solutionrelative:estorewebapp\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day12\\ecommerce\\estorewebapp\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|solutionrelative:estorewebapp\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{901C0B6E-69EA-4FD4-9B78-3C231C8E6F9F}|BOL\\BOL.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day12\\ecommerce\\bol\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{901C0B6E-69EA-4FD4-9B78-3C231C8E6F9F}|BOL\\BOL.csproj|solutionrelative:bol\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day12\\ecommerce\\estorewebapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|solutionrelative:estorewebapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{901C0B6E-69EA-4FD4-9B78-3C231C8E6F9F}|BOL\\BOL.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day12\\ecommerce\\bol\\mentor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{901C0B6E-69EA-4FD4-9B78-3C231C8E6F9F}|BOL\\BOL.csproj|solutionrelative:bol\\mentor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day12\\ecommerce\\estorewebapp\\views\\departments\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|solutionrelative:estorewebapp\\views\\departments\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73791374-AC19-4123-BDEF-84A24ADEC60D}|BLL\\BLL.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day12\\ecommerce\\bll\\hrmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73791374-AC19-4123-BDEF-84A24ADEC60D}|BLL\\BLL.csproj|solutionrelative:bll\\hrmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day12\\ecommerce\\estorewebapp\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|solutionrelative:estorewebapp\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73791374-AC19-4123-BDEF-84A24ADEC60D}|BLL\\BLL.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day12\\ecommerce\\bll\\catalogmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73791374-AC19-4123-BDEF-84A24ADEC60D}|BLL\\BLL.csproj|solutionrelative:bll\\catalogmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day12\\ecommerce\\estorewebapp\\views\\departments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|solutionrelative:estorewebapp\\views\\departments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day12\\ecommerce\\estorewebapp\\estorewebapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|solutionrelative:estorewebapp\\estorewebapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{901C0B6E-69EA-4FD4-9B78-3C231C8E6F9F}|BOL\\BOL.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day12\\ecommerce\\bol\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{901C0B6E-69EA-4FD4-9B78-3C231C8E6F9F}|BOL\\BOL.csproj|solutionrelative:bol\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 29,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Models\\User.cs",
+              "RelativeDocumentMoniker": "EStoreWebApp\\Models\\User.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Models\\User.cs",
+              "RelativeToolTip": "EStoreWebApp\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T04:43:29.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WelcomeController.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Controllers\\WelcomeController.cs",
+              "RelativeDocumentMoniker": "EStoreWebApp\\Controllers\\WelcomeController.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Controllers\\WelcomeController.cs",
+              "RelativeToolTip": "EStoreWebApp\\Controllers\\WelcomeController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T04:43:30.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Program.cs",
+              "RelativeDocumentMoniker": "EStoreWebApp\\Program.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Program.cs",
+              "RelativeToolTip": "EStoreWebApp\\Program.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABcAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T04:43:30.072Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Views\\StateManagement\\Index.cshtml",
+              "RelativeDocumentMoniker": "EStoreWebApp\\Views\\StateManagement\\Index.cshtml",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Views\\StateManagement\\Index.cshtml",
+              "RelativeToolTip": "EStoreWebApp\\Views\\StateManagement\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T04:43:30.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StateManagementController.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Controllers\\StateManagementController.cs",
+              "RelativeDocumentMoniker": "EStoreWebApp\\Controllers\\StateManagementController.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Controllers\\StateManagementController.cs",
+              "RelativeToolTip": "EStoreWebApp\\Controllers\\StateManagementController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T04:43:30.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Aboutus.cshtml",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Views\\Home\\Aboutus.cshtml",
+              "RelativeDocumentMoniker": "EStoreWebApp\\Views\\Home\\Aboutus.cshtml",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Views\\Home\\Aboutus.cshtml",
+              "RelativeToolTip": "EStoreWebApp\\Views\\Home\\Aboutus.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAoAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T04:43:30.084Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "EStoreWebApp\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "EStoreWebApp\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T04:43:30.088Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "corporate.cshtml",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Views\\Home\\corporate.cshtml",
+              "RelativeDocumentMoniker": "EStoreWebApp\\Views\\Home\\corporate.cshtml",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Views\\Home\\corporate.cshtml",
+              "RelativeToolTip": "EStoreWebApp\\Views\\Home\\corporate.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T04:43:30.092Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Instructor.cshtml",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Views\\Home\\Instructor.cshtml",
+              "RelativeDocumentMoniker": "EStoreWebApp\\Views\\Home\\Instructor.cshtml",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Views\\Home\\Instructor.cshtml",
+              "RelativeToolTip": "EStoreWebApp\\Views\\Home\\Instructor.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T04:43:30.099Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "EStoreWebApp\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "EStoreWebApp\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T04:43:30.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Views\\Home\\Details.cshtml",
+              "RelativeDocumentMoniker": "EStoreWebApp\\Views\\Home\\Details.cshtml",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Views\\Home\\Details.cshtml",
+              "RelativeToolTip": "EStoreWebApp\\Views\\Home\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T04:43:30.108Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Combo.cshtml",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Views\\Home\\Combo.cshtml",
+              "RelativeDocumentMoniker": "EStoreWebApp\\Views\\Home\\Combo.cshtml",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Views\\Home\\Combo.cshtml",
+              "RelativeToolTip": "EStoreWebApp\\Views\\Home\\Combo.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T04:43:30.112Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "cdac.cshtml",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Views\\Home\\cdac.cshtml",
+              "RelativeDocumentMoniker": "EStoreWebApp\\Views\\Home\\cdac.cshtml",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Views\\Home\\cdac.cshtml",
+              "RelativeToolTip": "EStoreWebApp\\Views\\Home\\cdac.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T04:43:30.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Services.cshtml",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Views\\Home\\Services.cshtml",
+              "RelativeDocumentMoniker": "EStoreWebApp\\Views\\Home\\Services.cshtml",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Views\\Home\\Services.cshtml",
+              "RelativeToolTip": "EStoreWebApp\\Views\\Home\\Services.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T04:43:30.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Insert.cshtml",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Views\\Products\\Insert.cshtml",
+              "RelativeDocumentMoniker": "EStoreWebApp\\Views\\Products\\Insert.cshtml",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Views\\Products\\Insert.cshtml",
+              "RelativeToolTip": "EStoreWebApp\\Views\\Products\\Insert.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T04:43:30.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Views\\Products\\Index.cshtml",
+              "RelativeDocumentMoniker": "EStoreWebApp\\Views\\Products\\Index.cshtml",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Views\\Products\\Index.cshtml",
+              "RelativeToolTip": "EStoreWebApp\\Views\\Products\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T04:43:30.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Mentor.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\BOL\\Mentor.cs",
+              "RelativeDocumentMoniker": "BOL\\Mentor.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\BOL\\Mentor.cs",
+              "RelativeToolTip": "BOL\\Mentor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAwwAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T04:43:30.134Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "EStoreWebApp\\Models\\Product.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Models\\Product.cs",
+              "RelativeToolTip": "EStoreWebApp\\Models\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T04:43:30.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "EStoreWebApp\\Controllers\\ProductsController.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "EStoreWebApp\\Controllers\\ProductsController.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwBMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T04:43:30.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "HRManager.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\BLL\\HRManager.cs",
+              "RelativeDocumentMoniker": "BLL\\HRManager.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\BLL\\HRManager.cs",
+              "RelativeToolTip": "BLL\\HRManager.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAgwBIAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T04:43:30.147Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "EStoreWebApp\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "EStoreWebApp\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAUwBcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T04:43:30.151Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\BOL\\Product.cs",
+              "RelativeDocumentMoniker": "BOL\\Product.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\BOL\\Product.cs",
+              "RelativeToolTip": "BOL\\Product.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAQwAQAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T04:43:30.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "EStoreWebApp\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "EStoreWebApp\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAiwCMAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T04:43:30.16Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CatalogManager.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\BLL\\CatalogManager.cs",
+              "RelativeDocumentMoniker": "BLL\\CatalogManager.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\BLL\\CatalogManager.cs",
+              "RelativeToolTip": "BLL\\CatalogManager.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAQwAgAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T04:43:30.165Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Views\\Departments\\Details.cshtml",
+              "RelativeDocumentMoniker": "EStoreWebApp\\Views\\Departments\\Details.cshtml",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Views\\Departments\\Details.cshtml",
+              "RelativeToolTip": "EStoreWebApp\\Views\\Departments\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T04:43:30.169Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "DepartmentsController.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Controllers\\DepartmentsController.cs",
+              "RelativeDocumentMoniker": "EStoreWebApp\\Controllers\\DepartmentsController.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Controllers\\DepartmentsController.cs",
+              "RelativeToolTip": "EStoreWebApp\\Controllers\\DepartmentsController.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAswCgAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T04:43:30.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Views\\Departments\\Index.cshtml",
+              "RelativeDocumentMoniker": "EStoreWebApp\\Views\\Departments\\Index.cshtml",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\Views\\Departments\\Index.cshtml",
+              "RelativeToolTip": "EStoreWebApp\\Views\\Departments\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T04:43:30.177Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DBManager.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\DAL\\Connected\\DBManager.cs",
+              "RelativeDocumentMoniker": "DAL\\Connected\\DBManager.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\DAL\\Connected\\DBManager.cs",
+              "RelativeToolTip": "DAL\\Connected\\DBManager.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAowAYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T04:43:30.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DBManager.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\DAL\\DisConnected\\DBManager.cs",
+              "RelativeDocumentMoniker": "DAL\\DisConnected\\DBManager.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\DAL\\DisConnected\\DBManager.cs",
+              "RelativeToolTip": "DAL\\DisConnected\\DBManager.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAAAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T04:43:30.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "EStoreWebApp.csproj",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\EStoreWebApp.csproj",
+              "RelativeDocumentMoniker": "EStoreWebApp\\EStoreWebApp.csproj",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\EStoreWebApp\\EStoreWebApp.csproj",
+              "RelativeToolTip": "EStoreWebApp\\EStoreWebApp.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-30T04:43:30.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Department.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\BOL\\Department.cs",
+              "RelativeDocumentMoniker": "BOL\\Department.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day12\\ECommerce\\BOL\\Department.cs",
+              "RelativeToolTip": "BOL\\Department.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T04:43:30.361Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

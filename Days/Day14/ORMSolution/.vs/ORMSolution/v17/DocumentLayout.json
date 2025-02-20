@@ -1,0 +1,164 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day14\\ORMSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{69BA639A-1865-449C-9E2D-1A3AB270824B}|UserRolesManagement\\UserRolesManagement.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day14\\ormsolution\\userrolesmanagement\\repositories\\contexts\\userrolecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69BA639A-1865-449C-9E2D-1A3AB270824B}|UserRolesManagement\\UserRolesManagement.csproj|solutionrelative:userrolesmanagement\\repositories\\contexts\\userrolecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69BA639A-1865-449C-9E2D-1A3AB270824B}|UserRolesManagement\\UserRolesManagement.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day14\\ormsolution\\userrolesmanagement\\controllers\\userrolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69BA639A-1865-449C-9E2D-1A3AB270824B}|UserRolesManagement\\UserRolesManagement.csproj|solutionrelative:userrolesmanagement\\controllers\\userrolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69BA639A-1865-449C-9E2D-1A3AB270824B}|UserRolesManagement\\UserRolesManagement.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day14\\ormsolution\\userrolesmanagement\\services\\userroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69BA639A-1865-449C-9E2D-1A3AB270824B}|UserRolesManagement\\UserRolesManagement.csproj|solutionrelative:userrolesmanagement\\services\\userroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69BA639A-1865-449C-9E2D-1A3AB270824B}|UserRolesManagement\\UserRolesManagement.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day14\\ormsolution\\userrolesmanagement\\services\\interfaces\\iuserroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69BA639A-1865-449C-9E2D-1A3AB270824B}|UserRolesManagement\\UserRolesManagement.csproj|solutionrelative:userrolesmanagement\\services\\interfaces\\iuserroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69BA639A-1865-449C-9E2D-1A3AB270824B}|UserRolesManagement\\UserRolesManagement.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day14\\ormsolution\\userrolesmanagement\\repositories\\userrolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69BA639A-1865-449C-9E2D-1A3AB270824B}|UserRolesManagement\\UserRolesManagement.csproj|solutionrelative:userrolesmanagement\\repositories\\userrolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69BA639A-1865-449C-9E2D-1A3AB270824B}|UserRolesManagement\\UserRolesManagement.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day14\\ormsolution\\userrolesmanagement\\repositories\\interfaces\\iuserrolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69BA639A-1865-449C-9E2D-1A3AB270824B}|UserRolesManagement\\UserRolesManagement.csproj|solutionrelative:userrolesmanagement\\repositories\\interfaces\\iuserrolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69BA639A-1865-449C-9E2D-1A3AB270824B}|UserRolesManagement\\UserRolesManagement.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day14\\ormsolution\\userrolesmanagement\\models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69BA639A-1865-449C-9E2D-1A3AB270824B}|UserRolesManagement\\UserRolesManagement.csproj|solutionrelative:userrolesmanagement\\models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69BA639A-1865-449C-9E2D-1A3AB270824B}|UserRolesManagement\\UserRolesManagement.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day14\\ormsolution\\userrolesmanagement\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69BA639A-1865-449C-9E2D-1A3AB270824B}|UserRolesManagement\\UserRolesManagement.csproj|solutionrelative:userrolesmanagement\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserRoleService.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day14\\ORMSolution\\UserRolesManagement\\Services\\UserRoleService.cs",
+              "RelativeDocumentMoniker": "UserRolesManagement\\Services\\UserRoleService.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day14\\ORMSolution\\UserRolesManagement\\Services\\UserRoleService.cs",
+              "RelativeToolTip": "UserRolesManagement\\Services\\UserRoleService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T04:45:48.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IUserRoleService.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day14\\ORMSolution\\UserRolesManagement\\Services\\Interfaces\\IUserRoleService.cs",
+              "RelativeDocumentMoniker": "UserRolesManagement\\Services\\Interfaces\\IUserRoleService.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day14\\ORMSolution\\UserRolesManagement\\Services\\Interfaces\\IUserRoleService.cs",
+              "RelativeToolTip": "UserRolesManagement\\Services\\Interfaces\\IUserRoleService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T04:45:45.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserRoleRepository.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day14\\ORMSolution\\UserRolesManagement\\Repositories\\UserRoleRepository.cs",
+              "RelativeDocumentMoniker": "UserRolesManagement\\Repositories\\UserRoleRepository.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day14\\ORMSolution\\UserRolesManagement\\Repositories\\UserRoleRepository.cs",
+              "RelativeToolTip": "UserRolesManagement\\Repositories\\UserRoleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T04:45:40.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IUserRoleRepository.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day14\\ORMSolution\\UserRolesManagement\\Repositories\\Interfaces\\IUserRoleRepository.cs",
+              "RelativeDocumentMoniker": "UserRolesManagement\\Repositories\\Interfaces\\IUserRoleRepository.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day14\\ORMSolution\\UserRolesManagement\\Repositories\\Interfaces\\IUserRoleRepository.cs",
+              "RelativeToolTip": "UserRolesManagement\\Repositories\\Interfaces\\IUserRoleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T04:45:38.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserRoleContext.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day14\\ORMSolution\\UserRolesManagement\\Repositories\\Contexts\\UserRoleContext.cs",
+              "RelativeDocumentMoniker": "UserRolesManagement\\Repositories\\Contexts\\UserRoleContext.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day14\\ORMSolution\\UserRolesManagement\\Repositories\\Contexts\\UserRoleContext.cs",
+              "RelativeToolTip": "UserRolesManagement\\Repositories\\Contexts\\UserRoleContext.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAA5wBsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T04:45:20.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserRole.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day14\\ORMSolution\\UserRolesManagement\\Models\\UserRole.cs",
+              "RelativeDocumentMoniker": "UserRolesManagement\\Models\\UserRole.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day14\\ORMSolution\\UserRolesManagement\\Models\\UserRole.cs",
+              "RelativeToolTip": "UserRolesManagement\\Models\\UserRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T04:45:14.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Role.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day14\\ORMSolution\\UserRolesManagement\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "UserRolesManagement\\Models\\Role.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day14\\ORMSolution\\UserRolesManagement\\Models\\Role.cs",
+              "RelativeToolTip": "UserRolesManagement\\Models\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T04:45:12.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserRoleController.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day14\\ORMSolution\\UserRolesManagement\\Controllers\\UserRoleController.cs",
+              "RelativeDocumentMoniker": "UserRolesManagement\\Controllers\\UserRoleController.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day14\\ORMSolution\\UserRolesManagement\\Controllers\\UserRoleController.cs",
+              "RelativeToolTip": "UserRolesManagement\\Controllers\\UserRoleController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T04:45:08.137Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
