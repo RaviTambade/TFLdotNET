@@ -12,14 +12,10 @@ Product p4=new Product{ Id=15, Title="Jasmine", Description="Smelling flower", U
 
 
 List<Product> flowers=new List<Product>();
-
  flowers.Add(p1);
  flowers.Add(p2);
  flowers.Add(p3);
  flowers.Add(p4);
-
-
-
 
  try{
             // dynamic data type variable
