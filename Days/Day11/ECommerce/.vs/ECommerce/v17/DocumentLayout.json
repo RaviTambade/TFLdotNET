@@ -1,0 +1,127 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day11\\ECommerce\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{620A5EC3-6153-4C7F-B912-3F56ACADE157}|DAL\\DAL.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day11\\ecommerce\\dal\\disconnected\\dbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{620A5EC3-6153-4C7F-B912-3F56ACADE157}|DAL\\DAL.csproj|solutionrelative:dal\\disconnected\\dbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9005EC51-6D9A-4CB2-BEC4-6FFCA45E49CB}|TestApp\\TestApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day11\\ecommerce\\testapp\\dbtestmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9005EC51-6D9A-4CB2-BEC4-6FFCA45E49CB}|TestApp\\TestApp.csproj|solutionrelative:testapp\\dbtestmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9005EC51-6D9A-4CB2-BEC4-6FFCA45E49CB}|TestApp\\TestApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day11\\ecommerce\\testapp\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9005EC51-6D9A-4CB2-BEC4-6FFCA45E49CB}|TestApp\\TestApp.csproj|solutionrelative:testapp\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{620A5EC3-6153-4C7F-B912-3F56ACADE157}|DAL\\DAL.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day11\\ecommerce\\dal\\connected\\dbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{620A5EC3-6153-4C7F-B912-3F56ACADE157}|DAL\\DAL.csproj|solutionrelative:dal\\connected\\dbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9005EC51-6D9A-4CB2-BEC4-6FFCA45E49CB}|TestApp\\TestApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day11\\ecommerce\\testapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9005EC51-6D9A-4CB2-BEC4-6FFCA45E49CB}|TestApp\\TestApp.csproj|solutionrelative:testapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\days\\day11\\ecommerce\\estorewebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5D345E31-5FB8-448F-82A0-B7ED2C886A81}|EStoreWebApp\\EStoreWebApp.csproj|solutionrelative:estorewebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DBManager.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day11\\ECommerce\\DAL\\DisConnected\\DBManager.cs",
+              "RelativeDocumentMoniker": "DAL\\DisConnected\\DBManager.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day11\\ECommerce\\DAL\\DisConnected\\DBManager.cs",
+              "RelativeToolTip": "DAL\\DisConnected\\DBManager.cs",
+              "ViewState": "AgIAAAIAAAAQzMzMzMwFwBAAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T07:52:43.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day11\\ECommerce\\TestApp\\Program.cs",
+              "RelativeDocumentMoniker": "TestApp\\Program.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day11\\ECommerce\\TestApp\\Program.cs",
+              "RelativeToolTip": "TestApp\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T07:52:44.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Department.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day11\\ECommerce\\TestApp\\Department.cs",
+              "RelativeDocumentMoniker": "TestApp\\Department.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day11\\ECommerce\\TestApp\\Department.cs",
+              "RelativeToolTip": "TestApp\\Department.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T07:52:44.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DBTestManager.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day11\\ECommerce\\TestApp\\DBTestManager.cs",
+              "RelativeDocumentMoniker": "TestApp\\DBTestManager.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day11\\ECommerce\\TestApp\\DBTestManager.cs",
+              "RelativeToolTip": "TestApp\\DBTestManager.cs",
+              "ViewState": "AgIAAH0AAAAAnJmZmRkRwDwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T07:52:44.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day11\\ECommerce\\EStoreWebApp\\appsettings.json",
+              "RelativeDocumentMoniker": "EStoreWebApp\\appsettings.json",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day11\\ECommerce\\EStoreWebApp\\appsettings.json",
+              "RelativeToolTip": "EStoreWebApp\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-24T07:52:44.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DBManager.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day11\\ECommerce\\DAL\\Connected\\DBManager.cs",
+              "RelativeDocumentMoniker": "DAL\\Connected\\DBManager.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Days\\Day11\\ECommerce\\DAL\\Connected\\DBManager.cs",
+              "RelativeToolTip": "DAL\\Connected\\DBManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T07:52:44.233Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
