@@ -2,11 +2,11 @@
 
 **Web Application Architecture** is the layout or structure of all components involved in delivering web-based applications. It describes how the frontend (client-side), backend (server-side), and infrastructure (e.g., databases, servers, load balancers) interact to provide a smooth user experience.
 
+### 🧱 **Layered Architecture: Vertical and Horizontal Layers**
+
 <img src="/images/webapp_horizvertical.png"/>
 
- 
-
----
+ ---
 
 ### 📏 **Horizontal Layers**  
 (Also called *functional* or *logical* layers.)
@@ -80,7 +80,7 @@ Imagine building a **multi-story house**:
 
 ---
 
-### 🧱 **Layered Architecture: Vertical and Horizontal Layers**
+
 
 ---
 
