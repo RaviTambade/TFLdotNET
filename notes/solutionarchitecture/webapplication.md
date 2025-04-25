@@ -3,6 +3,59 @@
 **Web Application Architecture** is the layout or structure of all components involved in delivering web-based applications. It describes how the frontend (client-side), backend (server-side), and infrastructure (e.g., databases, servers, load balancers) interact to provide a smooth user experience.
 
 <img src="/images/webapp_horizvertical.png"/>
+
+ 
+
+---
+
+### 📏 **Horizontal Layers**  
+(Also called *functional* or *logical* layers.)
+
+- These are **stacked one over the other**, horizontally.
+- Each layer has a **specific role** or responsibility.
+- They **process requests step-by-step** from top (client) to bottom (database) and send responses back.
+- **Example:**
+  - **Presentation Layer** (UI / Frontend)
+  - **Application Layer** (Handles workflows)
+  - **Domain Layer** (Business rules)
+  - **Data Access Layer** (Database operations)
+
+👉 **Horizontal layers = What the app *does* step-by-step.**
+
+---
+
+### 🧩 **Vertical Layers**  
+(Also called *cross-cutting concerns*.)
+
+- These **cut across** multiple horizontal layers.
+- They provide **common functionalities** needed in many parts of the system.
+- **Example:**
+  - **Authentication** (Login checks in UI + backend)
+  - **Logging** (Track events/errors in all layers)
+  - **Error Handling** (Catch and report errors at any step)
+  - **Configuration Management** (Settings used everywhere)
+
+👉 **Vertical layers = Common services used *across* steps.**
+
+---
+
+### 🧠 **Simple Analogy**  
+Imagine building a **multi-story house**:
+
+- **Floors** (Ground floor, First floor, Second floor) = **Horizontal layers** (Each floor has a role: living, dining, sleeping).
+- **Pillars, plumbing, wiring** = **Vertical layers** (Support the whole building from bottom to top).
+
+---
+
+### ✅ **Summary Table**
+
+| Aspect              | Horizontal Layers           | Vertical Layers             |
+|---------------------|------------------------------|------------------------------|
+| Meaning             | Functional separation        | Cross-cutting concerns       |
+| Flow Direction      | Top to bottom                | Across multiple layers       |
+| Examples            | Presentation, Domain, Data Access | Authentication, Logging, Error Handling |
+| Goal                | Structure of functionality   | Reusable, supportive services |
+
 ---
 
 ### 🌐 **Core Components of Web Application Architecture**
