@@ -74,8 +74,6 @@ You are not alone on this path. I am walking with you.
 **Ravi Tambade**
 *Mentor | Technologist | Believer in Human Potential*
 
-```
-
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/dotnet.md">What is .NET?</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/CSharpLang.md">.NET Programming Language</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/oo.md">Objectd Oriented  Programming</a>
