@@ -162,11 +162,6 @@ namespace  EmployeeApp
 ```
 
 
-
-### Singleton
-Here’s a storytelling-style explanation for the **Singleton Pattern in C#**, matching the tone and style you like for mentoring:
-
-
 ### The Tale of the Singleton — The One and Only in the World of Objects
 
 Imagine a kingdom where there must be exactly one **King** at any time. No more, no less. If there were two kings, confusion would reign, laws would conflict, and chaos would spread.
