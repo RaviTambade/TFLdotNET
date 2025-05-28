@@ -29,24 +29,6 @@ With **.NET 8**, we are entering a new era of development:
 - 🎨 **Desktop Legends**: WinForms and WPF, modernized
 - ☁️ **Integrated Cloud Services**: Ready for Azure, AWS, and more
 
-
-## 🛠️ Getting Started
-
-1. Clone this repo  
-   ```bash
-   git clone https://github.com/YourUsername/dotnet-learning-repo.git
-   cd dotnet-learning-repo
-````
-
-2. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download)
-
-3. Run your first project
-
-   ```bash
-   cd basics/HelloWorld
-   dotnet run
-   ```
-
 ## 📘 Learn by Doing
 
 > *“Learning to code is like learning to speak. The best way is to start talking — even if it’s broken.”*
@@ -70,7 +52,6 @@ This repository is alive and growing with every workshop and mentoring batch. If
 
 You are not alone on this path. I am walking with you.
 
-—
 **Ravi Tambade**
 *Mentor | Technologist | Believer in Human Potential*
 
