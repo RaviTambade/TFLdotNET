@@ -77,8 +77,6 @@ You are not alone on this path. I am walking with you.
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/multithreading.md">Mutithreading</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/asyncawait.md">Asynchronous Programming using C#</a>
 
-
-
 # ASP.NET  Core
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/aspnetintro.md">ASP.NET Core Overview </a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/aspnetapp.md">ASP.NET Core App  and Folder structure</a>
