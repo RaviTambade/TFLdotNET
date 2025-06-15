@@ -5,18 +5,22 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddSingleton<UserService>();
+
+
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme) 
 .AddCookie(
     options => { 
     options.LoginPath = "/auth/login";
     options.LogoutPath = "/auth/logout";
 });
+
 var app = builder.Build();
 
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
 }
+//Middleware 
 app.UseStaticFiles();
 app.UseRouting();
 app.UseAuthentication();
