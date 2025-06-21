@@ -19,6 +19,10 @@ app.UseHttpsRedirection();
 
 // Custom jwt auth middleware
 app.UseMiddleware<JwtMiddleware>();
+//
+//
+//
+
 app.UseAuthentication();
 app.UseAuthorization();
 

@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\CookieAuthRolesSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{55A21F1A-9E8B-4892-BE04-5FB6D8DDEE6A}|SecureWebApp\\SecureWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\cookieauthrolessolution\\securewebapp\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55A21F1A-9E8B-4892-BE04-5FB6D8DDEE6A}|SecureWebApp\\SecureWebApp.csproj|solutionrelative:securewebapp\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{55A21F1A-9E8B-4892-BE04-5FB6D8DDEE6A}|SecureWebApp\\SecureWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\cookieauthrolessolution\\securewebapp\\securewebapp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{55A21F1A-9E8B-4892-BE04-5FB6D8DDEE6A}|SecureWebApp\\SecureWebApp.csproj|solutionrelative:securewebapp\\securewebapp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A21F1A-9E8B-4892-BE04-5FB6D8DDEE6A}|SecureWebApp\\SecureWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\cookieauthrolessolution\\securewebapp\\securewebapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{55A21F1A-9E8B-4892-BE04-5FB6D8DDEE6A}|SecureWebApp\\SecureWebApp.csproj|solutionrelative:securewebapp\\securewebapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A21F1A-9E8B-4892-BE04-5FB6D8DDEE6A}|SecureWebApp\\SecureWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\cookieauthrolessolution\\securewebapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55A21F1A-9E8B-4892-BE04-5FB6D8DDEE6A}|SecureWebApp\\SecureWebApp.csproj|solutionrelative:securewebapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A21F1A-9E8B-4892-BE04-5FB6D8DDEE6A}|SecureWebApp\\SecureWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\cookieauthrolessolution\\securewebapp\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55A21F1A-9E8B-4892-BE04-5FB6D8DDEE6A}|SecureWebApp\\SecureWebApp.csproj|solutionrelative:securewebapp\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A21F1A-9E8B-4892-BE04-5FB6D8DDEE6A}|SecureWebApp\\SecureWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\cookieauthrolessolution\\securewebapp\\views\\auth\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55A21F1A-9E8B-4892-BE04-5FB6D8DDEE6A}|SecureWebApp\\SecureWebApp.csproj|solutionrelative:securewebapp\\views\\auth\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{55A21F1A-9E8B-4892-BE04-5FB6D8DDEE6A}|SecureWebApp\\SecureWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\cookieauthrolessolution\\securewebapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{55A21F1A-9E8B-4892-BE04-5FB6D8DDEE6A}|SecureWebApp\\SecureWebApp.csproj|solutionrelative:securewebapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55A21F1A-9E8B-4892-BE04-5FB6D8DDEE6A}|SecureWebApp\\SecureWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\cookieauthrolessolution\\securewebapp\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55A21F1A-9E8B-4892-BE04-5FB6D8DDEE6A}|SecureWebApp\\SecureWebApp.csproj|solutionrelative:securewebapp\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{55A21F1A-9E8B-4892-BE04-5FB6D8DDEE6A}|SecureWebApp\\SecureWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\cookieauthrolessolution\\securewebapp\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,14 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{55A21F1A-9E8B-4892-BE04-5FB6D8DDEE6A}|SecureWebApp\\SecureWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\cookieauthrolessolution\\securewebapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{55A21F1A-9E8B-4892-BE04-5FB6D8DDEE6A}|SecureWebApp\\SecureWebApp.csproj|solutionrelative:securewebapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55A21F1A-9E8B-4892-BE04-5FB6D8DDEE6A}|SecureWebApp\\SecureWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\cookieauthrolessolution\\securewebapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55A21F1A-9E8B-4892-BE04-5FB6D8DDEE6A}|SecureWebApp\\SecureWebApp.csproj|solutionrelative:securewebapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55A21F1A-9E8B-4892-BE04-5FB6D8DDEE6A}|SecureWebApp\\SecureWebApp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\cookieauthrolessolution\\securewebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55A21F1A-9E8B-4892-BE04-5FB6D8DDEE6A}|SecureWebApp\\SecureWebApp.csproj|solutionrelative:securewebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,8 +46,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SecureWebApp",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\CookieAuthRolesSolution\\SecureWebApp\\SecureWebApp.csproj",
+              "RelativeDocumentMoniker": "SecureWebApp\\SecureWebApp.csproj",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\CookieAuthRolesSolution\\SecureWebApp\\SecureWebApp.csproj",
+              "RelativeToolTip": "SecureWebApp\\SecureWebApp.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-15T06:01:34.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SecureWebApp",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\CookieAuthRolesSolution\\SecureWebApp\\SecureWebApp.csproj",
+              "RelativeDocumentMoniker": "SecureWebApp\\SecureWebApp.csproj",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\CookieAuthRolesSolution\\SecureWebApp\\SecureWebApp.csproj",
+              "RelativeToolTip": "SecureWebApp\\SecureWebApp.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-15T06:00:10Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\CookieAuthRolesSolution\\SecureWebApp\\Views\\Auth\\Login.cshtml",
+              "RelativeDocumentMoniker": "SecureWebApp\\Views\\Auth\\Login.cshtml",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\CookieAuthRolesSolution\\SecureWebApp\\Views\\Auth\\Login.cshtml",
+              "RelativeToolTip": "SecureWebApp\\Views\\Auth\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-15T05:56:06.913Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -46,80 +96,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\CookieAuthRolesSolution\\SecureWebApp\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "SecureWebApp\\Services\\UserService.cs",
-              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\CookieAuthRolesSolution\\SecureWebApp\\Services\\UserService.cs",
-              "RelativeToolTip": "SecureWebApp\\Services\\UserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T16:55:45.892Z",
+              "DocumentIndex": 4,
+              "Title": "AccessDenied.cshtml",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\CookieAuthRolesSolution\\SecureWebApp\\Views\\Auth\\AccessDenied.cshtml",
+              "RelativeDocumentMoniker": "SecureWebApp\\Views\\Auth\\AccessDenied.cshtml",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\CookieAuthRolesSolution\\SecureWebApp\\Views\\Auth\\AccessDenied.cshtml",
+              "RelativeToolTip": "SecureWebApp\\Views\\Auth\\AccessDenied.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-15T05:55:34.137Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\CookieAuthRolesSolution\\SecureWebApp\\Services\\IUserService.cs",
-              "RelativeDocumentMoniker": "SecureWebApp\\Services\\IUserService.cs",
-              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\CookieAuthRolesSolution\\SecureWebApp\\Services\\IUserService.cs",
-              "RelativeToolTip": "SecureWebApp\\Services\\IUserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T16:55:44.503Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\CookieAuthRolesSolution\\SecureWebApp\\Models\\User.cs",
-              "RelativeDocumentMoniker": "SecureWebApp\\Models\\User.cs",
-              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\CookieAuthRolesSolution\\SecureWebApp\\Models\\User.cs",
-              "RelativeToolTip": "SecureWebApp\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T16:55:42.227Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\CookieAuthRolesSolution\\SecureWebApp\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "SecureWebApp\\Controllers\\AuthController.cs",
               "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\CookieAuthRolesSolution\\SecureWebApp\\Controllers\\AuthController.cs",
               "RelativeToolTip": "SecureWebApp\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwBwAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwB0AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T16:53:26.843Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\CookieAuthRolesSolution\\SecureWebApp\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "SecureWebApp\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\CookieAuthRolesSolution\\SecureWebApp\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "SecureWebApp\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwAsAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T16:53:02.779Z",
+              "WhenOpened": "2025-06-15T05:55:20.469Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\CookieAuthRolesSolution\\SecureWebApp\\Program.cs",
-              "RelativeDocumentMoniker": "SecureWebApp\\Program.cs",
-              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\CookieAuthRolesSolution\\SecureWebApp\\Program.cs",
-              "RelativeToolTip": "SecureWebApp\\Program.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\CookieAuthRolesSolution\\SecureWebApp\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "SecureWebApp\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\CookieAuthRolesSolution\\SecureWebApp\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "SecureWebApp\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T16:52:41.306Z",
+              "WhenOpened": "2025-06-15T05:52:21.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\CookieAuthRolesSolution\\SecureWebApp\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "SecureWebApp\\Services\\UserService.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\CookieAuthRolesSolution\\SecureWebApp\\Services\\UserService.cs",
+              "RelativeToolTip": "SecureWebApp\\Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T05:50:35.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\CookieAuthRolesSolution\\SecureWebApp\\Services\\IUserService.cs",
+              "RelativeDocumentMoniker": "SecureWebApp\\Services\\IUserService.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\CookieAuthRolesSolution\\SecureWebApp\\Services\\IUserService.cs",
+              "RelativeToolTip": "SecureWebApp\\Services\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T05:50:02.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\CookieAuthRolesSolution\\SecureWebApp\\Models\\User.cs",
+              "RelativeDocumentMoniker": "SecureWebApp\\Models\\User.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\CookieAuthRolesSolution\\SecureWebApp\\Models\\User.cs",
+              "RelativeToolTip": "SecureWebApp\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T05:48:28.007Z",
               "EditorCaption": ""
             }
           ]

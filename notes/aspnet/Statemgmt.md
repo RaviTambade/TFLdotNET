@@ -53,55 +53,7 @@ But here’s my advice: **Don’t trust cookies too much.**
 
 Use them wisely — maybe to remember the user’s theme or preferred language — but **never store sensitive information** like passwords or account numbers.
 
----
-
-## 🗄️ 2. Session State — The Server's Personal Diary for Each User
-
-If cookies are like Post-its on the browser, **session state** is like a personal notebook the server maintains for each user.
-
-Here’s how we store data:
-
-```csharp
-HttpContext.Session.SetString("MyKey", "MyValue");
-```
-
-Every user gets a private notebook — erased when they leave the site.
-
-So, what should we write in that notebook?
-
-👉 Shopping cart contents, login status, user preferences — things you need across pages **but not forever**.
-
----
-
-## 🕳️ 3. Hidden Fields — The Secret Agent
-
-Sometimes, we want to pass information back to the server **without showing it to the user**.
-
-Imagine a spy slipping a note inside his jacket. That’s a **hidden field**!
-
-```html
-@Html.HiddenFor(x => x.UserId, new { Value = "1" })
-```
-
-It travels along with the form but stays invisible on the screen. Powerful, simple, and best used for IDs and non-sensitive data.
-
----
-
-## 🚪 4. TempData — The One-Time Messenger
-
-TempData is like a **courier that delivers a message and disappears**.
-
-Use it **only when you’re redirecting from one action to another** — for example, after saving data and redirecting to a “Thank You” page.
-
-```csharp
-TempData["CustomerId"] = 123;
-```
-
-But beware — it’s short-lived. Once read, it’s gone (unless you `Peek()` or `Keep()` it). It’s ideal for temporary flash messages like “Record saved successfully!”
-
----
-
-## 🔗 5. Query Strings — Data on the URL Highway
+## 🔗 2. Query Strings — Data on the URL Highway
 
 Sometimes, we send messages through the URL itself.
 
@@ -121,6 +73,40 @@ They’re best for filters, sorting parameters, or navigation info — anything 
 
 ---
 
+
+## 🗄️ 3. Session State — The Server's Personal Diary for Each User
+
+If cookies are like Post-its on the browser, **session state** is like a personal notebook the server maintains for each user.
+
+Here’s how we store data:
+
+```csharp
+HttpContext.Session.SetString("MyKey", "MyValue");
+```
+
+Every user gets a private notebook — erased when they leave the site.
+
+So, what should we write in that notebook?
+
+👉 Shopping cart contents, login status, user preferences — things you need across pages **but not forever**.
+
+---
+## 🚪 4. TempData — The One-Time Messenger
+
+TempData is like a **courier that delivers a message and disappears**.
+
+Use it **only when you’re redirecting from one action to another** — for example, after saving data and redirecting to a “Thank You” page.
+
+```csharp
+TempData["CustomerId"] = 123;
+```
+
+But beware — it’s short-lived. Once read, it’s gone (unless you `Peek()` or `Keep()` it). It’s ideal for temporary flash messages like “Record saved successfully!”
+
+---
+
+
+
 ## 🚀 6. Caching — Memory for the Long Run
 
 If you have data that doesn’t change often — like product lists, dropdown values, or configuration settings — **cache them!**
@@ -136,6 +122,21 @@ Caching reduces server load, speeds up the response, and gives a buttery-smooth 
 * **Response caching** for HTTP responses.
 
 ---
+
+## 🕳️ 3. Hidden Fields — The Secret Agent
+
+Sometimes, we want to pass information back to the server **without showing it to the user**.
+
+Imagine a spy slipping a note inside his jacket. That’s a **hidden field**!
+
+```html
+@Html.HiddenFor(x => x.UserId, new { Value = "1" })
+```
+
+It travels along with the form but stays invisible on the screen. Powerful, simple, and best used for IDs and non-sensitive data.
+
+---
+
 
 ## 📬 Bonus Tools: ViewBag & ViewData — Passing Notes from Controller to View
 
