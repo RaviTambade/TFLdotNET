@@ -71,7 +71,7 @@ You are not alone on this path. I am walking with you.
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/Attributes.md">Custom Attributes</a>
 
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/databasecrud.md">Data Access using C#</a>
-- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/entityframework.md"> Entity Framework Core</a>
+- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/entityframeworkcore.md"> Entity Framework Core</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/dapper.md">Dapper</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/repository.md">Repository Pattern</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/multithreading.md">Mutithreading</a>
