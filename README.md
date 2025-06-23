@@ -60,7 +60,7 @@ You are not alone on this path. I am walking with you.
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/oo.md">Objectd Oriented  Programming</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/Collections.md">Collection Framework</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/comparingobjects.md">Object Comparision</a>
-- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/LINQ.md">LINQ</a>
+- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/linq.md">LINQ</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/garbagecollection.md">Garbage Collection(GC)</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/assembly.md">Assembly in .net core</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/Reflection.md">Reflection</a>

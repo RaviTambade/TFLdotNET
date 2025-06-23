@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\TFLECommerce_May2024\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0E759FEB-D1EA-4A1F-8B7A-8C5762D60E36}|TFLECommerce_May2024\\TFLECommerce_May2024.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\tflecommerce_may2024\\tflecommerce_may2024\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E759FEB-D1EA-4A1F-8B7A-8C5762D60E36}|TFLECommerce_May2024\\TFLECommerce_May2024.csproj|solutionrelative:tflecommerce_may2024\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E759FEB-D1EA-4A1F-8B7A-8C5762D60E36}|TFLECommerce_May2024\\TFLECommerce_May2024.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\tflecommerce_may2024\\tflecommerce_may2024\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E759FEB-D1EA-4A1F-8B7A-8C5762D60E36}|TFLECommerce_May2024\\TFLECommerce_May2024.csproj|solutionrelative:tflecommerce_may2024\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E759FEB-D1EA-4A1F-8B7A-8C5762D60E36}|TFLECommerce_May2024\\TFLECommerce_May2024.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\tflecommerce_may2024\\tflecommerce_may2024\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E759FEB-D1EA-4A1F-8B7A-8C5762D60E36}|TFLECommerce_May2024\\TFLECommerce_May2024.csproj|solutionrelative:tflecommerce_may2024\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E759FEB-D1EA-4A1F-8B7A-8C5762D60E36}|TFLECommerce_May2024\\TFLECommerce_May2024.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\tflecommerce_may2024\\tflecommerce_may2024\\controllers\\shipmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E759FEB-D1EA-4A1F-8B7A-8C5762D60E36}|TFLECommerce_May2024\\TFLECommerce_May2024.csproj|solutionrelative:tflecommerce_may2024\\controllers\\shipmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E759FEB-D1EA-4A1F-8B7A-8C5762D60E36}|TFLECommerce_May2024\\TFLECommerce_May2024.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\tflecommerce_may2024\\tflecommerce_may2024\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E759FEB-D1EA-4A1F-8B7A-8C5762D60E36}|TFLECommerce_May2024\\TFLECommerce_May2024.csproj|solutionrelative:tflecommerce_may2024\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2E46A788-5D17-4152-9BDE-93BF806DBD98}|HRBlazorWebapp\\HRBlazorWebapp.csproj|d:\\ravi\\tap\\tap\\tfldotnet\\solutions\\tflecommerce_may2024\\hrblazorwebapp\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2E46A788-5D17-4152-9BDE-93BF806DBD98}|HRBlazorWebapp\\HRBlazorWebapp.csproj|solutionrelative:hrblazorwebapp\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -63,6 +83,71 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "CustomersController.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\TFLECommerce_May2024\\TFLECommerce_May2024\\Controllers\\CustomersController.cs",
+              "RelativeDocumentMoniker": "TFLECommerce_May2024\\Controllers\\CustomersController.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\TFLECommerce_May2024\\TFLECommerce_May2024\\Controllers\\CustomersController.cs",
+              "RelativeToolTip": "TFLECommerce_May2024\\Controllers\\CustomersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T04:23:00.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmployeesController.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\TFLECommerce_May2024\\TFLECommerce_May2024\\Controllers\\EmployeesController.cs",
+              "RelativeDocumentMoniker": "TFLECommerce_May2024\\Controllers\\EmployeesController.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\TFLECommerce_May2024\\TFLECommerce_May2024\\Controllers\\EmployeesController.cs",
+              "RelativeToolTip": "TFLECommerce_May2024\\Controllers\\EmployeesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T04:22:59.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\TFLECommerce_May2024\\TFLECommerce_May2024\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "TFLECommerce_May2024\\Controllers\\ProductsController.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\TFLECommerce_May2024\\TFLECommerce_May2024\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "TFLECommerce_May2024\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T04:22:58.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ShipmentsController.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\TFLECommerce_May2024\\TFLECommerce_May2024\\Controllers\\ShipmentsController.cs",
+              "RelativeDocumentMoniker": "TFLECommerce_May2024\\Controllers\\ShipmentsController.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\TFLECommerce_May2024\\TFLECommerce_May2024\\Controllers\\ShipmentsController.cs",
+              "RelativeToolTip": "TFLECommerce_May2024\\Controllers\\ShipmentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T04:22:56.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ShoppingCartController.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\TFLECommerce_May2024\\TFLECommerce_May2024\\Controllers\\ShoppingCartController.cs",
+              "RelativeDocumentMoniker": "TFLECommerce_May2024\\Controllers\\ShoppingCartController.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\TFLECommerce_May2024\\TFLECommerce_May2024\\Controllers\\ShoppingCartController.cs",
+              "RelativeToolTip": "TFLECommerce_May2024\\Controllers\\ShoppingCartController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T04:22:50.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "EmployeeRepository.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\TFLECommerce_May2024\\HRBlazorWebapp\\Repositories\\EmployeeRepository.cs",
               "RelativeDocumentMoniker": "HRBlazorWebapp\\Repositories\\EmployeeRepository.cs",
@@ -75,7 +160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Employee.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\TFLECommerce_May2024\\HRBlazorWebapp\\Entities\\Employee.cs",
               "RelativeDocumentMoniker": "HRBlazorWebapp\\Entities\\Employee.cs",
@@ -83,12 +168,11 @@
               "RelativeToolTip": "HRBlazorWebapp\\Entities\\Employee.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T16:47:51.59Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-31T16:47:51.59Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "HRContext.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\TFLECommerce_May2024\\HRBlazorWebapp\\DbContexts\\HRContext.cs",
               "RelativeDocumentMoniker": "HRBlazorWebapp\\DbContexts\\HRContext.cs",
@@ -96,12 +180,11 @@
               "RelativeToolTip": "HRBlazorWebapp\\DbContexts\\HRContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T16:47:45.315Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-31T16:47:45.315Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\TFLECommerce_May2024\\BloggersControllerWebAPI\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "BloggersControllerWebAPI\\Controllers\\ProductsController.cs",
@@ -109,12 +192,11 @@
               "RelativeToolTip": "BloggersControllerWebAPI\\Controllers\\ProductsController.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T16:47:33.507Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-31T16:47:33.507Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "BlogsController.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\TFLECommerce_May2024\\BloggersControllerWebAPI\\Controllers\\BlogsController.cs",
               "RelativeDocumentMoniker": "BloggersControllerWebAPI\\Controllers\\BlogsController.cs",
@@ -122,12 +204,11 @@
               "RelativeToolTip": "BloggersControllerWebAPI\\Controllers\\BlogsController.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T16:47:27.383Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-31T16:47:27.383Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "CustomerRepository.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\TFLECommerce_May2024\\TFLECommerce_May2024\\Repositories\\CustomerRepository.cs",
               "RelativeDocumentMoniker": "TFLECommerce_May2024\\Repositories\\CustomerRepository.cs",
@@ -135,12 +216,11 @@
               "RelativeToolTip": "TFLECommerce_May2024\\Repositories\\CustomerRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T16:47:09.081Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-31T16:47:09.081Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "Product.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\TFLECommerce_May2024\\TFLECommerce_May2024\\Models\\Product.cs",
               "RelativeDocumentMoniker": "TFLECommerce_May2024\\Models\\Product.cs",
@@ -148,12 +228,11 @@
               "RelativeToolTip": "TFLECommerce_May2024\\Models\\Product.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T16:47:06.764Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-31T16:47:06.764Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "Customer.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\TFLECommerce_May2024\\TFLECommerce_May2024\\Models\\Customer.cs",
               "RelativeDocumentMoniker": "TFLECommerce_May2024\\Models\\Customer.cs",
@@ -161,12 +240,11 @@
               "RelativeToolTip": "TFLECommerce_May2024\\Models\\Customer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T16:47:04.584Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-31T16:47:04.584Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "HRContext.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\TFLECommerce_May2024\\TFLECommerce_May2024\\DbContexts\\HRContext.cs",
               "RelativeDocumentMoniker": "TFLECommerce_May2024\\DbContexts\\HRContext.cs",
@@ -174,12 +252,11 @@
               "RelativeToolTip": "TFLECommerce_May2024\\DbContexts\\HRContext.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T16:46:44.795Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-31T16:46:44.795Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "Employee.cs",
               "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\TFLdotNET\\Solutions\\TFLECommerce_May2024\\TFLECommerce_May2024\\Entities\\Employee.cs",
               "RelativeDocumentMoniker": "TFLECommerce_May2024\\Entities\\Employee.cs",
@@ -187,8 +264,7 @@
               "RelativeToolTip": "TFLECommerce_May2024\\Entities\\Employee.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T16:46:40.109Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-31T16:46:40.109Z"
             }
           ]
         }
