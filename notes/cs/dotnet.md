@@ -3,8 +3,6 @@
 > *"Dear students, this isn’t just a codebase. It’s a journey into building your dreams — one line of code at a time."*  
 > — *Mentor Ravi Tambade*
 
----
-
 ## 🧭 What Is .NET?
 
 Imagine you're an architect — not of buildings, but of **digital solutions**. .NET is your **toolbox**, your **blueprint**, and your **construction crew**, all in one.
@@ -12,8 +10,6 @@ Imagine you're an architect — not of buildings, but of **digital solutions**. 
 **.NET** is a **free, open-source platform** for building **desktop, web, mobile, cloud, IoT**, and even **AI-powered** applications. It runs natively on **Windows, macOS, Linux, Android, and iOS**.
 
 With .NET, you're not just writing code — you’re building **scalable, secure, and high-performance** solutions with the support of a vibrant community and trusted organizations around the world.
-
----
 
 ## 🛠️ What Can .NET Do for You?
 
@@ -26,7 +22,6 @@ Let’s simplify this — here’s what .NET enables you to do as a developer:
 
 Whether you want to build a **responsive web app**, a **cross-platform mobile app**, or a **cloud-powered microservice**, .NET has the tools for you.
 
----
 
 ## 🏗️ .NET Implementations — Where It All Runs
 
@@ -45,8 +40,6 @@ Whether you want to build a **responsive web app**, a **cross-platform mobile ap
 ### 🔁 Ongoing Evolution  
 The latest release, **.NET 8**, is all about speed, scalability, and cloud-readiness — and yes, it speaks C# 12 and F# 8 fluently!
 
----
-
 ## 💖 Why Developers Choose .NET
 
 | Feature | Why It Matters |
@@ -55,8 +48,6 @@ The latest release, **.NET 8**, is all about speed, scalability, and cloud-readi
 | ⚡ **Performance** | .NET apps are known for being **fast**, **secure**, and **efficient**. |
 | 🌎 **Cross-Platform** | Write once. Run on **Windows**, **Linux**, **macOS**, **iOS**, or **Android**. |
 | 🤝 **Community Support** | .NET is **open source** and backed by the **.NET Foundation** — a vibrant, global developer network. |
-
----
 
 ## 🧱 The Building Blocks of .NET
 
@@ -76,8 +67,6 @@ The **Common Language Runtime (CLR)** is the brain behind .NET execution:
 - **Compiles** your human-friendly code into **Common Intermediate Language (CIL)**.
 - **Executes** your app on any OS using Just-in-Time (JIT) compilation.
 - Ensures **cross-platform compatibility** without changing code.
-
----
 
 ## 🎨 Application Model Frameworks
 
@@ -105,8 +94,6 @@ Each app has its own world. .NET gives you a toolkit tailored to every domain:
 - Think of **NuGet** as an **App Store for developers**
 - Thousands of reusable .NET libraries at your fingertips
 
----
-
 ## 🌩️ Cloud-Native & Modern DevOps
 
 .NET 8 is not just about local apps — it's built for the **cloud generation**:
@@ -115,8 +102,6 @@ Each app has its own world. .NET gives you a toolkit tailored to every domain:
 - 🔁 **CI/CD workflows** with **GitHub Actions**  
 - 📈 Built-in **telemetry and observability**  
 - ☁️ First-class support for **Azure, AWS, GCP**
-
----
 
 ## 🌱 Begin Your Learning Journey
 

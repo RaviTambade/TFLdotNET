@@ -1,6 +1,4 @@
-
 ### **The Journey Begins with C#**
-
 
 #### 🌞 **Good Morning, Explorers!**
 

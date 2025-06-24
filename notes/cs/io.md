@@ -1,6 +1,5 @@
 
-#  **Exploring C# File I/O – Opening the Digital Diary**
-
+#  Exploring C# File I/O – Opening the Digital Diary
 
 **"Have you ever written in a personal diary?"**
 

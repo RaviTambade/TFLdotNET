@@ -1,5 +1,4 @@
-# **Events in C# – Like Real-Life Notifications**
-
+# Events in C# – Like Real-Life Notifications
 
 ### 🕰️ “Let me take you to a real-world moment before we dive into code…”
 
@@ -14,7 +13,6 @@ Then, another one follows:
 
 You didn’t go and check your account manually — **the bank notified you** when something important happened.
 This, my friends, is **exactly how Events work in C#**.
-
 
 ## 💡 What Is an Event?
 

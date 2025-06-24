@@ -1,7 +1,5 @@
 # *Understanding the Power of Multitasking, Multithreading & Multiprocessing in C#*
 
----
-
 **"Imagine you're a chef in a busy kitchen..."**
 You’re chopping vegetables, boiling pasta, grilling paneer, and at the same time guiding your junior on how to plate the starter.
 
@@ -104,8 +102,6 @@ You’d use multiprocessing when:
 * You want **crash isolation**
 * You want to use **multiple CPU cores fully**
 * You’re doing **CPU-bound or independent** tasks
-
- 
 
 ## 🧾 Thread vs Task vs Process — Quick Recap
 

@@ -1,6 +1,5 @@
 # **The Hidden Superpowers of C# Attributes**
 
-
 ## 🎙️ *Mentor Begins...*
 
 > *"When you walk into a library, how do you know which book is fiction, which one is science, or which is meant for kids? You don’t open every page — you just look at the **labels**."*

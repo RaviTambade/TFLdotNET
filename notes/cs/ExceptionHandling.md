@@ -1,5 +1,5 @@
 
-## **“Why Even a Perfect Code Needs a Parachute”**
+## “Why Even a Perfect Code Needs a Parachute”
 
 *Students, gather around. Let me tell you a little story — not about code, but about life. Because life and programming have a lot in common.*
 
