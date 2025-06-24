@@ -1,8 +1,6 @@
-Absolutely! Let me walk you through the **Layered Architecture**, **Component-Based Design**, and **Service-Oriented Architecture (SOA)** in a mentor storytelling style — the kind of session I would lead in a mentorship workshop with aspiring .NET architects or team leads.
 
----
 
-👨‍🏫 **Mentor Storytelling: Layered Architecture – Think Like an Architect**
+##  Mentor Storytelling: Layered Architecture – Think Like an Architect
 
 *"Let me tell you a story of how we used to build applications... and how we evolved."*
 

@@ -1,4 +1,4 @@
-# The Rise of Microservices — From Kingdoms to City-States
+## The Rise of Microservices — From Kingdoms to City-States
 
 *"Let me take you back to the time when we built big monolithic applications — like giant kingdoms."*
 We had one big **codebase**, one **deployment**, one **database**. Everything was tightly packed.

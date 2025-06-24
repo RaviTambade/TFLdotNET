@@ -1,5 +1,5 @@
 
-👨‍🏫 How I Learned to Speak the Language of the Business — Domain-Driven Design in .NET
+## How I Learned to Speak the Language of the Business — Domain-Driven Design in .NET
 
 > "When I was a junior developer, I was obsessed with code. Clean code, fast code, DRY code. But something felt... missing. I was solving problems, yes — but not always the *right* problems."
 
