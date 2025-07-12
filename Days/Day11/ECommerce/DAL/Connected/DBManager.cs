@@ -648,14 +648,3 @@ public class DBManager{
 
 
 
-//
-
-            //DisConnected Data Access Mode
-             //MySqlConnection  : establishing connection
-            //MySqlCommand      : query execution
-            //MySqlDataApater
-            //DataSet
-            //DataTable
-            //DataRow
-            //DataColumn
-            //DataRealtion
