@@ -2,26 +2,49 @@
 using Banking;
 using Maths;
 
-//Variables are declared using types
-//CTS :Common Type System
+//.NET:  Ecosystem  =  CLR + CTS + C# language(garmmer) + Reusable Library (vocablury)
+// Reusable Library  :  ado.net, asp.net MVC, web api, etc. 
 
-//Value types:
-            //primitive data types
-            //int, float, double, bool, struct
-            //enum
-            //char
-//Reference types
-            //class
-            //interface
-            //delegate
-            //event
+// we would be able build application
+// host application
+// Exeucte application
+
+
+
+// Execution Engine: CLR (Common Lanaguge Runtime)
+
+//Varible declaration:
+// Variables are declared using types
+//CTS :Common Type System
+// Two ways you can define variables:
+// 1.Value types:    2.Refernce Types
+
+
+//1. primitive data types (Value Types)
+//int, float, double, bool, struct
+//enum
+//char
+
+
+//2.Reference types
+//class , interface, delegate ,event
+
+
 
 //Collection Framework
-            // namespaces
-            // System.Collections.Generic
+// namespaces
+// System.Collections.Generic
 //bool status=false;
 //Boolean flag=true;
 //annonymous type
+
+
+int result = 56;
+char ch = 'T';
+boolean status = false;
+
+
+//Annonyous type
 
 var p=new {
                 FirstName="Satish",
@@ -38,7 +61,7 @@ Console.WriteLine("Count = "+ count);
 Console.WriteLine(company);
 Console.WriteLine("Hello, World!");
 
-Account acc123=new Account(60000);
+Account acc123=new Account(60000);  //User defiend type
 acc123.Deposit(15000);
 float  currentBalance123=acc123.GetBalance();
  
