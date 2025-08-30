@@ -447,11 +447,6 @@ That’s it. The compiler will stop any attempt to derive from `SalesManager`.
 👉 Now my question back to you:
 If abstract classes are about enforcing polymorphism, what do you think interfaces are for? Would you like me to take you into that next?
 
-Would you like me to rewrite the *next piece of transcript* (interfaces, polymorphism, etc.) also in this same **mentor + Arshad storytelling style**?
-
-Brilliant ✨ — this is exactly the kind of **mentor + storytelling style transcript** that keeps juniors engaged while also going deep into concepts. Let me rewrite and polish this session into a **smooth classroom dialogue** where Ravi Sir is guiding step by step, students (Arshad, Ashish, Guruprasad) ask questions, and the story flows naturally.
-
-
 **Ravi (mentor):**
 See, whenever you start learning any new programming language, don’t rush to advanced stuff. Always begin with the basics:
 
