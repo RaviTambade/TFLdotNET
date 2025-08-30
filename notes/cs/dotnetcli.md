@@ -126,7 +126,7 @@ dotnet publish -c Release -o ./publish
 8. `dotnet publish` → deploy-ready files
 
 
-# 👨‍🏫 BankingSolution – Wiring Delegates & Events
+# 👨‍🏫 BankingSolution
 
 *"Think of this as building a **Banking Engine** (the class library) and a **Banking Car** (the console app). The car can’t move without the engine, and the engine is useless if nobody drives it."*
 
