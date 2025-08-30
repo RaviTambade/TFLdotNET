@@ -433,6 +433,80 @@ dotnet sln add BankingPortal/BankingPortal.csproj
 
 Think of it like a family tree. If one child’s name is missing, the child exists, but not shown in the family book. Adding reference makes sure everyone is properly linked.
 
+
+
+# 👨‍🏫 *Introduction to ASP.NET Core MVC with .NET CLI*
+
+
+“Imagine you are an architect. You’ve built small huts before, maybe a one-room house with just walls and a roof. That’s like writing simple **console applications**—they work, but they’re limited.
+
+Now, you’ve got a client who says: *‘I want a bungalow. It should have a hall, bedrooms, a kitchen, and a proper entrance.’*
+
+That’s where **ASP.NET Core MVC** comes in. It is like the architectural blueprint for building modern **web applications**. Instead of just a single room, MVC (Model–View–Controller) gives you a **structure**—like having walls, doors, and windows in the right place.
+
+* **Model** is the data—like the foundation of your house.
+* **View** is what people see—like the design, the paint, the front elevation.
+* **Controller** is the manager—like the architect or the project manager who decides how requests are handled.
+
+So when a user types something in the browser (like knocking on the door), the **Controller** decides where to take them, fetches the **Model** (data), and finally gives the **View** (the page) back. That’s the story of MVC in real life!
+
+
+
+⚡ Now, how do we start building this bungalow (our MVC app)?
+
+Not by bricks and cement, but with **.NET CLI commands**.
+CLI (Command Line Interface) is like the set of tools an engineer carries in a toolkit.
+
+Here’s how the journey goes:
+
+1. **Check if your toolbox is ready**
+
+   ```bash
+   dotnet --version
+   ```
+
+   This shows which .NET SDK is installed. If it shows a number like `8.0.xxx`, you’re good to go.
+
+2. **Create the MVC project skeleton**
+
+   ```bash
+   dotnet new mvc -n MyFirstMvcApp
+   ```
+
+   * `dotnet new mvc` = create a new MVC application.
+   * `-n MyFirstMvcApp` = give it a name, like naming your bungalow.
+
+   This command creates a ready-made **project structure** with folders for Models, Views, and Controllers. Think of it as getting a prefab frame of your house where walls are already marked.
+
+3. **Navigate into your project**
+
+   ```bash
+   cd MyFirstMvcApp
+   ```
+
+4. **Run the application**
+
+   ```bash
+   dotnet run
+   ```
+
+   Your web app starts, and it shows you something like:
+   `Now listening on: https://localhost:5001`
+
+   Copy that link, open it in a browser, and boom 🚀—your first ASP.NET Core MVC app is alive!
+
+
+🌱 *Reflection*:
+See, in just a few commands, you went from *nothing* to a running **web application**. This is the power of ASP.NET Core + .NET CLI. You didn’t even need Visual Studio’s big machinery—you just acted like a craftsman with your own toolkit.
+
+From here, we’ll slowly add rooms to our bungalow:
+
+* Build Controllers (entry points).
+* Create Models (data).
+* Design Views (UI).
+
+And just like that, you’ll learn how to shape a professional web app step by step.
+
 ### 2. **Skeleton of an MVC App**
 
 Now compare:
