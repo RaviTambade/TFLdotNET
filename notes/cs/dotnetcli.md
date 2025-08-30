@@ -185,12 +185,6 @@ namespace Banking
         public string HolderName { get; set; }
         public double Balance { get; private set; }
 
-        // Delegate definition
-        public delegate void UnderBalanceHandler(string message);
-
-        // Event based on delegate
-        public event UnderBalanceHandler? UnderBalance;
-
         public Account(int accNo, string holder, double balance)
         {
             AccountNumber = accNo;
