@@ -125,12 +125,11 @@ dotnet publish -c Release -o ./publish
 7. `dotnet pack` → package as NuGet
 8. `dotnet publish` → deploy-ready files
 
- 
+
 # 👨‍🏫 BankingSolution – Wiring Delegates & Events
 
 *"Think of this as building a **Banking Engine** (the class library) and a **Banking Car** (the console app). The car can’t move without the engine, and the engine is useless if nobody drives it."*
 
----
 
 ## 1️⃣ Create the Solution & Projects
 
@@ -167,7 +166,7 @@ BankingSolution/
 └─ BankingApp/              # EXE project (consumer)
    ├─ BankingApp.csproj
    ├─ Program.cs
-   └─ AccountEventListener.cs   # (we’ll add this)
+    
 ```
 
 
@@ -204,9 +203,7 @@ namespace Banking
             if (Balance - amount < 1000)   // Business rule: min balance
             {
                 // Fire the event
-                UnderBalance?.Invoke(
-                    $"⚠️ Alert: Withdrawal denied for {HolderName}. " +
-                    $"Balance would go below 1000!");
+                
             }
             else
             {
@@ -219,26 +216,6 @@ namespace Banking
 ```
 
 
-
-## 4️⃣ Listener: **BankingApp (Consumer)**
-
-👉 File: `BankingApp/AccountEventListener.cs`
-
-```csharp
-using System;
-using Banking;
-
-namespace BankingApp
-{
-    public class AccountEventListener
-    {
-        public void HandleUnderBalance(string message)
-        {
-            Console.WriteLine(message);
-        }
-    }
-}
-```
 
 
 ## 5️⃣ Driver: **Program.cs**
@@ -256,11 +233,6 @@ namespace BankingApp
         static void Main(string[] args)
         {
             Account acc = new Account(101, "Ravi", 5000);
-
-            AccountEventListener listener = new AccountEventListener();
-
-            // Subscribe listener to event
-            acc.UnderBalance += listener.HandleUnderBalance;
 
             Console.WriteLine("🚀 Banking Demo Started");
             
@@ -289,10 +261,3 @@ dotnet run --project BankingApp
 ```
 
 
-### 🎯 Mentor Wrap-up
-
-* **Delegate** = “Who should be called?”
-* **Event** = “When something special happens, call them.”
-* **Account** = Engine triggers the event.
-* **Listener** = The driver who reacts.
-* **Console App** = The car that shows what’s happening.
