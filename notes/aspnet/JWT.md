@@ -7,7 +7,7 @@ Imagine you're at a giant music festival. As you walk in, the staff gives you a 
 
 In the world of web apps, **JWT tokens** are just like that wristband.
 
----
+
 
 ## 🎫 What is JWT (JSON Web Token)?
 
@@ -27,9 +27,9 @@ JWT has 3 parts — all packed in one string separated by dots:
 
 Let’s understand why JWT is *the real deal* in modern APIs:
 
-✅ **Stateless**: No session storage required. Token contains all info.
-✅ **Cross-Platform**: Use it with web, mobile, desktop — anything!
-✅ **Scalable**: Great for microservices; tokens travel with the request.
+- ✅ **Stateless**: No session storage required. Token contains all info.
+- ✅ **Cross-Platform**: Use it with web, mobile, desktop — anything!
+- ✅ **Scalable**: Great for microservices; tokens travel with the request.
 
 ## 🛠️ Step-by-Step Implementation in ASP.NET Core Web API
 
@@ -172,7 +172,7 @@ Call `/api/login` to get a token, add it in the request header like:
 Authorization: Bearer <your_token_here>
 ```
 
-✅ Now you get your “Hello from secured API”.
+- ✅ Now you get your “Hello from secured API”.
 
 
 ##  Mentor’s Advice to You

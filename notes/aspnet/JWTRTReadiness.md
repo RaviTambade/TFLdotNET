@@ -42,8 +42,6 @@ Ask yourself:
 
 That’s when your app grows from *just working* → to a **mature, professional-grade web application**.
 
- Excellent 👌 You are now moving into the **heart of web application security with JWT (token-based authentication)**.
-Let me narrate this in our **mentor story telling style**, so the students feel the real-world analogy behind what’s happening.
 
 
 👨‍🏫 **“See, our application is now running on port 4000.”**
