@@ -3,6 +3,13 @@
 
 “Alright team, imagine we are setting up the security gate for our application. Just like in a society or office, you don’t let people in without verifying who they are. In software, we do this using **authentication**, and in modern web APIs, the most common mechanism is the **JWT token**.
 
+
+
+
+
+
+
+
 Now let’s see how we build this flow step by step.
 
  
