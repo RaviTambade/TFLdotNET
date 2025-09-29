@@ -1,6 +1,5 @@
 ### 🌟 Disconnected Data Access Mode 
 
-
 “Imagine you are a shop owner. You need the list of products from the warehouse (database). But here’s the catch — you don’t want to stay connected to the warehouse all the time because:
 
 1. Continuous connection is costly.
