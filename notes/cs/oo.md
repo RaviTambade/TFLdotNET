@@ -44,459 +44,133 @@ In code, we do the same. We wrap the internals in a class and expose only what�
 Using `private`, `public`, and `protected`, we decide what the world can touch — and what it can’t."
 
 
-#### 👪 3. Inheritance – Like Parents, Like Children
-
-"Let me ask you — do you have traits like your parents? Eyes, habits, maybe even their sense of humor?
-
-That’s **inheritance** in code.
-
-Let’s say you create a `Vehicle` class. It has `Speed` and a `Move()` method. Now, you build a `Car` class that inherits all of that and adds `NumberOfDoors`.
-
-```csharp
-class Vehicle
-{
-    public int Speed { get; set; }
-    public void Move() => Console.WriteLine("Moving...");
-}
-
-class Car : Vehicle
-{
-    public int NumberOfDoors { get; set; }
-}
-```
-
-The `Car` doesn’t need to reinvent the wheel (pun intended 😄). It reuses and builds on what's already there."
 
 
-#### 🎭 4. Polymorphism – One Interface, Many Behaviors
+### 👪 3. Inheritance – Like Parents, Like Children
 
-"Think about a `RemoteControl`. You use the same button to power on a TV, AC, or music system — but each responds differently.
+"Think about a bank account. Every account has a `Balance`, and you can `Deposit()` or `Withdraw()` money, right?
 
-That’s **polymorphism**.
+Now imagine you want a **special account** called `SavingAccount` that gives you interest every month. You don’t want to rewrite everything from `Account` — you just want to **reuse** its features and add the interest behavior.
 
-In C#, it means you can call the same method name — like `Speak()` — and each class gives its own behavior."
+That’s **inheritance** in programming — children (derived classes) get traits from their parents (base classes).
 
 ```csharp
-class Animal
+// Parent class
+class Account
 {
-    public virtual void Speak() => Console.WriteLine("Some sound");
-}
+    public decimal Balance { get; set; }
 
-class Dog : Animal
-{
-    public override void Speak() => Console.WriteLine("Bark!");
-}
-
-class Cat : Animal
-{
-    public override void Speak() => Console.WriteLine("Meow!");
-}
-```
-
-"Now when I write:
-
-```csharp
-Animal a1 = new Dog();
-Animal a2 = new Cat();
-a1.Speak(); // Bark!
-a2.Speak(); // Meow!
-```
-
-I get different outputs, even though I used the same method. That’s the power of polymorphism."
-
-
-### 🔐 The Pillars Together — A Strong House
-
-"So you see — abstraction filters out noise, encapsulation protects the core, inheritance gives us reuse, and polymorphism gives us flexibility. Together, they create a system that’s clean, powerful, and future-proof."
-
-
-### ✨ Bonus Thought: Concurrency & Persistence
-
-"Now picture this — multiple objects in your app doing their work at the same time — a chatbot replying to a user while data gets saved in the background. That’s **concurrency**.
-
-And what if your user logs in tomorrow and finds their settings remembered? That’s **persistence** — your objects lived beyond the session, stored safely in a database or a file.
-
-C# handles both like a champ. You'll learn threading, async/await, file I/O, databases — all under this beautiful OOP umbrella."
-
- 
-### 🙋 Mentor's Final Words
-
-"My dear students, OOP is not just a coding style — it’s a **mindset**.
-
-Think in terms of **objects**.
-Speak in terms of **roles and responsibilities**.
-And build systems like **real architects**.
-
-Once you master OOP, you don’t just write code — you **design** software. And that is the difference between a coder and a software engineer."
-
- 
-### Wrapping Up with a Simple C# Example
-
-Let’s see how all this fits into a small, friendly example:
-
-```csharp
-// Abstraction and Encapsulation: We hide details, show essentials
-class Person
-{
-    // State: properties
-    public string Name { get; set; }
-    public int Age { get; set; }
-
-    // Behavior: methods
-    public void Introduce() => Console.WriteLine($"Hi, I'm {Name} and I'm {Age} years old.");
-}
-
-// Inheritance: Student is a Person with extra info
-class Student : Person
-{
-    public string School { get; set; }
-    
-    public void Study() => Console.WriteLine($"{Name} is studying at {School}.");
-}
-
-class Program
-{
-    static void Main()
+    public void Deposit(decimal amount)
     {
-        Student student = new Student { Name = "Tejas", Age = 25, School = "Open University" };
-        student.Introduce();  // inherited behavior
-        student.Study();      // student-specific behavior
-    }
-}
-```
-
-Here, you see abstraction by exposing only necessary info, encapsulation by grouping data and behavior, inheritance with `Student` from `Person`, and typing enforced by C#.
-
- 
-
-### Why Teach This Way?
-
-By telling stories around objects, their roles, and their interactions, your learners will feel like architects, not just coders. They’ll think in models, designs, and relationships — and that’s the heart of software craftsmanship.
-
-
-### Namespace and Class
-Namespace is a collection .NET Types such as structure, class, interfaces, etc.
-
-```
-namespace  EmployeeApp
-{
-   public class Employee
-  {
-    private  string empName;
-    private  int empID;
-    private  float currPay;
-    private   int empAge;
-    private  string empSSN;
-    private static string companyName;
-   
-    public Employee ()
-    { 
-      empID=18; 
-      currPay=15000; 
-    }
-    
-    public Employee (int id, float basicSal)
-    { 
-      empID=id; currPay= basicSal; }
-      public ~Employee()
-      { 
-        //DeInitializtion 
-      }
-
-      public void GiveBonus(float amount)
-      {
-        currPay += amount;   
-      }
-      
-      public void DisplayStats()
-      { 
-          Console.WriteLine("Name: {0}", empName);
-          Console.WriteLine("ID:   {0}", empID);
-          Console.WriteLine("Age:  {0}", empAge);
-          Console.WriteLine("SSN:  {0}", empSSN);
-          Console.WriteLine("Pay:  {0}", currPay);
-      }
- }
-}
-```
-
-
-### The Tale of the Singleton — The One and Only in the World of Objects
-
-Imagine a kingdom where there must be exactly one **King** at any time. No more, no less. If there were two kings, confusion would reign, laws would conflict, and chaos would spread.
-
-In software, sometimes you want the same kind of order — only **one single instance** of a class should ever exist. That’s the magic behind the **Singleton Pattern**.
-
-
-### What Is Singleton?
-
-The **Singleton** is a special class designed to make sure **only one object** of itself can ever be created throughout the whole lifetime of the program. It’s like the King of your digital kingdom — unique, alone, and always accessible.
-
-Why do we need this? Imagine:
-
-* A **Configuration Manager** that reads app settings — you want just one source of truth.
-* A **Logger** that records events — you want all logs going to the same place.
-* A **Database Connection Pool** — one manager controlling all connections.
-
-### The Four Sacred Rules of Singleton
-
-To keep this promise of uniqueness, Singleton classes follow these sacred rules:
-
-1. **The Private Constructor**
-
-The constructor is the guarded gate — it’s private and parameterless. No outsiders can sneak in to create new instances. This stops anyone from calling `new Singleton()` from outside.
-
-Because no one else can create new ones, it also prevents subclassing. Why? Because if subclasses could create new instances, the “only one” rule would break down.
-
-2. **The Sealed Class**
-
-The class is sealed — like a royal decree that no one can override or extend it. This is not absolutely required, but it makes sure no one can trick the system by making subclasses and breaking the rule.
-
-3. **The Static Instance**
-
-Inside the class, there’s a **static variable** holding the one and only instance. It’s the throne — the unique seat reserved for the singleton object.
-
-4. **The Public Accessor**
-
-The class exposes a **public static property or method** that allows everyone in the kingdom to access the one singleton instance. If the throne is empty, this accessor creates the king; if the king already sits, it simply points to him.
-
-
-### The Singleton in C# — A Royal Code Example
-
-```csharp
-public sealed class King
-{
-    // 3. The static variable holding the one instance
-    private static King? _instance = null;
-
-    // 1. The private constructor - gatekeeper of the throne
-    private King()
-    {
-        // Initialize any resources here
+        Balance += amount;
+        Console.WriteLine($"Deposited {amount}. New Balance: {Balance}");
     }
 
-    // 4. The public static accessor to get the King instance
-    public static King Instance
+    public void Withdraw(decimal amount)
     {
-        get
+        if (Balance >= amount)
         {
-            if (_instance == null)
-            {
-                _instance = new King();
-            }
-            return _instance;
+            Balance -= amount;
+            Console.WriteLine($"Withdrew {amount}. New Balance: {Balance}");
+        }
+        else
+        {
+            Console.WriteLine("Insufficient funds!");
         }
     }
+}
 
-    // Example behavior
-    public void Rule()
+// Child class
+class SavingAccount : Account
+{
+    public decimal InterestRate { get; set; } = 0.05m;
+
+    public void ApplyInterest()
     {
-        Console.WriteLine("The King rules the kingdom.");
+        Balance += Balance * InterestRate;
+        Console.WriteLine($"Interest applied. New Balance: {Balance}");
     }
 }
 ```
 
-### Using the Singleton
+Here’s the magic:
+
+* `SavingAccount` **inherits** `Balance`, `Deposit()`, and `Withdraw()` from `Account`.
+* We **don’t rewrite** the deposit or withdraw logic — we simply add `ApplyInterest()`.
+* Just like kids inherit traits from parents, `SavingAccount` inherits account behaviors and then extends them with extra features.
+
+So, whenever you create a `SavingAccount` object, it **already knows how to deposit and withdraw**, but now it can also **earn interest**. 🎉"
+
+
+#### 🎭 4. Polymorphism – One Action, Different Results
+
+"Imagine you walk into a bank and press the **‘ProcessTransaction’ button**.
+
+* For a **Savings Account**, the bank calculates interest before completing the transaction.
+* For a **Current Account**, it just updates the balance without interest.
+
+Same action — **different behavior**. That’s **polymorphism** in programming.
+
+In C#, polymorphism allows us to call the **same method** on different types of accounts, and each behaves in its own way.
 
 ```csharp
-class Program
+// Base class
+class Account
 {
-    static void Main()
+    public decimal Balance { get; set; }
+
+    // Virtual method can be overridden
+    public virtual void ProcessTransaction(decimal amount)
     {
-        King king1 = King.Instance;
-        King king2 = King.Instance;
+        Balance += amount;
+        Console.WriteLine($"Generic account: Deposited {amount}. Balance: {Balance}");
+    }
+}
 
-        king1.Rule();
+// Derived class 1
+class SavingAccount : Account
+{
+    public decimal InterestRate { get; set; } = 0.05m;
 
-        Console.WriteLine(Object.ReferenceEquals(king1, king2)); // True — both refer to the same King
+    public override void ProcessTransaction(decimal amount)
+    {
+        Balance += amount;
+        Balance += Balance * InterestRate; // Apply interest
+        Console.WriteLine($"Saving Account: Deposited {amount} + interest. Balance: {Balance}");
+    }
+}
+
+// Derived class 2
+class CurrentAccount : Account
+{
+    public override void ProcessTransaction(decimal amount)
+    {
+        Balance += amount;
+        Console.WriteLine($"Current Account: Deposited {amount}. Balance: {Balance}");
     }
 }
 ```
 
-### Why Does This Matter?
-
-Without the Singleton, you might accidentally create many kings, causing conflicting rules and confusion. But with Singleton, you have:
-
-* **Controlled access** to one and only instance.
-* **Lazy initialization** — the king only appears when first needed.
-* **Global access** without scattering the instance everywhere.
-
-
-### Final Thoughts for the Apprentice
-
-The Singleton pattern is like appointing a wise monarch for your application — unique, reliable, and easy to find. It’s a classic tool in your design toolbox for managing shared resources carefully.
-
-In your coding journey, you’ll find many patterns like this — each a story about how to tame complexity and build clear, maintainable systems.
-
-
-```
-public class OfficeBoy
- {     
-    private static OfficeBoy _ref = null;
-    private  int _val;
-    private  OfficeBoy()
-    {
-        _val = 10;  
-    }
-    
-    public  int Val 
-    { 
-      get {  return _val;  }
-      set { _val = value; }
-                       }
-      public static OfficeBoy GetObject ()
-      {    if (_ref == null)
-              _ref = new OfficeBoy ();
-             return _ref;
-      }
- }
-
-static void Main(string[] args)
- { 
-    OfficeBoy sweeper, waiter;
-    string s1; float f1;
-    
-    sweeper = OfficeBoy.GetObject(); waiter = OfficeBoy.GetObject();
-    sweeper.Val = 60;
-    
-    Console.WriteLine("Sweeper Value : {0}", sweeper.Val);
-    Console.WriteLine("Waiter Value  : {0}", waiter.Val);
-    
-    s1 = sweeper.Val.ToString();
-    f1 = (float)sweeper.Val;
-    
-    sweeper.Val = int.Parse(s1);
-    sweeper.Val = Convert.ToInt32(s1);    
- }
-
-```
-
-
-### Nullable Types
-```
-  class  DatabaseReader
-  {
-      public int? numericValue = null;
-      public bool? boolValue = true;
-      public int? GetIntFromDatabase()     { return numericValue; }
-      public bool? GetBoolFromDatabase()   { return boolValue; }
-  }
-    
-  public static void Main (string[] args)
-    {
-        DatabaseReader  dr = new DatabaseReader();
-        int? i = dr.GetIntFromDatabase();
-        if (i.HasValue)
-          Console.WriteLine("Value of 'i' is: {0}", i.Value);
-        else
-          Console.WriteLine("Value of 'i' is undefined.");
-        bool? b = dr.GetBoolFromDatabase();
-        int? myData = dr.GetIntFromDatabase() ?? 100;
-        Console.WriteLine("Value of myData: {0}", myData.Value);
-    }
-
-    static void LocalNullableVariables ()
-      {     int? nullableInt = 10;
-            double? nullableDouble = 3.14;
-            bool? nullableBool = null;
-            int?[] arrayOfNullableInts = new int?[10];
-            
-            // Define some local nullable types using Nullable<T>. 
-            
-            Nullable<int> nullableInt = 10;
-            Nullable<double> nullableDouble = 3.14;
-            Nullable<bool> nullableBool = null;
-            Nullable<int> [] arrayOfNullableInts = new int?[10];
-      }
-    }
-  }
-```
-
-### The Family Saga of Inheritance and Polymorphism in C#
-
-Imagine a big family where children inherit traits, habits, and skills from their parents — that’s the heart of **Inheritance** in programming. It helps you reuse code and extend your software without rewriting everything from scratch.
-
-### What Is Inheritance?
-
-Inheritance is like a family tree in the world of classes.
-
-* There’s a **base class** — the parent, like an **Employee**.
-* Then you have **derived classes** — the children, like **Manager**, who inherit everything the parent has but also add their own special traits.
-
-```plaintext
-Object (root of all)
-   └─ Employee (inherits from Object)
-         └─ Manager (inherits from Employee)
-```
-
-In .NET, **every class** implicitly inherits from a special class called `Object` — the mother of all classes. This means even the simplest class you create has some basic behaviors already, like the ability to print itself (`ToString()`), check equality, or get a hash code.
-
-### Why Inheritance?
-
-Because it saves time and effort:
-
-* You write common properties and methods once in `Employee`.
-* `Manager` automatically gets those without extra code.
-* You extend `Manager` with new things only managers have, like managing teams.
-
-
-### What About Polymorphism?
-
-Polymorphism means “many shapes” — and in programming, it means the same method can behave differently depending on the object calling it.
-
-Imagine you have a method called `Work()`.
-
-* For a generic **Employee**, `Work()` might say: “I’m doing general work.”
-* For a **Manager**, `Work()` could say: “I’m managing my team.”
-
-### How Does C# Support Polymorphism?
-
-By using the magic keywords:
-
-* **`virtual`** in the base class tells C#: “Hey, this method can be changed by the children.”
-* **`override`** in the derived class says: “I’m changing the behavior of this method to fit me better.”
-
-### A Simple C# Family Example
+"Now let’s see polymorphism in action:"
 
 ```csharp
-class Employee
-{
-    public string Name { get; set; }
+Account acc1 = new SavingAccount();
+Account acc2 = new CurrentAccount();
 
-    // Virtual method: base version can be overridden
-    public virtual void Work()
-    {
-        Console.WriteLine($"{Name} is doing general work.");
-    }
-}
-
-class Manager : Employee
-{
-    // Override Work to customize for Manager
-    public override void Work()
-    {
-        Console.WriteLine($"{Name} is managing the team.");
-    }
-}
-
-class Program
-{
-    static void Main()
-    {
-        Employee emp = new Employee { Name = "Tejas" };
-        Manager mgr = new Manager { Name = "Anita" };
-
-        emp.Work();  // Output: Tejas is doing general work.
-        mgr.Work();  // Output: Anita is managing the team.
-
-        // Polymorphism in action: treating Manager as Employee reference
-        Employee polymorphicEmp = new Manager { Name = "Raj" };
-        polymorphicEmp.Work();  // Output: Raj is managing the team.
-    }
-}
+acc1.ProcessTransaction(1000); // Applies interest
+acc2.ProcessTransaction(1000); // Just adds amount
 ```
 
-### Why This Matters
+Even though we called **the same method** `ProcessTransaction()`, the **output is different** depending on the account type.
+
+* Savings account adds **interest** automatically.
+* Current account just updates the balance.
+
+🎉 That’s **polymorphism** — one interface, many behaviors. Just like a single bank button serving multiple account types differently!"
+
+
+##  Why Inheritance Matters ?
+
 
 * **Code reusability:** Write once, use many times.
 * **Extensibility:** Easily add new types of Employees without breaking old code.
@@ -714,67 +388,339 @@ The Object class has five methods:
   - 	Returns hashcode for an object.
 
 
-### Partial class
-
-Consider a situation, Where two developers are working on same class but they want to add 
-design code and business logic or event handling logic as seperate  C# files. This class needed to be  spread across multiple source file. In such situaation ,we can use partial keword
-
-```
-// window.design.cs file
-
- public partial class Window{
-  
-    private int width ;
-    private int height;
-    private Color Background
- }
 
 
-// window.eventdrivenlogic.cs file
+### 🔐 The Pillars Together — A Strong House
 
- public partial class Window{
-  
-    public void OnLoad() {     }
-    public void onPaint() {     }
-    public void OnMouseMove() {   }
-   
- }
-```
+"So you see — abstraction filters out noise, encapsulation protects the core, inheritance gives us reuse, and polymorphism gives us flexibility. Together, they create a system that’s clean, powerful, and future-proof."
 
-AT the time of compilation , all source files(.cs files) for the class definition Window are merged  into  as single class Window with all members. Access modifiers used for defining a class should be consistent across all files.
 
-## Interfaces
+### ✨ Bonus Thought: Concurrency & Persistence
 
-In C# an interface is similar to abstract class. In interface all methods are bydefault abstract.
-```
-public interface IShape{
-  //method without body
-  void Draw();
+"Now picture this — multiple objects in your app doing their work at the same time — a chatbot replying to a user while data gets saved in the background. That’s **concurrency**.
+
+And what if your user logs in tomorrow and finds their settings remembered? That’s **persistence** — your objects lived beyond the session, stored safely in a database or a file.
+
+C# handles both like a champ. You'll learn threading, async/await, file I/O, databases — all under this beautiful OOP umbrella."
+
+ 
+### 🙋 Mentor's Final Words
+
+"My dear students, OOP is not just a coding style — it’s a **mindset**.
+
+Think in terms of **objects**.
+Speak in terms of **roles and responsibilities**.
+And build systems like **real architects**.
+
+Once you master OOP, you don’t just write code — you **design** software. And that is the difference between a coder and a software engineer."
+
+### The Tale of the Singleton — The One and Only in the World of Objects
+
+Imagine a kingdom where there must be exactly one **King** at any time. No more, no less. If there were two kings, confusion would reign, laws would conflict, and chaos would spread.
+
+In software, sometimes you want the same kind of order — only **one single instance** of a class should ever exist. That’s the magic behind the **Singleton Pattern**.
+
+
+### What Is Singleton?
+
+The **Singleton** is a special class designed to make sure **only one object** of itself can ever be created throughout the whole lifetime of the program. It’s like the King of your digital kingdom — unique, alone, and always accessible.
+
+Why do we need this? Imagine:
+
+* A **Configuration Manager** that reads app settings — you want just one source of truth.
+* A **Logger** that records events — you want all logs going to the same place.
+* A **Database Connection Pool** — one manager controlling all connections.
+
+### The Four Sacred Rules of Singleton
+
+To keep this promise of uniqueness, Singleton classes follow these sacred rules:
+
+1. **The Private Constructor**
+
+The constructor is the guarded gate — it’s private and parameterless. No outsiders can sneak in to create new instances. This stops anyone from calling `new Singleton()` from outside.
+
+Because no one else can create new ones, it also prevents subclassing. Why? Because if subclasses could create new instances, the “only one” rule would break down.
+
+2. **The Sealed Class**
+
+The class is sealed — like a royal decree that no one can override or extend it. This is not absolutely required, but it makes sure no one can trick the system by making subclasses and breaking the rule.
+
+3. **The Static Instance**
+
+Inside the class, there’s a **static variable** holding the one and only instance. It’s the throne — the unique seat reserved for the singleton object.
+
+4. **The Public Accessor**
+
+The class exposes a **public static property or method** that allows everyone in the kingdom to access the one singleton instance. If the throne is empty, this accessor creates the king; if the king already sits, it simply points to him.
+
+ 
+
+### The Singleton in C# — The Bank Manager Example 🏦
+
+"Imagine a bank. There’s only **one Bank Manager** responsible for authorizing all big transactions, creating accounts, and approving loans.
+No matter how many tellers or accounts exist, there is only **one manager** — that’s the Singleton pattern in code.
+
+```csharp
+public sealed class BankManager
+{
+    // 3. Holds the one and only instance of BankManager
+    private static BankManager? _instance = null;
+
+    // 1. Private constructor - ensures no one else can create a manager
+    private BankManager()
+    {
+        // Initialize resources, e.g., bank policies
+    }
+
+    // 4. Public accessor to get the single BankManager
+    public static BankManager Instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                _instance = new BankManager();
+            }
+            return _instance;
+        }
+    }
+
+    // Example behavior
+    public void ApproveLoan(decimal amount)
+    {
+        Console.WriteLine($"Bank Manager approved a loan of {amount}.");
+    }
 }
 ```
 
-We can implment interface into more than one classes. Line and Circle classes are implementing IShape interface which is defined above.
+ 
 
-```
-  //Interface inheritance
-  public class Line:IShape{
+### Using the Singleton
 
-    public void Draw() {
-      //Line drawing logic
+```csharp
+class Program
+{
+    static void Main()
+    {
+        BankManager manager1 = BankManager.Instance;
+        BankManager manager2 = BankManager.Instance;
 
+        manager1.ApproveLoan(50000);
+
+        // Are both references pointing to the same instance?
+        Console.WriteLine(Object.ReferenceEquals(manager1, manager2)); // True
     }
-  }
-
-  public class Circle:IShape{
-
-    public void Draw() {
-      //Circle drawing logic
-      
-    }
-  }
+}
 ```
 
-### The Invisible Contract: Understanding Interfaces in C\#
+💡 **Key Takeaways:**
+
+* There is **only one Bank Manager** in the system — no duplicates.
+* Everyone in the bank (tellers, accounts, systems) **shares the same manager instance**.
+* The Singleton ensures **controlled access** and consistent behavior across the bank.
+ 
+
+### Why Does This Matter?
+
+Without the Singleton, you might accidentally create many kings, causing conflicting rules and confusion. But with Singleton, you have:
+
+* **Controlled access** to one and only instance.
+* **Lazy initialization** — the king only appears when first needed.
+* **Global access** without scattering the instance everywhere.
+
+
+
+## Nullable Types in C#
+
+"Think about a **database** or a real-world banking system. Sometimes, a field **may not have a value yet**:
+
+* A new bank account may **not have a credit limit** assigned.
+* A loan application may **not have been approved**, so the approval date is unknown.
+* A user may **not have filled optional information** like middle name or a second contact number.
+
+In C#, **value types** like `int`, `double`, `bool` **cannot hold null** by default. If you try to assign `null` to an `int`, you’ll get a compile-time error.
+
+This is where **nullable types** come in. They allow **value types to also hold null**, representing “no value” or “undefined.”
+
+---
+
+### How Nullable Types Work in C#
+
+```csharp
+class DatabaseReader
+{
+    // Nullable fields
+    public int? numericValue = null; // int? is shorthand for Nullable<int>
+    public bool? boolValue = true;
+
+    // Nullable return types
+    public int? GetIntFromDatabase()   { return numericValue; }
+    public bool? GetBoolFromDatabase()  { return boolValue; }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        DatabaseReader dr = new DatabaseReader();
+
+        // Reading a nullable int
+        int? i = dr.GetIntFromDatabase();
+        if (i.HasValue)
+            Console.WriteLine("Value of 'i' is: {0}", i.Value);
+        else
+            Console.WriteLine("Value of 'i' is undefined.");
+
+        // Reading a nullable bool
+        bool? b = dr.GetBoolFromDatabase();
+
+        // Using the null-coalescing operator to provide a default
+        int? myData = dr.GetIntFromDatabase() ?? 100;
+        Console.WriteLine("Value of myData: {0}", myData.Value);
+    }
+}
+```
+
+---
+
+### Key Points ✅
+
+1. `int?` or `Nullable<int>` allows an **integer to be null**.
+2. You can check if it has a value using `.HasValue`.
+3. Use `.Value` to get the actual value safely **after checking HasValue**.
+4. The **null-coalescing operator `??`** provides a default if the value is null.
+
+---
+
+### Local Nullable Variables Example
+
+```csharp
+void LocalNullableVariables()
+{
+    int? nullableInt = 10;
+    double? nullableDouble = 3.14;
+    bool? nullableBool = null;
+    int?[] arrayOfNullableInts = new int?[10];
+
+    // Using Nullable<T> explicitly
+    Nullable<int> explicitInt = 10;
+    Nullable<double> explicitDouble = 3.14;
+    Nullable<bool> explicitBool = null;
+    Nullable<int>[] arrayOfExplicitNullableInts = new int?[10];
+}
+```
+
+---
+
+💡 **Mentor Tip:**
+“Think of nullable types as **placeholders for optional values**. Whenever you fetch data from a database, or have computations where a value may not exist yet, nullable types give you a **safe and expressive way to represent ‘unknown’** without breaking your program.”
+
+
+## 🏦 Partial Classes – Teamwork in Banking Code
+
+"Imagine you are building a **Bank Account Management system**.
+
+Two developers are working on the same `BankAccount` class:
+
+1. **Developer A** focuses on the **core data and properties** like account number, balance, and customer name.
+2. **Developer B** focuses on **business logic** like deposit, withdraw, and applying interest.
+
+Rather than one developer writing a huge class, C# allows us to **split the class into multiple files** using the **`partial` keyword**.
+
+At compile-time, the compiler **merges all parts** into a single class. This way, both developers can work **simultaneously without conflicts**.
+ 
+
+### Banking Example in C#
+
+**BankAccount.Data.cs** (developer A — properties/data)
+
+```csharp
+public partial class BankAccount
+{
+    public string AccountNumber { get; set; }
+    public string CustomerName { get; set; }
+    public decimal Balance { get; set; }
+}
+```
+
+**BankAccount.Logic.cs** (developer B — business logic)
+
+```csharp
+public partial class BankAccount
+{
+    public void Deposit(decimal amount)
+    {
+        Balance += amount;
+        Console.WriteLine($"{CustomerName} deposited {amount}. New Balance: {Balance}");
+    }
+
+    public void Withdraw(decimal amount)
+    {
+        if (Balance >= amount)
+        {
+            Balance -= amount;
+            Console.WriteLine($"{CustomerName} withdrew {amount}. New Balance: {Balance}");
+        }
+        else
+        {
+            Console.WriteLine("Insufficient funds!");
+        }
+    }
+
+    public void ApplyInterest(decimal rate)
+    {
+        Balance += Balance * rate;
+        Console.WriteLine($"Interest applied to {CustomerName}'s account. New Balance: {Balance}");
+    }
+}
+```
+
+ 
+
+### Using the Partial Class
+
+```csharp
+class Program
+{
+    static void Main()
+    {
+        BankAccount account = new BankAccount
+        {
+            AccountNumber = "ACC123",
+            CustomerName = "Ravi Tambade",
+            Balance = 1000
+        };
+
+        account.Deposit(500);          // Works seamlessly
+        account.Withdraw(200);         // Works seamlessly
+        account.ApplyInterest(0.05m);  // Works seamlessly
+    }
+}
+```
+
+ 
+
+### 💡 Mentor Notes
+
+1. **Why use partial classes?**
+
+   * When multiple developers work on **different concerns** of the same class.
+   * Helps organize **design vs logic**, **data vs behavior**, or **auto-generated vs custom code**.
+
+2. **Compilation:**
+
+   * All `.cs` files with the same partial class are **merged into one class** at compile-time.
+
+3. **Banking analogy:**
+
+   * Think of `BankAccount` as a **team effort**:
+
+     * One person sets up the **account data**
+     * Another writes the **banking operations**
+   * Together, they form a **complete functional account** for the bank.
+
+ 
+### The Invisible Contract: Interfaces in C\#
 
 Imagine you’re signing a contract with someone — it clearly defines what each side promises to do. That’s exactly what **Interfaces** do in programming.
 
@@ -797,85 +743,118 @@ Interfaces let us write software that’s:
 In other words, interfaces are the blueprint for building flexible, maintainable, and scalable software systems.
 
 
-### Real-World Analogy: The SpellChecker Contract
+### 💳 Interfaces – A Bank’s Contract
 
-Think of a **Text Editor** app that needs to check spelling. It doesn’t care how the spell check is done, it just knows it must call certain methods to check words.
+"Imagine a bank with different types of accounts: **Savings Account**, **Current Account**, and maybe even **Loan Account**.
 
-* The **Text Editor** is the Consumer.
-* The **SpellChecker interface** is the contract defining those methods.
-* **EnglishSpellChecker** and **FrenchSpellChecker** are Providers who implement this contract in their own way.
+Every account **must support certain actions**: deposit money, withdraw money, and check balance.
 
-  
+But **how** these actions work can be different for each account type:
 
-### How Does This Look in C#?
+* Savings accounts might apply interest on deposit.
+* Current accounts might allow overdrafts.
+* Loan accounts might not allow withdrawals at all.
+
+The **bank doesn’t care** about the internal details — it just knows: *any account must follow the contract*."
+
+In C#, this contract is called an **interface**.
+
+
+### How This Looks in Banking C#
 
 ```csharp
-// The contract - interface defining what a SpellChecker must do
-public interface ISpellChecker
+// The contract – every bank account must implement these actions
+public interface IAccount
 {
-    bool CheckSpelling(string word);
+    void Deposit(decimal amount);
+    void Withdraw(decimal amount);
+    decimal CheckBalance();
 }
 
-// English Spell Checker implementing the contract
-public class EnglishSpellChecker : ISpellChecker
+// Savings Account implementing the contract
+public class SavingsAccount : IAccount
 {
-    public bool CheckSpelling(string word)
+    private decimal _balance = 0;
+    private decimal _interestRate = 0.05m;
+
+    public void Deposit(decimal amount)
     {
-        // English spelling check logic here
-        return word == "hello" || word == "world";
+        _balance += amount + (amount * _interestRate);
+        Console.WriteLine($"SavingsAccount: Deposited {amount} + interest. Balance: {_balance}");
     }
+
+    public void Withdraw(decimal amount)
+    {
+        if (_balance >= amount)
+        {
+            _balance -= amount;
+            Console.WriteLine($"SavingsAccount: Withdrew {amount}. Balance: {_balance}");
+        }
+        else
+        {
+            Console.WriteLine("SavingsAccount: Insufficient funds!");
+        }
+    }
+
+    public decimal CheckBalance() => _balance;
 }
 
-// French Spell Checker implementing the contract
-public class FrenchSpellChecker : ISpellChecker
+// Current Account implementing the same contract
+public class CurrentAccount : IAccount
 {
-    public bool CheckSpelling(string word)
+    private decimal _balance = 0;
+    private decimal _overdraftLimit = 1000;
+
+    public void Deposit(decimal amount)
     {
-        // French spelling check logic here
-        return word == "bonjour" || word == "monde";
+        _balance += amount;
+        Console.WriteLine($"CurrentAccount: Deposited {amount}. Balance: {_balance}");
     }
+
+    public void Withdraw(decimal amount)
+    {
+        if (_balance + _overdraftLimit >= amount)
+        {
+            _balance -= amount;
+            Console.WriteLine($"CurrentAccount: Withdrew {amount}. Balance: {_balance}");
+        }
+        else
+        {
+            Console.WriteLine("CurrentAccount: Exceeds overdraft limit!");
+        }
+    }
+
+    public decimal CheckBalance() => _balance;
 }
+```
 
-// Text Editor uses any spell checker through the interface
-public class TextEditor
-{
-    private readonly ISpellChecker _spellChecker;
 
-    public TextEditor(ISpellChecker spellChecker)
-    {
-        _spellChecker = spellChecker;
-    }
+### Using the Interface
 
-    public void CheckWord(string word)
-    {
-        bool correct = _spellChecker.CheckSpelling(word);
-        Console.WriteLine(correct ? $"{word} is spelled correctly." : $"{word} is misspelled.");
-    }
-}
-
+```csharp
 class Program
 {
     static void Main()
     {
-        // Using English Spell Checker
-        TextEditor editor = new TextEditor(new EnglishSpellChecker());
-        editor.CheckWord("hello");   // Output: hello is spelled correctly.
-        editor.CheckWord("bonjour"); // Output: bonjour is misspelled.
+        // The bank system can work with any account type through IAccount
+        IAccount account = new SavingsAccount();
+        account.Deposit(1000);
+        account.Withdraw(200);
 
-        // Switching to French Spell Checker without changing TextEditor code
-        editor = new TextEditor(new FrenchSpellChecker());
-        editor.CheckWord("bonjour"); // Output: bonjour is spelled correctly.
-        editor.CheckWord("hello");   // Output: hello is misspelled.
+        account = new CurrentAccount();
+        account.Deposit(500);
+        account.Withdraw(1200); // Uses overdraft
     }
 }
 ```
- 
 
-### Why This Matters
 
-* The **Text Editor** doesn’t care *how* spelling is checked.
-* It just calls `CheckSpelling` as promised by the `ISpellChecker` interface.
-* You can add new spell checkers anytime (say, SpanishSpellChecker) without changing the editor’s code.
+### 💡 Mentor Notes
+
+1. **Interface = Contract**: The bank ensures that every account type implements the required actions.
+2. **Decoupling**: The bank system interacts with `IAccount` and **doesn’t care** about the specific account type.
+3. **Flexibility**: You can add new account types in the future (like `LoanAccount`) **without changing the existing code**.
+4. **Polymorphism + Interface**: The same code (`Deposit`, `Withdraw`) works differently depending on the account type.
 
  
 
@@ -883,38 +862,95 @@ class Program
 
 Interfaces are the **contract** that bind your software parts together cleanly and predictably. They enable the elegant dance of collaboration between classes — letting you swap, improve, or extend implementations without breaking everything else.
 
- 
-### Explicit Interface Inheritance
-A class can implement more than one interfaces. These interfaces may contain a member function  with the same name(signature). In such cases, we should take care of implementing both method using fully qualified names as shown below:
-```
-public interface IOrderDetails    { void ShowDetails();}
-public interface ICustomerDetails { void ShowDetails();}
+## 🏦 Explicit Interface Implementation – Handling Name Conflicts
 
-public class Transaction: IOrderDetails, ICustomerDetils
+"Imagine you are in a bank working with **Transactions**.
+
+* Every transaction can have **Order Details** (like which product or service is purchased).
+* Every transaction also has **Customer Details** (like who performed the transaction).
+
+Now, suppose both **Order Details** and **Customer Details** require a method called `ShowDetails()`.
+
+💡 Problem: How does the `Transaction` class handle **two methods with the same name**?
+
+The answer is **Explicit Interface Implementation** — we fully qualify which method belongs to which interface. This way, there’s **no ambiguity**.
+
+
+
+### Banking Example in C#
+
+```csharp
+// Interface for Order Details
+public interface IOrderDetails
 {
-    
+    void ShowDetails();
+}
+
+// Interface for Customer Details
+public interface ICustomerDetails
+{
+    void ShowDetails();
+}
+
+// Transaction class implements both interfaces explicitly
+public class Transaction : IOrderDetails, ICustomerDetails
+{
+    // Implementation specific to order details
     void IOrderDetails.ShowDetails()
-    {  
-      // implementation for interface IOrderDetails
+    {
+        Console.WriteLine("Showing Order Details: Transaction #12345, Product: Savings Account Subscription");
     }
-    void ICustomerDetails.ShowDetails()
-    {  
-      // implementation for interface IOrderDetails
-    }
-}
 
-public static void Main()
-{
-    Transaction obj = new Transaction();
-    IOrderDetails od = obj;
-    od.ShowDetails();
-    ICustomerDetails cd = obj;
-    cd.ShowDetails();
+    // Implementation specific to customer details
+    void ICustomerDetails.ShowDetails()
+    {
+        Console.WriteLine("Showing Customer Details: Customer Name: Ravi Tambade, Account: 987654321");
+    }
 }
 ```
 
+### Using Explicit Interface Implementation
 
+```csharp
+class Program
+{
+    static void Main()
+    {
+        Transaction txn = new Transaction();
 
+        // Accessing Order Details
+        IOrderDetails order = txn;
+        order.ShowDetails(); 
+        // Output: Showing Order Details: Transaction #12345, Product: Savings Account Subscription
+
+        // Accessing Customer Details
+        ICustomerDetails customer = txn;
+        customer.ShowDetails();
+        // Output: Showing Customer Details: Customer Name: Ravi Tambade, Account: 987654321
+    }
+}
+```
+
+### 💡 Mentor Notes
+
+1. **Why explicit implementation?**
+
+   * When multiple interfaces have the **same method signature**, explicit implementation avoids conflicts.
+
+2. **Access restriction:**
+
+   * Explicitly implemented methods **cannot be called directly** via the class instance (`txn.ShowDetails()` will not compile).
+   * You must **cast to the interface type** to access the method.
+
+3. **Banking analogy:**
+
+   * Think of it as having **two separate managers** in the bank:
+
+     * One handles **order processing**
+     * Another handles **customer verification**
+   * Even though both have a method called `ShowDetails()`, they work **independently**.
+
+ 
 ### The World of Collections in C#: Organizing Chaos with Grace
 
 Let me take you into a day in the life of a software developer. You wake up and look at your tasks — emails to check, logs to scan, messages to process, and maybe even some errors to handle. All these are **collections of data** — grouped and ready to be handled.
