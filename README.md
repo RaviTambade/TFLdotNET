@@ -57,7 +57,11 @@ You are not alone on this path. I am walking with you.
 
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/dotnet.md">What is .NET?</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/CSharpLang.md">.NET Programming Language</a>
-- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/oo.md">Objectd Oriented  Programming</a>
+- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/settingupdotnetsolution.md">Creating Donet Core Solution step by step</a>
+- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/buildexedotnetsolution.md">Dotnet Core Solution Build and Execution</a>
+
+- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/settingupdotnetsolution.md">ProductCatalog Solution</a>
+- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/oo.md"> C# Objectd Oriented  Programming</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/Collections.md">Collection Framework</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/comparingobjects.md">Object Comparision</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/linq.md">LINQ</a>
