@@ -59,8 +59,8 @@ Output:
 These go to:
 
 ```
-MyApp/bin/Debug/net8.0/
-MyLibrary/bin/Debug/net8.0/
+MyApp/bin/Debug/net9.0/
+MyLibrary/bin/Debug/net9.0/
 ```
 
 ---
@@ -92,7 +92,7 @@ After a successful build, your compiled files sit like this:
 
 ```
 MyApp
- └── bin/Debug/net8.0/
+ └── bin/Debug/net9.0/
      ├── MyApp.dll          ← compiled app
      ├── MyLibrary.dll      ← library used by app
      ├── MyApp.pdb          ← debugging symbols
