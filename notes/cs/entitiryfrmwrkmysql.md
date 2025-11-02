@@ -146,10 +146,10 @@ Use Swagger → test the API → products begin appearing in your database.
 You **built a real-world system** — a store that talks to MySQL, stores product data, and serves APIs to the frontend or mobile apps.”
 
 🛠️ You learned:
-✅ Creating a .NET Web API
-✅ Installing EF Core + MySQL provider
-✅ Connection strings and DbContext
-✅ Creating models and migrations
-✅ Building CRUD API for Products
+- ✅ Creating a .NET Web API
+- ✅ Installing EF Core + MySQL provider
+- ✅ Connection strings and DbContext
+- ✅ Creating models and migrations
+- ✅ Building CRUD API for Products
 
  
