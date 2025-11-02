@@ -11,8 +11,6 @@
 
 The ASP.NET Core server hears this knock. But before answering, it ensures the request is processed through a **well-organized pipeline**. And thus begins the journey...
 
----
-
 ### 🛤 Scene 2: **The Gateway Guards — Middleware**
 
 > Imagine middleware as a series of security guards and service booths that every request must pass through.

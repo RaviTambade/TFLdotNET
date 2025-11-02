@@ -1,5 +1,3 @@
-
-
 ## *Why ASP.NET Core is the Future You Should Embrace*
 
 "Let me take you back to a time not too long ago..."
