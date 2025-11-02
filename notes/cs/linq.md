@@ -310,6 +310,9 @@ var topTwo = studentList.Take(2);
 
 *"Learn LINQ like a language — think in it, practice with it, and you'll be amazed at how fluently you start conversing with your data."* 🌱
 
+# Exploring LINQ with Product Catalog
+
+
 ## ✅ **Step 1: Our Base Classes (Product + Catalog)**
 
 We will reuse the earlier structure:
