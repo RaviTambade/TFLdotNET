@@ -1,4 +1,4 @@
-# 🎓 ** Building a Product Catalog with EF Core & MySQL**
+# 🎓 Building a Product Catalog with EF Core & MySQL
 
 ### **📍 Scene 1: The Vision — A Digital Store Begins**
 
