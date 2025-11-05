@@ -12,8 +12,6 @@ The mentor says:
 
 > “This file is like the DNA of your API. Every request, every controller, every service — their story begins here.”
 
-
-
 ## ✅ **Step 1: Fresh ASP.NET Core 9 API Project**
 
 You created this project using:
@@ -132,7 +130,6 @@ You can set environment using:
 ```bash
 set ASPNETCORE_ENVIRONMENT=Development
 ```
-
 
 ### 🔐 **5. Force HTTPS**
 
