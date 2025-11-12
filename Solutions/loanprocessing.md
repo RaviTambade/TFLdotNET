@@ -1,6 +1,6 @@
 Bank Loan Processing — Problem Statement (C# / Object-Oriented)
 
-Below is a ready-to-use, self-contained problem statement you can give to students or use as a project spec. It emphasizes object-oriented design (encapsulation, inheritance, polymorphism, interfaces), clear use cases, sample data, acceptance tests, and extension (bonus) tasks.
+Self-contained problem statement you can give to students or use as a project spec. It emphasizes object-oriented design (encapsulation, inheritance, polymorphism, interfaces), clear use cases, sample data, acceptance tests, and extension (bonus) tasks.
 
 
 ---
@@ -421,13 +421,4 @@ public class Loan {
 }
 
 
----
 
-If you want, I can:
-
-Provide a ready-to-run console app skeleton with the classes above and some sample data + unit tests, or
-
-Create a detailed UML diagram (text or simple ASCII) or a starter GitHub-ready project layout.
-
-
-Which of those would help you next?
