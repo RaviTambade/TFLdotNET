@@ -1,9 +1,8 @@
-Here is a **clean, mentor-style ASCII ER Diagram** and a **text-based relationship map** for your full MySQL schema.
-Designed to help students **visualize the system like a story**.
+#  **Visualize the system like a story**
 
----
 
-# 🧩 **1. High-Level ASCII ER Diagram**
+
+### 🧩 **1. High-Level ASCII ER Diagram**
 
 ```
                  +----------------+
@@ -83,15 +82,15 @@ Designed to help students **visualize the system like a story**.
 +------------------------+
 ```
 
----
+ 
 
-# 🧩 **2. Text-Based ER Diagram (Detailed Entities + Relations)**
+### 🧩 **2. Text-Based ER Diagram (Detailed Entities + Relations)**
 
 Below is a **clean, hierarchical, mentor-friendly explanation** of every relationship.
 
 ---
 
-## **USERS MODULE**
+#### **USERS MODULE**
 
 ```
 users (1) 
@@ -101,7 +100,7 @@ users (1)
 
 ---
 
-## **EMPLOYEE MODULE**
+#### **EMPLOYEE MODULE**
 
 ```
 users (1) 
@@ -122,7 +121,7 @@ users (1)
 
 ---
 
-## **SUBJECT & CONCEPT MODULE**
+#### **SUBJECT & CONCEPT MODULE**
 
 ```
 subjects (1)
@@ -135,7 +134,7 @@ subjects (1)
 
 ---
 
-## **INTERVIEW FLOW**
+#### **INTERVIEW FLOW**
 
 ```
 employees (candidate) (1)
@@ -146,7 +145,7 @@ employees (candidate) (1)
 
 ---
 
-## **TESTING / ASSESSMENT FLOW**
+#### **TESTING / ASSESSMENT FLOW**
 
 ```
 subjectmatterexperts (SME) (1)
@@ -164,7 +163,7 @@ subjectmatterexperts (SME) (1)
 
 ---
 
-# 🧩 **3. One-Glance Relationship Summary Table**
+### 🧩 **3. One-Glance Relationship Summary Table**
 
 | Table                    | Parent(s)                       | Child(ren)                                                                                                                |
 | ------------------------ | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
@@ -183,19 +182,16 @@ subjectmatterexperts (SME) (1)
 ---
 
 
-Here is a **clean, professional ASCII diagram** showing a **Three-Tier Architecture** for an **ASP.NET Core MVC application** with **Controller → Services → Repository → MySQL Database**.
+##  **Three-Tier Architecture** for an **ASP.NET Core MVC application** with **Controller → Services → Repository → MySQL Database**.
 
-Perfect for teaching students the flow of **Request → Business Logic → Data Access → DB**.
+ 
 
----
+### 🧱 **Three-Tier Architecture (MVC + Services + Repository + MySQL)**
 
-# 🧱 **Three-Tier Architecture (MVC + Services + Repository + MySQL)**
-
-### **ASCII Architecture Diagram**
 
 ```
                          ┌─────────────────────────────────────┐
-                         │     ASP.NET Core MVC Application     │
+                         │     ASP.NET Core MVC Application    │
                          └─────────────────────────────────────┘
 
 ┌──────────────────────────────────────────────────────────────────────────────┐
@@ -204,13 +200,13 @@ Perfect for teaching students the flow of **Request → Business Logic → Data 
 │                                                                              │
 │   ┌──────────────────────────────┐        User interacts via UI              │
 │   │            Views             │  <--------------------------------------  │
-│   └──────────────────────────────┘                                            │
-│                  ▲                                                              │
-│                  │ Model/DTO                                                    │
-│                  │                                                              │
-│   ┌──────────────────────────────┐   Receives user request (HTTP)              │
-│   │          Controllers          │------------------------------------------→│
-│   └──────────────────────────────┘       Invokes Service Layer                 │
+│   └──────────────────────────────┘                                           │
+│                  ▲                                                           │
+│                  │ Model/DTO                                                 │
+│                  │                                                           │
+│   ┌──────────────────────────────┐   Receives user request (HTTP)            │
+│   │          Controllers          │-----------------------------------------→│
+│   └──────────────────────────────┘       Invokes Service Layer               │
 │                                                                              │
 └──────────────────────────────────────────────────────────────────────────────┘
 
@@ -219,7 +215,7 @@ Perfect for teaching students the flow of **Request → Business Logic → Data 
 │                                 BUSINESS / SERVICE TIER                      │
 ├──────────────────────────────────────────────────────────────────────────────┤
 │                                                                              │
-│   ┌──────────────────────────────┐                                          │
+│   ┌──────────────────────────────┐                                           │
 │   │         Services              │   Contains business logic                │
 │   │  (e.g., UserService.cs)       │-----------------------------------------→│
 │   └──────────────────────────────┘   Calls Repository Layer                  │
@@ -231,26 +227,26 @@ Perfect for teaching students the flow of **Request → Business Logic → Data 
 │                                 DATA ACCESS TIER                             │
 ├──────────────────────────────────────────────────────────────────────────────┤
 │                                                                              │
-│   ┌──────────────────────────────┐                                          │
+│   ┌──────────────────────────────┐                                           │
 │   │        Repository             │  Executes SQL queries                    │
 │   │ (e.g., UserRepository.cs)     │-----------------------------------------→│
 │   └──────────────────────────────┘   Uses DbContext / Dapper / ADO.NET       │
 │                                                                              │
-│   ┌──────────────────────────────┐                                          │
+│   ┌──────────────────────────────┐                                           │
 │   │         DbContext            │  EF Core ORM mapping                      │
-│   └──────────────────────────────┘                                          │
+│   └──────────────────────────────┘                                           │
 │                                                                              │
 └──────────────────────────────────────────────────────────────────────────────┘
 
 
                      ┌─────────────────────────────────────────────┐
-                     │                 MySQL Database               │
+                     │                 MySQL Database              │
                      └─────────────────────────────────────────────┘
                                         ▲
                                         │ SQL Commands
                                         │
                      ┌─────────────────────────────────────────────┐
-                     │              Database Tables                 │
+                     │              Database Tables                │
                      │ (users, employees, tests, concepts, etc.)   │
                      └─────────────────────────────────────────────┘
 
@@ -258,7 +254,7 @@ Perfect for teaching students the flow of **Request → Business Logic → Data 
 
 ---
 
-# 🔁 **Request → Response Flow (Simple ASCII)**
+### 🔁 **Request → Response Flow (Simple ASCII)**
 
 ```
 Browser
@@ -290,20 +286,8 @@ Razor View sent to Browser
 
 ---
 
-# 🎯 **How to Explain This to Students (Mentor Style)**
 
-**Controllers** = Like a receptionist → “Tell me your request.”
-**Services** = Manager → “I apply rules, I decide what to do.”
-**Repository** = Worker → “I will go to the DB and fetch/save data.”
-**MySQL** = Warehouse → “All the important records are stored here.”
-
- 
-
- Here is a **clean, professional, mentor-friendly ASCII diagram** of the **SDLC (Software Development Life Cycle)** including all major phases.
-
----
-
-# 🧱 **SDLC – Phases (ASCII Diagram)**
+## 🧱 **SDLC – Phases (ASCII Diagram)**
 
 ```
  ┌───────────────────────────────────────────────────────────────────────────┐
@@ -316,27 +300,27 @@ Razor View sent to Browser
               │  "Why are we building this?"
               ▼
       ┌──────────────┐
-      │ 2. Analysis   │
+      │ 2. Analysis  │
       └───────┬──────┘
               │  "What exactly is needed?"
               ▼
       ┌──────────────┐
-      │ 3. Design     │
+      │ 3. Design    │
       └───────┬──────┘
               │  "How will we build it?"
               ▼
       ┌──────────────┐
-      │ 4. Development│
+      │4. Development│
       └───────┬──────┘
               │  "Let's write the code."
               ▼
       ┌──────────────┐
-      │ 5. Testing    │
+      │5. Testing    │
       └───────┬──────┘
               │  "Does it work correctly?"
               ▼
       ┌──────────────┐
-      │ 6. Deployment │
+      │6. Deployment │
       └───────┬──────┘
               │  "Push it to real users."
               ▼
@@ -349,81 +333,81 @@ Razor View sent to Browser
 
 ---
 
-# 🔁 **SDLC Lifecycle Flow (Circular ASCII Diagram)**
+## 🔁 **SDLC Lifecycle Flow (Circular ASCII Diagram)**
 
 ```
           ┌───────────────┐
           │   Planning    │
-          └───────┬──────┘
+          └───────┬───────┘
                   ▼
           ┌───────────────┐
           │   Analysis    │
-          └───────┬──────┘
+          └───────┬───────┘
                   ▼
           ┌───────────────┐
-          │    Design      │
-          └───────┬──────┘
+          │    Design     │
+          └───────┬───────┘
                   ▼
           ┌───────────────┐
           │ Development   │
-          └───────┬──────┘
+          └───────┬───────┘
                   ▼
           ┌───────────────┐
-          │    Testing     │
-          └───────┬──────┘
+          │    Testing    │
+          └───────┬───────┘
                   ▼
           ┌───────────────┐
-          │  Deployment    │
-          └───────┬──────┘
+          │  Deployment   │
+          └───────┬───────┘
                   ▼
           ┌───────────────┐
           │ Maintenance   │
-          └───────┬──────┘
+          └───────┬───────┘
                   │
                   └───────────► Back to Planning
 ```
 
 ---
 
-# 📚 **Short Mentor-Style Explanation of Each Phase**
+## 📚 **Short Mentor-Style Explanation of Each Phase**
 
-### **1. Planning**
+#### **1. Planning**
 
 * Define goals, scope, feasibility.
 * Identify stakeholders.
 
-### **2. Requirements / Analysis**
+#### **2. Requirements / Analysis**
 
 * What will the system do?
 * Business rules, user requirements, functional + non-functional requirements.
 
-### **3. Design**
+#### **3. Design**
 
 * Architecture (MVC, microservices)
 * Database design
 * UI/UX design
 * Technology stack
 
-### **4. Development**
+#### **4. Development**
 
 * Actual coding
 * Integration of modules
 * Unit testing by developers
 
-### **5. Testing**
+#### **5. Testing**
 
 * Functional testing
 * Integration testing
 * Performance, security testing
 * Fixing defects
 
-### **6. Deployment**
+#### **6. Deployment**
 
 * Deploy to production
 * CI/CD pipeline
 * Release management
 
-### **7. Maintenance**
+#### **7. Maintenance**
 
 * User support
 * Enhancements
@@ -432,22 +416,21 @@ Razor View sent to Browser
 
 
 
-Here is a **clean, professional ASCII diagram** showing a **.NET Core Solution** containing multiple projects:
+**.NET Core Solution** containing multiple projects:
 
-✅ Console App
-✅ Web MVC App
-✅ Web API
-✅ Services Layer
-✅ Repository Layer
-✅ Domain/Models
-✅ Shared Utilities
-✅ MySQL Database
+- ✅ Console App
+- ✅ Web MVC App
+- ✅ Web API
+- ✅ Services Layer
+- ✅ Repository Layer
+- ✅ Domain/Models
+- ✅ Shared Utilities
+- ✅ MySQL Database
 
-Perfect for teaching layered architecture + multi-project solution structure.
+Layered architecture + multi-project solution structure.
 
----
 
-# 🧱 **.NET Core Multi-Project Solution – ASCII Diagram**
+## 🧱 **.NET Core Multi-Project Solution – ASCII Diagram**
 
 ```
 ──────────────────────────────────────────────────────────────
@@ -461,14 +444,14 @@ Perfect for teaching layered architecture + multi-project solution structure.
 ────────────────────────────────────────────────────────────────────────────────
 
   ┌───────────────────────┐
-  │ 1. MyApp.Console       │  ← Console Application
-  │    (.NET Core)         │
+  │ 1. MyApp.Console      │  ← Console Application
+  │    (.NET Core)        │
   └───────────▲───────────┘
               │ Calls Services
 
   ┌───────────────────────┐
-  │ 2. MyApp.WebMVC        │  ← ASP.NET Core MVC UI
-  │    (Controllers/Views) │
+  │ 2. MyApp.WebMVC       │  ← ASP.NET Core MVC UI
+  │    (Controllers/Views)│
   └───────────▲───────────┘
               │ Uses Services
 
@@ -516,8 +499,8 @@ Perfect for teaching layered architecture + multi-project solution structure.
 ────────────────────────────────────────────────────────────────────────────────
 
                      ┌─────────────────────────────┐
-                     │       MySQL Database         │
-                     │ (Tables: users, tests...)    │
+                     │       MySQL Database        │
+                     │ (Tables: users, tests...)   │
                      └─────────────────────────────┘
 
 ────────────────────────────────────────────────────────────────────────────────
@@ -526,7 +509,7 @@ Perfect for teaching layered architecture + multi-project solution structure.
 
 ---
 
-# 🔁 **Flow of Control (Top → Bottom)**
+## 🔁 **Flow of Control (Top → Bottom)**
 
 ```
 Console / MVC / WebAPI
@@ -546,7 +529,7 @@ Console / MVC / WebAPI
 
 ---
 
-# 🎯 **Typical Folder/Project Names (Recommended)**
+## 🎯 **Typical Folder/Project Names (Recommended)**
 
 ```
 MyAssessmentSolution
@@ -564,11 +547,10 @@ MyAssessmentSolution
 
 
 
-Here are **all the .NET CLI commands** to create the **solution** and **each project** in your architecture exactly as shown.
+##  .NET CLI commands** to create the **solution** and **each project** in your architecture
 
 Perfect for classroom demos + automation.
 
----
 
 # 🧱 **1. Create Solution**
 
@@ -726,8 +708,8 @@ WebAPI  ────────┘           │              │
                                       │
                                       ▼
                        ┌─────────────────────────┐
-                       │   Google Chrome Browser  │
-                       │   (Client Application)   │
+                       │   Google Chrome Browser │
+                       │   (Client Application)  │
                        └─────────────────────────┘
                                       │
                         Sends HTTP/HTTPS Requests
@@ -747,12 +729,12 @@ WebAPI  ────────┘           │              │
               │  │           Kestrel Web Server                 │   │
               │  │   (Built-in ASP.NET Core HTTP Server)        │   │
               │  └──────────────────────────────────────────────┘   │
-              │                     │                                │
-              │   Passes request   ▼                                │
-              │  to App Pipeline   ┌──────────────────────────────┐  │
-              │                    │    ASP.NET Core Web App      │  │
-              │                    │ (Controllers, Services, etc) │  │
-              │                    └──────────────────────────────┘  │
+              │                   │                                 │
+              │  Passes request   ▼                                 │
+              │  to App Pipeline  ┌──────────────────────────────┐  │
+              │                   │    ASP.NET Core Web App      │  │
+              │                   │ (Controllers, Services, etc) │  │
+              │                   └──────────────────────────────┘  │
               │                                                     │
               └─────────────────────────────────────────────────────┘
                                       │
