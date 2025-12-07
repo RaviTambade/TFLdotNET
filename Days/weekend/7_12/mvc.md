@@ -1,13 +1,13 @@
 
 
-# 🌐 **Windows-Based Development VS  ASP.NET Web Application Development**
+## 🌐 **Windows-Based Development VS  ASP.NET Web Application Development**
 
 Think of it as moving from **a single-building shop** to **a city-wide service center**.
 
 
-# 1️⃣ **Application Nature: Local vs Distributed**
+### 1️⃣ **Application Nature: Local vs Distributed**
 
-### 🖥️ **Windows-Based (Desktop Apps)**
+#### 🖥️ **Windows-Based (Desktop Apps)**
 
 * Runs **on a single machine**.
 * Installed locally (EXE/MSI).
@@ -16,7 +16,7 @@ Think of it as moving from **a single-building shop** to **a city-wide service c
 
 👉 Example: A billing software installed on one PC inside a shop.
 
-### 🌐 **ASP.NET Web Apps**
+#### 🌐 **ASP.NET Web Apps**
 
 * Runs **on a server** and is accessed by many users simultaneously.
 * Zero installation for end user (just browser).
@@ -26,9 +26,9 @@ Think of it as moving from **a single-building shop** to **a city-wide service c
 👉 Example: Flipkart login page, accessed by millions.
 
 
-# 2️⃣ **Architecture Mindset Shift**
+## 2️⃣ **Architecture Mindset Shift**
 
-### 🖥️ **Windows/Desktop**
+#### 🖥️ **Windows/Desktop**
 
 Usually follows:
 
@@ -62,9 +62,9 @@ This shift requires:
 * **Stateless request-response handling**
 
 
-# 3️⃣ **UI Paradigm Shift**
+## 3️⃣ **UI Paradigm Shift**
 
-### Desktop UI (Windows)
+#### Desktop UI (Windows)
 
 * Rich UI controls
 * Drag & Drop
@@ -73,7 +73,7 @@ This shift requires:
 
 > “UI ka data memory me store hota hai — baar baar server call nahi.”
 
-### Web UI (ASP.NET + Browser)
+#### Web UI (ASP.NET + Browser)
 
 * HTML is static
 * CSS for styling
@@ -83,9 +83,9 @@ This shift requires:
 > “Browser ko refresh chahiye. Server ko call chahiye. State manage karna logic ka kaam.”
 
 
-# 4️⃣ **State Management Shift**
+## 4️⃣ **State Management Shift**
 
-### Desktop
+#### Desktop
 
 * State stored in:
 
@@ -94,7 +94,7 @@ This shift requires:
   * Local files
   * Local DB
 
-### Web
+#### Web
 
 You must manage state explicitly:
 
@@ -108,15 +108,15 @@ You must manage state explicitly:
 > “Web is stateless — every time user clicks, your application is reborn.”
 
 
-# 5️⃣ **Deployment Shift**
+## 5️⃣ **Deployment Shift**
 
-### Desktop Deployment
+#### Desktop Deployment
 
 * Installer creation
 * Distribute EXE to all clients
 * Update installed software manually
 
-### Web Deployment
+#### Web Deployment
 
 * Deploy once → millions can use
 * Hosted in:
@@ -128,15 +128,15 @@ You must manage state explicitly:
 > “One server update = all users updated instantly.”
 
 
-# 6️⃣ **Security Mindset Shift**
+## 6️⃣ **Security Mindset Shift**
 
-### Desktop Security
+#### Desktop Security
 
 * User permissions on machine
 * Less exposure
 * Mostly local vulnerabilities
 
-### Web Security
+#### Web Security
 
 More attack surface:
 
@@ -153,15 +153,15 @@ ASP.NET provides:
 * Authentication handlers
 
 
-# 7️⃣ **Performance & Scaling**
+## 7️⃣ **Performance & Scaling**
 
-### Desktop
+#### Desktop
 
 Performance depends on **user’s machine**.
 
 Scaling = install on more machines.
 
-### Web
+#### Web
 
 Performance depends on **server and architecture**.
 
@@ -173,16 +173,16 @@ Scaling = add more servers:
 * CDN
 
 
-# 8️⃣ **Developer Mindset Shift**
+## 8️⃣ **Developer Mindset Shift**
 
-### Desktop Developer Mindset
+#### Desktop Developer Mindset
 
 * UI-first
 * Event-first
 * Local machine focus
 * Immediate state access
 
-### Web Developer Mindset
+#### Web Developer Mindset
 
 * Request/response
 * Asynchronous code
@@ -191,9 +191,9 @@ Scaling = add more servers:
 * Distributed systems thinking
 
 
-# 9️⃣ **Typical Tech Stack Comparison**
+## 9️⃣ **Typical Tech Stack Comparison**
 
-### 🖥️ Windows-Based Developer Stack
+#### 🖥️ Windows-Based Developer Stack
 
 * WinForms/WPF
 * .NET Framework
@@ -213,7 +213,7 @@ Scaling = add more servers:
 
 
 
-# 🔟 **Summary Table**
+## 🔟 **Summary Table**
 
 | Aspect              | Windows Apps  | ASP.NET Web Apps      |
 | ------------------- | ------------- | --------------------- |
@@ -229,19 +229,19 @@ Scaling = add more servers:
 
 
 
-# 🎯 ** Summary**
+#### 🎯 ** Summary**
 
 > **Windows development is like running a shop inside one room.
 > ASP.NET Web development is like running a digital mall that must serve thousands of customers in real time.**
 
 
 
-# 🧩 **Feature Development Flow in ASP.NET Core MVC**
+## 🧩 **Feature Development Flow in ASP.NET Core MVC**
 
 Whenever you add a new feature (e.g., Students, Products, Employees), the typical development flow is:
 
 
-## **1️⃣ Create the Model**
+### **1️⃣ Create the Model**
 
 * Represents the **data structure**
 * Usually maps to a table in the database
@@ -299,7 +299,7 @@ public IActionResult Create(Student model)
 ```
 
 
-## **4️⃣ Add View (.cshtml file)**
+### **4️⃣ Add View (.cshtml file)**
 
 Located in:
 
@@ -314,7 +314,7 @@ Views contain:
 * Form UI elements
 
 
-## **5️⃣ Add UI/Razor Logic**
+### **5️⃣ Add UI/Razor Logic**
 
 Here you bind the UI with model data.
 
@@ -330,7 +330,7 @@ Example:
 ```
 
 
-# 🏗️ **ASCII Diagram: MVC Flow With Feature Development Steps**
+## 🏗️ **ASCII Diagram: MVC Flow With Feature Development Steps**
 
 ```
                 ┌────────────────────────────────────────────┐
@@ -372,7 +372,7 @@ Example:
 ```
 
 
-# 🎯 ** Summary**
+#### 🎯 ** Summary**
 
 > **In ASP.NET Core MVC, every feature starts with data (Model),
 > then routes and logic (Controller + Actions),
@@ -381,7 +381,7 @@ Example:
 
 
 
-# 📁 **ASP.NET Core MVC – Folder Structure (ASCII Diagram)**
+## 📁 **ASP.NET Core MVC – Folder Structure (ASCII Diagram)**
 
 ```
 MyMvcApp/
@@ -438,51 +438,49 @@ MyMvcApp/
 ```
 
 
-# 🧭 **Student-Friendly Explanation of Each Folder**
+## 🧭 **Student-Friendly Explanation of Each Folder**
 
-### **Controllers/**
+#### **Controllers/**
 
 Handles incoming requests, returns responses (views or JSON).
 
-### **Models/**
+#### **Models/**
 
 Contains the **domain classes** (Student, Product, etc.) and **ViewModels**.
 
-### **Views/**
+#### **Views/**
 
 UI screens written in Razor (.cshtml files).
 
-### **Views/Shared/**
+#### **Views/Shared/**
 
 Shared files like `_Layout.cshtml`, partial views, shared scripts.
 
-### **wwwroot/**
+#### **wwwroot/**
 
 Static files (CSS, JS, images).
 This is the **web root**—publicly accessible.
 
-### **Data/**
+#### **Data/**
 
 Database context, EF migrations.
 
-### **Services/**
+#### **Services/**
 
 Business logic layer (optional but recommended).
 
-### **Repositories/**
+#### **Repositories/**
 
 Data access layer, DB interactions.
 
-### **Program.cs / Startup.cs**
+#### **Program.cs / Startup.cs**
 
 App configuration, middleware, services registration.
 
 
+## **ASP.NET Core MVC Hands-On Document**
 
-
-# **ASP.NET Core MVC Hands-On Document**
-
-# **ProductCatalog Mini Project**
+### **ProductCatalog Mini Project**
 
 This hands-on guide helps students build a **Product Catalog Web Application** using **ASP.NET Core MVC**, following the same development flow you learned:
 
@@ -499,7 +497,7 @@ We will create:
 
 ---
 
-## 📁 **1. Project Folder Structure**
+#### 📁 **1. Project Folder Structure**
 
 ```
 ProductCatalogApp/
@@ -589,7 +587,7 @@ public class Cart
 
 ---
 
-# 🎮 **3. Create Controllers**
+#### 🎮 **3. Create Controllers**
 
 ---
 
@@ -633,7 +631,7 @@ public class ProductsController : Controller
 
 ---
 
-# **3.2 AuthController**
+#### **3.2 AuthController**
 
 ```csharp
 using Microsoft.AspNetCore.Mvc;
@@ -661,7 +659,7 @@ public class AuthController : Controller
 
 ---
 
-# **3.3 ShoppingCartController**
+#### **3.3 ShoppingCartController**
 
 ```csharp
 using Microsoft.AspNetCore.Mvc;
@@ -700,11 +698,11 @@ public class ShoppingCartController : Controller
 
 ---
 
-# 🖥️ **4. Create Views**
+### 🖥️ **4. Create Views**
 
 ---
 
-# **4.1 Products/Index.cshtml**
+#### **4.1 Products/Index.cshtml**
 
 ```html
 @model IEnumerable<Product>
@@ -724,7 +722,7 @@ public class ShoppingCartController : Controller
 
 ---
 
-# **4.2 Products/Create.cshtml**
+#### **4.2 Products/Create.cshtml**
 
 ```html
 @model Product
@@ -739,7 +737,7 @@ public class ShoppingCartController : Controller
 
 ---
 
-# **4.3 Products/Details.cshtml**
+#### **4.3 Products/Details.cshtml**
 
 ```html
 @model Product
@@ -751,7 +749,7 @@ public class ShoppingCartController : Controller
 
 ---
 
-# **4.4 Auth/Login.cshtml**
+#### **4.4 Auth/Login.cshtml**
 
 ```html
 @model Credential
@@ -766,7 +764,7 @@ public class ShoppingCartController : Controller
 
 ---
 
-# **4.5 ShoppingCart/Index.cshtml**
+#### **4.5 ShoppingCart/Index.cshtml**
 
 ```html
 @model Cart
@@ -782,7 +780,7 @@ public class ShoppingCartController : Controller
 
 ---
 
-# **4.6 ShoppingCart/Summary.cshtml**
+#### **4.6 ShoppingCart/Summary.cshtml**
 
 ```html
 @model Cart
