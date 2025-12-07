@@ -477,3 +477,316 @@ Data access layer, DB interactions.
 
 App configuration, middleware, services registration.
 
+
+
+
+# **ASP.NET Core MVC Hands-On Document**
+
+# **ProductCatalog Mini Project**
+
+This hands-on guide helps students build a **Product Catalog Web Application** using **ASP.NET Core MVC**, following the same development flow you learned:
+
+**Model → Controller → Action Methods → Views → Razor Logic**
+
+We will create:
+
+* `ProductCatalog` module
+* `ProductsController`
+* `AuthController`
+* `ShoppingCartController`
+* Models: `Product`, `Item`, `Cart`, `Credential`
+* Views for **Products**, **Auth**, **ShoppingCart**
+
+---
+
+## 📁 **1. Project Folder Structure**
+
+```
+ProductCatalogApp/
+│
+├── Controllers/
+│     ├── ProductsController.cs
+│     ├── AuthController.cs
+│     └── ShoppingCartController.cs
+│
+├── Models/
+│     ├── Product.cs
+│     ├── Credential.cs
+│     ├── Item.cs
+│     └── Cart.cs
+│
+├── Views/
+│     ├── Products/
+│     │     ├── Index.cshtml
+│     │     ├── Details.cshtml
+│     │     └── Create.cshtml
+│     │
+│     ├── Auth/
+│     │     └── Login.cshtml
+│     │
+│     ├── ShoppingCart/
+│     │     ├── Index.cshtml
+│     │     └── Summary.cshtml
+│     │
+│     └── Shared/
+│           ├── _Layout.cshtml
+│           └── _ViewImports.cshtml
+│
+└── wwwroot/
+      ├── css/
+      └── js/
+```
+
+---
+
+# ✅ **2. Create Models**
+
+## **2.1 Product.cs**
+
+```csharp
+public class Product
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public string Description { get; set; }
+    public decimal Price { get; set; }
+}
+```
+
+## **2.2 Credential.cs**
+
+```csharp
+public class Credential
+{
+    public string Email { get; set; }
+    public string Password { get; set; }
+}
+```
+
+## **2.3 Item.cs**
+
+```csharp
+public class Item
+{
+    public Product Product { get; set; }
+    public int Quantity { get; set; }
+}
+```
+
+## **2.4 Cart.cs**
+
+```csharp
+using System.Collections.Generic;
+using System.Linq;
+
+public class Cart
+{
+    public List<Item> Items { get; set; } = new List<Item>();
+
+    public decimal Total => Items.Sum(i => i.Product.Price * i.Quantity);
+}
+```
+
+---
+
+# 🎮 **3. Create Controllers**
+
+---
+
+# **3.1 ProductsController**
+
+```csharp
+using Microsoft.AspNetCore.Mvc;
+using ProductCatalogApp.Models;
+using System.Collections.Generic;
+using System.Linq;
+
+public class ProductsController : Controller
+{
+    private static List<Product> _products = new List<Product>();
+
+    public IActionResult Index()
+    {
+        return View(_products);
+    }
+
+    public IActionResult Details(int id)
+    {
+        var product = _products.FirstOrDefault(p => p.Id == id);
+        return View(product);
+    }
+
+    public IActionResult Create()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult Create(Product model)
+    {
+        model.Id = _products.Count + 1;
+        _products.Add(model);
+        return RedirectToAction("Index");
+    }
+}
+```
+
+---
+
+# **3.2 AuthController**
+
+```csharp
+using Microsoft.AspNetCore.Mvc;
+using ProductCatalogApp.Models;
+
+public class AuthController : Controller
+{
+    public IActionResult Login()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult Login(Credential credential)
+    {
+        if (credential.Email == "admin@mail.com" && credential.Password == "1234")
+        {
+            return RedirectToAction("Index", "Products");
+        }
+        ViewBag.Message = "Invalid Credentials";
+        return View();
+    }
+}
+```
+
+---
+
+# **3.3 ShoppingCartController**
+
+```csharp
+using Microsoft.AspNetCore.Mvc;
+using ProductCatalogApp.Models;
+using System.Linq;
+
+public class ShoppingCartController : Controller
+{
+    private static Cart _cart = new Cart();
+    private static List<Product> _products => ProductsController._products;
+
+    public IActionResult Index()
+    {
+        return View(_cart);
+    }
+
+    public IActionResult Add(int id)
+    {
+        var product = _products.FirstOrDefault(p => p.Id == id);
+
+        var existing = _cart.Items.FirstOrDefault(i => i.Product.Id == id);
+        if (existing != null)
+            existing.Quantity++;
+        else
+            _cart.Items.Add(new Item { Product = product, Quantity = 1 });
+
+        return RedirectToAction("Index");
+    }
+
+    public IActionResult Summary()
+    {
+        return View(_cart);
+    }
+}
+```
+
+---
+
+# 🖥️ **4. Create Views**
+
+---
+
+# **4.1 Products/Index.cshtml**
+
+```html
+@model IEnumerable<Product>
+<h2>Products</h2>
+<a href="/Products/Create">Add Product</a>
+<ul>
+@foreach (var p in Model)
+{
+    <li>
+        @p.Name - @p.Price
+        <a href="/Products/Details/@p.Id">Details</a> |
+        <a href="/ShoppingCart/Add/@p.Id">Add to Cart</a>
+    </li>
+}
+</ul>
+```
+
+---
+
+# **4.2 Products/Create.cshtml**
+
+```html
+@model Product
+<h2>Create Product</h2>
+<form asp-action="Create">
+    <input asp-for="Name" placeholder="Name" /> <br />
+    <input asp-for="Description" placeholder="Description" /> <br />
+    <input asp-for="Price" placeholder="Price" /> <br />
+    <button type="submit">Save</button>
+</form>
+```
+
+---
+
+# **4.3 Products/Details.cshtml**
+
+```html
+@model Product
+<h2>@Model.Name</h2>
+<p>@Model.Description</p>
+<p>Price: @Model.Price</p>
+<a href="/ShoppingCart/Add/@Model.Id">Add to Cart</a>
+```
+
+---
+
+# **4.4 Auth/Login.cshtml**
+
+```html
+@model Credential
+<h2>Login</h2>
+<form asp-action="Login">
+    <input asp-for="Email" placeholder="Email" /> <br />
+    <input asp-for="Password" placeholder="Password" type="password" /> <br />
+    <button type="submit">Login</button>
+</form>
+<p>@ViewBag.Message</p>
+```
+
+---
+
+# **4.5 ShoppingCart/Index.cshtml**
+
+```html
+@model Cart
+<h2>Your Cart</h2>
+<ul>
+@foreach (var item in Model.Items)
+{
+    <li>@item.Product.Name (x @item.Quantity)</li>
+}
+</ul>
+<a href="/ShoppingCart/Summary">Checkout</a>
+```
+
+---
+
+# **4.6 ShoppingCart/Summary.cshtml**
+
+```html
+@model Cart
+<h2>Order Summary</h2>
+<p>Total Items: @Model.Items.Count</p>
+<p>Total Amount: @Model.Total</p>
+```
