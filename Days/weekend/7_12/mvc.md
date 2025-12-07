@@ -346,7 +346,7 @@ Example:
           │                                │
           │                        STEP 3: ACTION METHODS
           │                        ┌──────────────────────┐
-          └──────────────────────▶│   Create(), Index()  │
+          └──────────────────────▶ │   Create(), Index()  │
                                    │   Edit(), Delete()   │
                                    └──────────────────────┘
                                                │
@@ -360,8 +360,8 @@ Example:
                                                │
                                  STEP 5: RAZOR UI LOGIC
                                    ┌──────────────────────┐
-                                   │ @model Student        │
-                                   │ HTML + Razor Syntax   │
+                                   │ @model Student       │
+                                   │ HTML + Razor Syntax  │
                                    └──────────────────────┘
                                                │
                                                ▼
