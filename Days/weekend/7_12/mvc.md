@@ -440,42 +440,23 @@ MyMvcApp/
 
 ## 🧭 **Student-Friendly Explanation of Each Folder**
 
-#### **Controllers/**
+#### **Controllers/** : Handles incoming requests, returns responses (views or JSON).
 
-Handles incoming requests, returns responses (views or JSON).
+ **Models/** :Contains the **domain classes** (Student, Product, etc.) and **ViewModels**.
 
-#### **Models/**
+**Views/** :UI screens written in Razor (.cshtml files).
 
-Contains the **domain classes** (Student, Product, etc.) and **ViewModels**.
+**Views/Shared/** :Shared files like `_Layout.cshtml`, partial views, shared scripts.
 
-#### **Views/**
+**wwwroot/** : Static files (CSS, JS, images). This is the **web root**—publicly accessible.
 
-UI screens written in Razor (.cshtml files).
+**Data/** :Database context, EF migrations.
 
-#### **Views/Shared/**
+**Services/** : Business logic layer (optional but recommended).
 
-Shared files like `_Layout.cshtml`, partial views, shared scripts.
+**Repositories/** : Data access layer, DB interactions.
 
-#### **wwwroot/**
-
-Static files (CSS, JS, images).
-This is the **web root**—publicly accessible.
-
-#### **Data/**
-
-Database context, EF migrations.
-
-#### **Services/**
-
-Business logic layer (optional but recommended).
-
-#### **Repositories/**
-
-Data access layer, DB interactions.
-
-#### **Program.cs / Startup.cs**
-
-App configuration, middleware, services registration.
+ **Program.cs / Startup.cs** : App configuration, middleware, services registration.
 
 
 ## **ASP.NET Core MVC Hands-On Document**
