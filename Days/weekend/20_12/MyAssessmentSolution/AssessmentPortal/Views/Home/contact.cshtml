@@ -1,0 +1,25 @@
+﻿@using AssementPortal.MOdels;
+
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@* <div class="text-center">
+ <p>@Model.Title</p>
+ <p>@Model.Owner</p>
+ <p>@Model.Location</p>
+ <p>@Model.Strength</p>
+ </div> *@
+
+ <div class="text-center">
+@{
+    //Razor Syntax parse at server side by View Engine : Razor View Engine
+    var org=ViewData["theOrg"] as Organization;
+    <p>@org.Title</p>
+    <p>@org.Owner</p>
+    <p>@org.Location</p>
+    <p>@org.Strength</p>
+}
+
+ </div>

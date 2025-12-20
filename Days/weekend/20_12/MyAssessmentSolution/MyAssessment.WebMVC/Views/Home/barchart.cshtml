@@ -1,0 +1,24 @@
+<div class="card">
+    <div class="card-header">
+        Product Performance (Bar Chart)
+    </div>
+    <div class="card-body">
+        <canvas id="barChart"></canvas>
+    </div>
+</div>
+
+<script>
+    const barCtx = document.getElementById('barChart');
+
+    new Chart(barCtx, {
+        type: 'bar',
+        data: {
+            labels: ['Laptop', 'Mobile', 'Tablet'],
+            datasets: [{
+                label: 'Units Sold',
+                data: [50, 80, 30],
+                borderWidth: 1
+            }]
+        }
+    });
+</script>

@@ -1,0 +1,22 @@
+<div class="card">
+    <div class="card-header">
+        Market Share (Pie Chart)
+    </div>
+    <div class="card-body">
+        <canvas id="pieChart"></canvas>
+    </div>
+</div>
+
+<script>
+    const pieCtx = document.getElementById('pieChart');
+
+    new Chart(pieCtx, {
+        type: 'pie',
+        data: {
+            labels: ['India', 'USA', 'Europe'],
+            datasets: [{
+                data: [45, 30, 25]
+            }]
+        }
+    });
+</script>

@@ -1,0 +1,23 @@
+<h1>Products for sale</h1>
+<hr/>
+
+<ol>
+
+@{
+    List<Product> products=new List<Product>();
+    products.Add(new Product{Id=12, Title="Gerbera",  Description="Wedding Flower", UnitPrice=23, Quantity=5000, Likes=67000 , ImageUrl="/images/gerbera.jpg"});
+    products.Add(new Product{Id=13, Title="Rose", Description="Valentine Flower", UnitPrice=34, Quantity=7855, Likes=7000, ImageUrl="/images/rose.jpg"});
+    products.Add(new Product{Id=14, Title="Lotus", Description="Worship Flower", UnitPrice=56, Quantity=7654, Likes=5600, ImageUrl="/images/lotus.jpg"});
+
+    //Dynamic UI
+    foreach(Product p in products)
+    {
+        <li>
+        <div>
+            <img src="@p.ImageUrl"  width="100" height="100" />
+            <p>@p.Title - @p.Description (@p.UnitPrice)</p>
+
+        </div></li>
+    }
+}
+</ol>

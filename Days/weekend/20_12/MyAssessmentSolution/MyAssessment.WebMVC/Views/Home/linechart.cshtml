@@ -1,0 +1,24 @@
+<div class="card">
+    <div class="card-header">
+        Monthly Sales (Line Chart)
+    </div>
+    <div class="card-body">
+        <canvas id="lineChart"></canvas>
+    </div>
+</div>
+
+<script>
+    const lineCtx = document.getElementById('lineChart');
+
+    new Chart(lineCtx, {
+        type: 'line',
+        data: {
+            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+            datasets: [{
+                label: 'Sales',
+                data: [10, 25, 18, 30, 40],
+                borderWidth: 2
+            }]
+        }
+    });
+</script>
