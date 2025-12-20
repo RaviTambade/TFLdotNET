@@ -1,0 +1,6 @@
+@MyWebApiApp_HostAddress = http://localhost:5198
+
+GET {{MyWebApiApp_HostAddress}}/assessment/
+Accept: application/json
+
+###
