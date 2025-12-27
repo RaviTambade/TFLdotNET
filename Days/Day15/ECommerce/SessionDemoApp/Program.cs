@@ -5,8 +5,8 @@ using Core.Services.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
-//register Distributed Memory for stroing session
-      
+//1. Register Distributed Memory for stroing session
+    
 builder.Services.AddTransient<IFruitRepository, FruitRepository>();
 builder.Services.AddTransient<IFlowerRepository, FlowerRepository>();
 builder.Services.AddTransient<IFlowerService, FlowerService>();
@@ -15,7 +15,7 @@ builder.Services.AddTransient<IFinancialsService, FinancialsService>();
 
 //services.AddMemoryCache();  /// keeping session data  in proc
 builder.Services.AddDistributedMemoryCache();
-            //setting session state enviornment at starup level
+//2. setting session state enviornment at starup level
 builder.Services.AddSession(options=>{
                 options.Cookie.Name = ".Transflower.Session";
                 options.IdleTimeout = TimeSpan.FromMinutes(10);
@@ -38,13 +38,22 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
 app.UseRouting();
-
 app.UseAuthorization();
- app.UseSession(); //--------------------------set session middleware
+app.UseSession(); //--------------------------3.set session middleware
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
-app.Run();
+
+/*
+
+AddSingleton  → One object for entire application
+AddScoped     → One object per HTTP request
+AddTransient  → New object every time it is requested
+
+
+
+
+*/
