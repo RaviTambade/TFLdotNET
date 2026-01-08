@@ -126,7 +126,7 @@ A .NET Solution Architect is a lifelong learner:
 
 Would you like to explore a **case study of a real .NET architecture** next — like an **eCommerce system**, **HRMS**, or **ERP**? I'd be happy to walk you through it.
 
-## 👨‍🏫 Mentor Storytelling: **Becoming a .NET Solution Architect**
+## 👨‍🏫 **Becoming a .NET Solution Architect**
 
 *"Let me take you back a few years..."*
 
@@ -268,11 +268,6 @@ You design for breach prevention — not patch after breach.
 > "Becoming a Solution Architect is not a sprint — it's a strategic climb. Every bug you solve, every API you design, every junior you mentor — adds up. But remember: architecture is less about perfection, more about **clarity, balance, and purpose.**"
 
 > "Never stop learning. Don't just chase the title. Chase **mastery**."
-
-
-
-
-
 
 ## .net Soultion Architecture simple case study
 .NET solution architecture involves designing and organizing software solutions using the Microsoft .NET framework. It encompasses various architectural decisions, patterns, and components to ensure that the resulting application meets functional and non-functional requirements while being scalable, maintainable, and efficient. Let's illustrate this with a case study:
