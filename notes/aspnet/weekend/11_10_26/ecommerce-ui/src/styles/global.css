@@ -1,0 +1,142 @@
+/* ==========================================
+   Reset & Base Styles
+========================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #0070f3;
+}
+
+/* ==========================================
+   Header
+========================================== */
+header {
+  background-color: #f5f5f5;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header nav a {
+  margin-left: 1rem;
+  font-weight: 500;
+}
+
+/* ==========================================
+   Footer
+========================================== */
+footer {
+  background-color: #f5f5f5;
+  padding: 1rem 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #666;
+  box-shadow: 0 -2px 4px rgba(0,0,0,0.05);
+}
+
+/* ==========================================
+   Main Content
+========================================== */
+main {
+  padding: 2rem;
+}
+
+/* ==========================================
+   Buttons
+========================================== */
+button {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background-color: #0070f3;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+/* ==========================================
+   Forms
+========================================== */
+input, select, textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* ==========================================
+   Utility Classes
+========================================== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.p-1 { padding: 0.5rem; }
+.p-2 { padding: 1rem; }
+.p-3 { padding: 1.5rem; }
+
+/* ==========================================
+   Product Cards Example Styling
+========================================== */
+.product-card {
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 1rem;
+  background-color: #fff;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
