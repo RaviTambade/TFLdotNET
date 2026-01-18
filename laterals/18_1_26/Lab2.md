@@ -1,5 +1,3 @@
-
-
 # 🧪 Hands-On Lab (Part 2)
 
 Below is a **continuation lab** designed **on top of your existing ECommerce solution**, written in a **step-by-step mentor style**, exactly suitable for **students learning real-world .NET development using CLI**.
@@ -14,7 +12,6 @@ Below is a **continuation lab** designed **on top of your existing ECommerce sol
 > * `Test` → Console App (Runner)
 > * `ECommerce.sln`
 
----
 
 ## 🎯 Lab Objective
 
@@ -26,7 +23,6 @@ Students will learn how to:
 * Reference **Catalog class library**
 * Run and navigate a **multi-page web application**
 
----
 
 ## 🧠 Architecture After This Lab
 
@@ -38,15 +34,11 @@ ECommerce Solution
 └── WebApp        → Web UI (Razor Pages)
 ```
 
----
-
 ## 🛠 Prerequisites
 
 * Previous lab completed successfully
 * .NET SDK installed
 * Basic HTML knowledge
-
----
 
 ## 📁 Step 1: Go to Solution Root
 
@@ -60,8 +52,6 @@ Confirm solution file exists:
 ```cmd
 dir *.sln
 ```
-
----
 
 ## 🌐 Step 2: Create ASP.NET Core Web App (Razor Pages)
 
@@ -78,7 +68,6 @@ dotnet new webapp -o WebApp
 * Best for beginners
 * Uses `.cshtml` pages directly
 
----
 
 ## ➕ Step 3: Add WebApp to Solution
 
@@ -87,8 +76,6 @@ dotnet sln add .\WebApp\WebApp.csproj
 ```
 
 ✅ Now solution contains **three projects**
-
----
 
 ## 🔗 Step 4: Add Reference to Catalog Project
 
@@ -107,7 +94,6 @@ dotnet add reference ..\Cataog\Cataog.csproj
 📌 **Why?**
 Web pages can now use `Product`, `Catalog`, and business models.
 
----
 
 ## 📄 Step 5: Understand Default Razor Structure
 
@@ -124,8 +110,6 @@ Pages
 
 📌 **Key concept:**
 Each `.cshtml` file = **one web page**
-
----
 
 ## 🧾 Step 6: Create New Razor Pages
 
@@ -160,7 +144,6 @@ Pages
 * `.cshtml` → UI (HTML + Razor)
 * `.cshtml.cs` → PageModel (C# logic)
 
----
 
 ## ✏ Step 7: Add Content to Pages
 
@@ -176,7 +159,6 @@ Pages
 </p>
 ```
 
----
 
 ### 🔹 Contact.cshtml
 
@@ -189,7 +171,6 @@ Pages
 <p>Phone: +91-9999999999</p>
 ```
 
----
 
 ### 🔹 Services.cshtml
 
@@ -204,8 +185,6 @@ Pages
     <li>Customer Support</li>
 </ul>
 ```
-
----
 
 ## 🧭 Step 8: Update Navigation Menu
 
@@ -232,7 +211,6 @@ Find `<ul class="navbar-nav">` and add:
 📌 **Why?**
 This enables **top menu navigation** across all pages.
 
----
 
 ## 🏗 Step 9: Build the Solution
 
@@ -257,8 +235,6 @@ WebApp succeeded
 Build succeeded
 ```
 
----
-
 ## ▶ Step 10: Run the Web Application
 
 ```cmd
@@ -277,7 +253,6 @@ Open browser:
 https://localhost:xxxx
 ```
 
----
 
 ## 🧪 Step 11: Verify Pages
 
@@ -288,7 +263,6 @@ https://localhost:xxxx
 
 Navigation works without refreshing logic.
 
----
 
 ## 🧠 Concept Mapping for Students
 
@@ -299,8 +273,6 @@ Navigation works without refreshing logic.
 | PageModel         | Backend logic                 |
 | Project Reference | Clean dependency              |
 
----
-
 ## 🧩 Optional Student Exercises
 
 1. Display product list from `Cataog`
@@ -309,9 +281,9 @@ Navigation works without refreshing logic.
 4. Convert Services to dynamic page
 5. Add form in Contact page
 
----
 
-## 🎓 Mentor Insight (Transflower Style)
+
+## 🎓 Mentor Insight
 
 > “Console apps teach logic.
 > Web apps teach **user thinking**.

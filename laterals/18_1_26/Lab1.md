@@ -18,7 +18,6 @@ Students will learn how to:
 * Basic C# knowledge
 * Command Prompt or PowerShell
 
----
 
 ## 📁 Step 1: Create Workspace Folder
 
@@ -39,7 +38,6 @@ mkdir ECommerce
 📌 **Why?**
 This folder will contain the entire E-Commerce solution (all projects).
 
----
 
 ## 📦 Step 2: Create a .NET Solution File
 
@@ -64,7 +62,6 @@ The template "Solution File" was created successfully.
 📌 **Why?**
 A solution (`.sln`) is a **container** that groups multiple projects together.
 
----
 
 ## 🖥 Step 3: Create Console Application (Test Project)
 
@@ -87,7 +84,7 @@ ECommerce
 📌 **Why?**
 This will act as the **client / UI / runner** for our application.
 
----
+
 
 ## ➕ Step 4: Add Console Project to Solution
 
@@ -127,7 +124,6 @@ ECommerce
 📌 **Why?**
 This represents the **business/domain layer** (e.g., Product, Catalog logic).
 
----
 
 ## ➕ Step 6: Add Class Library to Solution
 
@@ -138,7 +134,6 @@ dotnet sln add .\Cataog\Cataog.csproj
 📌 **Why?**
 Now both projects are part of the same solution.
 
----
 
 ## 🔗 Step 7: Add Project Reference
 
@@ -161,7 +156,6 @@ This allows the **Test** project to use classes defined in **Cataog**.
 >
 > * **Test** → depends on → **Cataog**
 
----
 
 ## 🔙 Step 8: Return to Solution Folder
 
@@ -169,7 +163,6 @@ This allows the **Test** project to use classes defined in **Cataog**.
 cd ..
 ```
 
----
 
 ## 🏗 Step 9: Build the Entire Solution
 
@@ -191,7 +184,6 @@ Build succeeded
 * Warnings are about **non-nullable properties**
 * This is common in modern C# and not an error
 
----
 
 ## ⚠ Understanding the Warnings (Conceptual)
 
@@ -209,7 +201,6 @@ This is a great place to introduce:
 * Constructors
 * Nullable reference types
 
----
 
 ## ▶ Step 10: Run the Console Application
 
@@ -230,7 +221,6 @@ Hello, World!
 * It used `Product` from `Cataog`
 * Console displayed product details
 
----
 
 ## 🧠 Architecture Understanding (For Students)
 
@@ -244,8 +234,6 @@ ECommerce Solution
     └── Domain / Business Logic
 ```
 
----
-
 ## ✅ Key Learning Outcomes
 
 Students now understand how to:
@@ -256,9 +244,9 @@ Students now understand how to:
 ✔ Build and run a solution
 ✔ Separate **UI** and **Business Logic**
 
----
 
-## 🚀 Mentor Note (Transflower Style)
+
+## 🚀 Mentor Note
 
 > “Real software is never a single project.
 > This lab teaches how **real-world applications are organized**.”
