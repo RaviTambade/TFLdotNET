@@ -1,0 +1,6 @@
+@estorewebapi_HostAddress = http://localhost:5264
+
+GET {{estorewebapi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
