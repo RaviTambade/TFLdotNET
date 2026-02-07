@@ -243,8 +243,6 @@ class PatientData
 }
 ```
 
-
-
 # ✅ STEP 6: Build C# WebSocket Client (Console App)
 
 ### Create Client Project
@@ -306,11 +304,9 @@ dotnet run
 
 3️⃣ Observe:
 
-✔ All clients receive updates
-✔ Same data
-✔ Every 2 seconds
-
-
+- ✔ All clients receive updates
+- ✔ Same data
+- ✔ Every 2 seconds
 
 # ✅ STEP 8: Demonstrate Stateful Connection
 
@@ -325,8 +321,6 @@ Explain:
 
 WebSocket = Session
 REST = No memory
-
-
 
 # ✅ STEP 9: Add Reconnection (Optional)
 
@@ -372,20 +366,18 @@ Explain:
 | Bad packet   | Ignored            |
 
  
- 
 
 # 🌟 Advanced Extension (For Strong Students)
 
 Add:
 
-✅ SignalR
-✅ Database logging
-✅ Alert thresholds
-✅ Mobile app client
-✅ Load balancer
+- ✅ SignalR
+- ✅ Database logging
+- ✅ Alert thresholds
+- ✅ Mobile app client
+- ✅ Load balancer
 
  
-
 # 🌺 Mentor’s Closing Message
 
 > *Dear Student, this project is not about WebSockets.*
