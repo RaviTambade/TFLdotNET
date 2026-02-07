@@ -126,8 +126,6 @@ This is what big systems (like hospitals) use:
 * Users → Easy web interface
 * Server → Central brain
 
-
-
 ```
 Socket    = Machine ↔ Machine
 WebSocket = Human ↔ Machine (via Web)
