@@ -2,68 +2,99 @@
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using System.Threading;
 
-namespace ClientServer
+class Program
 {
-    public class ClientServer
+    static void Main(string[] args)
     {
-        public static void Main(string[] args)
+        try
         {
-            try
+            TcpListener server = new TcpListener(IPAddress.Any, 5002);
+            server.Start();
+
+            Console.WriteLine("Server Started on Port 5002...");
+            Console.WriteLine("Waiting for Clients...");
+
+            while (true) // Server always running
             {
-                TcpListener server=new TcpListener(IPAddress.Any,5002);
-                server.Start();
+                TcpClient client = server.AcceptTcpClient();
 
+                Console.WriteLine("Client Connected!");
 
-                Console.WriteLine("Server started.........");
-                Console.WriteLine("Waiting for client.....");
+                // Create new thread for each client
+                Thread clientThread =
+                    new Thread(HandleClient);
 
-                TcpClient client =server.AcceptTcpClient();
-                Console.WriteLine("Client connected!!!!");
-
-                NetworkStream stream=client.GetStream();
-
-                byte[] buffer=new byte[1024];
-                int byteRead=stream.Read(buffer,0,buffer.Length);
-
-                string message=Encoding.UTF8.GetString(buffer,0,byteRead);
-
-                Console.WriteLine("Client Say's: "+message);
-
-                string reply="Hello Client";
-
-                byte[] data=Encoding.UTF8.GetBytes(reply);
-
-                stream.Write(data,0,data.Length);
-
-
-                Console.WriteLine("!!!!!........... Conversation Started .............!!!!!  ");
-
-                
-                string m;
-                string clientmsg;
-                do
-                {
-                    byte[] buff = new byte[1024];
-                    int byteR = stream.Read(buff, 0, buffer.Length);
-                     clientmsg = Encoding.UTF8.GetString(buff, 0, byteR);
-                    Console.WriteLine("\nClient Say's: " + clientmsg);
-                
-                      m = Console.ReadLine().ToString();
-                      byte[] serverMsg=Encoding.UTF8.GetBytes(m);
-                    stream.Write(serverMsg, 0, serverMsg.Length);
-
-
-
-                } while (clientmsg != "bye");
-
-                client.Close();
-                server.Stop();
+                clientThread.Start(client);
             }
-            catch(Exception e)
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Error: " + ex.Message);
+        }
+    }
+
+    // Method executed by each thread
+    static void HandleClient(object obj)
+    {
+        TcpClient client = (TcpClient)obj;
+
+        try
+        {
+            NetworkStream stream = client.GetStream();
+
+            byte[] buffer = new byte[1024];
+            int bytesRead;
+
+            // First message
+            bytesRead = stream.Read(buffer, 0, buffer.Length);
+
+            string message =
+                Encoding.UTF8.GetString(buffer, 0, bytesRead);
+
+            Console.WriteLine("Client Says: " + message);
+
+            // Reply
+            string reply = "Hello Client";
+            byte[] data = Encoding.UTF8.GetBytes(reply);
+
+            stream.Write(data, 0, data.Length);
+
+            Console.WriteLine("Conversation Started...");
+
+            string clientMsg = "";
+
+            while (clientMsg.ToLower() != "bye")
             {
-                Console.WriteLine("Error::   "+e.Message);
+                bytesRead = stream.Read(buffer, 0, buffer.Length);
+
+                if (bytesRead == 0)
+                    break;
+
+                clientMsg =
+                    Encoding.UTF8.GetString(buffer, 0, bytesRead);
+
+                Console.WriteLine("Client: " + clientMsg);
+
+                // Server reply
+                Console.Write("Server: ");
+                string serverMsg = Console.ReadLine();
+
+                byte[] serverData =
+                    Encoding.UTF8.GetBytes(serverMsg);
+
+                stream.Write(serverData, 0, serverData.Length);
             }
+
+            Console.WriteLine("Client Disconnected.");
+
+            client.Close();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Client Error: " + ex.Message);
         }
     }
 }
+
