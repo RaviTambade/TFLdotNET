@@ -15,3 +15,5 @@ ASP.NET MVC Web API and ASP.NET Minimal Web API serve similar purposes but have 
 7. **Familiarity and Compatibility**: If you or your team are already familiar with ASP.NET MVC, using MVC Web API might be more straightforward and require less learning curve compared to adopting a new framework like Minimal Web API.
 
 Ultimately, the choice between MVC Web API and Minimal Web API depends on your project requirements, development preferences, and familiarity with the frameworks. MVC Web API is suitable for projects that require full MVC functionality, server-side rendering of HTML views, and integration with existing MVC applications. However, if you're building a lightweight API-focused application or prefer a more minimalistic approach, Minimal Web API might be a better fit.
+
+Tap your potential
