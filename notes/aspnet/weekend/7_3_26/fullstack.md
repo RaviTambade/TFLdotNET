@@ -978,8 +978,6 @@ Distributed Systems
 ```
 
 
-💡 Ravi sir, since you mentor students in **.NET, Java, Python, and JavaScript**, the **most powerful diagram I can show next** is something many professors never explain clearly:
-
 ### **“The Complete Software Industry Map”**
 
  
@@ -1428,8 +1426,6 @@ Users → APIs → Services → Databases → Cloud
 
 Build  **architecture thinking**, not just coding.
 
- 
-
 # 10-Minute System Design Architecture (Industry Pattern)
 
 ```text
@@ -1480,7 +1476,6 @@ Build  **architecture thinking**, not just coding.
 
 ```
 
- 
 # Event Driven Communication
 
 Large systems avoid tight coupling by using **event messaging**.
@@ -1515,8 +1510,6 @@ Publish Event → PaymentCompleted
         ↓
 Shipping Service starts delivery
 ```
-
- 
 
 # Caching Layer (Speed Optimization)
 
@@ -1564,8 +1557,6 @@ Large systems scale databases using **replication and sharding**.
 Reads are distributed across replicas.
 ```
 
- 
-
 # Container + Cloud Infrastructure
 
 ```text
@@ -1590,8 +1581,6 @@ Containers scale automatically.
 Example orchestration platform:
 Kubernetes
 
- 
-
 # Observability (Monitoring)
 
 Large distributed systems must track failures.
@@ -1613,8 +1602,6 @@ Elasticsearch    Prometheus       Jaeger
             +----------------+
 ```
 
- 
-
 # The 10-Step Request Journey
 
  
@@ -1631,7 +1618,6 @@ Elasticsearch    Prometheus       Jaeger
 9 Other services react asynchronously
 10 Response returned to user
 ```
-
  
 
 Students can remember this simple structure:
@@ -2076,7 +2062,7 @@ CODE → CONTAINER → CLUSTER → CLOUD
 
 
 
-# 1. FAANG-Style Cloud Native Architecture
+# 1. Cloud Native Architecture
 
 Now let us move to a **MASTER INDUSTRY ARCHITECTURE** that companies like
 Netflix, Amazon, and Uber follow for **large-scale cloud systems**.
@@ -2154,8 +2140,6 @@ Order Service → Publish Event → OrderCreated
 Payment Service → Consume Event → Process Payment
 Shipping Service → Consume Event → Start Delivery
 ```
-
-
 
 # 3. Container Orchestration (Kubernetes)
 
@@ -2329,8 +2313,6 @@ Programming Language
  
 
 # 1. Big Picture — Microservice Container Architecture
-
-
 
 Below is a **classroom-friendly ASCII architecture diagram** you can use while teaching students.
 It explains **Runtime Architecture + Microservices + Containers** for **Node.js, .NET, and Java** in a single visual.
