@@ -39,23 +39,7 @@ namespace AuthLib.Repositories
         }
         public void ShowAllCredentials()
         {
-            //Database Connectivity 
-       
-
-            //Connection----SqlConnection
-            //Command-------SqlCommand
-            //DataReader----SqlDataReader
-
-            //steps for database connectivity
-
-            //Receipe for database accessibilty
-            //1.define connection string
-            //Create connection object
-            //Create command object
-            //Open connection
-            //Exeucte Query
-            //Iterate result set
-            //Show result console
+           
 
             string connectionString = @"Data Source=DESKTOP-H1K53PL\SQLEXPRESS;Initial Catalog=AssessmentDB;Integrated Security=True;Connect Timeout=30;Encrypt=False";
             SqlConnection con = new SqlConnection(connectionString);

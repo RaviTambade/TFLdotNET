@@ -19,15 +19,17 @@ This repository is **not just code** — it’s a **journey**. A space to explor
 
 .NET has grown into a powerful, versatile ecosystem trusted by small teams and enterprises alike.
 
-With **.NET 8**, we are entering a new era of development:
+With .NET 10, we are stepping into an even stronger era of modern software development:
 
-- ⚡ **Blazing Performance** improvements
-- 🧠 **Modern Language Features** from C# 12 & F# 8
-- 🌐 **Cross-platform Freedom**: Web, Desktop, Cloud, Mobile
-- 📦 **Cloud Native**: Containerization, CI/CD, Observability
-- 🧩 **Component-based UI**: With Blazor and MAUI
-- 🎨 **Desktop Legends**: WinForms and WPF, modernized
-- ☁️ **Integrated Cloud Services**: Ready for Azure, AWS, and more
+⚡ Next-Level Performance with faster runtime, improved JIT, and smarter memory management
+🧠 Advanced Language Features from C# 14 & F# latest enhancements
+🌐 True Cross-Platform Development: Web, Desktop, Cloud, Mobile, IoT, and AI-ready applications
+📦 Cloud-Native First: Containers, Kubernetes, CI/CD, Observability, and Distributed Systems
+🧩 Component-Driven UI: Enhanced Blazor, .NET MAUI, and Hybrid App Development
+🎨 Modern Desktop Excellence: WinForms and WPF with long-term enterprise support
+☁️ Seamless Cloud Integration: Built for Azure, AWS, Google Cloud, and multi-cloud environments
+🤖 AI-Ready Development: Native support for intelligent applications, automation, and AI-powered services
+
 
 ## 📘 Learn by Doing
 
