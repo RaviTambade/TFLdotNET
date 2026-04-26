@@ -21,14 +21,14 @@ This repository is **not just code** — it’s a **journey**. A space to explor
 
 With .NET 10, we are stepping into an even stronger era of modern software development:
 
-⚡ Next-Level Performance with faster runtime, improved JIT, and smarter memory management
-🧠 Advanced Language Features from C# 14 & F# latest enhancements
-🌐 True Cross-Platform Development: Web, Desktop, Cloud, Mobile, IoT, and AI-ready applications
-📦 Cloud-Native First: Containers, Kubernetes, CI/CD, Observability, and Distributed Systems
-🧩 Component-Driven UI: Enhanced Blazor, .NET MAUI, and Hybrid App Development
-🎨 Modern Desktop Excellence: WinForms and WPF with long-term enterprise support
-☁️ Seamless Cloud Integration: Built for Azure, AWS, Google Cloud, and multi-cloud environments
-🤖 AI-Ready Development: Native support for intelligent applications, automation, and AI-powered services
+- ⚡ Next-Level Performance with faster runtime, improved JIT, and smarter memory management
+- 🧠 Advanced Language Features from C# 14 & F# latest enhancements
+- 🌐 True Cross-Platform Development: Web, Desktop, Cloud, Mobile, IoT, and AI-ready applications
+- 📦 Cloud-Native First: Containers, Kubernetes, CI/CD, Observability, and Distributed Systems
+- 🧩 Component-Driven UI: Enhanced Blazor, .NET MAUI, and Hybrid App Development
+- 🎨 Modern Desktop Excellence: WinForms and WPF with long-term enterprise support
+- ☁️ Seamless Cloud Integration: Built for Azure, AWS, Google Cloud, and multi-cloud environments
+- 🤖 AI-Ready Development: Native support for intelligent applications, automation, and AI-powered services
 
 
 ## 📘 Learn by Doing
@@ -43,10 +43,10 @@ With .NET 10, we are stepping into an even stronger era of modern software devel
 
 As you move forward, we’ll cover:
 
-✅ Containerization with Docker
-✅ GitHub Actions for CI/CD
-✅ WebSocket + REST + gRPC integration
-✅ Real-world deployment (IIS, Azure, AWS EC2)
+- ✅ Containerization with Docker
+- ✅ GitHub Actions for CI/CD
+- ✅ WebSocket + REST + gRPC integration
+- ✅ Real-world deployment (IIS, Azure, AWS EC2)
 
 ## 🤝 Join the Journey
 
