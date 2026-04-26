@@ -37,17 +37,21 @@ Whether you want to build a **responsive web app**, a **cross-platform mobile ap
 - Started in 2014, reborn as **.NET 5 and beyond**.  
 - Powers modern apps on **Windows, Linux, macOS** — even on Docker!
 
-### 🔁 Ongoing Evolution  
-The latest release, **.NET 8**, is all about speed, scalability, and cloud-readiness — and yes, it speaks C# 12 and F# 8 fluently!
+### 🔁 Ongoing Evolution
+
+The latest release, **.NET 10**, is focused on performance, intelligent cloud-native development, and AI-ready architecture — and yes, it speaks **C# 14** and the latest **F# enhancements** fluently!
 
 ## 💖 Why Developers Choose .NET
 
-| Feature | Why It Matters |
-|--------|----------------|
-| ✨ **Ease of Development** | With tools like **Visual Studio** and **VS Code**, building apps feels more like storytelling. |
-| ⚡ **Performance** | .NET apps are known for being **fast**, **secure**, and **efficient**. |
-| 🌎 **Cross-Platform** | Write once. Run on **Windows**, **Linux**, **macOS**, **iOS**, or **Android**. |
-| 🤝 **Community Support** | .NET is **open source** and backed by the **.NET Foundation** — a vibrant, global developer network. |
+| Feature                        | Why It Matters                                                                                                                                |
+| ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| ✨ **Ease of Development**      | With tools like **Visual Studio**, **VS Code**, and powerful CLI support, building applications becomes faster, cleaner, and more productive. |
+| ⚡ **Performance**              | .NET 10 applications are even more **optimized**, **secure**, and **high-performing**, built for modern enterprise demands.                   |
+| 🌎 **Cross-Platform**          | Build once. Run across **Windows**, **Linux**, **macOS**, **iOS**, **Android**, cloud platforms, containers, and edge devices.                |
+| ☁️ **Cloud-Native & AI Ready** | Designed for **microservices**, **containers**, **Kubernetes**, observability, and modern **AI-powered applications**.                        |
+| 🤝 **Community Support**       | .NET remains fully **open source**, backed by the **.NET Foundation** and supported by a strong global developer community.                   |
+
+
 
 ## 🧱 The Building Blocks of .NET
 
