@@ -1,5 +1,4 @@
-namespace Training;
-
+﻿namespace Training;
 public  class Student
 {
     public int StudentID { get; set; }

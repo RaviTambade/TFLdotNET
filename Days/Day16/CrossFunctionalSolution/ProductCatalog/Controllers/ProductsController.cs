@@ -1,7 +1,6 @@
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using ProductCatalog.Models;
 using ProductCatalog.Services.Interfaces;
-
 namespace ProductCatalog.Controllers
 {
     [ApiController]
@@ -10,14 +9,11 @@ namespace ProductCatalog.Controllers
     {
         private readonly IProductService _productsrv;
         private readonly ILogger<ProductsController> _logger;
-
-        //Parametrized constructor
         public ProductsController(IProductService productsrv, ILogger<ProductsController> logger)
         {
             _logger = logger;
             _productsrv = productsrv;
         }
-
         [HttpGet]
         public async Task<IEnumerable<Product>> GetAllProducts()
         {
@@ -25,7 +21,6 @@ namespace ProductCatalog.Controllers
            _logger.LogInformation("Get all products method invoked at  {DT}", DateTime.UtcNow.ToLongTimeString());
             return products;
         }
-
         [HttpGet]
         [Route("getproductdetails/{id}")]
         public async Task<Product> GetById(int id)
@@ -34,8 +29,6 @@ namespace ProductCatalog.Controllers
             _logger.LogInformation("Get details of product method invoked at  {DT}", DateTime.UtcNow.ToLongTimeString());
             return product;
         }
-
-        // [Authorize(Roles = Role.Admin)]
         [HttpPut]
         [Route("update/{id}")]
         public async Task<bool> UpdateAsync(int id, [FromBody] Product product)
@@ -50,8 +43,6 @@ namespace ProductCatalog.Controllers
             _logger.LogInformation("Update product method invoked at  {DT}", DateTime.UtcNow.ToLongTimeString());
             return status;
         }
-
-        //[Authorize(Roles = Role.Admin + "," + Role.Customer)]
         [HttpPost]
         [Route("addproduct")]
         public async Task<bool> Insert([FromBody] Product product)
@@ -60,8 +51,6 @@ namespace ProductCatalog.Controllers
             _logger.LogInformation("Insert product method invoked at  {DT}", DateTime.UtcNow.ToLongTimeString());
             return status;
         }
-
-        // [Authorize(Roles = Role.Admin)]
         [HttpDelete]
         [Route("delete/{id}")]
         public async Task<bool> Delete(int id)
@@ -70,7 +59,6 @@ namespace ProductCatalog.Controllers
             _logger.LogInformation("Delete product method invoked at  {DT}", DateTime.UtcNow.ToLongTimeString());
             return status;
         }
-
         [HttpPut]
         [Route("hikeprice/{id}")]
         public async Task<bool> HikePrice(double id)
@@ -78,7 +66,6 @@ namespace ProductCatalog.Controllers
             bool status = await _productsrv.HikePrice(id);
             _logger.LogInformation("Hike price of products method invoked at  {DT}", DateTime.UtcNow.ToLongTimeString());
             return status;
-
         }
     }
 }

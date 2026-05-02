@@ -1,14 +1,12 @@
 ﻿using Core.Models;
 using Core.Repositories.Interfaces;
 using System.Collections.Generic;
-
 namespace Core.Repositories
 {
     public class FlowerRepository : IFlowerRepository
     {
         public List<Flower> GetAll()
         {
-            //In a real project, this is where you would call your database/datastore for this info
             List<Flower> items = new List<Flower>()
             {
                 new Flower()
@@ -63,7 +61,6 @@ namespace Core.Repositories
         }
         public List<Flower> GetAllSold()
         {
-            //In a real project, this is where you would call your database/datastore for this info
             List<Flower> items = new List<Flower>()
             {
                 new Flower()

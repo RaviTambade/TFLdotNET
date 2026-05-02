@@ -2,7 +2,6 @@
 using ProductCatalog.Models;
 using ProductCatalog.Repositories.Interfaces;
 using System.Data;
-
 namespace ProductCatalog.Repositories
 {
     public class ProductRepositoryMySql : IProductRepository
@@ -35,8 +34,6 @@ namespace ProductCatalog.Repositories
                     string? imgUrl = reader["image"].ToString();
                     int categoryId = Int32.Parse(reader["category_id"].ToString());
                     int supplierId = Int32.Parse(reader["supplier_id"].ToString());
-
-
                     Product product = new Product
                     {
                         ProductId = id,
@@ -48,7 +45,6 @@ namespace ProductCatalog.Repositories
                         CategoryId = categoryId,
                         SupplierId = supplierId
                     };
-
                     products.Add(product);
                 }
                 reader.Close();
@@ -83,9 +79,6 @@ namespace ProductCatalog.Repositories
                     string? imgUrl = reader["image"].ToString();
                     int categoryId = Int32.Parse(reader["category_id"].ToString());
                     int supplierId = Int32.Parse(reader["supplier_id"].ToString());
-
-
-
                     product = new Product
                     {
                         ProductId = productId,
@@ -96,9 +89,7 @@ namespace ProductCatalog.Repositories
                         ImageUrl = imgUrl,
                         CategoryId = categoryId,
                         SupplierId = supplierId
-
                     };
-
                 }
                 reader.Close();
             }
@@ -110,7 +101,6 @@ namespace ProductCatalog.Repositories
             {
                 connection.Close();
             }
-
             return product;
         }
         public async Task<bool> Insert(Product product)
@@ -174,7 +164,6 @@ namespace ProductCatalog.Repositories
             catch (Exception e)
             {
                 throw e;
-
             }
             finally
             {
@@ -208,7 +197,6 @@ namespace ProductCatalog.Repositories
             }
             return status;
         }
-
         public async Task<bool> HikePrice(double percentage)
         {
             bool status = false;
@@ -233,6 +221,5 @@ namespace ProductCatalog.Repositories
             }
             return status;
         }
-
     }
 }

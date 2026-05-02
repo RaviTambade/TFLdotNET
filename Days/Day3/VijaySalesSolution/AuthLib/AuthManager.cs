@@ -1,10 +1,7 @@
 ﻿namespace AuthLib
 {
-
-    //Business Logic for Authentication
     public class AuthManager
     {
-
         public bool Login(string username, string password)
         {
             bool status = false;
@@ -14,9 +11,7 @@
         }
         public bool Register(string username, string password, string email, string contact)
         {
-            //
             return false;
         }
-
     }
 }

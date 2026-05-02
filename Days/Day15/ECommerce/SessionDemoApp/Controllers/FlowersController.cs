@@ -1,8 +1,6 @@
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Core.Services.Interfaces;
-
 namespace SessionDemoApp.Controllers;
-
 public class FlowersController : Controller
     {
          private readonly IFlowerService _flowerService;
@@ -10,7 +8,6 @@ public class FlowersController : Controller
         {
             _flowerService = flowerService;
         }
-
         public IActionResult Index()
         {
             var itemsSold = _flowerService.GetAll();

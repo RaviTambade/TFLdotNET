@@ -3,23 +3,18 @@ using Microsoft.AspNetCore.Authorization;
 using WebApi.Services;
 using WebApi.Entities;
 using System;
-
 namespace JWTAuthentication.Controllers
 {
-
-    //Define your Web API as secure Web API
-    [Authorize]   // Filter
+    [Authorize]
     [ApiController]
     [Route("[controller]")]
     public class UsersController : ControllerBase
     {
         private IUserService _userService;
-
         public UsersController(IUserService userService)
         {
             _userService = userService;
         }
-
         [AllowAnonymous]
         [HttpPost("authenticate")]
         public IActionResult Authenticate([FromBody]AuthenticateModel model)
@@ -30,7 +25,6 @@ namespace JWTAuthentication.Controllers
                 return BadRequest(new { message = "Username or password is incorrect" });
             return Ok(user);
         }
-
         [Authorize(Roles = Role.Admin)]
         [HttpGet]
         public IActionResult GetAll()
@@ -38,20 +32,15 @@ namespace JWTAuthentication.Controllers
             var users =  _userService.GetAll();
             return Ok(users);
         }
-
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {
-            // only allow admins to access other user records
             var currentUserId = int.Parse(User.Identity.Name);
             if (id != currentUserId && !User.IsInRole(Role.Admin))
                 return Forbid();
-
             var user =  _userService.GetById(id);
-
             if (user == null)
                 return NotFound();
-
             return Ok(user);
         }
     }

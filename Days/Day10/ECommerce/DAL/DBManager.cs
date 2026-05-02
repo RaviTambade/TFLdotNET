@@ -2,7 +2,6 @@
 using BOL;
 using System.Text.Json;
 using System.Threading.Tasks;
-
 public class DBManager
 {
     public static List<Product> GetAllProducts(){
@@ -38,37 +37,19 @@ public class DBManager
     public static List<Product> GetAllProductsFromDatabase()
         {
             List<Product> allProducts = new List<Product>();
-            
-            //Using MYSQL 
-            //database connectivity using  ADO.NET (RDBMS)
-            //database connectiity using  ORM (Entity Framework)
-            //database connectivity using MONGO db
             return allProducts;
         }
     public static List<Product> GetAllProductsFromExternalServices()
         {
             List<Product> allProducts = new List<Product>();
-            
-            // get all JSON data from REST API
-             
-            //database connectivity using MONGO db
             return allProducts;
         }
-
     public    static Product GetProductById(int id){
         List<Product> products = GetAllProducts();
-        /*var product =await( from prod in products
-                      where prod.ProductId == id
-                      select prod);
-         */
-
          Product product=new Product { ProductId = 1, Title = "Gerbera", 
                                       Description = "Wedding Flower",
                                       UnitPrice = 6, Category = "Flower",
                                       Balance = 5000 };
-        
         return product; 
     }
 }
-
- 

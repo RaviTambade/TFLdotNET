@@ -1,7 +1,6 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using WebApi.Entities;
 using WebApi.Models;
-
 namespace WebApi.Services
 {
     public interface IUserService
@@ -9,6 +8,5 @@ namespace WebApi.Services
         User Authenticate(string username, string password);
         IEnumerable<User> GetAll();
         User GetById(int id);
-        
     }
 }

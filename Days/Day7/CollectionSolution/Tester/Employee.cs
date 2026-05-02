@@ -1,6 +1,4 @@
-namespace TFLCollection;
-
-//POCO Object
+﻿namespace TFLCollection;
 public class Employee{
     public int  id;
     public string name; 

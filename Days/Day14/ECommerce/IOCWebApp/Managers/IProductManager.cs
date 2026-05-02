@@ -1,7 +1,5 @@
-
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using IOCWebApp.Models;
-
 namespace IOCWebApp.Repositories
 {
     public interface IProductManager{

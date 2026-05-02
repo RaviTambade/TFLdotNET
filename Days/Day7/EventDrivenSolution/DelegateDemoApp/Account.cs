@@ -1,7 +1,6 @@
-namespace Banking;
+﻿namespace Banking;
 using EGovernance;
 public class Account{
-
     public event TaxOperation overBalance;
     public double Balance{get;set;}
     public Account(double amount){
@@ -17,12 +16,9 @@ public class Account{
     {
         return base.ToString() + "Current Balance ="+ this.Balance;
     }
-
     public void ProcessTax(){
         if(this.Balance >=250000){
-            //raise an event   
             overBalance(this.Balance);    
         }
     }
-
 }

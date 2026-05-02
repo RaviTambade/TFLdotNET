@@ -1,8 +1,7 @@
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using EStoreWebApp.Models;
 namespace EStoreWebApp.Controllers;
-
 public class PeopleController : Controller
 {
     private readonly ILogger<PeopleController> _logger;
@@ -10,7 +9,6 @@ public class PeopleController : Controller
     {
         _logger = logger;
     }
-
     public IActionResult List(int ssn)
     {
         Console.WriteLine( "Country Code :"+ ssn);
@@ -20,5 +18,4 @@ public class PeopleController : Controller
     {
         return View();
     }  
-
 }

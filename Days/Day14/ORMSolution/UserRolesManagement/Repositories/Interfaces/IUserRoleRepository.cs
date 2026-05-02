@@ -1,5 +1,4 @@
-using UserRolesManagement.Models;
-
+﻿using UserRolesManagement.Models;
 namespace UserRolesManagement.Repositories.Interfaces
 {
     public interface IUserRoleRepository

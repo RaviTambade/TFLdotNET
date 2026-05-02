@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Cors;
 namespace EStoreWebAPI.Controllers;
 [ApiController]
@@ -6,12 +6,10 @@ namespace EStoreWebAPI.Controllers;
 public class ProductsController : ControllerBase
 {
     private readonly ILogger<ProductsController> _logger;
-
     public ProductsController(ILogger<ProductsController> logger)
     {
         _logger = logger;
     }
-
     [HttpGet(Name = "GetProducts")]
     [EnableCors()]
     public IEnumerable<Product> Get()
@@ -34,7 +32,6 @@ public class ProductsController : ControllerBase
         allProducts.Add(new Product { ProductId = 15, Title = "Tulip", Description = "Tulips are the quintessential spring flower and available from January to June.", UnitPrice = 17, Category = "Flower", Balance = 10000 });   
         return allProducts;   
     }
-
     [Route("{id}")]
     [HttpGet]
     public  ActionResult<Product>  GetById(int id)
@@ -50,7 +47,6 @@ public class ProductsController : ControllerBase
         }
         return product;
     }
-
     [Route("{id}")]
     [HttpDelete]
     public IActionResult  Delete(int id)
@@ -62,8 +58,6 @@ public class ProductsController : ControllerBase
         {
             return NotFound();
         } 
-       //Remove Product
         return NoContent();
     }
-
 }

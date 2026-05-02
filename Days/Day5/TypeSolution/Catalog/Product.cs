@@ -1,16 +1,13 @@
 ﻿namespace Catalog;
 using System.ComponentModel.DataAnnotations;
-//POCO  : Plain Old CLR Object
-[Serializable]    //attribute  :Metadata
+[Serializable]
 public class Product
 {
     public int Id{get;set;}
-
     [Required]
     public string Title{get;set;}
     public string Description{get;set;}
     public double UnitPrice{get;set;}
-
     public Product(){
         this.Id=12;
         this.Title="Gerbera";

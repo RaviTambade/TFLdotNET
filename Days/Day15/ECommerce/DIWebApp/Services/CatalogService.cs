@@ -1,13 +1,11 @@
-namespace DIWebApp.Services
+﻿namespace DIWebApp.Services
 {
-    //Each services should be defined by using contract
     public interface IProductCatalogService
     {
         bool Insert();
         bool Update();
         bool Delete();
     }
-
     public class ProductCatalogService : IProductCatalogService
     {
         public ProductCatalogService(){ }

@@ -1,6 +1,4 @@
-namespace BOL;
-
-
+﻿namespace BOL;
 public class Employee
     {
         public int Id{get;set;}
@@ -10,6 +8,5 @@ public class Employee
         public string Email{get;set;}
         public int DeptId{get;set;}      
         public int ManagerId{get;set;}
-
         public string Password{get;set;}
      }

@@ -1,9 +1,6 @@
-namespace  Utility;
+﻿namespace  Utility;
 using System.IO;
-
-
 public static class Helper{
-
     public static void Operation1(){
         int count=0;
         while(true){
@@ -21,18 +18,9 @@ public static class Helper{
             var result="sdfsdfsdfsdf";
             result=result+ "sdfsdfsdfsdfsd";
             result=mgr.ReadData();
-
            }
-             
-
-
-
-
         }
     }
-
-
-
     public static void Operation2(){
         while(true){
             Console.WriteLine("Secondary Thread code execution");

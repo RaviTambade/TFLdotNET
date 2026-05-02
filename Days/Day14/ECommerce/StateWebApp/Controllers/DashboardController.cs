@@ -1,23 +1,18 @@
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using StateWebApp.Models;
-
 namespace StateWebApp.Controllers;
-
 public class DashboardController : Controller
 {
     private readonly ILogger<DashboardController> _logger;
-
     public DashboardController(ILogger<DashboardController> logger)
     {
         _logger = logger;
     }
         public JsonResult CityRevenue(){
-     
             var revenueList=RevenueDataAccessLayer.GetCityRevenueList();
             return Json(revenueList);
         }
-
         public JsonResult StateRevenue()  
         {  
             var RevenueList = RevenueDataAccessLayer.GetStateRevenueList();

@@ -1,24 +1,14 @@
-namespace DAL.Connected;
+﻿namespace DAL.Connected;
 using BOL;
 using MySql.Data.MySqlClient;
-//using inbuilt, external Object Models
-
-
 public class DBManager{
-
     public static string conString=@"server=localhost;port=3306;user=root; password=password;database=transflower";       
     public  static List<Department> GetAllDepartments(){
             List<Department> allDepartments=new List<Department>();
-            //database connectivity code
-            //Connected Data Access Mode
-            //MySqlConnection  : establishing connection
-            //MySqlCommand      : query execution
-            //MySqlDataReader   : result of query to be catured after processing query
             MySqlConnection con=new MySqlConnection();
             con.ConnectionString=conString;
             try{
                 con.Open();
-                //fire query to database
                 MySqlCommand cmd=new MySqlCommand();
                 cmd.Connection=con;
                 string query="SELECT * FROM departments";
@@ -28,7 +18,6 @@ public class DBManager{
                     int id = int.Parse(reader["id"].ToString());
                     string name = reader["name"].ToString();
                     string location = reader["location"].ToString();
-
                     Department dept=new Department{
                                                     Id = id,
                                                     Name = name,
@@ -43,10 +32,8 @@ public class DBManager{
             finally{
                     con.Close();
             }
-
             return allDepartments;
     }
-
     public static Department GetDeparmentDetails(int id){
         Department dept = null;
         MySqlConnection con = new MySqlConnection();
@@ -69,7 +56,6 @@ public class DBManager{
                     Location = location
                 };
             }
-
         }
         catch (Exception e)
         {
@@ -81,18 +67,16 @@ public class DBManager{
         }
         return dept;
     }
-
      public static bool Insert(Department dept){
         bool status=false;
         string query = "INSERT INTO departments(name,location)" +
                             "VALUES('" + dept.Name + "','" + dept.Location + "')";
-
         MySqlConnection con = new MySqlConnection();
         con.ConnectionString = conString;
         try{
             con.Open();
             MySqlCommand command = new MySqlCommand(query, con);
-            command.ExecuteNonQuery();  //DML
+            command.ExecuteNonQuery();
             status = true;
         } 
         catch (Exception e)
@@ -105,7 +89,6 @@ public class DBManager{
         }               
         return status;
      }
-
     public static bool Update(Department dept)
     {
         bool status = false;
@@ -129,7 +112,6 @@ public class DBManager{
         }
         return status;
     }
-
     public static bool Delete(int id){
         bool status=false;
         MySqlConnection con = new MySqlConnection();
@@ -151,10 +133,6 @@ public class DBManager{
         }
       return status;
     }
-
-
-
-//Employee Operations CRUD
     public static bool DoesEmployeeExists(int id)
     {
         MySqlConnection con = new MySqlConnection();
@@ -167,12 +145,10 @@ public class DBManager{
             MySqlCommand cmd = new MySqlCommand(query, con);
             MySqlDataReader reader = cmd.ExecuteReader();
             reader.Read();
-
             if ((Int64)reader[0] == 1)
             {
                 status = true;
             }
-
             reader.Close();
         }
         catch (Exception e)
@@ -185,9 +161,8 @@ public class DBManager{
         }
         return status;
     }
-    public static List<Employee> GetAllEmployees()        //get all rows of employee table
+    public static List<Employee> GetAllEmployees()
     {
-
         List<Employee> employees = new List<Employee>();
         MySqlConnection con = new MySqlConnection();
         con.ConnectionString = conString;
@@ -206,7 +181,6 @@ public class DBManager{
                 string address = reader["address"].ToString();
                 int deptid = int.Parse(reader["deptid"].ToString());
                 int managerid = int.Parse(reader["managerid"].ToString());
-
                 Employee emp = new Employee
                 {
                     Id = id,
@@ -216,7 +190,6 @@ public class DBManager{
                     Address = address,
                     DeptId = deptid,
                     ManagerId = managerid,
-
                 };
                 employees.Add(emp);
             }
@@ -232,10 +205,9 @@ public class DBManager{
         }
         return employees;
     }
-    public static Employee GetById(int id)                   //show employee data by id
+    public static Employee GetById(int id)
     {
         Employee foundEmployee = null;
-
         MySqlConnection con = new MySqlConnection();
         con.ConnectionString = conString;
         try
@@ -253,9 +225,6 @@ public class DBManager{
                 string address = reader["address"].ToString();
                 int deptid = int.Parse(reader["deptid"].ToString());
                 int managerid = int.Parse(reader["managerid"].ToString());
-
-
-
                 foundEmployee = new Employee
                 {
                     Id = id,
@@ -265,7 +234,6 @@ public class DBManager{
                     Address = address,
                     DeptId = deptid,
                     ManagerId = managerid,
-
                 };
             }
             reader.Close();
@@ -282,19 +250,15 @@ public class DBManager{
     }
     public static List<Role> GetRolesOfEmployee(int empId){
         List<Role> roles=new List<Role>();
-        //get all roles belong to empid 
-        //*****************************
         MySqlConnection con = new MySqlConnection();
         con.ConnectionString = conString;
         try
         {
-            //Query to return roles belong to employee id
             string query = "select rolename from roles"+
                             "where roleid IN("+
                             "select roleid from emp_roles"+
                             "where empid="+empId+");";
             Console.WriteLine(query);
-
             con.Open();
             MySqlCommand cmd = new MySqlCommand(query, con);
             MySqlDataReader reader = cmd.ExecuteReader();
@@ -307,15 +271,13 @@ public class DBManager{
             }
         }
         catch(Exception ee){
-
         }
         finally{
             con.Close();
         }
-        //******************************
         return roles;
     }
-    public static bool Insert(Employee emp)         //insertion of employee table data 
+    public static bool Insert(Employee emp)
     {
         bool status = false;
         MySqlConnection con = new MySqlConnection();
@@ -327,7 +289,6 @@ public class DBManager{
             MySqlCommand cmd = new MySqlCommand(query, con);
             con.Open();
             cmd.ExecuteNonQuery();
-
             status = true;
         }
         catch (Exception e)
@@ -339,28 +300,22 @@ public class DBManager{
             con.Close();
         }
         return status;
-
     }
     public static bool SetPassword(string email, string password)
     {
         bool status = false;
-        //set password for existing employee whoes email id matches
-        //call ado.net code to update password field of employee
         return status;
     }
-    public static bool Update(Employee emp)           //updating employee table data 
+    public static bool Update(Employee emp)
     {
-
         MySqlConnection con = new MySqlConnection();
         con.ConnectionString = conString;
         bool status = false;
-
         try
         {
             string query = "Update employees SET firstName ='" + emp.FirstName + "'," + "lastName ='" + emp.LastName + "',"
                     + "email='" + emp.Email + "'," + "address='" + emp.Address + "'," + "managerid=" + emp.ManagerId + "," +
                     "deptid=" + emp.DeptId + " WHERE id =" + emp.Id;
-
             MySqlCommand cmd = new MySqlCommand(query, con);
             con.Open();
             cmd.ExecuteNonQuery();
@@ -375,11 +330,10 @@ public class DBManager{
         }
         return status;
     }
-    public static void Delete(Employee emp)                  //delete employee table data
+    public static void Delete(Employee emp)
     {
         MySqlConnection con = new MySqlConnection();
         con.ConnectionString = conString;
-
         try
         {
             string query = " DELETE FROM employees WHERE id =" + emp.Id;
@@ -395,9 +349,8 @@ public class DBManager{
         {
             con.Close();
         }
-
     }
-    public static List<Employee> GetEmployeesByDepartment(int deptid)   //get all rows of employee table
+    public static List<Employee> GetEmployeesByDepartment(int deptid)
     {
         List<Employee> employees = new List<Employee>();
         MySqlConnection con = new MySqlConnection();
@@ -417,7 +370,6 @@ public class DBManager{
                 string address = reader["address"].ToString();
                 int dptid = int.Parse(reader["deptid"].ToString());
                 int managerid = int.Parse(reader["managerid"].ToString());
-
                 Employee emp = new Employee
                 {
                     Id = id,
@@ -427,7 +379,6 @@ public class DBManager{
                     Address = address,
                     DeptId = dptid,
                     ManagerId = managerid,
-
                 };
                 employees.Add(emp);
             }
@@ -446,23 +397,13 @@ public class DBManager{
     public static bool Transfer(int empId, int deptId)
     {
         bool status = false;
-
-        // create connection objet
-        // set connection string to connection
-
         MySqlConnection con = new MySqlConnection();
         con.ConnectionString = conString;
-
-        // define query to update existing empoyees department id
         string query = "Update employees SET deptid=" + deptId + " WHERE id=" + empId;
         try
         {
             con.Open();
-            // create command object
-            //
-            // associate connection and query 
             MySqlCommand cmd = new MySqlCommand(query, con);
-            // execute command
             cmd.ExecuteNonQuery();
             status = true;
         }
@@ -470,11 +411,8 @@ public class DBManager{
         {
             Console.WriteLine(e.Message);
         }
-        // set status true on success 
         return status;
     }
-    
-    //Roles crude operations
     public static List<Role> GetAllRolesOfEmployee(int empId){
         List<Role> roles = new List<Role>();
         MySqlConnection con = new MySqlConnection();
@@ -527,7 +465,6 @@ public class DBManager{
             {
                 int roleId = int.Parse(reader["roleid"].ToString());
                 string roleName = reader["rolename"].ToString();
-
                 Role role1= new Role
                 {
                     Id = roleId,
@@ -572,7 +509,6 @@ public class DBManager{
                 string address = reader["address"].ToString();
                 int deptid = int.Parse(reader["deptid"].ToString());
                 int managerid = int.Parse(reader["managerid"].ToString());
-
                 Employee emp = new Employee
                 {
                     Id = id,
@@ -582,7 +518,6 @@ public class DBManager{
                     Address = address,
                     DeptId = deptid,
                     ManagerId = managerid,
-
                 };
                 employees.Add(emp);
             }
@@ -598,8 +533,6 @@ public class DBManager{
         }
         return employees;
     }
-    
-    //Add role for existing employee 
     public static bool AssignRole(int empid,int roleid)
     {
         bool status=false;
@@ -623,8 +556,6 @@ public class DBManager{
         }
         return status;
     }
-
-    //Remove role of existing employee from RoleMapping
     public static bool UnAssignRole(int empid,int roleid)
     {
         bool status=false;
@@ -632,8 +563,6 @@ public class DBManager{
         con.ConnectionString = conString;
         try
         {
-            //*****************************"
-            //Query for removing roles assigned to emp id
             string query = "delete from emp_roles WHERE empid=" + empid+ 
                             " AND roleid="+roleid;
              con.Open();
@@ -651,17 +580,3 @@ public class DBManager{
         }
         return status;
     }}
-
-
-
-//
-
-            //DisConnected Data Access Mode
-             //MySqlConnection  : establishing connection
-            //MySqlCommand      : query execution
-            //MySqlDataApater
-            //DataSet
-            //DataTable
-            //DataRow
-            //DataColumn
-            //DataRealtion

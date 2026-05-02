@@ -1,8 +1,4 @@
-namespace Drawing;
-//interfaces are immutable
-
+﻿namespace Drawing;
 public interface IPrintable{
-    //will only define characteristics
     void Print();
-
 }

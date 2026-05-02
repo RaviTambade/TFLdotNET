@@ -1,6 +1,5 @@
-namespace DIWebApp.Services
+﻿namespace DIWebApp.Services
 {
-    //Each services should be defined by using contract
     public interface IHelloWorldService
     {
         string SaysHello();

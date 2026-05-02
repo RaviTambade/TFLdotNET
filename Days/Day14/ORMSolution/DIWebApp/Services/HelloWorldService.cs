@@ -1,7 +1,6 @@
-using DIWebApp.Interfaces;
+﻿using DIWebApp.Interfaces;
 namespace DIWebApp.Services
 {
-    //Each services should be defined by using contract
     public class HelloWorldService : IHelloWorldService
     {
         public  HelloWorldService(){ 

@@ -1,9 +1,7 @@
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using StateWebApp.Models;
-
 namespace StateWebApp.Controllers;
-
 public class LocalizationController : Controller
 {
     private readonly IStringLocalizer<LocalizationController> _localizer;
@@ -16,8 +14,6 @@ public class LocalizationController : Controller
         ViewData["Greeting"] = _localizer["Greeting"];
         return View();
     }
-    
-
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {

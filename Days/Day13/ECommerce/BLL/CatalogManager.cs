@@ -8,18 +8,11 @@ public class CatalogManager
         allProducts=DBManager.GetAllProducts();
         return allProducts;
     }
-
      public Product GetProduct(int  id){
       List<Product> allProducts=GetAllProducts();
-      /*var product=from  p in allProducts
-                   where p.ProductId ==id
-                    select p  ;     
-    */
        Product foundProduct=allProducts.Find((product)=>product.ProductId ==id);
       return foundProduct ;
      }
-
-
      public bool Update(Product product){
         return true;
      }

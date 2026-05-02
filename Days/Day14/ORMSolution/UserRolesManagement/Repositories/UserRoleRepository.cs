@@ -1,19 +1,16 @@
-using UserRolesManagement.Models;
+﻿using UserRolesManagement.Models;
 using UserRolesManagement.Repositories.Interfaces;
 using UserRolesManagement.Repositories.Contexts;
 using Microsoft.EntityFrameworkCore;
-
 namespace UserRolesManagement.Repositories
 {
     public class UserRoleRepository : IUserRoleRepository
     {
         private readonly IConfiguration _configuration;
-
         public UserRoleRepository(IConfiguration configuration)
         {
             _configuration = configuration;
         }
-
         public async Task<List<UserRole>> GetAll()
         {
             try
@@ -33,7 +30,6 @@ namespace UserRolesManagement.Repositories
                 throw e;
             }
         }
-
         public async Task<UserRole> GetById(int userRoleId)
         {
             try
@@ -41,12 +37,10 @@ namespace UserRolesManagement.Repositories
                 using (var context = new UserRoleContext(_configuration))
                 {
                     var userRole = await context.UserRoles.FindAsync(userRoleId);
-
                     if (userRole is null)
                     {
                         return null;
                     }
-
                     return userRole;
                 }
             }
@@ -55,7 +49,6 @@ namespace UserRolesManagement.Repositories
                 throw e;
             }
         }
-
         public async Task<List<string>> GetRolesByUserId(int userId)
         {
             try
@@ -68,12 +61,10 @@ namespace UserRolesManagement.Repositories
                         where userRoles.UserId == userId
                         select role.Name
                     ).ToListAsync();
-
                     if (roles is null)
                     {
                         return null;
                     }
-
                     return roles;
                 }
             }
@@ -82,7 +73,6 @@ namespace UserRolesManagement.Repositories
                 throw e;
             }
         }
-
         public async Task<List<string>> GetFarmersId()
         {
             try
@@ -105,7 +95,6 @@ namespace UserRolesManagement.Repositories
                 throw e;
             }
         }
-
         public async Task<bool> Insert(UserRole userRole)
         {
             try
@@ -123,7 +112,6 @@ namespace UserRolesManagement.Repositories
                 throw e;
             }
         }
-
         public async Task<bool> Update(UserRole userRole)
         {
             try
@@ -146,7 +134,6 @@ namespace UserRolesManagement.Repositories
                 throw e;
             }
         }
-
         public async Task<bool> Delete(int userRoleId)
         {
             try
@@ -168,7 +155,6 @@ namespace UserRolesManagement.Repositories
                 throw e;
             }
         }
-
         private async Task<bool> SaveChanges(UserRoleContext context)
         {
             int rowsAffected = await context.SaveChangesAsync();

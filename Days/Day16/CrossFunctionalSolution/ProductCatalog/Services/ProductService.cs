@@ -1,7 +1,6 @@
 ﻿using ProductCatalog.Models;
 using ProductCatalog.Repositories.Interfaces;
 using ProductCatalog.Services.Interfaces;
-
 namespace ProductCatalog.Services
 {
     public class ProductService : IProductService
@@ -11,7 +10,6 @@ namespace ProductCatalog.Services
         {
             _repo = repo;
         }
-
         public async Task<IEnumerable<Product>> GetAll()
         {
             var products = _repo.GetAll();

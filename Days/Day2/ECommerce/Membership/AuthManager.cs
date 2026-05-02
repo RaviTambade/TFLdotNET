@@ -8,7 +8,6 @@ public static  class AuthManager
         }
         return status;
     }
-
     public static bool Register(string firstName, string lastName, 
                             string email, string location, string contactNumber){
           bool status=false;
@@ -19,14 +18,9 @@ public static  class AuthManager
             theUser.Email=email;
             theUser.Location=location;
             theUser.ContactNumber=contactNumber;
-            //Store object into persistent medium
             status=true;
-
           }
           catch(Exception e){
-            // Exception handling Code
-
-
           }
           finally{
           }

@@ -1,6 +1,5 @@
-using Membership;
+﻿using Membership;
 namespace TFLTests;
-
 [TestClass]
 public class UnitTest1
 {
@@ -12,15 +11,4 @@ public class UnitTest1
          bool result = AccountManager.Login(sampleEmail,samplePassword);
           Assert.AreEqual(result, true);
     }
-
-    /*[TestMethod]
-    public void TestMethod2()
-    {
-        string sampleEmail="ravi.tambade@transflower.in";
-        string samplePassword="123";
-         bool result = AccountManager.Login(sampleEmail,samplePassword);
-          Assert.AreEqual(result, true);
-    }
-
-    */
 }

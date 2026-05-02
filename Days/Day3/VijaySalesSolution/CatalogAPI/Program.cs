@@ -1,23 +1,16 @@
-using AuthLib;
-
+﻿using AuthLib;
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
-
-//I have written two REST API for urls
-
 app.MapGet("/api/catalog", () =>
 {
     string[] products = { "iPhone", "Galaxy", "HP Pavillion", "Sony PlayStation"};
     return products;
 });
-
-
 app.MapGet("/api/customers", () =>
 {
     string[] products = { "Microsoft", "IBM", "Oracle", "Tata Motors" };
     return products;
 });
-
 app.MapGet("/api/login", () =>
 {
     string message = "";
@@ -31,12 +24,9 @@ app.MapGet("/api/login", () =>
     }
     return message;
 });
-
 app.MapGet("/api/register", () =>
 {
     string message = "User is successfully registered";
     return   message = "User is successfully registered";
-
 });
-
 app.Run();

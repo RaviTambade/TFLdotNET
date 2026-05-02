@@ -1,8 +1,6 @@
-namespace SessionDemoApp.Models;
-
+﻿namespace SessionDemoApp.Models;
 public class ErrorViewModel
 {
     public string? RequestId { get; set; }
-
     public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
 }

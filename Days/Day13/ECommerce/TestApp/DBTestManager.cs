@@ -1,25 +1,14 @@
-namespace Testing;
-
+﻿namespace Testing;
 using HR;
 using MySql.Data.MySqlClient;
-//using inbuilt, external Object Models
-
-
 public class DbTestManager{
-
     public static string conString=@"server=localhost;port=3306;user=root; password=password;database=transflower";       
     public  static List<Department> GetAllDepartments(){
             List<Department> allDepartments=new List<Department>();
-            //database connectivity code
-            //Connected Data Access Mode
-            //MySqlConnection  : establishing connection
-            //MySqlCommand      : query execution
-            //MySqlDataReader   : result of query to be catured after processing query
             MySqlConnection con=new MySqlConnection();
             con.ConnectionString=conString;
             try{
                 con.Open();
-                //fire query to database
                 MySqlCommand cmd=new MySqlCommand();
                 cmd.Connection=con;
                 string query="SELECT * FROM departments";
@@ -29,7 +18,6 @@ public class DbTestManager{
                     int id = int.Parse(reader["id"].ToString());
                     string name = reader["name"].ToString();
                     string location = reader["location"].ToString();
-
                     Department dept=new Department{
                                                     Id = id,
                                                     Name = name,
@@ -44,10 +32,8 @@ public class DbTestManager{
             finally{
                     con.Close();
             }
-
             return allDepartments;
     }
-
     public static Department GetDeparmentDetails(int id){
         Department dept = null;
         MySqlConnection con = new MySqlConnection();
@@ -70,7 +56,6 @@ public class DbTestManager{
                     Location = location
                 };
             }
-
         }
         catch (Exception e)
         {
@@ -82,18 +67,16 @@ public class DbTestManager{
         }
         return dept;
     }
-
      public static bool Insert(Department dept){
         bool status=false;
         string query = "INSERT INTO departments(name,location)" +
                             "VALUES('" + dept.Name + "','" + dept.Location + "')";
-
         MySqlConnection con = new MySqlConnection();
         con.ConnectionString = conString;
         try{
             con.Open();
             MySqlCommand command = new MySqlCommand(query, con);
-            command.ExecuteNonQuery();  //DML
+            command.ExecuteNonQuery();
             status = true;
         } 
         catch (Exception e)
@@ -106,7 +89,6 @@ public class DbTestManager{
         }               
         return status;
      }
-
     public static bool Update(Department dept)
     {
         bool status = false;
@@ -130,7 +112,6 @@ public class DbTestManager{
         }
         return status;
     }
-
     public static bool Delete(int id){
         bool status=false;
         MySqlConnection con = new MySqlConnection();
@@ -153,17 +134,3 @@ public class DbTestManager{
       return status;
     }
 }
-
-
-
-//
-
-            //DisConnected Data Access Mode
-             //MySqlConnection  : establishing connection
-            //MySqlCommand      : query execution
-            //MySqlDataApater
-            //DataSet
-            //DataTable
-            //DataRow
-            //DataColumn
-            //DataRealtion

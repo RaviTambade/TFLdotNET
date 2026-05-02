@@ -1,5 +1,4 @@
 ﻿using ProductCatalog.Models;
-
 namespace ProductCatalog.Repositories.Interfaces
 {
     public interface IProductRepository

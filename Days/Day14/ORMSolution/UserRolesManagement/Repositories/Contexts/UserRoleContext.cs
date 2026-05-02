@@ -1,15 +1,12 @@
-
-using UserRolesManagement.Models;
+﻿using UserRolesManagement.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
-
 namespace UserRolesManagement.Repositories.Contexts
 {
     public class UserRoleContext : DbContext
     {
         private readonly IConfiguration _configuration;
         private readonly string? _conString;
-
         public UserRoleContext(IConfiguration configuration)
         {
             _configuration = configuration;
@@ -17,12 +14,8 @@ namespace UserRolesManagement.Repositories.Contexts
                 this._configuration.GetConnectionString("DefaultConnection")
                 ?? throw new ArgumentNullException(nameof(configuration));
         }
-
-        //Table Mapped DBSet Entities
         public DbSet<UserRole> UserRoles {get;set;}
         public DbSet<Role> Roles {get;set;}
-
-        //Setup Connection String for Entity Framework
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseMySQL(
@@ -30,7 +23,6 @@ namespace UserRolesManagement.Repositories.Contexts
             );
             optionsBuilder.LogTo(Console.WriteLine, LogLevel.Information);
         }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

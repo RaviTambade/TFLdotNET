@@ -1,27 +1,19 @@
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using IOCWebApp.Models;
 using IOCWebApp.Services;
-
-
 namespace IOCWebApp.Controllers;
-
 [ApiController]
 [Route("[controller]")]
 public class ProductsController : ControllerBase
 {
-    //Each action method is mapped to HTTP Request type
         private IProductService _svc;
         public ProductsController(IProductService svc)
         {
             this._svc = svc;
         }
-
-        //action method
         [HttpGet]
         [Route("api/products")]
         public IActionResult GetProducts(){
-            //invoke service method to resturn products
-            // send received data as message to outside world
             try{
                     var message=_svc.GetProducts();
                     if(message==null){
@@ -33,12 +25,10 @@ public class ProductsController : ControllerBase
                 return BadRequest();
             }
         }
-   
         [HttpPost]
         [Route("api/products")]
         public IActionResult Insert([FromBody] Product product){
             try{
-
                 bool status= _svc.Insert(product);
                 if(status == false){
                     return BadRequest();
@@ -52,11 +42,9 @@ public class ProductsController : ControllerBase
                 return BadRequest();
             }
         }
- 
         [HttpGet("api/products/{id}")]
         public IActionResult GetById(int id){
              try{
-
                     var  message= _svc.GetProductById(id);
                     if(message == null){
                         return BadRequest();
@@ -69,8 +57,6 @@ public class ProductsController : ControllerBase
                 return BadRequest();
             }
         }
-
-         // GET: api/Products/5
         [HttpDelete("api/products/{id}")]
         public IActionResult Delete(int id){
              try{
@@ -86,7 +72,6 @@ public class ProductsController : ControllerBase
                 return BadRequest();
             }
         }
-
         [HttpPut("api/products")]
         public IActionResult Update(Product product){
             try{
@@ -103,4 +88,3 @@ public class ProductsController : ControllerBase
             }
         }
 }
-    

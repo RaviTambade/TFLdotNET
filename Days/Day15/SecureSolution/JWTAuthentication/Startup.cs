@@ -1,4 +1,4 @@
-using System.Text;
+﻿using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -9,7 +9,6 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using WebApi.Helpers;
 using WebApi.Services;
-
 namespace JWTAuthentication
 {
     public class Startup
@@ -18,26 +17,16 @@ namespace JWTAuthentication
         {
             Configuration = configuration;
         }
-
         public IConfiguration Configuration { get; }
-
         public void ConfigureServices(IServiceCollection services)
         {
-         
             services.AddCors();
             services.AddControllers();
-            
-            // configure strongly typed settings object
             services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
-
-           // configure strongly typed settings objects
             var appSettingsSection = Configuration.GetSection("AppSettings");
             services.Configure<AppSettings>(appSettingsSection);
-
-            // configure jwt authentication
             var appSettings = appSettingsSection.Get<AppSettings>();
             var key = Encoding.ASCII.GetBytes(appSettings.Secret);
-            
             services.AddAuthentication(x =>
             {
                 x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -55,16 +44,12 @@ namespace JWTAuthentication
                     ValidateAudience = false
                 };
             });
-
-            // configure DI for application services
             services.AddScoped<IUserService, UserService>();
-
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "JWTAuthentication", Version = "v1" });
             });
         }
-
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
@@ -73,29 +58,14 @@ namespace JWTAuthentication
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "JWTAuthentication v1"));
             }
-
             app.UseHttpsRedirection();
-
             app.UseRouting();
-
-            // Custom jwt auth middleware
-            //app.UseMiddleware<JwtMiddleware>();
-           
-             // global cors policy
-             // treat your web api as public
-             // don't set any policy for trust
-
-            //Rules for incomming REST API Call (Cors Policy)
             app.UseCors(x => x
                                 .AllowAnyOrigin()
                                 .AllowAnyMethod()
                                 .AllowAnyHeader());
-
-            //setting middleware for Authentication and Authorization
-
             app.UseAuthentication();    
             app.UseAuthorization();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

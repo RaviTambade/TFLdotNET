@@ -1,5 +1,4 @@
-namespace EStoreWebApp.Models;
-
+﻿namespace EStoreWebApp.Models;
 public class RevenueData{
         public static List<RevenueModel> GetCityRevenueList(){
             var list = new List<RevenueModel>();  
@@ -10,7 +9,6 @@ public class RevenueData{
             list.Add(new RevenueModel { Name = "Mumbai",RevenueYear2020 = 40000, RevenueYear2010 = 38000, RevenueYear2000 = 30000 , RevenueYear1990 = 54000 });  
              return list;    
         }
-
          public static List<RevenueModel> GetStateRevenueList(){
             var list = new List<RevenueModel>();  
             list.Add(new RevenueModel { Name = "Chennai", RevenueYear2020 = 28000, RevenueYear2010 = 15000, RevenueYear2000 = 22000, RevenueYear1990 = 50000 });  

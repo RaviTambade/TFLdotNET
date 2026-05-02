@@ -1,11 +1,8 @@
-
-using System.Collections.Generic;
-
+﻿using System.Collections.Generic;
  namespace StateWebApp.Models;
     public class SalesRepository{
         public List<Product> products=new List<Product>();
         public List<Customer> customers=new List<Customer>();
-
         public SalesRepository(){
             products = FillProducts();
             customers = FillCustomers();     

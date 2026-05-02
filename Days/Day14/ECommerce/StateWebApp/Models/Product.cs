@@ -1,4 +1,4 @@
-namespace StateWebApp.Models;
+﻿namespace StateWebApp.Models;
     public class Product{
         public int ID{get;set;}
         public string Title{get;set;}
@@ -7,4 +7,3 @@ namespace StateWebApp.Models;
         public float UnitPrice { get; set; }
         public int Rating { get; set; }
     }
- 

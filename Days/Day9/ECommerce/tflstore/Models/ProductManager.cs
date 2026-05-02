@@ -1,23 +1,17 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
 namespace tflstore.Models;
-
 public class ProductManager
     {
         public static List<Product> GetSoldOutProducts()
         {
-            //BI bussiness intelligence
-            //analytical query
             List<Product> products = GetAllProducts();
-            //List<Product> products = GetAllProductsFromDatabase();
-
             var soldOutProducts = from prod in products
                                   where prod.Balance == 0
                                   select prod;
             return soldOutProducts as List<Product>; 
         }
-
         public static List<Product> GetProuductsInStockLessthan(int amount)
         {
             List<Product> products = GetAllProducts();
@@ -27,7 +21,6 @@ public class ProductManager
                 select prod;
             return expensiveInStockProducts as List<Product>;
         }
-
         public static List<string> GetProjectTitles()
         {
             List<Product> products = GetAllProducts();
@@ -36,7 +29,6 @@ public class ProductManager
                 select prod.Title;
             return productNames as List<string>;
         }
-
         public static dynamic GetProductDetails()
         {
             List<Product> products = GetAllProducts();
@@ -45,8 +37,6 @@ public class ProductManager
                 select new { prod.Title, prod.Category, Price = prod.UnitPrice };
             return productInfos;
         }
-
-        
         public static List<Product> GetProductsOrderby()
         {
             List<Product> products = GetAllProducts();
@@ -54,10 +44,8 @@ public class ProductManager
                 from prod in products
                 orderby prod.Title
                 select prod;
-
             return sortedProducts as List<Product>;
         }   
-
         public static List<Product> GetProductsByDescending()
         {
             List<Product> products = GetAllProducts();
@@ -67,7 +55,6 @@ public class ProductManager
                 select prod;
             return sortedProducts as List<Product>;
         }
-
         public static List<Product> GetProductsGroupByCategory()
         {
             List<Product> products = GetAllProducts();
@@ -77,7 +64,6 @@ public class ProductManager
                 select new { Category = prodGroup.Key, Products = prodGroup };
             return orderGroups as List<Product>;
         }
-        
         public static List<string> GetProductsDistinct()
         {
             List<Product> products = GetAllProducts();
@@ -86,16 +72,12 @@ public class ProductManager
                                 ).Distinct();
             return categoryNames as List<string>;
         }
-        
-        
-        
         public static Product GetFirstProduct()
         {
             List<Product> products = GetAllProducts();
             Product product5 = products.FirstOrDefault(p => p.ProductId == 5);
             return product5;
         }
-        
         public static dynamic  GetProductCount()
         {
             List<Product> products = GetAllProducts();
@@ -105,7 +87,6 @@ public class ProductManager
                 select new { Category = prodGroup.Key, ProductCount = prodGroup.Count() };
             return categoryCounts;
         }
-        
         public static dynamic GetAveragePriceOfCategory()
         {
             List<Product> products = GetAllProducts();
@@ -113,11 +94,8 @@ public class ProductManager
                 from prod in products
                 group prod by prod.Category into prodGroup
                 select new { Category = prodGroup.Key, AveragePrice = prodGroup.Average(p => p.UnitPrice) };
-
             return categories;
         }
-        
-
         public static  List<Product> GetProducts(){
             string  path=@"d:\products.json";
             return GetAllProductsFromFile(path);  
@@ -125,7 +103,6 @@ public class ProductManager
         public static List<Product> GetAllProducts()
         {
             List<Product> allProducts = new List<Product>();
-
             allProducts.Add(new Product { ProductId = 1, Title = "Gerbera", Description = "Wedding Flower", UnitPrice = 6, Category = "Flower", Balance = 5000 });
             allProducts.Add(new Product { ProductId = 2, Title = "Rose", Description = "Valentine Flower", UnitPrice = 15, Category = "Flower", Balance = 7000 });
             allProducts.Add(new Product { ProductId = 3, Title = "Lotus", Description = "Worship Flower", UnitPrice = 26, Category = "Flower", Balance = 3400 });
@@ -143,7 +120,6 @@ public class ProductManager
             allProducts.Add(new Product { ProductId = 15, Title = "Tulip", Description = "Tulips are the quintessential spring flower and available from January to June.", UnitPrice = 17, Category = "Flower", Balance = 10000 });
             return allProducts;
         }
-
         public static List<Product> GetAllProductsFromFile(string path){       
             if(File.Exists(path)){
                 string jsonString=File.ReadAllText(path);
@@ -154,7 +130,6 @@ public class ProductManager
             {
                 return GetAllProducts();
             }  
-            
         }
         public static bool WriteAllProductsToFile(string path,List<Product> allProducts){
             bool status=false;
@@ -163,11 +138,9 @@ public class ProductManager
             status=true;
             return status;
         }
-
         public static List<Product> GetAllProductsFromDatabase()
         {
             List<Product> allProducts = new List<Product>();
-            //ProductDAL.GetAll();
             return allProducts;
         }
 }

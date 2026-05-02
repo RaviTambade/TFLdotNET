@@ -1,6 +1,2 @@
-﻿
-
-using AUT;
-
+﻿using AUT;
 PrimeService  obj=new PrimeService();
-

@@ -1,5 +1,4 @@
-namespace BOL;
-//Bussiness Entity
+﻿namespace BOL;
 public class Customer{
     public string Name{get;set;}
     public string Gender{get;set;}

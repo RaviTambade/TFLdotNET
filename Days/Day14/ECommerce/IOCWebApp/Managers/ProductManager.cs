@@ -1,9 +1,8 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System;
 using System.Linq;
 using IOCWebApp.Models;
 using IOCWebApp.Contexts;
-
 namespace IOCWebApp.Repositories
 {
     public class ProductManager : IProductManager
@@ -17,7 +16,6 @@ namespace IOCWebApp.Repositories
             }
             return true;
         }
-
         public List<Product> GetAll()
         {
             using (var context = new CollectionContext())
@@ -26,7 +24,6 @@ namespace IOCWebApp.Repositories
              return products.ToList<Product>();
             }
         }
-
         public Product GetById(int id)
         {
             using (var context = new CollectionContext())
@@ -35,7 +32,6 @@ namespace IOCWebApp.Repositories
              return product;
             }
         }
-
         public bool Insert(Product product)
         {
             using(var context = new CollectionContext())
@@ -45,7 +41,6 @@ namespace IOCWebApp.Repositories
             }
             return true;
         }
-
         public bool Update(Product product)
         {
             using(var context = new CollectionContext())

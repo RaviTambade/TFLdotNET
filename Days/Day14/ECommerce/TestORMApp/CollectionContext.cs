@@ -1,9 +1,5 @@
-//use dotnet cli command
-//dotnet add package Microsoft.EntityFramework
-
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using BOL;
-
 namespace DAL;
 public class CollectionContext:DbContext{
     public DbSet<Department> Departments {get;set;}
@@ -14,9 +10,6 @@ public class CollectionContext:DbContext{
     }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        //Set Mapping of Table with POCO
-        //Relational        instance: Table
-        //Object Oriented   instance: POCO Class
         base.OnModelCreating(modelBuilder);
         modelBuilder.Entity<Department>(entity => 
         {
@@ -27,4 +20,3 @@ public class CollectionContext:DbContext{
         modelBuilder.Entity<Department>().ToTable("departments");
     }
 }
-
