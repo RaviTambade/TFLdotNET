@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Tests Available for Assessment</h1>
+<hr/>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Test Name</th>
+            <th>Test Description</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var test in ViewBag.Tests)
+        {
+            <tr>
+                <td>@test</td>
+                <td><a href="@Url.Action("StartTest", "Assessment", new { id = 12 })" class="btn btn-primary">Take Test</a></td>
+            </tr>
+        }
+    </tbody>
+
+

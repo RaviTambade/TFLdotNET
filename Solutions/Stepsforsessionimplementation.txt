@@ -1,0 +1,35 @@
+
+
+Step 1: Create standard asp.net mvc application.
+Step 2: Create entities
+		 Product.cs
+			properties
+		 Item.cs
+			properties
+		 Cart.cs
+			properties
+Step 3: Create Repositories, Services
+Step 4: Configure Services with IOC container
+Setp 5: Add Controllers
+		FlowersController
+		ShoppingCartController
+		OrdersController
+		ShipmentController
+		AuthController
+Step 6: Add Action Methods
+		FlowersController
+			Index, Details, Update, Delete
+		ShoppingCartController
+			AddToCart
+			RemoveFromCart
+			Index
+		OrdersController
+			
+		ShipmentController
+		AuthController
+Step 7: Set Dependency Injection for respective controller
+
+		Apply Constructor Dependency Injection for respective controller
+Step 8: Invoke service methods through Interface
+Step 9: Add Views .cshtml files for respective Action Methods belong to specific controller
+step 10: Implement razor syntax logic or HTML, DOM , jQuery for defining UI logic.

@@ -1,0 +1,79 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Ravi\\TAP\\TAP\\AspnetMarchWeekend25\\Solutions\\Week10\\MessageDrivenSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{47A5BF62-7B0C-4C7C-B4DA-F7D05CF25114}|RabbitMQProducer\\RabbitMQProducer.csproj|d:\\ravi\\tap\\tap\\aspnetmarchweekend25\\solutions\\week10\\messagedrivensolution\\rabbitmqproducer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47A5BF62-7B0C-4C7C-B4DA-F7D05CF25114}|RabbitMQProducer\\RabbitMQProducer.csproj|solutionrelative:rabbitmqproducer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74740A06-4E4E-4AEB-BA01-08FCE67E8748}|RabbitMQConsumer\\RabbitMQConsumer.csproj|d:\\ravi\\tap\\tap\\aspnetmarchweekend25\\solutions\\week10\\messagedrivensolution\\rabbitmqconsumer\\rabbitmqconsumer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{74740A06-4E4E-4AEB-BA01-08FCE67E8748}|RabbitMQConsumer\\RabbitMQConsumer.csproj|solutionrelative:rabbitmqconsumer\\rabbitmqconsumer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74740A06-4E4E-4AEB-BA01-08FCE67E8748}|RabbitMQConsumer\\RabbitMQConsumer.csproj|d:\\ravi\\tap\\tap\\aspnetmarchweekend25\\solutions\\week10\\messagedrivensolution\\rabbitmqconsumer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74740A06-4E4E-4AEB-BA01-08FCE67E8748}|RabbitMQConsumer\\RabbitMQConsumer.csproj|solutionrelative:rabbitmqconsumer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RabbitMQConsumer",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\AspnetMarchWeekend25\\Solutions\\Week10\\MessageDrivenSolution\\RabbitMQConsumer\\RabbitMQConsumer.csproj",
+              "RelativeDocumentMoniker": "RabbitMQConsumer\\RabbitMQConsumer.csproj",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\AspnetMarchWeekend25\\Solutions\\Week10\\MessageDrivenSolution\\RabbitMQConsumer\\RabbitMQConsumer.csproj",
+              "RelativeToolTip": "RabbitMQConsumer\\RabbitMQConsumer.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-10T07:16:03.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\AspnetMarchWeekend25\\Solutions\\Week10\\MessageDrivenSolution\\RabbitMQConsumer\\Program.cs",
+              "RelativeDocumentMoniker": "RabbitMQConsumer\\Program.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\AspnetMarchWeekend25\\Solutions\\Week10\\MessageDrivenSolution\\RabbitMQConsumer\\Program.cs",
+              "RelativeToolTip": "RabbitMQConsumer\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAswBoAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T07:09:20.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\AspnetMarchWeekend25\\Solutions\\Week10\\MessageDrivenSolution\\RabbitMQProducer\\Program.cs",
+              "RelativeDocumentMoniker": "RabbitMQProducer\\Program.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\AspnetMarchWeekend25\\Solutions\\Week10\\MessageDrivenSolution\\RabbitMQProducer\\Program.cs",
+              "RelativeToolTip": "RabbitMQProducer\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T07:00:23.69Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Ravi\\TAP\\TAP\\AspnetMarchWeekend25\\Solutions\\Week14\\StateMgmtWebSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{784CEA53-5162-4561-B9C1-22FC198AA1EF}|StateMgmtApp\\StateMgmtApp.csproj|d:\\ravi\\tap\\tap\\aspnetmarchweekend25\\solutions\\week14\\statemgmtwebsolution\\statemgmtapp\\controllers\\assessmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{784CEA53-5162-4561-B9C1-22FC198AA1EF}|StateMgmtApp\\StateMgmtApp.csproj|solutionrelative:statemgmtapp\\controllers\\assessmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{784CEA53-5162-4561-B9C1-22FC198AA1EF}|StateMgmtApp\\StateMgmtApp.csproj|d:\\ravi\\tap\\tap\\aspnetmarchweekend25\\solutions\\week14\\statemgmtwebsolution\\statemgmtapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{784CEA53-5162-4561-B9C1-22FC198AA1EF}|StateMgmtApp\\StateMgmtApp.csproj|solutionrelative:statemgmtapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{784CEA53-5162-4561-B9C1-22FC198AA1EF}|StateMgmtApp\\StateMgmtApp.csproj|d:\\ravi\\tap\\tap\\aspnetmarchweekend25\\solutions\\week14\\statemgmtwebsolution\\statemgmtapp\\views\\assessment\\starttest.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{784CEA53-5162-4561-B9C1-22FC198AA1EF}|StateMgmtApp\\StateMgmtApp.csproj|solutionrelative:statemgmtapp\\views\\assessment\\starttest.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{784CEA53-5162-4561-B9C1-22FC198AA1EF}|StateMgmtApp\\StateMgmtApp.csproj|d:\\ravi\\tap\\tap\\aspnetmarchweekend25\\solutions\\week14\\statemgmtwebsolution\\statemgmtapp\\views\\assessment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{784CEA53-5162-4561-B9C1-22FC198AA1EF}|StateMgmtApp\\StateMgmtApp.csproj|solutionrelative:statemgmtapp\\views\\assessment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{784CEA53-5162-4561-B9C1-22FC198AA1EF}|StateMgmtApp\\StateMgmtApp.csproj|d:\\ravi\\tap\\tap\\aspnetmarchweekend25\\solutions\\week14\\statemgmtwebsolution\\statemgmtapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{784CEA53-5162-4561-B9C1-22FC198AA1EF}|StateMgmtApp\\StateMgmtApp.csproj|solutionrelative:statemgmtapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{784CEA53-5162-4561-B9C1-22FC198AA1EF}|StateMgmtApp\\StateMgmtApp.csproj|d:\\ravi\\tap\\tap\\aspnetmarchweekend25\\solutions\\week14\\statemgmtwebsolution\\statemgmtapp\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{784CEA53-5162-4561-B9C1-22FC198AA1EF}|StateMgmtApp\\StateMgmtApp.csproj|solutionrelative:statemgmtapp\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{784CEA53-5162-4561-B9C1-22FC198AA1EF}|StateMgmtApp\\StateMgmtApp.csproj|d:\\ravi\\tap\\tap\\aspnetmarchweekend25\\solutions\\week14\\statemgmtwebsolution\\statemgmtapp\\views\\home\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{784CEA53-5162-4561-B9C1-22FC198AA1EF}|StateMgmtApp\\StateMgmtApp.csproj|solutionrelative:statemgmtapp\\views\\home\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{784CEA53-5162-4561-B9C1-22FC198AA1EF}|StateMgmtApp\\StateMgmtApp.csproj|d:\\ravi\\tap\\tap\\aspnetmarchweekend25\\solutions\\week14\\statemgmtwebsolution\\statemgmtapp\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{784CEA53-5162-4561-B9C1-22FC198AA1EF}|StateMgmtApp\\StateMgmtApp.csproj|solutionrelative:statemgmtapp\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{784CEA53-5162-4561-B9C1-22FC198AA1EF}|StateMgmtApp\\StateMgmtApp.csproj|d:\\ravi\\tap\\tap\\aspnetmarchweekend25\\solutions\\week14\\statemgmtwebsolution\\statemgmtapp\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{784CEA53-5162-4561-B9C1-22FC198AA1EF}|StateMgmtApp\\StateMgmtApp.csproj|solutionrelative:statemgmtapp\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{784CEA53-5162-4561-B9C1-22FC198AA1EF}|StateMgmtApp\\StateMgmtApp.csproj|d:\\ravi\\tap\\tap\\aspnetmarchweekend25\\solutions\\week14\\statemgmtwebsolution\\statemgmtapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{784CEA53-5162-4561-B9C1-22FC198AA1EF}|StateMgmtApp\\StateMgmtApp.csproj|solutionrelative:statemgmtapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\AspnetMarchWeekend25\\Solutions\\Week14\\StateMgmtWebSolution\\StateMgmtApp\\Program.cs",
+              "RelativeDocumentMoniker": "StateMgmtApp\\Program.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\AspnetMarchWeekend25\\Solutions\\Week14\\StateMgmtWebSolution\\StateMgmtApp\\Program.cs",
+              "RelativeToolTip": "StateMgmtApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T07:23:03.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StartTest.cshtml",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\AspnetMarchWeekend25\\Solutions\\Week14\\StateMgmtWebSolution\\StateMgmtApp\\Views\\Assessment\\StartTest.cshtml",
+              "RelativeDocumentMoniker": "StateMgmtApp\\Views\\Assessment\\StartTest.cshtml",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\AspnetMarchWeekend25\\Solutions\\Week14\\StateMgmtWebSolution\\StateMgmtApp\\Views\\Assessment\\StartTest.cshtml",
+              "RelativeToolTip": "StateMgmtApp\\Views\\Assessment\\StartTest.cshtml",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAmwAcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-21T07:18:35.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\AspnetMarchWeekend25\\Solutions\\Week14\\StateMgmtWebSolution\\StateMgmtApp\\Views\\Assessment\\Index.cshtml",
+              "RelativeDocumentMoniker": "StateMgmtApp\\Views\\Assessment\\Index.cshtml",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\AspnetMarchWeekend25\\Solutions\\Week14\\StateMgmtWebSolution\\StateMgmtApp\\Views\\Assessment\\Index.cshtml",
+              "RelativeToolTip": "StateMgmtApp\\Views\\Assessment\\Index.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABUAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-21T07:00:34.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AssessmentController.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\AspnetMarchWeekend25\\Solutions\\Week14\\StateMgmtWebSolution\\StateMgmtApp\\Controllers\\AssessmentController.cs",
+              "RelativeDocumentMoniker": "StateMgmtApp\\Controllers\\AssessmentController.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\AspnetMarchWeekend25\\Solutions\\Week14\\StateMgmtWebSolution\\StateMgmtApp\\Controllers\\AssessmentController.cs",
+              "RelativeToolTip": "StateMgmtApp\\Controllers\\AssessmentController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAswCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T06:59:55.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "List.cshtml",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\AspnetMarchWeekend25\\Solutions\\Week14\\StateMgmtWebSolution\\StateMgmtApp\\Views\\Home\\List.cshtml",
+              "RelativeDocumentMoniker": "StateMgmtApp\\Views\\Home\\List.cshtml",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\AspnetMarchWeekend25\\Solutions\\Week14\\StateMgmtWebSolution\\StateMgmtApp\\Views\\Home\\List.cshtml",
+              "RelativeToolTip": "StateMgmtApp\\Views\\Home\\List.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-21T06:49:33.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\AspnetMarchWeekend25\\Solutions\\Week14\\StateMgmtWebSolution\\StateMgmtApp\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "StateMgmtApp\\Controllers\\CustomerController.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\AspnetMarchWeekend25\\Solutions\\Week14\\StateMgmtWebSolution\\StateMgmtApp\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "StateMgmtApp\\Controllers\\CustomerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T06:42:09.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\AspnetMarchWeekend25\\Solutions\\Week14\\StateMgmtWebSolution\\StateMgmtApp\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "StateMgmtApp\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\AspnetMarchWeekend25\\Solutions\\Week14\\StateMgmtWebSolution\\StateMgmtApp\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "StateMgmtApp\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAIwB0AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-21T06:04:42.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\AspnetMarchWeekend25\\Solutions\\Week14\\StateMgmtWebSolution\\StateMgmtApp\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "StateMgmtApp\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\AspnetMarchWeekend25\\Solutions\\Week14\\StateMgmtWebSolution\\StateMgmtApp\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "StateMgmtApp\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-21T05:54:08.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\AspnetMarchWeekend25\\Solutions\\Week14\\StateMgmtWebSolution\\StateMgmtApp\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "StateMgmtApp\\Views\\Home\\About.cshtml",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\AspnetMarchWeekend25\\Solutions\\Week14\\StateMgmtWebSolution\\StateMgmtApp\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "StateMgmtApp\\Views\\Home\\About.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACEAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-21T05:48:47.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Ravi\\TAP\\TAP\\AspnetMarchWeekend25\\Solutions\\Week14\\StateMgmtWebSolution\\StateMgmtApp\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "StateMgmtApp\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Ravi\\TAP\\TAP\\AspnetMarchWeekend25\\Solutions\\Week14\\StateMgmtWebSolution\\StateMgmtApp\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "StateMgmtApp\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAwwDQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T05:40:33.282Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

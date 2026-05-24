@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StateMgmtApp", "StateMgmtApp\StateMgmtApp.csproj", "{784CEA53-5162-4561-B9C1-22FC198AA1EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{784CEA53-5162-4561-B9C1-22FC198AA1EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{784CEA53-5162-4561-B9C1-22FC198AA1EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{784CEA53-5162-4561-B9C1-22FC198AA1EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{784CEA53-5162-4561-B9C1-22FC198AA1EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B8AABA78-BFA8-4DF4-BD78-AAC0A1515E1A}
+	EndGlobalSection
+EndGlobal

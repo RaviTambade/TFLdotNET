@@ -1,38 +1,51 @@
- 
-# 👨‍🏫 **What Happens When You Build and Run a .NET Solution?**
+ # 👨‍🏫 **What Happens When You Build and Run a .NET 10 Solution?**
 
 You’ve created a solution with two projects:
 
-* **MyApp** → Console application (the one you run)
-* **MyLibrary** → Class library (provides reusable logic)
+* **MyApp** → Console application (the executable entry point)
+* **MyLibrary** → Class library (contains reusable business logic)
 
-Now let’s step into what actually happens when you build and execute it.
+Now let’s go deeper and understand what actually happens when you build and execute it in **.NET 10**.
 
----
+This is where students start becoming real engineers.
 
-## 🛠 **Part 1: The Build Process (dotnet build)**
 
-Imagine you’re in a workshop constructing a machine. You have blueprints (source code), dependencies (tools), and a final machine (executable). The `dotnet build` process is that construction phase.
 
-### ✅ **What happens step-by-step when you type:**
+## 🛠 **Part 1: The Build Process (`dotnet build`)**
+
+Imagine you're inside a professional workshop.
+
+Your source code is the blueprint.
+Your dependencies are the tools.
+Your final executable is the machine.
+
+The `dotnet build` command is the construction phase.
+
+
+
+## ✅ What happens when you type:
 
 ```bash
 dotnet build
 ```
 
-### 1️⃣ **MSBuild Starts the Pipeline**
 
-The .NET CLI delegates the work to **MSBuild**, the official build engine.
+## 1️⃣ MSBuild Starts the Pipeline
+
+The .NET CLI hands control to **MSBuild**, the official build engine.
+
 It reads:
 
-* `MySolution.sln` → to know all projects inside
-* `MyApp.csproj` and `MyLibrary.csproj` → to understand dependencies and build rules
+* `MySolution.sln` → to understand all projects inside the solution
+* `MyApp.csproj` and `MyLibrary.csproj` → to understand dependencies, SDK targets, framework versions, and build instructions
 
----
+In .NET 10, build optimization is faster and smarter, especially for incremental builds.
 
-### 2️⃣ **Restoration of Dependencies (.NET restores NuGet packages)**
 
-If required, it runs:
+
+## 2️⃣ Restore Dependencies (NuGet Package Resolution)
+
+If required, .NET automatically performs:
 
 ```bash
 dotnet restore
@@ -40,34 +53,60 @@ dotnet restore
 
 This means:
 
-* It checks `.csproj` files for `<PackageReference>`.
-* Downloads necessary packages to your system cache.
-* Generates a `obj/project.assets.json` file for dependency tracking.
+* It checks `.csproj` files for `<PackageReference>`
+* Downloads required NuGet packages
+* Stores them in your global package cache
+* Generates dependency tracking files inside the `obj/` folder
 
-*In our case, no external packages are used → so it’s quick.*
+For example:
 
----
+```text
+obj/project.assets.json
+```
 
-### 3️⃣ **Compilation (Turning C# Code into IL)**
+This helps .NET manage package versions and transitive dependencies.
 
-Each C# file (`.cs`) is compiled into **Intermediate Language (IL)** by the C# compiler (`csc`).
-Output:
+If your project has no external packages, this step is extremely fast.
+
+
+
+## 3️⃣ Compilation (C# → IL → Ready for Runtime)
+
+Your `.cs` files are compiled by the C# compiler (`csc`) into:
+
+## CIL → Common Intermediate Language
+
+This is platform-independent code.
+
+Output generated:
 
 * `MyLibrary.dll`
 * `MyApp.dll`
 
-These go to:
+In .NET 10, support for improved JIT + AOT compilation makes execution faster and startup smoother.
 
+By default, output goes here:
+
+```text
+MyApp/bin/Debug/net10.0/
+MyLibrary/bin/Debug/net10.0/
 ```
-MyApp/bin/Debug/net9.0/
-MyLibrary/bin/Debug/net9.0/
-```
 
----
+Notice:
 
-### 4️⃣ **Linking Project References**
+Not `net8.0`
+Not `net9.0`
 
-Since you added:
+Now it is:
+
+## `net10.0`
+
+That’s your target framework.
+
+
+## 4️⃣ Linking Project References
+
+Because you added:
 
 ```bash
 dotnet add MyApp/MyApp.csproj reference MyLibrary/MyLibrary.csproj
@@ -75,35 +114,56 @@ dotnet add MyApp/MyApp.csproj reference MyLibrary/MyLibrary.csproj
 
 MSBuild ensures:
 
-* `MyApp.dll` **references** `MyLibrary.dll`
-* It adds this line in `MyApp.csproj`:
+* `MyApp.dll` references `MyLibrary.dll`
+* Proper dependency order is maintained during build
 
-  ```xml
-  <ProjectReference Include="..\MyLibrary\MyLibrary.csproj" />
-  ```
+It automatically adds this inside `MyApp.csproj`:
 
-So now MyApp can call `Greeter.Hello()` from MyLibrary.
-
----
-
-### 5️⃣ **Output Structure**
-
-After a successful build, your compiled files sit like this:
-
+```xml
+<ProjectReference Include="..\MyLibrary\MyLibrary.csproj" />
 ```
+
+This allows:
+
+```csharp
+Greeter.Hello()
+```
+
+to work across projects.
+
+This is the beginning of layered architecture.
+
+
+
+## 5️⃣ Final Output Structure
+
+After successful build:
+
+```text
 MyApp
- └── bin/Debug/net9.0/
-     ├── MyApp.dll          ← compiled app
-     ├── MyLibrary.dll      ← library used by app
-     ├── MyApp.pdb          ← debugging symbols
-     └── [runtime.config files]
+ └── bin/Debug/net10.0/
+     ├── MyApp.dll
+     ├── MyLibrary.dll
+     ├── MyApp.pdb
+     ├── MyApp.runtimeconfig.json
+     ├── MyApp.deps.json
+     └── other runtime files
 ```
 
----
+### What these files mean:
 
-## ⚙ **Part 2: Execution Process (dotnet run)**
+* `.dll` → compiled application code
+* `.pdb` → debugging symbols
+* `.runtimeconfig.json` → runtime settings
+* `.deps.json` → dependency resolution details
 
-Now the magic begins.
+This is professional output—not just “code running.”
+
+
+
+# ⚙ **Part 2: Execution Process (`dotnet run`)**
+
+Now the machine starts.
 
 When you run:
 
@@ -111,66 +171,134 @@ When you run:
 dotnet run --project MyApp/MyApp.csproj
 ```
 
-Here’s what actually happens:
+the real execution begins.
 
-### 1️⃣ **dotnet run triggers a build (if needed)**
 
-* If no changes → it skips.
-* If you changed code → rebuilds **only updated projects**.
 
----
+## 1️⃣ `dotnet run` Triggers Build (If Needed)
 
-### 2️⃣ **Execution Starts**
+Before execution:
 
-The command behind the scenes is:
+* If no code changed → skips rebuild
+* If code changed → rebuilds only affected projects
+
+This is called **incremental build optimization**
+
+.NET 10 improves this significantly.
+
+Faster feedback = better developer productivity.
+
+
+
+## 2️⃣ Runtime Execution Starts
+
+Behind the scenes, this becomes:
 
 ```bash
 dotnet MyApp.dll
 ```
 
-The **.NET runtime (CoreCLR)** takes over:
+Now the **.NET Runtime (CoreCLR)** takes over.
+
+It:
 
 * Loads `MyApp.dll`
 * Loads `MyLibrary.dll` because MyApp depends on it
-* Finds the entry point → `static void Main(string[] args)`
-* Starts execution
+* Resolves dependencies
+* Initializes runtime configuration
+* Finds the application entry point
 
----
+In modern .NET:
 
-### 3️⃣ **Program Flow**
+This may be:
 
-Inside `Main()`:
+```csharp
+static void Main()
+```
+
+or
+
+## Top-Level Statements
+
+which are the default in .NET 10 console apps.
+
+Cleaner code.
+
+Less boilerplate.
+
+Same power.
+
+
+
+## 3️⃣ Program Flow Begins
+
+Example:
 
 ```csharp
 var name = args.Length > 0 ? args[0] : "World";
+
 Console.WriteLine(Greeter.Hello(name));
 ```
 
-* If you passed `Ravi`, then `name = "Ravi"`
-* Calls `Greeter.Hello("Ravi")`
-* Greeter returns `"Hello, Ravi from MyLibrary!"`
-* Console prints it.
+Execution flow:
 
-✅ That’s how your program runs successfully.
+* If you pass `Ravi`, then `name = "Ravi"`
+* Calls:
 
----
+```csharp
+Greeter.Hello("Ravi")
+```
 
-## 🔁 **Build vs Run — Clear Difference**
+* `Greeter` returns:
 
-| Command          | Purpose                                                  |
-| ---------------- | -------------------------------------------------------- |
-| `dotnet build`   | Compiles source code → generates `.dll` files            |
-| `dotnet run`     | Builds (if needed) + executes the application            |
-| `dotnet publish` | Produces final deployable output (self-contained or not) |
+```text
+Hello, Ravi from .NET 10 MyLibrary!
+```
 
----
+* Console displays output
 
-## 💡 **Mentor Wisdom: Why This Matters?**
+Simple from outside.
 
-Because when you understand:
-✔ How your code becomes IL
-✔ How projects reference each other
-✔ How .dll files run on the runtime
-…then you’re no longer *using* .NET — you *understand* .NET.
+Powerful underneath.
 
-That’s what separates a student from a developer.
+
+
+# 🔁 Build vs Run vs Publish
+
+| Command          | Purpose                                                                         |
+| ---------------- | ------------------------------------------------------------------------------- |
+| `dotnet build`   | Compiles source code and generates `.dll` files                                 |
+| `dotnet run`     | Builds (if needed) + executes the application                                   |
+| `dotnet publish` | Produces deployment-ready output for servers, Docker, cloud, or standalone apps |
+
+In .NET 10, `publish` becomes even more important for:
+
+* Containers
+* Cloud deployment
+* Native AOT apps
+* Microservices
+* Kubernetes
+* Serverless systems
+
+
+
+# 💡 Mentor Wisdom: Why This Matters
+
+Because once you understand:
+
+- ✔ How C# becomes IL
+- ✔ How MSBuild manages projects
+- ✔ How NuGet resolves dependencies
+- ✔ How DLLs interact
+- ✔ How CoreCLR executes your code
+- ✔ How deployment actually works
+
+…you stop being someone who “uses .NET”
+
+and become someone who truly understands .NET.
+
+That is the difference between:
+
+### Writing code and Engineering software
+
+That difference builds careers.

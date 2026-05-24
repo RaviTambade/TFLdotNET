@@ -1,0 +1,31 @@
+@using Core.Models;
+@model DemoApp.Models.Cart
+@{
+    ViewData["Title"] = "Shopping Cart";
+}
+
+<h1>My Shopping Cart</h1>
+<hr/>
+<img src="/images/flowers.jpg" width="200" height="100"/>
+
+<table class="table">
+     <thead>
+        <tr>
+            <th>Flower</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th>Action</th>
+        </tr>
+    </thead> 
+    <tbody>
+        @foreach (var item in Model.Items)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.theFlower.Name)</td>
+                <td>@Html.DisplayFor(modelItem => item.Quantity)</td>
+                <td><p>@(item.theFlower.SalePrice * item.Quantity) </p> </td>
+                <td><a href="/ShoppingCart/remove/@item.theFlower.ID">Remove</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

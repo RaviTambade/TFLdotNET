@@ -1,0 +1,41 @@
+@model DemoApp.Models.Item
+@{
+    ViewBag.Title="Update";
+}
+
+<h2>Add to Cart</h2>
+<hr/>
+@using (Html.BeginForm())
+{
+    <table>
+        <tr>
+            <td>
+                @Html.LabelFor(model => model.theFlower.Name, new { htmlattributes = new { @class = "label label-info" } })
+            </td>
+            <td>
+                @Html.EditorFor(model => model.theFlower.Name, new { htmlattributes = new { @class = "form-control" } })
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.LabelFor(model => model.theFlower.SalePrice, new { htmlattributes = new { @class = "label label-info" } })
+            </td>
+            <td>
+                @Html.EditorFor(model => model.theFlower.SalePrice, new { htmlattributes = new { @class = "form-control" } })
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.LabelFor(model => model.Quantity, new { htmlattributes = new { @class = "label label-info" } })
+            </td>
+            <td>
+                @Html.EditorFor(model => model.Quantity, new { htmlattributes = new { @class = "form-control" } })
+            </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+            <td><input type="submit" name="addtocart" value="Add to cart" /></td>
+        </tr>
+    </table>
+}

@@ -1,0 +1,9 @@
+2026-05-24 13:19:53.897 +05:30 [INF] Now listening on: http://localhost:5261
+2026-05-24 13:19:53.943 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-24 13:19:53.945 +05:30 [INF] Hosting environment: Development
+2026-05-24 13:19:53.946 +05:30 [INF] Content root path: D:\Ravi\TAP\TAP\TFLdotNET\Solutions\ApplicationServices\AuthApi
+2026-05-24 13:22:05.868 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5261/api/atuh/login - application/json 41
+2026-05-24 13:22:05.900 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-05-24 13:22:05.910 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5261/api/atuh/login - 404 0 null 44.6688ms
+2026-05-24 13:22:05.929 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5261/api/atuh/login, Response status code: 404
+2026-05-24 13:36:05.983 +05:30 [INF] Application is shutting down...

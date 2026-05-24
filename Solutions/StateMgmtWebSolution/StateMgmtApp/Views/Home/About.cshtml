@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewData["Title"] = "About";
+}
+
+<h1>About</h1>
+
+<p id="paralocalstorage"> Local Storage Data : </p>
+
+<input type="text" id="txtdata"/>  <hr/>
+<button id="btnSetLocalStorage"> Set Local Storage Data</button>
+<button id="btnGetLocalStorage"> Get Local Storage Data</button>
+
+
+<script>
+    // Javascript code
+    // This script retrieves data from local storage when the button is clicked
+    // DOM API
+    // set of inbuilt functions provided by the browser to manipulate the HTML document
+
+    document.getElementById("btnSetLocalStorage").addEventListener("click", function(){
+
+
+        localStorage.setItem("myData", "Transflower Mentor as a Service");
+
+    });
+
+
+
+    document.getElementById("btnGetLocalStorage").addEventListener("click", function () {
+
+        //Localstorage API
+        // localStorage is a web storage API that allows you to store data in the browser
+        var localStorageData = localStorage.getItem("myData");
+
+
+        if (localStorageData) {
+            document.getElementById("paralocalstorage").innerText = "Local Storage Data: " + localStorageData;
+        } else {
+            document.getElementById("paralocalstorage").innerText = "No data found in Local Storage.";
+        }
+    });
+</script>
+
+

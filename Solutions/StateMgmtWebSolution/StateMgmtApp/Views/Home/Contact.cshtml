@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewData["Title"] = "Contact";
+}
+
+<h1>Contact</h1>
+
+
+<p id="parasessionstorage"> Session Storage Data : </p>
+
+<input type="text" id="txtdata" />
+<hr />
+<button id="btnSetSessionStorage"> Set Session Storage Data</button>
+<button id="btnGetSessionStorage"> Get Session Storage Data</button>
+
+<script>
+    // Javascript code
+    // This script retrieves data from session storage when the button is clicked
+    // DOM API
+    // set of inbuilt functions provided by the browser to manipulate the HTML document
+    document.getElementById("btnSetSessionStorage").addEventListener("click", function () {
+        sessionStorage.setItem("mySessionData", "Transflower Mentor as a Service");
+    });
+    document.getElementById("btnGetSessionStorage").addEventListener("click", function () {
+        // Session storage API
+        // sessionStorage is a web storage API that allows you to store data for the duration of the page session
+        var sessionStorageData = sessionStorage.getItem("mySessionData");
+        if (sessionStorageData) {
+            document.getElementById("parasessionstorage").innerText = "Session Storage Data: " + sessionStorageData;
+        } else {
+            document.getElementById("parasessionstorage").innerText = "No data found in Session Storage.";
+        }
+    });
+</script>
+
