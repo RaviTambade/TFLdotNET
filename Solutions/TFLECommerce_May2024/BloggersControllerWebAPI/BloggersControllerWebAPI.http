@@ -1,6 +1,0 @@
-@BloggersControllerWebAPI_HostAddress = http://localhost:5178
-
-GET {{BloggersControllerWebAPI_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
