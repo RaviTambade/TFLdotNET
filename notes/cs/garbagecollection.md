@@ -1,5 +1,8 @@
- 
-# 🛍️ **Scene 1: Product Catalog Without Garbage Collection**
+# Garbage Collection
+
+
+
+### 🛍️ **Scene 1: Product Catalog Without Garbage Collection**
 
 Imagine you run a **big warehouse of products**—TVs, Laptops, Phones—all organized in racks. You, as the owner, must:
 
@@ -14,9 +17,7 @@ This is exactly how older languages like **C/C++** work—**manual memory manage
 
 😓 *Too stressful for developers—like running a warehouse alone!*
 
-
-
-# 🧠 **Scene 2: .NET Comes in – Your Intelligent Warehouse Assistant (GC)**
+### 🧠 **Scene 2: .NET Comes in – Your Intelligent Warehouse Assistant (GC)**
 
 Then arrives **.NET’s Common Language Runtime (CLR)** with a smart helper — the **Garbage Collector (GC)**.
 
@@ -27,7 +28,7 @@ Here is how it works:
 
 
 
-### ✅ **Step 1: Allocation – “Adding New Products to the Warehouse”**
+#### ✅ **Step 1: Allocation – “Adding New Products to the Warehouse”**
 
 ```csharp
 Product p = new Product("Laptop", 55000);
@@ -38,7 +39,7 @@ This creates a product and places it in a special warehouse called the **Managed
 No need to worry where exactly—it finds space automatically.
 
 
-### ✅ **Step 2: Reference Tracking – “Is Anyone Still Buying This Product?”**
+#### ✅ **Step 2: Reference Tracking – “Is Anyone Still Buying This Product?”**
 
 The GC keeps a list of which products are still **connected to your system**:
 
@@ -46,7 +47,7 @@ The GC keeps a list of which products are still **connected to your system**:
 * If no one refers to it → It becomes “unreachable” = **Garbage**
 
 
-### ✅ **Step 3: Garbage Collection Cycle – “Clean-up Operation”**
+#### ✅ **Step 3: Garbage Collection Cycle – “Clean-up Operation”**
 
 Whenever:
 
@@ -62,7 +63,7 @@ GC performs 3 actions:
 | **Compacting** | Rearranges remaining items to avoid empty gaps  |
 
 
-# 👶👦👴 **Scene 3: Generations of Products**
+### 👶👦👴 **Scene 3: Generations of Products**
 
 To optimize performance, GC doesn’t clean the whole warehouse every time.
 
@@ -77,7 +78,7 @@ It uses **Generations:**
 GC mostly cleans **Gen 0** first—because **most objects die young**!
 
 
-# 🎬 **Scene 4: Finalization – “Product’s Last Goodbye”**
+### 🎬 **Scene 4: Finalization – “Product’s Last Goodbye”**
 
 Some products require cleaning before removal (like releasing database connections or closing files).
 
@@ -94,7 +95,7 @@ So we use **Finalizers**:
 - ❌ But they are **slow** — products with finalizers go to a **Finalization Queue**, delaying deletion
 
 
-# 🧹 **Scene 5: Dispose Pattern – “Smart Store Manager Takes Control”**
+### 🧹 **Scene 5: Dispose Pattern – “Smart Store Manager Takes Control”**
 
 Instead of waiting for GC, we take **control using IDisposable**:
 
@@ -124,11 +125,11 @@ using (var logger = new ProductFileLogger())
 ```
 
 
-# 💡 **Why Should a Product Catalog Developer Care?**
+### 💡 **Why Should a Product Catalog Developer Care?**
 
-✅ You create thousands of Product, Category, Order objects → GC saves you from memory headaches
-✅ You can focus on business logic instead of worrying about `malloc()` and `free()`
-✅ Use `Dispose()` for external resources like files, database connections, network streams
+- ✅ You create thousands of Product, Category, Order objects → GC saves you from memory headaches
+- ✅ You can focus on business logic instead of worrying about `malloc()` and `free()`
+- ✅ Use `Dispose()` for external resources like files, database connections, network streams
 
 
 # 🛍️ **Final Message for You as a Mentor-Developer**
@@ -215,7 +216,7 @@ After: p1 = null, p2 = null
 ```
 
 
-# 🛒 **Scene 7: List<Product> — What If You Have Thousands of Products?**
+### 🛒 **Scene 7: List<Product> — What If You Have Thousands of Products?**
 
 ```csharp
 List<Product> catalog = new List<Product>();
@@ -238,7 +239,7 @@ GC.WaitForPendingFinalizers();
 - ✔ If objects stay in memory for long (like Categories, Configurations) → They move to **Generation 2**
 
 
-# 🧠 **Scene 8: Generations in Action (Visual)**
+### 🧠 **Scene 8: Generations in Action (Visual)**
 
 | Generation              | Contains                                   | Cleaned When    |
 | ----------------------- | ------------------------------------------ | --------------- |
@@ -248,7 +249,7 @@ GC.WaitForPendingFinalizers();
 | LOH (Large Object Heap) | Large images, byte arrays (>85KB)          | Special cleanup |
 
 
-# ⚠️ **Scene 9: When GC Alone Isn’t Enough (Dispose is Needed)**
+### ⚠️ **Scene 9: When GC Alone Isn’t Enough (Dispose is Needed)**
 
 Products themselves are fine. But suppose product images are loaded from files:
 
@@ -289,15 +290,15 @@ static void Main()
 - ✔ Warehouse stays clean AND efficient
 
 
-# 🧭 **Scene 10: Mentor’s Final Advice**
+### 🧭 **Scene 10: Mentor’s Final Advice**
 
 - ✅ Trust GC for normal objects like Product, Category, Order
 - ✅ Use `Dispose()` for files, DB connections, sockets
 - ✅ Never force `GC.Collect()` in production — let .NET decide
 - ✅ Understand Generations — helps in writing memory-efficient apps
 
- 
-# 🎬 **Scene 11: Visual Flowchart of Garbage Collection in .NET**
+
+### 🎬 **Scene 11: Visual Flowchart of Garbage Collection in .NET**
 
 Here’s an easy-to-understand flow of what happens when you create and abandon objects:
 
@@ -341,7 +342,7 @@ Here’s an easy-to-understand flow of what happens when you create and abandon 
 ```
 
 
-# 🧪 **Scene 12: Realistic GC Behavior in Product Catalog**
+###  🧪 **Scene 12: Realistic GC Behavior in Product Catalog**
 
 Let’s simulate a real-world situation:
 
@@ -378,7 +379,7 @@ static void Main()
 - ✔ GC removes them only when necessary (not immediately!)
 
 
-# 🎭 **Scene 13: GC + Async / Await (Background Jobs)**
+### 🎭 **Scene 13: GC + Async / Await (Background Jobs)**
 
 E-commerce example:
 
@@ -407,7 +408,7 @@ static async Task Main()
 Objects like `Product` get released naturally when method completes ✅
 
 
-# 📊 **Scene 14: How to See GC in Action (Live Profiling Tools)**
+### 📊 **Scene 14: How to See GC in Action (Live Profiling Tools)**
 
 | Tool                               | What It Shows                           | Perfect For           |
 | ---------------------------------- | --------------------------------------- | --------------------- |
@@ -417,9 +418,9 @@ Objects like `Product` get released naturally when method completes ✅
 | **CLR Profiler**                   | Allocation history, generation movement | Deep GC analysis      |
 
 
-# 🖼️ **Scene 15: Heap Memory Diagram (Before vs After GC)**
+### 🖼️ **Scene 15: Heap Memory Diagram (Before vs After GC)**
 
-### 📍 Before GC (Products removed from cart, but still in memory)
+#### 📍 Before GC (Products removed from cart, but still in memory)
 
 ```
 Managed Heap:
@@ -427,14 +428,14 @@ Managed Heap:
    (ref)       (null)      (ref)      (null)
 ```
 
-### ✅ After GC
+#### ✅ After GC
 
 ```
 | Product A | Product C |
 (Compacted, no empty holes)
 ```
 
-# 🎓 **Mentor Wisdom — When to Care About GC?**
+### 🎓 **Mentor Wisdom — When to Care About GC?**
 
 | Situation                               | Do You Worry?   | What to Do                            |
 | --------------------------------------- | --------------- | ------------------------------------- |
@@ -445,14 +446,14 @@ Managed Heap:
 
 
 
-# The Housekeeper You Didn’t Hire – But Can’t Live Without**
+###  The Housekeeper You Didn’t Hire – But Can’t Live Without**
 
 *“Imagine you live in a cozy, beautiful house. You use things every day — books, plates, pens — but often leave them lying around. Yet, magically, by morning, the house is clean. Nothing's out of place. You didn’t do it. Who did?”*
 
 That magical being... is your **.NET Garbage Collector**.
 
 
-## 🧠 **Scene 1: Life Without Garbage Collection**
+#### 🧠 **Scene 1: Life Without Garbage Collection**
 
 > *“Let’s say you had to manage every item in your house manually — clean up after every snack, track every spoon, plate, bottle. That’s what older languages like C/C++ required — **manual memory management**.”*
 
