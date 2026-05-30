@@ -1,4 +1,4 @@
-# The Story of C# Collections
+# Collection Framework
 
 ## 🎙️ *Mentor Opens the Class...*
 
