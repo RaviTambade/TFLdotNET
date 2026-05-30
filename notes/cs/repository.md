@@ -1,5 +1,5 @@
 
-# Learning LINQ & Repository Pattern – The Developer’s Toolbox
+# .Repository Pattern
 
 ### 🧠 “Imagine you are a data detective...”
 
