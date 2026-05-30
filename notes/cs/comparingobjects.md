@@ -1,4 +1,4 @@
-## **Sorting Life – One Comparison at a Time**
+## IComparable , IComparer
 
 
 ### 🌅 Scene 1: A Real-Life Hiring Situation
