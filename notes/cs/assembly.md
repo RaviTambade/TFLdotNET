@@ -1,4 +1,4 @@
-## **The Assembly – Heart of a .NET Application**
+## **The Assembly**
 
 ### 🎬 **Scene 1: A Developer’s Morning**
 
