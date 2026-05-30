@@ -1,4 +1,4 @@
-# Object-Oriented Programming in C\#
+# Object-Oriented Programming (OOPs)
 
 *"Alright everyone, settle in… Today I’m not just teaching you syntax or code — I want to take you on a journey… into the world of Object-Oriented Programming. Or as we lovingly call it, OOP. Now close your eyes for a moment and imagine you’re not just writing code, but building a little digital universe…"* 🌍
 
