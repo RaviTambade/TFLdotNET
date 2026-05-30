@@ -58,14 +58,13 @@ You are not alone on this path. I am walking with you.
 *Mentor | Technologist | Believer in Human Potential*
 
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/dotnet.md">What is .NET?</a>
-- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/settingupdotnetsolution.md">Creating Donet Core Solution step by step</a>
-- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/buildexedotnetsolution.md">Dotnet Core Solution Build and Execution</a>
-
-- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/CSharpLang.md">.NET Programming Language</a>
-- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/oo.md"> C# Objectd Oriented  Programming</a>
+- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/settingupdotnetsolution.md">Creating .NET Core Solution using CLI</a>
+- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/buildexedotnetsolution.md">Building and Executing .NET Core Solution</a>
+- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/CSharpLang.md">C# Prgramming Basics</a>
+- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/oo.md"> Objectd Oriented  Programming(OOPs) using C#</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/Collections.md">Collection Framework</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/productcatalogimplemntation.md">ProductCatalog Solution</a>
-- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/comparingobjects.md">Object Comparision</a>
+- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/comparingobjects.md">Comparision</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/linq.md">LINQ</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/garbagecollection.md">Garbage Collection(GC)</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/assembly.md">Assembly in .net core</a>
