@@ -110,7 +110,9 @@ Console.WriteLine("Next in line: {0}", q.Peek());
 > *A LinkedList is like a train — each bogie (node) is connected to the next and the previous.*
 
 ```csharp
+
 LinkedList<string> l1 = new LinkedList<string>();
+
 l1.AddFirst("Apple");
 l1.AddFirst("Papaya");
 l1.AddFirst("Orange");
@@ -119,6 +121,7 @@ l1.AddFirst("Banana");
 LinkedListNode<string> node = l1.First;
 Console.WriteLine(node.Value);         // Banana
 Console.WriteLine(node.Next.Value);    // Orange
+
 ```
 
 ## 🧾 6. **Dictionary\<TKey, TValue> – Key-Value Power**
@@ -127,6 +130,7 @@ Console.WriteLine(node.Next.Value);    // Orange
 
 ```csharp
 Dictionary<int, string> phones = new Dictionary<int, string>();
+
 phones.Add(1, "James");
 phones.Add(35, "Rita");
 phones.Add(16, "Meenal");
@@ -146,6 +150,7 @@ Console.WriteLine("Name is {0}", phones[4]);
 > *One of my favorite moments is showing students this: one method to swap anything — int, string, bool...*
 
 ```csharp
+
 static void Swap<T>(ref T a, ref T b)
 {
     Console.WriteLine("Swapping type: {0}", typeof(T));
@@ -153,11 +158,13 @@ static void Swap<T>(ref T a, ref T b)
     a = b;
     b = temp;
 }
+
 ```
 
 And in `Main()`:
 
 ```csharp
+
 int x = 10, y = 20;
 Swap(ref x, ref y);
 
@@ -166,6 +173,7 @@ Swap(ref s1, ref s2);
 
 bool b1 = true, b2 = false;
 Swap(ref b1, ref b2);
+
 ```
 
 > *Pure magic. One generic method, infinite use cases.*
@@ -272,5 +280,4 @@ foreach (Car c in myGarage)
 > *Students, Generics are not just a syntax feature — they’re a **paradigm**. They make your code **reusable**, **type-safe**, and **elegant**. Whether you’re creating collections, utilities, or game engines — they serve as your Swiss army knife.*
 
 > *Keep exploring. Play with types. Make mistakes. And ask yourself — **Can I make this more generic?** If yes, that’s the path to better code.*
-
 
