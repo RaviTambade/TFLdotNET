@@ -1,5 +1,5 @@
 
-## 🔍 What is LINQ?
+## LINQ
 
 LINQ is not just another tool; it’s a way of **thinking and talking to your data** — built right into the C# language. Whether you’re talking to a SQL Server table, filtering in-memory objects, or parsing XML, LINQ gives you a *uniform, readable, and strongly typed* syntax.
 

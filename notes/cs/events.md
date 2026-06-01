@@ -1,4 +1,4 @@
-# Events in C# – Like Real-Life Notifications
+# Events
 
 ### 🕰️ “Let me take you to a real-world moment before we dive into code…”
 

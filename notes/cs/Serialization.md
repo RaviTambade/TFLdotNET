@@ -1,5 +1,5 @@
 
-# 👨‍🏫 The Magic of Serialization in .NET
+# Serialization
 
 ### ✨ "Ever wanted to freeze time?"
 

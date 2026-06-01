@@ -1,4 +1,4 @@
- # 👨‍🏫 **What Happens When You Build and Run a .NET 10 Solution?**
+ # 👨‍🏫 **Building and Executing .NET Core Solution**
 
 You’ve created a solution with two projects:
 

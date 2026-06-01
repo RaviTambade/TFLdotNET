@@ -1,4 +1,4 @@
-# *Understanding the Power of Multitasking, Multithreading & Multiprocessing in C#*
+# Multithreading
 
 **"Imagine you're a chef in a busy kitchen..."**
 You’re chopping vegetables, boiling pasta, grilling paneer, and at the same time guiding your junior on how to plate the starter.

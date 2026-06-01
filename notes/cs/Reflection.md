@@ -1,5 +1,5 @@
 
-# Reflection in .NET
+# Reflection
 
 *"Imagine you're a software detective. The program is your case file, and your mission is to examine what classes, properties, and methods it has — *without ever opening the source code*. That’s exactly what Reflection in .NET lets you do."*
 

@@ -1,4 +1,4 @@
-# Asynchronous Programming with .NET (`async`/`await` Simplified)
+# Asynchronous Programming
 
 > *"Imagine you're at a restaurant. You've placed your order. Now instead of just standing and waiting, you go check your emails or chat with a friend. When your order is ready, the waiter comes to notify you. That's exactly what asynchronous programming is like."*
 > — *Mentor Ravi, guiding new developers to think like architects*

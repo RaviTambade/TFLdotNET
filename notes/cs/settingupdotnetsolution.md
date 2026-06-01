@@ -1,4 +1,4 @@
-# 👨‍🏫 **Setting Up Your First .NET 10 Solution with CLI**
+# 👨‍🏫 **.NET Core  Solution using CLI**
 
 Imagine you are entering a workshop—not a classroom. No IDE dependency, no drag-and-drop shortcuts. Just you, your terminal, and your mindset to build like a real software engineer.
 

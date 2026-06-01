@@ -1,4 +1,4 @@
-# 👨‍🏫 Mentor Storytelling: Delegates in C\#
+# Delegate
 
 > *“Hey team, gather around. Today we’re about to unlock one of the most powerful yet misunderstood features of C#: the **Delegate**. Think of delegates as middlemen — like trusted agents who know which method to call when the time comes."*
 

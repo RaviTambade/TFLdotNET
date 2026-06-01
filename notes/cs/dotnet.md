@@ -1,4 +1,4 @@
-# 🌟 Welcome to the World of .NET
+# .NET
 
 > *"Dear students, this isn’t just a codebase. It’s a journey into building your dreams — one line of code at a time."*  
 > — *Mentor Ravi Tambade*
