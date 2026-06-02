@@ -245,7 +245,7 @@ Design / Architecture
 👉 *.NET interview preparation is a layered understanding journey from C# fundamentals to CLR internals, LINQ execution, async programming, data access, and web architecture, with focus on internal working and real-world performance reasoning.*
 
 
-#Let us get started
+# Let us get started
 
 
 ### 🧠 .NET Fundamentals (CTS, CLS, CLR, IL Code)
