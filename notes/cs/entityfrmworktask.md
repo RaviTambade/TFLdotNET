@@ -1416,22 +1416,20 @@ public async Task<IActionResult> Delete(int id)
 
 ## 🎯 **What We Achieved**
 
-✔ Secure login using JWT Authentication
-✔ Authorization using Roles like *Admin*, *User*
-✔ Protected APIs from unauthorized access
-✔ Token-based, stateless authentication → Perfect for Web & Mobile Apps
-✔ Real-world production-ready security setup
-
-
+- ✔ Secure login using JWT Authentication
+- ✔ Authorization using Roles like *Admin*, *User*
+- ✔ Protected APIs from unauthorized access
+- ✔ Token-based, stateless authentication → Perfect for Web & Mobile Apps
+- ✔ Real-world production-ready security setup
 
 # 🎭 **Scene 12: The Royal Inspectors — Unit Testing Services, Controllers & Validators**
 
 By now your application kingdom has:
 
-✔ Strong walls (Validation + Exception Handling)
-✔ Guarded gates (JWT Authentication)
-✔ Organized messengers (API Response Wrapper)
-✔ Royal scribes (Serilog Logging)
+- ✔ Strong walls (Validation + Exception Handling)
+- ✔ Guarded gates (JWT Authentication)
+- ✔ Organized messengers (API Response Wrapper)
+- ✔ Royal scribes (Serilog Logging)
 
 But the King now worries…
 🧐 “How do we make sure every guard, every gate, every service does its job correctly — before battle?”
@@ -1439,17 +1437,14 @@ But the King now worries…
 So, he appoints the **Royal Inspectors** — *Unit Tests*.
 They test every layer **without running the full application**, ensuring each piece works perfectly on its own.
 
----
-
 ## 🎯 **What We Will Cover in This Scene**
 
-✅ Setting up Unit Testing Project using `.NET CLI`
-✅ Writing Unit Tests for **Service Layer (Business Logic)**
-✅ Writing Unit Tests for **Controllers**
-✅ Testing **Validators (FluentValidation)**
-✅ Mocking Database/Repository using **Moq or InMemory DbContext**
+- ✅ Setting up Unit Testing Project using `.NET CLI`
+- ✅ Writing Unit Tests for **Service Layer (Business Logic)**
+- ✅ Writing Unit Tests for **Controllers**
+- ✅ Testing **Validators (FluentValidation)**
+- ✅ Mocking Database/Repository using **Moq or InMemory DbContext**
 
----
 
 ## 🛠 **Step 1: Create a Test Project**
 
@@ -1461,8 +1456,6 @@ dotnet add ProductCatalog.Tests package FluentAssertions
 dotnet add ProductCatalog.Tests package Microsoft.EntityFrameworkCore.InMemory
 dotnet add ProductCatalog.Tests package FluentValidation
 ```
-
----
 
 ## 🛠 **Step 2: Unit Test for Product Service (Mock Repository)**
 
@@ -1495,8 +1488,6 @@ public class ProductServiceTests
 }
 ```
 
----
-
 ## 🛠 **Step 3: Unit Test for Controller (Mock service + check HTTP responses)**
 
 ```csharp
@@ -1525,9 +1516,6 @@ public class ProductsControllerTests
     }
 }
 ```
-
----
-
 ## 🛠 **Step 4: Unit Test for FluentValidation Validator**
 
 ```csharp
@@ -1553,7 +1541,6 @@ public class ProductDtoValidatorTests
 }
 ```
 
----
 
 ## 📦 **Folder Structure (Recommended)**
 
@@ -1567,20 +1554,17 @@ ProductCatalog.Tests/
     ├── Validators/
 ```
 
----
 
 ## 🔍 **What We Achieved**
 
-✔ You now know how to unit test **Service, Controller, and Validator layers**
-✔ You used **Moq** to fake repositories & avoid real DB
-✔ You tested validation logic with **FluentValidation**
-✔ Your codebase is now more **professional, maintainable & bug-proof**
+- ✔ You now know how to unit test **Service, Controller, and Validator layers**
+- ✔ You used **Moq** to fake repositories & avoid real DB
+- ✔ You tested validation logic with **FluentValidation**
+- ✔ Your codebase is now more **professional, maintainable & bug-proof**
 
 ### 🎬 **Next Scene: Swagger Documentation & API Versioning**
 
 *(Mentor Storytelling Style — The Royal Library & Time Machine of the Kingdom)*
-
----
 
 #### 🏰 **Scene Setup:**
 
@@ -1597,8 +1581,6 @@ So the King (you) declares:
 This library is called: **Swagger (OpenAPI)**.
 And to preserve changes across history? You build a **Time Machine — API Versioning**.
 
----
-
 ### ✅ **🎯 Mission Objectives in This Scene:**
 
 | Goal                        | Description                                                                   |
@@ -1608,7 +1590,6 @@ And to preserve changes across history? You build a **Time Machine — API Versi
 | ⏳ API Versioning            | Maintain multiple API versions like `/api/v1/products` and `/api/v2/products` |
 | 🔧 Configure in Program.cs  | Add services + middleware                                                     |
 
----
 
 ### ⚙️ **Step 1: Install Required Packages**
 
@@ -1618,7 +1599,6 @@ dotnet add package Microsoft.AspNetCore.Mvc.Versioning
 dotnet add package Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer
 ```
 
----
 
 ### ⚙️ **Step 2: Configure Swagger in Program.cs**
 
@@ -1659,8 +1639,6 @@ builder.Services.AddSwaggerGen(options =>
 });
 ```
 
----
-
 ### ⚙️ **Step 3: Add API Versioning in Program.cs**
 
 ```csharp
@@ -1678,8 +1656,6 @@ builder.Services.AddVersionedApiExplorer(options =>
 });
 ```
 
----
-
 ### ⚙️ **Step 4: Enable Swagger Middleware**
 
 ```csharp
@@ -1695,7 +1671,6 @@ if (app.Environment.IsDevelopment())
 }
 ```
 
----
 
 ### 🛠 **Step 5: Versioning Controllers Example**
 
@@ -1709,24 +1684,19 @@ public class ProductsController : ControllerBase
 }
 ```
 
----
 
 ### 🌟 **Scene Outcome:**
 
-✅ Developers can explore & test APIs in browser using Swagger UI
-✅ JWT-secured endpoints can be tested by adding token in Swagger
-✅ API versions (/v1/, /v2/) allow safe evolution of your system
-✅ Your API is now documented, discoverable, and future-proof
-
-
+- ✅ Developers can explore & test APIs in browser using Swagger UI
+- ✅ JWT-secured endpoints can be tested by adding token in Swagger
+- ✅ API versions (/v1/, /v2/) allow safe evolution of your system
+- ✅ Your API is now documented, discoverable, and future-proof
 
 ## 🎬 **Scene: The Shipyard of the Kingdom — Docker Deployment**
 
 Your API kingdom is now powerful and well-structured, but it still sits inside your local fortress (localhost).
 You want it to sail across the digital oceans — to servers, cloud platforms, or other machines.
 For that, you need **Docker Ships 🛳️** — portable containers carrying your API, database, and full environment.
-
----
 
 ### ✅ **🎯 Goals of This Scene:**
 
@@ -1736,9 +1706,7 @@ For that, you need **Docker Ships 🛳️** — portable containers carrying you
 | 🐬 Run MySQL in a Docker container                      |             |
 | 🔁 Use Docker Compose to connect API + MySQL            |             |
 | 🔐 Configure environment variables & connection strings |             |
-| ✅ Test containers locally                               |             |
-
----
+| ✅ Test containers locally                              |             |
 
 ## 🏗️ **Step 1: Add Docker Support to the Project**
 
@@ -1763,8 +1731,6 @@ WORKDIR /app
 COPY --from=build /app/publish .
 ENTRYPOINT ["dotnet", "ProductCatalogAPI.dll"]
 ```
-
----
 
 ## 🐬 **Step 2: MySQL Configuration via Docker**
 
@@ -1805,8 +1771,6 @@ volumes:
   mysql_data:
 ```
 
----
-
 ## ⚙️ **Step 3: Update `appsettings.json`**
 
 ```json
@@ -1816,8 +1780,6 @@ volumes:
   }
 }
 ```
-
----
 
 ## 🚀 **Step 4: Build & Run Docker Containers**
 
@@ -1829,36 +1791,32 @@ docker-compose up --build
 docker-compose down
 ```
 
----
 
 ## ✅ **Step 5: Test It!**
 
-✅ Open Swagger:
-👉 [http://localhost:5000/swagger](http://localhost:5000/swagger)
+- ✅ Open Swagger:
+- 👉 [http://localhost:5000/swagger](http://localhost:5000/swagger)
 
-✅ Check MySQL is running in Docker:
+- ✅ Check MySQL is running in Docker:
 
 ```bash
 docker exec -it mysql-db mysql -u appuser -p
 SHOW DATABASES;
 ```
 
----
 
 ### 🌟 **Scene Outcome:**
 
-✅ Your API runs in a Docker container
-✅ MySQL runs in another isolated container
-✅ Both communicate using Docker Compose
-✅ You’re now ready to move to Cloud Deployment (AWS, Azure, etc.) 🚀
+- ✅ Your API runs in a Docker container
+- ✅ MySQL runs in another isolated container
+- ✅ Both communicate using Docker Compose
+- ✅ You’re now ready to move to Cloud Deployment (AWS, Azure, etc.) 🚀
 
 -## 🎬 **Scene: “The Cloud Kingdom – Journey to AWS EC2”**
 
 Your API fleet (Docker containers) is ready. Now it’s time to sail into the **Cloud Kingdom (AWS)** — specifically to **EC2**, a virtual Linux server that will host your Product Catalog API and MySQL database.
 
 Think of EC2 as renting a digital land where you can build your own server fortress.
-
----
 
 ### 🏁 **🎯 Mission Goals for This Scene:**
 
@@ -1870,15 +1828,14 @@ Think of EC2 as renting a digital land where you can build your own server fortr
 | 📦 Deploy Product API + MySQL using docker-compose |        |
 | ✅ Test using public IP or domain                   |        |
 
----
 
 ## 🛠️ **Step 1: Launch EC2 Instance (Ubuntu Server)**
 
-✔ Go to **AWS Console → EC2 → Launch Instance**
-✔ Choose **Ubuntu 22.04 LTS**
-✔ Instance type: **t2.micro (Free Tier eligible)**
-✔ Key Pair: Create or use an existing `.pem`
-✔ Allow Ports in Security Group:
+- ✔ Go to **AWS Console → EC2 → Launch Instance**
+- ✔ Choose **Ubuntu 22.04 LTS**
+- ✔ Instance type: **t2.micro (Free Tier eligible)**
+- ✔ Key Pair: Create or use an existing `.pem`
+- ✔ Allow Ports in Security Group:
 
 * SSH (22)
 * HTTP (80)
@@ -1896,9 +1853,6 @@ Open terminal or PowerShell:
 ```bash
 ssh -i "your-key.pem" ubuntu@ec2-your-public-ip.compute.amazonaws.com
 ```
-
----
-
 ## 🐳 **Step 3: Install Docker & Docker Compose on EC2**
 
 ```bash
@@ -1914,7 +1868,6 @@ sudo chmod +x /usr/local/bin/docker-compose
 docker-compose --version
 ```
 
----
 
 ## 📂 **Step 4: Copy Your Project to EC2**
 
@@ -1923,8 +1876,6 @@ From your local system terminal:
 ```bash
 scp -i "your-key.pem" -r ./ProductCatalogAPI ubuntu@ec2-your-ip:/home/ubuntu/
 ```
-
----
 
 ## 🛠️ **Step 5: Add docker-compose.yml on EC2**
 
@@ -1967,8 +1918,6 @@ volumes:
   mysql_data:
 ```
 
----
-
 ## 🚀 **Step 6: Build & Run on EC2**
 
 ```bash
@@ -1980,14 +1929,14 @@ docker ps
 
 👉 **[http://EC2-PUBLIC-IP:5000/swagger](http://EC2-PUBLIC-IP:5000/swagger)**
 
----
+
 
 ## ✅ **Scene Outcome:**
 
-✅ Your .NET API is deployed on AWS EC2 🟢
-✅ MySQL and API are running as Docker containers 🐳
-✅ Accessible from anywhere in the world 🌍
-✅ Secure / Reusable Infrastructure — Ready for SSL, CI/CD, Load Balancer next
+- ✅ Your .NET API is deployed on AWS EC2 🟢
+- ✅ MySQL and API are running as Docker containers 🐳
+- ✅ Accessible from anywhere in the world 🌍
+- ✅ Secure / Reusable Infrastructure — Ready for SSL, CI/CD, Load Balancer next
 
 ## 🎬 **Scene: The Royal Automated Army (CI/CD)**
 
@@ -1999,8 +1948,6 @@ The King (you) says:
 
 This is called **CI/CD (Continuous Integration / Continuous Deployment)**.
 
----
-
 ### ✅ **🎯 Goals for This Scene:**
 
 | Task                                                | Outcome |
@@ -2009,9 +1956,8 @@ This is called **CI/CD (Continuous Integration / Continuous Deployment)**.
 | ✅ On each push to `main`, build & test the API      |         |
 | ✅ SSH into EC2 automatically                        |         |
 | ✅ Pull project & run `docker-compose up --build -d` |         |
-| ✅ Zero manual deployment from now on ⚡              |         |
+| ✅ Zero manual deployment from now on ⚡             |         |
 
----
 
 ## 🛠️ **Step 1: Add SSH Keys for GitHub to Access EC2**
 
@@ -2046,8 +1992,6 @@ Add these:
 | `EC2_USER` | ubuntu                           |
 | `EC2_KEY`  | Contents of `id_rsa` private key |
 | `EC2_PATH` | `/home/ubuntu/ProductCatalogAPI` |
-
----
 
 ## 🛠️ **Step 2: Create GitHub Workflow File**
 
@@ -2104,8 +2048,6 @@ jobs:
           docker-compose up --build -d
 ```
 
----
-
 ## ✅ **Step 3: Push Code & Watch Magic**
 
 1. Commit and push changes to GitHub:
@@ -2117,23 +2059,20 @@ jobs:
    ```
 
 2. Go to:
-   ✅ GitHub → Repo → Actions → Watch Pipeline Run 🟢
-   ✅ Login to EC2 → Run `docker ps` to confirm updated containers
+  -  ✅ GitHub → Repo → Actions → Watch Pipeline Run 🟢
+  -  ✅ Login to EC2 → Run `docker ps` to confirm updated containers
 
----
 
 ## 🎉 **Scene Outcome:**
 
-✅ Fully automated build + deploy pipeline
-✅ No more SSH, file copying, manual restart
-✅ Dev pushes → API auto-updates on EC2
-✅ You just leveled up from Developer to *DevOps Knight* ⚔️
+- ✅ Fully automated build + deploy pipeline
+- ✅ No more SSH, file copying, manual restart
+- ✅ Dev pushes → API auto-updates on EC2
+- ✅ You just leveled up from Developer to *DevOps Knight* ⚔️
 
 
 🔥 **Scene: Monitoring – The Watchtower of the API Kingdom**
 *(Mentor storytelling style: Making your system observable like a kingdom keeping watch for enemies at night)*
-
----
 
 ### 🏰 **Story Setup:**
 
@@ -2147,8 +2086,6 @@ You reply boldly:
 
 > “My King, we need **Watchtowers & Signal Fires** — a Monitoring System.”
 
----
-
 ### 🎯 **In this Scene, You’ll Build:**
 
 | Feature                                 | Purpose                                                |
@@ -2158,10 +2095,8 @@ You reply boldly:
 | 📈 **Health Checks**                    | API health endpoints (`/health`) for uptime monitoring |
 | ⚡ **Request Performance Tracking**      | Track slow APIs with middleware                        |
 
----
 
 ## ✅ **Step 1: Install Monitoring Tools (Serilog + Seq)**
-
 Run:
 
 ```bash
@@ -2172,8 +2107,6 @@ dotnet add package Serilog.Sinks.Seq
 dotnet add package Serilog.Enrichers.Environment
 dotnet add package Serilog.Enrichers.Thread
 ```
-
----
 
 ## ✅ **Step 2: Configure Serilog in Program.cs**
 
@@ -2196,8 +2129,6 @@ builder.Host.UseSerilog();
 
 ```
 
----
-
 ## ✅ **Step 3: Add Health Checks**
 
 ```bash
@@ -2219,8 +2150,6 @@ app.MapHealthChecks("/health");
 🔹 `http://localhost:5000/health`
 Returns ✅ Healthy or ❌ Unhealthy JSON.
 
----
-
 ## ✅ **Step 4: Optional – Add SEQ Logging Dashboard (Developer Monitoring Tool)**
 
 Add to **docker-compose.yml**:
@@ -2239,7 +2168,6 @@ Then open:
 👉 [http://localhost:5341](http://localhost:5341)
 You can **search logs, filter by errors, track performance, and more.**
 
----
 
 ## ✅ **Step 5: Log API Performance (Middleware)**
 
@@ -2276,16 +2204,12 @@ Add in Program.cs:
 app.UseMiddleware<RequestTimingMiddleware>();
 ```
 
----
-
 ## 🎉 **Scene Outcome:**
 
-✅ Logs saved to files + console + Seq
-✅ `/health` endpoint monitors MySQL + API health
-✅ API performance tracked in ms
-✅ Errors visible in dashboards instead of guessing in darkness
-
----
+- ✅ Logs saved to files + console + Seq
+- ✅ `/health` endpoint monitors MySQL + API health
+- ✅ API performance tracked in ms
+- ✅ Errors visible in dashboards instead of guessing in darkness
 
 ### 🚀 **Next Scene Options:**
 
@@ -2294,11 +2218,10 @@ What should we build next, Commander?
 | Option                                                 | Description |
 | ------------------------------------------------------ | ----------- |
 | 🔒 **SSL + HTTPS using Nginx, Certbot, Let's Encrypt** |             |
-| ⚡ **Redis Caching (Product & Category data)**          |             |
+| ⚡ **Redis Caching (Product & Category data)**         |             |
 | 🧱 **API Rate Limiting & Security Best Practices**     |             |
 | 👑 **Admin Dashboard or UI using React/Angular**       |             |
 
----
 
 💬 *Reply with:*
 👉 **Next Scene: SSL**
@@ -2311,7 +2234,6 @@ Your command, my king 👑
 🔥 **Scene: Redis Cache – The Royal Treasury of Fast Responses**
 *(Mentor Storytelling Style: Performance Boost for Product Catalog API)*
 
----
 
 ### 🏰 **Story Setup:**
 
@@ -2325,19 +2247,16 @@ You reply with a smile:
 
 > “My Lord, we will build a **Royal Treasury of Memory** — a lightning-fast data vault called **Redis Cache**.”
 
----
 
 ### 🎯 **🎯 Scene Goals:**
 
 | Goal                                                | Description |
 | --------------------------------------------------- | ----------- |
-| ✅ Setup Redis (in Docker / EC2)                     |             |
-| ✅ Configure .NET API to connect to Redis            |             |
-| ✅ Cache Products & Categories                       |             |
-| ✅ Use Cache Aside Pattern                           |             |
+| ✅ Setup Redis (in Docker / EC2)                    |             |
+| ✅ Configure .NET API to connect to Redis           |             |
+| ✅ Cache Products & Categories                      |             |
+| ✅ Use Cache Aside Pattern                          |             |
 | ✅ Auto-refresh cache when new data is added/updated |             |
-
----
 
 ## 🐳 **Step 1: Add Redis to `docker-compose.yml`**
 
@@ -2358,15 +2277,12 @@ Start it:
 docker-compose up -d
 ```
 
----
-
 ## 📦 **Step 2: Install Redis Package in .NET API**
 
 ```bash
 dotnet add package Microsoft.Extensions.Caching.StackExchangeRedis
 ```
 
----
 
 ## ⚙️ **Step 3: Configure Redis in `Program.cs`**
 
@@ -2377,8 +2293,6 @@ builder.Services.AddStackExchangeRedisCache(options =>
     options.InstanceName = "ProductCatalog_";
 });
 ```
-
----
 
 ## ⚡ **Step 4: Apply Redis Cache in ProductService**
 
@@ -2430,8 +2344,6 @@ public class ProductService : IProductService
 }
 ```
 
----
-
 ## 🧹 **Step 5: Clear Cache When New Product Added / Updated**
 
 ```csharp
@@ -2446,19 +2358,15 @@ public async Task<ProductDto> AddProductAsync(CreateProductDto dto)
 }
 ```
 
----
-
 ## 👑 **Scene Outcome:**
 
-✅ Redis Cache enabled for super-fast responses ⚡
-✅ MySQL load reduced → high performance
-✅ Cache-auto-clears on data changes
-✅ Perfect setup for high-traffic, scalable APIs
+- ✅ Redis Cache enabled for super-fast responses ⚡
+- ✅ MySQL load reduced → high performance
+- ✅ Cache-auto-clears on data changes
+- ✅ Perfect setup for high-traffic, scalable APIs
 
 
 ### ✅ **Next Scene: Admin Panel – The Control Tower of Your Product Catalog System**
-
----
 
 **🎬 Scene Setup:**
 
@@ -2472,9 +2380,7 @@ Who manages users, handles approvals, or updates inventory?
 
 Think of it like the flight control tower of an airport—only authorized people can enter, and from here, they can control the entire system.
 
----
-
-### 🛠️ **🎥 Scene: Building the Admin Panel**
+## 🛠️ **🎥 Scene: Building the Admin Panel**
 
 #### 🧩 **1. Tech Stack Choices**
 
@@ -2485,8 +2391,6 @@ Think of it like the flight control tower of an airport—only authorized people
 | Authentication | JWT Token stored securely (HTTP-only cookie or localStorage)        |
 | Authorization  | Role-based – only `Admin` role can access this UI                   |
 | API Usage      | Uses existing `/api/products`, `/api/categories`, `/api/users` APIs |
-
----
 
 #### 🎯 **2. Features an Admin Panel Must Have**
 
@@ -2500,8 +2404,6 @@ Think of it like the flight control tower of an airport—only authorized people
 | ✅ View Logs (Serilog output)  | Display recent API errors, warnings, user activities                    |
 | ✅ Role-Based Access           | Only admin role should access this panel                                |
 | ✅ Protected Routes (Frontend) | Admin routes like `/admin/products` require JWT + Admin role validation |
-
----
 
 ### ⚙️ **3. Implementing Admin Panel Step-by-Step**
 
@@ -2520,8 +2422,6 @@ if (userManager.Users.All(u => u.Email != adminUser.Email))
     await userManager.AddToRoleAsync(adminUser, "Admin");
 }
 ```
-
----
 
 #### ✅ **Step 2: Create Secure Admin API Routes**
 
@@ -2547,8 +2447,6 @@ public class AdminProductsController : ControllerBase
 }
 ```
 
----
-
 #### ✅ **Step 3: React/Blazor Admin UI Sample Routing**
 
 ```jsx
@@ -2559,8 +2457,6 @@ public class AdminProductsController : ControllerBase
     <Route path="users" element={<UserManagement />} />
 </Route>
 ```
-
----
 
 ### 🔐 **4. Securing the Frontend Admin Panel**
 
@@ -2583,16 +2479,13 @@ const PrivateRoute = ({ element }) => {
 };
 ```
 
----
 
 ### 🎖️ **5. Final Outcome of this Scene**
 
-✅ Admin can control every aspect of the product catalog
-✅ Safe, secure, and role-protected interface
-✅ Fully connected with APIs, JWT, and database
-✅ Foundation ready for future features like Order Management, Inventory, Discounts, Analytics
-
----
+- ✅ Admin can control every aspect of the product catalog
+- ✅ Safe, secure, and role-protected interface
+- ✅ Fully connected with APIs, JWT, and database
+- ✅ Foundation ready for future features like Order Management, Inventory, Discounts, Analytics
 
 ### 🎬 **Would You Like the Next Scene?**
 
@@ -2603,4 +2496,3 @@ Here are possible next chapters:
 * 📤 **Email Notifications (SMTP/MailKit)**
 * 🌐 **Multi-Tenancy Support**
 * 🛒 **E-Commerce Cart & Checkout System**
-
