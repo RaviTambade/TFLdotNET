@@ -542,8 +542,6 @@ In C#, **value types** like `int`, `double`, `bool` **cannot hold null** by defa
 
 This is where **nullable types** come in. They allow **value types to also hold null**, representing “no value” or “undefined.”
 
----
-
 ### How Nullable Types Work in C#
 
 ```csharp
@@ -581,8 +579,6 @@ class Program
 }
 ```
 
----
-
 ### Key Points ✅
 
 1. `int?` or `Nullable<int>` allows an **integer to be null**.
@@ -610,8 +606,6 @@ void LocalNullableVariables()
 }
 ```
 
----
-
 💡 **Mentor Tip:**
 “Think of nullable types as **placeholders for optional values**. Whenever you fetch data from a database, or have computations where a value may not exist yet, nullable types give you a **safe and expressive way to represent ‘unknown’** without breaking your program.”
 
@@ -619,19 +613,16 @@ void LocalNullableVariables()
 ## 🏦 Partial Classes – Teamwork in Banking Code
 
 "Imagine you are building a **Bank Account Management system**.
-
 Two developers are working on the same `BankAccount` class:
-
 1. **Developer A** focuses on the **core data and properties** like account number, balance, and customer name.
 2. **Developer B** focuses on **business logic** like deposit, withdraw, and applying interest.
 
 Rather than one developer writing a huge class, C# allows us to **split the class into multiple files** using the **`partial` keyword**.
 
 At compile-time, the compiler **merges all parts** into a single class. This way, both developers can work **simultaneously without conflicts**.
- 
+
 
 ### Banking Example in C#
-
 **BankAccount.Data.cs** (developer A — properties/data)
 
 ```csharp
@@ -675,8 +666,6 @@ public partial class BankAccount
 }
 ```
 
- 
-
 ### Using the Partial Class
 
 ```csharp
@@ -697,8 +686,6 @@ class Program
     }
 }
 ```
-
- 
 
 ### 💡 Mentor Notes
 
@@ -724,14 +711,11 @@ class Program
 
 Imagine you’re signing a contract with someone — it clearly defines what each side promises to do. That’s exactly what **Interfaces** do in programming.
 
-
 ### What Is an Interface?
-
 An **Interface** is like an invisible handshake or a contract between:
 
 * **Providers** — who promise to deliver certain services or behaviors.
 * **Consumers** — who rely on those promises without worrying about how they’re fulfilled.
-
 
 ### Why Are Interfaces Important?
 
@@ -741,7 +725,6 @@ Interfaces let us write software that’s:
 * **Highly Cohesive** — Each piece focuses on doing its job well, nothing extra.
 
 In other words, interfaces are the blueprint for building flexible, maintainable, and scalable software systems.
-
 
 ### 💳 Interfaces – A Bank’s Contract
 

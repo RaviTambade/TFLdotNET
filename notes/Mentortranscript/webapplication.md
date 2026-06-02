@@ -6,8 +6,6 @@
 
 <img src="/images/webapp_horizvertical.png"/>
 
- ---
-
 ### 📏 **Horizontal Layers**  
 (Also called *functional* or *logical* layers.)
 
@@ -22,8 +20,6 @@
 
 👉 **Horizontal layers = What the app *does* step-by-step.**
 
----
-
 ### 🧩 **Vertical Layers**  
 (Also called *cross-cutting concerns*.)
 
@@ -37,15 +33,11 @@
 
 👉 **Vertical layers = Common services used *across* steps.**
 
----
-
 ### 🧠 **Simple Analogy**  
 Imagine building a **multi-story house**:
 
 - **Floors** (Ground floor, First floor, Second floor) = **Horizontal layers** (Each floor has a role: living, dining, sleeping).
 - **Pillars, plumbing, wiring** = **Vertical layers** (Support the whole building from bottom to top).
-
----
 
 ### ✅ **Summary Table**
 
@@ -55,8 +47,6 @@ Imagine building a **multi-story house**:
 | Flow Direction      | Top to bottom                | Across multiple layers       |
 | Examples            | Presentation, Domain, Data Access | Authentication, Logging, Error Handling |
 | Goal                | Structure of functionality   | Reusable, supportive services |
-
----
 
 ### 🌐 **Core Components of Web Application Architecture**
 
@@ -77,12 +67,6 @@ Imagine building a **multi-story house**:
 
 5. **Infrastructure Layer**  
    - Servers, cloud services, CDN, security, monitoring, deployment
-
----
-
-
-
----
 
 ### 📐 **Horizontal Layers (Functional Layers)**
 
@@ -107,8 +91,6 @@ These define what each layer does (function-wise) and are **stacked** vertically
 5. **Infrastructure Layer**  
    - Logging, caching, messaging, file systems, external integrations
 
----
-
 ### 🧭 **Vertical Layers (Cross-Cutting Concerns or Modular Areas)**
 
 These are **sliced** vertically and focus on modularization or concerns that span across layers.
@@ -124,8 +106,6 @@ Examples:
 - **Localization/Internationalization**
 
 Each vertical concern can "cut through" multiple horizontal layers. For example, logging might be needed in UI, service, and data access layers.
-
----
 
 ### 🏗️ **Example Layout of a Web App Architecture**
 
@@ -149,15 +129,9 @@ Each vertical concern can "cut through" multiple horizontal layers. For example,
 |         (across all layers)     |
 ```
 
----
-
-### ✅ Benefits of Layered Architecture
+## ✅ Benefits of Layered Architecture
 
 - **Separation of concerns**
 - **Easier testing and debugging**
 - **Improved scalability and maintainability**
 - **Independent development and deployment**
-
----
-
-If you’re building a system and want an architecture diagram or explanation tailored to your tech stack or app idea, let me know — I can sketch one out for you.

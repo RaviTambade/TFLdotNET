@@ -1,6 +1,6 @@
 
 
-##  Mentor Storytelling: Layered Architecture – Think Like an Architect
+## Layered Architecture – Think Like an Architect
 
 *"Let me tell you a story of how we used to build applications... and how we evolved."*
 

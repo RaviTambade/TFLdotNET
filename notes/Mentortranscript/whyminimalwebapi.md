@@ -1,4 +1,5 @@
-Yes, there are several advantages to using ASP.NET Minimal Web API over ASP.NET Web MVC, depending on the specific requirements and preferences of your project:
+# ASP.NET Minimal Web API over ASP.NET Web MVC
+
 
 1. **Simplicity and Minimalism**: As the name suggests, Minimal Web API offers a minimalistic approach to building web APIs. It reduces the amount of boilerplate code and configuration needed compared to traditional MVC controllers. This can lead to cleaner and more concise code, making it easier to understand and maintain.
 

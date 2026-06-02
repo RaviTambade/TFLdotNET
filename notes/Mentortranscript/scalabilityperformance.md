@@ -14,10 +14,10 @@ That’s when we realized: **Scalability and performance are not post-launch con
 
 That analogy stuck. So in .NET, we started using:
 
-✅ `async/await`
-✅ `Task-based APIs`
-✅ Asynchronous EF Core queries
-✅ `ConfigureAwait(false)` in libraries
+- ✅ `async/await`
+- ✅ `Task-based APIs`
+- ✅ Asynchronous EF Core queries
+- ✅ `ConfigureAwait(false)` in libraries
 
 📌 *Lesson:* Free up the server to handle more requests. **Every blocked thread is a lost opportunity.**
 

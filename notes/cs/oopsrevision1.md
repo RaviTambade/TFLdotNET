@@ -1,14 +1,3 @@
-When I mentor students about Object-Oriented Programming, I never start with definitions like “class is blueprint” or “object is instance.”
-Instead, I start from a real project.
-
-Because in the industry, nobody builds “Car class” or “Animal class” examples.
-
-We build assessment systems, ecommerce systems, CRM systems, ERP systems, hospital systems, banking systems.
-
-So let us understand OOP from our own project experience — TFL Assessment System.
-
----
-
 # Mentor Explaining OOP from Real Project Experience
 
 Students, imagine we are building a real-world solution:
@@ -32,7 +21,6 @@ This entire application is not one single file.
 
 It is divided into layers.
 
----
 
 # Understanding Application Layers
 
@@ -208,8 +196,6 @@ Responsibility:
 
 This is the heart of the application.
 
----
-
 ## Repository/Data Access Layer
 
 Handles database communication.
@@ -227,8 +213,6 @@ Responsibility:
 * Update records
 * Execute queries
 
----
-
 ## Entity/Model Layer
 
 Represents business objects.
@@ -243,8 +227,6 @@ Result
 ```
 
 These are real business entities represented as objects.
-
----
 
 # Object-Oriented Thinking
 
@@ -271,8 +253,6 @@ public class Student
 Why?
 
 Because object-oriented programming tries to represent real-world entities as objects.
-
----
 
 # Objects in Real Projects
 
@@ -312,8 +292,6 @@ Here:
 
 This is pure OOP.
 
----
-
 # Why OOP Became Important in Industry
 
 Imagine writing backend without OOP.
@@ -336,7 +314,6 @@ So industry adopted:
 
 These concepts help build scalable systems.
 
----
 
 # OOP Inside Multi-Layer Architecture
 
@@ -367,7 +344,6 @@ So backend acts like the brain of the system.
 
 And OOP is the language of that brain.
 
----
 
 # Two Ways Industry Organizes Modules
 
@@ -384,7 +360,6 @@ Example:
 
 Organized by technical responsibility.
 
----
 
 ## 2. Feature-Based Design
 
@@ -409,8 +384,6 @@ student/
 ```
 
 This is modern scalable architecture.
-
----
 
 # Mentor Perspective
 
@@ -438,8 +411,6 @@ But when you connect OOP with projects:
 
 Then you start thinking like a software engineer.
 
----
-
 # Industry Reality
 
 Whenever I open backend projects in:
@@ -465,8 +436,6 @@ Same OOP mindset.
 Because technologies change.
 
 But software engineering principles remain stable.
-
----
 
 # Final Understanding
 

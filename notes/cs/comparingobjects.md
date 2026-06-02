@@ -1,5 +1,4 @@
-## IComparable , IComparer
-
+## IComparable , IComparer Interfaces
 
 ### 🌅 Scene 1: A Real-Life Hiring Situation
 

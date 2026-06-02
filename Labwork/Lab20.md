@@ -9,7 +9,6 @@ using the **HR Solution domain**.
 
 This lab represents a **real production HR API** and is a **milestone lab** for employability.
 
-
 ## 🎯 Lab Objective
 
 To build a **secure HR Employee Web API** that:
@@ -18,7 +17,6 @@ To build a **secure HR Employee Web API** that:
 * Secures APIs using **JWT Authentication**
 * Implements **role-based authorization**
 * Follows **Controller → Service → Repository** flow
-
 
 ## 🧠 Concepts Covered
 
@@ -395,8 +393,6 @@ This lab:
   * Microservices
   * API Gateway
   * Cloud deployment
-
-
 
 ### 🔜 Next Advanced Labs
 

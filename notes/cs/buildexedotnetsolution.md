@@ -21,14 +21,11 @@ Your final executable is the machine.
 
 The `dotnet build` command is the construction phase.
 
-
-
 ## ✅ What happens when you type:
 
 ```bash
 dotnet build
 ```
-
 
 ## 1️⃣ MSBuild Starts the Pipeline
 
@@ -40,8 +37,6 @@ It reads:
 * `MyApp.csproj` and `MyLibrary.csproj` → to understand dependencies, SDK targets, framework versions, and build instructions
 
 In .NET 10, build optimization is faster and smarter, especially for incremental builds.
-
-
 
 ## 2️⃣ Restore Dependencies (NuGet Package Resolution)
 
@@ -67,8 +62,6 @@ obj/project.assets.json
 This helps .NET manage package versions and transitive dependencies.
 
 If your project has no external packages, this step is extremely fast.
-
-
 
 ## 3️⃣ Compilation (C# → IL → Ready for Runtime)
 
@@ -103,7 +96,6 @@ Now it is:
 
 That’s your target framework.
 
-
 ## 4️⃣ Linking Project References
 
 Because you added:
@@ -133,8 +125,6 @@ to work across projects.
 
 This is the beginning of layered architecture.
 
-
-
 ## 5️⃣ Final Output Structure
 
 After successful build:
@@ -159,8 +149,6 @@ MyApp
 
 This is professional output—not just “code running.”
 
-
-
 # ⚙ **Part 2: Execution Process (`dotnet run`)**
 
 Now the machine starts.
@@ -172,8 +160,6 @@ dotnet run --project MyApp/MyApp.csproj
 ```
 
 the real execution begins.
-
-
 
 ## 1️⃣ `dotnet run` Triggers Build (If Needed)
 
@@ -187,8 +173,6 @@ This is called **incremental build optimization**
 .NET 10 improves this significantly.
 
 Faster feedback = better developer productivity.
-
-
 
 ## 2️⃣ Runtime Execution Starts
 
@@ -227,8 +211,6 @@ Cleaner code.
 Less boilerplate.
 
 Same power.
-
-
 
 ## 3️⃣ Program Flow Begins
 
@@ -280,12 +262,9 @@ In .NET 10, `publish` becomes even more important for:
 * Kubernetes
 * Serverless systems
 
-
-
 # 💡 Mentor Wisdom: Why This Matters
 
 Because once you understand:
-
 - ✔ How C# becomes IL
 - ✔ How MSBuild manages projects
 - ✔ How NuGet resolves dependencies

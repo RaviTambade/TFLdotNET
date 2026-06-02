@@ -132,9 +132,6 @@ No SQL queries. Just C# logic.
 
 So if you're planning to build a real-world .NET Core app, **learn EF Core deeply**. It’s a skill every modern .NET developer must master — not just for productivity, but for writing cleaner, scalable applications.
 
- 
-
-
  # Entity Framework (ORM):
 Entity Framework (EF) is an object-relational mapping (ORM) framework for .NET applications, developed by Microsoft. 
 

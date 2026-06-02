@@ -170,8 +170,6 @@ class Program
 }
 ```
 
- 
-
 ### 🧾 Mentor Notes: Key Takeaways
 
 | Concept      | Real-World Analogy                             |
@@ -185,10 +183,6 @@ class Program
 | EventHandler | A generic built-in notification system         |
 | EventArgs    | Extra data in alert – like “Amount = ₹12,000”  |
 
- 
-
-### 🧪 Mentor’s Closing Thought
+ ### 🧪 Mentor’s Closing Thought
 
 > “Events in C# are like your personal alert system in software. They tell you exactly when something important happens — without needing to keep checking manually. They make your app **intelligent**, **reactive**, and **cleanly designed**. And remember, just like in life — it’s better to be **notified** than to keep asking.”
-
- 

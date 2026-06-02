@@ -1,5 +1,3 @@
- 
-
 ## 🌟 Connected Data Access 
 
 “Imagine you are running a supermarket billing counter. A customer comes in, and you directly check the price of every product from the warehouse database in real-time.
@@ -12,8 +10,6 @@ This means:
 
 This is what **Connected Data Access** is all about in ADO.NET.”
 
- 
-
 ### 📌 Key Players in Connected Model
 
 * **Connection (MySqlConnection)** → Like a telephone line. Always active while you talk.
@@ -21,7 +17,6 @@ This is what **Connected Data Access** is all about in ADO.NET.”
 * **DataReader (MySqlDataReader)** → A forward-only, read-only cursor that streams results one by one (like a scanner at the billing counter).
 
  
-
 ### ⚙️ Example: Connected Data Access with MySQL in .NET Core
 
 ```csharp
@@ -65,19 +60,13 @@ class Program
 }
 ```
 
- 
-
-### 🔑 Key Learning Points
+## 🔑 Key Learning Points
 
 * **Connection is ON** while working → live interaction.
 * **DataReader** → fast, memory efficient (but read-only & forward-only).
 * **Command** → executes SQL (SELECT, INSERT, UPDATE, DELETE).
 * Great for **real-time apps** (banking transactions, billing systems, dashboards).
 
- 
-
 ### 🧑‍🏫 Mentor Analogy Wrap-up
 
 “Think of Connected Access like a **phone call**. As long as the call is active, you’re in constant touch and getting live updates. But calls consume balance and network resources. Similarly, Connected ADO.NET gives you live data but holds the connection to the database, so you should keep it open only when needed and close it quickly after use.”
-
- 

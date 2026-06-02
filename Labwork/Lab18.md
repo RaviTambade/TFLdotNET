@@ -155,8 +155,6 @@ Employee saved asynchronously: Amit
 
 HR System Completed.
 ```
-
-
 ## 🧠 HR Analogy Mapping
 
 | Technical Concept | HR Meaning                      |

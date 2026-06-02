@@ -1,6 +1,4 @@
-
-
-**step-by-step mentor-style CLI-based guide** to create this ASP.NET Core Web API from scratch using the **.NET CLI**.
+# Create this ASP.NET Core Web API from scratch
 
 We’ll build everything using:
 
@@ -8,8 +6,6 @@ We’ll build everything using:
 * 🔹 Folder structure discipline
 * 🔹 Controllers + Models
 * 🔹 Run & Test
-
----
 
 # ✅ Step 0 – Prerequisite
 
@@ -22,17 +18,12 @@ dotnet --version
 If not installed → download from
 👉 Microsoft .NET official site
 
----
-
 # ✅ Step 1 – Create Solution Folder
 
 ```bash
 mkdir CustomerApi
 cd CustomerApi
 ```
-
----
-
 # ✅ Step 2 – Create Web API Project
 
 ```bash
@@ -44,8 +35,6 @@ Go inside project:
 ```bash
 cd CustomerService
 ```
-
----
 
 # ✅ Step 3 – Remove Default Weather API
 
@@ -64,8 +53,6 @@ rm WeatherForecast.cs
 ```
 
 (Windows PowerShell: `del` instead of `rm`)
-
----
 
 # ✅ Step 4 – Create Models Folder
 
@@ -92,8 +79,6 @@ public class Customer
 }
 ```
 
----
-
 Create Credential model:
 
 ```bash
@@ -111,8 +96,6 @@ public class Credential
     public string? Password { get; set; }
 }
 ```
-
----
 
 # ✅ Step 5 – Create Controllers
 
@@ -175,9 +158,6 @@ public class CustomersController : ControllerBase
     }
 }
 ```
-
----
-
 ## 🔹 AuthController
 
 ```bash
@@ -214,9 +194,6 @@ public class AuthController : ControllerBase
     }
 }
 ```
-
----
-
 # ✅ Step 6 – Verify Program.cs
 
 Open `Program.cs`
@@ -244,8 +221,6 @@ app.MapControllers();
 app.Run();
 ```
 
----
-
 # ✅ Step 7 – Build Project
 
 ```bash
@@ -253,8 +228,6 @@ dotnet build
 ```
 
 If successful → proceed.
-
----
 
 # ✅ Step 8 – Run Application
 
@@ -267,8 +240,6 @@ You will see something like:
 ```
 Now listening on: https://localhost:5001
 ```
-
----
 
 # ✅ Step 9 – Test Using Swagger
 
@@ -290,8 +261,6 @@ You can now test:
 * DELETE /api/customers/{id}
 * POST /api/auth
 
----
-
 # ✅ Sample JSON for Testing
 
 ## Create Customer
@@ -312,9 +281,6 @@ You can now test:
   "password": "Kalyani"
 }
 ```
-
----
-
 # 🔥 Final Folder Structure
 
 ```
@@ -329,8 +295,6 @@ CustomerService
  └── CustomerService.csproj
 ```
 
-
-
 ### The Shopkeeper, the Messenger, and the Magic Box"
 
 *Dear Students,*
@@ -343,8 +307,6 @@ The shopkeeper never talks directly to you. Instead, the **Postman** sends reque
 
 This is what a **Web API** is.
 
----
-
 ### 🌐 **So, what exactly is a Web API?**
 
 Think of Web API as a **digital shopkeeper** who sits behind the scenes and responds to client requests.
@@ -352,8 +314,6 @@ Think of Web API as a **digital shopkeeper** who sits behind the scenes and resp
 * It doesn't have a face or GUI.
 * It only **responds to requests** sent using proper methods (GET, POST, PUT, DELETE).
 * It helps **apps talk to each other** — like mobile apps, websites, even IoT devices.
-
----
 
 ### 📦 **REST: The Delivery Rules**
 
@@ -366,8 +326,6 @@ REST is like a **code of conduct** for Web APIs:
 * Use simple verbs: GET, POST, PUT, DELETE.
 * Be layered: Like having middlemen in delivery — security, logging, caching.
 
----
-
 ### 🛒 **Example: Product Store API**
 
 Let’s say you're building an online store — your **Product Web API** is your invisible shopkeeper.
@@ -379,7 +337,6 @@ Let’s say you're building an online store — your **Product Web API** is your
 
 Behind the scenes, ASP.NET Web API handles these using **Controllers**, **Routes**, and **Models**.
 
----
 
 ### 🧑‍💻 **Controller is the Shopkeeper's Brain**
 
@@ -392,8 +349,6 @@ public IActionResult GetProducts()
 
 He listens for the **GET** knock, and then uses a **service** to fetch the products — like opening a drawer and giving you what you asked for.
 
----
-
 ### 🧪 **How do we test this invisible shop?**
 
 With **Postman!**
@@ -402,7 +357,6 @@ You don’t need a fancy app to test the Web API. Just use **Postman**, type the
 
 It shows you the **response** — like a delivery receipt. It’s a brilliant way to verify if your shopkeeper is awake, responding correctly, and returning proper packages (JSON data).
 
----
 
 ### ⚖️ **Minimal API: A Street Vendor Style**
 
@@ -418,14 +372,11 @@ app.MapGet("/api/products", () => productList);
 
 It’s good for small use-cases, lightweight APIs, or quick prototypes.
 
----
-
 ### 🔍 **Mentor's Wisdom: When to Use What?**
 
 * Use **Web API (with controllers)** if your app will grow big, have layers (auth, logging), or needs clean structure.
 * Use **Minimal API** if you're building a quick backend, small services, or want faster delivery with less overhead.
 
----
 
 ### 🧠 **Closing Thoughts**
 
@@ -435,8 +386,6 @@ As software engineers, you're not just building apps — you're building **conne
 
 Learn how to **design these conversations**, how to secure them, scale them, and make them meaningful.
 
----
-
 ### 🧭 Your Practice Assignment
 
 1. Create a `Product` model with `Id`, `Name`, and `Price`.
@@ -444,14 +393,9 @@ Learn how to **design these conversations**, how to secure them, scale them, and
 3. Test your API using Postman.
 4. Reflect: Could you have done this better using controllers? Why or why not?
 
----
 
 Let’s build the **invisible internet**, one clean API at a time.
 
 Stay curious, stay humble, and keep shipping. 🚀
 
 — *Your Mentor* 🧑‍🏫
-
-
-
-

@@ -154,8 +154,6 @@ You **built a real-world system** — a store that talks to MySQL, stores produc
 
 ### **💬 Want to Continue the Story?**
 
-
-
 # 🎯 **Scene 11: Organizing the Store – Introducing Categories**
 
 **Mentor:**
@@ -167,8 +165,6 @@ What do we need?”
 
 **Mentor:**
 “Exactly. Let’s teach the system how to group products under categories.”
-
----
 
 ### ✅ Step 1: Create Category Model
 
@@ -195,8 +191,6 @@ public int CategoryId { get; set; }  // Foreign Key
 public Category? Category { get; set; }
 ```
 
----
-
 ### ✅ Step 2: Update DbContext
 
 📁 `Data/AppDbContext.cs`
@@ -215,8 +209,6 @@ protected override void OnModelCreating(ModelBuilder modelBuilder)
 }
 ```
 
----
-
 ### ✅ Step 3: Add Migration & Update Database
 
 Run these commands:
@@ -228,7 +220,6 @@ dotnet ef database update
 
 ✔ This creates a **Categories table** and adds a **CategoryId foreign key** to the Products table.
 
----
 
 # 🏗️ **Scene 12: Making the Store Manageable – Repository Pattern**
 
@@ -237,8 +228,6 @@ dotnet ef database update
 That’s like customers going directly to the warehouse — not scalable!”
 
 “We need **Repository Pattern** — trained employees who handle database work.”
-
----
 
 ### ✅ Step 4: Create Base Repository Interface
 
@@ -256,8 +245,6 @@ public interface IRepository<T> where T : class
     void Remove(T entity);
 }
 ```
-
----
 
 ### ✅ Step 5: Implement Generic Repository
 
@@ -290,15 +277,11 @@ public class Repository<T> : IRepository<T> where T : class
 }
 ```
 
----
-
 # 🔄 **Scene 13: Managing Everything Together – Unit of Work Pattern**
 
 **Mentor:**
 “Now imagine each repository is a department in your store.
 Unit of Work is like a **store manager** who ensures everything is saved together.”
-
----
 
 ### ✅ Step 6: Create Unit of Work Interface
 
@@ -314,8 +297,6 @@ public interface IUnitOfWork : IDisposable
     Task<int> CompleteAsync(); // Save changes
 }
 ```
-
----
 
 ### ✅ Step 7: Implement Unit of Work
 
@@ -344,15 +325,11 @@ public class UnitOfWork : IUnitOfWork
 }
 ```
 
----
-
 ### ✅ Step 8: Register in Program.cs (Dependency Injection)
 
 ```csharp
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 ```
-
----
 
 ### ✅ Step 9: Use Unit of Work in Controller
 
@@ -375,14 +352,11 @@ public async Task<IActionResult> Create(Product product)
 }
 ```
 
----
-
 # 🎉 **Final Scene: Mentor Smiles**
 
 **Mentor:**
 “You didn’t just build tables. You built a scalable, maintainable architecture — just like a real-world enterprise system.”
 
----
 
 # ✅ **What You Achieved:**
 
@@ -393,8 +367,6 @@ public async Task<IActionResult> Create(Product product)
 | Unit of Work Pattern          | ✅      |
 | Database updated via EF Core  | ✅      |
 | Clean Architecture            | ✅      |
-
-
 
 # 🎯 **Scene 14: The Store Gets Smarter – Introducing the Service Layer**
 
@@ -407,11 +379,9 @@ Who will handle this logic? The database guy? No.
 We need a smart employee — the **Service Layer** — who understands business rules.”
 
 The **Service Layer**:
-✅ Sits between **Controllers** and **Repositories**
-✅ Contains **business logic, validations, workflows**
-✅ Makes controllers clean and professional
-
----
+- ✅ Sits between **Controllers** and **Repositories**
+- ✅ Contains **business logic, validations, workflows**
+- ✅ Makes controllers clean and professional
 
 ## ✅ Step 1: Create Service Interfaces
 
@@ -448,8 +418,6 @@ namespace ProductCatalog.Api.Services.Interfaces
     }
 }
 ```
-
----
 
 ## ✅ Step 2: Implement Product Service (Business Logic)
 
@@ -521,8 +489,6 @@ namespace ProductCatalog.Api.Services
 }
 ```
 
----
-
 ## ✅ Step 3: Implement Category Service
 
 📁 `Services/CategoryService.cs`
@@ -563,8 +529,6 @@ namespace ProductCatalog.Api.Services
 }
 ```
 
----
-
 ## ✅ Step 4: Register Services in Dependency Injection
 
 In `Program.cs`, add:
@@ -573,9 +537,6 @@ In `Program.cs`, add:
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 ```
-
----
-
 ## ✅ Step 5: Use Service Layer in Controller
 
 📁 `Controllers/ProductsController.cs`
@@ -596,22 +557,17 @@ public async Task<IActionResult> Create(Product product)
 }
 ```
 
----
-
 ## ✅ 🎉 Scene 15: Mentor’s Wisdom
 
 **Mentor:**
 “Today, you didn't just write code.
 You designed a system like a real software architect.”
 
-✔ Controllers are now clean
-✔ Business logic is inside **Service Layer**
-✔ Database logic is inside **Repository + UoW**
-✔ EF Core handles database communication
-✔ Architecture is now scalable and professional
-
----
-
+- ✔ Controllers are now clean
+- ✔ Business logic is inside **Service Layer**
+- ✔ Database logic is inside **Repository + UoW**
+- ✔ EF Core handles database communication
+- ✔ Architecture is now scalable and professional
 
 # 🎓 **Scene 16: The Store Learns Communication Etiquette — DTOs & AutoMapper**
 
@@ -620,8 +576,6 @@ You designed a system like a real software architect.”
 
 “We need a **clean plate** — only the required information should go out.
 That’s where **DTOs (Data Transfer Objects)** come in.”
-
----
 
 ## ✅ Step 1: Create DTO Classes
 
@@ -669,8 +623,6 @@ namespace ProductCatalog.Api.DTOs
 }
 ```
 
----
-
 ## ✅ Step 2: Install AutoMapper
 
 ### 📦 Install NuGet Packages via CLI:
@@ -679,8 +631,6 @@ namespace ProductCatalog.Api.DTOs
 dotnet add package AutoMapper
 dotnet add package AutoMapper.Extensions.Microsoft.DependencyInjection
 ```
-
----
 
 ## ✅ Step 3: Create AutoMapper Profile
 
@@ -711,8 +661,6 @@ namespace ProductCatalog.Api.Mapping
 }
 ```
 
----
-
 ## ✅ Step 4: Register AutoMapper in Program.cs
 
 ```csharp
@@ -724,8 +672,6 @@ Or if this doesn’t work (depending on structure):
 ```csharp
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 ```
-
----
 
 ## ✅ Step 5: Use DTOs in Controller
 
@@ -765,9 +711,6 @@ public class ProductsController : ControllerBase
     }
 }
 ```
-
----
-
 # 💡 **Why This is Powerful?**
 
 | Without DTOs                   | With DTOs + AutoMapper         |
@@ -781,12 +724,10 @@ public class ProductsController : ControllerBase
 
 # ✅ **What You’ve Achieved So Far:**
 
-✔ Product + Category with EF Core + MySQL
-✔ Repository + Unit of Work
-✔ Service Layer (Business Logic)
-✔ DTOs + AutoMapper (Clean API Shape)
-
-
+- ✔ Product + Category with EF Core + MySQL
+- ✔ Repository + Unit of Work
+- ✔ Service Layer (Business Logic)
+- ✔ DTOs + AutoMapper (Clean API Shape)
 
 ## 🎭 **Scene 6: The Gatekeeper of Quality – FluentValidation**
 
@@ -808,7 +749,6 @@ So, the king (your application) appoints a **gatekeeper** at the entrance —
 **FluentValidation** — a powerful knight whose sole purpose is:
 ✅ Validate all inputs **before** they enter the service/business layer.
 
----
 
 ## ✅ **Why FluentValidation?**
 
@@ -820,7 +760,6 @@ So, the king (your application) appoints a **gatekeeper** at the entrance —
 | Simplifies controller code           | Keeps controllers clean and business logic separate |
 | Works harmoniously with DTOs         | Validates input before mapping                      |
 
----
 
 ## ⚙️ **Step-by-Step Integration**
 
@@ -829,8 +768,6 @@ So, the king (your application) appoints a **gatekeeper** at the entrance —
 ```bash
 dotnet add package FluentValidation.AspNetCore
 ```
-
----
 
 ### **2. Create Validator for Product DTO**
 
@@ -855,8 +792,6 @@ public class ProductCreateDtoValidator : AbstractValidator<ProductCreateDto>
 }
 ```
 
----
-
 ### **3. Register Validation in Program.cs**
 
 ```csharp
@@ -868,8 +803,6 @@ builder.Services.AddFluentValidationAutoValidation();
 builder.Services.AddValidatorsFromAssemblyContaining<ProductCreateDtoValidator>();
 ```
 
----
-
 ### **4. Use It in Controller**
 
 Your controller doesn't need `if` checks anymore like:
@@ -879,8 +812,6 @@ if(!ModelState.IsValid) { return BadRequest(ModelState); }
 ```
 
 FluentValidation does that automatically.
-
----
 
 ## 🧠 **Bonus: Custom Database Validation Example**
 
@@ -892,17 +823,15 @@ RuleFor(x => x.CategoryId)
     .WithMessage("Category does not exist");
 ```
 
----
+
 
 ## 🎯 **Final Outcome**
 
 Your project now has:
-✅ Clean separation: Controller → DTO → Validation → Service → Repository
-✅ No invalid product can enter your system
-✅ Reusable and testable validation logic
-✅ Professional-grade architecture
-
-
+- ✅ Clean separation: Controller → DTO → Validation → Service → Repository
+- ✅ No invalid product can enter your system
+- ✅ Reusable and testable validation logic
+- ✅ Professional-grade architecture
 
 # 🎭 **Scene 8: The Royal Shield – Global Exception Handling Middleware**
 
@@ -910,10 +839,10 @@ Your application is now structured beautifully with layers of validation, logic,
 
 But… what happens when unexpected things occur?
 
-❌ Database connection fails
-❌ Null reference in service
-❌ Invalid ID causes a crash
-❌ Unhandled exception breaks the API
+- ❌ Database connection fails
+- ❌ Null reference in service
+- ❌ Invalid ID causes a crash
+- ❌ Unhandled exception breaks the API
 
 If we don’t prepare for this, errors will directly reach the user — like enemies breaking into the castle from hidden tunnels.
 
@@ -921,18 +850,15 @@ So the king appoints **a Royal Shield** — **Global Exception Handling Middlewa
 
 This middleware catches all unwanted errors, logs them, and responds with a clean, friendly, consistent message.
 
----
-
 ## ✅ **Why Global Exception Handling?**
 
-| Without it ❌                      | With it ✅                        |
+| Without it ❌                      | With it ✅                     |
 | --------------------------------- | -------------------------------- |
 | Application crashes on exceptions | App stays alive and handles 🛡   |
 | Stack traces exposed to users     | Clear, safe error messages       |
 | Duplicate try-catch everywhere    | Centralized error-handling logic |
 | Hard to log & debug               | Logs + meaningful response       |
 
----
 
 ## 🏗 **Step 1: Create Custom Middleware**
 
@@ -982,8 +908,6 @@ namespace ProductCatalog.Middleware
 }
 ```
 
----
-
 ## 🛠 **Step 2: Register Middleware in Program.cs**
 
 ```csharp
@@ -999,8 +923,6 @@ app.MapControllers();
 
 app.Run();
 ```
-
----
 
 ## 🎯 **Optional: Customize Exceptions for Better Clarity**
 
@@ -1022,8 +944,6 @@ if (ex is NotFoundException)
 }
 ```
 
----
-
 ## ✅ **Final Output Example**
 
 If something wrong happens, instead of crashing, the API will respond like this:
@@ -1036,18 +956,13 @@ If something wrong happens, instead of crashing, the API will respond like this:
 }
 ```
 
----
-
 ## 🌟 **Your Kingdom Is Now Safe**
 
-✔ All unhandled exceptions are caught
-✔ No more ugly error pages
-✔ No internal technical details leaked
-✔ Users get meaningful replies
-✔ Developers get logs and control
-
----
-
+- ✔ All unhandled exceptions are caught
+- ✔ No more ugly error pages
+- ✔ No internal technical details leaked
+- ✔ Users get meaningful replies
+- ✔ Developers get logs and control
 
 ## ✅ ✅ **So what’s next?**
 
@@ -1065,8 +980,6 @@ Right now:
 
 To make your API feel clean, professional, and easy to consume — we introduce a **standard response format**.
 
----
-
 ### 🛡 Suggested Storyline Progression:
 
 ✅ Scene 8 → Global Exception Handling ✅
@@ -1078,8 +991,6 @@ To make your API feel clean, professional, and easy to consume — we introduce 
 📝 Scene 11 → Logging (Serilog)
 ⬇
 ✅ Scene 12 → Unit Testing Services, Validators, and Middleware
-
----
 
 
 # 🎭 **Scene 9: The Royal Messenger — Standard API Response Wrapper**
@@ -1101,23 +1012,20 @@ Other times:
 { "success": false, "message": "Something went wrong" }
 ```
 
-⚠️ Inconsistent.
-⚠️ Hard for front-end developers to handle.
-⚠️ Not suitable for real-world API standards.
+- ⚠️ Inconsistent.
+- ⚠️ Hard for front-end developers to handle.
+- ⚠️ Not suitable for real-world API standards.
 
 So, the king decides:
 📜 **"Every response in this kingdom must follow one format."**
 
----
-
+ 
 ## ✅ **Goal of This Scene**
 
 We’ll create a **standard response format (wrapper)** for:
-✔ Successful API responses
-✔ Error / exception responses
-✔ Validation failures
-
----
+- ✔ Successful API responses
+- ✔ Error / exception responses
+- ✔ Validation failures
 
 ## 🏗 **Step 1: Create a Generic Response Model**
 
@@ -1145,9 +1053,6 @@ namespace ProductCatalog.Wrappers
     }
 }
 ```
-
----
-
 ## 🏗 **Step 2: Use ApiResponse in Controller (Success Case)**
 
 ```csharp
@@ -1162,8 +1067,6 @@ public async Task<IActionResult> GetProduct(int id)
     return Ok(new ApiResponse<ProductDto>(product));
 }
 ```
-
----
 
 ## ✅ **Step 3: Update Global Exception Middleware to Use Wrapper**
 
@@ -1183,8 +1086,6 @@ private Task HandleExceptionAsync(HttpContext context, Exception ex)
     return context.Response.WriteAsync(JsonSerializer.Serialize(response));
 }
 ```
-
----
 
 ## ✅ **Step 4: Wrap Validation Errors**
 
@@ -1212,8 +1113,6 @@ builder.Services.Configure<ApiBehaviorOptions>(options =>
 });
 ```
 
----
-
 ## 📦 **Final Output Example (Success)**
 
 ```json
@@ -1229,8 +1128,6 @@ builder.Services.Configure<ApiBehaviorOptions>(options =>
 }
 ```
 
----
-
 ## ❌ **Final Output Example (Error / Exception)**
 
 ```json
@@ -1241,37 +1138,32 @@ builder.Services.Configure<ApiBehaviorOptions>(options =>
 }
 ```
 
----
 
 ## 🎯 **What We Achieved:**
 
-✔ Consistent API response format
-✔ Frontend developers love it — easier parsing
-✔ Works with success, validation, and exceptions
-✔ Makes API production-ready
-
-
+- ✔ Consistent API response format
+- ✔ Frontend developers love it — easier parsing
+- ✔ Works with success, validation, and exceptions
+- ✔ Makes API production-ready
 
 # 🎭 **Scene 10: The Royal Scribe – Logging with Serilog**
 
 Your kingdom (API) now has order:
-✔ Validation gates (FluentValidation)
-✔ Guard shields against crashes (Global Exception Handling)
-✔ Messengers with a standard language (API Response Wrapper)
+- ✔ Validation gates (FluentValidation)
+- ✔ Guard shields against crashes (Global Exception Handling)
+- ✔ Messengers with a standard language (API Response Wrapper)
 
 But the king still wonders…
-🕵️ “When something goes wrong, who keeps record of it?”
-📜 “Who writes down every battle, every request, every failure so we can learn and improve?”
+- 🕵️ “When something goes wrong, who keeps record of it?”
+- 📜 “Who writes down every battle, every request, every failure so we can learn and improve?”
 
 Enter **Serilog — the Royal Scribe**.
 
 Serilog records everything:
-✅ API requests
-✅ Exceptions and warnings
-✅ Business actions (Product added, Category deleted)
-✅ Logs to **Console**, **File**, or even a **Database**
-
----
+- ✅ API requests
+- ✅ Exceptions and warnings
+- ✅ Business actions (Product added, Category deleted)
+- ✅ Logs to **Console**, **File**, or even a **Database**
 
 ## 🛠 **Step 1: Install Serilog Packages**
 
@@ -1283,8 +1175,6 @@ dotnet add package Serilog.Sinks.File
 dotnet add package Serilog.Sinks.Console
 dotnet add package Serilog.Sinks.MySQL     // If saving logs to MySQL (optional)
 ```
-
----
 
 ## 🛠 **Step 2: Configure Serilog in Program.cs**
 
@@ -1303,7 +1193,6 @@ Log.Logger = new LoggerConfiguration()
 builder.Host.UseSerilog(); // Replace default logging
 ```
 
----
 
 ## 🛠 **Step 3: Log Information in Controllers / Services**
 
@@ -1338,8 +1227,6 @@ public class ProductsController : ControllerBase
 }
 ```
 
----
-
 ## 🛠 **Step 4: Log Exceptions in Middleware**
 
 Update your exception middleware:
@@ -1362,8 +1249,6 @@ private Task HandleExceptionAsync(HttpContext context, Exception ex)
 }
 ```
 
----
-
 ## 🛢 **Step 5 (Optional): Log to MySQL Database**
 
 ```csharp
@@ -1376,7 +1261,6 @@ Your connection must have a `Logs` table. Then:
 .WriteTo.MySQL(builder.Configuration.GetConnectionString("DefaultConnection"), "Logs")
 ```
 
----
 
 ## ✅ **Final Log Output Example (Console/File)**
 
@@ -1386,17 +1270,13 @@ Your connection must have a `Logs` table. Then:
 [10:20:14 ERR] System.NullReferenceException: Object reference not set to an instance of an object.
 ```
 
----
-
 ## 🎯 **What We Achieved**
 
-✔ Centralized logging using Serilog
-✔ Logs stored in console and files with dates
-✔ Optionally store in MySQL database
-✔ Debugging becomes easier and faster
-✔ Works perfectly with our API architecture
-
-
+- ✔ Centralized logging using Serilog
+- ✔ Logs stored in console and files with dates
+- ✔ Optionally store in MySQL database
+- ✔ Debugging becomes easier and faster
+- ✔ Works perfectly with our API architecture
 
 # 🎭 **Scene 11: The King’s Gate & Royal Guards — JWT Authentication & Role-Based Access Control**
 
@@ -1409,8 +1289,6 @@ The king declares:
 
 This is where **JWT (JSON Web Token) Authentication** and **Role-Based Authorization** come into play.
 
----
-
 ## ✅ **What is JWT? (Simple Explanation)**
 
 Imagine the king gives a sealed scroll (token) to a citizen after verifying their identity.
@@ -1421,16 +1299,12 @@ Imagine the king gives a sealed scroll (token) to a citizen after verifying thei
 
 That's JWT authentication.
 
----
-
 ## 🛠 **Step 1: Install JWT Authentication Packages**
 
 ```bash
 dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
 dotnet add package System.IdentityModel.Tokens.Jwt
 ```
-
----
 
 ## 🛠 **Step 2: Add JWT Settings in appsettings.json**
 
@@ -1441,8 +1315,6 @@ dotnet add package System.IdentityModel.Tokens.Jwt
   "Audience": "ProductCatalogClient"
 }
 ```
-
----
 
 ## 🛠 **Step 3: Configure JWT in Program.cs**
 
@@ -1471,8 +1343,6 @@ var app = builder.Build();
 app.UseAuthentication();   // 🔥 Very important - must be before Authorization
 app.UseAuthorization();
 ```
-
----
 
 ## 🛠 **Step 4: Create a Login Endpoint to Generate JWT Token**
 
@@ -1513,8 +1383,6 @@ private string GenerateJwtToken(string username, string role)
 }
 ```
 
----
-
 ## 🔐 **Step 5: Secure Endpoints Using [Authorize] & Roles**
 
 ```csharp
@@ -1534,7 +1402,6 @@ public async Task<IActionResult> Delete(int id)
 }
 ```
 
----
 
 ## ✅ **Final Result**
 
@@ -1545,7 +1412,7 @@ public async Task<IActionResult> Delete(int id)
 | Valid Token (Normal User)  | ✅ Can access [Authorize] endpoints |
 | Valid Token + Admin Role   | ✅ Can access Admin-only APIs       |
 
----
+
 
 ## 🎯 **What We Achieved**
 

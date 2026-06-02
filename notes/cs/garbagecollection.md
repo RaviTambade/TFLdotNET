@@ -1,7 +1,5 @@
 # Garbage Collection
 
-
-
 ### 🛍️ **Scene 1: Product Catalog Without Garbage Collection**
 
 Imagine you run a **big warehouse of products**—TVs, Laptops, Phones—all organized in racks. You, as the owner, must:

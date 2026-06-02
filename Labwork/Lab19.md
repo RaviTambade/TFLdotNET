@@ -17,8 +17,6 @@ To build an **asynchronous HR Web API** that:
 * Separates **Controller → Service → Repository**
 * Simulates real **DB / I/O latency**
 
-
-
 ## 🧠 Concepts Covered
 
 | Concept                  | Purpose                    |
@@ -307,8 +305,6 @@ Convert repository to **EF Core async**
 2. What happens if async is removed?
 3. Difference between `Task<IActionResult>` and `IActionResult`?
 4. Why async improves scalability, not speed?
-
----
 
 ## 🧩 Mentor Notes
 

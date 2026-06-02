@@ -1,9 +1,5 @@
 ## **Electronics Smart Device Management System**
 
- 
-
-## 🏫 Project Title
-
 **Design and Development of Smart Electronics Device Management System using C#**
 
 
@@ -23,17 +19,16 @@ The system must:
 You are required to design and implement this system using **C# and .NET**.
 
 
-
 ## 🎯 Project Objectives
 
 After completing this project, students will be able to:
 
-✔ Apply OOP concepts in real systems
-✔ Implement inheritance and interfaces
-✔ Use file handling for persistence
-✔ Design modular software
-✔ Simulate industry-level device management
-✔ Improve coding and documentation skills
+- ✔ Apply OOP concepts in real systems
+- ✔ Implement inheritance and interfaces
+- ✔ Use file handling for persistence
+- ✔ Design modular software
+- ✔ Simulate industry-level device management
+- ✔ Improve coding and documentation skills
 
 
 ## 🧩 Technologies Used
@@ -79,8 +74,6 @@ After completing this project, students will be able to:
 * Manages warranty period
 * Checks validity
 
----
-
 ### 5️⃣ Service Module
 
 * Interface `IServiceable`
@@ -108,8 +101,6 @@ SmartDevice → IServiceable
 FileManager
 ```
 
-
-
 ## 🔧 Functional Requirements
 
 The system must:
@@ -121,7 +112,6 @@ The system must:
 - ✔ Perform servicing
 - ✔ Save data to file
 - ✔ Load data from file
-
 
 ## 🖥️ Sample Menu (Console UI)
 
@@ -193,8 +183,6 @@ SmartDeviceProject
 | Presentation  | 10      |
 | **Total**     | **100** |
 
-
-
 ## 🚀 Extension Tasks (Bonus)
 
 (For Advanced Students)
@@ -210,11 +198,11 @@ SmartDeviceProject
 
 After completing this project, students will be able to:
 
-✅ Design real-world software systems
-✅ Apply OOP in production-style code
-✅ Handle device lifecycle
-✅ Build scalable applications
-✅ Work in teams
+- ✅ Design real-world software systems
+- ✅ Apply OOP in production-style code
+- ✅ Handle device lifecycle
+- ✅ Build scalable applications
+- ✅ Work in teams
 
 
 ## 🧑‍🏫 Mentor Note (Your Style)

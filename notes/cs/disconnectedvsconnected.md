@@ -19,8 +19,6 @@
 
 👉 This is exactly how **ADO.NET Connected vs Disconnected** models work.
 
----
-
 ## ⚡ Connected Data Access
 
 * Uses **Connection, Command, DataReader**.
@@ -29,8 +27,6 @@
 * Best for **real-time systems** (e.g., ATM balance check, billing counters).
 
 **Analogy:** You sit in the library and keep reading without bringing the book home.
-
----
 
 ## ⚡ Disconnected Data Access
 
@@ -41,8 +37,6 @@
 
 **Analogy:** You borrow the book, study at home, and later return updates to the library.
 
----
-
 ## 📊 Comparison Table
 
 | Feature            | Connected (DataReader)                  | Disconnected (DataSet/DataAdapter)           |
@@ -52,8 +46,6 @@
 | **Data Access**    | Forward-only, Read-only                 | Can read, edit, update, delete               |
 | **Use Case**       | Real-time operations (banking, billing) | Reporting, caching, offline edits            |
 | **Resource Usage** | Higher on DB server                     | Lower (less connections)                     |
-
----
 
 ## 🧑‍🏫 Mentor Wrap-up
 

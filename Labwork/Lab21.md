@@ -365,12 +365,11 @@ builder.Services.AddSingleton<JwtTokenService>();
 
 | Interview Question   | This Lab Covers |
 | -------------------- | --------------- |
-| Clean Architecture   | ✅               |
-| SOLID                | ✅               |
-| Async API design     | ✅               |
-| JWT Security         | ✅               |
-| Real-world structure | ✅               |
-
+| Clean Architecture   | ✅              |
+| SOLID                | ✅              |
+| Async API design     | ✅              |
+| JWT Security         | ✅              |
+| Real-world structure | ✅              |
 
 ## 🧠 Mentor Closing Note (Very Important)
 

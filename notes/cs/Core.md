@@ -20,7 +20,6 @@
 
 So, it’s not just a framework. It’s a philosophy of building modern, maintainable, and cross-platform applications.”
 
-
 ### 🧱 Phase 2: The Building Blocks of .NET
 
 "Now let’s peek under the hood. What are the parts of this giant .NET machine?"
@@ -113,8 +112,6 @@ No manual `delete` calls like in C++ — it’s all managed.
 C# is like that brilliant engineer in the lab — smart, disciplined, expressive. It’s cross-platform, modern, and gives you high performance without compromising on developer experience."
 
 From web apps to cloud APIs, from desktop tools to games — C# can do it all.
-
- 
 
 ### 👣 Final Thoughts – Walking Through the Lab
 

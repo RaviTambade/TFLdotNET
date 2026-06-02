@@ -1,5 +1,5 @@
 
-## 📘 **Problem Statement: Electronics Device Management System**
+## 📘 ** Electronics Device Management System**
 
 ### 🏭 Background
 
@@ -287,8 +287,6 @@ public class SmartDevice : ElectronicsProduct, IServiceable
 * Polymorphism
 * Composition
 
- 
-
 # ✅ 4. File-Based Data Storage (Using System.IO)
 
 We will save device details in a file.
@@ -324,8 +322,6 @@ public class FileManager
 ```
 
 👉 Demonstrates **File I/O**.
-
- 
 
 # ✅ 5. Updated Main Program (Testing Everything)
 
@@ -377,8 +373,6 @@ public class Program
 }
 ```
 
-  
-
 # 📌 Architecture After Extension
 
 ```
@@ -394,9 +388,6 @@ SmartDevice  ------> IServiceable
 
 FileManager  ---> File Storage
 ```
-
- 
-
 # 🎯 Concepts Covered
 
 | Feature           | Concept                    |
@@ -407,8 +398,6 @@ FileManager  ---> File Storage
 | FileManager       | File I/O                   |
 | IsUnderWarranty() | Business Logic             |
 | Service()         | Abstraction                |
-
- 
 
 # 🧠 Real-World Mapping
 

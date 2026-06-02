@@ -209,9 +209,6 @@ namespace Banking
 }
 ```
 
-
-
-
 ## 5️⃣ Driver: **Program.cs**
 
 👉 File: `BankingApp/Program.cs`
@@ -236,8 +233,6 @@ namespace BankingApp
     }
 }
 ```
-
- 
 
 ## 6️⃣ Build & Run
 
@@ -269,8 +264,6 @@ dotnet run --project BankingApp
 * Developers working on Linux/macOS.
 * CI/CD automation.
 * Minimalists who like full control.
-
----
 
 ### 2️⃣ **Visual Studio Code (VS Code)** – *The Motorbike*
 
@@ -313,15 +306,11 @@ dotnet run --project BankingApp
 | Performance    | Fastest                | Lightweight              | Heavy but powerful                 |
 | Best For       | Learning, CI/CD, Linux | Students, cross-platform | Enterprise, Windows devs           |
 
-
-
 # 🎯 Mentor Wrap-up
 
 * **.NET CLI** is the **foundation** — you must know it.
 * **VS Code** is the **practical, portable choice** for modern devs.
 * **Visual Studio IDE** is the **enterprise powerhouse** when you need everything integrated in one place.
-
- 
 
 # 👨‍🏫 CLI vs Visual Studio – *Manual Tools vs Power Tools*
 
@@ -332,7 +321,6 @@ Imagine you are a **carpenter**.
 
 Both give you a **chair** at the end — but the experience and *control* are different.
 
- 
 ## 🖥️ Visual Studio IDE (Menu-Driven UI)
 
 When we use **Visual Studio**:
@@ -353,7 +341,6 @@ So, Visual Studio is like a **menu-driven wrapper** over the **same dotnet CLI c
 2. **Portability** – They can work on Linux, macOS, or CI/CD pipelines (no Visual Studio).
 3. **Automation** – CLI fits naturally into DevOps pipelines (Jenkins, GitHub Actions, Azure DevOps).
 4. **Confidence** – If IDE crashes or isn’t available, they can still build/run/test everything.
-
  
 
 ## 🎯 Mentor’s Tip

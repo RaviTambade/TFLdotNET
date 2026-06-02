@@ -44,8 +44,6 @@ public class Product
     }
 }
 
-
-
 Product[] products = new Product[5]
 {
     new Product(101, "Mouse", 500),
@@ -54,14 +52,9 @@ Product[] products = new Product[5]
     new Product(104, "Laptop", 55000),
     new Product(105, "Pen Drive", 700)
 };
-
-
 ```
 
-
-
 Simple. Fast. But limited.
-
 
 ### 🧮 Multidimensional Arrays (2D Tables)
 
@@ -105,7 +98,6 @@ Product[][] products = new Product[3][]
         new Product(109, "Charger", 1200)
     }
 };
-
 
 using System;
 
@@ -172,9 +164,6 @@ class Program
     }
 }
 
-
-
-
 ```
 
 ## 📦 Indexers — Smart Arrays with Custom Logic
@@ -187,14 +176,11 @@ public string this[int index]
     get { return titles[index]; }
     set { titles[index] = value; }
 }
-
-
 ```
+
 Very useful when building custom containers.
 
 Sure! Let me show you how to create a **Catalog class that contains a List of Products** and allows accessing products using an **indexer**—just like using an array (`catalog[0]`).
-
----
 
 ### ✅ Step 1: Product Class
 
@@ -218,8 +204,6 @@ public class Product
     }
 }
 ```
-
----
 
 ### ✅ Step 2: Catalog Class with **Indexer**
 
@@ -262,9 +246,6 @@ public class Catalog
     }
 }
 ```
-
----
-
 ### ✅ Step 3: Use the Catalog and Indexer in Main()
 
 ```csharp
@@ -296,8 +277,6 @@ class Program
 }
 ```
 
----
-
 ### ✅ Output:
 
 ```
@@ -309,18 +288,15 @@ All Products:
 103 - Monitor - ₹7000
 ```
 
----
 
 Let us enhance the **Catalog class** by adding:
 
 ### ✅ What's Coming Next:
 
-✔ **Overloaded indexer to access Product by Name (string key)**
-✔ **Methods to search products by ID or Name**
-✔ **Method to remove products**
-✔ **Sort products by Price or Name**
-
----
+- ✔ **Overloaded indexer to access Product by Name (string key)**
+- ✔ **Methods to search products by ID or Name**
+- ✔ **Method to remove products**
+- ✔ **Sort products by Price or Name**
 
 ### ✅ Enhanced Catalog Class with All Features
 
@@ -420,8 +396,6 @@ public class Catalog
 }
 ```
 
----
-
 ### ✅ Usage in Main()
 
 ```csharp
@@ -458,7 +432,6 @@ class Program
 }
 ```
 
----
 
 ### ✅ Output:
 
@@ -478,12 +451,7 @@ After removing Keyboard:
 101 - Mouse - ₹500
 ```
 
----
-
-
-
 ## 🧰 Time for the Modern Tools — **Generic Collections**
-
 > *"Arrays are like regular drawers. But C# gives us **modular, adjustable, self-organizing shelves** through the generic collection framework."*
 
 ### ✅ Why Go Generic?
@@ -554,7 +522,6 @@ You’ll find more specialized collections in:
 * `System.Collections.Concurrent` (for multi-threaded apps)
 
 ## 🌟 Summary: Why Collections Matter
-
 > *"In life, you don’t store all your tools in one bag — you organize them by use: daily tools, gardening tools, emergency tools. Collections help you do that in code."*
 
 ### ✅ Benefits Recap:
@@ -565,13 +532,10 @@ You’ll find more specialized collections in:
 * Sorted, searchable, and scalable
 * Tailored to real-world data needs
 
-
 ## 🧭 Where Do We Use These?
-
 > *“Sir, why should we learn all this?”*
 > Good question! You’ll need collections in almost **every project** — from a **shopping cart**, to **chat history**, to **user sessions**, to **caching layers**.
 >
 > *Learn them well — and your software will be organized, efficient, and smart.* ✅
-
 
 Let’s keep learning, let’s keep growing 🌱

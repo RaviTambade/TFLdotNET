@@ -66,8 +66,6 @@ You can choose the language that best matches your development style:
 
 Plus support for CLI-based languages and interoperability with tools like IronPython and others.
 
----
-
 ### 🚦 .NET Runtime (CoreCLR)
 
 The modern **.NET Runtime (CoreCLR)** is the execution engine behind .NET 10:
@@ -80,13 +78,9 @@ Supports cross-platform execution across Windows, Linux, macOS, containers, clou
 
 Provides memory management, garbage collection, security, threading, and runtime optimization
 
----
-
 ### 🎨 Application Model Frameworks
 
 Each application domain has its own needs. .NET 10 provides specialized frameworks for every scenario:
-
----
 
 ### 🌍 Web Applications – ASP.NET Core / Blazor
 
@@ -99,8 +93,6 @@ Build:
 * Interactive UI with Blazor Server and Blazor WebAssembly
 
 Built-in authentication, authorization, caching, security, and cloud deployment support
-
----
 
 ### 📱 Mobile Applications – .NET MAUI
 
@@ -115,8 +107,6 @@ Native performance with shared business logic and modern UI components
 
 (*Xamarin has now largely transitioned into .NET MAUI in modern .NET development*)
 
----
-
 ### 🖥️ Desktop Applications – WinForms / WPF
 
 Create powerful desktop applications with:
@@ -125,8 +115,6 @@ Create powerful desktop applications with:
 * WPF for rich UI, advanced rendering, and enterprise desktop systems
 
 Strong long-term enterprise support continues in .NET 10
-
----
 
 ### 🧠 AI & Machine Learning – ML.NET + AI Integration
 
@@ -139,8 +127,6 @@ Develop intelligent applications using:
 
 .NET 10 expands support for AI-ready enterprise solutions
 
----
-
 ### 🌐 IoT Applications – .NET IoT Libraries
 
 Build applications for:
@@ -150,8 +136,6 @@ Build applications for:
 * Embedded systems
 * Industrial automation
 * Edge computing solutions
-
----
 
 ### 📦 NuGet Packages
 
@@ -167,8 +151,6 @@ Thousands of reusable libraries help accelerate development for:
 * Cloud services
 * AI integration
 
----
-
 ### 🌩️ Cloud-Native & Modern DevOps
 
 .NET 10 is designed for modern distributed systems and cloud-first architecture:
@@ -183,9 +165,6 @@ Thousands of reusable libraries help accelerate development for:
 
 - 🤖 Ready for microservices, distributed apps, and AI-powered cloud solutions
 
-
-
 ## 🌱 Begin Your Learning Journey
 
 This repo is organized to help you **learn by doing**:
-
