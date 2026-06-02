@@ -2212,7 +2212,7 @@ Task → ThreadPool Queue → Worker Thread → Execution
 # 🔥 Key Differences
 
 | Feature           | Thread Scheduling | Task Scheduling     |
-| -- | -- | - |
+
 | Managed by        | Operating System  | .NET Runtime (CLR)  |
 | Level             | Low-level         | High-level          |
 | Unit              | Thread            | Task                |
