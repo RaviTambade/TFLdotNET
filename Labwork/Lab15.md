@@ -1,11 +1,3 @@
-Below is a **complete, mentor-style Lab Assignment** focused on
-👉 **JSON Serialization & Deserialization**
-using the **HR Employee Solution domain**, written in the **same format and depth** as your earlier labs.
-
-This lab prepares students for **Web API, REST, Microservices, and data exchange** concepts.
-
----
-
 # 🧪 Lab Assignment
 
 ## **JSON Serialization & Deserialization – HR Employee Solution**

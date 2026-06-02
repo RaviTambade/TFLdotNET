@@ -1,11 +1,3 @@
-Below is a **complete, industry-aligned Lab Assignment** combining
-👉 **LINQ** + **Repository Pattern**
-using the **HR Solution Domain**, written in the **same mentor-driven, step-by-step format** you’ve been following.
-
-This lab is a **bridge lab** between **collections/LINQ** and **Clean Architecture + EF Core**.
-
----
-
 # 🧪 Lab Assignment
 
 ## **LINQ + Repository Pattern – HR Solution**

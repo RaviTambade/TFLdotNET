@@ -1,5 +1,3 @@
-
-
 # 🧪 Lab 9: SOLID Principles Mapped to HR Domain
 This is the **right sequencing**. After Clean Architecture, **SOLID** becomes crystal clear.
 
@@ -7,8 +5,6 @@ Below is **🧪 Lab 9**, designed as a **direct continuation** of your HR Clean 
 ## 🎯 Lab Title
 
 **Applying SOLID Design Principles in an HR Management System**
-
----
 
 ## 🎯 Lab Objective
 
@@ -19,8 +15,6 @@ By the end of this lab, students will:
 * Apply SOLID in HR domain classes
 * Write **maintainable, extensible, testable code**
 * Be interview-ready with **real examples**
-
----
 
 ## 🧠 What is SOLID?
 
@@ -34,8 +28,6 @@ I – Interface Segregation
 D – Dependency Inversion
 ```
 
----
-
 ## 🏗 HR Domain Context (Reminder)
 
 ```
@@ -45,13 +37,9 @@ Employee
  └── HRManager
 ```
 
----
-
 # 🔴 S — Single Responsibility Principle (SRP)
 
 > **A class should have only ONE reason to change**
-
----
 
 ## ❌ Bad Design
 
@@ -65,8 +53,6 @@ public class EmployeeManager
 ```
 
 ❌ Too many responsibilities
-
----
 
 ## ✅ Good Design (HR Domain)
 
@@ -82,8 +68,6 @@ NotificationService  → Communication
 * Storage → Repository
 * Email → Notification service
 
----
-
 ## 🧪 Student Task (SRP)
 
 Split `EmployeeManager` into:
@@ -92,13 +76,9 @@ Split `EmployeeManager` into:
 * `EmployeeRepository`
 * `NotificationService`
 
----
-
 # 🔴 O — Open / Closed Principle (OCP)
 
 > **Open for extension, closed for modification**
-
----
 
 ## ❌ Bad Design
 
@@ -110,8 +90,6 @@ else if(emp is SalesManager)
 ```
 
 ❌ Code breaks when new role is added
-
----
 
 ## ✅ Good Design (Polymorphism)
 
@@ -125,7 +103,6 @@ public abstract class Employee
 📌 New roles → new classes
 📌 Existing code → unchanged
 
----
 
 ## 🧪 Student Task (OCP)
 
@@ -137,13 +114,9 @@ ContractEmployee : Employee
 
 Without changing any salary logic.
 
----
-
 # 🔴 L — Liskov Substitution Principle (LSP)
 
 > **Derived classes must be substitutable for base classes**
-
----
 
 ## ❌ Violation Example
 
@@ -159,8 +132,6 @@ public class Intern : Employee
 
 ❌ Breaks expectations
 
----
-
 ## ✅ Correct Design
 
 ```csharp
@@ -175,8 +146,6 @@ public class Intern : Employee
 
 📌 Program continues safely
 
----
-
 ## 🧪 Student Task (LSP)
 
 Verify:
@@ -187,13 +156,9 @@ List<Employee> employees;
 
 Works for **all employee types**.
 
----
-
 # 🔴 I — Interface Segregation Principle (ISP)
 
 > **Many small interfaces are better than one big interface**
-
----
 
 ## ❌ Bad Interface
 
@@ -209,8 +174,6 @@ public interface IEmployeeActions
 
 ❌ Forces unnecessary implementation
 
----
-
 ## ✅ Good Design (HR Domain)
 
 ```csharp
@@ -221,19 +184,13 @@ ILeaveApprover
 
 📌 Implement only what is needed
 
----
-
 ## 🧪 Student Task (ISP)
 
 Refactor a large interface into **role-based interfaces**.
 
----
-
 # 🔴 D — Dependency Inversion Principle (DIP)
 
 > **Depend on abstractions, not concretions**
-
----
 
 ## ❌ Bad Design
 
@@ -245,8 +202,6 @@ EmployeeService service = new EmployeeService(
 
 ❌ High-level depends on low-level
 
----
-
 ## ✅ Good Design
 
 ```csharp
@@ -257,7 +212,6 @@ EmployeeService service = new EmployeeService(repo);
 📌 Interfaces in Application layer
 📌 Implementations in Infrastructure
 
----
 
 ## 🧪 Student Task (DIP)
 
@@ -275,7 +229,6 @@ FileEmployeeRepository
 
 Without touching service code.
 
----
 
 ## 🧠 SOLID Summary Table (HR Mapping)
 
@@ -287,35 +240,25 @@ Without touching service code.
 | ISP       | Role-based HR capabilities    |
 | DIP       | Services depend on interfaces |
 
----
-
 ## 📝 Final Lab Assignment (Mandatory)
 
 ### 🧪 Task 1
 
 Create a diagram mapping **SOLID → HR classes**
 
----
-
 ### 🧪 Task 2
 
 Identify **2 SOLID violations** in your earlier labs and fix them.
 
----
-
 ### 🧪 Task 3
 
 Write **one interview explanation** per SOLID principle using HR example.
-
----
 
 ### 🧪 Task 4 (Thinking Task)
 
 Answer:
 
 > Which SOLID principle is most critical for Microservices and why?
-
----
 
 ## 🎓 Mentor Note (Transflower Learning)
 
@@ -327,5 +270,3 @@ If students **master this lab**, they are:
 * Architecture-ready
 * Framework-independent
 * Industry-aligned
-
- 

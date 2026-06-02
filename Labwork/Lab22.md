@@ -1,17 +1,6 @@
-
-
-
----
-
-# 🎯 Mock Interview Questions
-
-Below is a **Project-Based Mock Interview Question Set** designed **specifically around Clean Architecture HR Management API Capstone**.
-
-
-
 ## **Clean Architecture HR API – Project Based**
 
----
+Below is a **Project-Based Mock Interview Question Set** designed **specifically around Clean Architecture HR Management API Capstone**.
 
 ## 🧩 SECTION 1: Project Understanding (Warm-Up)
 
@@ -25,7 +14,6 @@ Below is a **Project-Based Mock Interview Question Set** designed **specifically
 
 ✅ *Expected focus:* clarity, domain understanding, API purpose
 
----
 
 ### 2️⃣ What are the major layers in your project?
 
@@ -36,8 +24,6 @@ Below is a **Project-Based Mock Interview Question Set** designed **specifically
 
 ✅ *Expected answer:* Domain → Application → Infrastructure → API
 
----
-
 ### 3️⃣ Why did you introduce DTOs?
 
 **Follow-ups:**
@@ -47,7 +33,6 @@ Below is a **Project-Based Mock Interview Question Set** designed **specifically
 
 ✅ *Expected answer:* encapsulation, security, versioning
 
----
 
 ## 🧱 SECTION 2: Clean Architecture (Core Evaluation)
 
@@ -60,8 +45,6 @@ Below is a **Project-Based Mock Interview Question Set** designed **specifically
 
 🧠 *Look for:* dependency rule, inward dependency
 
----
-
 ### 5️⃣ Why is your Domain project free from EF, Web, and JWT?
 
 **Follow-ups:**
@@ -70,7 +53,6 @@ Below is a **Project-Based Mock Interview Question Set** designed **specifically
 
 ✅ *Expected:* domain purity, testability
 
----
 
 ### 6️⃣ What would break if I removed Infrastructure project?
 
@@ -79,7 +61,6 @@ Below is a **Project-Based Mock Interview Question Set** designed **specifically
 * Can Application still compile?
 * Why is that powerful?
 
----
 
 ## 🧩 SECTION 3: Repository & Service Pattern
 
@@ -90,7 +71,6 @@ Below is a **Project-Based Mock Interview Question Set** designed **specifically
 * Can Controller call Repository directly?
 * What business logic exists in Service?
 
----
 
 ### 8️⃣ Where do you apply LINQ in your project?
 
@@ -99,7 +79,6 @@ Below is a **Project-Based Mock Interview Question Set** designed **specifically
 * Why not LINQ in Controller?
 * Where does mapping happen?
 
----
 
 ### 9️⃣ How would you replace in-memory repository with EF Core?
 
@@ -110,7 +89,6 @@ Below is a **Project-Based Mock Interview Question Set** designed **specifically
 
 💡 *Key insight:* Infrastructure replacement
 
----
 
 ## 🔄 SECTION 4: Async / Await
 
@@ -121,8 +99,6 @@ Below is a **Project-Based Mock Interview Question Set** designed **specifically
 * What problem does async solve?
 * What happens if you block threads?
 
----
-
 ### 1️⃣1️⃣ What would happen if you forget `await`?
 
 **Follow-ups:**
@@ -130,7 +106,6 @@ Below is a **Project-Based Mock Interview Question Set** designed **specifically
 * What does Task represent?
 * How does ASP.NET handle it?
 
----
 
 ### 1️⃣2️⃣ Is async always faster?
 
@@ -139,7 +114,6 @@ Below is a **Project-Based Mock Interview Question Set** designed **specifically
 * CPU-bound vs IO-bound?
 * Example from your project?
 
----
 
 ## 🔐 SECTION 5: JWT Security (High-Weight)
 
@@ -151,7 +125,6 @@ Below is a **Project-Based Mock Interview Question Set** designed **specifically
 Login → Token → Header → Middleware → Controller
 ```
 
----
 
 ### 1️⃣4️⃣ Where is authentication handled?
 
@@ -160,7 +133,6 @@ Login → Token → Header → Middleware → Controller
 * Controller or middleware?
 * What happens before controller executes?
 
----
 
 ### 1️⃣5️⃣ Difference between Authentication & Authorization?
 
@@ -169,7 +141,6 @@ Login → Token → Header → Middleware → Controller
 * Which one uses Roles?
 * Which one checks identity?
 
----
 
 ### 1️⃣6️⃣ Why is JWT stateless?
 
@@ -178,7 +149,6 @@ Login → Token → Header → Middleware → Controller
 * How does scaling benefit?
 * Any drawback?
 
----
 
 ### 1️⃣7️⃣ Where are Claims used?
 
@@ -187,7 +157,6 @@ Login → Token → Header → Middleware → Controller
 * How is role extracted?
 * Who validates claims?
 
----
 
 ## 🧠 SECTION 6: SOLID Principles (Mapping)
 
@@ -200,8 +169,6 @@ Login → Token → Header → Middleware → Controller
 * Repository
 * Token service
 
----
-
 ### 1️⃣9️⃣ Where is Dependency Inversion used?
 
 **Follow-ups:**
@@ -209,7 +176,6 @@ Login → Token → Header → Middleware → Controller
 * Which interfaces?
 * Why constructor injection?
 
----
 
 ### 2️⃣0️⃣ How does Open-Closed principle help your design?
 
@@ -218,7 +184,6 @@ Login → Token → Header → Middleware → Controller
 * Adding new role
 * Adding new DB
 
----
 
 ## 🧪 SECTION 7: Error Handling & Stability
 
@@ -229,7 +194,6 @@ Login → Token → Header → Middleware → Controller
 * Where will middleware live?
 * Why not try-catch everywhere?
 
----
 
 ### 2️⃣2️⃣ What happens if JWT token expires?
 
@@ -238,7 +202,6 @@ Login → Token → Header → Middleware → Controller
 * HTTP status code?
 * Frontend responsibility?
 
----
 
 ### 2️⃣3️⃣ How would you add logging?
 
@@ -247,7 +210,7 @@ Login → Token → Header → Middleware → Controller
 * Which layer?
 * Why not Domain?
 
----
+
 
 ## 🧠 SECTION 8: Performance & Scalability
 
@@ -258,7 +221,6 @@ Login → Token → Header → Middleware → Controller
 * Stateless services
 * Load balancer
 
----
 
 ### 2️⃣5️⃣ What changes are needed to convert this into Microservices?
 
@@ -266,8 +228,6 @@ Login → Token → Header → Middleware → Controller
 
 * Which services?
 * Shared vs independent DB?
-
----
 
 ## 🎯 SECTION 9: Design Thinking (Scenario-Based)
 
@@ -279,7 +239,6 @@ Login → Token → Header → Middleware → Controller
 * DTO change
 * Role check
 
----
 
 ### 2️⃣7️⃣ HR wants audit logs for employee creation.
 
@@ -288,16 +247,12 @@ Login → Token → Header → Middleware → Controller
 * Middleware or service decorator
 * Logging infrastructure
 
----
-
 ### 2️⃣8️⃣ HR wants API versioning.
 
 **Expected:**
 
 * DTO versioning
 * Controller routing
-
----
 
 ## 🧠 SECTION 10: Final Judgment Questions
 
@@ -310,7 +265,6 @@ Login → Token → Header → Middleware → Controller
 * Refresh tokens
 * CI/CD
 
----
 
 ### 3️⃣0️⃣ Why should we hire you as a backend developer?
 
@@ -321,19 +275,19 @@ Login → Token → Header → Middleware → Controller
 * Security awareness
 * Async understanding
 
----
+
 
 ## 🏁 Evaluation Rubric (Quick)
 
-| Area                       | Weight |
-| -------------------------- | ------ |
+| Area                       | Weight       |
+| -------------------------- | -------------|
 | Architecture Understanding | ⭐⭐⭐⭐   |
 | Security (JWT)             | ⭐⭐⭐⭐   |
-| Async & Performance        | ⭐⭐⭐    |
-| SOLID Principles           | ⭐⭐⭐    |
+| Async & Performance        | ⭐⭐⭐      |
+| SOLID Principles           | ⭐⭐⭐      |
 | Communication              | ⭐⭐⭐⭐   |
 
----
+ 
 
 ## 🧠 Mentor Tip for Students
 
@@ -342,14 +296,3 @@ Login → Token → Header → Middleware → Controller
 
 Interviewers **hire clarity, not code quantity**.
 
----
-
-### 🔜 Want Next?
-
-I can provide:
-📄 **Model Answers (HR-style explanation)**
-🎤 **Mock Interview Script (Interviewer ↔ Candidate)**
-📊 **Scoring Sheet for Faculty**
-🎓 **Placement Readiness Certificate Criteria**
-
-Just say 👍

@@ -1,10 +1,3 @@
-Below is a **hands-on Lab Assignment** designed **in the same HR Solution format** you’ve been using, focused on **C# keywords**
-👉 `ref`, `out`, `params`, and `static`
-
-This lab fits well for **foundation-level .NET students** and aligns with your **mentor-style, domain-driven teaching approach**.
-
----
-
 # 🧪 Lab Assignment: C# Keywords (`ref`, `out`, `params`, `static`)
 
 ### **HR Domain – Employee Management**

@@ -1,5 +1,5 @@
 
-#  The `fixed` Statement in C#
+# The `fixed` Statement in C#
 
 ##  Why do we need `fixed`?
 
@@ -26,7 +26,7 @@ Imagine:
 
 So your address becomes useless.
 
-## 🌱 Solution: `fixed`
+## Solution: `fixed`
 
 > `fixed` tells the Garbage Collector:
 > ❌ “Do NOT move this object in memory.”
@@ -81,8 +81,6 @@ class Program
     }
 }
 ```
-
-
 
 # Step 3: What is happening internally?
 

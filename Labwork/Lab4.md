@@ -6,8 +6,6 @@ Below is **🧪 Lab 4**, focused on **Object-Oriented Programming (OOP) in C#** 
 
 **Designing an Employee Hierarchy using Abstraction, Inheritance, and Polymorphism**
 
-
-
 ## 🎯 Lab Objective
 
 By the end of this lab, students will be able to:
@@ -227,5 +225,3 @@ Students will observe:
 > “Frameworks change.
 > OOP principles never change.
 > Master this, and any language becomes easy.”
-
-

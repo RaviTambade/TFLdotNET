@@ -1,12 +1,8 @@
-
-
 # 🧪 Lab 8: Clean Architecture Layers (HR Domain)
 
 ## 🎯 Lab Title
 
 **Designing a Clean Architecture–based HR System**
-
----
 
 ## 🎯 Lab Objective
 
@@ -18,8 +14,6 @@ By the end of this lab, students will:
 * Apply **interfaces + DI + Repository**
 * Build **enterprise-ready architecture**
 * Prepare for **ASP.NET Core / Microservices**
-
----
 
 ## 🧠 Why Clean Architecture?
 
@@ -36,8 +30,6 @@ Problems:
 * Framework-dependent
 * Difficult to maintain
 
----
-
 ### ✅ Clean Architecture Rule
 
 > **Dependencies always point inward**
@@ -47,8 +39,6 @@ UI → Application → Domain
            ↑
       Infrastructure
 ```
-
----
 
 ## 🏗 Clean Architecture Layers (HR Domain)
 
@@ -63,8 +53,6 @@ UI → Application → Domain
 │ Infrastructure (Data Access) │
 └──────────────────────────────┘
 ```
-
----
 
 ## 📁 Step 1: Create Solution Structure
 
@@ -84,7 +72,6 @@ dotnet new classlib -n HR.Infrastructure
 dotnet new console  -n HR.Presentation
 ```
 
----
 
 ## ➕ Step 3: Add Projects to Solution
 
@@ -94,8 +81,6 @@ dotnet sln add src\HR.Application\HR.Application.csproj
 dotnet sln add src\HR.Infrastructure\HR.Infrastructure.csproj
 dotnet sln add src\HR.Presentation\HR.Presentation.csproj
 ```
-
----
 
 ## 🔗 Step 4: Set Dependency Rules (IMPORTANT)
 
@@ -109,8 +94,6 @@ dotnet add src\HR.Presentation\HR.Presentation.csproj reference src\HR.Applicati
 
 * Domain depends on NOTHING
 * Infrastructure never referenced by Domain
-
----
 
 ## 🧩 Step 5: Domain Layer (Pure Business Rules)
 
@@ -134,8 +117,6 @@ dotnet add src\HR.Presentation\HR.Presentation.csproj reference src\HR.Applicati
 * Database
 * Framework code
 
----
-
 ## 🧩 Step 6: Application Layer (Use Cases)
 
 ### 📄 `HR.Application/Interfaces/IEmployeeRepository.cs`
@@ -151,8 +132,6 @@ public interface IEmployeeRepository
     List<Employee> GetAll();
 }
 ```
-
----
 
 ### 📄 `HR.Application/Services/EmployeeService.cs`
 
@@ -187,8 +166,6 @@ public class EmployeeService
 
 * Contains **business workflows**
 * Depends only on **interfaces**
-
----
 
 ## 🧩 Step 7: Infrastructure Layer (Data Access)
 
@@ -225,8 +202,6 @@ public class InMemoryEmployeeRepository : IEmployeeRepository
   * SQL
   * MongoDB
 
----
-
 ## 🧩 Step 8: Presentation Layer (Console App)
 
 ### 📄 `Program.cs`
@@ -256,8 +231,6 @@ foreach (var emp in service.GetEmployees())
 }
 ```
 
----
-
 ## 🧠 What Students Must Clearly Understand
 
 | Layer          | Responsibility |
@@ -267,8 +240,6 @@ foreach (var emp in service.GetEmployees())
 | Infrastructure | Data, IO       |
 | Presentation   | Input/Output   |
 
----
-
 ## 🧠 Clean Architecture Golden Rules
 
 1. Domain has **zero dependencies**
@@ -277,27 +248,20 @@ foreach (var emp in service.GetEmployees())
 4. Frameworks are **details**
 5. Business logic survives framework change
 
----
-
 ## 📝 Lab Assignments (Mandatory)
 
 ### 🧪 Task 1
 
 Add `IPayrollService` to Application layer.
 
----
 
 ### 🧪 Task 2
 
 Replace `InMemoryEmployeeRepository` with `FileEmployeeRepository`.
 
----
-
 ### 🧪 Task 3
 
 Create `EmployeeController` (simulate Web API).
-
----
 
 ### 🧪 Task 4 (Thinking Task)
 
@@ -305,7 +269,6 @@ Answer:
 
 > Why Clean Architecture is preferred in long-running enterprise systems?
 
----
 
 ## 🎓 Mentor Note (Transflower Learning)
 
@@ -317,5 +280,3 @@ Once students understand this lab:
 * ASP.NET Core architecture becomes obvious
 * Spring Boot layers feel natural
 * Microservices design makes sense
-
- 

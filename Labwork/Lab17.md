@@ -1,12 +1,3 @@
-Below is a **mentor-style, step-by-step Lab Assignment** focused on
-👉 **Delegates**
-👉 **Events**
-using the **HR Solution domain**, written in the **same format and depth** as your previous labs.
-
-This lab helps students understand **loose coupling, notifications, and real-time reactions**—core ideas behind **UI events, messaging systems, and microservices**.
-
----
-
 # 🧪 Lab Assignment
 
 ## **Delegates & Events – HR Solution**

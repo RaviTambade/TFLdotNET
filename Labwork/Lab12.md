@@ -1,13 +1,3 @@
-Below is a **hands-on Lab Assignment** in the **same HR Solution format and mentor-style flow** you’ve been using, focused on:
-
-👉 **IComparable**
-👉 **IComparer**
-👉 **List<T> of objects**
-
-This lab is **industry-aligned**, builds **collection thinking**, and prepares students for **sorting, ranking, and reporting** scenarios in real HR systems.
-
----
-
 # 🧪 Lab Assignment: `IComparable`, `IComparer` & `List<Employee>`
 
 ### **HR Domain – Employee Sorting & Ranking**

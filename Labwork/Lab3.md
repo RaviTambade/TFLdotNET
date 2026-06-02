@@ -1,13 +1,13 @@
-
-
 # 🧪 Hands-On Lab (Part 3)
+
+
+
+
+## Adding Minimal APIs for Machine & Factory Data (with OpenAPI)
 
 Below is a **clean continuation lab**, written in a **step-by-step, mentor-guided style**, extending your **existing ECommerce solution** and **WebApp** from the previous lab.
 
 This lab introduces **Minimal APIs + OpenAPI (Swagger)** and explains **why each line exists**, so students don’t just copy code—they **understand system behavior**.
-
-
-## Adding Minimal APIs for Machine & Factory Data (with OpenAPI)
 
 > **Continuation of previous labs**
 > Existing projects in solution:
@@ -217,9 +217,9 @@ https://localhost:xxxx/api/machinedata
 https://localhost:xxxx/api/factoryenvironment
 ```
 
-✔ JSON output appears
-✔ No controller required
-✔ No model required
+- ✔ JSON output appears
+- ✔ No controller required
+- ✔ No model required
 
 ---
 

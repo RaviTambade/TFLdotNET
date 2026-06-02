@@ -1,7 +1,3 @@
-
-
----
-
 # 🧪 Lab 5: Interface Inheritance in HR Domain
 
 Below is **🧪 Lab Assignment – Interface Inheritance**, designed as a **continuation of Lab 4 (HR Domain)**.
@@ -12,8 +8,6 @@ This lab **does not repeat OOP basics** — it builds directly on your existing 
 ## 🎯 Lab Title
 
 **Extending HR System using Interface Inheritance & Multiple Behavior Contracts**
-
----
 
 ## 🎯 Lab Objective
 
@@ -26,8 +20,6 @@ By completing this lab, students will:
 * Design flexible HR roles without modifying base classes
 * Use interfaces for **loosely coupled design**
 
----
-
 ## 🧠 Prerequisite Knowledge
 
 Students should already know:
@@ -37,7 +29,6 @@ Students should already know:
 * Polymorphism
 * HR domain class hierarchy
 
----
 
 ## 🏗 Design Requirement (Problem Statement)
 
@@ -54,8 +45,6 @@ These behaviors:
 * Must be **plugged in without changing Employee base class**
 
 👉 **Interfaces are the correct solution**
-
----
 
 ## 🧠 Conceptual Design
 
@@ -76,8 +65,6 @@ IBonusEligible
 IManagerBenefits
 ```
 
----
-
 ## 📁 Step 1: Create Interfaces Folder
 
 Inside your existing project:
@@ -85,8 +72,6 @@ Inside your existing project:
 ```cmd
 mkdir HR\Interfaces
 ```
-
----
 
 ## 🧩 Step 2: Define Base Interfaces
 
@@ -101,8 +86,6 @@ public interface IAppraisable
 }
 ```
 
----
-
 ### 📄 `HR/Interfaces/IBonusEligible.cs`
 
 ```csharp
@@ -113,8 +96,6 @@ public interface IBonusEligible
     float CalculateBonus();
 }
 ```
-
----
 
 ### 📄 `HR/Interfaces/IInterviewPanel.cs`
 
@@ -127,8 +108,6 @@ public interface IInterviewPanel
 }
 ```
 
----
-
 ### 📄 `HR/Interfaces/ITrainer.cs`
 
 ```csharp
@@ -139,8 +118,6 @@ public interface ITrainer
     void Train();
 }
 ```
-
----
 
 ## 🧩 Step 3: Create Interface Inheritance
 
@@ -159,8 +136,6 @@ public interface IManagerBenefits : IBonusEligible, IAppraisable
 
 * Interfaces can **inherit from multiple interfaces**
 * No implementation, only contracts
-
----
 
 ## 🧩 Step 4: Implement Interfaces in HR Classes
 
@@ -181,8 +156,6 @@ public class SalesEmployee : Employee, IAppraisable
     }
 }
 ```
-
----
 
 ### ✅ Modify `SalesManager`
 
@@ -225,8 +198,6 @@ public class SalesManager : SalesEmployee,
 }
 ```
 
----
-
 ## ▶ Step 5: Test Interface Polymorphism in `Program.cs`
 
 ```csharp
@@ -248,8 +219,6 @@ ITrainer trainer = manager;
 trainer.Train();
 ```
 
----
-
 ## 🧠 Key Observations for Students
 
 | Concept              | Observation                  |
@@ -259,7 +228,7 @@ trainer.Train();
 | Polymorphism         | Same object, different views |
 | Clean design         | No Employee modification     |
 
----
+
 
 ## 🔍 Abstract Class vs Interface (Quick Recall)
 
@@ -267,11 +236,9 @@ trainer.Train();
 | ---------------------- | -------------- | --------- |
 | Fields                 | Yes            | No        |
 | Constructors           | Yes            | No        |
-| Multiple inheritance   | ❌              | ✅         |
-| Default implementation | Yes            | ❌         |
+| Multiple inheritance   | ❌            | ✅         |
+| Default implementation | Yes            | ❌        |
 | Use case               | "Is-a"         | "Can-do"  |
-
----
 
 ## 📝 Lab Assignment Tasks (Mandatory)
 
@@ -288,8 +255,6 @@ IAuditable
 
 Implement it in `SalesManager`.
 
----
-
 ### 🧪 Task 2
 
 Create a new role:
@@ -303,8 +268,6 @@ Implement:
 * `IManagerBenefits`
 * `IInterviewPanel`
 
----
-
 ### 🧪 Task 3
 
 Write a method:
@@ -315,20 +278,14 @@ void ProcessAppraisal(IAppraisable emp)
 
 Call it with different employee types.
 
----
-
 ### 🧪 Task 4 (Thinking Task)
 
 Answer:
 
 > Why interface inheritance is preferred over deep class inheritance in enterprise applications?
 
----
-
 ## 🎓 Mentor Note (Transflower Learning)
 
 > “Abstract classes model **what you are**.
 > Interfaces model **what you can do**.
 > Enterprise systems survive because of interfaces.”
-
-

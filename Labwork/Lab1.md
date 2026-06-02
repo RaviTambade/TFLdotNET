@@ -238,11 +238,11 @@ ECommerce Solution
 
 Students now understand how to:
 
-✔ Use **dotnet CLI** professionally
-✔ Structure a **multi-project solution**
-✔ Apply **project references**
-✔ Build and run a solution
-✔ Separate **UI** and **Business Logic**
+- ✔ Use **dotnet CLI** professionally
+- ✔ Structure a **multi-project solution**
+- ✔ Apply **project references**
+- ✔ Build and run a solution
+- ✔ Separate **UI** and **Business Logic**
 
 
 
@@ -250,5 +250,3 @@ Students now understand how to:
 
 > “Real software is never a single project.
 > This lab teaches how **real-world applications are organized**.”
-
-

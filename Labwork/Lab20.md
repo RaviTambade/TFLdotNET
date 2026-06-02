@@ -400,14 +400,7 @@ This lab:
 
 ### 🔜 Next Advanced Labs
 
-✅ Refresh Token Implementation
-✅ Role-based Policies
-✅ Global Exception Middleware
-✅ Clean Architecture HR API (Final Capstone)
-
-If you want this converted into:
-📄 **Lab manual PDF**
-🧪 **Evaluation rubric**
-🎯 **Interview assignment pack**
-
-Just say 👍
+- ✅ Refresh Token Implementation
+- ✅ Role-based Policies
+- ✅ Global Exception Middleware
+- ✅ Clean Architecture HR API (Final Capstone)

@@ -7,8 +7,6 @@ This lab introduces **Dependency Injection (DI)** — a **must-know industry con
 
 **Decoupling HR Business Logic using Dependency Injection**
 
----
-
 ## 🎯 Lab Objective
 
 By the end of this lab, students will:
@@ -18,8 +16,6 @@ By the end of this lab, students will:
 * Implement **Constructor Injection**
 * Learn **why DI is mandatory in enterprise applications**
 * Prepare for **ASP.NET Core / Spring Boot DI frameworks**
-
----
 
 ## 🧠 Prerequisites
 
@@ -32,8 +28,6 @@ Students should have completed:
   * Interfaces
   * Polymorphism
   * HR Domain classes
-
----
 
 ## ❌ Problem with Current Design (Why DI?)
 
@@ -56,8 +50,6 @@ manager.DoWork();
 
 👉 **Industry Solution:** Dependency Injection
 
----
-
 ## 🧠 DI Concept (Human Analogy)
 
 > “Doctor does not manufacture medicines.
@@ -67,8 +59,6 @@ Same in software:
 
 * Classes **should not create dependencies**
 * Dependencies should be **provided (injected)**
-
----
 
 ## 🏗 Target Design (After DI)
 
@@ -84,8 +74,6 @@ HRService
 IEmployeeService
 ```
 
----
-
 ## 📁 Step 1: Create Service Interfaces
 
 Create folder:
@@ -93,8 +81,6 @@ Create folder:
 ```cmd
 mkdir HR\Services
 ```
-
----
 
 ### 📄 `HR/Services/IEmployeeService.cs`
 
@@ -114,8 +100,6 @@ public interface IEmployeeService
 
 * Service logic must be **replaceable**
 * Enables testing & flexibility
-
----
 
 ## 📁 Step 2: Implement Service Interface
 
@@ -146,8 +130,6 @@ public class EmployeeService : IEmployeeService
 
 * Service depends on **Employee abstraction**
 * No concrete role knowledge inside service
-
----
 
 ## 📁 Step 3: Create Consumer Class (HRProcessor)
 
@@ -182,8 +164,6 @@ public class HRProcessor
 * Dependency is injected via constructor
 * HRProcessor does NOT create service
 
----
-
 ## ▶ Step 4: Inject Dependencies in `Program.cs`
 
 ### 📄 `Program.cs`
@@ -207,8 +187,6 @@ processor.Process(emp1);
 processor.Process(emp2);
 ```
 
----
-
 ## 🧠 Key Observation (Very Important)
 
 | Without DI       | With DI            |
@@ -218,16 +196,12 @@ processor.Process(emp2);
 | Hard to test     | Easy to mock       |
 | Poor design      | Enterprise-ready   |
 
----
-
 ## 🧪 Step 5: Build and Run
 
 ```cmd
 dotnet build
 dotnet run
 ```
-
----
 
 ## 🧠 What Students Must Observe
 
@@ -237,8 +211,6 @@ dotnet run
 * No code change required to support new employee types
 
 👉 **This is Dependency Injection + Polymorphism**
-
----
 
 ## 🧠 Interview Gold Concepts (Explain in 1 Line)
 
@@ -253,8 +225,6 @@ dotnet run
 * **Why Interfaces?**
 
   > To depend on abstraction, not implementation
-
----
 
 ## 📝 Lab Assignments (Mandatory)
 
@@ -271,8 +241,6 @@ IPayrollService
 
 Inject it into `HRProcessor`.
 
----
-
 ### 🧪 Task 2
 
 Create `MockEmployeeService`
@@ -280,21 +248,16 @@ Use it instead of `EmployeeService` in `Program.cs`.
 
 📌 Purpose: **Unit testing simulation**
 
----
 
 ### 🧪 Task 3
 
 Modify `HRProcessor` so it accepts **multiple services**.
-
----
 
 ### 🧪 Task 4 (Thinking Task)
 
 Answer:
 
 > Why DI is compulsory in Microservices and Cloud-native applications?
-
----
 
 ## 🎓 Mentor Note (Transflower Learning)
 
@@ -307,8 +270,6 @@ Master this lab and:
 * Spring Boot `@Autowired` makes sense
 * Clean Architecture becomes natural
 
----
-
 ## 🚀 Next Natural Labs (Your Choice)
 
 1. Built-in DI Container (ASP.NET Core)
@@ -317,4 +278,3 @@ Master this lab and:
 4. Unit Testing using Mocks
 5. Mapping DI to **Spring Boot**
 
-Just say **next** 👨‍🏫✨

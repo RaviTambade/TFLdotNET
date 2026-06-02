@@ -1,14 +1,3 @@
-Below is a **complete, mentor-style Lab Assignment** in the **same HR Solution format** you’ve been following, covering:
-
-👉 **partial class**
-👉 **extension methods**
-👉 **lambda expressions**
-👉 **LINQ**
-
-All concepts are taught **together** because this is how they appear in **real production HR systems**.
-
----
-
 # 🧪 Lab Assignment
 
 ## **Modern C# Features using HR Solution Domain**

@@ -1,12 +1,3 @@
-Below is a **mentor-style, industry-aligned Lab Assignment** focused on
-👉 **Garbage Collection (GC)**
-👉 **IDisposable & Dispose Pattern**
-using the **HR Solution domain**, written in the **same format and depth** as your previous labs.
-
-This lab is critical for teaching **memory management**, **resource safety**, and **production-ready coding habits**.
-
----
-
 # 🧪 Lab Assignment
 
 ## **Garbage Collection & Dispose Pattern – HR Solution**

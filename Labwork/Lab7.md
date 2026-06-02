@@ -40,8 +40,6 @@ Problems:
 * Hard to test
 * Violates **Single Responsibility Principle**
 
----
-
 ### ✅ With Repository
 
 ```csharp
@@ -75,8 +73,6 @@ InMemoryEmployeeRepository (today)
   ↓
 SQL / EF Core / Mongo (tomorrow)
 ```
-
----
 
 ## 📁 Step 1: Create Repository Folder
 
@@ -152,8 +148,6 @@ Today → List
 Tomorrow → SQL Server / EF Core
 **No business code change required**
 
----
-
 ## 🔁 Step 4: Modify `EmployeeService` to Use Repository
 
 ### 📄 `HR/Services/EmployeeService.cs`
@@ -202,8 +196,6 @@ public class EmployeeService : IEmployeeService
 
 * Service depends on **Repository interface**
 * Concrete storage hidden
-
----
 
 ## 🔁 Step 5: Update `IEmployeeService`
 
@@ -309,14 +301,3 @@ Answer:
 > Repositories decide **where data lives**.
 > This separation keeps systems alive for years.”
 
-
-
-## 🚀 Next Natural Labs (Highly Recommended)
-
-1. Unit Testing with Mock Repository
-2. Clean Architecture Layers
-3. SOLID Principles (SRP, DIP)
-4. ASP.NET Core + EF Core Integration
-5. Mapping Repository Pattern to **Spring Data JPA**
-
-Say **Next Lab** and I’ll continue 👨‍🏫✨

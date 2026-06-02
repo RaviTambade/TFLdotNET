@@ -5,7 +5,6 @@
 # 🧪 Lab 10: ASP.NET Core Web API using Clean Architecture & SOLID (HR Domain)
 Below is a **complete Lab Assignment** designed for **ASP.NET Core Web API using Clean Architecture + SOLID**, mapped to your **HR domain** and **continuing all previous labs**.
 
-
 ## 🎯 Lab Objective
 
 By the end of this lab, students will be able to:
@@ -18,8 +17,6 @@ By the end of this lab, students will be able to:
 * Design **RESTful HR APIs**
 * Write **enterprise-ready backend code**
 
-
-
 ## 🧠 Prerequisites
 
 Students must have completed:
@@ -30,7 +27,6 @@ Students must have completed:
 * Lab 7 → Repository Pattern
 * Lab 8 → Clean Architecture
 * Lab 9 → SOLID Principles
-
 
 ## 🏗 Target Architecture (HR Domain)
 
@@ -54,8 +50,6 @@ HR.Infrastructure (Repositories)
 > Outer layers depend on inner layers
 > Inner layers depend on nothing
 
-
-
 ## 📁 Step 1: Create Solution & Projects
 
 ### Create Solution
@@ -73,7 +67,6 @@ dotnet new classlib -n HR.Application
 dotnet new classlib -n HR.Infrastructure
 dotnet new webapi   -n HR.API
 ```
-
 
 ## ➕ Step 2: Add Projects to Solution
 
@@ -95,9 +88,7 @@ dotnet add src\HR.API\HR.API.csproj reference src\HR.Infrastructure\HR.Infrastru
 
 📌 **Domain layer has NO references**
 
-
 ## 🧩 Step 4: Domain Layer (HR.Domain)
-
 ### Responsibilities
 
 * Entities
@@ -137,8 +128,6 @@ IPayrollService
 * SRP → Services are focused
 * DIP → Services depend on interfaces
 
-
-
 ## 🧩 Step 6: Infrastructure Layer (HR.Infrastructure)
 
 ### Responsibilities
@@ -161,8 +150,6 @@ InMemoryEmployeeRepository
 
 (No API or service code change)
 
----
-
 ## 🧩 Step 7: Presentation Layer (HR.API)
 
 ### Responsibilities
@@ -171,7 +158,6 @@ InMemoryEmployeeRepository
 * Routing
 * Model binding
 * DI wiring
-
 
 ### Create Controller
 
@@ -206,8 +192,6 @@ public class EmployeesController : ControllerBase
 
 📌 **Controller depends on Application layer only**
 
-
-
 ## 🧩 Step 8: Dependency Injection Configuration
 
 📄 `Program.cs`
@@ -222,8 +206,6 @@ builder.Services.AddScoped<PayrollService>();
 
 * API does NOT know concrete repository
 
-
-
 ## ▶ Step 9: Run & Test API
 
 ```cmd
@@ -237,16 +219,12 @@ Test using:
 * Swagger
 * Postman
 
-
-
 ## 🔗 Sample API Endpoints
 
 | Method | Endpoint         | Description    |
 | ------ | ---------------- | -------------- |
 | POST   | `/api/employees` | Hire employee  |
 | GET    | `/api/employees` | List employees |
-
-
 
 ## 🧠 SOLID Mapping (Explicit)
 
@@ -258,8 +236,6 @@ Test using:
 | ISP       | Role-based interfaces                 |
 | DIP       | DI container                          |
 
-
-
 ## 📝 Lab Assignment Tasks (Mandatory)
 
 ### 🧪 Task 1
@@ -270,8 +246,6 @@ Add:
 GET /api/employees/{id}
 ```
 
-
-
 ### 🧪 Task 2
 
 Add:
@@ -281,26 +255,21 @@ PayrollController
 GET /api/payroll/{id}
 ```
 
-
 ### 🧪 Task 3
 
 Replace `InMemoryEmployeeRepository` with `FileEmployeeRepository`.
 
 📌 No API code change allowed.
 
-
-
 ### 🧪 Task 4
 
 Add **DTOs** and mapping layer.
-
 
 ### 🧪 Task 5 (Thinking Task)
 
 Explain:
 
 > How Clean Architecture + SOLID helps when migrating from Monolith to Microservices?
-
 
 ## 🎓 Mentor Note (Transflower Learning)
 
@@ -313,4 +282,3 @@ Students who finish this lab are:
 * Architecture aware
 * Industry aligned
 * Framework independent
-

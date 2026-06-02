@@ -144,7 +144,6 @@ Pages
 * `.cshtml` → UI (HTML + Razor)
 * `.cshtml.cs` → PageModel (C# logic)
 
-
 ## ✏ Step 7: Add Content to Pages
 
 ### 🔹 AboutUs.cshtml
@@ -159,7 +158,6 @@ Pages
 </p>
 ```
 
-
 ### 🔹 Contact.cshtml
 
 ```html
@@ -170,7 +168,6 @@ Pages
 <p>Email: support@ecommerce.com</p>
 <p>Phone: +91-9999999999</p>
 ```
-
 
 ### 🔹 Services.cshtml
 
@@ -253,13 +250,12 @@ Open browser:
 https://localhost:xxxx
 ```
 
-
 ## 🧪 Step 11: Verify Pages
 
-✔ Home Page
-✔ About Us
-✔ Services
-✔ Contact
+- ✔ Home Page
+- ✔ About Us
+- ✔ Services
+- ✔ Contact
 
 Navigation works without refreshing logic.
 
@@ -282,11 +278,8 @@ Navigation works without refreshing logic.
 5. Add form in Contact page
 
 
-
 ## 🎓 Mentor Insight
 
 > “Console apps teach logic.
 > Web apps teach **user thinking**.
 > Together, they build **real developers**.”
-
-
