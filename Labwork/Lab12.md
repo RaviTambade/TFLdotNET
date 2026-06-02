@@ -2,8 +2,6 @@
 
 ### **HR Domain – Employee Sorting & Ranking**
 
----
-
 ## 🎯 Lab Objective
 
 To understand how **lists of domain objects** can be:
@@ -17,8 +15,6 @@ using **C# interfaces**:
 * `IComparable<T>`
 * `IComparer<T>`
 
----
-
 ## 🧠 Concepts Covered
 
 | Concept          | Purpose                   |
@@ -27,8 +23,6 @@ using **C# interfaces**:
 | `IComparable<T>` | Default object comparison |
 | `IComparer<T>`   | Custom comparison logic   |
 | `Sort()`         | Sort domain objects       |
-
----
 
 ## 🏗️ Solution Structure
 
@@ -44,8 +38,6 @@ HRComparableLab
     ├── SalaryComparer.cs
     └── NameComparer.cs
 ```
-
----
 
 ## 🧱 Step 1: Create Employee Model (IComparable)
 
@@ -76,8 +68,6 @@ namespace HR.Models
 }
 ```
 
----
-
 ## 🧠 Step 2: Custom Comparer – Salary Based
 
 📄 **Comparers/SalaryComparer.cs**
@@ -98,8 +88,6 @@ namespace HR.Comparers
 }
 ```
 
----
-
 ## 🧠 Step 3: Custom Comparer – Name Based
 
 📄 **Comparers/NameComparer.cs**
@@ -119,8 +107,6 @@ namespace HR.Comparers
     }
 }
 ```
-
----
 
 ## 🚀 Step 4: Program Execution Using List<Employee>
 
@@ -166,8 +152,6 @@ class Program
 }
 ```
 
----
-
 ## 🔍 Expected Output (Order May Vary)
 
 ```
@@ -190,8 +174,6 @@ Sort By Name
 104 | Sneha | 70000 | 7 yrs
 ```
 
----
-
 ## 🧠 HR-World Analogy
 
 | Technical Concept | HR Meaning                   |
@@ -200,8 +182,6 @@ Sort By Name
 | `IComparable`     | Company default sorting rule |
 | `IComparer`       | Department-specific policies |
 | `Sort()`          | HR report generation         |
-
----
 
 ## 🧪 Student Tasks (Assignments)
 
@@ -226,16 +206,12 @@ List<Employee> GetTopPaidEmployees(List<Employee> list, int count)
 
 Use **LINQ OrderBy** instead of `IComparer`
 
----
-
 ## ❓ Interview Questions
 
 1. Difference between `IComparable` and `IComparer`?
 2. Why should `CompareTo()` return `int`?
 3. When should we avoid modifying `CompareTo()`?
 4. Can one class have multiple `IComparer` implementations?
-
----
 
 ## 🧩 Mentor Notes (For You)
 
@@ -248,4 +224,3 @@ This lab:
   * **LINQ**
   * **Repository Pattern**
   * **Clean Architecture**
-

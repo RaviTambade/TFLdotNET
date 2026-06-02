@@ -2,8 +2,6 @@
 
 ## **Delegates & Events – HR Solution**
 
----
-
 ## 🎯 Lab Objective
 
 To understand how **HR system components communicate** using:
@@ -14,8 +12,6 @@ To understand how **HR system components communicate** using:
 
 within an **Employee Management System**.
 
----
-
 ## 🧠 Concepts Covered
 
 | Concept              | Purpose                      |
@@ -24,8 +20,6 @@ within an **Employee Management System**.
 | Multicast delegate   | Call multiple methods        |
 | Event                | Controlled delegate exposure |
 | Publisher–Subscriber | Loose coupling               |
-
----
 
 ## 🏗️ Solution Structure
 
@@ -41,8 +35,6 @@ HREventDelegateLab
     ├── HRService.cs
     └── NotificationService.cs
 ```
-
----
 
 ## 🧱 Step 1: Employee Domain Model
 
@@ -64,8 +56,6 @@ namespace HR.Models
     }
 }
 ```
-
----
 
 ## 🧠 Step 2: Define Delegate & Event (Publisher)
 
@@ -96,8 +86,6 @@ namespace HR.Services
 }
 ```
 
----
-
 ## 🧠 Step 3: Subscriber Services (Event Handlers)
 
 📄 **Services/NotificationService.cs**
@@ -122,8 +110,6 @@ namespace HR.Services
     }
 }
 ```
-
----
 
 ## 🚀 Step 4: Program Execution (Wiring Events)
 
@@ -156,8 +142,6 @@ class Program
 }
 ```
 
----
-
 ## 🔍 Expected Output
 
 ```
@@ -165,8 +149,6 @@ Employee Added: 101 | Amit | 50000
 📧 Email sent to HR for new employee: Amit
 📱 SMS alert: Employee Amit onboarded
 ```
-
----
 
 ## 🧠 HR Analogy Mapping
 
@@ -176,8 +158,6 @@ Employee Added: 101 | Amit | 50000
 | Event             | Official HR announcement |
 | Publisher         | HR department            |
 | Subscriber        | Email / SMS systems      |
-
----
 
 ## 🧪 Student Tasks (Hands-On)
 
@@ -205,16 +185,12 @@ EventHandler<Employee>
 
 Raise event only if salary > 40000
 
----
-
 ## ❓ Interview Questions
 
 1. Why are events safer than public delegates?
 2. Can events have multiple subscribers?
 3. Difference between delegate and event?
 4. What happens if no one subscribes to an event?
-
----
 
 ## 🧩 Mentor Notes (For You)
 
@@ -230,4 +206,3 @@ This lab:
 
   * Observer pattern
   * Clean Architecture domain events
-

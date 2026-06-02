@@ -2,8 +2,6 @@
 
 ## **LINQ + Repository Pattern – HR Solution**
 
----
-
 ## 🎯 Lab Objective
 
 To design a **clean, testable HR data access layer** using:
@@ -11,8 +9,6 @@ To design a **clean, testable HR data access layer** using:
 * `List<Employee>` as in-memory data store
 * **Repository Pattern**
 * **LINQ for querying business data**
-
----
 
 ## 🧠 Concepts Covered
 
@@ -22,8 +18,6 @@ To design a **clean, testable HR data access layer** using:
 | LINQ                   | Query domain objects |
 | Interface-based design | Loose coupling       |
 | Separation of concerns | Clean code           |
-
----
 
 ## 🏗️ Solution Structure
 
@@ -42,8 +36,6 @@ HRRepositoryLinqLab
 └── Services
     └── HRReportService.cs
 ```
-
----
 
 ## 🧱 Step 1: Employee Domain Model
 
@@ -69,8 +61,6 @@ namespace HR.Models
 }
 ```
 
----
-
 ## 🧠 Step 2: Repository Interface
 
 📄 **Repositories/IEmployeeRepository.cs**
@@ -89,8 +79,6 @@ namespace HR.Repositories
     }
 }
 ```
-
----
 
 ## 🧠 Step 3: Repository Implementation (LINQ inside)
 
@@ -130,9 +118,6 @@ namespace HR.Repositories
     }
 }
 ```
-
----
-
 ## 🧠 Step 4: HR Service Layer (LINQ on Repository)
 
 📄 **Services/HRReportService.cs**
@@ -185,8 +170,6 @@ namespace HR.Services
 }
 ```
 
----
-
 ## 🚀 Step 5: Program Execution (Wiring Everything)
 
 📄 **Program.cs**
@@ -219,8 +202,6 @@ class Program
 }
 ```
 
----
-
 ## 🔍 Expected Output (Sample)
 
 ```
@@ -240,8 +221,6 @@ Top 2 Paid Employees:
 Average Salary: 56250
 ```
 
----
-
 ## 🧠 HR Analogy Mapping
 
 | Technical Layer | HR Meaning                 |
@@ -250,8 +229,6 @@ Average Salary: 56250
 | LINQ            | HR analytics engine        |
 | Service         | HR policy & reporting      |
 | Interface       | Contract between HR & data |
-
----
 
 ## 🧪 Student Tasks (Assignments)
 
@@ -275,16 +252,12 @@ Add `UpdateSalary(int id, double amount)` in repository
 
 Replace `List<Employee>` with **In-Memory DB Simulation**
 
----
-
 ## ❓ Interview Questions
 
 1. Why should LINQ not be exposed directly to UI?
 2. Where should LINQ logic live – Repository or Service?
 3. How does Repository Pattern help unit testing?
 4. Difference between `IEnumerable` and `IQueryable`?
-
----
 
 ## 🧩 Mentor Notes (For You)
 
@@ -297,4 +270,3 @@ This lab:
   * Dapper
   * Clean Architecture
 * Naturally extends to **Dependency Injection**
-

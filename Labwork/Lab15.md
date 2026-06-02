@@ -2,8 +2,6 @@
 
 ## **JSON Serialization & Deserialization – HR Employee Solution**
 
----
-
 ## 🎯 Lab Objective
 
 To understand how **HR domain objects** are:
@@ -14,8 +12,6 @@ To understand how **HR domain objects** are:
 
 using **System.Text.Json**.
 
----
-
 ## 🧠 Concepts Covered
 
 | Concept                | Purpose               |
@@ -24,8 +20,6 @@ using **System.Text.Json**.
 | Deserialization        | Convert JSON → object |
 | DTO mindset            | Data exchange format  |
 | File-based persistence | In-memory → disk      |
-
----
 
 ## 🏗️ Solution Structure
 
@@ -40,9 +34,6 @@ HRJsonLab
 └── Services
     └── EmployeeJsonService.cs
 ```
-
----
-
 ## 🧱 Step 1: Employee Domain Model
 
 📄 **Models/Employee.cs**
@@ -66,8 +57,6 @@ namespace HR.Models
     }
 }
 ```
-
----
 
 ## 🧠 Step 2: JSON Service Layer
 
@@ -108,8 +97,6 @@ namespace HR.Services
 }
 ```
 
----
-
 ## 🚀 Step 3: Program Execution (End-to-End Flow)
 
 📄 **Program.cs**
@@ -145,8 +132,6 @@ class Program
 }
 ```
 
----
-
 ## 📄 Generated JSON Output (`employees.json`)
 
 ```json
@@ -170,8 +155,6 @@ class Program
 ]
 ```
 
----
-
 ## 🧠 HR Analogy Mapping
 
 | Technical Concept | HR Meaning                              |
@@ -181,7 +164,6 @@ class Program
 | Deserialization   | Rebuilding employee records             |
 | File storage      | Local HR archive                        |
 
----
 
 ## 🧪 Student Tasks (Hands-On)
 
@@ -207,16 +189,12 @@ Handle **null / missing JSON file** gracefully
 
 Use `JsonPropertyName` to rename JSON fields
 
----
-
 ## ❓ Interview Questions
 
 1. Difference between `System.Text.Json` and `Newtonsoft.Json`?
 2. What happens if JSON property names don’t match class fields?
 3. What is DTO and why JSON uses it?
 4. Can private fields be serialized?
-
----
 
 ## 🧩 Mentor Notes (For You)
 
@@ -233,4 +211,3 @@ This lab:
   * REST contracts
   * API gateways
 
----

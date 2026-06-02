@@ -2,8 +2,6 @@
 
 ## **Modern C# Features using HR Solution Domain**
 
----
-
 ## 🎯 Lab Objective
 
 To understand how **modern C# language features** help build:
@@ -15,8 +13,6 @@ To understand how **modern C# language features** help build:
 
 using an **HR Employee Management System**.
 
----
-
 ## 🧠 Concepts Covered
 
 | Feature            | Usage                                |
@@ -25,8 +21,6 @@ using an **HR Employee Management System**.
 | Extension Methods  | Add behavior without modifying class |
 | Lambda Expressions | Inline logic                         |
 | LINQ               | Query employee data                  |
-
----
 
 ## 🏗️ Solution Structure
 
@@ -45,8 +39,6 @@ HRModernCSharpLab
 └── Services
     └── HRAnalyticsService.cs
 ```
-
----
 
 ## 🧱 Step 1: Employee Model using `partial class`
 
@@ -83,8 +75,6 @@ namespace HR.Models
 }
 ```
 
----
-
 ## 🧠 Step 2: Extension Methods for Employee
 
 📄 **Extensions/EmployeeExtensions.cs**
@@ -109,8 +99,6 @@ namespace HR.Extensions
     }
 }
 ```
-
----
 
 ## 🧠 Step 3: HR Analytics Service (LINQ + Lambda)
 
@@ -148,8 +136,6 @@ namespace HR.Services
     }
 }
 ```
-
----
 
 ## 🚀 Step 4: Program Execution (All Concepts Together)
 
@@ -194,8 +180,6 @@ class Program
 }
 ```
 
----
-
 ## 🔍 Expected Output (Sample)
 
 ```
@@ -216,8 +200,6 @@ High Salary Employees:
 Average Salary: 56250
 ```
 
----
-
 ## 🧠 HR Analogy Mapping
 
 | C# Feature       | HR Interpretation                      |
@@ -226,8 +208,6 @@ Average Salary: 56250
 | Extension Method | Extra HR rules added later             |
 | Lambda           | Quick decision logic                   |
 | LINQ             | HR data analysis engine                |
-
----
 
 ## 🧪 Student Tasks (Hands-On)
 
@@ -251,16 +231,12 @@ Find **Top 2 highest paid employees**
 
 Convert one LINQ query to **query syntax**
 
----
-
 ## ❓ Interview Questions
 
 1. Why are extension methods static?
 2. When should we use partial classes?
 3. Difference between lambda and anonymous method?
 4. Deferred execution in LINQ?
-
----
 
 ## 🧩 Mentor Notes (For You)
 
@@ -273,4 +249,3 @@ This lab:
   * Repository Pattern
   * Entity Framework Core
   * Microservices data pipelines
-

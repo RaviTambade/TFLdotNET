@@ -2,8 +2,6 @@
 
 ## **Garbage Collection & Dispose Pattern – HR Solution**
 
----
-
 ## 🎯 Lab Objective
 
 To understand how **.NET manages memory automatically** and how developers must **explicitly release unmanaged resources** using:
@@ -15,8 +13,6 @@ To understand how **.NET manages memory automatically** and how developers must 
 
 within an **HR Employee Management system**.
 
----
-
 ## 🧠 Concepts Covered
 
 | Concept                        | Purpose                                        |
@@ -26,8 +22,6 @@ within an **HR Employee Management system**.
 | `IDisposable`                  | Manual cleanup                                 |
 | Dispose Pattern                | Safe and predictable release                   |
 | `using`                        | Automatic dispose                              |
-
----
 
 ## 🏗️ Solution Structure
 
@@ -42,8 +36,6 @@ HRMemoryLab
 └── Services
     └── EmployeeFileLogger.cs
 ```
-
----
 
 ## 🧱 Step 1: Employee Domain Model (Managed Object)
 
@@ -63,8 +55,6 @@ namespace HR.Models
 ```
 
 > ✅ This class uses **managed memory only** and is handled completely by **Garbage Collector**.
-
----
 
 ## 🧠 Step 2: Service Using Unmanaged Resource (File Handle)
 
@@ -123,8 +113,6 @@ namespace HR.Services
 }
 ```
 
----
-
 ## 🚀 Step 3: Program Execution (GC + Dispose in Action)
 
 📄 **Program.cs**
@@ -168,15 +156,11 @@ class Program
 }
 ```
 
----
-
 ## 📄 Output (`employees.log`)
 
 ```
 101,Amit,IT,50000
 ```
-
----
 
 ## 🧠 HR Analogy Mapping
 
@@ -187,8 +171,6 @@ class Program
 | Unmanaged resource | Physical file cabinet        |
 | Dispose            | Locking and closing cabinets |
 | using              | Auto-cleanup policy          |
-
----
 
 ## 🧪 Student Tasks (Hands-On)
 
@@ -213,16 +195,12 @@ GC.Collect();
 Dispose();
 ```
 
----
-
 ## ❓ Interview Questions
 
 1. Does GC free unmanaged resources?
 2. When is finalizer executed?
 3. Why call `GC.SuppressFinalize()`?
 4. What happens if Dispose is not called?
-
----
 
 ## 🧩 Mentor Notes (For You)
 
