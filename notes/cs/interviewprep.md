@@ -1,6 +1,5 @@
-# 🧠 .NET Interview Preparation (Roadmap Style)
+# 🧠 .NET Interview Preparation
  
-
 > **Foundation → OOP → CLR → .NET Core → Data Access → Web → Advanced → System Design**
 
 
@@ -240,8 +239,6 @@ Design / Architecture
 - ✔ Can you optimize code?
 - ✔ Can you think in systems?
 
-
-
 👉 *.NET interview preparation is a layered understanding journey from C# fundamentals to CLR internals, LINQ execution, async programming, data access, and web architecture, with focus on internal working and real-world performance reasoning.*
 
 
@@ -347,7 +344,6 @@ Machine Code
 # 🔥 Quick Revision Table
 
 | Concept | Meaning           | Role                      |
-| - | -- | - |
 | CLR     | Execution engine  | Runs programs             |
 | CTS     | Type system       | Defines data types        |
 | CLS     | Language rules    | Ensures interoperability  |
