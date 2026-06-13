@@ -16,7 +16,7 @@ That’s **Dapper** in the .NET world — a **lightweight ORM** (Object-Relation
 dotnet add package Dapper
 ```
 
-*"Done. You're ready to fly."* ✈️
+*"Done. You're ready to fly."* 
 
 ### **Step 2: Your Model Class – Let’s Say a Product**
 
@@ -31,7 +31,7 @@ public class Product
 }
 ```
 
-*"This is your blueprint. Dapper will match database columns with these properties by name."* 🧩
+*"This is your blueprint. Dapper will match database columns with these properties by name."* 
 
 ### 🔄 **Step 3: Connect and Perform Operations**
 
@@ -66,25 +66,25 @@ using (IDbConnection db = new SqlConnection(connectionString))
 
 ### **Key Takeaways**
 
-* ✅ **Fast as Lightning**: It’s built by the same folks behind Stack Overflow. So, performance? Top-notch.
-* 🧠 **No Heavy ORM Rules**: You write your SQL. Dapper simply maps the result to your C# classes.
-* 🔐 **Safe**: All queries are parameterized, so SQL injection? No chance.
-* 🤝 **Auto-Mapping**: Columns in your query match class properties? Dapper does the rest — no extra config.
+* **Fast as Lightning**: It’s built by the same folks behind Stack Overflow. So, performance? Top-notch.
+* **No Heavy ORM Rules**: You write your SQL. Dapper simply maps the result to your C# classes.
+* **Safe**: All queries are parameterized, so SQL injection? No chance.
+* **Auto-Mapping**: Columns in your query match class properties? Dapper does the rest — no extra config.
 
 ### When Should You Use Dapper?
 
-*"Listen carefully, dear learner... If you're building something where performance matters — like a high-traffic API — and you want control over your SQL, **Dapper is your friend**. But if you need complex relationships, migrations, and LINQ, then **Entity Framework** might suit better."* ⚖️
+*"Listen carefully, dear learner... If you're building something where performance matters — like a high-traffic API — and you want control over your SQL, **Dapper is your friend**. But if you need complex relationships, migrations, and LINQ, then **Entity Framework** might suit better."* 
 
 ### More Resources
 
-* 📚 [Dapper GitHub Repo](https://github.com/DapperLib/Dapper)
-* 🛠️ [Interactive Tutorials](https://dapper-tutorial.net/)
+* [Dapper GitHub Repo](https://github.com/DapperLib/Dapper)
+* [Interactive Tutorials](https://dapper-tutorial.net/)
 
 ### Mentor's Closing Advice
 
 *"Remember, tools don’t make you great — knowing **when and why to use them** does. Dapper is like a sharp chisel in a master’s hand. Used wisely, it can carve beautiful, performant systems with precision."*
 
-*"Don’t be afraid of writing SQL. Embrace it when needed. And when you do — let Dapper carry the load."* 🧙‍♂️
+*"Don’t be afraid of writing SQL. Embrace it when needed. And when you do — let Dapper carry the load."* 
 
 ## Dapper 
 Dapper is a lightweight, open-source Object-Relational Mapping (ORM) library for .NET developed by the Stack Overflow team. Unlike Entity Framework, which is a full-fledged ORM, Dapper focuses on providing high-performance, simple mapping between your application's domain objects and database tables. Here's a brief overview of how you can use Dapper in C#:
