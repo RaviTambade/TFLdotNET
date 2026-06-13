@@ -5,7 +5,6 @@
 
 We started with **.NET Framework** — a robust, dependable platform from Microsoft that powered desktop and enterprise apps. But it was like building on a massive ship — stable, but not very flexible.
 
-
 ### 🧱 **.NET Framework: The Traditional Powerhouse**
 
 I remember working on **Windows Forms apps** and later graduating to **WCF services** and **ASP.NET Web Forms**. Every corporate client loved the stability, the rich UI, the seamless integration with Windows. But there was a catch…

@@ -1,7 +1,5 @@
 ### **The Journey Begins with C#**
 
-#### 🌞 **Good Morning, Explorers!**
-
 "Today, I’ll be opening the gates to a world where logic meets creativity — welcome to the world of **C#** and **.NET**.
 
 You know, the first time I heard the word *'See Sharp'*, I smiled. It sounded like music — and that’s not a coincidence. Because just like music can be soft, powerful, emotional, or energetic, C# allows us to build applications that *respond, react, and perform* — like a finely tuned instrument in the hands of a good developer."

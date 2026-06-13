@@ -1,4 +1,3 @@
-
 # Understanding .NET Core & Its Ecosystem
 
 > *"Imagine you’ve just walked into a grand engineering lab where each machine, tool, and control panel is part of a giant intelligent system. Welcome, students… this lab is called **.NET**. And today, I’m going to walk you through it, not as a lecture — but as a journey."*

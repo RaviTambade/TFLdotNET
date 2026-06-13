@@ -186,5 +186,3 @@ foreach (DataRow row in ds.Tables[0].Rows) {
 * Create a new table `products` with `id`, `title`, and `description`.
 * Implement insert, update, delete, and select using both connected and disconnected methods.
 * Try simulating a network failure in connected mode to see what happens!
-
- 

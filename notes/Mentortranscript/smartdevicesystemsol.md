@@ -44,7 +44,6 @@ Provide:
 
 👉 This class represents the **manufacturing date of devices**.
 
-
 ### 2️⃣ Owner Class (Device Owner)
 
 Create a class `DeviceOwner` that represents the customer.

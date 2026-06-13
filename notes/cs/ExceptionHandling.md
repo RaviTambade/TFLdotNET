@@ -1,15 +1,12 @@
-
 ## “Why Even a Perfect Code Needs a Parachute”
 
 *Students, gather around. Let me tell you a little story — not about code, but about life. Because life and programming have a lot in common.*
-
 
 ### **Scene 1: The Confident Skydiver**
 
 > *“Imagine a skydiver preparing for the perfect jump. Weather is clear, the instructor has trained well, the parachute is packed, and everything seems right. But — what if the parachute doesn’t open? What if something goes wrong mid-air?”*
 
 Just like that skydiver, even our best-written programs can face sudden issues at runtime — things we didn’t expect. These are called **exceptions**.
-
 
 ### **What Are Exceptions?**
 
@@ -95,9 +92,6 @@ public static void Main(string[] args)
     }
 }
 ```
-
-
-
 ### **Mentor’s Reflection**
 
 > *“Writing a program without exception handling is like driving a car without brakes. You may be a great driver, but the world is unpredictable.”*
@@ -111,8 +105,6 @@ With `try`, `catch`, `finally`, and custom exceptions, we give our code the **re
 3. **Finally**: Cleanup, no matter what.
 4. **Throw**: When you want to raise your own flag.
 5. **Custom Exceptions**: When your problem is unique.
-
----
 
 ### Homework Thought
 

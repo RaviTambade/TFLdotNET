@@ -277,5 +277,3 @@ Tell them:
 > Keep your data private.
 > Talk to objects only through methods.
 > And use constructors to give your objects a meaningful start.”
-
-

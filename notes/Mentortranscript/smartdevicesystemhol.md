@@ -18,7 +18,6 @@ The system must:
 
 You are required to design and implement this system using **C# and .NET**.
 
-
 ## 🎯 Project Objectives
 
 After completing this project, students will be able to:
@@ -40,8 +39,6 @@ After completing this project, students will be able to:
 | Storage   | Text File / JSON        |
 | IDE       | Visual Studio / VS Code |
 
-
-
 ## 🏗️ System Modules
 
 ### 1️⃣ Product Module
@@ -49,8 +46,6 @@ After completing this project, students will be able to:
 * Base class `Product`
 * Stores name and price
 * Virtual display method
-
-
 
 ### 2️⃣ Electronics Module
 

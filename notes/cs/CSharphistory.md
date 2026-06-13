@@ -1,5 +1,3 @@
-
-
 ### ** The Journey of C# — The Language That Grew With Us **
 
 Hey everyone! Today, I want to take you on a journey through time — a journey that shows how C# evolved step-by-step over more than two decades. Just like how you grow and learn new skills every year, C# too has been growing, adding cool new features that make programming easier, more powerful, and more fun!

@@ -8,7 +8,6 @@
 
 You **don’t use OpenGL directly** in .NET; instead, you use a wrapper.
 
----
 
 ## 🔶 2. **OpenTK (Open Toolkit Library)**
 
@@ -43,7 +42,6 @@ protected override void OnRenderFrame(FrameEventArgs e)
 
 ✅ **Recommended** for serious 3D projects in .NET.
 
----
 
 ## 🟡 3. **SharpGL**
 
@@ -76,8 +74,6 @@ private void openGLControl_OpenGLDraw(object sender, RenderEventArgs args)
 
 ✅ **Good for educational or small-to-medium graphics projects**.
 
----
-
 ## 📊 Comparison Table
 
 | Feature                | **OpenGL**                  | **OpenTK**                       | **SharpGL**                        |
@@ -108,7 +104,3 @@ You can simulate rendering pipelines and test for shader compilation, errors, an
 | Integrating OpenGL in a Windows Forms/WPF app | **SharpGL**                               |
 | High-performance or cross-platform graphics   | **OpenTK**                                |
 | Educational graphics in .NET                  | **SharpGL (simpler), or OpenTK (modern)** |
-
----
-
-Let me know your **target project or application idea** — I can guide you with setup, sample code, and test strategies (unit tests for matrix transforms, rendering validations, etc.).
