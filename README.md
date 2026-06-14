@@ -63,18 +63,15 @@ You are not alone on this path. I am walking with you.
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/CSharpLang.md">C# Prgramming Basics</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/oo.md"> Objectd Oriented  Programming(OOPs) using C#</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/Collections.md">Collection Framework</a>
-- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/productcatalogimplemntation.md">ProductCatalog Solution</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/comparingobjects.md">Comparision</a>
-- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/linq.md">LINQ</a>
-- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/garbagecollection.md">Garbage Collection(GC)</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/assembly.md">Assembly in .net core</a>
-- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/Reflection.md">Reflection</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/Serialization.md">Serialization</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/delegate.md">Delegates</a>
-
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/events.md">Events</a>
+- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/Reflection.md">Reflection</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/Attributes.md">Custom Attributes</a>
-
+- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/linq.md">LINQ</a>
+- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/garbagecollection.md">Garbage Collection(GC)</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/databasecrud.md">Data Access using C#</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/entityframeworkcore.md"> Entity Framework Core</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/dapper.md">Dapper</a>
@@ -95,14 +92,12 @@ You are not alone on this path. I am walking with you.
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/AspnetCoreLifeCycle.md">App Life Cycle Management</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/Middleware.md"> Middleware (HTTP Pipeline)</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/filters.md">Filters</a>
-
-
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/Statemgmt.md"> State Management</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/Webapi.md"> WebAPI</a>
+- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/productcatalogimplemntation.md">ProductCatalog Solution</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/crossfunctional.md"> Cross Functional Features</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/JWT.md">JWT Authentication</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/localization.md"> Localization</a>
-
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/websockets.md"> WebSockets</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/signalR.md"> SignalR</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/deploywebapp.md"> Deploying ASP .NET MVC application</a>
