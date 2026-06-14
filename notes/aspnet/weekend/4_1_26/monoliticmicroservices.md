@@ -1,4 +1,4 @@
-# The Story of Two Kitchens in .NET Town (Monolithic and Microservices)
+# Monolithic and Microservices
 
 Imagine you and your team are starting a **food business** in a busy tech city called **.NET Town**.
 
@@ -142,9 +142,9 @@ Now here is the **most important lesson**.
   When you want *scalability*, *structure*, and *long-term clarity*
 
 Both are:
-✔ Production-ready
-✔ Industry-accepted
-✔ Powerful
+- ✔ Production-ready
+- ✔ Industry-accepted
+- ✔ Powerful
 
 The difference is **intent**, not capability.
 
@@ -225,11 +225,11 @@ So teams say:
 
 ### 🟢 When Minimal APIs are PERFECT in Microservices
 
-✔ Small, focused services
-✔ High-performance endpoints
-✔ Internal services
-✔ Cloud-native workloads
-✔ Kubernetes / container-based systems
+- ✔ Small, focused services
+- ✔ High-performance endpoints
+- ✔ Internal services
+- ✔ Cloud-native workloads
+- ✔ Kubernetes / container-based systems
 
 > “Most modern microservices use **Minimal APIs by default**.”
 
@@ -321,7 +321,7 @@ Clients (Web / Mobile)
         |
  ┌──────────┬───────────┬────────────┐
  | Order MS | Payment MS| User MS    |
- | Minimal  | Controller| Controller|
+ | Minimal  | Controller| Controller |
  | API      | API       | API        |
  └──────────┴───────────┴────────────┘
 ```
@@ -370,8 +370,6 @@ Day 180:
 # 🎯 Interview-Ready Explanations
 
 ## **Minimal APIs, Controller-Based APIs & Microservices (.NET)**
-
-
 
 ## ✅ 1. *What is a Minimal API in .NET? When would you use it?*
 

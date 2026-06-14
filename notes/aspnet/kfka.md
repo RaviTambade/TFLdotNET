@@ -1447,21 +1447,21 @@ Order → Payment → Inventory → Email
 
 Students may add:
 
-✔ Database (EF Core)
-✔ JWT Auth
-✔ Dashboard
-✔ Retry Policy
+- ✔ Database (EF Core)
+- ✔ JWT Auth
+- ✔ Dashboard
+- ✔ Retry Policy
 
----
+ 
 
-# 🎓 Instructor Note (For You)
+# 🎓 Instructor Note 
 
 This lab:
 
-✅ Matches industry workflow
-✅ Builds portfolio project
-✅ Prepares for interviews
-✅ Supports capstone work
+- ✅ Matches industry workflow
+- ✅ Builds portfolio project
+- ✅ Prepares for interviews
+- ✅ Supports capstone work
 
  
 
@@ -1470,27 +1470,26 @@ This lab:
 
  Let’s understand the **Saga Pattern** in a **mentor-style, industry-relevant way**, exactly how it is used in large systems built by companies like **Netflix** and **Amazon**.
 
----
-
+ 
 # 🚀 1. What Is the Saga Pattern? (In Simple Words)
 
 > **Saga Pattern = Managing transactions across multiple microservices using events instead of a single database transaction.**
 
 In monolithic apps:
 
-✅ One DB
-✅ One transaction
-✅ Easy rollback
+- ✅ One DB
+- ✅ One transaction
+- ✅ Easy rollback
 
 In microservices:
 
-❌ Many DBs
-❌ No global transaction
-❌ Hard rollback
+- ❌ Many DBs
+- ❌ No global transaction
+- ❌ Hard rollback
 
 So we use **Saga**.
 
----
+ 
 
 # 🧠 2. The Core Problem (Why Saga Is Needed)
 
@@ -1515,7 +1514,7 @@ No automatic rollback.
 
 👉 This is where Saga comes in.
 
----
+ 
 
 # 📌 3. What Does Saga Do?
 
@@ -1523,8 +1522,8 @@ Saga breaks **one big transaction** into **many small steps**.
 
 Each step:
 
-✅ Has a normal operation
-✅ Has a rollback operation (compensation)
+- ✅ Has a normal operation
+- ✅ Has a rollback operation (compensation)
 
 Example:
 
@@ -1537,8 +1536,7 @@ Example:
 
 If any step fails → previous steps are undone.
 
----
-
+ 
 # 🔄 4. E-Commerce Example with Saga
 
 ### Normal Flow (Success ✅)
@@ -1556,7 +1554,7 @@ Result:
 Order = Confirmed
 ```
 
----
+  
 
 ### Failure Flow (Compensation ❌)
 
@@ -1575,7 +1573,7 @@ Now Saga activates rollback:
 
 System becomes consistent again ✅
 
----
+ 
 
 # 📐 5. Two Types of Saga
 
@@ -1609,8 +1607,7 @@ If failure:
 PaymentFailed → OrderService
 ```
 
----
-
+ 
 ### 🔹 Diagram (Choreography)
 
 ```
@@ -1620,13 +1617,13 @@ Order ──▶ Kafka ──▶ Payment
 Cancel ◀── Kafka ◀── Inventory
 ```
 
-✔ Loosely coupled
-✔ Scalable
-✔ Best for Kafka systems
+- ✔ Loosely coupled
+- ✔ Scalable
+- ✔ Best for Kafka systems
 
 👉 This is what you are using in your lab.
 
----
+ 
 
 ## ✅ 2️⃣ Orchestration Saga (Central Controller)
 
@@ -1641,7 +1638,7 @@ Saga Manager → Order
 
 Central brain decides next step.
 
----
+ 
 
 ### 🔹 Diagram (Orchestration)
 
@@ -1653,12 +1650,12 @@ Central brain decides next step.
  Order Payment Stock Shipping
 ```
 
-✔ Easier logic
-❌ Single point of failure
+- ✔ Easier logic
+- ❌ Single point of failure
 
 Used in banking, workflows.
 
----
+ 
 
 # 📊 6. Comparison: Choreography vs Orchestration
 
@@ -1672,7 +1669,7 @@ Used in banking, workflows.
 
 👉 Microservices + Kafka → Choreography is preferred.
 
----
+ 
 
 # 🧩 7. How Saga Works in Your Project
 
@@ -1690,7 +1687,7 @@ InventoryService
 NotificationService
 ```
 
----
+ 
 
 ### Failure Path
 
@@ -1705,8 +1702,7 @@ OrderService
 
 That is Saga in action.
 
----
-
+ 
 # ⚙️ 8. Technical Implementation (Conceptual)
 
 ### Step 1: Publish Normal Event
@@ -1715,7 +1711,7 @@ That is Saga in action.
 Publish("payment-success");
 ```
 
----
+ 
 
 ### Step 2: Publish Failure Event
 
@@ -1723,7 +1719,7 @@ Publish("payment-success");
 Publish("payment-failed");
 ```
 
----
+ 
 
 ### Step 3: Compensation Handler
 
@@ -1737,15 +1733,14 @@ if(event == "payment-failed")
 
 Each service handles its own rollback.
 
----
-
+ 
 # 🛡️ 9. Why Not Use Database Transactions?
 
 Because in microservices:
 
-❌ Different databases
-❌ Different servers
-❌ Different owners
+- ❌ Different databases
+- ❌ Different servers
+- ❌ Different owners
 
 This is illegal:
 
@@ -1759,16 +1754,14 @@ Not possible.
 
 Saga is the alternative.
 
----
-
 # 📉 10. Reliability with Saga
 
 Saga gives:
 
-✅ No partial failures
-✅ Auto recovery
-✅ Business consistency
-✅ Fault tolerance
+- ✅ No partial failures
+- ✅ Auto recovery
+- ✅ Business consistency
+- ✅ Fault tolerance
 
 Without Saga:
 
@@ -1785,15 +1778,14 @@ With Saga:
 System Self-Heals
 ```
 
----
-
+ 
 # 🎯 11. Interview-Ready Definition
 
 > **Saga Pattern is a distributed transaction management pattern where each service executes a local transaction and publishes events to trigger the next step or compensation.**
 
 Memorize this ✅
 
----
+ 
 
 # 📚 12. Real-Life Analogy (Easy for Students)
 
@@ -1816,7 +1808,7 @@ That’s Saga.
 
 No central transaction.
 
----
+ 
 
 # 📌 13. Common Mistakes
 
@@ -1829,53 +1821,48 @@ No central transaction.
 
 Always implement rollback logic.
 
----
 
 # 🧠 14. When to Use Saga?
 
 Use Saga when:
 
-✅ Multiple services
-✅ Multiple DBs
-✅ Business workflow
-✅ Money / Orders / Stock
+- ✅ Multiple services
+- ✅ Multiple DBs
+- ✅ Business workflow
+- ✅ Money / Orders / Stock
 
 Do NOT use Saga for:
 
-❌ Simple CRUD
-❌ Single DB apps
+- ❌ Simple CRUD
+- ❌ Single DB apps
 
----
+ 
 
 # 🏁 15. One-Line Summary
 
 > **Saga Pattern keeps microservices consistent by using events and compensating actions instead of database transactions.**
 
  
+Here are the **key advantages of Kafka over RabbitMQ**, explained in a **practical, system-design way** (useful for understanding real projects).
 
-
-
-Here are the **key advantages of Kafka over RabbitMQ**, explained in a **practical, system-design way** (useful for teaching and real projects).
-
----
 
 # ✅ 1. Kafka Is Built for **High-Volume Streaming**
 
 ### Kafka
 
-✔️ Handles **millions of messages per second**
-✔️ Designed for **big data + analytics + logs + events**
+- ✔️ Handles **millions of messages per second**
+- ✔️ Designed for **big data + analytics + logs + events**
 
 ### RabbitMQ
 
-❌ Best for **low–medium traffic**
-❌ Slows down under massive streaming load
+- ❌ Best for **low–medium traffic**
+- ❌ Slows down under massive streaming load
 
 📌 **Result:**
 
 > If your system produces huge data (e-commerce, IoT, logs, AI pipelines) → Kafka wins.
 
----
+ 
 
 # ✅ 2. Kafka Stores Data (Message Retention)
 
@@ -1900,16 +1887,16 @@ Consumed → Gone
 > Kafka = Replay + Audit + Debug
 > RabbitMQ = One-time delivery
 
----
+ 
 
 # ✅ 3. Kafka Supports Event Replay (Time Travel)
 
 With Kafka, you can:
 
-✔️ Re-read old events
-✔️ Rebuild database
-✔️ Recover failures
-✔️ Train ML models
+- ✔️ Re-read old events
+- ✔️ Rebuild database
+- ✔️ Recover failures
+- ✔️ Train ML models
 
 Example:
 
@@ -1929,10 +1916,10 @@ RabbitMQ ❌ cannot do this easily.
 
 Kafka is designed for:
 
-✔️ Event sourcing
-✔️ Saga
-✔️ CQRS
-✔️ Streaming pipelines
+- ✔️ Event sourcing
+- ✔️ Saga
+- ✔️ CQRS
+- ✔️ Streaming pipelines
 
 Example:
 
@@ -1953,7 +1940,7 @@ Producer → Consumer (Point-to-Point)
 > Kafka = Nervous system
 > RabbitMQ = Messenger
 
----
+ 
 
 # ✅ 5. Kafka Has Built-in Scalability (Partitioning)
 
@@ -1969,28 +1956,27 @@ Each partition → separate consumer.
 
 So:
 
-✔️ Horizontal scaling
-✔️ Parallel processing
-✔️ Easy load balancing
+- ✔️ Horizontal scaling
+- ✔️ Parallel processing
+- ✔️ Easy load balancing
 
 RabbitMQ scaling is harder.
 
 📌 **Result:**
 
 > Kafka grows easily with traffic.
-
----
+ 
 
 # ✅ 6. Kafka Is Better for Data Integration
 
 Kafka works well with:
 
-✔️ Big Data
-✔️ Spark
-✔️ Flink
-✔️ Hadoop
-✔️ AI Pipelines
-✔️ Data Lakes
+- ✔️ Big Data
+- ✔️ Spark
+- ✔️ Flink
+- ✔️ Hadoop
+- ✔️ AI Pipelines
+- ✔️ Data Lakes
 
 Example:
 
@@ -2004,7 +1990,7 @@ RabbitMQ is not designed for this.
 
 > Kafka = Data backbone
 
----
+ 
 
 # ✅ 7. Kafka Is More Durable (Crash Resistant)
 
@@ -2012,19 +1998,19 @@ Kafka writes data to disk in **append-only logs**.
 
 So even if:
 
-❌ Server crashes
-❌ Power failure
-❌ Restart happens
+- ❌ Server crashes
+- ❌ Power failure
+- ❌ Restart happens
 
 Data is safe.
 
 RabbitMQ mostly relies on memory + optional persistence.
 
-📌 **Result:**
+- 📌 **Result:**
 
 > Kafka = Better reliability for critical data
 
----
+
 
 # ✅ 8. Kafka Supports Multiple Consumers Easily
 
@@ -2048,17 +2034,16 @@ RabbitMQ needs special fanout setup.
 
 > Kafka = Natural broadcast system
 
----
 
 # ✅ 9. Kafka Fits Cloud + Enterprise Scale Better
 
 Large companies prefer Kafka for:
 
-✔️ Netflix
-✔️ Uber
-✔️ Amazon
-✔️ LinkedIn
-✔️ Flipkart
+- ✔️ Netflix
+- ✔️ Uber
+- ✔️ Amazon
+- ✔️ LinkedIn
+- ✔️ Flipkart
 
 Because:
 
@@ -2068,7 +2053,7 @@ Because:
 
 RabbitMQ is more popular in small/medium systems.
 
----
+ 
 
 # ✅ 10. Performance: Kafka Is Faster at Scale
 
@@ -2085,7 +2070,7 @@ RabbitMQ is more popular in small/medium systems.
 > Kafka = Speed + Volume
 > RabbitMQ = Simplicity
 
----
+ 
 
 # 📊 Summary Table
 
@@ -2100,7 +2085,7 @@ RabbitMQ is more popular in small/medium systems.
 | Reliability   | Very high          |
 | Broadcasting  | Native             |
 
----
+ 
 
 # 🎓 Mentor Explanation (For Students)
 
@@ -2117,7 +2102,7 @@ Send → Deliver → Done
 * Fast delivery
 * No history
 
----
+ 
 
 ### 🚄 Kafka = Railway System
 
@@ -2130,34 +2115,32 @@ Data → Stored → Replayed → Shared
 * Many users
 * Long-term system
 
----
+ 
 
 # 🧠 When Should You Choose Kafka?
 
 Use Kafka when you need:
 
-✅ Event-driven microservices
-✅ Saga pattern
-✅ Analytics
-✅ Logging
-✅ Data pipelines
-✅ AI/ML inputs
-✅ Audit trail
-✅ Large scale
+- ✅ Event-driven microservices
+- ✅ Saga pattern
+- ✅ Analytics
+- ✅ Logging
+- ✅ Data pipelines
+- ✅ AI/ML inputs
+- ✅ Audit trail
+- ✅ Large scale
 
----
 
 # 🧠 When RabbitMQ Is Better
 
 RabbitMQ is better when:
 
-✅ Simple job queues
-✅ Email sending
-✅ Background tasks
-✅ Notifications
-✅ Small systems
+- ✅ Simple job queues
+- ✅ Email sending
+- ✅ Background tasks
+- ✅ Notifications
+- ✅ Small systems
 
----
 
 # 🏁 Final Answer (One Line)
 

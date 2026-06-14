@@ -163,10 +163,6 @@ export default Dashboard;
 3. If `accessToken` expires → interceptor calls `/auth/refresh` → gets a new token automatically.  
 4. Protected routes (`/admin/**`, `/user/**`) are accessible based on roles.  
  
-
-
-
-
 Let’s build a **simple React app** with **protected routes for Admin and User**, consuming your **Spring Boot JWT API**.  
 
 ## 🛠️ Step 1: Install Dependencies

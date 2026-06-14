@@ -39,8 +39,8 @@ A .NET application is a **software system**, not just code files.
 
 > **DLL cannot run on its own**
 
-✔ Console App / Web App → **EXE**
-✔ Class Library → **DLL**
+- ✔ Console App / Web App → **EXE**
+- ✔ Class Library → **DLL**
 
 
 
@@ -116,9 +116,9 @@ Program.cs
 appsettings.json
 ```
 
-✔ Minimal
-✔ Lightweight
-✔ Easy to understand
+- ✔ Minimal
+- ✔ Lightweight
+- ✔ Easy to understand
 
 
 
@@ -249,7 +249,7 @@ Same core knowledge can build:
 
 👉 **Learn core once, apply everywhere**
 
----
+ 
 
 ### 15. Key Exam & Interview Points
 
@@ -260,7 +260,7 @@ Same core knowledge can build:
 * Kestrel = built-in web server
 * `Program.cs` = entry point
 
----
+ 
 
 ### 16. Learning Strategy (Mentor Advice)
 
@@ -270,8 +270,7 @@ Same core knowledge can build:
 4. Add **Services & Libraries**
 5. Build real projects
 
----
-
+ 
 ### ✅ Summary
 
 * .NET is **platform + runtime + tools**
@@ -279,15 +278,10 @@ Same core knowledge can build:
 * MVC is for scalable applications
 * CLI knowledge increases productivity
 
- 
- 
-
 # ASP.NET Core Web Applications
 
 ## Student Notes (Minimal API → MVC → Enterprise Thinking)
-
 ### 1. Running a Test Web Application
-
 ### Command-Line Execution
 
 ```bash
@@ -304,8 +298,6 @@ dotnet run
 * `/` → Default page
 * `/about` → About page (if mapped)
 
----
-
 ### 2. What Happens When the App Runs?
 
 * ASP.NET Core app starts
@@ -313,10 +305,9 @@ dotnet run
 * Incoming HTTP requests are handled
 * Output is sent back to the browser
 
-✔ No UI logic is in the browser
-✔ Browser only displays the response
+- ✔ No UI logic is in the browser
+- ✔ Browser only displays the response
 
----
 
 ### 3. Application Object & Lifetime
 
@@ -330,8 +321,6 @@ dotnet run
 * One instance
 * Used globally
 * Manages request pipeline
-
----
 
 ### 4. Entry Point: `Main()` Method
 
@@ -351,10 +340,9 @@ Now (.NET 6+ / .NET 8):
 * `Main()` is **implicit**
 * Code is written directly in `Program.cs`
 
-✔ Entry point still exists
-✔ It is just hidden for simplicity
+- ✔ Entry point still exists
+- ✔ It is just hidden for simplicity
 
----
 
 ### 5. Build vs Run
 
@@ -379,8 +367,6 @@ dotnet run
 
 * Build + Execute
 * Starts web server
-
----
 
 ### 6. Creating a Web Application
 
@@ -424,8 +410,6 @@ builder.Services.AddXyz();
 
 ✔ Happens **before app runs**
 
----
-
 #### 2️⃣ Middleware Configuration
 
 ```csharp
@@ -434,8 +418,6 @@ app.UseXyz();
 
 * Defines HTTP pipeline
 * Intercepts requests and responses
-
----
 
 ### 8. HTTP Middleware Pipeline (Very Important)
 
@@ -464,8 +446,6 @@ Handler → Middleware Pipeline → Response
 
 ✔ You can intercept **before and after** request processing
 
-
-
 ### 9. Request Mapping
 
 #### Map HTTP Requests
@@ -478,8 +458,6 @@ app.MapGet("/", () => "Hello World");
 * Handler returns response
 
 ✔ This is request–response mapping
-
----
 
 ### 10. Static Files & UI Resources
 
@@ -499,8 +477,6 @@ app.UseStaticFiles();
 
 ✔ Required for UI rendering
 
----
-
 ### 11. Razor Pages
 
 #### Razor Pages Mapping
@@ -517,7 +493,6 @@ app.MapRazorPages();
 
 ✔ Similar to ASPX, but modern
 
----
 
 ### 12. Evolution of Microsoft UI Technologies
 
@@ -531,7 +506,6 @@ app.MapRazorPages();
 | WPF (XAML)      | Windows        |
 | MAUI            | Cross-platform |
 
----
 
 ### 13. MVC Framework
 
@@ -557,7 +531,6 @@ Views/
 
 ✔ Suitable for applications with **thousands of pages**
 
----
 
 ### 14. MVC Controller Basics
 
@@ -577,7 +550,6 @@ public class ProductsController : Controller
 * Return `ViewResult`
 * Automatically finds `.cshtml` file
 
----
 
 ### 15. Routing in MVC
 
@@ -595,7 +567,6 @@ Example:
 
 ✔ Routing is managed by MVC framework
 
----
 
 ### 16. MVC vs Minimal API
 
@@ -609,7 +580,6 @@ Example:
 ✔ Both are correct
 ✔ Choice depends on **project size**
 
----
 
 ### 17. Architectural Patterns
 
@@ -618,8 +588,6 @@ Example:
 * MVP – UI-heavy apps
 
 ✔ Pattern selection depends on **application type**
-
----
 
 ### 18. Layered Architecture (Industry Standard)
 
@@ -639,7 +607,6 @@ Models
 * Testability
 * Scalability
 
----
 
 ### 19. Dependency Injection (Core Concept)
 
@@ -647,10 +614,8 @@ Models
 * Implementations provide logic
 * Injected at runtime
 
-✔ Reduces tight coupling
-✔ Enables unit testing
-
----
+- ✔ Reduces tight coupling
+- ✔ Enables unit testing
 
 ### 20. Data Layer & Practice Resources
 
@@ -664,8 +629,6 @@ Models
 
 ✔ Use these for hands-on practice
 
----
-
 ### 21. Power Platform (Low-Code / No-Code)
 
 #### Microsoft Power Platform
@@ -675,11 +638,9 @@ Models
 * Power BI
 * SharePoint
 
-✔ Business-focused
-✔ Minimal coding
-✔ Built on top of Microsoft ecosystem
-
-
+- ✔ Business-focused
+- ✔ Minimal coding
+- ✔ Built on top of Microsoft ecosystem
 
 ### 22. Developer vs Platform Roles
 

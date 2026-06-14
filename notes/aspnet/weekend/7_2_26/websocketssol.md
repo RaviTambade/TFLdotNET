@@ -2,10 +2,10 @@
 
 This teaches:
 
-👉 Architecture
-👉 Real-time engineering
-👉 Healthcare responsibility
-👉 Industry practices
+- 👉 Architecture
+- 👉 Real-time engineering
+- 👉 Healthcare responsibility
+- 👉 Industry practices
 
 
 ## Live Patient Monitoring System Using WebSockets
