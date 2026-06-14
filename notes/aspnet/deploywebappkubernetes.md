@@ -1,9 +1,9 @@
+# ASP.NET Core App into Kubernetes
 ### *“From Developer’s Desk to the Cloud Battlefield — The Journey of Your ASP.NET Core App into Kubernetes”*
 
 *“Class, gather around — today, I’m going to tell you about the moment your application learns to live on its own. It’s like raising a child — you’ve built it with care, tested it locally, wrapped it in Docker like a safe backpack — and now you want to send it out into the real world. That world… is Kubernetes.”*
 
  
-
 ### 🌍 *Act 1: The Rise of Kubernetes — A Digital City of Services*
 
 Imagine a **modern digital city** where different buildings (services) do their work quietly — some serve users, others manage data, while a few route traffic. This city doesn’t run on chaos. It’s smart, automated, and healing — just like Kubernetes.

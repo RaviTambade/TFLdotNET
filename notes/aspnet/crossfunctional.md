@@ -1,6 +1,6 @@
 
 
-# Understanding Cross-Functional Features in .NET Web Applications
+# Cross-Functional Features in .NET Web Applications
 
 **"Class, let me take you back to a project I once worked on..."**
 
