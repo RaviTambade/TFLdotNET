@@ -1,7 +1,5 @@
-# Understanding MQTT for IoT & Real-World Messaging
+# MQTT for IoT & Real-World Messaging
 
-
-## 🛠 What Is MQTT?
 
 > “Let’s say you’re trying to communicate with hundreds of tiny, battery-powered sensors spread across a large factory. These devices can’t afford heavy data loads or stable 4G connections — they need a smart, lightweight way to talk. That’s where **MQTT** shines.”
 
@@ -157,9 +155,6 @@ mosquitto_pub -h test.mosquitto.org -t "home/test" -m "Hello MQTT"
 # Subscribe
 mosquitto_sub -h test.mosquitto.org -t "home/test"
 ```
-
- 
-
 ##  Mentor’s Advice
 
 > “MQTT is the invisible nervous system behind many smart factories, home automation, and even agriculture systems. If you ever want to build real-time, event-driven systems — *learn MQTT like it’s your walkie-talkie for the digital world.*”
