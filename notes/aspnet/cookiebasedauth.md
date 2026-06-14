@@ -10,7 +10,6 @@ Once upon a time in a digital kingdom, there was a castle named **"Secure MVC Ap
 
 Let’s walk through this castle and learn **how Cookie-based Authentication works** in ASP.NET Core MVC…
 
----
 
 ### 🎬 **Scene 1: The Login Gate**
 
@@ -31,7 +30,6 @@ Once verified, the castle gives John a **magic scroll** — a **cookie** — and
 
 ✅ This cookie contains an **encrypted identity**, signed by the server.
 
----
 
 ### 🛡️ **Scene 2: The Guard Post (Middleware)**
 
@@ -49,7 +47,6 @@ If yes, the doors open. If not?
 
 Let’s bring this story to life with **ASP.NET Core MVC code**.
 
----
 
 ### 📦 Step 1: Add Authentication Services
 
@@ -134,7 +131,6 @@ public async Task<IActionResult> Login(string username, string password)
 * Then we wrap them in a **ClaimsPrincipal**.
 * And **sign him in** — generating the **cookie**.
 
----
 
 ### 🧹 Step 4: Logout
 
@@ -148,8 +144,6 @@ public async Task<IActionResult> Logout()
 
 💡 John hands back the magic scroll, and the guards forget him.
 
----
-
 ### 🔍 Bonus: Access Control with Roles
 
 ```csharp
@@ -162,8 +156,6 @@ public IActionResult AdminOnlyArea()
 
 You can also inject policies, permissions, and fine-tune the access.
 
----
-
 ### 💬 Mentor's Tip
 
 > Cookie-based authentication is **stateful** — the server doesn’t store session, but the cookie holds encrypted info.
@@ -174,23 +166,18 @@ But always remember:
 * Use HTTPS to secure cookies.
 * Set `HttpOnly`, `Secure`, and `SameSite` for safety.
 
----
-
 ### 🧭 Wrap-up: The Moral of the Story
 
 The magic scroll (cookie) is your **identity passport** in the app.
 It’s simple, secure (if used well), and fits perfectly for most MVC applications.
 
----
 
 ### 🧪 Ready for Hands-on Practice?
 
-👉 Create a simple **Login + Dashboard** app.
-👉 Add `[Authorize]` to a controller.
-👉 Try to access it without logging in.
-👉 Explore the browser’s **Application → Cookies** tab.
-
----
+- 👉 Create a simple **Login + Dashboard** app.
+- 👉 Add `[Authorize]` to a controller.
+- 👉 Try to access it without logging in.
+- 👉 Explore the browser’s **Application → Cookies** tab.
 
 Let me know if you’d like a sample project or want to extend this to JWT or external providers like Google.
 

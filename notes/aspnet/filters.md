@@ -1,5 +1,7 @@
+# ASP.NET Filters
 
-# *The Security Gate, the Inspection Room, and the Quality Checker of MVC Palace*
+
+*The Security Gate, the Inspection Room, and the Quality Checker of MVC Palace*
 
 > *"Imagine your MVC application is a high-security palace where each request is a visitor. Before the visitor meets the royal family (your controller and actions), they pass through several security checks, room inspections, and final approvals. These 'checks' are none other than our heroes — the **Filters**!"*
 

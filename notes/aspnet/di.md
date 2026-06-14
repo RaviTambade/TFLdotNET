@@ -1,12 +1,10 @@
-###  *"The Tale of Dependency Injection – Building Flexible APIs Together"*
+###  *"Dependency Injection – Building Flexible APIs Together"*
 
 Good morning, students!
 
 Today, I want you to **step into the shoes of a software architect** — someone who not only writes code but designs systems that last, evolve, and stand the test of time.
 
 Now let me tell you a story — not of just code, but of **design wisdom**.
-
----
 
 ### 🏗️ Scene 1: The Construction Site (Your Web API Project)
 
@@ -20,7 +18,6 @@ It’s like saying:
 
 > *“Let me define what I need, and I trust the system to provide the best person (object) for the job.”*
 
----
 
 ### 🔧 Step 1: **Define What You Need (Interfaces)**
 
@@ -120,14 +117,12 @@ Did you see that? The controller didn’t create or know anything about how the 
 
 
 ### 🎯 Step 5: **Why Is This Magical?**
-
 Let me tell you what you just built:
 
 * ✅ **Loose coupling** — Your controller doesn’t depend on concrete classes. You can swap `DataService` with `MockDataService` for testing.
 * ✅ **Testability** — You can now **unit test** your controller by passing fake services.
 * ✅ **Flexibility** — Your app is like LEGO — interchangeable parts.
 * ✅ **Maintainability** — If your logging logic changes, just update `LoggingService` — no need to touch the controller.
-
 
 ### ⚙️ Step 6: **Lifetimes — Who Lives How Long?**
 
@@ -143,7 +138,6 @@ You choose based on the **job’s nature**:
 services.AddTransient<ILoggingService, LoggingService>();
 services.AddScoped<IDataService, DataService>();
 ```
-
 
 ### 🎨 Step 7: **Fine-Tune as You Grow**
 
@@ -167,4 +161,3 @@ Dependency Injection helps you do that. It lets you write code that’s **modula
 
 So the next time you build an ASP.NET Web API, don’t write tightly coupled code.
 Let the **framework do the heavy lifting**. Let **Dependency Injection be your silent hero** — always working, always managing, always ready.
- 

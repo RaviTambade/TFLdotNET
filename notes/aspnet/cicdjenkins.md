@@ -1,4 +1,4 @@
-##  CI/CD using Jenkins – Automating the Developer’s Journey
+#  Jenkins –CI/CD
 
 *"Imagine you're building a bridge — each day, you add a few bricks, test their strength, and extend the structure. But wouldn’t it be amazing if you had a machine that builds, tests, and reinforces the bridge automatically whenever new bricks arrive?"*
 
@@ -146,7 +146,7 @@ Example: Add steps to upload to Azure Blob, or run `scp`/`rsync` to a production
 | Advantage                  | Description                                 |
 | -------------------------- | ------------------------------------------- |
 | 🧠 **Automation**          | No more manual building or deploying        |
-| 🚦 **Early Bug Detection** | Catch problems at the commit stage          |
+| 🚦 **Early Bug Detection** | Catch problems at the commit stage           |
 | 🔁 **Consistency**         | Repeatable builds across all environments   |
 | 🔌 **Extensibility**       | Over 1,800 plugins to support your workflow |
 | 🌐 **Community**           | Huge support base and documentation         |

@@ -1,9 +1,9 @@
 
-## Unlocking the Power of Business Intelligence through Data Visualization
+# Business Intelligence through Data Visualization
 
 *"Students, have you ever wondered how successful companies like Amazon, Flipkart, or even your favorite food delivery apps know exactly what to offer, when, and to whom? The secret behind these smart decisions is something called **Business Intelligence**, or BI."*
 
-### 🔍 What Is Business Intelligence?
+### 🔍 What Is Business Intelligence(BI)?
 
 "BI is not just a buzzword—it's like the brain of a business that helps it think clearly using data. It collects, cleans, and connects massive amounts of data, then uses that data to make smart, **data-driven decisions**.
 
