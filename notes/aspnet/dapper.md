@@ -66,10 +66,10 @@ using (IDbConnection db = new SqlConnection(connectionString))
 
 ### **Key Takeaways**
 
-* ✅ **Fast as Lightning**: It’s built by the same folks behind Stack Overflow. So, performance? Top-notch.
-* 🧠 **No Heavy ORM Rules**: You write your SQL. Dapper simply maps the result to your C# classes.
-* 🔐 **Safe**: All queries are parameterized, so SQL injection? No chance.
-* 🤝 **Auto-Mapping**: Columns in your query match class properties? Dapper does the rest — no extra config.
+* **Fast as Lightning**: It’s built by the same folks behind Stack Overflow. So, performance? Top-notch.
+* **No Heavy ORM Rules**: You write your SQL. Dapper simply maps the result to your C# classes.
+* **Safe**: All queries are parameterized, so SQL injection? No chance.
+* **Auto-Mapping**: Columns in your query match class properties? Dapper does the rest — no extra config.
 
 ### When Should You Use Dapper?
 
@@ -77,8 +77,8 @@ using (IDbConnection db = new SqlConnection(connectionString))
 
 ### More Resources
 
-* 📚 [Dapper GitHub Repo](https://github.com/DapperLib/Dapper)
-* 🛠️ [Interactive Tutorials](https://dapper-tutorial.net/)
+* [Dapper GitHub Repo](https://github.com/DapperLib/Dapper)
+* [Interactive Tutorials](https://dapper-tutorial.net/)
 
 ### Mentor's Closing Advice
 
