@@ -60,22 +60,23 @@ You are not alone on this path. I am walking with you.
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/dotnet.md">What is .NET?</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/settingupdotnetsolution.md">Creating .NET Core Solution using CLI</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/buildexedotnetsolution.md">Building and Executing .NET Core Solution</a>
+- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/assembly.md">Assembly in .net core</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/CSharpLang.md">C# Prgramming Basics</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/oo.md"> Objectd Oriented  Programming(OOPs) using C#</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/Collections.md">Collection Framework</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/comparingobjects.md">Comparision</a>
-- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/assembly.md">Assembly in .net core</a>
-- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/Serialization.md">Serialization</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/delegate.md">Delegates</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/events.md">Events</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/Reflection.md">Reflection</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/Attributes.md">Custom Attributes</a>
+- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/Serialization.md">Serialization</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/linq.md">LINQ</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/garbagecollection.md">Garbage Collection(GC)</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/databasecrud.md">Data Access using C#</a>
+- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/repository.md">Repository Pattern</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/entityframeworkcore.md"> Entity Framework Core</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/dapper.md">Dapper</a>
-- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/repository.md">Repository Pattern</a>
+
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/multithreading.md">Mutithreading</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/asyncawait.md">Asynchronous Programming using C#</a>
 
