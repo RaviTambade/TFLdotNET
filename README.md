@@ -105,6 +105,7 @@ You are not alone on this path. I am walking with you.
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/productcatalogimplemntation.md">ProductCatalog Solution</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/crossfunctional.md"> Cross Functional Features</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/JWT.md">JWT Authentication</a>
+- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/JWTRolebasedAuth.md">JWT Rolebased Authorization</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/localization.md"> Localization</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/websockets.md"> WebSockets</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/signalR.md"> SignalR</a>
@@ -112,6 +113,5 @@ You are not alone on this path. I am walking with you.
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/deploywebappkubernetes.md"> Deploying  ASP.NET to Kubernetes</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/cicdgit.md"> CI/CD using Git Actions</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/cicdjenkins.md"> CI/CD using Jenkins</a>
- 
 - Kafka
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/mcq.md">Test your TFLdotNET Programming Skill(MCQ)</a>
