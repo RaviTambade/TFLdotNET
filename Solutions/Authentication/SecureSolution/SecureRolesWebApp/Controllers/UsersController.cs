@@ -29,7 +29,6 @@ namespace SecureWebApp.Controllers
         }
 
 
-
         [Authorize(Role = Role.Admin)]
         [HttpGet]
         public IActionResult GetAll()
@@ -38,8 +37,6 @@ namespace SecureWebApp.Controllers
             return Ok(users);
         }
    
-
-
         [HttpPost]  
         public ActionResult SendMessage()  
         {  
@@ -57,9 +54,6 @@ namespace SecureWebApp.Controllers
             BodyBuilder bodyBuilder = new BodyBuilder();
             bodyBuilder.HtmlBody = "<h1>Hello World!</h1>";
             bodyBuilder.TextBody = "Hello World!";
-        /*  var attachment = new Attachment("profile.jpg", MediaTypeNames.Image.Jpeg);
-            mailMessage.Attachments.Add(attachment); */
-            //bodyBuilder.Attachments.Add(env.WebRootPath + "\\file.png");
             message.Body = bodyBuilder.ToMessageBody();
 
 

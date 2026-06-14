@@ -11,9 +11,6 @@ public class AuthorizeAttribute : Attribute, IAuthorizationFilter
 
     public void OnAuthorization(AuthorizationFilterContext context)
     {
-
-        
-
         var user = (User)context.HttpContext.Items["User"];
         var roleToken = (string)context.HttpContext.Items["Role"];
 
