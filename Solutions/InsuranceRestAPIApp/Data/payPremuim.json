@@ -1,4 +1,6 @@
 [{"PolicyNumber":"POL1001","ClaimAmount":24000},
 {"PolicyNumber":"POL1001","ClaimAmount":0},
 {"PolicyNumber":"POL1003","ClaimAmount":5000},
-{"PolicyNumber":"POL1005","ClaimAmount":5004},{"PolicyNumber":"POL2498","ClaimAmount":2500},{"PolicyNumber":"POL4444","ClaimAmount":2500}]
+{"PolicyNumber":"POL1005","ClaimAmount":5004}
+,{"PolicyNumber":"POL2498","ClaimAmount":2500},
+{"PolicyNumber":"POL4444","ClaimAmount":2500}]
