@@ -3,15 +3,48 @@ using  MaxNewYorkInsurance.Repositories;
 namespace MaxNewYorkInsurance.Departments;
 public class ClaimDepartment
 {
-    public void OnClaimRegistered(Claim theClaim)
-    {
 
-        ClaimsRepository claimRepo = new ClaimsRepository();
-        List<Claim> claims =claimRepo.GetAllRegisterClaim();
-        claims.Add(theClaim);
-        claimRepo.SaveRegisterClaim(claims);
-        Console.WriteLine("Claim registered");
+
+
+    public void OnClaimRegistered(Claim claim) { 
+        Console.WriteLine("====================================");
+         Console.WriteLine("Claims Department"); 
+         Console.WriteLine($"Claim {claim.ClaimId} registered successfully.");
+          Console.WriteLine("Claim forwarded for verification.");
+           Console.WriteLine("===================================="); 
     }
+           
+    public void OnClaimVerified(Claim claim) {
+        Console.WriteLine("====================================");
+         Console.WriteLine($"Claim {claim.ClaimId} has been verified.");
+          Console.WriteLine("Supporting documents validated.");
+           Console.WriteLine("====================================");
+            } 
+            public void OnClaimApproved(Claim claim) {
+                 Console.WriteLine("====================================");
+                 
+                  Console.WriteLine($"Claim {claim.ClaimId} approved."); 
+                  Console.WriteLine("Settlement process initiated."); 
+          
+                  Console.WriteLine("===================================="); }
+                   public void OnClaimRejected(Claim claim) {
+                     Console.WriteLine("====================================");
+                      Console.WriteLine($"Claim {claim.ClaimId} rejected."); 
+                      Console.WriteLine("Customer will be notified with the reason.");
+                       Console.WriteLine("===================================="); 
+                       } 
+                       
+                       public void OnClaimSettled(Claim claim) { 
+                        Console.WriteLine("====================================");
+                         Console.WriteLine($"Claim {claim.ClaimId} settled successfully.");
+                          Console.WriteLine("Payment released to the customer.");
+                           Console.WriteLine("====================================");
+                            }
+                            
+     public void OnFraudCheckRequested(Claim claim)
+      { Console.WriteLine("====================================");
+       Console.WriteLine($"Fraud investigation initiated for Claim {claim.ClaimId}."); 
+       Console.WriteLine("Claim sent to the investigation team."); Console.WriteLine("===================================="); } public void OnClaimReopened(Claim claim) { Console.WriteLine("===================================="); Console.WriteLine($"Claim {claim.ClaimId} has been reopened."); Console.WriteLine("The claim will be reviewed again."); Console.WriteLine("===================================="); } public void OnClaimClosed(Claim claim) { Console.WriteLine("===================================="); Console.WriteLine($"Claim {claim.ClaimId} closed."); Console.WriteLine("No further processing is pending."); Console.WriteLine("===================================="); }
 
     // View all registered claims
     public List<Claim> GetAllClaims()

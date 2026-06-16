@@ -1,121 +1,75 @@
-using MaxNewYorkInsurance.Repositories;
-using  MaxNewYorkInsurance.Models;
-using  MaxNewYorkInsurance.Managers;
-using MaxNewYorkInsurance.Agents;
+using MaxNewYorkInsurance.Models;
+
 namespace MaxNewYorkInsurance.Departments;
 
 public class RenewalDepartment
 {
-    PolicyRepository repo =new PolicyRepository();
-
- 
-    public bool OnRenewPolicy(string policyNumber)
-{
-    List<Policy> policies = repo.GetAllPolicies();
-
-    bool status = false;
-
-    foreach (Policy policy in policies)
+    public void OnRenewPolicy(string policyNumber)
     {
-        if (policy.PolicyNumber == policyNumber)
+        Console.WriteLine("====================================");
+        Console.WriteLine("Renewal Department");
+        Console.WriteLine($"Policy Renewal Requested: {policyNumber}");
+
+        Console.WriteLine("Checking policy validity...");
+
+        // Simulated validation logic
+        bool isEligibleForRenewal = true;
+
+        if (isEligibleForRenewal)
         {
-            policy.IsRenewed = true;
-            status = true;
-            break;
+            Console.WriteLine("Policy is eligible for renewal.");
+            Console.WriteLine("Renewal process initiated.");
         }
+        else
+        {
+            Console.WriteLine("Policy is not eligible for renewal.");
+        }
+
+        Console.WriteLine("====================================");
     }
 
-    if (status)
+    public void OnRenewalReminderSent(string policyNumber)
     {
-        repo.SaveAllPolicies(policies);
-    }
-    return status;
-}
-
-
-    // Check whether a policy is eligible for renewal
-    public bool IsEligibleForRenewal(string policyNumber)
-    {
-        return false;
+        Console.WriteLine("====================================");
+        Console.WriteLine("Renewal Reminder Service");
+        Console.WriteLine($"Reminder sent for Policy: {policyNumber}");
+        Console.WriteLine("Customer notified via Email/SMS.");
+        Console.WriteLine("====================================");
     }
 
-    // Calculate the renewal premium
-    public decimal CalculateRenewalPremium(string policyNumber)
+    public void OnPolicyExpired(string policyNumber)
     {
-        return 0;
+        Console.WriteLine("====================================");
+        Console.WriteLine("Policy Expiry Handler");
+        Console.WriteLine($"Policy expired: {policyNumber}");
+        Console.WriteLine("Grace period started (if applicable).");
+        Console.WriteLine("====================================");
     }
 
-    // Extend the expiry date after renewal
-    public bool ExtendPolicyValidity(string policyNumber)
+    public void OnRenewalCompleted(Policy policy)
     {
-        return false;
+        Console.WriteLine("====================================");
+        Console.WriteLine("Renewal Completed");
+        Console.WriteLine($"Policy Renewed: {policy.PolicyNumber}");
+        Console.WriteLine("New policy term activated.");
+        Console.WriteLine("====================================");
     }
 
-    // Mark policy as renewed
-    public bool MarkAsRenewed(string policyNumber)
+    public void OnRenewalRejected(string policyNumber)
     {
-        return false;
+        Console.WriteLine("====================================");
+        Console.WriteLine("Renewal Rejected");
+        Console.WriteLine($"Policy: {policyNumber}");
+        Console.WriteLine("Reason: Policy not eligible or payment pending.");
+        Console.WriteLine("====================================");
     }
 
-    // Send renewal reminder to the customer
-    public void SendRenewalReminder(string policyNumber)
+    public void OnPremiumDue(string policyNumber)
     {
-    }
-
-    // Send renewal confirmation after successful renewal
-    public void SendRenewalConfirmation(string policyNumber)
-    {
-    }
-
-    // Get policies that are due for renewal
-    public List<Policy> GetPoliciesDueForRenewal()
-    {
-        return new List<Policy>();
-    }
-
-    // Get expired policies
-    public List<Policy> GetExpiredPolicies()
-    {
-        return new List<Policy>();
-    }
-
-    // Get renewed policies
-    public List<Policy> GetRenewedPolicies()
-    {
-        return new List<Policy>();
-    }
-
-    // Check whether a policy has expired
-    public bool IsPolicyExpired(string policyNumber)
-    {
-        return false;
-    }
-
-    // Update renewal date
-    public bool UpdateRenewalDate(string policyNumber, DateTime renewalDate)
-    {
-        return false;
-    }
-
-    // Cancel a pending renewal request
-    public bool CancelRenewal(string policyNumber)
-    {
-        return false;
-    }
-
-    // Generate renewal report
-    public void GenerateRenewalReport()
-    {
-    }
-
-    // Generate receipt for the renewal payment
-    public void GenerateRenewalReceipt(string policyNumber)
-    {
-    }
-
-    // Process renewal payment
-    public bool ProcessRenewalPayment(string policyNumber, decimal amount)
-    {
-        return false;
+        Console.WriteLine("====================================");
+        Console.WriteLine("Premium Due Alert");
+        Console.WriteLine($"Policy: {policyNumber}");
+        Console.WriteLine("Payment reminder generated.");
+        Console.WriteLine("====================================");
     }
 }

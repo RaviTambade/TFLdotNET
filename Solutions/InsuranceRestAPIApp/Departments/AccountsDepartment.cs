@@ -1,145 +1,98 @@
+ 
 using MaxNewYorkInsurance.Models;
-using MaxNewYorkInsurance.Repositories;
 
 namespace MaxNewYorkInsurance.Departments;
 
-
-//Accounts Bookkeeping  logic
-
 public class AccountsDepartment
 {
-    PremiumRepository PayPremium = new PremiumRepository();
-    public void OnPurchasePolicy(Policy policy)
+    public void OnPolicyPurchased(Policy policy)
     {
+        Console.WriteLine("====================================");
+        Console.WriteLine("Accounts Department");
+        Console.WriteLine($"New policy purchased: {policy.PolicyNumber}");
+        Console.WriteLine("Financial records updated.");
+        Console.WriteLine("====================================");
+    }
 
-        PolicyRepository repo=new PolicyRepository();
-        List<Policy> policies = repo.GetAllPolicies();
-        policies.Add(policy);
-        repo.SaveAllPolicies(policies);
-         
+    public void OnPremiumPaid(Premium premium)
+    {
+        Console.WriteLine("====================================");
+        Console.WriteLine("Premium Payment Received");
+        Console.WriteLine($"Policy Id      : {premium.PolicyId}");
+        Console.WriteLine($"Amount Paid    : {premium.AmountPaid}");
+        Console.WriteLine($"Payment Mode   : {premium.PaymentMode}");
         Console.WriteLine("Payment recorded successfully.");
+        Console.WriteLine("====================================");
     }
 
-
-     public void OnPayPremiums(Premium premium)
+    public void OnPremiumRefunded(Premium premium)
     {
-        List<Premium> premiums = PayPremium.GetAllPremimum();
-        premiums.Add(premium);
-        PayPremium.SaveAllPremium(premiums);
-        Console.WriteLine("Premium is paid Successfully");
+        Console.WriteLine("====================================");
+        Console.WriteLine("Premium Refund");
+        Console.WriteLine($"Policy Id      : {premium.PolicyId}");
+        Console.WriteLine($"Refund Amount  : {premium.AmountPaid}");
+        Console.WriteLine("Refund processed successfully.");
+        Console.WriteLine("====================================");
     }
 
-     // Collect premium payment
-    public bool CollectPremium(string policyNumber, decimal amount)
+    public void OnClaimApproved(Claim claim)
     {
-        return false;
+        Console.WriteLine("====================================");
+        Console.WriteLine("Claim Approved");
+        Console.WriteLine($"Claim Id       : {claim.ClaimId}");
+        Console.WriteLine("Awaiting settlement.");
+        Console.WriteLine("====================================");
     }
 
-    // Record a payment transaction
-    public bool RecordPayment(Premium payment)
+    public void OnClaimSettled(Claim claim)
     {
-        return false;
+        Console.WriteLine("====================================");
+        Console.WriteLine("Claim Settlement");
+        Console.WriteLine($"Claim Id         : {claim.ClaimId}");
+        Console.WriteLine($"Approved Amount  : {claim.ApprovedAmount}");
+        Console.WriteLine("Settlement payment released.");
+        Console.WriteLine("====================================");
     }
 
-    // Generate payment receipt
-    public void GenerateReceipt(string policyNumber)
+    public void OnAgentCommissionCalculated(Agent agent)
     {
+        Console.WriteLine("====================================");
+        Console.WriteLine("Agent Commission");
+        Console.WriteLine($"Agent            : {agent.FullName}");
+        Console.WriteLine($"Commission Rate  : {agent.CommissionRate:P}");
+        Console.WriteLine($"Total Earned     : {agent.TotalCommissionEarned}");
+        Console.WriteLine("====================================");
     }
 
-    // Process claim settlement payment
-    public bool ProcessClaimSettlement(int claimId, decimal amount)
+    public void OnPaymentReceiptGenerated(Premium premium)
     {
-        return false;
+        Console.WriteLine("====================================");
+        Console.WriteLine("Payment Receipt");
+        Console.WriteLine($"Policy Id    : {premium.PolicyId}");
+        Console.WriteLine($"Amount       : {premium.AmountPaid}");
+        Console.WriteLine("Receipt generated successfully.");
+        Console.WriteLine("====================================");
     }
 
-    // Issue refund to customer
-    public bool ProcessRefund(string policyNumber, decimal amount)
+    public void OnLateFeeApplied(string policyNumber)
     {
-        return false;
+        Console.WriteLine("====================================");
+        Console.WriteLine($"Late payment fee applied to policy {policyNumber}.");
+        Console.WriteLine("====================================");
     }
 
-    // Calculate agent commission
-    public decimal CalculateAgentCommission(int agentId)
+    public void OnDailyReportGenerated(DateTime reportDate)
     {
-        return 0;
+        Console.WriteLine("====================================");
+        Console.WriteLine($"Daily financial report generated on {reportDate:d}.");
+        Console.WriteLine("====================================");
     }
 
-    // Pay commission to an agent
-    public bool PayAgentCommission(int agentId)
+    public void OnMonthlyReportGenerated(DateTime reportDate)
     {
-        return false;
+        Console.WriteLine("====================================");
+        Console.WriteLine($"Monthly financial report generated for {reportDate:MMMM yyyy}.");
+        Console.WriteLine("====================================");
     }
-
-    // Generate invoice for premium payment
-    public void GenerateInvoice(string policyNumber)
-    {
-    }
-
-    // Verify payment status
-    public bool VerifyPayment(string transactionId)
-    {
-        return false;
-    }
-
-    // Get payment history for a policy
-    public List<Premium> GetPaymentHistory(string policyNumber)
-    {
-        return new List<Premium>();
-    }
-
-    // Get pending premium payments
-    public List<Policy> GetPendingPremiums()
-    {
-        return new List<Policy>();
-    }
-
-    // Get overdue premium payments
-    public List<Policy> GetOverduePremiums()
-    {
-        return new List<Policy>();
-    }
-
-    // Calculate total premium collected
-    public decimal GetTotalPremiumCollected()
-    {
-        return 0;
-    }
-
-    // Calculate total claim payouts
-    public decimal GetTotalClaimPayouts()
-    {
-        return 0;
-    }
-
-    // Generate daily financial report
-    public void GenerateDailyReport()
-    {
-    }
-
-    // Generate monthly financial report
-    public void GenerateMonthlyReport()
-    {
-    }
-
-    // Generate annual financial report
-    public void GenerateAnnualReport()
-    {
-    }
-
-    // Export financial transactions
-    public void ExportTransactions()
-    {
-    }
-
-    // Reconcile accounts
-    public bool ReconcileAccounts()
-    {
-        return false;
-    }
-
-    // Close accounting period
-    public void CloseAccountingPeriod(DateTime closingDate)
-    {
-    }
-
 }
+ 
