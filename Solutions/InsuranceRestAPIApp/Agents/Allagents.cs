@@ -3,12 +3,12 @@ using   MaxNewYorkInsurance.Models;
 namespace MaxNewYorkInsurance.Agents;
 
 // Sales Delegates
-public delegate void SalesAgent(Policy policy);
+public delegate void SalesAgent(string poliyNumber);
 public delegate void DiscountAgent(string policyNumber);
 public delegate void LeadAgent(Customer customer);
 
 // Customer Delegates
-public delegate void CustomerAgent(Customer customer);
+public delegate void CustomerAgent(Customer  customer);
 
 // Accounts & Premium Delegates
 public delegate void AccountsAgent(Policy policy);
@@ -38,3 +38,5 @@ public delegate void AgentManagementAgent(Agent agent);
 
 // Reporting Delegates
 public delegate void ReportAgent(DateTime generatedOn);
+
+ 

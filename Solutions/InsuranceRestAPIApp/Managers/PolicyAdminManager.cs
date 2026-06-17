@@ -10,10 +10,10 @@ public class PolicyAdminManager
     public event PolicyAgent? nomineeUpdated;
     public event PolicyAgent? beneficiaryChanged;
 
-    public void AssignPolicyAgent(string policyNumber, Agent agent)
-        => policyAssigned?.Invoke(policyNumber, agent);
+    public void AssignPolicyAgent(Policy policy, Agent agent)
+        => policyAssigned?.Invoke(policy, agent);
 
-    public void SendPolicyDocument(string policyNumber)
+    public void SendPolicyDocument(Policy policy)
         => policyDocumentGenerated?.Invoke(policyNumber);
 
     public void UpdateNominee(string policyNumber)

@@ -16,8 +16,8 @@ public class CustomerManager
     public void UpdateCustomer(Customer customer)
         => customerUpdated?.Invoke(customer);
 
-    public void DeactivateCustomer(int customerId)
-        => customerDeactivated?.Invoke(customerId);
+    public void DeactivateCustomer(Customer customer)
+        => customerDeactivated?.Invoke(customer);
 
     public void VerifyKYC(Customer customer)
         => kycVerified?.Invoke(customer);
