@@ -2160,7 +2160,6 @@ become much easier internally.
 # Final Mentor Message
 
 “I don’t expect every student to become Operating System expert.
-
 But every Software Engineer should know:
 
 * where code executes
@@ -2170,12 +2169,9 @@ But every Software Engineer should know:
 * how stack and heap cooperate
 
 Because coding without execution understanding…
-
 is like driving a car without knowing engine basics.”
-
 And suddenly…
 
 students stop seeing programming as syntax…
-
 and start seeing software as a living system inside memory.
 
