@@ -1,0 +1,82 @@
+[
+    {
+        "PolicyNumber": "POL1001",
+        "CustomerName": "Ravi Tambade",
+        "PolicyType": "Term",
+        "PolicyAmount": 0,
+        "IsRenewed": true,
+        "Status": "Active"
+    },
+    {
+        "PolicyNumber": "POL1002",
+        "CustomerName": "Sejal Kulkarni",
+        "PolicyType": "Health",
+        "PolicyAmount": 0,
+        "IsRenewed": true,
+        "Status": "Active"
+    },
+    {
+        "PolicyNumber": "POL1003",
+        "CustomerName": "Tejas Pawale",
+        "PolicyType": "Health",
+        "PolicyAmount": 0,
+        "IsRenewed": false,
+        "Status": "Active"
+    },
+    {
+        "PolicyNumber": "POL1004",
+        "CustomerName": "Pranita Mane",
+        "PolicyType": "Agri",
+        "PolicyAmount": 0,
+        "IsRenewed": false,
+        "Status": "Active"
+    },
+    {
+        "PolicyNumber": "POL1005",
+        "CustomerName": "Sahil Kamble",
+        "PolicyType": "Vehicle",
+        "PolicyAmount": 0,
+        "IsRenewed": false,
+        "Status": "Active"
+    },
+    {
+        "PolicyNumber": "POL1999",
+        "CustomerName": "Sachin Kharat",
+        "PolicyType": "Health",
+        "PolicyAmount": 0,
+        "IsRenewed": true,
+        "Status": "Active"
+    },
+    {
+        "PolicyNumber": "POL19876",
+        "CustomerName": "Prasad Tambade",
+        "PolicyType": "Health",
+        "PolicyAmount": 0,
+        "IsRenewed": false,
+        "Status": "Active"
+    },
+    {
+        "PolicyNumber": "POL0025",
+        "CustomerName": "Anish",
+        "PolicyType": "Health",
+        "PolicyAmount": 0,
+        "IsRenewed": true,
+        "Status": "Active"
+    },
+    {
+        "PolicyNumber": "POL2424",
+        "CustomerName": "tejas naudalkar",
+        "PolicyType": "bike",
+        "PolicyAmount": 0,
+        "IsRenewed": false,
+        "Status": "Active"
+    },
+    {
+        "PolicyNumber": "POL1051",
+        "CustomerName": "John Smith",
+        "PolicyType": "Health Insurance",
+        "PolicyAmount": 0,
+        "IsRenewed": true,
+        "Status": "Deactive"
+    }
+]

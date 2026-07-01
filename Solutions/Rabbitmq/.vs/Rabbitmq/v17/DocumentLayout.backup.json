@@ -1,0 +1,96 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\tryout\\Rabbitmq\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F75FD009-9761-6595-FF5B-011AEFDB5EAF}|RabbitMQConsumer\\RabbitMQConsumer.csproj|d:\\tryout\\rabbitmq\\rabbitmqconsumer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F75FD009-9761-6595-FF5B-011AEFDB5EAF}|RabbitMQConsumer\\RabbitMQConsumer.csproj|solutionrelative:rabbitmqconsumer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4CA489D-9A64-DB82-36D3-DF284A4BD91D}|RabbitMQProducer\\RabbitMQProducer.csproj|d:\\tryout\\rabbitmq\\rabbitmqproducer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4CA489D-9A64-DB82-36D3-DF284A4BD91D}|RabbitMQProducer\\RabbitMQProducer.csproj|solutionrelative:rabbitmqproducer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4CA489D-9A64-DB82-36D3-DF284A4BD91D}|RabbitMQProducer\\RabbitMQProducer.csproj|d:\\tryout\\rabbitmq\\rabbitmqproducer\\rabbitmqproducer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E4CA489D-9A64-DB82-36D3-DF284A4BD91D}|RabbitMQProducer\\RabbitMQProducer.csproj|solutionrelative:rabbitmqproducer\\rabbitmqproducer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F75FD009-9761-6595-FF5B-011AEFDB5EAF}|RabbitMQConsumer\\RabbitMQConsumer.csproj|d:\\tryout\\rabbitmq\\rabbitmqconsumer\\rabbitmqconsumer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F75FD009-9761-6595-FF5B-011AEFDB5EAF}|RabbitMQConsumer\\RabbitMQConsumer.csproj|solutionrelative:rabbitmqconsumer\\rabbitmqconsumer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RabbitMQProducer",
+              "DocumentMoniker": "D:\\tryout\\Rabbitmq\\RabbitMQProducer\\RabbitMQProducer.csproj",
+              "RelativeDocumentMoniker": "RabbitMQProducer\\RabbitMQProducer.csproj",
+              "ToolTip": "D:\\tryout\\Rabbitmq\\RabbitMQProducer\\RabbitMQProducer.csproj",
+              "RelativeToolTip": "RabbitMQProducer\\RabbitMQProducer.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-09T10:52:07.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RabbitMQConsumer",
+              "DocumentMoniker": "D:\\tryout\\Rabbitmq\\RabbitMQConsumer\\RabbitMQConsumer.csproj",
+              "RelativeDocumentMoniker": "RabbitMQConsumer\\RabbitMQConsumer.csproj",
+              "ToolTip": "D:\\tryout\\Rabbitmq\\RabbitMQConsumer\\RabbitMQConsumer.csproj",
+              "RelativeToolTip": "RabbitMQConsumer\\RabbitMQConsumer.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-09T10:51:10.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\tryout\\Rabbitmq\\RabbitMQProducer\\Program.cs",
+              "RelativeDocumentMoniker": "RabbitMQProducer\\Program.cs",
+              "ToolTip": "D:\\tryout\\Rabbitmq\\RabbitMQProducer\\Program.cs",
+              "RelativeToolTip": "RabbitMQProducer\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAwwA4AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T10:49:28.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\tryout\\Rabbitmq\\RabbitMQConsumer\\Program.cs",
+              "RelativeDocumentMoniker": "RabbitMQConsumer\\Program.cs",
+              "ToolTip": "D:\\tryout\\Rabbitmq\\RabbitMQConsumer\\Program.cs",
+              "RelativeToolTip": "RabbitMQConsumer\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T10:44:23.295Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+[
+    {
+        "ClaimId": 1001,
+        "PolicyNumber": "POL1001",
+        "CustomerId": 0,
+        "CustomerName": "",
+        "ClaimDate": "0001-01-01T00:00:00",
+        "ClaimType": "",
+        "Reason": "Accident",
+        "ClaimAmount": 25000,
+        "ApprovedAmount": 22500,
+        "Status": "Approved",
+        "Remarks": "Documents verified successfully",
+        "SettlementDate": null
+    },
+    {
+        "ClaimId": 1002,
+        "PolicyNumber": "POL6666",
+        "CustomerId": 0,
+        "CustomerName": "",
+        "ClaimDate": "0001-01-01T00:00:00",
+        "ClaimType": "",
+        "Reason": "Health issue",
+        "ClaimAmount": 2600,
+        "ApprovedAmount": 0,
+        "Status": "Registered",
+        "Remarks": "",
+        "SettlementDate": null
+    },
+    {
+        "ClaimId": 1003,
+        "PolicyNumber": "POL24298",
+        "CustomerId": 0,
+        "CustomerName": "",
+        "ClaimDate": "0001-01-01T00:00:00",
+        "ClaimType": "",
+        "Reason": "Eye sugery",
+        "ClaimAmount": 500000,
+        "ApprovedAmount": 450000,
+        "Status": "Rejected",
+        "Remarks": "Documents not verified",
+        "SettlementDate": "2026-06-18T11:29:22.0733219+05:30"
+    },
+    {
+        "ClaimId": 1004,
+        "PolicyNumber": "POL24298",
+        "CustomerId": 0,
+        "CustomerName": "",
+        "ClaimDate": "0001-01-01T00:00:00",
+        "ClaimType": "",
+        "Reason": "Eye sugery",
+        "ClaimAmount": 500000,
+        "ApprovedAmount": 450000,
+        "Status": "Approved",
+        "Remarks": "Documents verified successfully",
+        "SettlementDate": null
+    },
+    {
+        "ClaimId": 1005,
+        "PolicyNumber": "POL1051",
+        "CustomerId": 101,
+        "CustomerName": "Ravi Tambade",
+        "ClaimDate": "2026-06-17T09:30:00",
+        "ClaimType": "Health",
+        "Reason": "Hospitalization due to illness",
+        "ClaimAmount": 50000.00,
+        "ApprovedAmount": 45000.00,
+        "Status": "Approved",
+        "Remarks": "Documents verified successfully",
+        "SettlementDate": "2026-06-20T10:00:00"
+    }
+]
