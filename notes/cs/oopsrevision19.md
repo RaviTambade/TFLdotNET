@@ -1,11 +1,10 @@
-The mentor opens Visual Studio Code and says:
 
 > “Students… enough theory.
 > Now let us connect Stack, Heap, Objects, and Functions using actual C++ code.”
 
 The class becomes excited.
 
----
+
 
 # Story: Architect and Shapes
 
@@ -24,7 +23,6 @@ The mentor smiles:
 > “Blueprint is Class.
 > Real shape is Object.”
 
----
 
 # First C++ Program
 
@@ -42,8 +40,6 @@ int main()
     return 0;
 }
 ```
-
----
 
 # Understanding Step by Step
 
@@ -65,7 +61,6 @@ cout
 
 cannot be used.
 
----
 
 # Namespace
 
@@ -87,7 +82,6 @@ cin
 
 become accessible.
 
----
 
 # Entry Point Function
 
@@ -109,7 +103,7 @@ When program starts:
 
 Execution begins from here.
 
----
+
 
 # Return 0
 
@@ -121,7 +115,7 @@ means:
 
 “Program executed successfully.”
 
----
+
 
 # Class Creation
 
@@ -143,7 +137,6 @@ public:
 };
 ```
 
----
 
 # What is Class?
 
@@ -158,7 +151,6 @@ It defines:
 * state (variables)
 * behavior (functions)
 
----
 
 # Creating Object on Stack
 
@@ -184,7 +176,7 @@ meaning:
 
 created inside stack memory.
 
----
+
 
 # Stack Visualization
 
@@ -202,7 +194,7 @@ When function completes:
 
 object disappears automatically.
 
----
+
 
 # Calling Function
 
@@ -218,7 +210,7 @@ What happens internally?
 * function address located
 * draw() executes
 
----
+
 
 # Dynamic Memory Allocation
 
@@ -234,7 +226,7 @@ Shape* ptrShape = new Shape();
 
 Students become silent.
 
----
+
 
 # What Happens Internally?
 
@@ -260,7 +252,7 @@ ptrShape
 
 pointer variable.
 
----
+
 
 # Visualization
 
@@ -275,7 +267,7 @@ main()
 ------------------             ----------------
 ```
 
----
+
 
 # Important Insight
 
@@ -286,7 +278,7 @@ The mentor says:
 
 Exactly same concept discussed earlier using Java and C# references.
 
----
+
 
 # Why Use Heap?
 
@@ -301,7 +293,7 @@ These objects should not frequently push/pop in stack.
 
 So they are dynamically allocated in heap.
 
----
+
 
 # Pointer Meaning
 
@@ -319,7 +311,6 @@ ptrShape stores:
 
 not actual object.
 
----
 
 # Accessing Heap Object
 
@@ -337,7 +328,7 @@ Equivalent meaning:
 (*ptrShape).draw();
 ```
 
----
+
 
 # Real World Analogy
 
@@ -358,7 +349,7 @@ Without key:
 
 room cannot be accessed.
 
----
+
 
 # Stack Object vs Heap Object
 
@@ -371,7 +362,7 @@ The mentor compares.
 | Limited lifetime | Longer lifetime |
 | Auto cleanup     | Manual cleanup  |
 
----
+
 
 # Memory Cleanup in C++
 
@@ -395,7 +386,7 @@ Otherwise:
 
 may happen.
 
----
+
 
 # Complete Example
 
@@ -428,7 +419,6 @@ int main()
 }
 ```
 
----
 
 # Internal Execution Visualization
 
@@ -454,8 +444,6 @@ ptrShape
 Shape object created using new
 ```
 
----
-
 # Mentor’s Deep Message
 
 “Students…
@@ -474,7 +462,7 @@ It is only address holder.”
 
 Actual object exists somewhere in heap.
 
----
+
 
 # Connection with Java and C#
 
@@ -492,8 +480,6 @@ But internally same thing happens.
 Objects live in heap.
 
 References point toward them.
-
----
 
 # Mentor Final Advice
 
