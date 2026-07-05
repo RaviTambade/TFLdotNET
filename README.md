@@ -57,6 +57,7 @@ You are not alone on this path. I am walking with you.
 **Ravi Tambade**
 *Mentor | Technologist | Believer in Human Potential*
 
+- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/roadmap.md">.NET Roadmap</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/dotnet.md">What is .NET?</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/settingupdotnetsolution.md">Creating .NET Core Solution using CLI</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/buildexedotnetsolution.md">Building and Executing .NET Core Solution</a>
