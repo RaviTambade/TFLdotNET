@@ -1,12 +1,7 @@
-Of course! Here's your **ASP.NET Core Personalized Learning Plan** rewritten in a **mentor's storytelling format**, aimed at engaging students with a sense of journey, discovery, and structured guidance.
-
----
-
-## 👨‍🏫 Mentor's Storytelling: Designing Your ASP.NET Core Learning Journey
+#Designing Your ASP.NET Core Learning Journey
 
 **"Beta, sit down. Let me walk you through a path I’ve helped many walk before you—a path that transforms you from a curious learner into a confident ASP.NET Core developer."**
 
----
 
 ### 📅 Week 1: *The First Steps — Getting Comfortable with C# and ASP.NET Core*
 
@@ -108,7 +103,6 @@ Write **Unit Tests** using **xUnit** and **Moq**. Test your controllers, service
 
 Build it from scratch, apply everything you've learned, and deploy it.
 
----
 
 ### 🔄 Continuous Learning: *Your Journey Doesn’t End Here*
 
@@ -118,7 +112,6 @@ Build it from scratch, apply everything you've learned, and deploy it.
 * Contribute to **GitHub projects**.
 * Join forums, ask questions, answer others.
 
----
 
 ## 🎯 Final Thoughts from Mentor
 
@@ -126,6 +119,3 @@ Build it from scratch, apply everything you've learned, and deploy it.
 
 *"So take your first step, build every day, and soon… you’ll be the mentor someone else looks up to."* 🌱
 
----
-
-Would you like a printable one-page version or visual roadmap for this?
