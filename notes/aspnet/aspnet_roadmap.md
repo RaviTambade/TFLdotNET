@@ -1,4 +1,4 @@
-#Designing Your ASP.NET Core Learning Journey
+# Designing Your ASP.NET Core Learning Journey
 
 **"Beta, sit down. Let me walk you through a path I’ve helped many walk before you—a path that transforms you from a curious learner into a confident ASP.NET Core developer."**
 
