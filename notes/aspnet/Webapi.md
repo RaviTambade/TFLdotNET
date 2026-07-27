@@ -1,4 +1,4 @@
-## ASP.NET Web API"
+## ASP.NET Web API
 
 *Dear Students,*
 
@@ -32,7 +32,7 @@ REST is like a **code of conduct** for Web APIs:
 * Be layered: Like having middlemen in delivery — security, logging, caching.
 
 
-### 🛒 **Example: Product Store API**
+### **Example: Product Store API**
 
 Let’s say you're building an online store — your **Product Web API** is your invisible shopkeeper.
 
@@ -70,7 +70,7 @@ It shows you the **response** — like a delivery receipt. It’s a brilliant wa
 
 Sometimes, you don't need a full shop. Just a table and a register.
 
-**Minimal API** in .NET 6+ is like a **small shop setup on the roadside**. Fewer things, quick setup, fewer formalities.
+**Minimal API** in .NET  is like a **small shop setup on the roadside**. Fewer things, quick setup, fewer formalities.
 
 Instead of full controllers and routing files, you define everything in one file (`Program.cs`):
 
