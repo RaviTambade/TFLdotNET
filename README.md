@@ -95,11 +95,11 @@ You are not alone on this path. I am walking with you.
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/taghelper.md">Tag Helpers</a>
 
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/AspnetCoreLifeCycle.md">App Life Cycle Management</a>
-
-- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/AspnetCoreLifeCycle.md">Service Lifetime (DI)</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/ioc.md">Inversion of Control (IOC)</a>
 
+- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/di.md">Dependency Injection</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/Middleware.md"> Middleware (HTTP Pipeline)</a>
+
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/filters.md">Filters</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/Statemgmt.md"> State Management</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/productcatalogimplemntation.md">ProductCatalog Solution</a>
