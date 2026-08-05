@@ -2,21 +2,11 @@
 
 > **"Students, today I'm going to reveal one of the biggest secrets of ASP.NET Core. It is not Razor Views. It is not Controllers. It is not Entity Framework. It is an invisible manager that works behind the scenes from the moment your application starts until it shuts down."**
 
-That invisible manager is called the **IoC Container (Inversion of Control Container).**
-
-You never see it.
-
-You never create it manually.
-
-Yet it creates almost everything for you.
+That invisible manager is called the **IoC Container (Inversion of Control Container).** You never see it. You never create it manually. Yet it creates almost everything for you.
 
 ### A Story from the Software Industry
 
-Imagine Transflower Learning receives a new batch of software engineers.
-
-Without any management process...
-
-Every new employee walks into the office and starts arranging everything themselves.
+Imagine Transflower Learning receives a new batch of software engineers. Without any management process... Every new employee walks into the office and starts arranging everything themselves.
 
 ```text
 New Employee
@@ -78,9 +68,6 @@ The developer focuses on writing code. Infrastructure is someone else's responsi
 
 The same philosophy applies in ASP.NET Core. Your classes should focus on solving business problems. They should **not** spend their time creating objects.
 
-
-
-
 ### Before IoC – Everyone Creates Everyone
 
 Imagine a simple E-Commerce application.
@@ -139,9 +126,6 @@ Cache
 
 One object depends on another.Another depends on another.Another depends on another.Changing one class affects many others.
 
-
-
-
 ### The Architect's Question
 
 A software architect asks an important question.
@@ -165,8 +149,6 @@ Dispose Resources
 
 Object creation is **not business logic**.
 
-
-
 ### Enter Inversion of Control (IoC)
 
 Instead of classes creating dependencies... They simply **request** them.
@@ -183,8 +165,6 @@ The IoC Container replies:
 "I'll create one for you."
 ```
 
-
-
 ### Traditional Object Creation
 
 ```text
@@ -198,8 +178,6 @@ Creates Database
 ```
 
 The application controls object creation.
-
-
 
 ### IoC Object Creation
 
