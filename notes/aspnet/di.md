@@ -1,11 +1,11 @@
 # Dependency Injection (DI)
 
-# *The Invisible Team That Builds Your Application*
+### *The Invisible Team That Builds Your Application*
 
 > **"Good morning, future solution architects! Today, we are not just learning a framework feature. We are learning one of the greatest engineering principles that transformed modern software development. By the end of this session, you'll understand why ASP.NET Core feels so organized, scalable, and easy to maintain."**
 
 
-# The Story Begins
+## The Story Begins
 
 Imagine you have been appointed as the **Chief Architect** of a brand-new five-star smart hotel.
 
@@ -23,7 +23,7 @@ Every department has its own responsibility. Now imagine if every hotel room sta
 Room 104 buys its own CCTV camera. Would this hotel survive? Of course not. It would become chaos.
  
 
-# Software Without Dependency Injection
+## Software Without Dependency Injection
 
 Many beginners unknowingly build applications exactly like that.
 
@@ -46,7 +46,7 @@ new SqlConnection()
 Every object creates another object. Every class becomes responsible for infrastructure. Instead of solving business problems... it spends time creating dependencies.
 
  
-# The Architect's Question
+## The Architect's Question
 
 As architects, we ask ourselves one important question.
 
@@ -55,7 +55,7 @@ As architects, we ask ourselves one important question.
 Should a Service know how to create a Repository? Should a Repository know how to create a Database Connection? Absolutely not. Each class should focus only on **its own responsibility**.
 
 
-# The Philosophy of Dependency Injection
+## The Philosophy of Dependency Injection
 
 Dependency Injection simply says:
 
@@ -74,7 +74,7 @@ The IT department prepares everything before you arrive. You simply start workin
 
 
 
-# Meet the IoC Container
+## Meet the IoC Container
 
 Inside ASP.NET Core lives an invisible manager.
 
@@ -95,7 +95,7 @@ You never call it directly. Yet it creates almost everything inside ASP.NET Core
 
 
 
-# Building an ASP.NET Core 10 Web API
+## Building an ASP.NET Core 10 Web API
  
 Suppose we're building an Online Shopping API. Our architecture looks like this.
 
@@ -123,7 +123,7 @@ Suppose we're building an Online Shopping API. Our architecture looks like this.
 Notice something. The Controller never creates the Service. The Service never creates the Repository. The Repository never creates DbContext. Everything is injected.
 
 
-# Step 1 – Define the Contract
+## Step 1 – Define the Contract
 
 A professional architect always begins with contracts. Interfaces describe **what** should happen. They never describe **how**.
 
@@ -160,7 +160,7 @@ Not specific people. Just roles.
 
  
 
-# Step 2 – Hire the Specialists
+## Step 2 – Hire the Specialists
 
 Now professionals join the company.
 
@@ -193,7 +193,7 @@ Each class performs one responsibility. No unnecessary object creation.
 
  
 
-# Step 3 – Teach the IoC Container
+## Step 3 – Teach the IoC Container
 
 In ASP.NET Core 10, **Program.cs** becomes the application's composition root.
 
@@ -227,7 +227,7 @@ The container memorizes these mappings.
 
  
 
-# Step 4 – Constructor Injection
+## Step 4 – Constructor Injection
 
 Now look at our Controller.
 
@@ -260,7 +260,7 @@ The IoC Container responds:
 > "Already arranged."
 
 
-# Behind the Scenes
+## Behind the Scenes
 
 When the first request arrives...
 
@@ -301,7 +301,7 @@ The IoC Container walks this dependency tree.
 Everything is created automatically.
 
 
-# The Dependency Tree
+## The Dependency Tree
 
 Think of it as assembling LEGO blocks.
 
@@ -320,11 +320,11 @@ Database
 Each block depends on the block below it. The container assembles the entire structure.
  
 
-# Service Lifetimes
+## Service Lifetimes
 
 One of the IoC Container's biggest responsibilities is deciding **how long an object should live**.
 
-## Singleton
+### Singleton
 
 ```csharp
 builder.Services.AddSingleton<ICacheService, CacheService>();
@@ -343,7 +343,7 @@ Examples:
 * Cache
 * Logging
 
-## Scoped
+### Scoped
 
 ```csharp
 builder.Services.AddScoped<IProductService, ProductService>();
@@ -373,7 +373,7 @@ Perfect for:
 
 
 
-## Transient
+### Transient
 
 ```csharp
 builder.Services.AddTransient<IValidator, ProductValidator>();
@@ -389,7 +389,7 @@ Create Another
 
 Always fresh.
 
-# Lifetime Comparison
+## Lifetime Comparison
 
 ```text
                     Application
@@ -418,7 +418,7 @@ Transient 3
 Transient 4
 ```
 
-# Why Testing Becomes Easy
+## Why Testing Becomes Easy
 
 Without Dependency Injection:
 
@@ -442,7 +442,7 @@ Real Repository             Mock Repository
 During testing, simply inject a mock implementation. No database required.
 
 
-# ASP.NET Core Uses DI Everywhere
+## ASP.NET Core Uses DI Everywhere
 
 Many students think Dependency Injection is only for Controllers. Actually...
 
@@ -468,7 +468,7 @@ Many students think Dependency Injection is only for Controllers. Actually...
 
 The framework itself is built around Dependency Injection.
 
-# Complete Request Lifecycle with DI
+## Complete Request Lifecycle with DI
 
 ```text
 Browser
@@ -506,12 +506,12 @@ JSON Response
 Browser
 ```
 
-# 🌟 Mentor's Wisdom
+## Mentor's Wisdom
 
 > **"Dependency Injection is not about avoiding the `new` keyword. It is about separating responsibilities. Your business classes should focus on business rules, not on object creation. When you let the IoC Container build and manage your application's objects, you gain loose coupling, easier testing, better maintainability, and the flexibility to evolve your architecture without rewriting everything."**
 
 
-# 🏁 Final Takeaway
+## Final Takeaway
 
 ```text
 Without Dependency Injection
