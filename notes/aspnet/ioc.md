@@ -10,7 +10,7 @@ You never create it manually.
 
 Yet it creates almost everything for you.
 
-# A Story from the Software Industry
+### A Story from the Software Industry
 
 Imagine Transflower Learning receives a new batch of software engineers.
 
@@ -74,13 +74,14 @@ IT replies:
 The developer focuses on writing code. Infrastructure is someone else's responsibility.
 
 
-# 💡 Mentor Insight
+###  Mentor Insight
 
 The same philosophy applies in ASP.NET Core. Your classes should focus on solving business problems. They should **not** spend their time creating objects.
 
 
 
-# Before IoC – Everyone Creates Everyone
+
+### Before IoC – Everyone Creates Everyone
 
 Imagine a simple E-Commerce application.
 
@@ -111,7 +112,8 @@ Thousands of Objects
 
 Who creates all of them? Each class! Soon the application becomes tightly coupled.
 
-# The Domino Effect
+
+### The Domino Effect
 
 ```text
 ProductsController
@@ -139,7 +141,8 @@ One object depends on another.Another depends on another.Another depends on anot
 
 
 
-# The Architect's Question
+
+### The Architect's Question
 
 A software architect asks an important question.
 
@@ -163,7 +166,8 @@ Dispose Resources
 Object creation is **not business logic**.
 
 
-# Enter Inversion of Control (IoC)
+
+### Enter Inversion of Control (IoC)
 
 Instead of classes creating dependencies... They simply **request** them.
 
@@ -180,7 +184,8 @@ The IoC Container replies:
 ```
 
 
-# Traditional Object Creation
+
+### Traditional Object Creation
 
 ```text
 Controller
@@ -195,7 +200,8 @@ Creates Database
 The application controls object creation.
 
 
-# IoC Object Creation
+
+### IoC Object Creation
 
 ```text
 Controller
@@ -215,11 +221,13 @@ Requests Service
 
 The control has moved. That is why it is called
 
-# Inversion of Control
+
+### Inversion of Control
 
 The responsibility has been inverted.
 
-# ASP.NET Core Startup
+
+### ASP.NET Core Startup
 
 When the application starts... Program.cs executes.
 
@@ -231,7 +239,8 @@ builder.Services.AddScoped<IProductRepository, ProductRepository>();
 Many students memorize this. But think deeper. You're not creating objects. You're **teaching the container**.
 
 
-# What Are We Actually Saying?
+
+### What Are We Actually Saying?
 
 ```text
 Dear IoC Container, Whenever someone asks for IProductService please provide ProductService.
@@ -246,7 +255,8 @@ Whenever someone asks for IProductRepository please provide ProductRepository.
 This becomes the container's knowledge.
 
 
-# The Dependency Map
+
+### The Dependency Map
 
 ```text
 +--------------------------------------+
@@ -266,7 +276,8 @@ This becomes the container's knowledge.
 
 The container remembers every mapping.
 
-# Constructor Injection
+
+### Constructor Injection
 
 Instead of writing:
 
@@ -294,7 +305,8 @@ The container replies
 
 > "I'll bring one."
 
-# The Dependency Tree
+
+### The Dependency Tree
 
 Suppose the browser sends a request.
 
@@ -327,7 +339,8 @@ Configuration
 Looks complicated? Not for the IoC Container.
 
 
-# IoC Walking Through Dependencies
+
+### IoC Walking Through Dependencies
 
 ```text
                  ProductsController
@@ -354,14 +367,16 @@ Looks complicated? Not for the IoC Container.
 The container builds this tree automatically. From bottom to top. Like assembling Lego blocks.
 
 
-# Life Cycle Management
+
+### Life Cycle Management
 
 Another responsibility of the IoC Container. It decides
 
 > **How long should an object live?**
 
 
-# Singleton
+
+### Singleton
 
 One object. Entire application.
 
@@ -388,7 +403,8 @@ Caching
 ```
 
 
-# Scoped
+
+### Scoped
 
 One object. Per HTTP Request.
 
@@ -425,7 +441,8 @@ Business Services
 ```
 
 
-# Transient
+
+### Transient
 
 Always create a fresh object.
 
@@ -442,7 +459,7 @@ Create Third.
 
 Nothing is reused.
 
-# Lifetime Comparison
+###  Lifetime Comparison
 
 ```text
              Application
@@ -474,7 +491,8 @@ Transient 6
 ```
 
 
-# IoC Container Responsibilities
+
+### IoC Container Responsibilities
 
 ```text
                  IoC Container
@@ -505,7 +523,8 @@ Transient 6
 ```
 
 
-# IoC vs Dependency Injection
+
+### IoC vs Dependency Injection
 
 Students often confuse these terms. Think of building a house.
 
@@ -538,7 +557,8 @@ Dependency Injection
 **Dependency Injection is one implementation of that principle.**
 
 
-# ASP.NET Core Uses IoC Everywhere
+
+### ASP.NET Core Uses IoC Everywhere
 
 When ASP.NET Core starts... Almost everything is registered inside the container.
 
@@ -562,7 +582,8 @@ When ASP.NET Core starts... Almost everything is registered inside the container
 
 That means the framework itself relies heavily on dependency injection.
 
-# Request Processing with IoC
+
+### Request Processing with IoC
 
 ```text
 Browser
@@ -600,7 +621,8 @@ HTML / JSON Response
 Browser
 ```
 
-# Why Testing Becomes Easy
+
+### Why Testing Becomes Easy
 
 Without IoC:
 
@@ -627,12 +649,14 @@ Real Repository      Mock Repository
 
 During testing, you replace the real repository with a mock object, allowing you to verify business logic without connecting to a database.
 
-# Mentor's Golden Wisdom
+
+### Mentor's Golden Wisdom
 
 > **"When you write `builder.Services.AddScoped()`, don't think you are merely registering a service. Think of yourself as teaching an intelligent project manager how to assemble your application's team. Every Controller, Service, Repository, DbContext, Logger, and Middleware that appears during a request is coordinated by this invisible manager. That invisible project manager is the IoC Container—the backbone of maintainable, testable, and scalable ASP.NET Core applications."**
 
 
-# Final Takeaway
+
+### Final Takeaway
 
 ```text
 Without IoC
