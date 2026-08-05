@@ -4,11 +4,7 @@ Most students think:
 
 > "I wrote C# code, pressed F5, and my application started."
 
-As a Solution Developer, that understanding is not enough.
-
-When your application behaves unexpectedly, consumes memory, becomes slow, or crashes in production, you must understand what happens behind the scenes.
-
-Let's travel inside the .NET runtime and follow the journey of your code.
+As a Solution Developer, that understanding is not enough. When your application behaves unexpectedly, consumes memory, becomes slow, or crashes in production, you must understand what happens behind the scenes. Let's travel inside the .NET runtime and follow the journey of your code.
 
 
 # Stage 1: Writing Source Code
@@ -25,11 +21,7 @@ class Program
 }
 ```
 
-At this stage, it is only human-readable text.
-
-The CPU cannot execute C#.
-
-Something must translate it.
+At this stage, it is only human-readable text. The CPU cannot execute C#. Something must translate it.
 
 
 # Stage 2: Roslyn Compiler Converts C# to IL
@@ -73,17 +65,11 @@ The same DLL can run on:
 * Linux
 * macOS
 
-because IL is platform independent.
-
-This is one of the biggest strengths of .NET.
+because IL is platform independent. This is one of the biggest strengths of .NET.
 
 ### Student Analogy
 
-Think of IL as English.
-
-Different countries speak different native languages.
-
-But everyone can understand English.
+Think of IL as English. Different countries speak different native languages. But everyone can understand English.
 
 Similarly:
 
@@ -160,9 +146,7 @@ Now you press:
 F5
 ```
 
-Visual Studio launches the .NET Runtime.
-
-The heart of runtime is:
+Visual Studio launches the .NET Runtime. The heart of runtime is:
 
 **CoreCLR**
 
@@ -200,9 +184,7 @@ Everything is registered internally.
 
 ### 3. Initialize Garbage Collector
 
-GC starts monitoring memory.
-
-It prepares:
+GC starts monitoring memory. It prepares:
 
 ```text
 Gen0
@@ -229,24 +211,14 @@ operations.
 
 # Stage 5: JIT Compilation Begins
 
-At this point IL still cannot run on CPU.
-
-CPU understands only machine code.
-
-Now enters:
+At this point IL still cannot run on CPU. CPU understands only machine code. Now enters:
 
 **JIT (Just-In-Time Compiler)**
 
 
 ## Important Question
 
-Does JIT compile the entire application?
-
-No.
-
-This is where many developers are mistaken.
-
-JIT compiles only when a method is called for the first time.
+Does JIT compile the entire application? No. This is where many developers are mistaken. JIT compiles only when a method is called for the first time.
 
 
 Example:
@@ -286,8 +258,7 @@ CPU
 
 # Why First Request Is Slower?
 
-Imagine an ASP.NET API.
-
+Imagine an ASP.NET API. 
 First request:
 
 ```text
@@ -390,9 +361,7 @@ Tradeoff:
 
 # Stage 6: Actual Execution
 
-Now machine code is executing on CPU.
-
-But many invisible workers continue operating.
+Now machine code is executing on CPU. But many invisible workers continue operating.
 
 # Worker 1: Garbage Collector (GC)
 
@@ -422,9 +391,7 @@ Fast Collection
 
 ## Generation 1
 
-Temporary holding area.
-
-Objects surviving Gen0 move here.
+Temporary holding area. Objects surviving Gen0 move here.
 
 
 ## Generation 2
@@ -443,17 +410,13 @@ Collections here are expensive.
 
 ## Why Latency Spikes Occur
 
-Suppose application pauses unexpectedly.
-
-Often reason is:
+Suppose application pauses unexpectedly. Often reason is:
 
 ```text
 Gen2 Collection
 ```
 
-because GC must inspect a huge amount of memory.
-
-When performance engineers investigate:
+because GC must inspect a huge amount of memory. When performance engineers investigate:
 
 ```text
 GC Time %
@@ -500,9 +463,7 @@ Pool Selects Available Thread
 Execution Resumes
 ```
 
-This is why async scales so well.
-
-Thousands of requests can be managed using relatively few threads.
+This is why async scales so well. Thousands of requests can be managed using relatively few threads.
 
 # Complete Journey of a .NET Application
 
@@ -560,6 +521,4 @@ Slow API response?
 → Check Database, Network, and GC Metrics
 ```
 
-This is the transition from **Programmer** to **Solution Developer**.
-
-The day you understand what happens after pressing **F5**, debugging stops being guesswork and starts becoming engineering.
+This is the transition from **Programmer** to **Solution Developer**. The day you understand what happens after pressing **F5**, debugging stops being guesswork and starts becoming engineering.

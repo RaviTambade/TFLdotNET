@@ -1,7 +1,5 @@
 # Collection Framework
 
-## 🎙️ *Mentor Opens the Class...*
-
 > *"Imagine you’re moving into a new house. You bring books, clothes, utensils — all kinds of things. You don’t just throw them into one big box. You organize them — in shelves, drawers, racks, and cabinets.*
 >
 > *In software development, **collections** are those smart storage units. They help us store, organize, and access data — dynamically and efficiently."*
