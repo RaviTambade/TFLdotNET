@@ -73,6 +73,8 @@ You are not alone on this path. I am walking with you.
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/Serialization.md">Serialization</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/linq.md">LINQ</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/garbagecollection.md">Garbage Collection(GC)</a>
+- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/unsafe.md">Unsafe</a>
+- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/fixed.md">Fixed</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/databasecrud.md">Data Access using C#</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/repository.md">Repository Pattern</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/entityframeworkcore.md"> Entity Framework Core</a>
