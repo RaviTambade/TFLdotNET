@@ -253,8 +253,6 @@ Output
 <h2>@name</h2>
 ```
 
----
-
 #### If Statement
 
 ```razor
@@ -602,14 +600,9 @@ Other Tag Helpers
 
 ```razor
 <form asp-action="Create">
-
-<a asp-controller="Home"
-   asp-action="Index">
-
+<a asp-controller="Home" asp-action="Index">
 <label asp-for="Name">
-
 <select asp-for="City">
-
 <span asp-validation-for="Name">
 ```
 
@@ -626,17 +619,9 @@ Example
 
 ```razor
 <form asp-action="Create">
-
-<label asp-for="Name"></label>
-
-<input asp-for="Name"/>
-
-<button type="submit">
-
-Save
-
-</button>
-
+    <label asp-for="Name"></label>
+    <input asp-for="Name"/>
+    <button type="submit">Save</button>
 </form>
 ```
 
@@ -666,13 +651,9 @@ View
 
 ```razor
 @section Scripts{
-
 <script>
-
-alert("Hello");
-
+    alert("Hello");
 </script>
-
 }
 ```
 
@@ -690,9 +671,7 @@ If value is
 <script>alert('Hack')</script>
 ```
 
-Browser displays it as text instead of executing it.
-
-To intentionally render raw HTML (only with trusted content):
+Browser displays it as text instead of executing it. To intentionally render raw HTML (only with trusted content):
 
 ```razor
 @Html.Raw(Model.Description)
@@ -723,7 +702,6 @@ HTML Generated
    ▼
 Browser
 ```
-
 
 # 18. Best Practices
 
@@ -809,22 +787,14 @@ public IActionResult Details()
 
 @if (Model.Age >= 18)
 {
-    <div class="alert alert-success">
-        Eligible for Placement
-    </div>
+    <div class="alert alert-success"> Eligible for Placement </div>
 }
 else
 {
-    <div class="alert alert-warning">
-        Not Eligible
-    </div>
+    <div class="alert alert-warning"> Not Eligible </div>
 }
 
-<a asp-controller="Student"
-   asp-action="Index"
-   class="btn btn-primary">
-    Back to List
-</a>
+<a asp-controller="Student" asp-action="Index" class="btn btn-primary">  Back to List </a>
 ```
 
 ## View Folder Structure for a Student Module

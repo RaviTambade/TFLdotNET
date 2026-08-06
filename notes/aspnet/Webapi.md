@@ -61,18 +61,12 @@ He listens for the **GET** knock, and then uses a **service** to fetch the produ
 
 With **Postman!**
 
-You don’t need a fancy app to test the Web API. Just use **Postman**, type the address (`http://localhost:port/api/products`), select method (GET/POST/PUT/DELETE), and press SEND.
-
-It shows you the **response** — like a delivery receipt. It’s a brilliant way to verify if your shopkeeper is awake, responding correctly, and returning proper packages (JSON data).
+You don’t need a fancy app to test the Web API. Just use **Postman**, type the address (`http://localhost:port/api/products`), select method (GET/POST/PUT/DELETE), and press SEND. It shows you the **response** — like a delivery receipt. It’s a brilliant way to verify if your shopkeeper is awake, responding correctly, and returning proper packages (JSON data).
 
 
 ###  **Minimal API: A Street Vendor Style**
 
-Sometimes, you don't need a full shop. Just a table and a register.
-
-**Minimal API** in .NET  is like a **small shop setup on the roadside**. Fewer things, quick setup, fewer formalities.
-
-Instead of full controllers and routing files, you define everything in one file (`Program.cs`):
+Sometimes, you don't need a full shop. Just a table and a register. **Minimal API** in .NET  is like a **small shop setup on the roadside**. Fewer things, quick setup, fewer formalities. Instead of full controllers and routing files, you define everything in one file (`Program.cs`):
 
 ```csharp
 app.MapGet("/api/products", () => productList);
@@ -90,13 +84,9 @@ It’s good for small use-cases, lightweight APIs, or quick prototypes.
 
 ### **Closing Thoughts**
 
-An API is not about UI — it's about **communication**.
-
-As software engineers, you're not just building apps — you're building **connections** between systems. You are the architects of invisible cities where servers and clients **speak clearly and act fast.**
+An API is not about UI — it's about **communication**. As software engineers, you're not just building apps — you're building **connections** between systems. You are the architects of invisible cities where servers and clients **speak clearly and act fast.**
 
 Learn how to **design these conversations**, how to secure them, scale them, and make them meaningful.
-
-
 
 ### 🧭 Your Practice Assignment
 
@@ -105,9 +95,4 @@ Learn how to **design these conversations**, how to secure them, scale them, and
 3. Test your API using Postman.
 4. Reflect: Could you have done this better using controllers? Why or why not?
 
-
-
-Let’s build the **invisible internet**, one clean API at a time.
-
-Stay curious, stay humble, and keep shipping. 🚀
-
+Let’s build the **invisible internet**, one clean API at a time. Stay curious, stay humble, and keep shipping. 
