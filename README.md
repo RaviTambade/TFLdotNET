@@ -61,6 +61,8 @@ You are not alone on this path. I am walking with you.
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/dotnet.md">What is .NET?</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/settingupdotnetsolution.md">Creating .NET Core Solution using CLI</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/buildexedotnetsolution.md">Building and Executing .NET Core Solution</a>
+
+- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/internalexecution.md">Execution of .NET Core Application</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/assembly.md">Assembly in .net core</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/CSharpLang.md">C# Prgramming Basics</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/oo.md"> Objectd Oriented  Programming(OOPs) using C#</a>

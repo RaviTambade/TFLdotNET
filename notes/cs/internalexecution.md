@@ -2,7 +2,6 @@
 
 When you write a C# program, the C# source code does **not** directly execute on the CPU. It goes through compilation, **IL (Intermediate Language)** generation, loading by the **CLR/CoreCLR**, and finally **JIT compilation** into native machine code.
 
-### ASCII Diagram
 
 ```text
                 C# SOURCE CODE
