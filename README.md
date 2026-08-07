@@ -125,7 +125,8 @@ You are not alone on this path. I am walking with you.
 
 
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/deploywebapp.md"> Deploying ASP .NET MVC application</a>
-- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/deploywebappkubernetes.md"> Deploying  ASP.NET to Kubernetes</a>
+- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/deploywebapp.md"> Azure Cloud Native Deployment</a>
+- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/deploywebappkubernetes.md"> Kubernetes Deployment</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/cicdgit.md"> CI/CD using Git Actions</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/cicdjenkins.md"> CI/CD using Jenkins</a>
 
