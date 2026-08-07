@@ -1,6 +1,4 @@
-Absolutely. Let us turn this into a **Transflower Mentor-style OOP lesson**, correcting the C# syntax along the way and connecting **overloading, overriding, shadowing, sealed, concrete, and abstract classes** into one story.
-
-# 🎓 Inheritance, Overloading, Overriding, Shadowing & Abstract Classes in C#
+# Inheritance
 
 > **"Good morning, future software engineers! Today we are going to enter the HR department of a software company. Imagine that the company has thousands of employees — developers, managers, testers, sales executives, architects. They all have salaries, but their salary calculations are not necessarily the same. How would we model this in an object-oriented way?"**
 
@@ -22,13 +20,10 @@ Employee
    └── Abstract Class
 ```
 
----
 
 # 🏢 The Story of an Employee
 
-Imagine a company called **Transflower Software**.
-
-Every employee has:
+Imagine a company called **Transflower Software**. Every employee has:
 
 ```text
 Employee
@@ -65,9 +60,9 @@ The statement:
 
 makes inheritance meaningful.
 
----
 
-# 🧱 Base Class – Employee
+
+# Base Class – Employee
 
 Let's create our base class.
 
@@ -124,13 +119,9 @@ Employee
 +-------------------------+
 ```
 
----
-
 # 🔄 Constructor Overloading
 
-Look carefully.
-
-We have two constructors:
+Look carefully. We have two constructors:
 
 ```csharp
 public Employee()
@@ -162,9 +153,7 @@ Employee()
 Employee(double, double, double)
 ```
 
-but different parameter lists.
-
-This is called:
+but different parameter lists. This is called:
 
 # 🔄 Constructor Overloading
 
@@ -195,8 +184,6 @@ Employee(double, double, double)
 ```
 
 This is an example of **compile-time polymorphism**.
-
----
 
 # 💰 CalculateSalary()
 
@@ -229,8 +216,6 @@ Employee
              ▼
        "You may override me."
 ```
-
----
 
 # 👨‍💼 Creating the Manager
 
@@ -290,7 +275,6 @@ Now our hierarchy becomes:
           └── Incentive
 ```
 
----
 
 # 🏗️ What Does `base()` Mean?
 
@@ -339,8 +323,6 @@ Employee()
    ▼
 Manager constructor body
 ```
-
----
 
 # 🧬 Parameterized Base Constructor
 
@@ -393,8 +375,6 @@ Employee(
 Manager incentive = 4000
 ```
 
----
-
 # 🎭 Method Overriding
 
 Now we reach one of the most important OOP concepts.
@@ -430,7 +410,6 @@ means:
 
 This is **method overriding**.
 
----
 
 # 🔥 Why Override?
 
@@ -483,9 +462,7 @@ Manager
 
 That is polymorphism.
 
----
-
-# 🧠 Runtime Polymorphism
+# Runtime Polymorphism
 
 Now look at this:
 
@@ -525,13 +502,12 @@ Manager implementation
 
 This is called:
 
-# 🎭 Runtime Polymorphism
+# Runtime Polymorphism
 
 Because the implementation is determined based on the **actual object at runtime**.
 
----
 
-# 👻 Shadowing – Hiding Instead of Overriding
+# Shadowing – Hiding Instead of Overriding
 
 Now let's imagine a different situation.
 
@@ -602,9 +578,9 @@ SalesEmployee.CalculateSalary()
 
 because the reference is `SalesEmployee`.
 
----
 
-# ⚠️ Shadowing vs Overriding
+
+# Shadowing vs Overriding
 
 This distinction is extremely important.
 
@@ -636,9 +612,9 @@ Compare them:
      behavior             behavior
 ```
 
----
 
-# 🧪 The Interview Trap
+
+# The Interview Trap
 
 Consider:
 
@@ -656,13 +632,7 @@ If `SalesEmployee` uses:
 public new double CalculateSalary()
 ```
 
-the **base implementation** is called through the `Employee` reference.
-
-Why?
-
-Because shadowing is not runtime overriding.
-
-Conceptually:
+the **base implementation** is called through the `Employee` reference. Why? Because shadowing is not runtime overriding. Conceptually:
 
 ```text
 Employee reference
@@ -691,9 +661,9 @@ SalesEmployee.CalculateSalary()
 
 This is why `override` and `new` must not be confused.
 
----
 
-# 🧱 Sealed Class – "No More Children!"
+
+# Sealed Class – "No More Children!"
 
 Now imagine the company says:
 
@@ -737,7 +707,7 @@ StringSinglyList
 
 Inheritance is blocked.
 
----
+
 
 # 🔐 Why Use a Sealed Class?
 
@@ -761,13 +731,11 @@ The important idea is:
 
 > **A sealed class can be instantiated, but it cannot be inherited.**
 
----
 
-# 📦 Concrete Class
 
-Now let's understand another term.
+# Concrete Class
 
-A **concrete class** is a normal class from which objects can be created.
+Now let's understand another term. A **concrete class** is a normal class from which objects can be created.
 
 Example:
 
@@ -813,9 +781,9 @@ Person
 
 The class is **instantiable**.
 
----
 
-# 🚫 Abstract Class – "Do Not Create Me Directly"
+
+# Abstract Class – "Do Not Create Me Directly"
 
 Now imagine the HR department says:
 
@@ -857,9 +825,9 @@ Employee emp =
 
 Because an abstract class cannot be instantiated directly.
 
----
 
-# 🏛️ Abstract Class as a Blueprint
+
+# Abstract Class as a Blueprint
 
 Think of an abstract class as a **partially completed blueprint**.
 
@@ -894,9 +862,9 @@ This is important:
 
 It can contain fully implemented methods as well.
 
----
 
-# 🔨 Abstract Method
+
+# Abstract Method
 
 An abstract method is a method declaration without an implementation.
 
@@ -912,9 +880,9 @@ The abstract class is saying:
 
 > **"Every concrete child must provide its own implementation."**
 
----
 
-# 👨‍💼 Manager Implements the Abstract Contract
+
+# Manager Implements the Abstract Contract
 
 ```csharp
 public class Manager : Employee
@@ -944,9 +912,8 @@ Now:
              = 20%
 ```
 
----
 
-# 🎯 Using an Abstract Class
+# Using an Abstract Class
 
 We cannot do:
 
@@ -1001,7 +968,7 @@ Manager
 
 So the Manager implementations execute.
 
----
+
 
 # 🧠 Abstract Class vs Concrete Class
 
@@ -1029,9 +996,9 @@ Abstract Class
            but don't create me directly."
 ```
 
----
 
-# 🧩 Abstract vs Virtual
+
+# Abstract vs Virtual
 
 Students often confuse these two.
 
@@ -1073,9 +1040,9 @@ abstract
    └── Override is mandatory
 ```
 
----
 
-# 🏗️ Complete Employee Design
+
+# Complete Employee Design
 
 Let's combine everything.
 
@@ -1200,9 +1167,9 @@ The architecture is:
                     override methods
 ```
 
----
 
-# 🧭 The Complete Concept Map
+
+# The Complete Concept Map
 
 All the concepts we discussed are connected.
 
@@ -1239,9 +1206,9 @@ And class types:
                       directly
 ```
 
----
 
-# 🎯 Interview Revision Table
+
+# Interview Revision Table
 
 | Concept                 | Keyword         | Meaning                                           |
 | ----------------------- | --------------- | ------------------------------------------------- |
@@ -1257,7 +1224,7 @@ And class types:
 | Base Constructor        | `base(...)`     | Calls parent constructor                          |
 | Base Implementation     | `base.Method()` | Calls parent implementation                       |
 
----
+
 
 # 🌟 Mentor's Golden Wisdom
 

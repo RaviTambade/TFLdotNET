@@ -226,7 +226,6 @@ Policy renewal processed.
 Renewal confirmation email sent.
 ```
 
-
 ## 5. View All Policies
 
 ### API Endpoint
@@ -247,7 +246,6 @@ GET /api/policies
   }
 ]
 ```
-
 
 # Suggested Project Structure
 
