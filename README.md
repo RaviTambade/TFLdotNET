@@ -62,7 +62,7 @@ You are not alone on this path. I am walking with you.
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/settingupdotnetsolution.md">Creating .NET Solution</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/buildexedotnetsolution.md">Building .NET Solution</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/CSharpLang.md">C# Programming</a>
-- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/CSgettingstarted.md">C# Getting Started</a>
+- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/csprogramming.md">C# Getting Started</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/date.md">Date Class</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/oo.md"> Objectd Oriented  Programming (OOPs)</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/inheritace.md">Inheritance</a>
