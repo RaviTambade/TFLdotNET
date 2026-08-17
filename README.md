@@ -65,8 +65,8 @@ You are not alone on this path. I am walking with you.
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/csprogramming.md">C# Getting Started</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/date.md">Date Class</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/oo.md"> Objectd Oriented  Programming (OOPs)</a>
-- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/inheritace.md">Inheritance</a>
-- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/interface.md">Interfaces</a>
+- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/inheritance.md">Inheritance</a>
+- <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/interfaces.md">Interfaces</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/Collections.md">Collection Framework</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/collectioninterfaces.md">Collection Inerfaces</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/comparingobjects.md">Comparision</a>
