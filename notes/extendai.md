@@ -122,7 +122,7 @@ Now the application can potentially answer:  “Which policy is suitable for thi
 
 # The Skill Transition
 
-I would teach this transition to Transflower learners as:
+The transition to Transflower learners should look like as:
 
 | Traditional Skill    | AI-Extended Skill                      |
 | -------------------- | -------------------------------------- |
@@ -269,7 +269,7 @@ That is an important concept for a .NET developer to understand.
 
 # The Transflower .NET → AI Journey
 
-I would therefore teach the roadmap like this:
+ the roadmap  shoulld look like this:
 
 ```text
                     AI ENGINEER
