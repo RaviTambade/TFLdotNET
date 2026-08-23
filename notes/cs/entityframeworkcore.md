@@ -1,17 +1,11 @@
-# 🌸 Transflower Mentor Session
+# **Entity Framework Core **
 
-## **Entity Framework Core — Insurance Application Perspective**
-
-> **Mentor says:**
 > *“Class, let me take you on a journey. Imagine you are not building a demo application. You are building an Insurance Management System used by customers, agents, managers and claims officers. Suddenly, database programming becomes a real engineering problem.”*
 
-The uploaded material introduces EF Core through the idea of ORM, `DbContext`, CRUD, LINQ, migrations and asynchronous database operations. 
+The uploaded material introduces EF Core through the idea of ORM, `DbContext`, CRUD, LINQ, migrations and asynchronous database operations.  Let's understand the same concepts through our **Insurance Application**.
 
-Let's understand the same concepts through our **Insurance Application**.
 
----
-
-# 🏢 1. Our Insurance Application
+## 🏢 1. Our Insurance Application
 
 Imagine **Max Insurance** has an application containing:
 
@@ -40,21 +34,12 @@ agents
 users
 ```
 
-Now the developer has a problem.
+Now the developer has a problem. The application is written in **C#**. The data is stored in a **relational database**. How do these two worlds communicate?
 
-The application is written in **C#**.
 
-The data is stored in a **relational database**.
+## 🌱 2. The Old Way — Raw SQL
 
-How do these two worlds communicate?
-
----
-
-# 🌱 2. The Old Way — Raw SQL
-
-Suppose we want all active policies.
-
-We could write:
+Suppose we want all active policies. We could write:
 
 ```sql
 SELECT *
@@ -72,21 +57,12 @@ Then we have to:
 6. Handle parameters
 7. Handle transactions
 
-Imagine doing this for every operation.
+Imagine doing this for every operation. The mentor asks: **“Do I really want my business application to spend most of its time doing database plumbing?”** Probably not.
 
-The mentor asks:
-
-> **“Do I really want my business application to spend most of its time doing database plumbing?”**
-
-Probably not.
-
----
 
 # 💡 3. Enter ORM
 
-**ORM = Object Relational Mapping**
-
-ORM creates a bridge between:
+**ORM = Object Relational Mapping** ORM creates a bridge between:
 
 ```text
 C# Objects
@@ -100,13 +76,9 @@ For example:
 public class Policy
 {
     public int Id { get; set; }
-
     public string PolicyNumber { get; set; }
-
     public int CustomerId { get; set; }
-
     public decimal Premium { get; set; }
-
     public string Status { get; set; }
 }
 ```
@@ -125,13 +97,9 @@ Status
 
 The uploaded material describes this core ORM idea as mapping application objects to relational tables. 
 
----
-
 # 🚀 4. Meet Entity Framework Core
 
-**Entity Framework Core — EF Core** is Microsoft's ORM technology for .NET.
-
-Think of EF Core as a **digital bridge between our Insurance Application and the database**.
+**Entity Framework Core — EF Core** is Microsoft's ORM technology for .NET. Think of EF Core as a **digital bridge between our Insurance Application and the database**.
 
 ```text
 Insurance Application
@@ -145,43 +113,24 @@ Insurance Application
      Database
 ```
 
-Instead of constantly thinking:
+Instead of constantly thinking: “How do I write SQL?” we can often think:  “What insurance data do I need?” The source describes EF Core as cross-platform, open-source and capable of mapping classes to database tables. 
 
-> “How do I write SQL?”
-
-we can often think:
-
-> “What insurance data do I need?”
-
-The source describes EF Core as cross-platform, open-source and capable of mapping classes to database tables. 
-
----
 
 # 🧑‍💼 5. The Hero of EF Core — `DbContext`
 
-Now we need someone to manage the interaction.
-
-Meet:
+Now we need someone to manage the interaction. Meet:
 
 ```csharp
 DbContext
 ```
-
-Mentor says:
-
-> **“Think of `DbContext` as the branch manager of our insurance database.”**
-
-It knows about our entities:
+Mentor says:**“Think of `DbContext` as the branch manager of our insurance database.”** It knows about our entities:
 
 ```csharp
 public class InsuranceDbContext : DbContext
 {
     public DbSet<Customer> Customers { get; set; }
-
     public DbSet<Policy> Policies { get; set; }
-
     public DbSet<Premium> Premiums { get; set; }
-
     public DbSet<Claim> Claims { get; set; }
 }
 ```
@@ -199,29 +148,12 @@ InsuranceDbContext
 
 The uploaded material similarly describes `DbContext` as the central component responsible for tracking entities and communicating with the database. 
 
----
-
 # 📝 6. Creating an Insurance Policy
 
-Suppose an agent sells a new policy.
-
-Traditional SQL:
+Suppose an agent sells a new policy. Traditional SQL:
 
 ```sql
-INSERT INTO policies
-(
-    PolicyNumber,
-    CustomerId,
-    Premium,
-    Status
-)
-VALUES
-(
-    'POL1001',
-    101,
-    25000,
-    'Active'
-);
+INSERT INTO policies (PolicyNumber,CustomerId,Premium,Status) VALUES ('POL1001',101,25000,'Active');
 ```
 
 With EF Core:
@@ -236,27 +168,16 @@ var policy = new Policy
 };
 
 context.Policies.Add(policy);
-
 context.SaveChanges();
 ```
 
-That's it.
-
-We work with an **object**.
-
-EF Core takes responsibility for generating and executing the appropriate SQL. The source demonstrates the same `Add()` and `SaveChanges()` pattern for CRUD operations. 
+That's it.We work with an **object**. EF Core takes responsibility for generating and executing the appropriate SQL. The source demonstrates the same `Add()` and `SaveChanges()` pattern for CRUD operations. 
 
 ---
 
 # 🔍 7. Finding Policies — LINQ Enters
 
-Now the insurance manager asks:
-
-> **“Show me all active policies.”**
-
-We don't necessarily need to write raw SQL.
-
-We can write:
+Now the insurance manager asks:**“Show me all active policies.”** We don't necessarily need to write raw SQL. We can write:
 
 ```csharp
 var policies = context.Policies
@@ -264,13 +185,8 @@ var policies = context.Policies
     .ToList();
 ```
 
-Read the code as English:
+Read the code as English: “From Policies, give me policies where Status is Active.” This is **LINQ**.
 
-> “From Policies, give me policies where Status is Active.”
-
-This is **LINQ**.
-
----
 
 # 🧠 8. LINQ is Extremely Important
 
@@ -318,17 +234,10 @@ var policyNumbers = context.Policies
 
 The source explicitly identifies LINQ as the mechanism used for querying through EF Core and notes that EF Core translates LINQ queries into SQL.  
 
----
 
 # 🔥 9. Business Requirement → LINQ
 
-Imagine the insurance manager says:
-
-> **“Give me active policies with premium greater than ₹25,000, sorted by highest premium.”**
-
-Don't immediately think about SQL.
-
-Think about the **business operations**:
+Imagine the insurance manager says: **“Give me active policies with premium greater than ₹25,000, sorted by highest premium.”** Don't immediately think about SQL. Think about the **business operations**:
 
 ```text
 Policies
@@ -352,19 +261,12 @@ var result = context.Policies
     .ToList();
 ```
 
-This is the mindset we want to develop at Transflower:
+This is the mindset we want to develop at Transflower: **Requirement → Data operation → LINQ → SQL**
 
-> **Requirement → Data operation → LINQ → SQL**
-
----
 
 # 🧩 10. Extension Methods
 
-Now let's connect this with your previous topic.
-
-Suppose our application repeatedly needs to check whether a policy is active.
-
-Instead of writing:
+Now let's connect this with your previous topic. Suppose our application repeatedly needs to check whether a policy is active. Instead of writing:
 
 ```csharp
 p.Status == "Active"
