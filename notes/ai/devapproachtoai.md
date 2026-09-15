@@ -104,21 +104,8 @@ AI Application = LLM
 But production engineering is closer to:
 
 ```text
-AI Application
-      =
-Application Engineering
-      +
-AI Capability
-      +
-Data
-      +
-Security
-      +
-Business Rules
-      +
-Reliability
-      +
-Observability
+AI Application  = Application Engineering + AI Capability + Data + Security
+                    + Business Rules  + Reliability  + Observability
 ```
 
 The LLM generates intelligence-like responses. But your application still needs to:
