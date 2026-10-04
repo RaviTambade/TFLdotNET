@@ -134,8 +134,6 @@ Debian GNU/Linux 13 (trixie)
 Debian 13.7
 ```
 
-For **Debian 13**, don't use the Ubuntu `packages.microsoft.com/config/ubuntu/...` command I gave earlier. The clean approach is to use Microsoft's Debian package repository for Debian 13.
-
 ## 1. Update your GCP VM
 
 SSH into the VM and run:

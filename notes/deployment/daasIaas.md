@@ -1,11 +1,5 @@
 # Database as a Service + Infrastructure as a Service
 
-**Mentor:** Ravi Tambade, Chief Mentor – Transflower Learning
-**Audience:** TAP Students | Software Developers
-**Session:** Public Cloud Fundamentals + Hands-on GCP
-
-### Core Theme
-
 > **Don't just deploy an application. Understand the infrastructure on which your application runs.**
 
 
