@@ -1,12 +1,7 @@
-# Transflower Mentor Session 4
-
 # Git → GitHub → Clone Project → Configure → Run Application on GCP VM
 
 > **Mentor Question:**
-> We have a GCP VM.
-> We have Linux.
-> We have Nginx.
-> We have FastAPI.
+> We have a GCP VM.  We have Linux.  We have Nginx.  We have FastAPI.
 >
 > But there is one problem:
 >
@@ -30,7 +25,6 @@ GCP VM
 Application
 ```
 
----
 
 # 1. Yesterday's Architecture
 
@@ -76,7 +70,7 @@ GCP VM
 Application
 ```
 
----
+
 
 # 2. Why Git?
 
@@ -90,9 +84,7 @@ Developer D
 Developer E
 ```
 
-Everyone modifies the same source code.
-
-Without version control:
+Everyone modifies the same source code. Without version control:
 
 ```text
 final.py
@@ -102,11 +94,8 @@ final_latest2.py
 final_really_latest.py
 ```
 
-This becomes a mess.
+This becomes a mess. Git solves this problem.
 
-Git solves this problem.
-
----
 
 # 3. Git is Version Control
 
@@ -139,13 +128,9 @@ Local Repository
 GitHub
 ```
 
----
-
 # 4. GitHub
 
-GitHub is a hosted platform where Git repositories can be stored and collaborated on.
-
-Think:
+GitHub is a hosted platform where Git repositories can be stored and collaborated on. Think:
 
 ```text
 Git
@@ -171,8 +156,6 @@ GitHub
  +-- Actions / CI/CD
 ```
 
----
-
 # 5. Developer-to-Cloud Journey
 
 Our deployment journey becomes:
@@ -197,8 +180,6 @@ Developer Laptop
 
 This is the simplest manual deployment workflow.
 
----
-
 # 6. Prepare a Simple Project
 
 Let's use our FastAPI application.
@@ -218,10 +199,7 @@ tfl-api/
 ```python
 from fastapi import FastAPI
 
-app = FastAPI(
-    title="TFL Insurance API",
-    version="1.0"
-)
+app = FastAPI(title="TFL Insurance API", version="1.0")
 
 @app.get("/")
 def hello():
@@ -232,20 +210,10 @@ def hello():
 @app.get("/api/policies")
 def get_policies():
     return [
-        {
-            "id": 1,
-            "name": "Jeevan Labh",
-            "premium": 15000
-        },
-        {
-            "id": 2,
-            "name": "Jeevan Arogya",
-            "premium": 12000
-        }
+        {"id": 1,"name": "Jeevan Labh","premium": 15000},
+        { "id": 2,"name": "Jeevan Arogya", "premium": 12000}
     ]
 ```
-
----
 
 # 7. requirements.txt
 
@@ -256,9 +224,7 @@ fastapi
 uvicorn
 ```
 
-The purpose is important.
-
-Instead of telling another developer:
+The purpose is important. Instead of telling another developer:
 
 > "Install FastAPI and Uvicorn."
 
@@ -276,7 +242,6 @@ pip install -r requirements.txt
 
 This is **dependency management**.
 
----
 
 # 8. Initialize Git
 
@@ -305,8 +270,6 @@ tfl-api/
 
 `.git` contains Git's repository information.
 
----
-
 # 9. Check Git Status
 
 Run:
@@ -327,8 +290,6 @@ README.md
 
 Git knows these files exist, but they haven't been added to the next commit.
 
----
-
 # 10. Stage Files
 
 Run:
@@ -343,9 +304,7 @@ Then:
 git status
 ```
 
-Now Git shows files ready to be committed.
-
-Think:
+Now Git shows files ready to be committed. Think:
 
 ```text
 Working Directory
@@ -354,8 +313,6 @@ Working Directory
        v
 Staging Area
 ```
-
----
 
 # 11. Commit
 
@@ -385,7 +342,6 @@ Commit 4
 
 Git gives us a history of the project.
 
----
 
 # 12. Create GitHub Repository
 
@@ -416,13 +372,9 @@ GitHub
 tfl-api
 ```
 
----
-
 # 13. Connect Local Git to GitHub
 
-Git needs to know where the remote repository is.
-
-For example:
+Git needs to know where the remote repository is. For example:
 
 ```bash
 git remote add origin <YOUR-GITHUB-REPOSITORY>
@@ -436,7 +388,7 @@ git remote -v
 
 You should see the remote repository.
 
----
+
 
 # 14. Push Code
 
@@ -467,15 +419,12 @@ Developer Laptop
 
 Your source code is now available remotely.
 
----
 
 # 15. Important Question
 
 > **Why don't we simply copy files from our laptop to the VM?**
 
-We could.
-
-For example:
+We could. For example:
 
 ```text
 Laptop
@@ -500,8 +449,6 @@ CI/CD integration
 Therefore:
 
 > **Git becomes the bridge between development and deployment.**
-
----
 
 # 16. Now Go to GCP VM
 
@@ -539,8 +486,6 @@ Verify:
 git --version
 ```
 
----
-
 # 17. Clone the Repository
 
 Create an application directory:
@@ -568,7 +513,6 @@ Now:
        +-- README.md
 ```
 
----
 
 # 18. This is a Big Moment
 
@@ -597,8 +541,6 @@ GCP VM
 ```
 
 Now the application source code exists inside a cloud computer.
-
----
 
 # 19. Create Python Virtual Environment
 
@@ -639,8 +581,6 @@ VM
        +-- Uvicorn
 ```
 
----
-
 # 20. Run the Application
 
 For the first test:
@@ -675,20 +615,11 @@ Expected:
 
 ```json
 [
-    {
-        "id": 1,
-        "name": "Jeevan Labh",
-        "premium": 15000
-    },
-    {
-        "id": 2,
-        "name": "Jeevan Arogya",
-        "premium": 12000
-    }
+    {   "id": 1, "name": "Jeevan Labh", "premium": 15000 },
+    {   "id": 2, "name": "Jeevan Arogya", "premium": 12000 }
 ]
 ```
 
----
 
 # 21. Connect Nginx
 
@@ -725,8 +656,6 @@ Then:
 ```text
 http://YOUR_PUBLIC_IP/api/policies
 ```
-
----
 
 # 22. What Have We Achieved?
 
@@ -783,7 +712,6 @@ FastAPI
 
 This is the essence of deployment.
 
----
 
 # 23. But There Is a Problem
 
@@ -839,8 +767,6 @@ Restart
 
 This is better.
 
----
-
 # 24. `git pull`
 
 On the VM:
@@ -863,31 +789,22 @@ Then restart the application.
 
 This is **manual deployment**.
 
----
 
 # 25. Application Process Problem
 
-There is another issue.
-
-If you run:
+There is another issue. If you run:
 
 ```bash
 uvicorn main:app --host 127.0.0.1 --port 8000
 ```
 
-inside SSH and close the terminal, the process may stop.
-
-We need a proper process manager/service.
-
-This leads us to:
+inside SSH and close the terminal, the process may stop. We need a proper process manager/service. This leads us to:
 
 ```text
 systemd
 ```
 
 or another process supervisor.
-
----
 
 # 26. Production-Like Architecture
 
@@ -929,8 +846,6 @@ systemd can help with:
 * Starting after VM reboot
 * Managing service state
 
----
-
 # 27. Service-Oriented Thinking
 
 Instead of:
@@ -946,8 +861,6 @@ we want:
 ```
 
 That is a significant step toward production operations.
-
----
 
 # 28. Environment Variables
 
@@ -970,11 +883,7 @@ database_password = "mypassword"
 
 **Absolutely not.**
 
-Why?
-
-Because the source code goes to GitHub.
-
-Then:
+Why? Because the source code goes to GitHub. Then:
 
 ```text
 GitHub
@@ -987,8 +896,6 @@ Password exposed
 ```
 
 This is a security problem.
-
----
 
 # 29. Configuration vs Code
 
@@ -1020,13 +927,9 @@ Application
      +---- Secrets
 ```
 
----
-
 # 30. Environment Variables
 
-Linux provides environment variables.
-
-For example:
+Linux provides environment variables. For example:
 
 ```bash
 export APP_ENV=production
@@ -1065,8 +968,6 @@ Environment
 Configuration
 ```
 
----
-
 # 31. Mentor Rule: Never Commit Secrets
 
 Never put:
@@ -1092,7 +993,6 @@ Deployment Configuration
 
 instead.
 
----
 
 # 32. `.gitignore`
 
@@ -1111,11 +1011,7 @@ __pycache__/
 *.log
 ```
 
-Why?
-
-Because these files should generally not be committed.
-
-Check:
+Why? Because these files should generally not be committed. Check:
 
 ```bash
 git status
@@ -1123,21 +1019,14 @@ git status
 
 The virtual environment should not become part of your source repository.
 
----
 
 # 33. Developer Mindset
 
-A beginner thinks:
+A beginner thinks: "My code works on my laptop."
 
-> "My code works on my laptop."
+A professional asks:"Can I reproduce this environment somewhere else?"
 
-A professional asks:
-
-> "Can I reproduce this environment somewhere else?"
-
-A DevOps-minded developer asks:
-
-> "Can I build, test and deploy it automatically?"
+A DevOps-minded developer asks:"Can I build, test and deploy it automatically?"
 
 This is the progression:
 
@@ -1159,8 +1048,6 @@ Observable
         v
 Scalable
 ```
-
----
 
 # 34. Complete Journey So Far
 
@@ -1196,7 +1083,6 @@ Scalable
                   USER
 ```
 
----
 
 # 35. The Next Level
 
@@ -1231,11 +1117,8 @@ install dependencies
 restart application
 ```
 
-Imagine doing that **20 times every day**.
+Imagine doing that **20 times every day**. That is where CI/CD comes in.
 
-That is where CI/CD comes in.
-
----
 
 # 36. CI/CD
 
@@ -1266,11 +1149,7 @@ GCP VM
 Application
 ```
 
-Instead of: "Ravi Sir, please SSH into the server and deploy my code."
-
-the system says: "Code was merged. Pipeline passed. Application deployed."
-
-That is automation.
+Instead of: "Ravi Sir, please SSH into the server and deploy my code." the system says: "Code was merged. Pipeline passed.  Application deployed." That is automation.
 
 
 # 37. Transflower Mentor Story
@@ -1318,8 +1197,6 @@ Food
 
 CI/CD is the **automated kitchen for software delivery**.
 
-
-
 # 38. Today's Lab Checklist
 
 Students should complete:
@@ -1342,7 +1219,6 @@ Students should complete:
 [ ] Create .gitignore
 [ ] Understand environment variables
 ```
-
 
 # 39. Final Architecture
 
@@ -1405,5 +1281,3 @@ APPLICATION
   ↓
 USER
 ```
-
-**Next session: CI/CD with GitHub Actions → automatically test the FastAPI project → deploy it to the GCP VM.**
