@@ -25,9 +25,7 @@ In this session, we will understand how a cloud platform such as **Google Cloud 
 
 **GCP = Google Cloud Platform**
 
-GCP is Google's cloud computing platform.
-
-Instead of purchasing and maintaining our own physical servers, we can rent computing resources from Google.
+GCP is Google's cloud computing platform. Instead of purchasing and maintaining our own physical servers, we can rent computing resources from Google.
 
 ```text
 Traditional IT
@@ -61,9 +59,7 @@ With cloud:
     Application
 ```
 
-The cloud provider manages the physical infrastructure.
-
-The developer focuses more on the **software and application**.
+The cloud provider manages the physical infrastructure. The developer focuses more on the **software and application**.
 
 
 
@@ -81,11 +77,7 @@ ASP.NET Core Application
        Computer
 ```
 
-The application needs a computer to execute.
-
-Where is that computer?
-
-In traditional development:
+The application needs a computer to execute. Where is that computer? In traditional development:
 
 ```text
 Developer
@@ -140,9 +132,7 @@ Physical Google Server
 +--------------------------------------+
 ```
 
-To us, the VM behaves like an independent computer.
-
-We can:
+To us, the VM behaves like an independent computer. We can:
 
 ```text
 Login
@@ -161,15 +151,7 @@ Configure networking
 
 ## 5. GCP Compute Engine
 
-GCP provides Virtual Machines through:
-
-**Compute Engine**
-
-Think of Compute Engine as:
-
-> **"Give me a computer in Google's data center."**
-
-A VM can have:
+GCP provides Virtual Machines through: **Compute Engine** Think of Compute Engine as:  **"Give me a computer in Google's data center."** A VM can have:
 
 ```text
 VM
@@ -218,19 +200,11 @@ Our simple learning architecture:
                   Web Application
 ```
 
-The important concept is:
-
-> **Creating a VM does not automatically mean that every network port is accessible from the Internet.**
-
-The firewall controls incoming network traffic.
+The important concept is:  **Creating a VM does not automatically mean that every network port is accessible from the Internet.** The firewall controls incoming network traffic.
 
 ## 7. Step 1 — Open GCP Console
 
-Open the Google Cloud Console.
-
-Select or create your **GCP Project**.
-
-A project provides a logical boundary for resources.
+Open the Google Cloud Console. Select or create your **GCP Project**. A project provides a logical boundary for resources.
 
 ```text
 Google Cloud
