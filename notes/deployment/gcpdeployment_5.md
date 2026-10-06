@@ -76,9 +76,7 @@ Build
 Tests
 ```
 
-The basic question is:
-
-> **"Does the new code still work?"**
+The basic question is: **"Does the new code still work?"**
 
 # 3. What is CD?
 
@@ -281,8 +279,6 @@ Application
     v
 Automated Tests
 ```
-
-
 
 # 10. Run Tests Locally
 

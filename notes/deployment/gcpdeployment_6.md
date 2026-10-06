@@ -55,8 +55,6 @@ Runtime
 
 Docker gives us a way to **package the application and its runtime dependencies together**.
 
-
-
 # 2. What Is Docker?
 
 Think about a courier package. You don't send only the product. You package everything required to deliver it safely. Similarly:
@@ -93,8 +91,6 @@ Docker Container
 > **Image is the package.
 > Container is the running package.**
 
-
-
 # 3. VM vs Container
 
 This distinction is extremely important.
@@ -117,17 +113,13 @@ A Virtual Machine provides a complete operating-system environment. A container 
 So:
 
 ```text
-VM
-=
-Virtual Computer
+VM = Virtual Computer
 ```
 
 while:
 
 ```text
-Container
-=
-Isolated Application Runtime
+Container = Isolated Application Runtime
 ```
 
 # 4. Our New Architecture
@@ -277,7 +269,6 @@ Our Application
 
 Instead of installing Python manually inside the container, we start from a Python image.
 
-
 # 8. WORKDIR
 
 ```dockerfile
@@ -346,11 +337,7 @@ This copies our project into `/app`. So the container becomes:
 EXPOSE 8000
 ```
 
-This documents that our application uses port `8000`. Important mentor point:
-
-> `EXPOSE` does **not** by itself open the port to the Internet.
-
-Port publishing happens when we run the container.
+This documents that our application uses port `8000`. Important mentor point:  `EXPOSE` does **not** by itself open the port to the Internet. Port publishing happens when we run the container.
 
 # 12. CMD
 
@@ -365,11 +352,7 @@ CMD [
 ]
 ```
 
-This tells Docker:
-
-> "When the container starts, run FastAPI using Uvicorn."
-
-Why `0.0.0.0`? Because inside the container, the application must listen on the container's network interface. Remember our earlier lesson:
+This tells Docker: "When the container starts, run FastAPI using Uvicorn." Why `0.0.0.0`? Because inside the container, the application must listen on the container's network interface. Remember our earlier lesson:
 
 ```text
 127.0.0.1
@@ -752,11 +735,7 @@ Container
 Application
 ```
 
-We have converted: **"Setup instructions"**
-
-into: **"Executable infrastructure."**
-
-This is one of the reasons Docker became so important in modern DevOps.
+We have converted: **"Setup instructions"** into: **"Executable infrastructure."** This is one of the reasons Docker became so important in modern DevOps.
 
 
 
@@ -767,9 +746,7 @@ This is a common interview question.
 ### Image
 
 ```text
-Docker Image
-=
-Read-only packaged template
+Docker Image = Read-only packaged template
 ```
 
 Example:
@@ -781,9 +758,7 @@ tfl-api:1.0
 ### Container
 
 ```text
-Container
-=
-Running instance of an image
+Container = Running instance of an image
 ```
 
 Example:
