@@ -47,9 +47,7 @@ GCP VM
 
 **SSH = Secure Shell**
 
-SSH gives us a secure command-line connection to a remote computer.
-
-Think about this:
+SSH gives us a secure command-line connection to a remote computer. Think about this:
 
 ```text
 Your Laptop
@@ -124,9 +122,7 @@ HTTP → TCP Port 80
 HTTPS → TCP Port 443
 ```
 
-
-
-# 5. Port म्हणजे काय?
+# 5. What do  you mean by Port?
 
 Imagine the VM is a building.
 
@@ -154,9 +150,7 @@ For example:
 34.xx.xx.xx:80
 ```
 
-means:
-
-> Connect to the computer at this IP address using port 80.
+means: Connect to the computer at this IP address using port 80.
 
  
 
@@ -193,9 +187,7 @@ Together:
 means:
 
 ```text
-Computer
-    +
-Web service
+Computer   +  Web service
 ```
 
 # 7. Common Ports
@@ -254,13 +246,7 @@ Internet
     +---- 8000
 ```
 
-Should we open all of them?
-
-**No.**
-
-Open only what is required.
-
-For example:
+Should we open all of them? **No.** Open only what is required. For example:
 
 ```text
 Production Web Server
@@ -271,9 +257,7 @@ Production Web Server
 3306 → MySQL   → NOT public
 ```
 
-This is an important DevOps/security principle:
-
-> **Minimize the attack surface.**
+This is an important DevOps/security principle: **Minimize the attack surface.**
 
 # 10. Connect to the VM
 
@@ -292,11 +276,7 @@ tfl-web-server
 SSH
 ```
 
-Click **SSH**.
-
-A terminal opens.
-
-You are now inside the cloud computer.
+Click **SSH**. A terminal opens. You are now inside the cloud computer.
 
 
 # 11. First Linux Commands
@@ -463,7 +443,7 @@ From the VM:
 curl http://localhost
 ```
 
-If Nginx is working, you should receive HTML.
+If Nginx is working, you should receive HTML. 
 
 Architecture:
 

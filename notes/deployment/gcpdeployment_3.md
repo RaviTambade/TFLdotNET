@@ -1,16 +1,12 @@
-# Transflower Mentor Session 3
-
 # Nginx Reverse Proxy + FastAPI Application on GCP VM
 
 > **Mentor Question:**
-> Yesterday our FastAPI application was running on `:8000`.
-> But do we really want users to type `http://public-ip:8000`?
+> Yesterday our FastAPI application was running on `:8000`. But do we really want users to type `http://public-ip:8000`? 
 >
 > **No.**
 >
 > A production-style application should normally expose a standard web entry point such as **HTTP :80** or, preferably, **HTTPS :443**.
 
----
 
 # 1. Where We Are
 
@@ -34,11 +30,7 @@ FastAPI
 Application
 ```
 
-It works for learning.
-
-But let's improve the architecture.
-
----
+It works for learning. But let's improve the architecture.
 
 # 2. The New Architecture
 
@@ -66,17 +58,13 @@ We will introduce **Nginx** as a Reverse Proxy.
                 +----------------+
 ```
 
-The browser communicates with **Nginx**.
+The browser communicates with **Nginx**. Nginx communicates with **FastAPI**.
 
-Nginx communicates with **FastAPI**.
 
----
 
 # 3. What is a Reverse Proxy?
 
-Let's first understand the word **proxy**.
-
-A proxy acts as an intermediary.
+Let's first understand the word **proxy**. A proxy acts as an intermediary.
 
 ```text
 Client
@@ -105,7 +93,6 @@ Reverse Proxy
 
 Nginx is commonly used for this purpose.
 
----
 
 # 4. Real-World Analogy
 
@@ -124,11 +111,7 @@ Reception
    +----> Neurology
 ```
 
-The patient doesn't need to know which doctor or room handles the request.
-
-The **reception desk** routes the patient.
-
-Nginx plays a similar role.
+The patient doesn't need to know which doctor or room handles the request. The **reception desk** routes the patient. Nginx plays a similar role.
 
 ```text
 Browser
@@ -143,7 +126,6 @@ Nginx
    +----> ASP.NET Core
 ```
 
----
 
 # 5. Why Use Nginx?
 
@@ -180,8 +162,6 @@ Nginx :80/:443
    +---- Node :3000
    +---- .NET :5000
 ```
-
----
 
 # 6. Our Learning Application
 
@@ -220,11 +200,8 @@ Notice:
 127.0.0.1:8000
 ```
 
-Now FastAPI is accessible **only from the VM itself**.
+Now FastAPI is accessible **only from the VM itself**. That is exactly what we want when Nginx is going to be the public entry point.
 
-That is exactly what we want when Nginx is going to be the public entry point.
-
----
 
 # 7. Why `127.0.0.1`?
 
@@ -269,11 +246,8 @@ Nginx
 FastAPI
 ```
 
-can reach it.
+can reach it. This gives us an additional layer of separation.
 
-This gives us an additional layer of separation.
-
----
 
 # 8. Step 1 — Install Nginx
 
@@ -301,8 +275,6 @@ You should see:
 Active: active (running)
 ```
 
----
-
 # 9. Test Nginx
 
 From inside the VM:
@@ -311,17 +283,13 @@ From inside the VM:
 curl http://localhost
 ```
 
-You should get the Nginx response.
-
-Now from your browser:
+You should get the Nginx response. Now from your browser:
 
 ```text
 http://PUBLIC_IP
 ```
 
-You should see the Nginx welcome page.
-
-Our architecture currently is:
+You should see the Nginx welcome page. Our architecture currently is:
 
 ```text
 Browser
@@ -336,7 +304,6 @@ Nginx
 
 FastAPI is not involved yet.
 
----
 
 # 10. Start FastAPI
 
@@ -376,19 +343,12 @@ FastAPI
 localhost
 ```
 
-But Nginx doesn't know that it should forward requests to FastAPI.
+But Nginx doesn't know that it should forward requests to FastAPI. We need to configure it.
 
-We need to configure it.
-
----
 
 # 11. Nginx Configuration
 
-Nginx configuration tells Nginx:
-
-> When a request arrives, where should I send it?
-
-Conceptually:
+Nginx configuration tells Nginx:  When a request arrives, where should I send it? Conceptually:
 
 ```text
 Browser
@@ -405,7 +365,6 @@ http://127.0.0.1:8000
 FastAPI
 ```
 
----
 
 # 12. Create a Server Configuration
 
@@ -436,8 +395,6 @@ server {
 
 Save the file.
 
----
-
 # 13. Enable the Configuration
 
 Create a symbolic link:
@@ -453,13 +410,10 @@ Remove the default configuration if necessary:
 sudo rm /etc/nginx/sites-enabled/default
 ```
 
----
 
 # 14. Test Nginx Configuration
 
-Never restart blindly.
-
-First:
+Never restart blindly. First:
 
 ```bash
 sudo nginx -t
@@ -472,11 +426,8 @@ syntax is ok
 test is successful
 ```
 
-This is a good DevOps habit:
+This is a good DevOps habit: **Validate configuration before restarting a service.**
 
-> **Validate configuration before restarting a service.**
-
----
 
 # 15. Reload Nginx
 
@@ -502,8 +453,6 @@ Nginx :80
 FastAPI :8000
 ```
 
----
-
 # 16. Test From Browser
 
 Open:
@@ -520,15 +469,11 @@ You should now get:
 }
 ```
 
-The browser doesn't know that FastAPI is running on port 8000.
-
-The browser only sees:
+The browser doesn't know that FastAPI is running on port 8000. The browser only sees:
 
 ```text
 PUBLIC_IP : 80
 ```
-
----
 
 # 17. What Happened Behind the Scenes?
 
@@ -590,8 +535,6 @@ and returned:
 
 Nginx sent the response back to the browser.
 
----
-
 # 18. Complete Request Journey
 
 This is the picture I want students to remember.
@@ -630,8 +573,6 @@ This is the picture I want students to remember.
                      Business Logic
 ```
 
----
-
 # 19. Notice Something Important
 
 Our firewall only needs to expose:
@@ -646,9 +587,7 @@ We don't need to expose:
 TCP 8000
 ```
 
-because FastAPI is listening locally.
-
-So:
+because FastAPI is listening locally. So:
 
 ```text
 Internet
@@ -662,11 +601,7 @@ Nginx
 FastAPI
 ```
 
-Port 8000 is internal to the VM.
-
-This is a much cleaner architecture.
-
----
+Port 8000 is internal to the VM. This is a much cleaner architecture.
 
 # 20. Security Improvement
 
@@ -700,8 +635,6 @@ Private/internal:
 
 This is one reason reverse proxies are useful.
 
----
-
 # 21. What About HTTPS?
 
 HTTP:
@@ -718,7 +651,7 @@ HTTPS:
 https://example.com
 ```
 
-uses TLS encryption.
+uses TLS encryption. 
 
 Production architecture normally looks like:
 
@@ -737,11 +670,8 @@ Internet
    FastAPI :8000
 ```
 
-Later we can configure a TLS certificate.
+Later we can configure a TLS certificate. For a public production site, HTTPS should be the normal target.
 
-For a public production site, HTTPS should be the normal target.
-
----
 
 # 22. Domain Name
 
@@ -795,8 +725,6 @@ Nginx
 FastAPI
 ```
 
----
-
 # 23. Multiple Applications
 
 Now imagine the VM has:
@@ -844,8 +772,6 @@ Node.js :3000
 
 This is the beginning of **application gateway / reverse-proxy architecture**.
 
----
-
 # 24. Production Architecture
 
 Now our simple learning architecture starts looking like a real deployment:
@@ -876,8 +802,6 @@ Now our simple learning architecture starts looking like a real deployment:
                           v
                        Database
 ```
-
----
 
 # 25. From VM to DevOps
 
@@ -917,8 +841,6 @@ This is no longer just:
 It becomes:
 
 > **"I understand how my application gets from source code to a running service that users can access."**
-
----
 
 # 26. Mentor Exercise
 
@@ -972,8 +894,6 @@ From your laptop:
 http://PUBLIC_IP
 ```
 
----
-
 # 27. Debugging Exercise
 
 Suppose:
@@ -1016,7 +936,6 @@ sudo nginx -t
 sudo ss -tulpn
 ```
 
----
 
 # 28. Another Scenario
 
@@ -1058,7 +977,6 @@ External connectivity
 
 This is systematic debugging.
 
----
 
 # 29. Mentor Rule
 
@@ -1086,8 +1004,6 @@ Internet access works?
 Don't test everything simultaneously.
 
 **Reduce the problem layer by layer.**
-
----
 
 # 30. Final Architecture
 
@@ -1128,8 +1044,6 @@ Don't test everything simultaneously.
                          Database
 ```
 
----
-
 # Mentor's Closing Thought
 
 > **"Yesterday we created a computer in the cloud. Today we made that computer behave like a web server. Tomorrow we should ask an even bigger question: How do we deploy our application repeatedly without manually logging into the server every time?"**
@@ -1149,5 +1063,3 @@ Deployment
   ↓
 GCP
 ```
-
-**Next session: Git → GitHub → Clone Repository on GCP VM → Run the real project → Environment Variables → Application Configuration.**

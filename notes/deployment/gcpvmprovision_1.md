@@ -360,9 +360,7 @@ Imagine your VM has many doors:
        +----------------+
 ```
 
-We don't want every door open to the Internet.
-
-The firewall acts like a security guard.
+We don't want every door open to the Internet. The firewall acts like a security guard.
 
 ```text
 Internet
@@ -428,9 +426,7 @@ Conceptually:
   ALLOW
 ```
 
-`0.0.0.0/0` represents IPv4 addresses from everywhere.
-
-For a production system, you should carefully restrict exposure where possible rather than opening services unnecessarily to the entire Internet.
+`0.0.0.0/0` represents IPv4 addresses from everywhere. For a production system, you should carefully restrict exposure where possible rather than opening services unnecessarily to the entire Internet.
 
 ## 14. VM Network Interface
 
@@ -570,8 +566,6 @@ df -h
 
 Understand available disk space.
 
----
-
 ###### Network
 
 ```bash
@@ -580,13 +574,9 @@ ip addr
 
 This shows network interfaces and IP information.
 
-
-
 ## 18. Step 7 — Install a Simple Web Server
 
-Now let's prove that our VM can behave like a web server.
-
-For Debian/Ubuntu:
+Now let's prove that our VM can behave like a web server. For Debian/Ubuntu:
 
 ```bash
 sudo apt update
