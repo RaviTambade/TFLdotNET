@@ -51,7 +51,6 @@ First learn to think like a programmer. Then learn to code like an engineer. Fin
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/Models.md">Model</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/Views.md">Views</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/taghelper.md">Tag Helpers</a>
-
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/AspnetCoreLifeCycle.md">App Life Cycle Management</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/ioc.md">Inversion of Control (IOC)</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/di.md">Dependency Injection</a>
@@ -69,8 +68,6 @@ First learn to think like a programmer. Then learn to code like an engineer. Fin
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/signalR.md"> SignalR</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/MQTT.md"> MQTT</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/kafka.md"> Kafka</a>
-
-
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/deploywebapp.md"> Deploying ASP .NET MVC application</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/deploywebapp.md"> Azure Cloud Native Deployment</a>
 - <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/deploywebappkubernetes.md"> Kubernetes Deployment</a>
