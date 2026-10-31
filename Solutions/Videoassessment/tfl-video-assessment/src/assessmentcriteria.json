@@ -1,0 +1,12 @@
+[
+  {"title": "Depth of understanding",  "detail": "Explains the concept in their own words and why it works."  },
+  {"title": "Practical demonstration",  "detail": "Runs working Python code and explains important lines and output."  },
+  {"title": "Problem-solving ability",  "detail": "Covers a real use case, edge cases, errors or limitations."  },
+  {"title": "Content composition",  "detail": "Uses a logical structure: introduction, explanation, demo and conclusion."  },
+  {"title": "Storytelling ability",   "detail": "Uses a relatable scenario, analogy or example to teach the concept."  },
+  {"title": "Communication skills",   "detail": "Speaks clearly and uses technical vocabulary appropriately."  },
+  {"title": "Presentation and confidence", "detail": "Appears prepared, composed and comfortable explaining the topic."  },
+  {"title": "Visual and video quality", "detail": "Audio, code, slides, diagrams and screen recording are clear and useful."  },
+  {"title": "AI literacy and independent thinking","detail": "Validates AI-assisted content and can explain and modify their solution."},
+  {"title": "Professionalism and audience engagement", "detail": "Respects the time limit, acknowledges sources and ends professionally." }
+]

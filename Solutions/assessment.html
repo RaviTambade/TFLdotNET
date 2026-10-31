@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transflower Video Assessment</title>
+  <style>
+    :root {
+      --brand: #8b0000;
+      --brand-dark: #5f0000;
+      --brand-light: #fff0f0;
+      --ink: #242424;
+      --muted: #666;
+      --line: #e5e5e5;
+      --surface: #ffffff;
+      --page: #f5f6f8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--page);
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5;
+    }
+    header {
+      background: linear-gradient(135deg, var(--brand-dark), var(--brand));
+      color: white;
+      padding: 28px 18px;
+      text-align: center;
+    }
+    header .brand {
+      margin: 0 0 5px;
+      font-size: 14px;
+      letter-spacing: 2px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    header h1 { margin: 0; font-size: clamp(24px, 4vw, 36px); }
+    header p { margin: 8px 0 0; color: #ffe6e6; }
+    main { max-width: 960px; margin: 24px auto; padding: 0 16px 36px; }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 22px;
+      margin-bottom: 18px;
+      box-shadow: 0 3px 12px rgba(0,0,0,.035);
+    }
+    h2 { font-size: 20px; margin: 0 0 14px; }
+    .intro { color: var(--muted); margin-top: -5px; }
+    .fields {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+    label { display: block; font-weight: 700; font-size: 14px; margin-bottom: 6px; }
+    input[type="text"], textarea {
+      width: 100%;
+      border: 1px solid #cfd2d8;
+      border-radius: 8px;
+      padding: 11px 12px;
+      font: inherit;
+      background: white;
+    }
+    input:focus, textarea:focus { outline: 2px solid #e5a4a4; border-color: var(--brand); }
+    .criterion {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 15px 16px;
+      margin-top: 12px;
+    }
+    .criterion-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .criterion h3 { margin: 0; font-size: 16px; }
+    .criterion p { color: var(--muted); margin: 4px 0 10px; font-size: 13px; }
+    .score {
+      min-width: 56px;
+      text-align: center;
+      font-weight: 700;
+      color: var(--brand);
+      background: var(--brand-light);
+      border-radius: 8px;
+      padding: 5px 8px;
+    }
+    input[type="range"] { width: 100%; accent-color: var(--brand); cursor: pointer; }
+    .range-labels { display: flex; justify-content: space-between; color: var(--muted); font-size: 12px; }
+    .summary {
+      background: #faf5f5;
+      border: 1px solid #ecd5d5;
+      border-radius: 12px;
+      padding: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+    .summary small { color: var(--muted); font-weight: 700; letter-spacing: .8px; }
+    .total { color: var(--brand); font-size: 36px; font-weight: 800; line-height: 1.2; }
+    .level { font-weight: 700; font-size: 17px; }
+    .level-description { color: var(--muted); font-size: 13px; margin-top: 3px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+    button {
+      border: 0;
+      border-radius: 8px;
+      padding: 11px 16px;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .primary { background: var(--brand); color: white; }
+    .primary:hover { background: var(--brand-dark); }
+    .secondary { background: white; color: var(--brand); border: 1px solid var(--brand); }
+    .neutral { background: #eceef1; color: #292929; }
+    .message { min-height: 22px; color: #246b37; font-size: 14px; margin-top: 8px; }
+    .rubric { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .rubric div { padding: 12px; background: #f7f7f8; border-radius: 8px; }
+    .rubric strong { display: block; }
+    footer { text-align: center; color: var(--muted); font-size: 13px; padding: 8px 16px 24px; }
+    @media (max-width: 620px) {
+      .fields, .rubric { grid-template-columns: 1fr; }
+      .card { padding: 16px; }
+      .summary { align-items: flex-start; }
+    }
+    @media print {
+      body { background: white; }
+      header { background: white; color: #111; border-bottom: 2px solid var(--brand); padding: 12px; }
+      header p { color: #333; }
+      main { margin: 10px auto; max-width: none; }
+      .card { box-shadow: none; break-inside: avoid; padding: 12px; }
+      .actions, .message, footer { display: none !important; }
+      input, textarea { border: 1px solid #aaa; }
+      .criterion { break-inside: avoid; }
+      input[type="range"] { print-color-adjust: exact; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="brand">Transflower Learning</p>
+    <h1>Python Mentor Challenge</h1>
+    <p>Video-Based Employability Assessment · 20-Minute Presentation</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Student Information</h2>
+      <p class="intro">Record the student details before evaluating the video.</p>
+      <div class="fields">
+        <div>
+          <label for="studentName">Student name / ID</label>
+          <input id="studentName" type="text" placeholder="Enter student name or ID">
+        </div>
+        <div>
+          <label for="topic">Python topic</label>
+          <input id="topic" type="text" placeholder="e.g. Decorators, Generators, Exceptions">
+        </div>
+        <div>
+          <label for="mentor">Evaluating mentor</label>
+          <input id="mentor" type="text" placeholder="Mentor name">
+        </div>
+        <div>
+          <label for="assessmentDate">Assessment date</label>
+          <input id="assessmentDate" type="text" placeholder="DD-MM-YYYY">
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Assessment Rubric — 100 Marks</h2>
+      <p class="intro">Choose a score from 0 to 10 for each parameter. Evaluate observable evidence, not just video polish.</p>
+      <div id="criteria"></div>
+    </section>
+
+    <section class="card">
+      <h2>Overall Result</h2>
+      <div class="summary" aria-live="polite">
+        <div>
+          <small>TOTAL SCORE</small>
+          <div class="total"><span id="total">0</span><span style="font-size:18px;color:#666"> / 100</span></div>
+        </div>
+        <div>
+          <div class="level" id="level">Rebuild fundamentals</div>
+          <div class="level-description" id="levelDescription">Score the criteria to see the suggested readiness level.</div>
+        </div>
+      </div>
+      <div style="margin-top:16px">
+        <label for="feedback">Mentor feedback — evidence, strengths and next steps</label>
+        <textarea id="feedback" rows="5" placeholder="Example: Explains loops clearly. Next step: demonstrate a boundary case and explain why it occurs."></textarea>
+      </div>
+      <div class="actions">
+        <button class="primary" id="copyReport" type="button">Copy Assessment Report</button>
+        <button class="secondary" id="printReport" type="button">Print / Save as PDF</button>
+        <button class="neutral" id="reset" type="button">Reset Form</button>
+      </div>
+      <div class="message" id="message" role="status"></div>
+    </section>
+
+    <section class="card">
+      <h2>Scoring Guide</h2>
+      <div class="rubric">
+        <div><strong>9–10 · Excellent</strong>Independent explanation, strong demonstration and real-world connection.</div>
+        <div><strong>7–8 · Good</strong>Correct and clear, with minor gaps or occasional reliance on notes.</div>
+        <div><strong>5–6 · Developing</strong>Understands basics but needs more depth, clarity or troubleshooting.</div>
+        <div><strong>3–4 · Weak</strong>Mostly memorized; limited understanding or incomplete demonstration.</div>
+        <div><strong>0–2 · Insufficient evidence</strong>Cannot explain the core idea or provide meaningful evidence.</div>
+      </div>
+      <p class="intro" style="margin:14px 0 0">Suggested readiness bands: 90–100 Mentor-ready · 75–89 Workplace-ready potential · 60–74 Developing · 40–59 Needs guided practice · 0–39 Rebuild fundamentals. These are internal guidance bands, not universal hiring standards.</p>
+    </section>
+  </main>
+
+  <footer>Transflower Learning · Learn deeply. Demonstrate clearly. Mentor responsibly.</footer>
+
+  <script>
+    const assessmentCriteria = [
+      {
+        title: "Depth of understanding",
+        detail: "Explains the concept in their own words and why it works."
+      },
+      {
+        title: "Practical demonstration",
+        detail: "Runs working Python code and explains important lines and output."
+      },
+      {
+        title: "Problem-solving ability",
+        detail: "Covers a real use case, edge cases, errors or limitations."
+      },
+      {
+        title: "Content composition",
+        detail: "Uses a logical structure: introduction, explanation, demo and conclusion."
+      },
+      {
+        title: "Storytelling ability",
+        detail: "Uses a relatable scenario, analogy or example to teach the concept."
+      },
+      {
+        title: "Communication skills",
+        detail: "Speaks clearly and uses technical vocabulary appropriately."
+      },
+      {
+        title: "Presentation and confidence",
+        detail: "Appears prepared, composed and comfortable explaining the topic."
+      },
+      {
+        title: "Visual and video quality",
+        detail: "Audio, code, slides, diagrams and screen recording are clear and useful."
+      },
+      {
+        title: "AI literacy and independent thinking",
+        detail: "Validates AI-assisted content and can explain and modify their solution."
+      },
+      {
+        title: "Professionalism and audience engagement",
+        detail: "Respects the time limit, acknowledges sources and ends professionally."
+      }
+    ];
+
+    const criteriaContainer = document.getElementById("criteria");
+
+    assessmentCriteria.forEach((criterion, index) => {
+      const article = document.createElement("article");
+      article.className = "criterion";
+      article.innerHTML = `
+        <div class="criterion-top">
+          <div>
+            <h3>${index + 1}. ${criterion.title}</h3>
+            <p>${criterion.detail}</p>
+          </div>
+          <div class="score" id="scoreLabel${index}">0 / 10</div>
+        </div>
+        <input type="range" min="0" max="10" step="1" value="0"
+          id="score${index}" aria-label="${criterion.title}, score out of 10">
+        <div class="range-labels"><span>0 — Insufficient</span><span>5 — Developing</span><span>10 — Excellent</span></div>
+      `;
+      criteriaContainer.appendChild(article);
+      article.querySelector("input").addEventListener("input", updateTotal);
+    });
+
+    function getScores() {
+      return assessmentCriteria.map((_, index) =>
+        Number(document.getElementById(`score${index}`).value)
+      );
+    }
+
+    function getReadiness(total) {
+      if (total >= 90) return {
+        title: "Mentor-ready",
+        description: "Strong independent explanation, demonstration and communication."
+      };
+      if (total >= 75) return {
+        title: "Workplace-ready potential",
+        description: "Good foundation with a few areas to strengthen."
+      };
+      if (total >= 60) return {
+        title: "Developing",
+        description: "More practice needed in applying and explaining concepts."
+      };
+      if (total >= 40) return {
+        title: "Needs guided practice",
+        description: "Targeted support needed in understanding or communication."
+      };
+      return {
+        title: "Rebuild fundamentals",
+        description: "Revisit the concept and submit a fresh demonstration."
+      };
+    }
+
+    function updateTotal() {
+      const scores = getScores();
+      scores.forEach((score, index) => {
+        document.getElementById(`scoreLabel${index}`).textContent = `${score} / 10`;
+      });
+      const total = scores.reduce((sum, score) => sum + score, 0);
+      document.getElementById("total").textContent = total;
+      const readiness = getReadiness(total);
+      document.getElementById("level").textContent = readiness.title;
+      document.getElementById("levelDescription").textContent = readiness.description;
+    }
+
+    function buildReport() {
+
+      const scores = getScores();
+      const total = scores.reduce((sum, score) => sum + score, 0);
+      const readiness = getReadiness(total);
+
+      const date = document.getElementById("assessmentDate").value.trim();
+      
+      return [
+        "TRANSFLOWER LEARNING — PYTHON MENTOR CHALLENGE",
+        "VIDEO-BASED EMPLOYABILITY ASSESSMENT",
+        "",
+        `Student: ${document.getElementById("studentName").value.trim() || "Not entered"}`,
+        `Python topic: ${document.getElementById("topic").value.trim() || "Not entered"}`,
+        `Evaluating mentor: ${document.getElementById("mentor").value.trim() || "Not entered"}`,
+        `Assessment date: ${date || "Not entered"}`,
+        "",
+        ...assessmentCriteria.map((criterion, index) =>
+          `${index + 1}. ${criterion.title}: ${scores[index]}/10`
+        ),
+        "",
+        `TOTAL: ${total}/100`,
+        `READINESS LEVEL: ${readiness.title}`,
+        `Interpretation: ${readiness.description}`,
+        "",
+        "MENTOR FEEDBACK:",
+        document.getElementById("feedback").value.trim() || "Not entered",
+        "",
+        "Note: This is one source of employability evidence, not a standalone hiring decision."
+      ].join("\n");
+    }
+
+    document.getElementById("copyReport").addEventListener("click", async () => {
+      const message = document.getElementById("message");
+      try {
+        await navigator.clipboard.writeText(buildReport());
+        message.textContent = "Assessment report copied. Paste it into your document or spreadsheet.";
+      } catch (error) {
+        const temp = document.createElement("textarea");
+        temp.value = buildReport();
+        temp.style.position = "fixed";
+        temp.style.opacity = "0";
+        document.body.appendChild(temp);
+        temp.select();
+        const copied = document.execCommand("copy");
+        temp.remove();
+        message.textContent = copied
+          ? "Assessment report copied."
+          : "Copy was blocked by the browser. Use Print / Save as PDF instead.";
+      }
+    });
+
+    document.getElementById("printReport").addEventListener("click", () => {
+      document.getElementById("message").textContent = "";
+      window.print();
+    });
+
+    document.getElementById("reset").addEventListener("click", () => {
+      if (!window.confirm("Clear all student details, scores and feedback?")) return;
+      document.getElementById("studentName").value = "";
+      document.getElementById("topic").value = "";
+      document.getElementById("mentor").value = "";
+      document.getElementById("assessmentDate").value = "";
+      document.getElementById("feedback").value = "";
+      assessmentCriteria.forEach((_, index) => {
+        document.getElementById(`score${index}`).value = 0;
+      });
+      document.getElementById("message").textContent = "";
+      updateTotal();
+    });
+
+    updateTotal();
+  </script>
+</body>
+</html>
