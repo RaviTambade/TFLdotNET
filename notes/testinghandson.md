@@ -532,29 +532,21 @@ public class StudentsApiTests :
     public async Task GetAll_ShouldReturnSuccess()
     {
         // Act
-        var response = await client.GetAsync(
-            "/api/students");
+        var response = await client.GetAsync("/api/students");
 
         // Assert
-        Assert.Equal(
-            HttpStatusCode.OK,
-            response.StatusCode);
+        Assert.Equal(HttpStatusCode.OK,response.StatusCode);
     }
 
     [Fact]
     public async Task GetById_ShouldReturnStudent()
     {
         // Act
-        var response = await client.GetAsync(
-            "/api/students/1");
-
-        var student =
-            await response.Content.ReadFromJsonAsync<Student>();
+        var response = await client.GetAsync("/api/students/1");
+        var student =await response.Content.ReadFromJsonAsync<Student>();
 
         // Assert
-        Assert.Equal(HttpStatusCode.OK,
-            response.StatusCode);
-
+        Assert.Equal(HttpStatusCode.OK,response.StatusCode);
         Assert.Equal("Amit", student?.Name);
     }
 
@@ -562,13 +554,10 @@ public class StudentsApiTests :
     public async Task GetInvalidStudent_ShouldReturn404()
     {
         // Act
-        var response = await client.GetAsync(
-            "/api/students/99");
+        var response = await client.GetAsync("/api/students/99");
 
         // Assert
-        Assert.Equal(
-            HttpStatusCode.NotFound,
-            response.StatusCode);
+        Assert.Equal(HttpStatusCode.NotFound,response.StatusCode);
     }
 
     [Fact]
@@ -583,14 +572,10 @@ public class StudentsApiTests :
         };
 
         // Act
-        var response = await client.PostAsJsonAsync(
-            "/api/students", student);
+        var response = await client.PostAsJsonAsync("/api/students", student);
 
         // Assert
-        Assert.Equal(
-            HttpStatusCode.Created,
-            response.StatusCode);
-
+        Assert.Equal(HttpStatusCode.Created,response.StatusCode);
         Assert.NotNull(response.Headers.Location);
     }
 
@@ -606,30 +591,19 @@ public class StudentsApiTests :
         };
 
         // Create
-        var createResponse = await client.PostAsJsonAsync(
-            "/api/students", student);
-
-        Assert.Equal(HttpStatusCode.Created,
-            createResponse.StatusCode);
-
-        var created = await createResponse.Content
-            .ReadFromJsonAsync<Student>();
+        var createResponse = await client.PostAsJsonAsync("/api/students", student);
+        Assert.Equal(HttpStatusCode.Created,createResponse.StatusCode);
+        var created = await createResponse.Content.ReadFromJsonAsync<Student>();
 
         Assert.NotNull(created);
 
         // Read
-        var getResponse = await client.GetAsync(
-            $"/api/students/{created.Id}");
-
-        Assert.Equal(HttpStatusCode.OK,
-            getResponse.StatusCode);
+        var getResponse = await client.GetAsync($"/api/students/{created.Id}");
+        Assert.Equal(HttpStatusCode.OK,getResponse.StatusCode);
 
         // Delete
-        var deleteResponse = await client.DeleteAsync(
-            $"/api/students/{created.Id}");
-
-        Assert.Equal(HttpStatusCode.NoContent,
-            deleteResponse.StatusCode);
+        var deleteResponse = await client.DeleteAsync($"/api/students/{created.Id}");
+        Assert.Equal(HttpStatusCode.NoContent,deleteResponse.StatusCode);
     }
 }
 ```
@@ -658,10 +632,6 @@ The tests execute the application through an in-memory test server. You do not n
 ## 10. Manual API Testing using Postman
 
 Students should also learn to test APIs manually before automating them.
-
-[How to Send JSON Object with POST Request](https://images.openai.com/static-rsc-4/L-1FPddTHa_mNjNXvApgWdQg23KOerbxq_8OzwZm2khXiGnlRAaDPZUC67kMiMs8zQ1xtzzqpm00Sb9qwUnd0zhFwq5ft1WzMX1NE2O1Uv6iZWNJ8jobsG9XXTTxZlC636QvF_tI92j-hFGvjhRA1kJIfreyK6zwl-i043_wpPc?purpose=inline)
-
-[apidog.com](https://apidog.com/articles/send-json-object-with-post-request/?utm_source=chatgpt.com)
 
 Example POST request:
 
@@ -743,7 +713,7 @@ Note: Scenarios 7–10 require additional validation and business rules in the a
         | API Testing      |
         | HttpClient       |
         | WebApplication   |
-        | Factory           |
+        | Factory          |
         +--------+---------+
                  |
                  v
