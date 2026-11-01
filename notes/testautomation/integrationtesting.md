@@ -760,9 +760,7 @@ test.describe("ASP.NET Core Login API", () => {
         expect(response.status()).toBe(401);
         const result = await response.json();
         expect(result.success).toBe(false);
-        expect(result.message).toBe(
-            "Invalid username or password"
-        );
+        expect(result.message).toBe("Invalid username or password" );
     });
 
     test("Missing credentials returns HTTP 400", async ({ request }) => {
@@ -776,9 +774,7 @@ test.describe("ASP.NET Core Login API", () => {
                 }
             }
         );
-
         expect(response.status()).toBe(400);
-
     });
 
 });
@@ -822,10 +818,7 @@ npx playwright show-report
 One configuration detail: use a health endpoint instead of the Swagger URL for reliable API startup detection. Add this to `LoginAPI/Program.cs` before `app.Run()`:
 
 ```
-app.MapGet("/health", () => Results.Ok(new
-{
-    status = "Healthy"
-}));
+app.MapGet("/health", () => Results.Ok(new {  status = "Healthy"}));
 ```
 
 Then update the API `webServer.url` in Playwright configuration to:
