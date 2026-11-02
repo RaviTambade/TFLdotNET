@@ -607,9 +607,7 @@ Take the earlier Product JSON CRUD application and reorganize it.
 
 Hands-on Lab
 
-&#x20;Product Management API – Refactoring Exercise
-
-
+Product Management API – Refactoring Exercise
 
 | Step | Student activity                      |
 | ---- | ------------------------------------- |
@@ -780,8 +778,6 @@ This tests whether students have genuinely understood separation of concerns.
 
 ```
 
-
-
 ## 10.  Mapping Architecture for Folder structure
 
 ```
@@ -831,9 +827,6 @@ Ask these questions:
 My teaching philosophy:
 
 A good developer knows how to write code.
-
 A better developer knows where to write that code.
-
 An architect understands why the code belongs there.
-
 First learn to build an application. Then learn to structure it. Finally, learn to design its architecture.
