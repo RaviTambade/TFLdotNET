@@ -440,4 +440,3 @@ This project will give students an end-to-end understanding of full-stack applic
 Until today, you have been learning how to write programs. From today, I want you to start thinking about how to build applications. A class is not an application. A collection of methods is not an application. An application is a collaboration of multiple components, each having a well-defined responsibility. ASP.NET Core gives us the platform to bring these components together. Don't rush to learn Controllers, Entity Framework or Microservices. First understand HTTP. Understand how a request reaches the server. Understand how C# objects become JSON. Understand how services communicate with repositories. Understand how data travels between an application and a database.Once you understand these fundamentals, learning any modern backend framework becomes easier."
 
 Remember: Frameworks are tools. Programming languages are mediums. Software engineering is the real skill.
-

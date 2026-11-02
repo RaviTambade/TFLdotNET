@@ -1,658 +1,272 @@
-# **ASP.NET Core 9.0 Web API -  Program.cs**,
-Imagine you're entering a new kingdom — ASP.NET Core Web API.
-Before you build castles (Controllers), enforce laws (Middleware), or manage resources (Services), you must first understand the Main Gate.
+# Understanding Program.cs in an ASP.NET Core Application
 
-That gate is — Program.cs, the starting point where the kingdom awakens.
+Transflower Mentor Classroom | From C# Main() to ASP.NET Core Application
 
-## 🎬 **Scene: Inside the Heart of an ASP.NET Core 9.0 Web API**
+When C# developers start learning ASP.NET Core, one of the first files they encounter is `Program.cs`.
 
-Imagine…
-It’s early morning in a software lab. You’re sitting with your mentor, sipping tea, and looking at a fresh `Program.cs` file.
-The mentor says:
+Students often ask:
 
-> “This file is like the DNA of your API. Every request, every controller, every service — their story begins here.”
+- Where is the `Main()` method?
+- Who creates the web server?
+- What is `WebApplication.CreateBuilder()`?
+- What is the purpose of `builder.Build()`?
+- Why do we register services?
+- What is middleware?
+- What happens when `app.Run()` executes?
 
-## ✅ **Step 1: Fresh ASP.NET Core 9 API Project**
+Let's understand these concepts step by step.
 
-You created this project using:
+## 1. What is Program.cs?
 
-```bash
-dotnet new webapi -n ProductCatalogAPI
-cd ProductCatalogAPI
+In a traditional C# console application, execution starts from the `Main()` method.
+
+```
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Hello World!");
+    }
+}
 ```
 
-This generated a `Program.cs` file — no more `Startup.cs` (after .NET 6, everything merged).
+In modern ASP.NET Core applications, we use Top-Level Statements.
 
+We don't need to explicitly write the `Main()` method.
 
+Example:
 
-## 📁 **Program.cs — Line-by-Line Explanation (Mentor Style)**
-
-Let’s assume your basic `Program.cs` looks like this:
-
-```csharp
+```
 var builder = WebApplication.CreateBuilder(args);
-
-builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
-
-app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
-app.MapControllers();
+app.MapGet("/", () => "Welcome to Transflower!");
 
 app.Run();
 ```
 
-Now let me break this down like a mentor would to a student:
+The compiler generates the entry-point code for us.
 
+Mentor analogy:
 
+Think of `Program.cs` as the control room of an application.
 
-### 🛠️ **1. Create the Application Builder**
+It configures the application, registers the required components, creates the application and starts its execution.
 
-```csharp
+## 2. Understand the lifecycle of Program.cs
+
+Before understanding individual statements, look at the complete execution sequence.
+
+```
+          PROGRAM.CS
+               |
+               v
+    +------------------------+
+    | 1. CreateBuilder()     |
+    |                        |
+    | Initialize Host        |
+    | Load Configuration     |
+    | Prepare DI Container   |
+    +------------------------+
+               |
+               v
+    +------------------------+
+    | 2. Register Services   |
+    |                        |
+    | Controllers            |
+    | Services               |
+    | Repositories           |
+    +------------------------+
+               |
+               v
+    +------------------------+
+    | 3. builder.Build()     |
+    |                        |
+    | Create WebApplication  |
+    +------------------------+
+               |
+               v
+    +------------------------+
+    | 4. Configure Pipeline  |
+    |                        |
+    | Middleware             |
+    | Authentication         |
+    | Authorization          |
+    +------------------------+
+               |
+               v
+    +------------------------+
+    | 5. Map Endpoints       |
+    |                        |
+    | MapControllers()       |
+    | MapGet()               |
+    +------------------------+
+               |
+               v
+    +------------------------+
+    | 6. app.Run()           |
+    |                        |
+    | Start HTTP Server      |
+    | Listen for Requests    |
+    +------------------------+
+               |
+               v
+        APPLICATION RUNNING
+```
+
+There are two important objects in this process:
+
+- `builder` – used to configure the application before building it.
+- `app` – represents the configured web application that handles incoming requests.
+
+## 3. Understand Program.cs line by line
+
+Let's take a simple ASP.NET Core Web API application.
+
+```
+using ProductsWebAPI.Repositories;
+using ProductsWebAPI.Repositories.Interfaces;
+using ProductsWebAPI.Services;
+using ProductsWebAPI.Services.Interfaces;
+
 var builder = WebApplication.CreateBuilder(args);
-```
 
-🔹 Think of this as the **architect's table**.
-This line **collects all configuration settings**, manages dependency injection (DI) container, and prepares everything needed to build the API.
-
-* `args`: command-line arguments
-* `CreateBuilder`: sets up logging, app settings (`appsettings.json`), environment variables, etc.
-
-
-### 🧩 **2. Register Services (Dependency Injection Container)**
-
-```csharp
+// Register MVC Controllers
 builder.Services.AddControllers();
-```
 
-🔹 You’re telling .NET:
+// Register Repository
+builder.Services.AddScoped<
+    IProductRepository,
+    ProductRepository
+>();
 
-> “Hey, I want to use **Controllers** in this API.”
+// Register Service
+builder.Services.AddScoped<
+    IProductService,
+    ProductService
+>();
 
-This enables Web API controllers with `[ApiController]` attribute.
-
-
-```csharp
-builder.Services.AddEndpointsApiExplorer();
-```
-
-🔹 This service **exposes metadata** about your API endpoints.
-Swagger needs this to discover what routes exist.
-
-
-```csharp
-builder.Services.AddSwaggerGen();
-```
-
-🔹 This adds **Swagger/OpenAPI support** — for auto-generating API documentation and UI.
-Without this, you won’t get the `/swagger` playground.
-
-
-
-### 🏗️ **3. Build the App**
-
-```csharp
+// Build application
 var app = builder.Build();
-```
 
-🔹 Construction complete! 🏗️
-Now, the building is ready — but not functional yet. Middleware needs to be installed next.
-
-
-### 🔍 **4. Enable Swagger — But Only in Development**
-
-```csharp
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
-```
-
-🔹 Mentor says:
-
-> “You don’t keep instruction boards in a real shop for customers — only for developers while constructing.”
-
-This code enables Swagger UI only when environment = Development.
-You can set environment using:
-
-```bash
-set ASPNETCORE_ENVIRONMENT=Development
-```
-
-### 🔐 **5. Force HTTPS**
-
-```csharp
+// Configure HTTP pipeline
 app.UseHttpsRedirection();
-```
 
-🔹 Redirects HTTP → HTTPS (secure communication).
-Prevents attackers from sniffing plain-text traffic.
-
-
-
-### 🛡️ **6. Authorization Middleware**
-
-```csharp
-app.UseAuthorization();
-```
-
-🔹 This checks:
-
-* **Does this request have a valid token?**
-* **Does the user have the right roles/permissions?**
-
-Note: If you are using authentication (`UseAuthentication()`), it should appear **before** this.
-
-
-### 🗺️ **7. Map Controller Routes**
-
-```csharp
+// Map controller endpoints
 app.MapControllers();
-```
 
-🔹 This line tells ASP.NET:
-
-> “Connect all my controller classes to the API pipeline.”
-
-It will scan all your classes with `[ApiController]` and `[Route]` attributes.
-
-
-
-### 🏁 **8. Run the App**
-
-```csharp
+// Start application
 app.Run();
 ```
 
-🔹 The engine starts.
-Your API is now listening for HTTP requests on:
+Let's understand every statement.
+
+## 4. Statement 1 – CreateBuilder()
 
 ```
-https://localhost:5001
-http://localhost:5000
+var builder = WebApplication.CreateBuilder(args);
 ```
 
-## 🎉 **✅ End of Scene Summary**
+This is the first important statement.
 
-| Stage         | Description                                 |
-| ------------- | ------------------------------------------- |
-| CreateBuilder | Setup configuration, DI, logging            |
-| Services      | Register controllers, swagger, dependencies |
-| Build         | App object is constructed                   |
-| Swagger       | Enable documentation in Dev                 |
-| HTTPS         | Force secure requests                       |
-| Auth          | Enable authorization filter                 |
-| Controllers   | Register API routes                         |
-| Run           | Start the app server                        |
+What happens here?
 
+ASP.NET Core prepares the application environment.
 
+It initializes several important components:
 
+- Application configuration
+- Dependency Injection container
+- Logging infrastructure
+- Web hosting infrastructure
+- Server configuration
 
-Perfect! 🎬
-Let’s move to the next part of our story.
+The `args` parameter represents command-line arguments passed to the application.
 
-
-## 🎥 **Next Scene: Understanding Controllers in ASP.NET Core**
-
-*“If Program.cs is the brain that starts everything, Controller is the mouth that speaks to the outside world.”*
-
-Imagine a customer walks into your shop (your API).
-They don’t care about electricity, wiring, shelves...
-They only care about how well the **reception desk (Controller)** handles their request.
-
-
-## ✅ **What is a Controller in ASP.NET Core Web API?**
-
-* It’s a **C# class** responsible for handling APIs (HTTP requests like GET, POST, PUT, DELETE).
-* It receives input → talks to services → returns output (JSON).
-
-
-### 📁 **Typical Controller File – ProductsController.cs**
-
-```csharp
-using Microsoft.AspNetCore.Mvc;
-
-namespace ProductCatalogAPI.Controllers
-{
-    [ApiController]
-    [Route("api/[controller]")]
-    public class ProductsController : ControllerBase
-    {
-        [HttpGet]
-        public IActionResult GetAllProducts()
-        {
-            return Ok(new[] { "Laptop", "Mobile", "Tablet" });
-        }
-    }
-}
-```
-
-Let’s break it down like a mentor.
-
-
-### 🧩 **1. Using Statements**
-
-```csharp
-using Microsoft.AspNetCore.Mvc;
-```
-
-This imports all necessary tools to build API controllers (`ControllerBase`, `Route`, `HttpGet`, etc.)
-
-
-### 🧩 **2. Namespace**
-
-```csharp
-namespace ProductCatalogAPI.Controllers
-```
-
-Organizes code. Helps C# locate this controller logically.
-
-
-### 🧩 **3. `[ApiController]` Attribute**
-
-```csharp
-[ApiController]
-```
-
-This is like giving your controller **superpowers** 💥
-
-✔ Automatic model validation
-✔ Automatically returns HTTP 400 if input is invalid
-✔ Binds JSON body to C# objects automatically
-✔ Makes error responses consistent
-
-
-### 🧩 **4. `[Route("api/[controller]")]`**
-
-```csharp
-[Route("api/[controller]")]
-```
-
-Defines how clients will reach this controller.
-
-* `[controller]` = name of the controller class (without “Controller”)
-* So, `ProductsController` → `/api/products`
-
-
-### 🧩 **5. Class Definition**
-
-```csharp
-public class ProductsController : ControllerBase
-```
-
-* Inherits `ControllerBase`, which gives:
-
-  * `Ok()`, `NotFound()`, `BadRequest()`, etc.
-* Unlike MVC (with views), Web APIs don’t use `Controller`, only `ControllerBase`.
-
-
-### 🧩 **6. Action Methods**
-
-```csharp
-[HttpGet]
-public IActionResult GetAllProducts()
-{
-    return Ok(new[] { "Laptop", "Mobile", "Tablet" });
-}
-```
-
-| Part            | Explanation                                                    |
-| --------------- | -------------------------------------------------------------- |
-| `[HttpGet]`     | This method answers GET requests like `/api/products`          |
-| `IActionResult` | Standard return type for APIs (can return 200, 404, 500, etc.) |
-| `Ok()`          | Returns HTTP 200 + JSON data                                   |
-
-If someone browses:
-👉 `https://localhost:5001/api/products`
-They’ll receive:
-
-```json
-["Laptop", "Mobile", "Tablet"]
-```
-
-
-## ✨ What if You Want to Add a Real Database?
-
-You’ll inject a **Service Layer (Business Logic)** like this:
-
-```csharp
-private readonly IProductService _productService;
-
-public ProductsController(IProductService productService)
-{
-    _productService = productService;
-}
-
-[HttpGet]
-public async Task<IActionResult> GetAllProducts()
-{
-    var products = await _productService.GetAllAsync();
-    return Ok(products);
-}
-```
-
-## ✅ **End of Scene Summary**
-
-| Concept                       | Meaning                                                       |
-| ----------------------------- | ------------------------------------------------------------- |
-| `[ApiController]`             | Makes controller intelligent – auto validation, input binding |
-| `[Route("api/[controller]")]` | URL pattern                                                   |
-| `ControllerBase`              | Provides helper methods for HTTP responses                    |
-| `IActionResult`               | Allows different response types                               |
-| `[HttpGet]/Post/Put/Delete`   | Defines what HTTP method action responds to                   |
-
-
-🎬 **Next Scene: CRUD Methods – Giving Life to the Product API**
-*(Mentor Storytelling Style – The hands of your API come alive)*
-
-
-### 🧠 Scene Setup:
-
-The mentor smiles and says:
-
-> “Now that our controller can *speak* (respond to API requests), it’s time to make it *do real work.*
-> CRUD — Create, Read, Update, Delete — these are the four limbs of your Web API.”
-
-Just like a shopkeeper manages products — adding new items, viewing inventory, updating prices, and removing discontinued items — your **API controller** will now manage products in the same way.
-
-
-## 🧩 Let’s Begin – The `ProductsController`
-
-Assume you already have:
-
-* `Product` entity class
-* `IProductService` interface
-* `ProductService` implementation (business logic)
-* Dependency Injection configured in `Program.cs`
-
-
-
-### **Controller Structure**
-
-```csharp
-using Microsoft.AspNetCore.Mvc;
-using ProductCatalogAPI.Models;
-using ProductCatalogAPI.Services;
-
-namespace ProductCatalogAPI.Controllers
-{
-    [ApiController]
-    [Route("api/[controller]")]
-    public class ProductsController : ControllerBase
-    {
-        private readonly IProductService _productService;
-
-        public ProductsController(IProductService productService)
-        {
-            _productService = productService;
-        }
-
-        // GET: api/products
-        [HttpGet]
-        public async Task<IActionResult> GetAllProducts()
-        {
-            var products = await _productService.GetAllAsync();
-            return Ok(products);
-        }
-
-        // GET: api/products/5
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetProductById(int id)
-        {
-            var product = await _productService.GetByIdAsync(id);
-            if (product == null)
-                return NotFound($"Product with ID {id} not found.");
-
-            return Ok(product);
-        }
-
-        // POST: api/products
-        [HttpPost]
-        public async Task<IActionResult> CreateProduct([FromBody] ProductDto dto)
-        {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-
-            var created = await _productService.AddAsync(dto);
-            return CreatedAtAction(nameof(GetProductById), new { id = created.Id }, created);
-        }
-
-        // PUT: api/products/5
-        [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateProduct(int id, [FromBody] ProductDto dto)
-        {
-            if (id != dto.Id)
-                return BadRequest("Product ID mismatch.");
-
-            var updated = await _productService.UpdateAsync(dto);
-            if (updated == null)
-                return NotFound($"Product with ID {id} not found.");
-
-            return Ok(updated);
-        }
-
-        // DELETE: api/products/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteProduct(int id)
-        {
-            var deleted = await _productService.DeleteAsync(id);
-            if (!deleted)
-                return NotFound($"Product with ID {id} not found.");
-
-            return NoContent(); // 204
-        }
-    }
-}
-```
-
-
-
-## 🎯 **Mentor Explains Each Part**
-
-### 🧱 **1. `[HttpGet] GetAllProducts()`**
-
-> “This is your *catalog shelf*. It lists all products.”
-
-```csharp
-[HttpGet]
-public async Task<IActionResult> GetAllProducts()
-```
-
-* Fetches all records.
-* Returns HTTP **200 OK** with JSON data.
-
-**Example Output:**
-
-```json
-[
-  { "id": 1, "name": "Laptop", "price": 75000 },
-  { "id": 2, "name": "Smartphone", "price": 30000 }
-]
-```
-
-
-### 🔍 **2. `[HttpGet("{id}")] GetProductById()`**
-
-> “If a customer wants one specific product, this endpoint finds it.”
-
-* `{id}` in route = URL parameter
-* Returns 200 if found, 404 if not.
-
-**Request:**
+For example:
 
 ```
-GET /api/products/1
+dotnet run --environment Development
 ```
 
-**Response:**
+The builder prepares the application for configuration.
 
-```json
-{ "id": 1, "name": "Laptop", "price": 75000 }
-```
+Mentor analogy:
 
+Imagine constructing a house.
 
-### ➕ **3. `[HttpPost] CreateProduct()`**
+Before constructing rooms, you prepare the land, arrange resources and create the construction plan.
 
-> “When new stock arrives, you add it to your inventory.”
+`CreateBuilder()` performs a similar preparation for our web application.
 
-* Accepts **ProductDto** from request body.
-* Validates the model.
-* Returns `201 Created` with location header.
+### What is WebApplicationBuilder?
 
-**Request:**
-
-```json
-{ "name": "Smartwatch", "price": 15000 }
-```
-
-**Response:**
-
-```json
-{
-  "id": 3,
-  "name": "Smartwatch",
-  "price": 15000
-}
-```
-
-
-### 🛠️ **4. `[HttpPut("{id}")] UpdateProduct()`**
-
-> “When price or details change, this updates them.”
-
-* Compares route ID and object ID.
-* Updates product if it exists.
-* Returns `200 OK` with updated data.
-
-**Request:**
+`WebApplicationBuilder` is the object that allows us to configure the application before building it.
 
 ```
-PUT /api/products/3
+        WebApplicationBuilder
+                 |
+       +---------+---------+
+       |         |         |
+       v         v         v
+   Services  Configuration Logging
+       |
+       v
+   Hosting Configuration
 ```
 
-```json
-{ "id": 3, "name": "Smartwatch Pro", "price": 20000 }
-```
-
-
-### ❌ **5. `[HttpDelete("{id}")] DeleteProduct()`**
-
-> “When a product is discontinued, this removes it.”
-
-* Deletes record if it exists.
-* Returns 204 No Content.
-
-**Request:**
+## 5. Statement 2 – Register Services
 
 ```
-DELETE /api/products/3
+builder.Services.AddControllers();
 ```
 
-**Response:**
-`204 No Content`
+What is `builder.Services`?
 
+It is the service collection used by ASP.NET Core's Dependency Injection system.
 
-## 🧩 **Supporting Service Interface (For Clarity)**
+We register application components here.
 
-```csharp
-public interface IProductService
-{
-    Task<IEnumerable<ProductDto>> GetAllAsync();
-    Task<ProductDto?> GetByIdAsync(int id);
-    Task<ProductDto> AddAsync(ProductDto dto);
-    Task<ProductDto?> UpdateAsync(ProductDto dto);
-    Task<bool> DeleteAsync(int id);
-}
+`AddControllers()` registers the services needed for MVC controllers and API controller functionality.
+
+Now look at our Product API.
+
+```
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<IProductService,ProductService>();
 ```
 
+What are we doing?
 
-## ⚙️ **DI Setup in Program.cs**
+We are telling ASP.NET Core:
 
-```csharp
-builder.Services.AddScoped<IProductService, ProductService>();
+"When someone requests an IProductRepository, create and provide a ProductRepository object."
+
+Similarly:
+
+"When someone requests an IProductService, provide a ProductService object."
+
+### Understand Dependency Injection
+
+```
+       SERVICE REGISTRATION
+       --------------------
+
+       IProductService
+              |
+              v
+        ProductService
+
+       IProductRepository
+              |
+              v
+       ProductRepository
 ```
 
-This makes sure a **new service instance** is created per request.
+Consider the constructor of our Controller:
 
----
-
-## 🧠 **End of Scene Summary**
-
-| Operation | HTTP Verb | Example Route     | Response Code |
-| --------- | --------- | ----------------- | ------------- |
-| List All  | GET       | `/api/products`   | 200 OK        |
-| Get One   | GET       | `/api/products/5` | 200 / 404     |
-| Create    | POST      | `/api/products`   | 201 Created   |
-| Update    | PUT       | `/api/products/5` | 200 / 404     |
-| Delete    | DELETE    | `/api/products/5` | 204 / 404     |
-
-
-
-🎬 **Next Scene: Dependency Injection (DI) Deep Dive – The Bloodstream of ASP.NET Core**
-*(Mentor Storytelling Style)*
-
-
-### 🎭 **Scene Opening:**
-
-You and your mentor are standing in front of a whiteboard.
-The mentor draws three boxes:
-
-**Controller → Service → Repository → Database**
-
-Then he says:
-
-> “Imagine if every Controller created its own Service, and every Service created its own Repository.
-> If something changes in one part, everything breaks.
-> That’s like wiring a building without using electric sockets — everything hardwired!
-> In real life, we use sockets. In ASP.NET Core, we use **Dependency Injection (DI)**.”
-
-
-
-## 🧠 **What is Dependency Injection?**
-
-A design pattern where:
-
-* Classes **don’t create their own dependencies**.
-* Instead, **dependencies are provided (injected)** by the framework.
-* Promotes loose coupling, testing, and clean code.
-
-
-## 🧪 **Example Without DI (BAD CODE)**
-
-```csharp
-public class ProductsController : ControllerBase
-{
-    private ProductService _service = new ProductService(); // ❌ Hard dependency
-
-    public IActionResult GetAll()
-    {
-        return Ok(_service.GetAll());
-    }
-}
 ```
-
-🔴 Problem:
-
-* Controller is tightly coupled with `ProductService`.
-* You cannot replace it with a mock service during testing.
-* If service constructor changes, controller breaks.
-
-
-## ✅ **With Dependency Injection (GOOD CODE)**
-
-```csharp
 public class ProductsController : ControllerBase
 {
     private readonly IProductService _service;
@@ -661,127 +275,472 @@ public class ProductsController : ControllerBase
     {
         _service = service;
     }
+}
+```
 
+We are not manually creating a ProductService object.
+
+ASP.NET Core resolves the registered dependency and injects it into the Controller.
+
+### Understand service lifetimes
+
+ASP.NET Core provides three common dependency injection lifetimes.
+
+| Lifetime  | Meaning                                        |
+| --------- | ---------------------------------------------- |
+| Transient | New object every time it is requested          |
+| Scoped    | One object per HTTP request scope              |
+| Singleton | One shared object for the application lifetime |
+
+Example:
+
+```
+builder.Services.AddTransient<IProductService, ProductService>();
+builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddSingleton<IProductService, ProductService>();
+```
+
+For our Product API, we are using `AddScoped()`.
+
+Mentor checkpoint: Ask students why we use an interface rather than directly creating a concrete class.
+
+Expected answer: To achieve abstraction, loose coupling and easier replacement of implementations.
+
+## 6. Statement 3 – Build()
+
+```
+var app = builder.Build();
+```
+
+This is another important statement. Until now, we have been configuring the application. Now we build it. The builder creates a `WebApplication` instance using the registered services and configuration.
+
+Understand the relationship:
+
+```
+    WebApplicationBuilder
+             |
+             | Configure
+             |
+      +------+------+
+      |             |
+      v             v
+   Services     Configuration
+      |             |
+      +------+------+
+             |
+             v
+        Build()
+             |
+             v
+      WebApplication
+             |
+             v
+       var app
+```
+
+Important distinction:
+
+- `builder` is used to configure the application.
+- `app` is used to configure its request pipeline and run it.
+
+## 7. Statement 4 – Configure Middleware
+
+```
+app.UseHttpsRedirection();
+```
+
+What is middleware?
+
+Middleware is software that participates in processing HTTP requests and responses. Imagine a request entering an ASP.NET Core application. Before reaching a Controller, it may pass through several middleware components.
+
+For example:
+
+- HTTPS Redirection
+- Exception Handling
+- Authentication
+- Authorization
+- CORS
+- Request Logging
+
+Consider this diagram:
+
+```
+           HTTP REQUEST
+                |
+                v
+      +--------------------+
+      | HTTPS Redirection  |
+      +--------------------+
+                |
+                v
+      +--------------------+
+      | Exception Handler  |
+      +--------------------+
+                |
+                v
+      +--------------------+
+      | Authentication     |
+      +--------------------+
+                |
+                v
+      +--------------------+
+      | Authorization      |
+      +--------------------+
+                |
+                v
+      +--------------------+
+      | Controller Endpoint|
+      +--------------------+
+                |
+                v
+          HTTP RESPONSE
+```
+
+Middleware components form a pipeline.
+
+Each middleware can:
+
+1. Process the incoming request.
+2. Pass control to the next middleware.
+3. Process the outgoing response.
+
+For example:
+
+```
+app.UseHttpsRedirection();
+```
+
+This redirects HTTP requests to HTTPS when the HTTPS endpoint is configured.
+
+## 8. Statement 5 – MapControllers()
+
+```
+app.MapControllers();
+```
+
+What does this statement do?
+
+It connects the Controller endpoints with the ASP.NET Core application's endpoint routing system.
+
+Consider our Controller:
+
+```
+[ApiController]
+[Route("api/[controller]")]
+public class ProductsController : ControllerBase
+{
     [HttpGet]
-    public async Task<IActionResult> GetAll()
+    public IActionResult GetAll()
     {
-        var products = await _service.GetAllAsync();
-        return Ok(products);
+        return Ok("All products");
+    }
+
+    [HttpGet("{id}")]
+    public IActionResult GetById(int id)
+    {
+        return Ok($"Product ID: {id}");
     }
 }
 ```
 
-✔ Controller does not create the service
-✔ It only **asks for the interface**
-✔ The actual implementation is wired in `Program.cs`
+ASP.NET Core identifies the routes using the Controller and HTTP method attributes.
 
+The resulting endpoints are:
 
-## 🧷 **Step 1: Register Services in Program.cs**
+| Attribute              | Endpoint                 |
+| ---------------------- | ------------------------ |
+| `[HttpGet]`            | `GET /api/products`      |
+| `[HttpGet("{id}")]`    | `GET /api/products/1`    |
+| `[HttpPost]`           | `POST /api/products`     |
+| `[HttpPut("{id}")]`    | `PUT /api/products/1`    |
+| `[HttpDelete("{id}")]` | `DELETE /api/products/1` |
 
-```csharp
-var builder = WebApplication.CreateBuilder(args);
+The route:
 
-// 1️⃣ Register Services in DI Container
-builder.Services.AddScoped<IProductService, ProductService>();
-builder.Services.AddScoped<IProductRepository, ProductRepository>();
+```
+[Route("api/[controller]")]
+```
 
-builder.Services.AddControllers();
-var app = builder.Build();
-app.MapControllers();
+Uses the Controller name without the `Controller` suffix.
+
+Therefore:
+
+`ProductsController` becomes `products`.
+
+Important: `AddControllers()` registers the MVC controller services, whereas `MapControllers()` makes the controller routes available to incoming HTTP requests.
+
+## 9. Statement 6 – Run()
+
+```
 app.Run();
 ```
 
-## 🗂️ **Step 2: Understand Service Lifetimes in ASP.NET Core**
+This statement starts the web application.
 
-| Lifetime      | Description                        | When to Use                    |
-| ------------- | ---------------------------------- | ------------------------------ |
-| **Transient** | New instance every time            | Lightweight stateless services |
-| **Scoped** ✅  | One instance per HTTP request      | Services interacting with DB   |
-| **Singleton** | One instance for whole application | Configurations, loggers        |
+ASP.NET Core starts its hosting infrastructure and listens for incoming HTTP requests using its configured web server, typically Kestrel.
 
-Example registration:
+For example:
 
-```csharp
-builder.Services.AddTransient<IRandomService, RandomService>();
-builder.Services.AddScoped<IProductService, ProductService>();
-builder.Services.AddSingleton<ILogService, LogService>();
+```
+Now listening on: https://localhost:7001
+Now listening on: http://localhost:5001
 ```
 
-### ⚙️ **What Happens Behind the Scenes?**
+The application is now ready to accept requests.
 
-When a request hits `/api/products`:
+Consider what happens:
 
-1. ASP.NET Core sees that `ProductsController` needs an `IProductService`.
-2. It checks the **DI Container**.
-3. It creates a `ProductService` instance.
-4. If `ProductService` needs `IProductRepository`, it creates that too.
-5. Injects all into the Controller.
-6. You just **use it and focus on business logic.**
+```
+       ASP.NET CORE APPLICATION
+                   |
+                   v
+              app.Run()
+                   |
+                   v
+            KESTREL SERVER
+                   |
+                   v
+          LISTENING ON PORT
+                   |
+                   v
+          WAITING FOR REQUESTS
+                   |
+          +--------+--------+
+          |                 |
+          v                 v
+       GET Request       POST Request
+          |                 |
+          v                 v
+      Controller        Controller
+          |                 |
+          v                 v
+       Response          Response
+```
 
+One important observation: `app.Run()` in this context starts the web host and blocks while the application runs. It is different from the `app.Run(...)` middleware overload, which adds terminal middleware to the request pipeline.
 
-## ⚡ **Step 3: Injecting Repository into Service**
+## 10. Complete Program.cs – With all major components
 
-```csharp
-public class ProductService : IProductService
+Now let's bring all the concepts together. This is a practical `Program.cs` for our Products Web API.
+
+```
+using ProductsWebAPI.Repositories;
+using ProductsWebAPI.Repositories.Interfaces;
+using ProductsWebAPI.Services;
+using ProductsWebAPI.Services.Interfaces;
+
+var builder = WebApplication.CreateBuilder(args);
+
+// STEP 1: Register MVC Controllers
+builder.Services.AddControllers();
+
+// STEP 2: Register Repository
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+
+// STEP 3: Register Business Services
+builder.Services.AddScoped<IProductService,ProductService>();
+
+// STEP 4: Build Application
+var app = builder.Build();
+
+// STEP 5: Configure Middleware Pipeline
+if (app.Environment.IsDevelopment())
 {
-    private readonly IProductRepository _repository;
-
-    public ProductService(IProductRepository repository)
-    {
-        _repository = repository;
-    }
-
-    public async Task<IEnumerable<ProductDto>> GetAllAsync()
-    {
-        var products = await _repository.GetAllAsync();
-        return products.Select(p => new ProductDto 
-        { 
-            Id = p.Id, 
-            Name = p.Name, 
-            Price = p.Price 
-        });
-    }
+    app.UseDeveloperExceptionPage();
 }
+
+app.UseHttpsRedirection();
+
+// STEP 6: Map Controller Routes
+app.MapControllers();
+
+// STEP 7: Start Web Application
+app.Run();
 ```
 
-Here, the Service doesn’t know **how data is stored**, only **how to use it.**
+## 11. Understand the two execution phases
 
+This is a very important concept for C# developers. Program.cs has two major phases.
 
-## 🧪 **Step 4: DI Makes Unit Testing Easy**
+## Phase 1 – Application Startup
 
-```csharp
-[Fact]
-public async Task GetAllProducts_ReturnsData()
-{
-    // Arrange
-    var mockService = new Mock<IProductService>();
-    mockService.Setup(s => s.GetAllAsync())
-               .ReturnsAsync(new List<ProductDto> { new ProductDto { Name = "Test" } });
+Runs during application initialization
 
-    var controller = new ProductsController(mockService.Object);
-
-    // Act
-    var result = await controller.GetAllProducts();
-
-    // Assert
-    Assert.IsType<OkObjectResult>(result);
-}
+```
+CreateBuilder()
+     |
+     v
+Register Services
+     |
+     v
+Build()
+     |
+     v
+Configure Middleware
+     |
+     v
+MapControllers()
+     |
+     v
+Application Ready
 ```
 
-✔ No real database
-✔ No real service
-✔ Pure testing
+## Phase 2 – Request Processing
 
+Runs for incoming HTTP requests
 
-## 🎯 **End of Scene Summary**
+```
+HTTP Request
+     |
+     v
+Middleware Pipeline
+     |
+     v
+Controller Routing
+     |
+     v
+Service Execution
+     |
+     v
+Repository Execution
+     |
+     v
+JSON File / Database
+     |
+     v
+HTTP Response
+```
 
-| Concept           | Importance                                        |
-| ----------------- | ------------------------------------------------- |
-| DI                | Removes tight coupling between classes            |
-| Interfaces        | Allow multiple implementations (testable code)    |
-| Service Lifetimes | Control object creation (Scoped is best for APIs) |
-| Program.cs        | The DI configuration hub                          |
-| Unit Testing      | Becomes possible and clean using DI               |
+The first phase prepares the application. The second phase handles user requests. This distinction helps students understand why we don't write business operations directly in the startup configuration.
 
- 
+## 12. What else does CreateBuilder() configure internally?
 
+This is an interesting discussion for students who want to understand the .NET framework.
+
+When we execute:
+
+```
+var builder = WebApplication.CreateBuilder(args);
+```
+
+ASP.NET Core prepares several infrastructure components.
+
+| Component            | Responsibility                                   |
+| -------------------- | ------------------------------------------------ |
+| Configuration        | Reads appsettings.json and environment variables |
+| Logging              | Configures application logging                   |
+| Dependency Injection | Creates service container                        |
+| Hosting              | Configures application hosting                   |
+| Kestrel              | Provides the web server                          |
+| Environment          | Identifies Development, Staging or Production    |
+
+For example, application configuration can be read using:
+
+```
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+```
+
+And environment information can be accessed using:
+
+```
+var environment = builder.Environment.EnvironmentName;
+```
+
+This information is useful when developing applications that behave differently in development and production environments.
+
+## 13. Understand the complete ASP.NET Core application lifecycle
+
+```
+       C# DEVELOPER WRITES CODE
+                   |
+                   v
+              Program.cs
+                   |
+                   v
+       WebApplication.CreateBuilder()
+                   |
+                   v
+       Configure Application Services
+                   |
+                   v
+            builder.Build()
+                   |
+                   v
+       Configure Middleware Pipeline
+                   |
+                   v
+            MapControllers()
+                   |
+                   v
+              app.Run()
+                   |
+                   v
+          KESTREL WEB SERVER
+                   |
+                   v
+          HTTP REQUEST ARRIVES
+                   |
+                   v
+          MIDDLEWARE PIPELINE
+                   |
+                   v
+          CONTROLLER EXECUTION
+                   |
+                   v
+           SERVICE EXECUTION
+                   |
+                   v
+         REPOSITORY EXECUTION
+                   |
+                   v
+          JSON FILE / DATABASE
+                   |
+                   v
+           HTTP RESPONSE
+                   |
+                   v
+                CLIENT
+```
+
+## 14. Classroom exercise
+
+Ask students to create a new ASP.NET Core project and experiment with the following statements.
+
+| Exercise | Statement                            |
+| -------- | ------------------------------------ |
+| 1        | `WebApplication.CreateBuilder(args)` |
+| 2        | `builder.Services.AddControllers()`  |
+| 3        | `builder.Services.AddScoped()`       |
+| 4        | `builder.Build()`                    |
+| 5        | `app.UseHttpsRedirection()`          |
+| 6        | `app.MapControllers()`               |
+| 7        | `app.Run()`                          |
+
+Ask them to temporarily remove one statement at a time and observe the compiler errors or runtime behavior. This is an effective way to understand the responsibility of each statement.
+
+## 15. Questions for classroom discussion
+
+1. What is the difference between `builder` and `app`?
+2. Why do we need Dependency Injection?
+3. What happens inside `builder.Build()`?
+4. What is middleware?
+5. What is the responsibility of Kestrel?
+6. What is the difference between `AddControllers()` and `MapControllers()`?
+7. Does `app.Run()` execute for every HTTP request?
+8. Why should business logic not be written inside Program.cs?
+
+## 16. Ravi Sir's final explanation
+
+I would conclude this lesson with the following message:
+
+"Dear C# developers,You already know how to write classes, methods, interfaces and objects. Now ASP.NET Core introduces you to an application hosting environment. Program.cs is where we assemble the application.
+
+We register services, configure infrastructure, prepare middleware and expose endpoints. Once the application starts, HTTP requests enter the pipeline and get processed by the appropriate components. Remember these three statements:
+
+- `CreateBuilder()` – Prepare the application.
+- `Build()` – Create the application.
+- `Run()` – Start the application.
+
+Everything else helps configure how the application behaves."
+
+The next important topic to learn is ASP.NET Core Middleware and the HTTP Request Pipeline. This will help students understand how a request travels from Kestrel to a Controller and how the response returns to the client.

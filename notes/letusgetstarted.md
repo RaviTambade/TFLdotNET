@@ -40,12 +40,13 @@ First learn to think like a programmer. Then learn to code like an engineer. Fin
 31.  <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/asyncawait.md">Asynchronous Programming using C#</a>
 
 # ASP.NET  Core
-32. <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/aspnetintro.md">ASP.NET Core Overview </a>
+32. <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/aspnetintro.md">ASP.NET Introduction </a>
 33.  <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/Webapi.md">  ASP.NET WebAPI</a>
 34.  <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/minimalvsmvc.md">  ASP.NET Web API (Controllers) </a>
-35.  <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/aspnetapp.md">ASP.NET Core App  and Folder structure</a>
+35.  <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/aspnetapp.md">ASP.NETApp Folder structure</a>
 36. <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/Program.md">Program.cs file</a>
-37. <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/apitesting.md">  ASP.NET WebAPI Testing</a>
+37. <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/httppipline.md"> HTTP Pipeline</a>
+37. <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/routerscontrollers.md"> Routers and Controllers</a>
 38. <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/mvc.md">Model View Controller(MVC) Architecture</a>
 39. <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/Controllers.md">Controllers</a>
 40.  <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/Models.md">Model</a>
