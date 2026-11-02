@@ -106,10 +106,6 @@ Replace `net8.0` with your project's actual target framework directory, such as 
 
 Playwright downloads the browser binary required by its installed version. You do not need to install Chrome separately.
 
-[image](https://www.google.com/s2/favicons?domain=https://playwright.dev\&sz=32)
-
-Playwright .NET+1
-
 ### Step 4: Write your first browser automation test
 
 Create `Tests/BrowserTests.cs`.
@@ -153,9 +149,7 @@ Understand the code:
 dotnet test
 ```
 
-Your xUnit test runner will execute the Playwright browser test.
-
-To run with a visible browser:
+Your xUnit test runner will execute the Playwright browser test. To run with a visible browser:
 
 ```
 dotnet test -- Playwright.LaunchOptions.Headless=false
@@ -211,9 +205,7 @@ public class BrowserTests : PageTest
     public async Task VerifyWebsiteTitle()
     {
         await Page.GotoAsync("https://example.com");
-
-        await Expect(Page)
-            .ToHaveTitleAsync(new Regex("Example Domain"));
+        await Expect(Page).ToHaveTitleAsync(new Regex("Example Domain"));
     }
 }
 ```
@@ -226,10 +218,6 @@ dotnet test
 
 The NUnit test runner executes the browser automation test.
 
-[image](https://www.google.com/s2/favicons?domain=https://playwright.dev\&sz=32)
-
-Playwright .NET+1
-
 ## 5. Practical Login Automation Test
 
 Let's automate a login page developed using ASP.NET Core MVC.
@@ -241,7 +229,6 @@ Assume the login page contains:
 <input id="password" />
 
 <button id="loginBtn">Login</button>
-
 <div id="message"></div>
 ```
 
@@ -259,24 +246,17 @@ public class LoginTests : PageTest
     public async Task ValidUserShouldLoginSuccessfully()
     {
         // Navigate to MVC login page
-        await Page.GotoAsync(
-            "https://localhost:7001/Account/Login");
+        await Page.GotoAsync("https://localhost:7001/Account/Login");
 
         // Enter credentials
-        await Page.Locator("#username")
-            .FillAsync("admin");
-
-        await Page.Locator("#password")
-            .FillAsync("admin123");
+        await Page.Locator("#username").FillAsync("admin");
+        await Page.Locator("#password").FillAsync("admin123");
 
         // Click login
-        await Page.Locator("#loginBtn")
-            .ClickAsync();
+        await Page.Locator("#loginBtn").ClickAsync();
 
         // Verify successful login
-        await Expect(Page)
-            .ToHaveURLAsync(
-                new Regex(".*/Dashboard"));
+        await Expect(Page).ToHaveURLAsync(new Regex(".*/Dashboard"));
     }
 }
 ```
@@ -294,21 +274,12 @@ public class LoginTests : PageTest
     [Test]
     public async Task ValidUserShouldLoginSuccessfully()
     {
-        await Page.GotoAsync(
-            "https://localhost:7001/Account/Login");
+        await Page.GotoAsync("https://localhost:7001/Account/Login");
+        await Page.Locator("#username").FillAsync("admin");
+        await Page.Locator("#password").FillAsync("admin123");
+        await Page.Locator("#loginBtn").ClickAsync();
 
-        await Page.Locator("#username")
-            .FillAsync("admin");
-
-        await Page.Locator("#password")
-            .FillAsync("admin123");
-
-        await Page.Locator("#loginBtn")
-            .ClickAsync();
-
-        await Expect(Page)
-            .ToHaveURLAsync(
-                new Regex(".*/Dashboard"));
+        await Expect(Page).ToHaveURLAsync(new Regex(".*/Dashboard"));
     }
 }
 ```
@@ -333,9 +304,7 @@ These examples assume that your application uses the specified element IDs and r
 
 ## 7. Important: What if your existing test class already inherits another base class?
 
-You do not have to inherit `PageTest`.
-
-You can use the core Playwright library and manage the browser lifecycle manually.
+You do not have to inherit `PageTest`. You can use the core Playwright library and manage the browser lifecycle manually.
 
 Install:
 
@@ -356,11 +325,9 @@ public class CustomBrowserTests : IDisposable
 
     public CustomBrowserTests()
     {
-        playwright = Playwright.CreateAsync()
-            .GetAwaiter().GetResult();
+        playwright = Playwright.CreateAsync().GetAwaiter().GetResult();
 
-        browser = playwright.Chromium.LaunchAsync(
-            new BrowserTypeLaunchOptions
+        browser = playwright.Chromium.LaunchAsync(new BrowserTypeLaunchOptions
             {
                 Headless = true
             }).GetAwaiter().GetResult();
@@ -372,10 +339,7 @@ public class CustomBrowserTests : IDisposable
         var page = await browser.NewPageAsync();
 
         await page.GotoAsync("https://example.com");
-
-        Assert.Contains("Example Domain",
-            await page.TitleAsync());
-
+        Assert.Contains("Example Domain",await page.TitleAsync());
         await page.CloseAsync();
     }
 
@@ -419,8 +383,6 @@ Transflower.Automation
 ```
 
 This architecture follows the Page Object Model (POM), separating browser interactions from test scenarios.
-
-Official documentation: [Playwright .NET Installation and xUnit/NUnit Integration](https://playwright.dev/dotnet/docs/intro?utm_source=chatgpt.com).
 
 ## 9. Mentor's recommendation
 
