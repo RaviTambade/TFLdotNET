@@ -1,153 +1,839 @@
-# ASP.NET  First App
+# Standard ASP.NET Core Web API – Application Folder Structure
 
-## Creating asp.net core app using dotnet CLI command
-We can create simple ASP.NET Core application using Visual studio Project template. Even using donet CLI command, asp.net core application project can be created.
+Transflower Mentor Classroom | From Minimal API to Clean Application Architecture
 
-Following command creates a new web app.
-```
-    dotnet new webapp -o aspnetcoreapp
-```
-The -o aspnetcoreapp parameter creates a directory named aspnetcoreapp with the source files for the app.
+Now that students have implemented CRUD operations using Minimal APIs and JSON file serialization, the next step is to introduce a standard ASP.NET Core Web API project structure.
 
-## Run the app using dotnet CLI command
-```
-    cd aspnetcoreapp
-    dotnet watch run
-```
-The ASP.NET Core web applications are self-hosted on the internal web server called  <b>Kestrel </b>. So, you don't need to use IIS Express or other web server. In this way, you can create the default ASP.NET Core MVC application to get started. We can create standard MVC ASP.NET Core Web App using following dotnet CLI command
+The objective is to teach students how to organize code into meaningful folders instead of writing everything inside `Program.cs`.
 
-```
-    dotnet new mvc -o aspnetcoreapp
-```
+Mentor's principle:
 
+"Initially, focus on making the application work. Then learn how to organize the application so that it becomes maintainable, testable and scalable."
 
+## 1. Understand the problem with putting everything in Program.cs
 
-Once ASP.NET Core MVC application project get created, we observe following files and folders inside Project.
-Let's understand the significanse of each file and folder.
-C#  code is normally ogranized in projetcts and solutions..
+In our previous Product API, we placed:
 
+- API endpoints
+- Product model
+- File reading and writing
+- JSON serialization
+- CRUD business logic
 
-## Solution File
-The top-level solution file (.sln) that can contains information about projects and structure of Software Solution.  Solution file acts like workspace for logically linking more than one projects .
-Following code snippet represents one example of .sln file
+Everything was in one file.
 
-```
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31903.59
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EStoreWebApp", "EStoreWebApp\EStoreWebApp.csproj", "{5D345E31-5FB8-448F-82A0-B7ED2C886A81}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BOL", "BOL\BOL.csproj", "{901C0B6E-69EA-4FD4-9B78-3C231C8E6F9F}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BLL", "BLL\BLL.csproj", "{73791374-AC19-4123-BDEF-84A24ADEC60D}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL", "DAL\DAL.csproj", "{620A5EC3-6153-4C7F-B912-3F56ACADE157}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestApp", "TestApp\TestApp.csproj", "{9005EC51-6D9A-4CB2-BEC4-6FFCA45E49CB}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPXWebApp", "ASPXWebApp\ASPXWebApp.csproj", "{FB6B757F-8AD7-4674-B54F-E99C763EFC30}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogAPI", "CatalogAPI\CatalogAPI.csproj", "{B765DE01-58CB-4921-A9F4-1FE0133BDF27}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EStoreWebAPI", "EStoreWebAPI\EStoreWebAPI.csproj", "{9FFA9FB6-571C-4D64-BE1B-C37B10185252}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5D345E31-5FB8-448F-82A0-B7ED2C886A81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5D345E31-5FB8-448F-82A0-B7ED2C886A81}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5D345E31-5FB8-448F-82A0-B7ED2C886A81}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5D345E31-5FB8-448F-82A0-B7ED2C886A81}.Release|Any CPU.Build.0 = Release|Any CPU
-		{901C0B6E-69EA-4FD4-9B78-3C231C8E6F9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{901C0B6E-69EA-4FD4-9B78-3C231C8E6F9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{901C0B6E-69EA-4FD4-9B78-3C231C8E6F9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{901C0B6E-69EA-4FD4-9B78-3C231C8E6F9F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{73791374-AC19-4123-BDEF-84A24ADEC60D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{73791374-AC19-4123-BDEF-84A24ADEC60D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{73791374-AC19-4123-BDEF-84A24ADEC60D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{73791374-AC19-4123-BDEF-84A24ADEC60D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{620A5EC3-6153-4C7F-B912-3F56ACADE157}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{620A5EC3-6153-4C7F-B912-3F56ACADE157}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{620A5EC3-6153-4C7F-B912-3F56ACADE157}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{620A5EC3-6153-4C7F-B912-3F56ACADE157}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9005EC51-6D9A-4CB2-BEC4-6FFCA45E49CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9005EC51-6D9A-4CB2-BEC4-6FFCA45E49CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9005EC51-6D9A-4CB2-BEC4-6FFCA45E49CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9005EC51-6D9A-4CB2-BEC4-6FFCA45E49CB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FB6B757F-8AD7-4674-B54F-E99C763EFC30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FB6B757F-8AD7-4674-B54F-E99C763EFC30}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FB6B757F-8AD7-4674-B54F-E99C763EFC30}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FB6B757F-8AD7-4674-B54F-E99C763EFC30}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B765DE01-58CB-4921-A9F4-1FE0133BDF27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B765DE01-58CB-4921-A9F4-1FE0133BDF27}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B765DE01-58CB-4921-A9F4-1FE0133BDF27}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B765DE01-58CB-4921-A9F4-1FE0133BDF27}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9FFA9FB6-571C-4D64-BE1B-C37B10185252}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9FFA9FB6-571C-4D64-BE1B-C37B10185252}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9FFA9FB6-571C-4D64-BE1B-C37B10185252}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9FFA9FB6-571C-4D64-BE1B-C37B10185252}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {A91399B6-3E92-4A68-B63B-A85D4AABDE6B}
-	EndGlobalSection
-EndGlobal
-```
+This is acceptable for a beginner's demonstration, but imagine an application with:
 
+- 50 API endpoints
+- 20 business entities
+- Authentication and authorization
+- Database connectivity
+- Logging and exception handling
+- Business validation
 
-## Project File
-.csproj file tells dotnet how to build the ASP.NET application. It's one of the most important files in an ASP.NET project. An ASP.NET project can depend on third-party libraries developed by other developers. Usually, these libraries are installed as Nuget packages using Nuget package manager.
+Maintaining everything in `Program.cs` becomes difficult.
 
-Following code snippet represents example of C# Project file.
+We need separation of responsibilities.
+
+## 2. Standard ASP.NET Core Web API folder structure
+
+Here is a practical folder structure for a medium-sized ASP.NET Core Web API application.
 
 ```
-<Project Sdk="Microsoft.NET.Sdk.Web">
+ProductManagementAPI/
+│
+├── Controllers/
+│   └── ProductsController.cs
+│
+├── Models/
+│   └── Product.cs
+│
+├── DTOs/
+│   ├── ProductRequestDto.cs
+│   └── ProductResponseDto.cs
+│
+├── Services/
+│   ├── Interfaces/
+│   │   └── IProductService.cs
+│   │
+│   └── ProductService.cs
+│
+├── Repositories/
+│   ├── Interfaces/
+│   │   └── IProductRepository.cs
+│   │
+│   └── ProductRepository.cs
+│
+├── Data/
+│   ├── ApplicationDbContext.cs
+│   └── products.json
+│
+├── Middleware/
+│   └── ExceptionHandlingMiddleware.cs
+│
+├── Validators/
+│   └── ProductValidator.cs
+│
+├── Properties/
+│   └── launchSettings.json
+│
+├── appsettings.json
+├── appsettings.Development.json
+├── Program.cs
+└── ProductManagementAPI.csproj
+```
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
+This is a suggested practical structure, not a mandatory ASP.NET Core convention. A small application may need fewer folders, while larger systems may use separate projects for different architectural layers.
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
-    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.1" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
-  </ItemGroup>
+## 3. Understand the responsibility of each folder
 
-</Project>
+Let's understand why each folder exists.
+
+### 1. Controllers – Handle HTTP requests
+
+Presentation Layer
+
+Controllers are responsible for receiving HTTP requests and sending HTTP responses.
+
+Example: `ProductsController.cs`
+
+```
+[ApiController]
+[Route("api/[controller]")]
+public class ProductsController : ControllerBase
+{
+    private readonly IProductService _service;
+
+    public ProductsController(IProductService service)
+    {
+        _service = service;
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> GetAll()
+    {
+        var products = await _service.GetAllAsync();
+        return Ok(products);
+    }
+
+    [HttpGet("{id}")]
+    public async Task<IActionResult> GetById(int id)
+    {
+        var product = await _service.GetByIdAsync(id);
+
+        if (product == null)
+            return NotFound();
+
+        return Ok(product);
+    }
+}
+```
+
+Responsibilities:
+
+- Receive HTTP requests.
+- Read route parameters and request bodies.
+- Call appropriate services.
+- Return HTTP status codes and responses.
+
+Remember: Controllers should not contain complex business logic or database queries.
+
+### 2. Models – Represent application data
+
+Domain / Data Representation
+
+Example: `Models/Product.cs`
+
+```
+public class Product
+{
+    public int Id { get; set; }
+
+    public string Name { get; set; } = "";
+
+    public decimal Price { get; set; }
+
+    public string Category { get; set; } = "";
+}
+```
+
+A model represents a product in our application.
+
+Think of it as a blueprint for creating Product objects.
+
+### 3. DTOs – Data Transfer Objects
+
+Communication Contract
+
+DTO means Data Transfer Object.
+
+Why do we need DTOs?
+
+Suppose our internal Product model contains:
+
+```
+Product
+-------
+Id
+Name
+Price
+Category
+CostPrice
+SupplierId
+CreatedDate
+InternalRemarks
+```
+
+But the frontend only needs:
+
+```
+ProductResponseDto
+------------------
+Id
+Name
+Price
+Category
+```
+
+We don't necessarily want to expose internal application data to external clients.
+
+Example: `DTOs/ProductRequestDto.cs`
+
+```
+public class ProductRequestDto
+{
+    public string Name { get; set; } = "";
+
+    public decimal Price { get; set; }
+
+    public string Category { get; set; } = "";
+}
+```
+
+Example: `DTOs/ProductResponseDto.cs`
+
+```
+public class ProductResponseDto
+{
+    public int Id { get; set; }
+
+    public string Name { get; set; } = "";
+
+    public decimal Price { get; set; }
+
+    public string Category { get; set; } = "";
+}
+```
+
+Mentor analogy:
+
+A Product model is your internal business record. A DTO is the information you choose to share with another person.
+
+### 4. Services – Implement business logic
+
+Business Logic Layer
+
+Services contain application operations and business rules.
+
+Example: `Services/Interfaces/IProductService.cs`
+
+```
+public interface IProductService
+{
+    Task<List<Product>> GetAllAsync();
+
+    Task<Product?> GetByIdAsync(int id);
+}
+```
+
+Example: `Services/ProductService.cs`
+
+```
+public class ProductService : IProductService
+{
+    private readonly IProductRepository _repository;
+
+    public ProductService(IProductRepository repository)
+    {
+        _repository = repository;
+    }
+
+    public async Task<List<Product>> GetAllAsync()
+    {
+        return await _repository.GetAllAsync();
+    }
+
+    public async Task<Product?> GetByIdAsync(int id)
+    {
+        return await _repository.GetByIdAsync(id);
+    }
+}
+```
+
+Responsibilities:
+
+- Implement business rules.
+- Coordinate multiple repositories or other services.
+- Perform business validation.
+- Prepare application results.
+
+For example:
+
+```
+Check product availability
+Calculate product discount
+Validate product price
+Check stock quantity
+```
+
+### 5. Repositories – Handle data access
+
+Data Access Layer
+
+Repositories communicate with the storage mechanism.
+
+In our earlier practical, the storage mechanism was `products.json`.
+
+Later, we can replace it with MySQL or SQL Server.
+
+Example: `Repositories/Interfaces/IProductRepository.cs`
+
+```
+public interface IProductRepository
+{
+    Task<List<Product>> GetAllAsync();
+
+    Task<Product?> GetByIdAsync(int id);
+}
+```
+
+Example: `Repositories/ProductRepository.cs`
+
+```
+public class ProductRepository : IProductRepository
+{
+    private readonly string _filePath;
+
+    public ProductRepository(IWebHostEnvironment environment)
+    {
+        _filePath = Path.Combine(
+            environment.ContentRootPath,
+            "Data",
+            "products.json"
+        );
+    }
+
+    public async Task<List<Product>> GetAllAsync()
+    {
+        if (!File.Exists(_filePath))
+            return new List<Product>();
+
+        var json = await File.ReadAllTextAsync(_filePath);
+
+        return JsonSerializer.Deserialize<List<Product>>(json)
+               ?? new List<Product>();
+    }
+
+    public async Task<Product?> GetByIdAsync(int id)
+    {
+        var products = await GetAllAsync();
+
+        return products.FirstOrDefault(p => p.Id == id);
+    }
+}
+```
+
+The repository hides the details of data storage from the service.
+
+For this teaching example, we have implemented only read operations. POST, PUT and DELETE can be added to the same repository.
+
+### 6. Data – Database and persistence configuration
+
+This folder contains database-related infrastructure.
+
+Example:
+
+```
+Data/
+│
+├── ApplicationDbContext.cs
+├── products.json
+└── DatabaseSeeder.cs
+```
+
+When using Entity Framework Core:
+
+```
+public class ApplicationDbContext : DbContext
+{
+    public ApplicationDbContext(
+        DbContextOptions<ApplicationDbContext> options)
+        : base(options)
+    {
+    }
+
+    public DbSet<Product> Products { get; set; }
+}
+```
+
+For our current JSON lab, `products.json` is the persistence file. We don't need `ApplicationDbContext` yet.
+
+### 7. Middleware – Handle cross-cutting concerns
+
+Middleware executes as part of the HTTP request pipeline.
+
+Examples:
+
+- Exception handling
+- Logging
+- Authentication
+- Authorization
+- Request/response monitoring
+
+```
+HTTP REQUEST
+     |
+     v
+Exception Middleware
+     |
+     v
+Authentication Middleware
+     |
+     v
+Authorization Middleware
+     |
+     v
+Controller
+     |
+     v
+HTTP RESPONSE
+```
+
+### 8. Validators – Validate incoming data
+
+Validators ensure that incoming data follows application rules.
+
+For example:
+
+```
+Product Validation
+------------------
+Name must not be empty
+Price must be greater than zero
+Category must be provided
+```
+
+For simple projects, use Data Annotations or manual validation. For more complex validation, a dedicated validation library can be introduced.
+
+### 9. Program.cs – Application entry point
+
+This is where the application starts and services are registered.
+
+Example:
+
+```
+var builder = WebApplication.CreateBuilder(args);
+
+// Register application services
+builder.Services.AddControllers();
+
+builder.Services.AddScoped<IProductService, ProductService>();
+
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+
+var app = builder.Build();
+
+// Configure HTTP pipeline
+app.UseHttpsRedirection();
+
+app.MapControllers();
+
+app.Run();
+```
+
+Notice something important:
+
+We are registering interfaces with their implementations.
+
+This is called Dependency Injection (DI).
+
+ASP.NET Core creates the required objects and supplies them to controllers and services.
+
+## 4. Understand the complete request execution flow
+
+This is the most important diagram to explain in the classroom.
+
+## ASP.NET Core Web API Architecture
+
+React / Angular / Postman
+
+Client Application
+
+HTTP Request
+
+Controllers
+
+HTTP Routing and Response Handling
+
+Services
+
+Business Rules and Application Logic
+
+Repositories
+
+Data Access Operations
+
+Data Storage
+
+JSON File / MySQL / SQL Server
+
+Response travels back to the client
+
+Data → Repository → Service → Controller → HTTP Response
+
+The important observation is that each layer has a specific responsibility.
+
+The Controller doesn't need to know how the JSON file is read.
+
+The Service doesn't need to know how HTTP routing works.
+
+The Repository doesn't need to know whether the request came from React or Postman.
+
+That is separation of concerns.
+
+## 5. How folders communicate with each other
+
+Let's visualize the dependency relationship.
+
+```
+          Program.cs
+              |
+              | Dependency Injection
+              v
+         Controller
+              |
+              | IProductService
+              v
+          Service
+              |
+              | IProductRepository
+              v
+         Repository
+              |
+              | File I/O / SQL
+              v
+         Data Storage
+```
+
+Notice the use of interfaces:
+
+```
+IProductService
+       |
+       v
+ProductService
+
+IProductRepository
+       |
+       v
+ProductRepository
+```
+
+This allows us to change implementations without rewriting the entire application.
+
+For example:
+
+```
+                 IProductRepository
+                         |
+              +----------+-----------+
+              |                      |
+              v                      v
+      JsonProductRepository    MySqlProductRepository
+              |                      |
+              v                      v
+         products.json             MySQL
+```
+
+The service can continue using `IProductRepository`.
+
+This is an introduction to Dependency Inversion Principle (DIP) and loosely coupled application design.
+
+## 6. Standard folder structure versus Clean Architecture
+
+Students should understand that these are two different levels of architectural organization.
+
+| Standard Web API | Clean Architecture             |
+| ---------------- | ------------------------------ |
+| Controllers      | Presentation                   |
+| Models           | Domain                         |
+| DTOs             | Application contracts          |
+| Services         | Application use cases          |
+| Repositories     | Infrastructure implementations |
+| Data             | Infrastructure                 |
+| Program.cs       | Composition root               |
+
+A standard ASP.NET Core Web API can have all these folders in one project.
+
+In Clean Architecture, we can separate them into multiple projects.
+
+```
+ProductManagement/
+│
+├── ProductManagement.API/
+│   └── Controllers/
+│
+├── ProductManagement.Application/
+│   ├── Interfaces/
+│   ├── DTOs/
+│   └── Services/
+│
+├── ProductManagement.Domain/
+│   ├── Entities/
+│   └── Interfaces/
+│
+└── ProductManagement.Infrastructure/
+    ├── Data/
+    └── Repositories/
+```
+
+Do not introduce this complexity immediately. First make students comfortable with a standard Web API.
+
+## 7. Practical assignment for Transflower students
+
+Take the earlier Product JSON CRUD application and reorganize it.
+
+
+
+Hands-on Lab
+
+&#x20;Product Management API – Refactoring Exercise
+
+
+
+| Step | Student activity                      |
+| ---- | ------------------------------------- |
+| 1    | Create Controllers folder             |
+| 2    | Move Product class into Models        |
+| 3    | Create DTOs                           |
+| 4    | Create IProductService interface      |
+| 5    | Implement ProductService              |
+| 6    | Create IProductRepository interface   |
+| 7    | Implement ProductRepository           |
+| 8    | Move products.json into Data          |
+| 9    | Configure Dependency Injection        |
+| 10   | Test all CRUD endpoints using Postman |
+
+Assessment challenge: After completing JSON-based CRUD, replace JSON file storage with MySQL without changing the ProductsController.
+
+This tests whether students have genuinely understood separation of concerns.
+
+
+## 8. Layered Architecture
+
+```
+       ASP.NET CORE WEB API
+       PRODUCT MANAGEMENT SYSTEM
+       =========================
+
+              CLIENT LAYER
+       +-------------------------+
+       | React / Angular /       |
+       | Postman / Browser       |
+       +-------------------------+
+                   |
+                   | HTTP Request
+                   | GET / POST / PUT / DELETE
+                   v
+       +-------------------------+
+       |   PRESENTATION LAYER    |
+       |-------------------------|
+       | Controllers/            |
+       | ProductsController.cs   |
+       |                         |
+       | Receives HTTP Requests  |
+       | Returns HTTP Responses  |
+       +-------------------------+
+                   |
+                   | Calls Interface
+                   v
+       +-------------------------+
+       |   BUSINESS LOGIC LAYER  |
+       |-------------------------|
+       | Services/               |
+       | IProductService.cs      |
+       | ProductService.cs       |
+       |                         |
+       | Business Rules          |
+       | Validation              |
+       | Application Logic       |
+       +-------------------------+
+                   |
+                   | Calls Interface
+                   v
+       +-------------------------+
+       |     DATA ACCESS LAYER   |
+       |-------------------------|
+       | Repositories/           |
+       | IProductRepository.cs   |
+       | ProductRepository.cs    |
+       |                         |
+       | Read / Write Operations |
+       | Serialization           |
+       | Deserialization         |
+       +-------------------------+
+                   |
+                   | File I/O
+                   v
+       +-------------------------+
+       |       DATA LAYER        |
+       |-------------------------|
+       | Data/                   |
+       |                         |
+       | products.json           |
+       |                         |
+       | Product Records         |
+       +-------------------------+
+
+
+       CROSS-CUTTING CONCERNS
+       ======================
+
+       +-------------------------+
+       | Middleware              |
+       | Exception Handling      |
+       | Logging                 |
+       | Authentication          |
+       | Authorization           |
+       +-------------------------+
+
+       +-------------------------+
+       | Validators              |
+       | Input Validation        |
+       | Business Validation     |
+       +-------------------------+
+
+       +-------------------------+
+       | Configuration           |
+       | appsettings.json        |
+       | Connection Strings      |
+       +-------------------------+
 
 ```
 
-## Dependencies
 
-The Dependencies node contains the list of all the dependencies that your project relies on, including NuGet packages, project references, and framework dependencies.
-```
-<ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
-    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.1" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
-  </ItemGroup>
-
-</Project>
+## 9. Application flow
 
 ```
+       CLIENT (React / Postman)
+                 |
+                 | HTTP Request
+                 v
+       +---------------------+
+       | ProductsController  |
+       +---------------------+
+                 |
+                 v
+       +---------------------+
+       |   ProductService    |
+       +---------------------+
+                 |
+                 v
+       +---------------------+
+       | ProductRepository   |
+       +---------------------+
+                 |
+                 v
+       +---------------------+
+       |    products.json    |
+       +---------------------+
+                 |
+                 | Read JSON
+                 v
+       +---------------------+
+       | JSON Deserialization|
+       +---------------------+
+                 |
+                 v
+       +---------------------+
+       |   List<Product>     |
+       +---------------------+
+                 |
+                 | Business Operation
+                 v
+       +---------------------+
+       | JSON Serialization  |
+       +---------------------+
+                 |
+                 v
+       +---------------------+
+       |    products.json    |
+       +---------------------+
+                 |
+                 v
+       +---------------------+
+       | HTTP Response       |
+       +---------------------+
+                 |
+                 v
+              CLIENT
 
-## wwwroot folder
-By default, the wwwroot folder in the ASP.NET Core project is treated as a web root folder. Static files can be stored in any folder under the web root and accessed with a relative path to that root.
-
-All the css, JavaScript, and external library files should be stored here which are being reference in the HTML file.
+```
 
 
-## Controllers, Models, Views folders
-The Controllers, Models, and Views folders include controller classes, model classes and cshtml or vbhtml files respectively for MVC application.
 
-## appsettings.json
-The appsettings.json file is a configuration file commonly used in .NET applications, including ASP.NET Core and ASP.NET 5/6, to store application-specific configuration settings and parameters. It allows developers to use JSON format for the configurations instead of code, which makes it easier to add or update settings without modifying the application's source code.
+## 10.  Mapping Architecture for Folder structure
 
+```
+
+ProductManagementAPI/
+|
++-- Controllers/       --> Presentation Layer
+|
++-- Services/          --> Business Logic Layer
+|   |
+|   +-- Interfaces/
+|
++-- Repositories/      --> Data Access Layer
+|   |
+|   +-- Interfaces/
+|
++-- Models/            --> Application Data Models
+|
++-- DTOs/              --> Data Transfer Objects
+|
++-- Data/              --> Data Storage
+|   |
+|   +-- products.json
+|
++-- Middleware/        --> Cross-cutting Concerns
+|
++-- Validators/        --> Input Validation
+|
++-- Program.cs         --> Application Entry Point
+|
++-- appsettings.json   --> Configuration
+
+```
+
+## 8. Ravi Sir's classroom discussion
+
+Ask these questions:
+
+1. Why should we avoid writing database queries inside Controllers?
+2. What is the difference between Model and DTO?
+3. Why do we create interfaces?
+4. What is Dependency Injection?
+5. Can we replace JSON storage with MySQL without changing the frontend?
+6. What happens if business logic is written inside Controllers?
+7. Why do enterprise applications separate Domain, Application and Infrastructure?
+
+My teaching philosophy:
+
+A good developer knows how to write code.
+
+A better developer knows where to write that code.
+
+An architect understands why the code belongs there.
+
+First learn to build an application. Then learn to structure it. Finally, learn to design its architecture.
