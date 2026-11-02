@@ -1,10 +1,7 @@
 # ASP.NET Core MVC + Web API + Playwright + TypeScript
 
-Let's restructure the previous Node.js login automation lab using the Microsoft .NET ecosystem.
 
-We will retain Playwright + TypeScript for automation, but replace the Node.js + Express backend with ASP.NET Core Web API and use ASP.NET Core MVC for the login user interface.
-
-This is a practical enterprise-style testing architecture for Transflower students.
+Practical enterprise-style testing architecture for Transflower students.
 
 ## 1. Understand the  architecture ASP.NET Core + Playwright + TypeScript
 
@@ -266,8 +263,7 @@ public class AuthController : ControllerBase
     [HttpPost("login")]
     public IActionResult Login(LoginRequest request)
     {
-        if (string.IsNullOrWhiteSpace(request.Username) ||
-            string.IsNullOrWhiteSpace(request.Password))
+        if (string.IsNullOrWhiteSpace(request.Username) ||string.IsNullOrWhiteSpace(request.Password))
         {
             return BadRequest(new
             {
@@ -277,8 +273,7 @@ public class AuthController : ControllerBase
         }
 
         // Demo credentials
-        if (request.Username == "student" &&
-            request.Password == "Pass123")
+        if (request.Username == "student" && request.Password == "Pass123")
         {
             return Ok(new
             {
@@ -474,9 +469,7 @@ Create the Razor view:
         .addEventListener("submit", async function(event) {
 
         event.preventDefault();
-
         const username =document.getElementById("username").value;
-
         const password =document.getElementById("password").value;
 
         const response = await fetch("http://localhost:5001/api/auth/login",
@@ -585,9 +578,7 @@ The dashboard route currently has no authorization protection. Also, the API's C
 
 ## 6. Create Playwright + TypeScript automation project
 
-Keep automation independent of the ASP.NET Core projects.
-
-Open another terminal at the solution root:
+Keep automation independent of the ASP.NET Core projects. Open another terminal at the solution root:
 
 ```
 mkdir Automation
@@ -677,7 +668,6 @@ test.describe("ASP.NET Core MVC Login UI", () => {
     test("Verify login page title", async ({ page }) => {
         await page.goto("/Account/Login");
         await expect(page).toHaveTitle("Transflower Login");
-
     });
 
     test("Verify login form elements", async ({ page }) => {
@@ -685,7 +675,6 @@ test.describe("ASP.NET Core MVC Login UI", () => {
         await page.goto("/Account/Login");
         await expect(page.locator("#username")).toBeVisible();
         await expect(page.locator("#password")).toBeVisible();
-
         await expect(page.locator("#loginButton")).toBeVisible();
     });
 
@@ -707,7 +696,6 @@ test.describe("ASP.NET Core MVC Login UI", () => {
         await page.locator("#loginButton").click();
         await expect(page.locator("#message")).toHaveText("Invalid username or password");
     });
-
 });
 
 ```
@@ -776,7 +764,6 @@ test.describe("ASP.NET Core Login API", () => {
         );
         expect(response.status()).toBe(400);
     });
-
 });
 
 ```
