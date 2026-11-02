@@ -42,7 +42,7 @@ First learn to think like a programmer. Then learn to code like an engineer. Fin
 # ASP.NET  Core
 32. <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/aspnetintro.md">ASP.NET Core Overview </a>
 33.  <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/Webapi.md">  ASP.NET WebAPI</a>
-34.  <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/minimalvsmvc.md">  Minimal Vs MVC </a>
+34.  <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/minimalvsmvc.md">  ASP.NET Web API (Controllers) </a>
 35.  <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/aspnetapp.md">ASP.NET Core App  and Folder structure</a>
 36. <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/Program.md">Program.cs file</a>
 37. <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/aspnet/apitesting.md">  ASP.NET WebAPI Testing</a>
