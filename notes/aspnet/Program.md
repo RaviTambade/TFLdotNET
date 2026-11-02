@@ -136,16 +136,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 // Register Repository
-builder.Services.AddScoped<
-    IProductRepository,
-    ProductRepository
->();
+builder.Services.AddScoped<IProductRepository,ProductRepository>();
 
 // Register Service
-builder.Services.AddScoped<
-    IProductService,
-    ProductService
->();
+builder.Services.AddScoped<IProductService,ProductService>();
 
 // Build application
 var app = builder.Build();
@@ -168,13 +162,7 @@ Let's understand every statement.
 var builder = WebApplication.CreateBuilder(args);
 ```
 
-This is the first important statement.
-
-What happens here?
-
-ASP.NET Core prepares the application environment.
-
-It initializes several important components:
+This is the first important statement. What happens here? ASP.NET Core prepares the application environment. It initializes several important components:
 
 - Application configuration
 - Dependency Injection container
@@ -224,13 +212,7 @@ builder.Services.AddControllers();
 
 What is `builder.Services`?
 
-It is the service collection used by ASP.NET Core's Dependency Injection system.
-
-We register application components here.
-
-`AddControllers()` registers the services needed for MVC controllers and API controller functionality.
-
-Now look at our Product API.
+It is the service collection used by ASP.NET Core's Dependency Injection system. We register application components here. `AddControllers()` registers the services needed for MVC controllers and API controller functionality. Now look at our Product API.
 
 ```
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
@@ -239,13 +221,9 @@ builder.Services.AddScoped<IProductService,ProductService>();
 
 What are we doing?
 
-We are telling ASP.NET Core:
+We are telling ASP.NET Core: "When someone requests an IProductRepository, create and provide a ProductRepository object."
 
-"When someone requests an IProductRepository, create and provide a ProductRepository object."
-
-Similarly:
-
-"When someone requests an IProductService, provide a ProductService object."
+Similarly:"When someone requests an IProductService, provide a ProductService object."
 
 ### Understand Dependency Injection
 
