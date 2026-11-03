@@ -1,9 +1,5 @@
 
-# Welcome to the journey!
-
-We won't simply learn C# syntax or memorize .NET frameworks. We will explore the art of programming — how to think, solve problems, design software, and transform ideas into working applications.
-
-As your Transflower Mentor, I want you to remember one principle:
+# Let us get started with .NET Leraning
 
 First learn to think like a programmer. Then learn to code like an engineer. Finally, learn to design like an architect.
 
