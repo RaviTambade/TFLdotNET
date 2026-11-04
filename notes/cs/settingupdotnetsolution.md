@@ -1,26 +1,18 @@
-# 🎓 Building a Professional .NET 10 Solution Using the CLI
+# 🎓 Building  .NET 10 Solution
 
 ## * Think Like a Software Engineer, Build Like an Architect*
 
-> **"Good morning, future software engineers! Today, I don't want you to think like someone using an IDE. I want you to think like an engineer working on a production server, a Linux machine, or inside a Docker container. There may be no Visual Studio, no drag-and-drop, and no mouse. There is only your terminal, your knowledge, and your ability to build software from first principles. That is why every .NET developer should master the .NET CLI."**
+> **"Good morning, future software engineers! Today, I don't want you to think like someone using an IDE. I want you to think like an engineer working on a production server, a Linux machine, or inside a Docker container. There may be no Visual Studio, no drag-and-drop, and no mouse. There is only your terminal, your knowledge, and your ability to build software from first principles. That is why every .NET developer should master the .NET CLI (Command line Interface)."**
 
 
 
-# 🌍 Why Learn the .NET CLI?
+### 🌍 Why Learn the .NET CLI?
 
-Many beginners ask me,
+Many beginners ask me, **"Sir, why should I learn CLI when Visual Studio can create everything with a few clicks?"**
 
-> **"Sir, why should I learn CLI when Visual Studio can create everything with a few clicks?"**
+My answer is always the same. **"Because professionals don't depend on tools. Tools depend on professionals."**
 
-My answer is always the same.
-
-> **"Because professionals don't depend on tools. Tools depend on professionals."**
-
-Visual Studio is an excellent productivity tool.
-
-But the **.NET CLI** is the foundation behind it.
-
-Whether you're using:
+Visual Studio is an excellent productivity tool. But the **.NET CLI** is the foundation behind it. Whether you're using:
 
 * Visual Studio
 * Visual Studio Code
@@ -34,10 +26,9 @@ Whether you're using:
 
 they all rely on the **.NET CLI**.
 
-# 🏗 Think Like a Construction Engineer
+### 🏗 Think Like a Construction Engineer
 
-Imagine you're constructing a modern apartment. Would you start by painting the walls? Of course not.
-First, you create:
+Imagine you're constructing a modern apartment. Would you start by painting the walls? Of course not. First, you create:
 
 * Land
 * Blueprint
@@ -93,7 +84,7 @@ Similarly...
 Professional software is built layer by layer.
 
 
-# 🛠 Step 1 – Check Your Tools
+### 🛠 Step 1 – Check Your Tools
 
 Before a carpenter starts work, he checks his tools. Before a software engineer starts, he checks the SDK.
 
@@ -120,7 +111,7 @@ Ready to Build
 
 Never assume. Always verify your environment.
 
- # 📂 Step 2 – Create Your Workshop
+### 📂 Step 2 – Create Your Workshop
 
 ```bash
 mkdir MySolution
@@ -140,7 +131,7 @@ Ready for Construction
 A clean workspace leads to a clean architecture.
 
 
-# 🗺 Step 3 – Create the Solution
+### 🗺 Step 3 – Create the Solution
 
 ```bash
 dotnet new sln -n MySolution
@@ -168,7 +159,7 @@ Many students think the solution contains code. It doesn't. It contains **organi
 The solution knows where every project lives.
 
 
-# 🚪 Step 4 – Create the Entry Point
+### 🚪 Step 4 – Create the Entry Point
 
 ```bash
 dotnet new console -n MyApp
@@ -193,7 +184,7 @@ static void Main()
 The compiler generates it automatically. Cleaner code. Less ceremony.
 
 
-# 📚 Step 5 – Create a Class Library
+### 📚 Step 5 – Create a Class Library
 
 ```bash
 dotnet new classlib -n MyLibrary
@@ -223,7 +214,7 @@ One library.Many applications.
 
   
 
-# 🧩 Step 6 – Add Projects to the Solution
+### 🧩 Step 6 – Add Projects to the Solution
 
 ```bash
 dotnet sln add MyApp/MyApp.csproj
@@ -242,7 +233,7 @@ MySolution.sln
 
 Without this step, the projects exist... but the solution doesn't know about them.
 
-# 🔗 Step 7 – Create Project References
+### 🔗 Step 7 – Create Project References
 
 ```bash
 dotnet add MyApp/MyApp.csproj reference MyLibrary/MyLibrary.csproj
@@ -260,7 +251,7 @@ Business Library
 
 Without this reference, MyApp cannot see MyLibrary.
 
-# Dependency Relationship
+### Dependency Relationship
 
 ```text
           MySolution
@@ -279,7 +270,7 @@ Without this reference, MyApp cannot see MyLibrary.
 Notice something. The library knows nothing about the application. This is good architecture.
 
 
-# 🏗 Step 8 – Add Business Logic
+### 🏗 Step 8 – Add Business Logic
 
 Inside MyLibrary
 
@@ -288,8 +279,7 @@ namespace MyLibrary;
 
 public class Greeter
 {
-    public static string Hello(string name)
-        => $"Hello, {name} from .NET 10!";
+    public static string Hello(string name)=> $"Hello, {name} from .NET 10!";
 }
 ```
 
@@ -300,10 +290,7 @@ Inside Program.cs
 ```csharp
 using MyLibrary;
 
-var name = args.Length > 0
-    ? args[0]
-    : "World";
-
+var name = args.Length > 0  ? args[0] : "World";
 Console.WriteLine(Greeter.Hello(name));
 ```
 
@@ -313,9 +300,7 @@ Notice Program.cs doesn't know
 
 the greeting is created. It simply uses it. That is Separation of Concerns.
 
-
-
-# Application Architecture
+### Application Architecture
 
 ```text
 Program.cs
@@ -331,7 +316,7 @@ Console
 
 Each component has one responsibility.
 
-# 🔨 Step 9 – Build the Solution
+### 🔨 Step 9 – Build the Solution
 
 ```bash
 dotnet build
@@ -357,7 +342,7 @@ Executable
 
 Never skip the build step.
 
-# ▶ Step 10 – Run the Application
+### ▶ Step 10 – Run the Application
 
 ```bash
 dotnet run --project MyApp/MyApp.csproj
@@ -378,7 +363,7 @@ Hello, Ravi from .NET 10!
 Congratulations.You have built a professional multi-project solution.
 
 
-# Complete Folder Structure
+### Complete Folder Structure
 
 ```text
 MySolution
@@ -399,7 +384,7 @@ MySolution
 Everything is organized. Everything has a purpose.
 
 
-# CLI Workflow
+### CLI Workflow
 
 ```text
 Create Folder
@@ -429,7 +414,7 @@ Run
 This is the workflow followed by professional developers.
 
 
-# Why Professionals Love the CLI
+### Why Professionals Love the CLI
 
 The same commands work on
 
@@ -447,7 +432,7 @@ Google Cloud Build
 Learn once. Build everywhere.
 
 
-# Growing into Enterprise Architecture
+### Growing into Enterprise Architecture
 
 Today's solution contains
 
@@ -463,7 +448,7 @@ Tomorrow it can grow into
                    MySolution
                          │
 
-     ┌─────────────┬──────────────┬──────────────┐
+     ┌─────────────┬──────────────┬
      ▼             ▼              ▼
  WebAPI      Business Layer   Data Layer
      │             │              │
@@ -483,7 +468,7 @@ Tomorrow it can grow into
 
 The CLI scales with your architecture.
 
-# Useful CLI Commands Every .NET Developer Should Know
+### Useful CLI Commands Every .NET Developer Should Know
 
 | Command                | Purpose                   |
 | ---------------------- | ------------------------- |
@@ -500,7 +485,7 @@ The CLI scales with your architecture.
 | `dotnet publish`       | Create deployment package |
 | `dotnet clean`         | Remove build artifacts    |
 
-# Common Mistakes
+### Common Mistakes
 
 | Problem           | Reason             | Solution                                     |
 | ----------------- | ------------------ | -------------------------------------------- |
@@ -510,7 +495,7 @@ The CLI scales with your architecture.
 | Build failed      | Compilation errors | Read the build output carefully              |
 | Wrong SDK         | Old .NET version   | Install the latest .NET SDK                  |
 
-# 🎯 Mentor's Architecture Perspective
+### 🎯 Mentor's Architecture Perspective
 
 As a beginner, the CLI looks like a collection of commands.
 
@@ -537,12 +522,12 @@ Every modern .NET tool—from Visual Studio to Docker containers and CI/CD pipel
 
 
 
-# Mentor's Golden Wisdom
+### Mentor's Golden Wisdom
 
 > **"A professional developer is recognized not by how quickly they click buttons, but by how well they understand the architecture they are building. The .NET CLI teaches discipline, organization, and repeatable engineering practices. Once you master the CLI, you are no longer tied to a particular IDE—you can build, test, and deploy your applications anywhere the .NET SDK runs."**
 
 
-# 🏁 Final Takeaway
+## 🏁 Final Takeaway
 
 ```text
              Developer
