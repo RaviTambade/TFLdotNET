@@ -80,10 +80,7 @@ public class Employee
         da = 700;
     }
 
-    public Employee(
-        double basicSal,
-        double hra,
-        double da)
+    public Employee(double basicSal, double hra,double da)
     {
         this.basicSal = basicSal;
         this.hra = hra;
@@ -97,10 +94,7 @@ public class Employee
 
     public override string ToString()
     {
-        return
-            "Basic Salary = " + basicSal +
-            ", HRA = " + hra +
-            ", DA = " + da;
+        return "Basic Salary = " + basicSal + ", HRA = " + hra + ", DA = " + da;
     }
 }
 ```
@@ -135,11 +129,7 @@ public Employee()
 and:
 
 ```csharp
-public Employee(
-    double basicSal,
-    double hra,
-    double da)
-{
+public Employee(double basicSal,double hra,double da){
     this.basicSal = basicSal;
     this.hra = hra;
     this.da = da;
@@ -163,9 +153,7 @@ Usage:
 
 ```csharp
 Employee emp1 = new Employee();
-
-Employee emp2 =
-    new Employee(10000, 3000, 2000);
+Employee emp2 = new Employee(10000, 3000, 2000);
 ```
 
 The compiler decides which constructor to call based on the arguments.
@@ -231,12 +219,7 @@ public class Manager : Employee
         incentive = 0;
     }
 
-    public Manager(
-        double basicSal,
-        double hra,
-        double da,
-        double incentive)
-        : base(basicSal, hra, da)
+    public Manager(double basicSal, double hra, double da, double incentive) : base(basicSal, hra, da)
     {
         this.incentive = incentive;
     }
@@ -248,14 +231,12 @@ public class Manager : Employee
 
     public override double CalculateSalary()
     {
-        return base.CalculateSalary()
-               + CalculateIncentives();
+        return base.CalculateSalary()+ CalculateIncentives();
     }
 
     public override string ToString()
     {
-        return base.ToString() +
-               ", Incentive = " + incentive;
+        return base.ToString() +", Incentive = " + incentive;
     }
 }
 ```
@@ -329,12 +310,7 @@ Manager constructor body
 Now consider:
 
 ```csharp
-public Manager(
-    double basicSal,
-    double hra,
-    double da,
-    double incentive)
-    : base(basicSal, hra, da)
+public Manager(double basicSal,double hra,double da,double incentive): base(basicSal, hra, da)
 {
     this.incentive = incentive;
 }
@@ -351,12 +327,7 @@ calls the base class constructor.
 For example:
 
 ```csharp
-Manager mgr =
-    new Manager(
-        20000,
-        5000,
-        3000,
-        4000);
+Manager mgr =new Manager(20000,5000,3000,4000);
 ```
 
 Construction becomes:
@@ -365,11 +336,7 @@ Construction becomes:
 Manager(...)
       │
       ▼
-Employee(
-  20000,
-  5000,
-  3000
-)
+Employee(20000,5000,3000)
       │
       ▼
 Manager incentive = 4000
@@ -393,8 +360,7 @@ Manager says:
 ```csharp
 public override double CalculateSalary()
 {
-    return base.CalculateSalary()
-           + CalculateIncentives();
+    return base.CalculateSalary()+ CalculateIncentives();
 }
 ```
 
@@ -416,23 +382,13 @@ This is **method overriding**.
 An Employee salary may be:
 
 ```text
-Basic Salary
-     +
-HRA
-     +
-DA
+Basic Salary + HRA  + DA
 ```
 
 A Manager salary may be:
 
 ```text
-Basic Salary
-     +
-HRA
-     +
-DA
-     +
-Incentive
+Basic Salary + HRA  + DA + Incentive
 ```
 
 Same operation:
@@ -469,8 +425,7 @@ Now look at this:
 ```csharp
 Employee emp = new Manager();
 
-double salary =
-    emp.CalculateSalary();
+double salary = emp.CalculateSalary();
 ```
 
 The reference type is:
@@ -562,12 +517,8 @@ class SalesEmployee : Employee
 Now:
 
 ```csharp
-SalesEmployee employee =
-    new SalesEmployee();
-
-Console.WriteLine(
-    employee.CalculateSalary()
-);
+SalesEmployee employee = new SalesEmployee();
+Console.WriteLine(employee.CalculateSalary());
 ```
 
 calls:
@@ -619,11 +570,8 @@ Compare them:
 Consider:
 
 ```csharp
-Employee emp =
-    new SalesEmployee();
-
-double salary =
-    emp.CalculateSalary();
+Employee emp =  new SalesEmployee();
+double salary = emp.CalculateSalary();
 ```
 
 If `SalesEmployee` uses:
@@ -743,16 +691,12 @@ Example:
 public class Person
 {
     public string FirstName { get; set; }
-
     public string LastName { get; set; }
 
     public Person()
-    {
-    }
+    {    }
 
-    public Person(
-        string firstName,
-        string lastName)
+    public Person(string firstName,string lastName)
     {
         FirstName = firstName;
         LastName = lastName;
@@ -765,8 +709,7 @@ We can create objects:
 ```csharp
 Person p1 = new Person();
 
-Person p2 =
-    new Person("Amit", "Patil");
+Person p2 =new Person("Amit", "Patil");
 ```
 
 Therefore:
@@ -801,15 +744,12 @@ Example:
 public abstract class Employee
 {
     public decimal BasicSalary { get; set; }
-
     public decimal Hra { get; set; }
-
     public decimal Da { get; set; }
 
     public virtual double CalculateSalary()
     {
-        return (double)(
-            BasicSalary + Hra + Da);
+        return (double)(BasicSalary + Hra + Da);
     }
 
     public abstract double CalculateBonus();
@@ -819,13 +759,10 @@ public abstract class Employee
 Now this is illegal:
 
 ```csharp
-Employee emp =
-    new Employee();
+Employee emp =new Employee();
 ```
 
 Because an abstract class cannot be instantiated directly.
-
-
 
 # Abstract Class as a Blueprint
 
@@ -874,13 +811,7 @@ Example:
 public abstract double CalculateBonus();
 ```
 
-There is no method body.
-
-The abstract class is saying:
-
-> **"Every concrete child must provide its own implementation."**
-
-
+There is no method body.The abstract class is saying: **"Every concrete child must provide its own implementation."**
 
 # Manager Implements the Abstract Contract
 
@@ -918,15 +849,13 @@ Now:
 We cannot do:
 
 ```csharp
-Employee emp =
-    new Employee();     // ❌
+Employee emp = new Employee();     // ❌
 ```
 
 But we can do:
 
 ```csharp
-Employee emp =
-    new Manager();      // ✅
+Employee emp = new Manager();      // ✅
 ```
 
 Why?
@@ -947,11 +876,8 @@ A Manager is an Employee.
 Now:
 
 ```csharp
-double salary =
-    emp.CalculateSalary();
-
-double bonus =
-    emp.CalculateBonus();
+double salary =   emp.CalculateSalary();
+double bonus =   emp.CalculateBonus();
 ```
 
 The reference is:
@@ -974,13 +900,13 @@ So the Manager implementations execute.
 
 | Feature                      | Concrete Class | Abstract Class |
 | ---------------------------- | -------------- | -------------- |
-| Create object directly       | ✅              | ❌              |
-| Can have fields              | ✅              | ✅              |
-| Can have properties          | ✅              | ✅              |
-| Can have constructors        | ✅              | ✅              |
-| Can have implemented methods | ✅              | ✅              |
-| Can have abstract methods    | ❌              | ✅              |
-| Can be inherited             | ✅              | ✅              |
+| Create object directly       | ✅             | ❌            |
+| Can have fields              | ✅             | ✅            |
+| Can have properties          | ✅             | ✅            |
+| Can have constructors        | ✅             | ✅            |
+| Can have implemented methods | ✅             | ✅            |
+| Can have abstract methods    | ❌             | ✅            |
+| Can be inherited             | ✅             | ✅            |
 
 Think:
 
@@ -1040,8 +966,6 @@ abstract
    └── Override is mandatory
 ```
 
-
-
 # Complete Employee Design
 
 Let's combine everything.
@@ -1060,10 +984,7 @@ public abstract class Employee
         Da = 700;
     }
 
-    protected Employee(
-        double basicSalary,
-        double hra,
-        double da)
+    protected Employee(double basicSalary,double hra,double da)
     {
         BasicSalary = basicSalary;
         Hra = hra;
@@ -1092,12 +1013,7 @@ public class Manager : Employee
         incentive = 0;
     }
 
-    public Manager(
-        double basicSalary,
-        double hra,
-        double da,
-        double incentive)
-        : base(basicSalary, hra, da)
+    public Manager(double basicSalary, double hra,double da,double incentive): base(basicSalary, hra, da)
     {
         this.incentive = incentive;
     }
@@ -1109,8 +1025,7 @@ public class Manager : Employee
 
     public override double CalculateSalary()
     {
-        return base.CalculateSalary()
-             + CalculateIncentives();
+        return base.CalculateSalary()+ CalculateIncentives();
     }
 
     public override double CalculateBonus()
@@ -1125,24 +1040,12 @@ Now:
 ```csharp
 static void Main()
 {
-    Employee emp =
-        new Manager(
-            20000,
-            5000,
-            3000,
-            4000);
+    Employee emp =new Manager(20000, 5000,3000, 4000);
+    double salary =emp.CalculateSalary();
+    double bonus =emp.CalculateBonus();
 
-    double salary =
-        emp.CalculateSalary();
-
-    double bonus =
-        emp.CalculateBonus();
-
-    Console.WriteLine(
-        $"Salary = {salary}");
-
-    Console.WriteLine(
-        $"Bonus = {bonus}");
+    Console.WriteLine($"Salary = {salary}");
+    Console.WriteLine($"Bonus = {bonus}");
 }
 ```
 
