@@ -97,29 +97,21 @@ Understand the relationship:
 Now let's understand the four fundamental principles.
 
 
-1. Encapsulation
-
-Protect data and control how it is accessed.
+1. **Encapsulation** : Protect data and control how it is accessed.
 
 Example: BankAccount balance should not be modified directly.
 
 
-2. Inheritance
-
-Reuse and extend the functionality of an existing class.
+2. **Inheritance** : Reuse and extend the functionality of an existing class.
 
 Example: SavingsAccount inherits from BankAccount.
 
 
-One common interface, multiple implementations.
+3. **Polymorphism** : One common interface, multiple implementations.
 
 Example: Different payment methods implement Pay().
 
-
-
-4. Abstraction
-
-Expose essential functionality while hiding implementation details.
+4. **Abstraction** :Expose essential functionality while hiding implementation details.
 
 Example: A customer clicks Pay without knowing the payment gateway's internal processing.
 
@@ -418,6 +410,6 @@ Expected conceptual model:
 
 Dear students, Learning syntax makes you a programmer. Understanding objects makes you an application developer. Understanding relationships between objects makes you a software designer. And understanding why those relationships exist makes you an architect.
 
-Remember: First understand the problem. Then identify the objects. Define their responsibilities. Finally, write the code.
+**Remember**: First understand the problem. Then identify the objects. Define their responsibilities. Finally, write the code.
 
 That is the Transflower way of learning software engineering.
