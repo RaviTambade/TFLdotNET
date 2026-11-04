@@ -3,7 +3,7 @@
 
 **Don't just learn C# syntax. Understand how data is represented, passed, stored and processed during program execution.**
 
-This session continues from the previous learning material, Your First C# Program – Looking Behind the Curtain.Our objective is to develop a deeper understanding of C# types, memory behavior, arrays, method parameters and object references before moving into advanced OOP and .NET application development.
+Our objective is to develop a deeper understanding of C# types, memory behavior, arrays, method parameters and object references before moving into advanced OOP and .NET application development.
 
 ## 1. Let's begin with a question
 
