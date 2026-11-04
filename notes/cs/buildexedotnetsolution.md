@@ -150,7 +150,7 @@ Let's investigate.
 
 ## 2. Part One – Understanding the Build Process
 
-Command: dotnet build
+Command: **dotnet build**
 
 Think about a manufacturing workshop.
 
@@ -208,8 +208,7 @@ Suppose your project references an external package:
 
 ```
 <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json"
-                      Version="13.0.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
 </ItemGroup>
 ```
 
@@ -292,9 +291,7 @@ This tells the build system about the dependency relationship.
          MyLibrary
 ```
 
-The build system handles the required project build ordering and dependency references.
-
-This is the beginning of understanding layered architecture.
+The build system handles the required project build ordering and dependency references. This is the beginning of understanding layered architecture.
 
 ### Step 5: Understand the build output
 
@@ -336,7 +333,7 @@ bin/Debug/net10.0/
 
 ## 3. Part Two – Understanding Execution Process
 
-Command: dotnet run
+Command: **dotnet run**
 
 Build is completed.
 
