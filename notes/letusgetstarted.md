@@ -8,10 +8,10 @@ First learn to think like a programmer. Then learn to code like an engineer. Fin
 3. <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/dotnet.md">What is .NET?</a>
 4. <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/settingupdotnetsolution.md">Creating .NET Solution</a>
 5. <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/buildexedotnetsolution.md">Building .NET Solution</a>
-6. <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/CSharpLang.md">C# Programming</a>
-7. <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/csprogramming.md">C# Getting Started</a>
-8. <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/date.md">Date Class</a>
-9. <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/oo.md"> Objectd Oriented  Programming (OOPs)</a>
+6. <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/CSharpLang.md">C# Object Oriented Programming</a>
+7. <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/csprogramming.md">Object Thinkingd</a>
+8. <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/date.md">Class as Blueprint</a>
+9. <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/oo.md">Object Oriented Programming II</a>
 10. <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/inheritance.md">Inheritance</a>
 11. <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/interfaces.md">Interfaces</a>
 12. <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/Collections.md">Collection Framework</a>
