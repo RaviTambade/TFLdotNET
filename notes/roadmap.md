@@ -13,7 +13,7 @@ Engineering principles will remain.
 At Transflower, we don't train students to become "C# programmers." We mentor them to become **Software Engineers who can solve business problems.** Let me show you the journey.
 
 
-# 🏗️ Stage 1 – Learn to Think Like a Programmer
+### 🏗️ Stage 1 – Learn to Think Like a Programmer
 
 Before writing beautiful code, you must learn to think logically. This stage is not about .NET. It is about developing your engineering mindset.
 
@@ -31,7 +31,7 @@ Learn:
 Imagine an architect. Before constructing a building, does the architect start laying bricks?  No. The architect first creates the blueprint. Programming begins inside your mind before it appears on your screen.
 
 
-# 💻 Stage 2 – Master the C# Language
+### 💻 Stage 2 – Master the C# Language
 
 Now you have a strong foundation. It is time to learn your engineering tool. C# is not just syntax. It is the language through which you communicate with the .NET platform.
 
@@ -58,7 +58,7 @@ Master:
 At this stage you should stop copying code. Start writing your own solutions.
 
 
-# ⚙️ Stage 3 – Understand the .NET Platform
+### ⚙️ Stage 3 – Understand the .NET Platform
 
 Many students think C# and .NET are the same. They are not. C# is the language. .NET is the platform. Learn how your application actually runs.
 
@@ -76,7 +76,7 @@ Understand:
 A professional engineer understands what happens behind the scenes.
 
 
-# 🌐 Stage 4 – Build Web Applications
+### 🌐 Stage 4 – Build Web Applications
 
 Businesses don't buy C# classes. They buy software. Now learn ASP.NET Core. Build applications that users can actually use.
 
@@ -95,7 +95,7 @@ Learn:
 Now your software can communicate with browsers and mobile apps.
 
 
-# 🗄️ Stage 5 – Learn Data Engineering
+### 🗄️ Stage 5 – Learn Data Engineering
 
 Every application stores information such as Customers, Products, Orders, Policies, Payments, Claims.
 
@@ -114,7 +114,7 @@ Learn:
 A software engineer must understand both code and data.
 
 
-# 🏢 Stage 6 – Think Like an Enterprise Developer
+### 🏢 Stage 6 – Think Like an Enterprise Developer
 
 This is where students become professionals. Small applications become enterprise systems.
 
@@ -134,7 +134,7 @@ Now you begin designing maintainable software rather than simply making it work.
 
 
 
-# ☁️ Stage 7 – Build Distributed Systems
+### ☁️ Stage 7 – Build Distributed Systems
 
 Modern applications are not one big executable. They are collections of services.
 
@@ -150,7 +150,7 @@ Learn:
 
 Now your software becomes scalable.
 
-# ☁️ Stage 8 – Move to the Cloud
+### ☁️ Stage 8 – Move to the Cloud
 
 Today's applications live in the cloud.
 
@@ -168,7 +168,7 @@ Learn:
 Deployment is now part of software engineering.
 
 
-# 🔄 Stage 9 – Learn DevOps
+### 🔄 Stage 9 – Learn DevOps
 
 Writing code is only half the job. The other half is delivering software safely.
 
@@ -186,7 +186,7 @@ Master:
 
 Now you understand the software delivery pipeline.
 
-# 🎨 Stage 10 – Learn Frontend Development
+### 🎨 Stage 10 – Learn Frontend Development
 
 Users never see your backend. They experience your user interface.
 
@@ -202,7 +202,7 @@ Learn:
 Now you can build complete full-stack applications.
 
 
-# 🤖 Stage 11 – Become an AI Developer
+### 🤖 Stage 11 – Become an AI Developer
 
 Artificial Intelligence is becoming part of every software product. Do not fear AI. Learn how to build with it.
 
@@ -221,7 +221,7 @@ Study:
 The future belongs to engineers who combine software engineering with AI.
 
 
-# 🏥 Stage 12 – Build Real Business Projects
+### 🏥 Stage 12 – Build Real Business Projects
 
 Knowledge without projects has little value. Build applications like:
 
@@ -238,7 +238,7 @@ Knowledge without projects has little value. Build applications like:
 
 Projects transform concepts into confidence.
 
-# 🧠 Stage 13 – Learn System Design
+### 🧠 Stage 13 – Learn System Design
 
 Now start thinking beyond coding. Ask questions like:
 
@@ -261,7 +261,7 @@ Study:
 
 Now you begin thinking like a Solution Architect.
 
-# 🚀 Final Destination
+## 🚀 Final Destination
 
 Your career journey may look like this:
 
@@ -293,7 +293,7 @@ Cloud Architect
 AI Solutions Architect
 ```
 
-# 🌱 The Transflower Mentor Message
+## 🌱 The Transflower Mentor Message
 
 Never chase technologies because they are trending. Instead, understand **how software is engineered**, **how businesses operate**, and **how technology solves real-world problems**. Every topic you learn should answer one question:
 
