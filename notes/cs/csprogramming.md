@@ -1,11 +1,9 @@
 
 ## C# Memory Management, Arrays, Methods and Object References
 
-Theme: Don't just learn C# syntax. Understand how data is represented, passed, stored and processed during program execution.
+**Don't just learn C# syntax. Understand how data is represented, passed, stored and processed during program execution.**
 
-This session continues from the previous learning material, Your First C# Program – Looking Behind the Curtain.
-
-Mentor's objective: Develop a deeper understanding of C# types, memory behavior, arrays, method parameters and object references before moving into advanced OOP and .NET application development.
+This session continues from the previous learning material, Your First C# Program – Looking Behind the Curtain.Our objective is to develop a deeper understanding of C# types, memory behavior, arrays, method parameters and object references before moving into advanced OOP and .NET application development.
 
 ## 1. Let's begin with a question
 
@@ -50,9 +48,7 @@ Output:
 200
 ```
 
-Why?
-
-Because assigning `x` to `y` copies the integer value.
+Why?  Because assigning `x` to `y` copies the integer value.
 
 ```
        x                 y
@@ -85,9 +81,7 @@ Output:
 999
 ```
 
-Why?
-
-Because both variables refer to the same array object.
+Why? Because both variables refer to the same array object.
 
 ```
        a                 b
@@ -107,9 +101,9 @@ Because both variables refer to the same array object.
         +------------------+
 ```
 
-Mentor Insight: Assignment of a reference type copies the reference, not the underlying object.
+**Mentor Insight**: Assignment of a reference type copies the reference, not the underlying object.
 
-Note: Value types are not necessarily always stored on the stack, and reference types are not simply synonymous with heap variables. Their storage depends on execution context.
+**Note**: Value types are not necessarily always stored on the stack, and reference types are not simply synonymous with heap variables. Their storage depends on execution context.
 
 ## 3. Understanding the `new` Keyword
 
@@ -166,7 +160,7 @@ The diagram is conceptual; actual storage and object layout are managed by the .
 
 ## 4. Arrays – Working with Multiple Values
 
-Mentor: Suppose we want to maintain marks of 100 students. Should we create 100 individual variables? No!  We use arrays.
+**Mentor**: Suppose we want to maintain marks of 100 students. Should we create 100 individual variables? No!  We use arrays.
 
 ```
 int[] marks = { 90, 85, 70, 95, 80 };
@@ -221,9 +215,7 @@ Total Marks: 420
 
 ## 5. Methods – Understanding Parameter Passing
 
-Now let's understand something important.
-
-Consider:
+Now let's understand something important. Consider:
 
 ```
 static void ChangeValue(int number)
@@ -242,9 +234,7 @@ Output:
 100
 ```
 
-Why?
-
-Because C# passes the value of the integer argument by value by default.
+Why?  Because C# passes the value of the integer argument by value by default.
 
 ```
 Main()
@@ -374,8 +364,7 @@ class Program
         {
             Console.Write($"Enter Subject {i + 1} Marks: ");
 
-            if (!int.TryParse(Console.ReadLine(), out marks[i])
-                || marks[i] < 0 || marks[i] > 100)
+            if (!int.TryParse(Console.ReadLine(), out marks[i]) || marks[i] < 0 || marks[i] > 100)
             {
                 Console.WriteLine("Invalid marks.");
                 return;
@@ -448,5 +437,12 @@ Here we are applying classes, properties, reference types and arrays to represen
 
 ### 🌸 Ravi Sir's closing message
 
-Dear students, When you write a program, don't just ask what output it produces. Ask what happens inside the machine.
-When you assign a variable, understand copying. When you create an object, understand references. When you pass parameters, understand how data travels between methods. When you work with arrays, understand how collections organize data. A programmer writes instructions. A .NET developer understands the execution model behind those instructions. That is how we build strong engineering foundations at Transflower.
+Dear students, When you write a program, 
+- don't just ask what output it produces. 
+- Ask what happens inside the machine.
+- When you assign a variable, understand copying.
+- When you create an object, understand references. 
+- When you pass parameters, understand how data travels between methods.
+-  When you work with arrays, understand how collections organize data. A programmer writes instructions.
+
+ A .NET developer understands the execution model behind those instructions. That is how we build strong engineering foundations at Transflower.
