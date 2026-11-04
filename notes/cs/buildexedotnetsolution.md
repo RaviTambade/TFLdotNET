@@ -1,206 +1,685 @@
- #  **Building and Executing .NET Core Solution**
+# Building and Executing a .NET 10 Solution
 
-Let us consider You’ve created a solution with two projects using Dotnet CLI commands:
+## From C# Source Code to Running Software
 
-* **MyApp** → Console application (the executable entry point)
-* **MyLibrary** → Class library (contains reusable business logic)
+Dear students, Today, let us understand something fundamental about software engineering. You have written C# code. You have created classes, methods, and projects. But have you ever wondered what actually happens when you type:
 
-Now let’s go deeper and understand what actually happens when you build and execute it in **.NET 10**. This is where students start becoming real engineers.
-
-## 🛠 **Part 1: The Build Process (`dotnet build`)**
-
-Imagine you're inside a professional workshop.
-
-Your source code is the blueprint.
-Your dependencies are the tools.
-Your final executable is the machine.
-
-The `dotnet build` command is the construction phase.
-
-## ✅ What happens when you type:
-
-```bash
+```
 dotnet build
 ```
 
-## 1️⃣ MSBuild Starts the Pipeline
+or
 
-The .NET CLI hands control to **MSBuild**, the official build engine. It reads:
-
-* `MySolution.sln` → to understand all projects inside the solution
-* `MyApp.csproj` and `MyLibrary.csproj` → to understand dependencies, SDK targets, framework versions, and build instructions
-
-In .NET 10, build optimization is faster and smarter, especially for incremental builds.
-
-## 2️⃣ Restore Dependencies (NuGet Package Resolution)
-
-If required, .NET automatically performs:
-
-```bash
-dotnet restore
+```
+dotnet run
 ```
 
-This means:
+Does the computer directly execute your C# source code?
 
-* It checks `.csproj` files for `<PackageReference>`
-* Downloads required NuGet packages
-* Stores them in your global package cache
-* Generates dependency tracking files inside the `obj/` folder
+What role does MSBuild play? Who downloads external libraries? How does one project communicate with another? Where does the executable output come from?
 
-For example:
+Today, we will understand the internal journey of a .NET application. Remember: A programmer writes code. An engineer understands how that code becomes a running application.
 
-```text
-obj/project.assets.json
+## 1. Our Workshop: Create a Two-Project Solution
+
+Imagine we are building a small application in a professional software development workshop.
+
+Our requirement is simple:
+
+- `MyApp` – Console application (executable entry point).
+- `MyLibrary` – Class library (reusable business logic).
+
+Why create two projects? Because professional applications separate responsibilities. 
+
+Imagine you are developing a Student Management System.
+
+Initially, you might write everything inside one project:
+- Student information
+- Student business rules
+- Student calculations
+- User interaction
+- Application execution logic
+It works. But as the application grows, maintaining everything in one place becomes difficult. In professional software development, we separate responsibilities.
+
+```
+                  MySolution.sln
+                (.NET Solution)
+                       |
+             +---------+---------+
+             |                   |
+             v                   v
+      +-------------+     +----------------+
+      |   MyApp     |     |  MyLibrary     |
+      +-------------+     +----------------+
+      |             |     |                |
+      | Console App |     | Class Library  |
+      |             |     |                |
+      | Program.cs  |     | Greeter.cs     |
+      |             |     |                |
+      +-------------+     +----------------+
+             |                   |
+             |                   |
+             +------------------> 
+                 Project Reference
+                 (Dependency)
+                       |
+                       v
+              Reusable Business
+                   Logic
+
 ```
 
-This helps .NET manage package versions and transitive dependencies. If your project has no external packages, this step is extremely fast.
+### Step 1: Create the solution
 
-## 3️⃣ Compilation (C# → IL → Ready for Runtime)
+Open your terminal:
 
-Your `.cs` files are compiled by the C# compiler (`csc`) into:
+```
+mkdir DotNetWorkshop
+cd DotNetWorkshop
 
-## CIL → Common Intermediate Language
+dotnet new sln -n MySolution
 
-This is platform-independent code.
-
-Output generated:
-
-* `MyLibrary.dll`
-* `MyApp.dll`
-
-In .NET 10, support for improved JIT + AOT compilation makes execution faster and startup smoother. By default, output goes here:
-
-```text
-MyApp/bin/Debug/net10.0/
-MyLibrary/bin/Debug/net10.0/
+dotnet new console -n MyApp
+dotnet new classlib -n MyLibrary
 ```
 
-Notice:
+### Step 2: Add projects to solution
 
-## `net10.0`
+```
+dotnet sln MySolution.sln add MyApp/MyApp.csproj
 
-That’s your target framework.
+dotnet sln MySolution.sln add MyLibrary/MyLibrary.csproj
+```
 
-## 4️⃣ Linking Project References
+### Step 3: Establish project dependency
 
-Because you added:
-
-```bash
+```
 dotnet add MyApp/MyApp.csproj reference MyLibrary/MyLibrary.csproj
 ```
 
-MSBuild ensures:
+This creates a project reference inside `MyApp.csproj`.
 
-* `MyApp.dll` references `MyLibrary.dll`
-* Proper dependency order is maintained during build
-
-It automatically adds this inside `MyApp.csproj`:
-
-```xml
-<ProjectReference Include="..\MyLibrary\MyLibrary.csproj" />
+```
+<ItemGroup>
+    <ProjectReference Include="..\MyLibrary\MyLibrary.csproj" />
+</ItemGroup>
 ```
 
-This allows:
+Now MyApp can use the public classes exposed by MyLibrary.
 
-```csharp
-Greeter.Hello()
+### Step 4: Write reusable business logic
+
+Inside `MyLibrary/Greeter.cs`:
+
+```
+namespace MyLibrary;
+
+public class Greeter
+{
+    public static void Hello()
+    {
+        Console.WriteLine(
+            "Welcome to Transflower Learning!"
+        );
+    }
+}
 ```
 
-to work across projects. This is the beginning of layered architecture.
+Inside `MyApp/Program.cs`:
 
-## 5️⃣ Final Output Structure
+```
+using MyLibrary;
 
-After successful build:
+Greeter.Hello();
 
-```text
-MyApp
- └── bin/Debug/net10.0/
-     ├── MyApp.dll
-     ├── MyLibrary.dll
-     ├── MyApp.pdb
-     ├── MyApp.runtimeconfig.json
-     ├── MyApp.deps.json
-     └── other runtime files
+Console.WriteLine("Application completed.");
 ```
 
-### What these files mean:
+Expected output:
 
-* `.dll` → compiled application code
-* `.pdb` → debugging symbols
-* `.runtimeconfig.json` → runtime settings
-* `.deps.json` → dependency resolution details
+```
+Welcome to Transflower Learning!
+Application completed.
+```
 
-This is professional output—not just “code running.”
+Congratulations! You have created a solution containing two cooperating projects.
 
-# ⚙ **Part 2: Execution Process (`dotnet run`)**
+But how does this code actually run?
 
-Now the machine starts.
+Let's investigate.
 
-When you run:
+## 2. Part One – Understanding the Build Process
 
-```bash
+Command: dotnet build
+
+Think about a manufacturing workshop.
+
+- Source code is the blueprint.
+- NuGet packages are external components.
+- Compiler is the manufacturing machine.
+- MSBuild is the production manager.
+- Compiled DLLs are the finished components.
+
+When you execute:
+
+```
+dotnet build
+```
+
+the .NET build pipeline starts.
+
+### Step 1: MSBuild takes control
+
+The .NET CLI invokes MSBuild, the build engine responsible for coordinating the build process.
+
+It examines:
+
+```
+MySolution.sln
+    |
+    |-- MyApp/MyApp.csproj
+    |
+    |-- MyLibrary/MyLibrary.csproj
+```
+
+MSBuild understands:
+
+- Which projects belong to the solution.
+- Which project depends on another.
+- Which .NET SDK and target framework are configured.
+- Which packages are required.
+- Which compilation tasks must execute.
+
+Mentor asks: Why should we compile MyLibrary before MyApp?
+
+Student: Because MyApp depends on MyLibrary. The required library must be built before the consuming application can be compiled.
+
+Exactly!
+
+### Step 2: NuGet restores dependencies
+
+Before compilation, the build process ensures that required dependencies are available.
+
+```
+dotnet restore
+```
+
+Suppose your project references an external package:
+
+```
+<ItemGroup>
+    <PackageReference Include="Newtonsoft.Json"
+                      Version="13.0.4" />
+</ItemGroup>
+```
+
+NuGet performs dependency resolution.
+
+```
+MyApp.csproj
+      |
+      v
+NuGet Restore
+      |
+      v
+Check Package References
+      |
+      v
+Download Required Packages
+      |
+      v
+Global NuGet Package Cache
+      |
+      v
+obj/project.assets.json
+```
+
+Important generated file:
+
+```
+obj/project.assets.json
+```
+
+It contains dependency resolution information used by the build system.
+
+Mentor Insight: NuGet is not the compiler. Its responsibility is package management and dependency restoration.
+
+### Step 3: C# compilation
+
+Now the C# compiler (`csc`) takes your source code and converts it into Common Intermediate Language (CIL), commonly called IL.
+
+```
+Program.cs
+Greeter.cs
+    |
+    v
+C# Compiler (Roslyn)
+    |
+    v
+Intermediate Language (IL)
+    |
+    v
+MyApp.dll
+MyLibrary.dll
+```
+
+Let's understand the difference.
+
+| Source code | Compiled output |
+| ----------- | --------------- |
+| Program.cs  | MyApp.dll       |
+| Greeter.cs  | MyLibrary.dll   |
+
+The generated DLL contains compiled .NET code and metadata.
+
+Important: IL is not native machine code. It is an intermediate representation that the .NET runtime can execute through JIT compilation or other deployment strategies.
+
+### Step 4: Project reference resolution
+
+Remember this command?
+
+```
+dotnet add MyApp/MyApp.csproj reference MyLibrary/MyLibrary.csproj
+```
+
+This tells the build system about the dependency relationship.
+
+```
+          MyApp
+            |
+            | depends on
+            v
+         MyLibrary
+```
+
+The build system handles the required project build ordering and dependency references.
+
+This is the beginning of understanding layered architecture.
+
+### Step 5: Understand the build output
+
+After successful compilation, inspect:
+
+```
+MyApp/
+  |
+  +-- bin/
+       |
+       +-- Debug/
+            |
+            +-- net10.0/
+                 |
+                 +-- MyApp.dll
+                 +-- MyLibrary.dll
+                 +-- MyApp.deps.json
+                 +-- MyApp.runtimeconfig.json
+                 +-- MyApp.pdb
+```
+
+Let's understand these files.
+
+| File                     | Responsibility            |
+| ------------------------ | ------------------------- |
+| MyApp.dll                | Compiled application code |
+| MyLibrary.dll            | Compiled reusable library |
+| MyApp.pdb                | Debugging symbols         |
+| MyApp.deps.json          | Dependency information    |
+| MyApp.runtimeconfig.json | Runtime configuration     |
+
+Notice the directory:
+
+```
+bin/Debug/net10.0/
+```
+
+`net10.0` represents the target framework.
+
+## 3. Part Two – Understanding Execution Process
+
+Command: dotnet run
+
+Build is completed.
+
+Now imagine starting the machine we have manufactured.
+
+Execute:
+
+```
 dotnet run --project MyApp/MyApp.csproj
 ```
 
-the real execution begins.
+What happens internally?
 
-## 1️⃣ `dotnet run` Triggers Build (If Needed)
+### Step 1: Build if required
 
-Before execution:
+`dotnet run` normally builds the application before executing it.
 
-* If no code changed → skips rebuild
-* If code changed → rebuilds only affected projects
+If the project is already up to date, incremental build processing avoids unnecessary compilation.
 
-This is called **incremental build optimization**
+```
+       dotnet run
+            |
+            v
+      Build Required?
+        /       \
+      Yes        No
+       |          |
+       v          |
+   Build Project  |
+       |          |
+       +----+-----+
+            |
+            v
+       Execute App
+```
 
+### Step 2: .NET Runtime takes control
 
-## 2️⃣ Runtime Execution Starts
+The execution process uses the .NET runtime, including CoreCLR for the normal CoreCLR execution model.
 
-Behind the scenes, this becomes:
+Conceptually:
 
-```bash
+```
 dotnet MyApp.dll
 ```
 
-Now the **.NET Runtime (CoreCLR)** takes over.
+The runtime performs several activities:
 
-It:
+1. Loads the application assembly.
+2. Resolves required dependencies.
+3. Loads MyLibrary.dll when required.
+4. Initializes the runtime environment.
+5. Executes the application's entry point.
 
-* Loads `MyApp.dll`
-* Loads `MyLibrary.dll` because MyApp depends on it
-* Resolves dependencies
-* Initializes runtime configuration
-* Finds the application entry point
+### Step 3: JIT compilation
 
-# 🔁 Build vs Run vs Publish
+Here comes an important concept.
 
-| Command          | Purpose                                                                         |
-| ---------------- | ------------------------------------------------------------------------------- |
-| `dotnet build`   | Compiles source code and generates `.dll` files                                 |
-| `dotnet run`     | Builds (if needed) + executes the application                                   |
-| `dotnet publish` | Produces deployment-ready output for servers, Docker, cloud, or standalone apps |
+Your C# compiler generated IL, not CPU-specific native instructions.
 
-In .NET 10, `publish` becomes even more important for:
+So how does the processor execute your application?
 
-* Containers
-* Cloud deployment
-* Native AOT apps
-* Microservices
-* Kubernetes
-* Serverless systems
+Meet the JIT Compiler – Just-In-Time Compiler.
 
-# 💡 Mentor Wisdom: Why This Matters
+```
+      C# Source Code
+             |
+             v
+       C# Compiler
+             |
+             v
+       MyApp.dll
+        (IL Code)
+             |
+             v
+       .NET Runtime
+          (CoreCLR)
+             |
+             v
+       JIT Compiler
+             |
+             v
+      Native Machine Code
+             |
+             v
+          CPU
+             |
+             v
+       Application Output
+```
 
-Because once you understand:
-- ✔ How C# becomes IL
-- ✔ How MSBuild manages projects
-- ✔ How NuGet resolves dependencies
-- ✔ How DLLs interact
-- ✔ How CoreCLR executes your code
-- ✔ How deployment actually works
+The JIT compiler translates IL methods into native machine instructions as they are needed.
 
-…you stop being someone who “uses .NET” and become someone who truly understands .NET. That is the difference between:
+This is one of the important mechanisms behind normal .NET application execution.
 
-### Writing code and Engineering software
+Mentor asks: Why doesn't the C# compiler directly generate native machine code for every platform?
 
-That difference builds careers.
+Student: Because IL provides a portable intermediate representation. The runtime can generate appropriate machine instructions for the target environment.
+
+Excellent!
+
+## 4. Part Three – Build vs Run vs Publish
+
+Students often confuse these three commands.
+
+Let's understand them from a software engineering perspective.
+
+| Command          | Responsibility                     | Result              |
+| ---------------- | ---------------------------------- | ------------------- |
+| `dotnet build`   | Compile the solution               | Build output        |
+| `dotnet run`     | Build if needed and execute        | Running application |
+| `dotnet publish` | Prepare application for deployment | Publish output      |
+
+### Understanding Publish
+
+Imagine your application works perfectly on your development laptop.
+
+Now your client wants to run it on a Linux server or inside Docker.
+
+You need deployment-ready output.
+
+Execute:
+
+```
+dotnet publish MyApp/MyApp.csproj -c Release -o ./publish
+```
+
+This generates publish output in the specified directory.
+
+```
+Development Environment
+          |
+          v
+     C# Source Code
+          |
+          v
+      dotnet build
+          |
+          v
+      dotnet publish
+          |
+          v
+   Deployment Package
+          |
+     +----+------+
+     |           |
+     v           v
+   Docker     Cloud Server
+     |           |
+     v           v
+ Kubernetes   Production
+```
+
+Publish is particularly important for:
+
+- Docker containers.
+- Cloud deployments.
+- ASP.NET Core applications.
+- Microservices.
+- Kubernetes workloads.
+- Native AOT applications.
+- Self-contained application deployment.
+
+Remember, publishing does not automatically mean that your application is containerized or compiled using Native AOT. Those require additional configuration.
+
+## 5. Part Four – Explore the Commands Yourself
+
+Let's become comfortable with the .NET CLI.
+
+| Command                   | Purpose                    |
+| ------------------------- | -------------------------- |
+| `dotnet --version`        | Check installed SDK        |
+| `dotnet --list-sdks`      | List installed SDKs        |
+| `dotnet sln list`         | List solution projects     |
+| `dotnet restore`          | Restore dependencies       |
+| `dotnet build`            | Compile solution           |
+| `dotnet build -c Release` | Release build              |
+| `dotnet run`              | Execute application        |
+| `dotnet clean`            | Clean build outputs        |
+| `dotnet publish`          | Generate deployment output |
+
+Try these commands one by one.
+
+```
+dotnet --version
+
+dotnet sln MySolution.sln list
+
+dotnet restore
+
+dotnet build
+
+dotnet run --project MyApp/MyApp.csproj
+
+dotnet clean
+
+dotnet publish MyApp/MyApp.csproj -c Release
+```
+
+## 6. Transflower Practical Lab
+
+Hands-on Assignment
+
+Problem Statement: Build a Reusable Student Management Application
+
+Your task is to extend the two-project solution.
+
+Create the following structure:
+
+```
+StudentManagementSolution
+    |
+    |-- StudentApp
+    |     |
+    |     |-- Program.cs
+    |
+    |-- StudentLibrary
+          |
+          |-- Student.cs
+          |-- StudentService.cs
+```
+
+Responsibilities:
+
+StudentLibrary
+
+- Create Student class.
+- Store student ID, name and course.
+- Implement StudentService.
+- Implement AddStudent().
+- Implement GetStudents().
+
+StudentApp
+
+- Create the application entry point.
+- Instantiate StudentService.
+- Add student records.
+- Display student information.
+
+### Student challenges
+
+1. Build only the StudentLibrary project.
+2. Build the complete solution.
+3. Observe the generated DLL files.
+4. Modify StudentLibrary and rebuild.
+5. Observe incremental build behavior.
+6. Execute StudentApp.
+7. Publish the application in Release configuration.
+8. Inspect the publish folder.
+
+### Assessment questions
+
+Knowledge checkpoint
+
+0/5 answered
+
+1\. Which component coordinates the .NET build process?
+
+CLR
+
+MSBuild
+
+NuGet
+
+JIT
+
+2\. Which tool restores external NuGet dependencies?
+
+Roslyn
+
+CoreCLR
+
+NuGet
+
+PDB
+
+3\. What does the C# compiler generate?
+
+Only native machine code
+
+IL and metadata in assemblies
+
+Docker images
+
+SQL scripts
+
+4\. Which component converts IL methods into native code during normal JIT execution?
+
+MSBuild
+
+NuGet
+
+JIT Compiler
+
+Razor
+
+5\. Which command prepares application output for deployment?
+
+dotnet clean
+
+dotnet publish
+
+dotnet restore
+
+dotnet sln list
+
+Submit answers
+
+## 7. Mentor Wisdom – From Programmer to Software Engineer
+
+Students, remember this execution journey:
+
+## The .NET Engineering Journey
+
+1. Write C# Code
+
+   Understand classes, methods, interfaces and business logic.
+2. Organize Projects
+
+   Separate application responsibilities into reusable libraries.
+3. Restore Dependencies
+
+   Understand NuGet and dependency resolution.
+4. Build
+
+   Understand MSBuild, Roslyn and IL generation.
+5. Execute
+
+   Understand CoreCLR, assembly loading and JIT compilation.
+6. Publish
+
+   Prepare software for production deployment.
+
+One important thought to take home:
+
+Don't become dependent on Visual Studio's Build and Run buttons. Learn what happens behind those buttons.
+
+When you understand the build pipeline, runtime, dependencies and deployment process, you can troubleshoot real-world problems instead of blindly following instructions.
+
+A developer knows how to write a program.
+
+A software engineer understands how the program is built, executed, tested and deployed.
+
+Transflower Learning – Learn the fundamentals. Understand the architecture. Build with confidence.
+
+AI can generate code for you. But engineering judgment comes from understanding what happens behind that code.
