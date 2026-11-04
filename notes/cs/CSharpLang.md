@@ -408,7 +408,12 @@ Expected conceptual model:
 
 ### 🌱 Ravi Sir's closing message
 
-Dear students, Learning syntax makes you a programmer. Understanding objects makes you an application developer. Understanding relationships between objects makes you a software designer. And understanding why those relationships exist makes you an architect.
+Dear students, 
+
+- Learning syntax makes you a programmer. 
+- Understanding objects makes you an application developer. 
+- Understanding relationships between objects makes you a software designer.
+- And understanding why those relationships exist makes you an architect.
 
 **Remember**: First understand the problem. Then identify the objects. Define their responsibilities. Finally, write the code.
 
