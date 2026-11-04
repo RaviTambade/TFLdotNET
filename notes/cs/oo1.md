@@ -1,557 +1,904 @@
-## C# Object Relationships – Association, Aggregation, Composition and Inheritance
+# C# Interfaces, Abstract Classes, Polymorphism and Dependency Injection
 
-### 1. Start with a Real-World Story
 
-Dear students, Imagine Transflower has a learning management system. We have:
+**Design • Abstraction • Collaboration**
 
-- Students
-- Mentors
-- Courses
-- Batches
-- Assessments
+**Learning Journey**: From Object Collaboration → Abstraction → Polymorphism → Loose Coupling → Dependency Injection
 
-Now consider these situations:
+## 1. Connect with our previous session
 
-1. A Student enrolls in a Course.
-2. A Mentor teaches multiple Students.
-3. A Department contains multiple Courses.
-4. An Order contains OrderItems.
-5. A Manager is an Employee.
+Dear students, In our previous sessions, we learned how to create classes and objects, protect object state using properties, control visibility using access modifiers, and make multiple objects collaborate. We built a Student Management System.
 
-Are all these relationships the same? 
+We had:
 
-No!
+- Student
+- Course
+- EnrollmentService
 
-Today we will understand four important object-oriented relationships.
+Now imagine Transflower introduces new requirements. Our Student Management System should support multiple notification channels. Whenever a student enrolls in a course, the system should send a notification. Initially, we use email. Tomorrow, management asks for SMS. Next week, they ask for WhatsApp notifications. What should we do?
 
-### 2. Association – Objects Know Each Other
+- Should we continuously modify our existing Student class?
+- Should we write separate enrollment logic for every notification provider?
 
-Association represents a relationship between independent objects.
+This is where software design becomes interesting. Today's challenge: How can we design software that accepts new behavior without unnecessarily changing existing code?
 
-Example:
+## 2. Start with a real-world analogy – Payment Systems
 
-A Student enrolls in a Course.
+Imagine you are shopping online. You reach the payment page. You may choose:
 
-```text
-       Student  ---------------->  Course
-                    enrolls in
+- Credit Card
+- UPI
+- Net Banking
+- Wallet
+
+The shopping application doesn't need to understand the internal implementation of every payment provider. It simply needs a common contract: Every payment provider must support Pay().
+
+```
+                Shopping Application
+                        |
+                        |
+                  MakePayment()
+                        |
+                        v
+                Payment Interface
+                   IPayment
+                        |
+          +-------------+-------------+
+          |             |             |
+          v             v             v
+      CreditCard       UPI        NetBanking
+       Payment       Payment       Payment
 ```
 
-Both objects can exist independently. A Student can exist without a Course. A Course can exist without a Student.
+Notice something important. The application depends on a common contract, not on a specific payment implementation. This is the idea behind interfaces.
 
-Let's implement this in C#.
+## 3. Understanding Interfaces in C\#
 
-**Course.cs**
+An interface defines a contract that implementing types must fulfill. It describes what an object can do without specifying all the implementation details.
 
-```csharp
-public class Course
+### Step 1: Create an interface
+
+```
+public interface IPayment
 {
-    public int Id { get; set; }
-    public string Title { get; set; }
+    void Pay(decimal amount);
+}
+```
 
-    public Course(int id, string title)
+What does this mean? 
+Any class implementing `IPayment` must provide the required `Pay()` implementation.
+
+### Step 2: Implement the interface
+
+```
+public class UpiPayment : IPayment
+{
+    public void Pay(decimal amount)
     {
-        Id = id;
-        Title = title;
+        Console.WriteLine(
+            $"Paid {amount} using UPI"
+        );
     }
 }
 ```
 
-**Student.cs**
+Another implementation:
 
-```csharp
-public class Student
+```
+public class CardPayment : IPayment
 {
-    public int Id { get; set; }
-    public string Name { get; set; }
-
-    public Student(int id, string name)
+    public void Pay(decimal amount)
     {
-        Id = id;
-        Name = name;
-    }
-
-    public void Enroll(Course course)
-    {
-        Console.WriteLine($"{Name} enrolled in {course.Title}");
+        Console.WriteLine(
+            $"Paid {amount} using Credit Card"
+        );
     }
 }
 ```
 
-**Program.cs**
+### Step 3: Use the interface
 
-```csharp
-Course course = new Course(101, "C# Programming");
-Student student = new Student(1, "Amit");
-student.Enroll(course);
+```
+IPayment payment = new UpiPayment();
+
+payment.Pay(1500);
 ```
 
 Output:
 
-```text
-Amit enrolled in C# Programming
+```
+Paid 1500 using UPI
 ```
 
-Notice: The Student receives a Course object. Neither object owns the lifetime of the other.
+Now change only the object creation:
 
-### 3. Aggregation – A Whole Has Parts, but Parts Can Exist Independently
+```
+IPayment payment = new CardPayment();
 
-Imagine a Department containing multiple Courses.
-
-```text
-          Department
-               |
-        Aggregates
-               |
-       +-------+-------+
-       |       |       |
-       v       v       v
-     Course  Course  Course
-       A       B       C
+payment.Pay(1500);
 ```
 
-If the Department is closed, the Course objects may still exist or be moved to another Department. That is the important idea behind aggregation.
+Output:
 
-Let's implement it.
-
-**Course.cs**
-
-```csharp
-public class Course
-{
-    public string Title { get; set; }
-
-    public Course(string title)
-    {
-        Title = title;
-    }
-}
+```
+Paid 1500 using Credit Card
 ```
 
-**Department.cs**
+The calling code remains the same!
 
-```csharp
-using System.Collections.Generic;
+### Visualize the relationship
 
-public class Department
-{
-    public string Name { get; set; }
-    public List<Course> Courses { get; private set; }
-
-    public Department(string name, List<Course> courses)
-    {
-        Name = name;
-        Courses = courses;
-    }
-
-    public void Display()
-    {
-        Console.WriteLine($"Department: {Name}");
-
-        foreach (Course course in Courses)
-        {
-            Console.WriteLine(course.Title);
-        }
-    }
-}
+```
+              IPayment
+             <<interface>>
+                  |
+          +-------+-------+
+          |               |
+          v               v
+      UpiPayment      CardPayment
+          |               |
+          v               v
+        Pay()            Pay()
+          |               |
+          v               v
+      UPI Logic       Card Logic
 ```
 
-**Program.cs**
+**Mentor asks**: What advantage did we get?
 
-```csharp
-Course c1 = new Course("C#");
-Course c2 = new Course("ASP.NET Core");
+**Student**: Sir, we can introduce new payment implementations without rewriting the code that uses the payment contract.
 
-List<Course> courses = new List<Course>{  c1, c2};
-Department department = new Department("Software Development", courses);
-department.Display();
+**Mentor**: Exactly! This is one of the foundations of extensible software design.
+
+## 4. Understanding Abstract Classes
+
+Now let's consider another situation. Suppose every employee in an organization has:
+
+- Employee ID
+- Name
+- Department
+
+But different employees perform different types of work.
+
+- Developer writes software.
+- Tester tests software.
+- Manager manages a team.
+
+Can we create a common Employee abstraction?
+
+Yes!
+
+An abstract class provides a common base for related classes.
+
+### Step 1: Create abstract Employee class
+
 ```
-
-The Department receives existing Course objects.
-
-**Mentor question:** If we remove the Department object, must the Course objects automatically disappear?
-
-**Student:** No, sir. The Course objects can exist independently.
-
-### 4. Composition – Strong Ownership
-
-Now imagine an Order containing OrderItems. Can an OrderItem exist meaningfully without its Order in this particular business design? We may decide that an OrderItem is owned by one Order and its lifecycle is controlled by that Order.
-
-This is composition.
-
-```text
-             Order
-               |
-            Owns
-               |
-        +------+------+
-        |      |      |
-        v      v      v
-      Item1  Item2  Item3
-```
-
-Let's implement it.
-
-**OrderItem.cs**
-
-```csharp
-public class OrderItem
-{
-    public string ProductName { get; private set; }
-    public int Quantity { get; private set; }
-
-    public OrderItem(string productName, int quantity)
-    {
-        ProductName = productName;
-        Quantity = quantity;
-    }
-}
-```
-
-**Order.cs**
-
-```csharp
-using System.Collections.Generic;
-
-public class Order
-{
-    public int OrderId { get; private set; }
-    private readonly List<OrderItem> items = new();
-
-    public Order(int orderId)
-    {
-        OrderId = orderId;
-    }
-
-    public void AddItem(string productName, int quantity)
-    {
-        items.Add(new OrderItem(productName, quantity));
-    }
-
-    public void Display()
-    {
-        Console.WriteLine($"Order: {OrderId}");
-        foreach (OrderItem item in items)
-        {
-            Console.WriteLine($"{item.ProductName} - {item.Quantity}");
-        }
-    }
-}
-```
-
-**Program.cs**
-
-```csharp
-Order order = new Order(1001);
-
-order.AddItem("Laptop", 1);
-order.AddItem("Mouse", 2);
-
-order.Display();
-```
-
-Here, Order creates and controls its OrderItems through its public operations.
-
-Important distinction: C# does not automatically destroy child objects when a parent reference disappears. Composition is a domain ownership and lifecycle design decision, not an automatic garbage-collection rule.
-
-### 5. Association vs Aggregation vs Composition
-
-| Relationship | Meaning | Example |
-|---|---|---|
-| Association | Objects interact | Student enrolls in Course |
-| Aggregation | Whole-part, independent lifetimes | Department has Courses |
-| Composition | Strong ownership | Order owns OrderItems |
-
-Visual memory aid:
-
-```text
-Association:
-Student -------- Course
-
-Aggregation:
-Department ◇---- Course
-
-Composition:
-Order      ◆---- OrderItem
-```
-
-In UML notation:
-
-- `◇` represents aggregation.
-- `◆` represents composition.
-
-### 6. Inheritance – An IS-A Relationship
-
-Now consider:
-
-```text
-Employee
-   |
-   +-- Manager
-   |
-   +-- Developer
-   |
-   +-- Tester
-```
-
-A Manager is an Employee. A Developer is an Employee. A Tester is an Employee. This is an IS-A relationship. C# supports inheritance using the colon (`:`).
-
-**Employee.cs**
-
-```csharp
-public class Employee
+public abstract class Employee
 {
     public int Id { get; set; }
+
     public string Name { get; set; }
+
+    protected Employee(int id, string name)
+    {
+        Id = id;
+        Name = name;
+    }
 
     public void Display()
     {
         Console.WriteLine($"{Id} - {Name}");
     }
+
+    public abstract void Work();
 }
 ```
 
-**Developer.cs**
+Notice two types of methods:
 
-```csharp
+```
+public void Display()
+```
+
+This method has an implementation.
+
+```
+public abstract void Work();
+```
+
+This method declares a behavior that derived classes must implement.
+
+### Step 2: Create derived classes
+
+```
 public class Developer : Employee
 {
-    public string ProgrammingLanguage { get; set; }
-
-    public void WriteCode()
+    public Developer(int id, string name)
+        : base(id, name)
     {
-        Console.WriteLine(
-            $"Developing using {ProgrammingLanguage}");
     }
-}
-```
 
-**Program.cs**
-
-```csharp
-Developer developer = new Developer();
-
-developer.Id = 101;
-developer.Name = "Rahul";
-developer.ProgrammingLanguage = "C#";
-
-developer.Display();
-developer.WriteCode();
-```
-
-Output:
-
-```text
-101 - Rahul
-Developing using C#
-```
-
-The Developer inherits accessible members of Employee.
-
-### 7. Method Overriding – Specialized Behavior
-
-Suppose every employee works, but each employee type performs different work.We can use method overriding.
-
-**Employee.cs**
-
-```csharp
-public class Employee
-{
-    public string Name { get; set; }
-
-    public virtual void Work()
-    {
-        Console.WriteLine("Employee is working");
-    }
-}
-```
-
-**Developer.cs**
-
-```csharp
-public class Developer : Employee
-{
     public override void Work()
     {
-        Console.WriteLine("Developer is writing code");
+        Console.WriteLine("Developing software");
     }
 }
 ```
 
-**Tester.cs**
-
-```csharp
+```
 public class Tester : Employee
 {
+    public Tester(int id, string name)
+        : base(id, name)
+    {
+    }
+
     public override void Work()
     {
-        Console.WriteLine("Tester is testing software");
+        Console.WriteLine("Testing software");
     }
 }
 ```
 
-**Program.cs**
+### Step 3: Execute
 
-```csharp
-Employee employee1 = new Developer();
-Employee employee2 = new Tester();
+```
+Employee emp1 = new Developer(101, "Amit");
+Employee emp2 = new Tester(102, "Sneha");
 
-employee1.Work();
-employee2.Work();
+emp1.Work();
+emp2.Work();
 ```
 
 Output:
 
-```text
-Developer is writing code
-Tester is testing software
+```
+Developing software
+Testing software
 ```
 
-This is runtime polymorphism.
+### Architecture visualization
 
-### 8. Object Relationships in a Real Application
-
-Let's combine our learning.
-
-Consider an e-commerce application.
-
-```text
-                 E-Commerce System
-                         |
-          +--------------+--------------+
-          |              |              |
-          v              v              v
-        Customer       Product         Order
-                          |              |
-                          |           Composition
-                          |              |
-                          |          +---+---+
-                          |          |       |
-                          v          v       v
-                       Category   OrderItem OrderItem
-
-Customer -------- places -------- Order
+```
+                Employee
+             <<abstract>>
+                   |
+          +--------+--------+
+          |                 |
+          v                 v
+      Developer           Tester
+          |                 |
+          v                 v
+       Develop()          Test()
 ```
 
-Possible relationships:
+**Mentor explains**: An abstract class represents a common foundation for related types.
 
-- Customer and Order: Association.
-- Category and Product: Often modeled as aggregation or association, depending on ownership.
-- Order and OrderItem: Composition.
-- Employee and Manager: Inheritance, if Manager is modeled as a specialized Employee.
+It can contain:
 
-### 9. Important Design Thinking – Prefer Composition When Appropriate
+- Fields
+- Properties
+- Constructors
+- Concrete methods
+- Abstract methods
 
-Students often ask:"Sir, should we use inheritance everywhere?"
+You cannot directly instantiate an abstract class.
 
-No!
-
-Consider a Car. A Car has an Engine. It is not an Engine.
-
-```text
-Car HAS-A Engine
+```
+// Employee emp = new Employee(1, "Amit");
+// Compile-time error
 ```
 
-Therefore, composition is more appropriate than inheritance.
+## 5. Interface vs Abstract Class
 
-```csharp
-public class Engine
+Students often ask: "Sir, if both interfaces and abstract classes provide abstraction, why do we need both?"
+
+Excellent question!
+
+Let's compare.
+
+| Interface                                 | Abstract Class                          |
+| ----------------------------------------- | --------------------------------------- |
+| Defines a contract                        | Provides a common base                  |
+| A class can implement multiple interfaces | A class can inherit only one class      |
+| Cannot have instance fields               | Can have instance fields                |
+| Cannot have instance constructors         | Can have constructors                   |
+| Can have default implementations          | Can have concrete implementations       |
+| Useful for capabilities                   | Useful for shared identity and behavior |
+
+### Visual understanding
+
+```
+       INTERFACE                    ABSTRACT CLASS
+           |                              |
+           v                              v
+    Defines a contract              Defines a base
+           |                              |
+           v                              v
+   What should you do?          What do related objects
+                                have in common?
+```
+
+Example:
+
+A Developer is an Employee. But a Developer can also be:
+
+- Billable
+- Trainable
+- Reportable
+
+These capabilities can be represented through interfaces.
+
+```
+public interface ITrainable
 {
-    public void Start()
-    {
-        Console.WriteLine("Engine started");
-    }
+    void Train();
 }
 
-public class Car
+public interface IReportable
 {
-    private readonly Engine engine;
+    void GenerateReport();
+}
+```
 
-    public Car()
+A Developer can implement both.
+
+```
+public class Developer : Employee, ITrainable, IReportable
+{
+    public Developer(int id, string name): base(id, name)
     {
-        engine = new Engine();
     }
 
-    public void StartCar()
+    public override void Work()
     {
-        engine.Start();
-        Console.WriteLine("Car started");
+        Console.WriteLine("Developing software");
+    }
+
+    public void Train()
+    {
+        Console.WriteLine("Training junior developers");
+    }
+
+    public void GenerateReport()
+    {
+        Console.WriteLine("Generating development report");
     }
 }
 ```
 
-This demonstrates a HAS-A relationship.
+This demonstrates how inheritance and interfaces complement one another.
+
+## 6. Polymorphism – One Interface, Multiple Behaviors
+
+Let's understand another important OOP concept. The word polymorphism means:
+
+Many forms.
+
+Imagine you have a common command:
+
+```
+animal.MakeSound();
+```
+
+Different animals respond differently.
+
+```
+                 Animal
+                    |
+               MakeSound()
+                    |
+          +---------+---------+
+          |         |         |
+          v         v         v
+         Dog       Cat       Cow
+          |         |         |
+          v         v         v
+         Bark      Meow      Moo
+```
+
+The same method call produces different behavior depending on the actual object.
+
+### C# example
+
+```
+public abstract class Animal
+{
+    public abstract void MakeSound();
+}
+```
+
+```
+public class Dog : Animal
+{
+    public override void MakeSound()
+    {
+        Console.WriteLine("Dog barks");
+    }
+}
+```
+
+```
+public class Cat : Animal
+{
+    public override void MakeSound()
+    {
+        Console.WriteLine("Cat meows");
+    }
+}
+```
+
+Usage:
+
+```
+Animal animal1 = new Dog();
+Animal animal2 = new Cat();
+
+animal1.MakeSound();
+animal2.MakeSound();
+```
+
+Output:
+
+```
+Dog barks
+Cat meows
+```
+
+### What happened?
+
+The reference type is `Animal`. But the actual objects are `Dog` and `Cat`. At runtime, the appropriate overridden method is executed. This is runtime polymorphism.
+
+**Mentor asks**: Why is polymorphism useful?
+
+**Student**: Sir, we can write common code that works with different implementations.
+
+Exactly!
+
+## 7. Object Collaboration Using Interfaces
+
+Now let's return to our Transflower Student Management System. We want to send enrollment notifications through different channels. Let's design it.
+
+### Step 1: Notification contract
+
+```
+public interface INotification
+{
+    void Send(string message);
+}
+```
+
+### Step 2: Email implementation
+
+```
+public class EmailNotification : INotification
+{
+    public void Send(string message)
+    {
+        Console.WriteLine($"Email sent: {message}");
+    }
+}
+```
+
+### Step 3: SMS implementation
+
+```
+public class SmsNotification : INotification
+{
+    public void Send(string message)
+    {
+        Console.WriteLine($"SMS sent: {message}");
+    }
+}
+```
+
+### Step 4: Enrollment service
+
+```
+public class EnrollmentService
+{
+    private readonly INotification _notification;
+
+    public EnrollmentService(INotification notification)
+    {
+        _notification = notification;
+    }
+
+    public void Enroll(string studentName, string courseName)
+    {
+        Console.WriteLine($"{studentName} enrolled in {courseName}");
+        _notification.Send($"Welcome {studentName} to {courseName}");
+    }
+}
+```
+
+Look carefully at this constructor:
+
+```
+public EnrollmentService(INotification notification)
+```
+
+We are not accepting `EmailNotification` or `SmsNotification`. We are accepting the interface.
+
+Why?
+
+Because the service should not be tightly coupled to a specific notification provider.
+
+### Step 5: Program.cs
+
+```
+INotification notification = new EmailNotification();
+
+EnrollmentService service = new EnrollmentService(notification);
+
+service.Enroll("Amit","AI Enabled Fullstack Development");
+```
+
+Output:
+
+```
+Amit enrolled in AI Enabled Fullstack Development
+
+Email sent: Welcome Amit to AI Enabled Fullstack Development
+```
+
+Now replace:
+
+```
+INotification notification = new SmsNotification();
+```
+
+The EnrollmentService implementation remains unchanged.
+
+### Complete architecture
+
+```
+              Program.cs
+                  |
+                  v
+           EnrollmentService
+                  |
+                  | Depends on
+                  v
+            INotification
+             <<interface>>
+                  |
+          +-------+-------+
+          |               |
+          v               v
+    EmailNotification  SmsNotification
+          |               |
+          v               v
+       Email API        SMS API
+```
+
+This is an important design improvement.
+
+## 8. Understanding Dependency Injection
+
+Now comes the next engineering concept. In the previous example, we manually created an object:
+
+```
+INotification notification = new EmailNotification();
+EnrollmentService service = new EnrollmentService(notification);
+```
+
+We created the dependency and passed it to the service. This is called Dependency Injection. Dependency Injection is a technique in which an object receives the dependencies it needs from an external source rather than creating those dependencies itself. Let's understand the difference.
+
+### Without Dependency Injection
+
+```
+public class EnrollmentService
+{
+    private EmailNotification _notification =new EmailNotification();
+}
+```
+
+Problem? EnrollmentService is tightly coupled to EmailNotification. Switching to SMS requires modifying the service.
+
+### With Dependency Injection
+
+```
+public class EnrollmentService
+{
+    private readonly INotification _notification;
+
+    public EnrollmentService(INotification notification)
+    {
+        _notification = notification;
+    }
+}
+```
+
+Now the service depends on an abstraction. Different implementations can be supplied from outside.
+
+### Visual comparison
+
+
+#### Withoug Dependency Injection
+
+```
++-----------------------------+
+|      EnrollmentService      |
+|                             |
+| Creates EmailNotification   |
+|         internally          |
++--------------+--------------+
+               |
+               | creates
+               v
++-----------------------------+
+|     EmailNotification       |
++-----------------------------+
+
+TIGHT COUPLING
+The service controls its own dependency creation.
+EnrollmentService is directly tied to EmailNotification.
+
+```
+
+#### With Dependency Injection
+
+```
++--------------------------------------+
+|      DI Container / Composition Root |
+|                                      |
+| Selects and creates implementation   |
++-------------------+------------------+
+                    |
+                    | injects through constructor
+                    v
++--------------------------------------+
+|          EnrollmentService           |
+|                                      |
+| Receives INotification               |
+| through its constructor              |
++-------------------+------------------+
+                    |
+                    | depends on abstraction
+                    v
++--------------------------------------+
+|            INotification             |
++-------------------+------------------+
+                    ^
+                    |
+          implements the interface
+                    |
+       +------------+------------+
+       |            |            |
+       v            v            v
++------------+ +------------+ +-------------+
+|   Email    | |    SMS     | |  WhatsApp   |
+|Notification| |Notification| |Notification |
++------------+ +------------+ +-------------+
+
+LOOSE COUPLING
+Dependency creation and implementation selection are handled externally.
+EnrollmentService depends on INotification, not on a concrete class.
+```
+
+
+### Key Difference
+
+| Without Dependency Injection                                         | With Dependency Injection                                                |
+| -------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| `EnrollmentService` creates `EmailNotification` internally.          | The DI container creates and supplies an implementation.                 |
+| Depends directly on a concrete class.                                | Depends on the `INotification` abstraction.                              |
+| Changing the notification provider may require changing the service. | The implementation can be changed through configuration or registration. |
+| Tightly coupled design.                                              | Loosely coupled design.                                                  |
+
+
+**Mentor's Key Point** :Dependency Injection does not mean that an object has no dependencies. It means that the object does not take responsibility for creating those dependencies.
+
+EnrollmentService still needs a notification service. It simply receives that dependency from outside, usually through constructor
+injection.
+
+
+## 9. ASP.NET Core – Built-in Dependency Injection
+
+One of the powerful features of ASP.NET Core is its built-in dependency injection container. Let's see how we can register our notification service.
+
+Inside `Program.cs`:
+
+```
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddScoped<INotification, EmailNotification>();
+builder.Services.AddScoped<EnrollmentService>();
+
+var app = builder.Build();
+
+app.MapGet("/", () => "Transflower Enrollment API");
+
+app.Run();
+```
+
+What does this line mean?
+
+```
+builder.Services.AddScoped<INotification, EmailNotification>();
+```
+
+Whenever the DI container needs an `INotification` dependency, it can provide an `EmailNotification` instance according to the scoped lifetime. The container also resolves constructor dependencies when creating `EnrollmentService`.
+
+### Dependency Injection execution flow
+
+```
+             ASP.NET Core
+                  |
+                  v
+             Program.cs
+                  |
+                  v
+            Register Services
+                  |
+                  v
+          builder.Services
+                  |
+                  v
+           DI Container
+                  |
+                  v
+          Create Controller
+                  |
+                  v
+       Resolve Constructor Dependencies
+                  |
+                  v
+          EnrollmentService
+                  |
+                  v
+          INotification
+                  |
+                  v
+          EmailNotification
+```
+
+### Understand service lifetimes
+
+| Lifetime  | Meaning                                 | Example                       |
+| --------- | --------------------------------------- | ----------------------------- |
+| Transient | New instance each time resolved         | Lightweight stateless service |
+| Scoped    | One instance per DI scope               | Typical request-level service |
+| Singleton | One instance for the container lifetime | Shared thread-safe service    |
 
 Remember:
 
-- IS-A → Inheritance.
-- HAS-A → Object reference / composition or aggregation, depending on ownership.
-- USES-A → Association or dependency.
+A singleton service should not directly capture a scoped dependency. Also, singleton services must be designed for concurrent access.
 
-### 10. Practical Lab – Design a Learning Management System
+## 10. Complete Practical Lab – Notification Management System
 
-Build a small console application with the following classes:
+Hands-on Assignment
 
-**Student**
-- StudentId
-- Name
-- Enroll(Course course)
+Let's build a practical console application using all today's concepts.
 
-**Course**
-- CourseId
-- Title
+### Project structure
 
-**Department**
-- DepartmentId
-- Name
-- List of Courses
+```
+NotificationApp/
+    |
+    |-- Program.cs
+    |
+    |-- Interfaces/
+    |      |
+    |      |-- INotification.cs
+    |
+    |-- Services/
+           |
+           |-- EmailNotification.cs
+           |-- SmsNotification.cs
+           |-- WhatsAppNotification.cs
+           |-- EnrollmentService.cs
+```
 
-**Assessment**
-- AssessmentId
-- Title
-- MaximumMarks
+### Student requirements
 
-**OnlineAssessment**
-- Inherits Assessment
-- DurationInMinutes
+1. Create `INotification`.
+2. Implement EmailNotification.
+3. Implement SmsNotification.
+4. Implement WhatsAppNotification.
+5. Create EnrollmentService.
+6. Inject INotification through the constructor.
+7. Execute enrollment using each notification provider.
+8. Compare the output.
 
-**Order and OrderItem extension**
-- Order owns its items.
-- Add and display order items.
+### Expected output
 
-Your objective is to demonstrate all four relationships.
+```
+====================================
+ TRANSFLOWER ENROLLMENT MANAGEMENT
+====================================
 
-### 11. Student Assessment
+Student: Amit
+Course : C# Programming
 
-Answer these questions:
+Email Notification Sent!
 
-1. What is association?
-2. How is aggregation different from composition?
-3. What does the UML diamond represent?
-4. What is an IS-A relationship?
-5. What is a HAS-A relationship?
-6. Why should a Car not inherit from Engine?
-7. What is method overriding?
-8. What is the purpose of `virtual`?
-9. What is the purpose of `override`?
-10. When might composition be a better choice than inheritance?
+Student: Sneha
+Course : ASP.NET Core
 
+SMS Notification Sent!
 
-### Ravi Sir's Closing Thought
+Student: Rahul
+Course : AI Enabled Fullstack Development
 
-Dear students, When you design software, don't begin by asking:
+WhatsApp Notification Sent!
+```
 
-"Which class should inherit from which class?"
+### Additional challenge
 
-Start by understanding the real-world relationship.
+Implement another interface:
 
-- Is it an IS-A relationship?
-- Is it a HAS-A relationship?
-- Does one object own another?
-- Can both objects live independently?
+```
+public interface ILogger
+{
+    void Log(string message);
+}
+```
 
-These questions lead to better software design.
+Implement:
 
-**A good software engineer doesn't merely connect classes. A good software engineer models meaningful relationships between objects.**
+- ConsoleLogger
+- FileLogger
 
-— Ravi Sir, Transflower Mentor
+Now modify EnrollmentService to use both `INotification` and `ILogger`.
+
+Think about constructor injection with multiple dependencies.
+
+## 11. Engineering Thinking – Connect the Concepts
+
+| Concept               | Engineering purpose                       |
+| --------------------- | ----------------------------------------- |
+| Interface             | Define contracts                          |
+| Abstract class        | Share common structure and behavior       |
+| Inheritance           | Reuse and specialize behavior             |
+| Polymorphism          | Support multiple implementations          |
+| Dependency Injection  | Supply dependencies externally            |
+| Loose coupling        | Reduce direct implementation dependencies |
+| Constructor Injection | Make dependencies explicit                |
+
+### The evolution of our design
+
+```
+       Classes and Objects
+                |
+                v
+        Object Collaboration
+                |
+                v
+             Interfaces
+                |
+                v
+          Polymorphism
+                |
+                v
+        Dependency Injection
+                |
+                v
+         Loose Coupling
+                |
+                v
+       Maintainable Software
+` 
+
+## 13. Ravi Sir's Closing Thought
+
+Dear students,
+
+Let's revisit our journey. In the beginning, we learned how to create objects. Then we learned how to protect their state. Today, we learned how to make objects communicate through contracts and how to introduce new implementations without tightly coupling our code. 
+
+This is the evolution of an engineer's thinking.
+
+A beginner asks: How do I write this class?
+
+A developer asks: How do these classes communicate?
+
+An experienced engineer asks: How can I design this system so that tomorrow's changes do not break today's functionality?
+
+# Remember this principle
+
+Depend on abstractions, not concrete implementations.
+
+Fundamentals build confidence. Design builds engineering capability.
+
+— Ravi Sir, Chief Mentor, Transflower Learning
