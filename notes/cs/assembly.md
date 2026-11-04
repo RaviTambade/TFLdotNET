@@ -1,14 +1,12 @@
 ## **The Assembly**
 
-### 🎬 **Scene 1: A Developer’s Morning**
-
 *It was a bright Monday morning. I sat with a cup of chai, opened Visual Studio, and hit “Build” on my little .NET app. And just like that... my code was magically wrapped into something mysterious — something called an **Assembly**.*
 
 “Wait… What is this thing? `.dll`? `.exe`? Where’s my code gone?”
 
 That’s when I went on a journey — a journey into the **heart of the .NET runtime**.
 
-### 🧳 **Scene 2: What is an Assembly?**
+### **Scene 2: What is an Assembly?**
 
 “An assembly,” I told my students, “is like a **well-packed suitcase** you take on a journey.”
 
@@ -26,7 +24,7 @@ Similarly, in .NET:
 
 And you know what’s amazing? That suitcase is not only well-packed… it also **carries a passport, ID card, security tags, and a list of what’s inside**.
 
-### 🧠 **Scene 3: Dissecting the Assembly**
+### **Scene 3: Dissecting the Assembly**
 
 
 ````markdown
@@ -245,11 +243,8 @@ And you know what’s amazing? That suitcase is not only well-packed… it also 
             Running .NET Application
 ```
 
-## Key Takeaway
-
-> A **.NET Assembly (.EXE or .DLL)** is a self-contained deployment unit. It is much more than compiled code—it packages everything required to identify, verify, load, and execute a .NET application, including the **PE Header**, **CLR Header**, **Metadata**, **IL Code**, **Resources**, and an optional **Strong Name** for security.
+A **.NET Assembly (.EXE or .DLL)** is a self-contained deployment unit. It is much more than compiled code—it packages everything required to identify, verify, load, and execute a .NET application, including the **PE Header**, **CLR Header**, **Metadata**, **IL Code**, **Resources**, and an optional **Strong Name** for security.
 ````
-
 
 Let’s open the suitcase. What do we see inside?
 
@@ -278,7 +273,7 @@ Maybe some UI images, translation files, or config settings. All zip-locked neat
 
 Signed DLLs carry a strong name so that no one tampers with them. Like a sealed package.
 
-### 🌍 **Scene 4: Assembly in .NET Core — Now It’s Cross-Platform!**
+### **Scene 4: Assembly in .NET Core — Now It’s Cross-Platform!**
 
 Back in the .NET Framework days, we were limited to Windows. But with .NET Core and beyond?
 
@@ -289,7 +284,7 @@ Also, we can pack it in two ways:
 * **Framework-dependent**: Uses common runtime from the destination.
 * **Self-contained**: Brings the entire .NET runtime *with* it — no dependency on the host!
 
-### 💬 **Scene 5: Common Questions from Students**
+### **Scene 5: Common Questions from Students**
 
 > **Q:** “Sir, what’s the difference between .exe and .dll?”
 
@@ -305,7 +300,7 @@ Also, we can pack it in two ways:
 * `ildasm` (comes with Visual Studio)
 * `dotPeek`, `ILSpy` – like X-ray machines for your suitcase
 
-### 🧰 **Scene 6: Why Are Assemblies Important?**
+### **Scene 6: Why Are Assemblies Important?**
 
 I often say:
 
@@ -314,7 +309,5 @@ I often say:
 🔹 **Modularity**: Reuse the same DLL in 10 different apps.
 🔹 **Security**: With strong naming and versioning, avoid unwanted or fake DLLs.
 🔹 **Deployability**: Just share the `.dll` or `.exe`, and everything your app needs is inside.
-
-### 🎁 Final Words to Students
 
 *"So next time you build a .NET app and see that `.dll` or `.exe`, smile at it. Because that tiny file is **your entire application packed smartly — with logic, labels, and language** — ready to take off into the .NET world."*

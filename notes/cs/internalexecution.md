@@ -1,87 +1,113 @@
-## .NET Runtime Execution Process
+# Understanding .NET Runtime Execution Process
 
-When you write a C# program, the C# source code does **not** directly execute on the CPU. It goes through compilation, **IL (Intermediate Language)** generation, loading by the **CLR/CoreCLR**, and finally **JIT compilation** into native machine code.
+## 1. Let's begin with a question!
 
+**Mentor**: Students, when you write a C# program, does your computer's CPU understand C#?
 
-```text
-                C# SOURCE CODE
-                     │
-                     │  Program.cs
-                     ▼
-              ┌─────────────────┐
-              │   C# Compiler   │
-              │     Roslyn      │
-              │     (csc)       │
-              └────────┬────────┘
-                       │
-                       │ Compile
-                       ▼
-              ┌─────────────────┐
-              │   IL / CIL      │
-              │ Intermediate    │
-              │ Language        │
-              └────────┬────────┘
-                       │
-                       │ Stored in
-                       ▼
-              ┌─────────────────┐
-              │ .NET Assembly   │
-              │                 │
-              │ .dll / .exe     │
-              │                 │
-              │ IL + Metadata   │
-              └────────┬────────┘
-                       │
-                       │ Application starts
-                       ▼
-              ┌─────────────────┐
-              │     .NET        │
-              │     Runtime     │
-              │                 │
-              │    CoreCLR      │
-              └────────┬────────┘
-                       │
-             ┌─────────┴─────────┐
-             │                   │
-             ▼                   ▼
-      ┌──────────────┐    ┌──────────────┐
-      │ Assembly     │    │ Type /       │
-      │ Loader       │    │ Metadata     │
-      └──────┬───────┘    │ Processing   │
-             │            └──────┬───────┘
-             └──────────┬────────┘
-                        ▼
-                 ┌─────────────┐
-                 │     JIT     │
-                 │  Compiler   │
-                 └──────┬──────┘
-                        │
-                        │ IL → Native Code
-                        ▼
-                 ┌─────────────┐
-                 │ Native CPU  │
-                 │    Code     │
-                 └──────┬──────┘
-                        │
-                        ▼
-                 ┌─────────────┐
-                 │     CPU     │
-                 │  Executes   │
-                 │ instructions│
-                 └─────────────┘
+**Student**: No, Sir. CPU understands machine instructions.
+
+**Mentor**: Excellent! Then how does this C# statement execute?
+
+```
+int c = a + b;
 ```
 
-# 1. Step-by-Step Execution Process
+Does the CPU directly execute this statement?
 
-Suppose we write:
+**Student**: No, Sir. Something must convert it into machine instructions.
 
-```csharp
+**Mentor**: Exactly! That conversion and execution process is what we are going to understand today.
+
+Remember:
+
+> A programmer writes source code, a compiler translates it, a runtime prepares it, and the CPU executes machine instructions.
+
+## 2. Big Picture: .NET Execution Architecture
+
+Let's understand the complete journey of a C# program.
+
+```
+             DEVELOPER
+                 |
+                 | Writes
+                 v
+        +-------------------+
+        |   C# Source Code  |
+        |     Program.cs   |
+        +-------------------+
+                 |
+                 | Roslyn Compiler
+                 v
+        +-------------------+
+        |    IL / CIL       |
+        | Intermediate      |
+        | Language          |
+        +-------------------+
+                 |
+                 | Packaged with
+                 | Metadata
+                 v
+        +-------------------+
+        |  .NET Assembly    |
+        |    MyApp.dll      |
+        +-------------------+
+                 |
+                 | Application Startup
+                 v
+        +-------------------+
+        |   .NET Runtime    |
+        |     CoreCLR       |
+        +-------------------+
+                 |
+          +------+------+
+          |             |
+          v             v
+     Assembly       Type System
+     Loading        & Metadata
+          |             |
+          +------+------+
+                 |
+                 v
+        +-------------------+
+        |   JIT Compiler    |
+        |                   |
+        |    IL -> Native   |
+        +-------------------+
+                 |
+                 v
+        +-------------------+
+        | Native Machine    |
+        | Code              |
+        +-------------------+
+                 |
+                 v
+        +-------------------+
+        |       CPU         |
+        | Executes Code     |
+        +-------------------+
+```
+
+**Mentor's** observation: Notice that compilation and execution are two different phases.
+
+- Compilation: C# → IL.
+- Execution: IL → Native Machine Code → CPU.
+
+## 3. Understand the individual components
+
+### Step 1: C# Source Code
+
+Consider this simple application:
+
+```
+using System;
+
 class Program
 {
     static void Main()
     {
         int a = 10;
         int b = 20;
+
         int c = a + b;
 
         Console.WriteLine(c);
@@ -89,370 +115,682 @@ class Program
 }
 ```
 
-### Step 1 — C# Source Code
+The developer creates:
 
-The developer writes:
-
-```text
+```
 Program.cs
 ```
 
-This is **human-readable C# code**.
+This is human-readable source code.
 
-```text
-C# Source
-   ↓
-Program.cs
+Ask yourself: Can the processor understand `Console.WriteLine()` directly?
+
+No. It needs translation into instructions that the processor can execute.
+
+### Step 2: Roslyn — C# Compiler
+ 
+The .NET SDK invokes the C# compiler, commonly known as Roslyn.
+
+Its responsibilities include:
+
+1. Lexical and syntax analysis.
+2. Semantic analysis.
+3. Type checking.
+4. Code generation.
+5. Metadata generation.
+
+```
+       Program.cs
+           |
+           v
+    +--------------+
+    |   Roslyn     |
+    | C# Compiler  |
+    +--------------+
+           |
+           v
+        IL Code
 ```
 
-# 2. C# Compiler — Roslyn
+**Mentor**: What does Roslyn generate?
 
-The .NET SDK invokes the C# compiler, commonly called **Roslyn**.
+**Student**: Intermediate Language, Sir!
 
-```text
-Program.cs
-    │
-    ▼
- C# Compiler
-  (Roslyn)
-    │
-    ▼
-   IL
+**Mentor**: Correct. It generally does not generate processor-specific native code during ordinary .NET compilation.
+
+### Step 3: What is IL?
+
+IL stands for Intermediate Language.
+
+It is also known as:
+
+- CIL – Common Intermediate Language.
+- MSIL – Microsoft Intermediate Language (historical terminology).
+
+For example:
+
+C# statement:
+
 ```
-
-The compiler performs several tasks:
-
-* Syntax analysis
-* Semantic analysis
-* Type checking
-* Code generation
-* Metadata generation
-
-The important point is:
-
-> **The C# compiler generally does not generate CPU-specific machine code.**
-
-It generates **IL/CIL**.
-
-# 3. What is IL?
-
-**IL = Intermediate Language**
-
-It is also commonly called:
-
-* CIL — Common Intermediate Language
-* MSIL — Microsoft Intermediate Language
-
-For example, conceptually:
-
-```text
-C#:
-
 int c = a + b;
 ```
 
-may become IL instructions resembling:
+Conceptually, its IL might resemble:
 
-```text
+```
 ldloc.0
 ldloc.1
 add
 stloc.2
 ```
 
-These are **not Intel/AMD CPU instructions**.
+Let's understand the instructions:
 
-They are instructions understood by the .NET execution environment and later compiled to native code.
+| IL instruction | Meaning                          |
+| -------------- | -------------------------------- |
+| `ldloc.0`      | Load local variable 0            |
+| `ldloc.1`      | Load local variable 1            |
+| `add`          | Add values                       |
+| `stloc.2`      | Store result in local variable 2 |
 
-# 4. IL + Metadata → Assembly
+These are not native Intel or ARM instructions.
 
-The compiler packages the generated IL along with metadata into an assembly.
+They are instructions in the .NET intermediate representation.
 
-```text
-                 Assembly
-              ┌──────────────┐
-              │              │
-              │     IL       │
-              │              │
-              ├──────────────┤
-              │   Metadata   │
-              │              │
-              ├──────────────┤
-              │    Other     │
-              │   Assembly   │
-              │   Information│
-              └──────────────┘
+### Step 4: Assembly — IL + Metadata
+
+The compiler packages IL and metadata into an assembly.
+
+
 ```
+         MyApp.dll
+       +------------------+
+       |                  |
+       |    IL Code       |
+       |------------------|
+       |                  |
+       |  Type Metadata   |
+       |------------------|
+       |                  |
+       | Method Metadata  |
+       |------------------|
+       |                  |
+       | Assembly Details |
+       |------------------|
+       |                  |
+       |   References     |
+       |                  |
+       +------------------+
+```
+
+Think of a .NET assembly as a book:
+- **IL** = Actual content of the book.
+- **Metadata** = Index and description of the content.
+- **References** = References to other books.
+- **Assembly information** = Book title, edition and publisher details.
+
+The C# compiler (**Roslyn**) packages the generated Intermediate Language (IL), metadata, and assembly information into a .NET assembly (.dll or .exe).
+
+```
+                  C# COMPILER (ROSLYN)
+                          |
+                          |
+                    Generated IL
+                          |
+                    Generated Metadata
+                          |
+                          v
+              +---------------------------+
+              |       .NET ASSEMBLY       |
+              |                           |
+              |       MyApp.dll           |
+              |                           |
+              +---------------------------+
+              |                           |
+              |   1. IL CODE              |
+              |      - Method bodies      |
+              |      - CIL instructions   |
+              |                           |
+              +---------------------------+
+              |                           |
+              |   2. TYPE METADATA        |
+              |      - Classes            |
+              |      - Interfaces         |
+              |      - Structures         |
+              |      - Enums              |
+              |                           |
+              +---------------------------+
+              |                           |
+              |   3. METHOD METADATA      |
+              |      - Method names       |
+              |      - Parameters         |
+              |      - Return types       |
+              |                           |
+              +---------------------------+
+              |                           |
+              |   4. ASSEMBLY METADATA    |
+              |      - Assembly name      |
+              |      - Version            |
+              |      - Culture            |
+              |      - Public key info    |
+              |                           |
+              +---------------------------+
+              |                           |
+              |   5. REFERENCES           |
+              |      - System.Runtime     |
+              |      - Other assemblies   |
+              |      - Dependencies       |
+              |                           |
+              +---------------------------+
+                          |
+                          |
+                          v
+                 .NET RUNTIME (CoreCLR)
+                          |
+                          v
+                 Assembly Loading
+                          |
+                          v
+                    JIT Compiler
+
+```
+
 
 Typical output:
 
-```text
-MyApp.dll
+```
+bin/
+  Debug/
+    net10.0/
+      MyApp.dll
+      MyApp.deps.json
+      MyApp.runtimeconfig.json
 ```
 
-or an executable application such as:
+The `.dll` contains the managed assembly. The accompanying files provide dependency and runtime configuration information.
 
-```text
-MyApp.exe
+**Mentor**'s question: Why do we need metadata?
+
+Because the runtime needs information about types, methods, fields, references and other program structures.
+
+## 4. Runtime execution — CoreCLR
+
+The .NET Core execution architecture explains how a C# application moves from source code through compilation, runtime services and JIT compilation before executing on the CPU.
+
+
+```
+                 DEVELOPER
+                     |
+                     v
+           +--------------------+
+           |   C# SOURCE CODE   |
+           |     Program.cs     |
+           +--------------------+
+                     |
+                     v
+           +--------------------+
+           |   C# COMPILER      |
+           |     ROSLYN         |
+           +--------------------+
+                     |
+                     v
+           +--------------------+
+           | INTERMEDIATE       |
+           | LANGUAGE (IL/CIL)  |
+           +--------------------+
+                     |
+                     v
+           +--------------------+
+           |   .NET ASSEMBLY    |
+           |    MyApp.dll       |
+           |                    |
+           |  IL + Metadata     |
+           |  References        |
+           +--------------------+
+                     |
+                     v
+       +--------------------------------+
+       |        .NET HOST               |
+       |                                |
+       |  Application Startup           |
+       |  Runtime Selection             |
+       |  Runtime Initialization        |
+       +--------------------------------+
+                     |
+                     v
+       +--------------------------------+
+       |          CORECLR               |
+       |      .NET Runtime Engine       |
+       |                                |
+       |  +--------------------------+  |
+       |  |     Assembly Loader      |  |
+       |  +--------------------------+  |
+       |                                |
+       |  +--------------------------+  |
+       |  |   Type System & Metadata |  |
+       |  +--------------------------+  |
+       |                                |
+       |  +--------------------------+  |
+       |  |    Garbage Collector     |  |
+       |  +--------------------------+  |
+       |                                |
+       |  +--------------------------+  |
+       |  |    Exception Handling    |  |
+       |  +--------------------------+  |
+       |                                |
+       |  +--------------------------+  |
+       |  |       Threading          |  |
+       |  +--------------------------+  |
+       |                                |
+       |  +--------------------------+  |
+       |  |     JIT Compiler         |  |
+       |  +--------------------------+  |
+       +--------------------------------+
+                     |
+                     v
+           +--------------------+
+           |  NATIVE MACHINE    |
+           |       CODE         |
+           +--------------------+
+                     |
+                     v
+           +--------------------+
+           |        CPU         |
+           |  Executes Native   |
+           |  Instructions      |
+           +--------------------+
+
 ```
 
-The important conceptual structure is:
 
-```text
-.dll / .exe
-   │
-   ├── IL
-   ├── Type Metadata
-   ├── Method Metadata
-   ├── Assembly Metadata
-   └── References
+
+Now comes the interesting part. We have an assembly. But how does it execute? The .NET runtime provides the execution environment.
+
+For modern .NET applications using the standard CoreCLR runtime, CoreCLR provides services such as:
+
+```
+                 CoreCLR
+                    |
+      +-------------+-------------+
+      |             |             |
+      v             v             v
+ Assembly       Type System      JIT
+ Loading        & Metadata     Compiler
+      |             |             |
+      +-------------+-------------+
+                    |
+      +-------------+-------------+
+      |             |             |
+      v             v             v
+ Garbage       Exception      Threading
+ Collection    Handling
 ```
 
-# 5. Application Starts — CoreCLR
+It also provides runtime infrastructure for managed code execution.
 
-When a .NET application runs, the **.NET runtime** is responsible for executing the application.
+### Step 5: Assembly Loading
 
-For modern .NET applications, an important runtime implementation is:
+The runtime loads the application assembly and resolves the dependencies required for execution.
 
-**CoreCLR**
-
-```text
-.NET Runtime
-     │
-     ▼
-  CoreCLR
 ```
-
-CoreCLR provides the execution environment for managed .NET code.
-
-It is responsible for important runtime services such as:
-
-```text
-CoreCLR
-   │
-   ├── Assembly Loading
-   ├── Type System
-   ├── JIT Compilation
-   ├── Garbage Collection
-   ├── Exception Handling
-   ├── Threading
-   └── Runtime Execution
-```
-
-# 6. Assembly Loading
-
-CoreCLR loads the required assemblies.
-
-```text
-MyApp.dll
-   │
-   ▼
-Assembly Loader
-   │
-   ├── Load assembly
-   ├── Read metadata
-   ├── Resolve dependencies
-   └── Prepare types/methods
+             MyApp.dll
+                 |
+                 v
+          Assembly Loading
+                 |
+        +--------+--------+
+        |        |        |
+        v        v        v
+      Read    Resolve   Load
+    Metadata  References Types
+        |        |        |
+        +--------+--------+
+                 |
+                 v
+          Runtime Preparation
 ```
 
 For example:
 
-```text
+```
 MyApp.dll
-   │
-   ├── Program
-   │     └── Main()
-   │
-   └── Dependencies
+   |
+   +-- Program
+   |      |
+   |      +-- Main()
+   |
+   +-- Employee
+   |
+   +-- Department
+   |
+   +-- Dependencies
 ```
 
-# 7. Method Execution and JIT
+The runtime uses assembly and type information to prepare code for execution.
 
-Now suppose the runtime needs to execute:
+### Step 6: JIT Compiler
 
-```csharp
-Main()
+Important Concept
+
+JIT stands for Just-In-Time compiler.
+
+Its job is to convert IL into native machine code when required.
+
+```
+          IL Instructions
+                 |
+                 v
+          +-------------+
+          |     JIT     |
+          |  Compiler   |
+          +-------------+
+                 |
+                 v
+         Native Machine Code
+                 |
+                 v
+                CPU
 ```
 
-The method contains IL.
 
-```text
-Main()
-   │
-   ▼
- IL instructions
-   │
-   ▼
- JIT Compiler
-   │
-   ▼
- Native Machine Code
+**Mentor**: Why do we call it Just-In-Time?
+
+**Student**: Because the IL is compiled into native code when the method needs to execute.
+
+**Mentor**: Exactly!
+
+An important detail: JIT compilation is generally performed method by method, as methods are needed, rather than compiling the entire application into native code at startup.
+
+## 5. Why does .NET use IL?
+
+Let's imagine that we develop an application on Windows x64.
+
+Later, we want to run it on Linux ARM64.
+
+Should we rewrite the entire C# application?
+
+Generally, no.
+
+```
+             C# Source Code
+                    |
+                    v
+             Roslyn Compiler
+                    |
+                    v
+                IL Code
+                    |
+          +---------+---------+
+          |         |         |
+          v         v         v
+       Windows    Linux     macOS
+         x64       x64       ARM64
+          |         |         |
+          v         v         v
+         JIT       JIT       JIT
+          |         |         |
+          v         v         v
+       Native    Native    Native
+       x64       x64       ARM64
 ```
 
-**JIT = Just-In-Time compiler**
+The same IL can be compiled into native instructions for different supported processor architectures.
 
-The JIT compiler converts IL into machine code suitable for the current processor/platform.
+This is one of the important benefits of the .NET execution model.
 
-For example:
+> Write once, compile to an intermediate representation, and execute on supported environments with the appropriate runtime.
 
-```text
-             IL
-              │
-              ▼
-        ┌─────────────┐
-        │     JIT     │
-        │  Compiler   │
-        └──────┬──────┘
-               │
-               ▼
-       Native Machine Code
-               │
-               ▼
-              CPU
-```
+Note: Platform-specific dependencies, native libraries, runtime availability and application configuration can still affect portability.
 
-# 8. Why IL Instead of Direct Machine Code?
 
-This is one of the important ideas behind .NET.
+#### Understand the architecture through three layers
 
-Suppose the same C# application runs on:
+| Layer       | Responsibility                                | Examples           |
+| ----------- | --------------------------------------------- | ------------------ |
+| Compilation | Converts source code into IL and metadata.    | Roslyn             |
+| Runtime     | Loads and manages application execution.      | .NET Host, CoreCLR |
+| Execution   | Converts IL into native code and executes it. | JIT, CPU           |
 
-```text
-Windows x64
-Linux x64
-Linux ARM64
-macOS ARM64
-```
+#### Ravi Sir's classroom takeaway:
 
-The C# source can remain essentially the same.
+Think of it like a manufacturing process:
+- C# source code is the design.
+- Roslyn is the translator.
+- IL is the standardized instruction format.
+- Assembly is the packaged instruction set.
+- CoreCLR is the factory environment.
+- JIT is the machine that converts instructions into processor-specific o
+perations.
+- CPU is the machine that performs the actual work.
 
-```text
-             C# Code
-                │
-                ▼
-             Compiler
-                │
-                ▼
-                IL
-                │
-        ┌───────┼────────┐
-        ▼       ▼        ▼
-      x64     ARM64     ...
-       │        │
-       ▼        ▼
-      JIT      JIT
-       │        │
-       ▼        ▼
- Native x64  Native ARM64
-```
 
-Therefore:
+Remember: The compiler prepares the program; the runtime manages its execution; the CPU executes native instructions.
 
-> **IL provides an architecture-neutral intermediate representation, while the runtime/JIT produces native code for the target environment.**
+## 6. CLR vs CoreCLR — Understand the difference
 
-# 9. Complete .NET Execution Pipeline
+**Student**s often get confused between CLR and CoreCLR.
 
-A useful way to remember the entire process is:
+Let's clarify.
 
-```text
-┌───────────────────────┐
-│    C# Source Code     │
-│      Program.cs       │
-└───────────┬───────────┘
-            │
-            │ Roslyn Compiler
-            ▼
-┌───────────────────────┐
-│     IL / CIL Code     │
-│                       │
-│   Intermediate Code   │
-└───────────┬───────────┘
-            │
-            │ Packaged with
-            │ metadata
-            ▼
-┌───────────────────────┐
-│       Assembly        │
-│      .dll / .exe      │
-└───────────┬───────────┘
-            │
-            │ Application starts
-            ▼
-┌───────────────────────┐
-│       CoreCLR         │
-│                       │
-│  .NET Runtime Engine  │
-└───────────┬───────────┘
-            │
-            ▼
-┌───────────────────────┐
-│   Assembly Loading    │
-│   Metadata / Types    │
-└───────────┬───────────┘
-            │
-            ▼
-┌───────────────────────┐
-│      JIT Compiler     │
-│                       │
-│       IL → Native     │
-└───────────┬───────────┘
-            │
-            ▼
-┌───────────────────────┐
-│   Native Machine Code │
-└───────────┬───────────┘
-            │
-            ▼
-┌───────────────────────┐
-│          CPU          │
-│       Executes        │
-└───────────────────────┘
-```
-
-## 10. Where Does the CLR Fit?
+| Term               | Meaning                                                            |
+| ------------------ | ------------------------------------------------------------------ |
+| CLR                | Common Language Runtime; the .NET runtime concept and architecture |
+| .NET Framework CLR | Original Windows .NET Framework runtime implementation             |
+| CoreCLR            | Runtime implementation used by modern .NET applications by default |
+| Roslyn             | C# compiler                                                        |
+| JIT                | Converts IL into native machine code                               |
+| GC                 | Garbage Collector; manages managed memory                          |
 
 Historically:
 
-```text
-.NET Framework
-      │
-      ▼
-     CLR
+```
+       .NET Framework
+              |
+              v
+             CLR
 ```
 
 Modern .NET:
 
-```text
-.NET
- │
- └── Runtime
-      │
-      └── CoreCLR
+```
+           .NET
+             |
+             v
+          Runtime
+             |
+             v
+          CoreCLR
+             |
+      +------+------+
+      |      |      |
+      v      v      v
+     JIT     GC   Runtime
+                  Services
 ```
 
-So for teaching purposes:
+A clarification: CLR is the general runtime concept; CoreCLR is not simply another name for every CLR implementation. Modern .NET also supports alternative runtime execution models, including Native AOT.
 
-```text
-CLR
- │
- ├── Concept of .NET execution environment
- │
- └── CoreCLR
-       └── Modern runtime implementation
+## 7. What happens when we execute `dotnet run`?
+
+Let's connect theory with practical development. Suppose we create a console application:
+
+```
+dotnet new console -n RuntimeDemo
+
+cd RuntimeDemo
+
+dotnet run
 ```
 
-A useful distinction is:
+What happens internally?
 
-| Component                | Responsibility                       |
-| ------------------------ | ------------------------------------ |
-| **C# Compiler / Roslyn** | C# → IL                              |
-| **IL/CIL**               | Intermediate instructions            |
-| **Assembly**             | IL + metadata + assembly information |
-| **CoreCLR**              | Runtime execution environment        |
-| **JIT**                  | IL → native machine code             |
-| **GC**                   | Automatic memory management          |
-| **CPU**                  | Executes native machine instructions |
+```
+             Developer
+                 |
+                 v
+           dotnet run
+                 |
+                 v
+          .NET SDK / CLI
+                 |
+                 v
+          Build Application
+                 |
+                 v
+          Roslyn Compiler
+                 |
+                 v
+             MyApp.dll
+                 |
+                 v
+          .NET Host Startup
+                 |
+                 v
+          Load CoreCLR
+                 |
+                 v
+          Load Application
+                 |
+                 v
+            Execute Main()
+                 |
+                 v
+          JIT Compilation
+                 |
+                 v
+           Native Code
+                 |
+                 v
+                CPU
+```
 
-### One-line interview answer
+In practice, `dotnet run` builds the project when necessary and starts the application through the .NET host. The runtime then handles loading and execution.
 
-> **In .NET, C# source code is compiled by Roslyn into IL and metadata inside an assembly; when the application runs, CoreCLR loads the assembly and the JIT compiler converts the required IL methods into native machine code, which is then executed by the CPU.**
+Try these commands:
+
+```
+dotnet build
+```
+
+```
+dotnet run
+```
+
+```
+dotnet --info
+```
+
+```
+dotnet --list-sdks
+```
+
+Lab observation: After building, explore the `bin/Debug` directory and identify the generated assembly and runtime configuration files.
+
+## 8. Advanced Concept: Is JIT the only way?
+
+No!
+
+Modern .NET also supports Ahead-of-Time compilation.
+
+| JIT                                            | Native AOT                                                               |
+| ---------------------------------------------- | ------------------------------------------------------------------------ |
+| IL compiled into native code at runtime        | Application compiled into native code ahead of execution                 |
+| Requires a compatible runtime environment      | Can produce a native executable with required runtime components         |
+| Runtime compilation overhead                   | Avoids ordinary JIT compilation at startup                               |
+| Dynamic runtime capabilities are more flexible | Some dynamic features require additional configuration or are restricted |
+
+```
+              C# Source
+                  |
+                  v
+             Roslyn
+                  |
+                  v
+              IL Code
+                  |
+          +-------+-------+
+          |               |
+          v               v
+      JIT Model       Native AOT
+          |               |
+          v               v
+      Runtime JIT     AOT Compiler
+          |               |
+          v               v
+      Native Code     Native Executable
+          |               |
+          v               v
+         CPU             CPU
+```
+
+This is an important topic when discussing startup performance, deployment and application architecture.
+ 
+## 9. Mentors Assignment — Explore .NET Internals
+
+Build a small console application and investigate its compilation and execution.
+
+Problem statement: Understand what happens to a C# program between source code and CPU execution.
+
+Tasks:
+
+1. Create a console application using `dotnet new console`.
+2. Write a program containing arithmetic operations and method calls.
+3. Execute `dotnet build`.
+4. Locate the generated `.dll`.
+5. Explore the assembly using ILSpy or `ildasm` where supported.
+6. Identify IL instructions generated for arithmetic operations.
+7. Investigate JIT compilation using available .NET diagnostics tools.
+8. Compare JIT deployment with Native AOT.
+
+Expected learning outcome: **Student**s should be able to explain the journey from C# source code to native machine instructions without memorizing definitions.
+
+## 10. Connect this knowledge to ASP.NET Core
+
+Now think about a real-world application developed at Transflower. Suppose we build an ASP.NET Core Web API. Does the same execution process apply? Absolutely!
+
+```
+       React Frontend
+              |
+              | HTTP Request
+              v
+      ASP.NET Core Web API
+              |
+              v
+        C# Controllers
+              |
+              v
+       Business Services
+              |
+              v
+        Data Access Layer
+              |
+              v
+          MySQL DB
+```
+
+All the managed C# code in the backend follows the .NET compilation and runtime execution model. This is why understanding CLR, CoreCLR, JIT, GC and assemblies is important even when developing modern ASP.NET Core applications.
+
+## Final takeaway from Mentor
+
+> Students, don't become programmers who only know how to write C# syntax. Become engineers who understand what happens behind that syntax. When you understand the compiler, runtime, memory management and CPU execution, you start thinking beyond frameworks. Remember this execution pipeline:
+
+```
+C# → Roslyn → IL → Assembly
+                       |
+                       v
+                    CoreCLR
+                       |
+                       v
+                  Assembly Loader
+                       |
+                       v
+                      JIT
+                       |
+                       v
+                Native Machine Code
+                       |
+                       v
+                      CPU
+```
+
+Next **Mentor** Session: .NET Memory Management — Stack, Heap, Garbage Collection, Generations, IDisposable and the difference between managed and unmanaged resources.

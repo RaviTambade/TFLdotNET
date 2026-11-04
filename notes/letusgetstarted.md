@@ -16,7 +16,6 @@ First learn to think like a programmer. Then learn to code like an engineer. Fin
 11. <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/interfaces.md">Interfaces</a>
 12. <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/Collections.md">Collection Framework</a>
 13. <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/collectioninterfaces.md">Collection Inerfaces</a>
-14. <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/comparingobjects.md">Comparision</a>
 15. <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/delegate.md">Delegates</a>
 16. <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/events.md">Events</a>
 17. <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/internalexecution.md">Application Execution Internals</a>
