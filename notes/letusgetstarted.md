@@ -13,7 +13,7 @@ First learn to think like a programmer. Then learn to code like an engineer. Fin
 8. <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/date.md">Date Class</a>
 9. <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/oo.md"> Objectd Oriented  Programming (OOPs)</a>
 10. <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/inheritance.md">Inheritance</a>
-11. <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/interfaces.md">Interfaces</a>
+11. <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/interfaces.md">Interface Inheritance</a>
 12. <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/Collections.md">Collection Framework</a>
 13. <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/collectioninterfaces.md">Collection Inerfaces</a>
 15. <a href="https://github.com/RaviTambade/TFLdotNET/blob/main/notes/cs/delegate.md">Delegates</a>
